@@ -576,19 +576,19 @@
 
     // --- ESTADO INICIAL DO MAPA MENTAL ---
     const DEFAULT_NODES = [
-      { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#0284c7', isRoot: true },
-      { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#059669' },
-      { id: 'b2', parentId: 'root', text: '2. Estrutura Radial & Conexões', x: 620, y: 350, color: '#4f46e5' },
-      { id: 'b3', parentId: 'root', text: '3. Ação Consciente & Hábitos', x: 180, y: 260, color: '#d97706' }
+      { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#06B6D4', isRoot: true },
+      { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#10B981' },
+      { id: 'b2', parentId: 'root', text: '2. Estrutura Radial & Conexões', x: 620, y: 350, color: '#8B5CF6' },
+      { id: 'b3', parentId: 'root', text: '3. Ação Consciente & Hábitos', x: 180, y: 260, color: '#F97316' }
     ];
 
     const PALETTE = [
-      { name: 'Azul Céu', value: '#0284c7' },
-      { name: 'Índigo', value: '#4f46e5' },
-      { name: 'Esmeralda', value: '#059669' },
-      { name: 'Lilás', value: '#9333ea' },
-      { name: 'Âmbar', value: '#d97706' },
-      { name: 'Teal', value: '#0d9488' }
+      { name: 'Ciano Luminoso', value: '#06B6D4' },
+      { name: 'Laranja Fogo', value: '#F97316' },
+      { name: 'Verde Esmeralda', value: '#10B981' },
+      { name: 'Rosa Choque', value: '#EC4899' },
+      { name: 'Amarelo Ouro', value: '#FACC15' },
+      { name: 'Roxo Elétrico', value: '#8B5CF6' }
     ];
 
     let nodes = JSON.parse(localStorage.getItem('esdhubem_gh_nodes') || JSON.stringify(DEFAULT_NODES));
@@ -626,7 +626,7 @@
         <button 
           onclick="changeSelectedColor('${c.value}')"
           style="background-color: ${c.value};"
-          class="w-4 h-4 rounded-full border border-white cursor-pointer hover:scale-110 transition-transform"
+          class="w-5 h-5 rounded-full border-2 border-white/90 shadow-sm cursor-pointer hover:scale-125 transition-transform shrink-0"
           title="${c.name}"
         ></button>
       `).join('');
@@ -662,7 +662,7 @@
 
       document.getElementById('btn-reset-map').addEventListener('click', () => {
         if (confirm('Deseja reiniciar mantendo apenas o tema central?')) {
-          nodes = [{ id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#0284c7', isRoot: true }];
+          nodes = [{ id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#06B6D4', isRoot: true }];
           selectedNodeId = 'root';
           centerRootNode();
           saveAndRender();
