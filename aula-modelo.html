@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESDHubem - Tecnologia do Escrever e do Mapear (Aula Modelo)</title>
+  <meta name="description" content="Plataforma de aprendizagem da ESDHubem para a aula Tecnologia do Escrever e do Mapear, com videoaula, mapa mental interativo e escrita reflexiva.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Ícones Lucide via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-100 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3.5 gap-3">
+        <!-- Logo & Título -->
+        <div class="flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-600 via-sky-700 to-indigo-800 flex items-center justify-center text-white shadow-sm shrink-0 mt-0.5">
+            <i data-lucide="sparkles" class="w-5 h-5 text-sky-100"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 text-xs font-semibold tracking-wide text-sky-800 uppercase">
+              <span>ESDHubem</span>
+              <span class="text-slate-300">·</span>
+              <span class="text-slate-500 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
+            </div>
+            <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+              Tecnologia do Escrever e do Mapear
+            </h1>
+            <div class="flex items-center gap-2 text-xs text-slate-500 mt-0.5">
+              <span>Módulo 3: Práticas Cognitivas</span>
+              <span aria-hidden="true">·</span>
+              <span>Carga: 2h de imersão e prática</span>
+              <span aria-hidden="true">·</span>
+              <span id="header-save-indicator" class="text-emerald-700 font-medium">Salvo automaticamente</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progresso e Atalhos -->
+        <div class="flex flex-wrap items-center gap-2 sm:gap-4 justify-between md:justify-end">
+          <div class="hidden lg:flex items-center gap-3 text-xs text-slate-600 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
+            <span class="font-medium text-slate-700">Trilha:</span>
+            <a href="#video-section" class="flex items-center gap-1 hover:text-sky-700">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+              <span>1. Vídeo</span>
+            </a>
+            <span class="text-slate-300">|</span>
+            <a href="#mindmap-section" class="flex items-center gap-1 hover:text-sky-700">
+              <span class="w-2 h-2 rounded-full bg-sky-500 inline-block"></span>
+              <span>2. Mapa Mental</span>
+            </a>
+            <span class="text-slate-300">|</span>
+            <a href="#reflection-section" class="flex items-center gap-1 hover:text-sky-700">
+              <span class="w-2 h-2 rounded-full bg-indigo-500 inline-block"></span>
+              <span>3. Reflexão</span>
+            </a>
+          </div>
+
+          <a href="#submission-section" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-sky-600 hover:bg-sky-700 text-white shadow-xs transition-colors flex items-center gap-1.5">
+            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+            <span>Concluir Aula</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+
+    <!-- Banner de Boas-Vindas -->
+    <section class="bg-gradient-to-br from-sky-600 via-sky-700 to-indigo-800 rounded-2xl text-white p-6 sm:p-10 shadow-sm relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-sky-200">
+          <i data-lucide="compass" class="w-4 h-4"></i>
+          <span>ESDHubem · Desenvolvimento Humano & Cognição</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
+          A Tecnologia do Escrever e do Mapear
+        </h2>
+        <p class="text-sm sm:text-base text-sky-100 leading-relaxed font-light">
+          Escrever não é apenas documentar o que já pensamos: é a principal tecnologia de elaboração do próprio pensamento. Ao organizar palavras em mapas e frases conscientes, descarregamos a sobrecarga mental e abrimos espaço para a presença e a serenidade.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-sky-100">
+          <span class="flex items-center gap-1.5"><i data-lucide="heart" class="w-3.5 h-3.5 text-rose-300"></i> Autorregulação emocional</span>
+          <span>·</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="lightbulb" class="w-3.5 h-3.5 text-amber-300"></i> Pensamento estruturado em rede</span>
+          <span>·</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5 text-emerald-300"></i> Síntese ativa do aprendizado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. SEÇÃO DE VÍDEO -->
+    <section id="video-section" class="scroll-mt-20">
+      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden">
+        <div class="px-6 py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-sky-50/60 via-white to-indigo-50/30">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
+              <span>Etapa 1</span>
+              <span>·</span>
+              <span>Videoaula Teórico-Prática</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
+              A Arte e a Tecnologia do Escrever e do Mapear
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">
+              Aprenda a orquestrar seu fluxo mental e acompanhe montando o mapa mental logo abaixo.
+            </p>
+          </div>
+          <button id="btn-toggle-watched" class="text-xs font-medium text-sky-700 hover:text-sky-900 hover:bg-sky-50 px-3 py-1.5 rounded-lg border border-sky-200 transition-colors">
+            Marcar como Assistida
+          </button>
+        </div>
+
+        <!-- Player Centralizado -->
+        <div class="p-4 sm:p-6 lg:p-8 bg-slate-950 flex flex-col items-center">
+          <div class="w-full max-w-4xl relative rounded-xl overflow-hidden shadow-2xl bg-black border border-slate-800">
+            <video 
+              id="main-video" 
+              class="w-full aspect-video object-cover cursor-pointer"
+              poster="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1280&q=80"
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+            ></video>
+
+            <!-- Overlay Badge -->
+            <div class="absolute top-4 left-4 z-20 pointer-events-none">
+              <span class="bg-black/60 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md border border-white/10 font-medium flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                ESDHubem Masterclass
+              </span>
+            </div>
+
+            <!-- Botão Central Play (quando pausado) -->
+            <div id="video-overlay-play" class="absolute inset-0 bg-slate-950/40 backdrop-blur-[1px] flex items-center justify-center cursor-pointer">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-sky-600/90 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
+                <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
+              </div>
+            </div>
+
+            <!-- Controles do Vídeo -->
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3 sm:p-4 z-20 flex flex-col gap-2">
+              <input type="range" id="video-seekbar" min="0" max="100" value="0" step="0.5" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-sky-400">
+              <div class="flex items-center justify-between text-white text-xs">
+                <div class="flex items-center gap-3">
+                  <button id="btn-play-pause" class="p-1 hover:text-sky-300"><i data-lucide="play" class="w-5 h-5 fill-white"></i></button>
+                  <button id="btn-restart" class="p-1 hover:text-sky-300"><i data-lucide="rotate-ccw" class="w-4 h-4"></i></button>
+                  <button id="btn-mute" class="p-1 hover:text-sky-300"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
+                  <span id="video-time-display" class="font-mono text-[11px] text-slate-300">00:00 / 00:00</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button id="btn-fullscreen" class="p-1 hover:text-sky-300"><i data-lucide="maximize" class="w-4 h-4"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capítulos do Vídeo -->
+        <div class="p-5 border-t border-slate-100 bg-white">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-3">Capítulos & Momentos-Chave:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs">
+            <button onclick="seekVideo(0)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <span class="font-mono text-sky-700 font-bold block">00:00</span>
+              <span class="font-semibold text-slate-800">1. A Mente como Sistema Vivo</span>
+            </button>
+            <button onclick="seekVideo(15)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <span class="font-mono text-sky-700 font-bold block">00:15</span>
+              <span class="font-semibold text-slate-800">2. A Ciência da Escrita Expressiva</span>
+            </button>
+            <button onclick="seekVideo(35)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <span class="font-mono text-sky-700 font-bold block">00:35</span>
+              <span class="font-semibold text-slate-800">3. Redes Radiais vs. Linearidade</span>
+            </button>
+            <button onclick="seekVideo(55)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <span class="font-mono text-sky-700 font-bold block">00:55</span>
+              <span class="font-semibold text-slate-800">4. Mapeamento & Síntese Prática</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (LOGO ABAIXO DO VÍDEO) -->
+    <section id="mindmap-section" class="scroll-mt-20">
+      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden flex flex-col">
+        <!-- Header do Mapa -->
+        <div class="px-6 py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-sky-50/70 via-white to-indigo-50/40">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-sky-800 uppercase tracking-wider">
+              <span>Etapa 2</span>
+              <span>·</span>
+              <span>Construção Concomitante à Aula</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5 flex items-center gap-2">
+              <i data-lucide="network" class="w-5 h-5 text-sky-600"></i>
+              Mapa Mental da Aula: Escrever & Mapear
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">
+              Construa o mapa enquanto assiste ao vídeo acima! Edite textos, adicione ramos filhos e arraste livremente.
+            </p>
+          </div>
+          <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border">
+          </div>
+        </div>
+
+        <!-- Painel / Inspetor de Edição Rápida do Bloco Selecionado -->
+        <div id="inspector-bar" class="bg-sky-50/80 border-b border-sky-100 p-3 sm:px-6 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-1 items-center gap-3 min-w-[280px]">
+            <span class="text-xs font-bold text-sky-900 shrink-0 flex items-center gap-1">
+              <i data-lucide="edit-3" class="w-3.5 h-3.5 text-sky-600"></i>
+              <span id="inspector-label">Nó Selecionado:</span>
+            </span>
+            <input 
+              type="text" 
+              id="inspector-input" 
+              placeholder="Digite o texto deste bloco..." 
+              class="flex-1 max-w-md text-xs sm:text-sm bg-white text-slate-800 border border-sky-300 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-sky-400 font-medium"
+            >
+            <button id="btn-add-child-selected" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg shadow-2xs transition-colors flex items-center gap-1 cursor-pointer">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              <span>+ Ramo Filho</span>
+            </button>
+            <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1 cursor-pointer">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+              <span>Apagar Nó</span>
+            </button>
+          </div>
+
+          <!-- Cores e Mover por Setas -->
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1" id="color-picker-container"></div>
+            <!-- Setas de Mover -->
+            <div class="flex items-center bg-white border border-slate-200 rounded-lg p-0.5">
+              <button onclick="nudgeSelected(-25, 0)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(25, 0)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, -25)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, 25)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Baixo"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Ferramentas Global -->
+        <div class="bg-slate-50 px-4 sm:px-6 py-2.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex flex-wrap items-center gap-2">
+            <button id="btn-add-new-branch" class="px-2.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-md font-medium flex items-center gap-1 cursor-pointer">
+              <i data-lucide="plus" class="w-3.5 h-3.5 text-sky-600"></i>
+              <span>Novo Ramo (+ Ideia)</span>
+            </button>
+            <button id="btn-load-preset" class="px-2.5 py-1.5 bg-white hover:bg-sky-50 text-sky-700 border border-sky-200 rounded-md font-medium cursor-pointer">
+              Carregar Modelo Sugerido
+            </button>
+            <button id="btn-reset-map" class="p-1.5 bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 rounded-md cursor-pointer" title="Reiniciar do zero">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <div class="flex items-center bg-white border border-slate-200 rounded-lg p-0.5">
+              <button onclick="adjustZoom(-0.15)" class="p-1 hover:text-sky-600 cursor-pointer"><i data-lucide="zoom-out" class="w-3.5 h-3.5"></i></button>
+              <span id="zoom-text" class="text-[11px] font-mono px-1.5 text-slate-500">100%</span>
+              <button onclick="adjustZoom(0.15)" class="p-1 hover:text-sky-600 cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
+              <button onclick="centerRootNode()" class="p-1 hover:text-sky-600 border-l border-slate-100 cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
+            </div>
+            <button id="btn-export-json" class="px-2.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-md font-medium flex items-center gap-1 cursor-pointer">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>Exportar</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Canvas Interativo -->
+        <div 
+          id="canvas-container" 
+          class="relative w-full h-[540px] bg-slate-50 overflow-hidden cursor-grab active:cursor-grabbing select-none"
+          style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 24px 24px; touch-action: none;"
+        >
+          <!-- Dica flutuante -->
+          <div class="absolute top-3 left-3 z-10 pointer-events-none">
+            <span class="bg-white/95 backdrop-blur-xs text-[11px] text-slate-600 px-3 py-1.5 rounded-lg border border-slate-200 shadow-2xs flex items-center gap-1.5">
+              <i data-lucide="help-circle" class="w-3.5 h-3.5 text-sky-600"></i>
+              <span>Clique no bloco para selecionar e editar · Segure e arraste para mover · Use a lixeira para apagar</span>
+            </span>
+          </div>
+
+          <!-- SVG para Conexões Bezier -->
+          <svg id="connections-svg" class="absolute inset-0 w-full h-full pointer-events-none overflow-visible"></svg>
+
+          <!-- Nós HTML -->
+          <div id="nodes-layer" class="absolute inset-0 w-full h-full pointer-events-none"></div>
+        </div>
+
+        <!-- Rodapé do Mapa -->
+        <div class="px-5 py-2.5 bg-white border-t border-slate-100 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
+          <div>
+            <span class="font-semibold text-slate-700">Dica:</span>
+            <span>Você pode editar o texto tanto clicando no bloco quanto digitando na barra acima.</span>
+          </div>
+          <div id="mindmap-count-info"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO DE ESCRITA REFLEXIVA -->
+    <section id="reflection-section" class="scroll-mt-20">
+      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden">
+        <div class="px-6 py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-sky-50/50 via-white to-slate-50/50">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
+              <span>Etapa 3</span>
+              <span>·</span>
+              <span>Exercício Reflexivo</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5 flex items-center gap-2">
+              <i data-lucide="pen-tool" class="w-5 h-5 text-sky-600"></i>
+              Sua Escrita Reflexiva
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">
+              Dedique este espaço para elaborar suas percepções pessoais consolidadas pela escrita.
+            </p>
+          </div>
+          <div id="text-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border"></div>
+        </div>
+
+        <div class="p-5 sm:p-6 space-y-4">
+          <!-- Sugestões de Perguntas -->
+          <div class="rounded-xl border border-sky-100 bg-sky-50/40 p-4">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-sky-900 flex items-center gap-1.5">
+                <i data-lucide="help-circle" class="w-4 h-4 text-sky-600"></i>
+                Perguntas Norteadoras da ESDHubem
+              </span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="p-3 bg-white rounded-lg border border-sky-100 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-semibold text-sky-700 block uppercase">1. Autoconhecimento & Descarga</span>
+                  <p class="text-xs text-slate-700 mt-1">"Quais nós mentais você descarregou ao colocar pensamentos em palavras durante a aula?"</p>
+                </div>
+                <button onclick="insertPrompt('Quais nós mentais você descarregou ao colocar pensamentos em palavras durante a aula?')" class="mt-2 text-[11px] text-sky-700 hover:text-sky-900 font-medium flex items-center gap-1 self-start cursor-pointer">
+                  <i data-lucide="sparkles" class="w-3 h-3 text-sky-500"></i> Inserir no texto
+                </button>
+              </div>
+              <div class="p-3 bg-white rounded-lg border border-sky-100 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-semibold text-sky-700 block uppercase">2. Transformação do Olhar</span>
+                  <p class="text-xs text-slate-700 mt-1">"Como a visão em rede (mapa) alterou a proporção e urgência das ideias?"</p>
+                </div>
+                <button onclick="insertPrompt('Como a visão em rede (mapa) alterou a proporção e urgência das ideias?')" class="mt-2 text-[11px] text-sky-700 hover:text-sky-900 font-medium flex items-center gap-1 self-start cursor-pointer">
+                  <i data-lucide="sparkles" class="w-3 h-3 text-sky-500"></i> Inserir no texto
+                </button>
+              </div>
+              <div class="p-3 bg-white rounded-lg border border-sky-100 flex flex-col justify-between">
+                <div>
+                  <span class="text-[11px] font-semibold text-sky-700 block uppercase">3. Aplicação no Cotidiano</span>
+                  <p class="text-xs text-slate-700 mt-1">"Qual prática de escrita consciente ou mapeamento você incorporará nesta semana?"</p>
+                </div>
+                <button onclick="insertPrompt('Qual prática de escrita consciente ou mapeamento você incorporará nesta semana?')" class="mt-2 text-[11px] text-sky-700 hover:text-sky-900 font-medium flex items-center gap-1 self-start cursor-pointer">
+                  <i data-lucide="sparkles" class="w-3 h-3 text-sky-500"></i> Inserir no texto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Textarea Amplo -->
+          <div>
+            <textarea 
+              id="reflection-textarea" 
+              rows="8"
+              placeholder="Comece sua reflexão aqui... O que ecoou em você durante a aula sobre o poder de escrever e mapear? Deixe o fluxo fluir livremente, sem pressa de perfeição formal."
+              class="w-full p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-slate-800 bg-slate-50/40 hover:bg-white focus:bg-white border border-slate-200 focus:border-sky-500 focus:ring-3 focus:ring-sky-100 rounded-xl transition-all outline-none"
+            ></textarea>
+            
+            <div class="flex flex-wrap items-center justify-between gap-2 mt-2 px-1 text-xs text-slate-500">
+              <div class="flex items-center gap-3">
+                <span id="text-word-count">0 palavras</span>
+                <span>·</span>
+                <span id="text-char-count">0 caracteres</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="btn-copy-text" class="px-2.5 py-1 text-xs bg-white border border-slate-200 rounded-md hover:bg-slate-50 flex items-center gap-1 cursor-pointer">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> <span>Copiar</span>
+                </button>
+                <button id="btn-clear-text" class="px-2.5 py-1 text-xs bg-white border border-slate-200 rounded-md hover:bg-slate-50 text-rose-600 flex items-center gap-1 cursor-pointer">
+                  <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> <span>Limpar</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Barra de Progresso -->
+            <div class="mt-3">
+              <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                <div id="text-progress-bar" class="h-full bg-sky-500 transition-all duration-300" style="width: 0%;"></div>
+              </div>
+              <div class="flex justify-between items-center text-[11px] text-slate-400 mt-1">
+                <span>Critério mínimo (100 caracteres)</span>
+                <span id="text-progress-percent">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ENVIO E VALIDAÇÃO DA ATIVIDADE -->
+    <section id="submission-section" class="scroll-mt-20">
+      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden p-6 sm:p-8 text-center max-w-3xl mx-auto space-y-6">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 text-sky-700">
+          <i data-lucide="send" class="w-6 h-6"></i>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 tracking-tight">
+            Envio e Validação da Atividade Completa
+          </h3>
+          <p class="text-sm text-slate-600 mt-1 max-w-xl mx-auto">
+            Ao enviar, nosso sistema valida o cumprimento das etapas reflexivas e emite o registro de conclusão da ESDHubem.
+          </p>
+        </div>
+
+        <!-- Checklist de Validação -->
+        <div class="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200 text-left space-y-3">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Requisitos da Aula:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div id="check-video-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
+              <span class="font-semibold block text-slate-800">1. Videoaula</span>
+              <span id="check-video-sub" class="text-[11px] text-slate-500">Pendente de visualização</span>
+            </div>
+            <div id="check-map-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
+              <span class="font-semibold block text-slate-800">2. Mapa Mental</span>
+              <span id="check-map-sub" class="text-[11px] text-slate-500">Mínimo 4 nós</span>
+            </div>
+            <div id="check-text-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
+              <span class="font-semibold block text-slate-800">3. Escrita Reflexiva</span>
+              <span id="check-text-sub" class="text-[11px] text-slate-500">Mínimo 100 caracteres</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botão Principal de Envio -->
+        <div>
+          <button id="btn-submit-activity" class="px-8 py-3.5 text-base font-bold rounded-xl transition-all shadow-md bg-sky-600 hover:bg-sky-700 text-white flex items-center gap-2 mx-auto cursor-pointer">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Enviar Atividade Completa</span>
+          </button>
+          <p class="text-xs text-slate-400 mt-2">
+            Seus dados permanecem salvos em seu navegador.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE CERTIFICADO E FINALIZAÇÃO -->
+  <div id="completion-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full shadow-2xl border border-sky-100 overflow-hidden flex flex-col">
+      <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-sky-50/70">
+        <div class="flex items-center gap-2">
+          <i data-lucide="award" class="w-5 h-5 text-sky-700"></i>
+          <h4 class="text-base font-bold text-slate-900">Comprovante de Conclusão · ESDHubem</h4>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Nome Completo:</label>
+          <input type="text" id="modal-student-name" value="Estudante ESDHubem" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-lg outline-none focus:border-sky-500">
+        </div>
+        <div class="border border-slate-200 rounded-xl p-4 bg-slate-50 text-xs space-y-2">
+          <p class="text-slate-500 uppercase font-semibold text-[10px]">Resumo da Entrega:</p>
+          <p><strong>Aula:</strong> Tecnologia do Escrever e do Mapear</p>
+          <p id="modal-summary-nodes"><strong>Mapa Mental:</strong> 0 nós estruturados</p>
+          <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-2">
+          <button onclick="downloadSummaryFile()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Comprovante (.txt)
+          </button>
+          <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir / PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SCRIPT COMPLETO INTEGRADO ==================== -->
+  <script>
+    // --- ESTADO INICIAL ---
+    const DEFAULT_NODES = [
+      { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#0284c7', isRoot: true },
+      { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#059669' },
+      { id: 'b2', parentId: 'root', text: '2. Estrutura Radial & Conexões', x: 620, y: 350, color: '#4f46e5' },
+      { id: 'b3', parentId: 'root', text: '3. Ação Consciente & Hábitos', x: 180, y: 260, color: '#d97706' }
+    ];
+
+    const PALETTE = [
+      { name: 'Azul Céu', value: '#0284c7' },
+      { name: 'Índigo', value: '#4f46e5' },
+      { name: 'Esmeralda', value: '#059669' },
+      { name: 'Lilás', value: '#9333ea' },
+      { name: 'Âmbar', value: '#d97706' },
+      { name: 'Teal', value: '#0d9488' }
+    ];
+
+    let nodes = JSON.parse(localStorage.getItem('esdhubem_gh_nodes') || JSON.stringify(DEFAULT_NODES));
+    let reflectiveText = localStorage.getItem('esdhubem_gh_text') || '';
+    let hasWatchedVideo = localStorage.getItem('esdhubem_gh_watched') === 'true';
+
+    let selectedNodeId = 'root';
+    let zoom = 1;
+    let pan = { x: 0, y: 0 };
+    let isPanning = false;
+    let panStart = { x: 0, y: 0 };
+
+    let draggingNodeId = null;
+    let dragInfo = null;
+
+    // --- ELEMENTOS DO DOM ---
+    const container = document.getElementById('canvas-container');
+    const nodesLayer = document.getElementById('nodes-layer');
+    const svgConnections = document.getElementById('connections-svg');
+    const inspectorInput = document.getElementById('inspector-input');
+    const inspectorLabel = document.getElementById('inspector-label');
+    const btnDeleteSelected = document.getElementById('btn-delete-selected');
+    const colorPickerContainer = document.getElementById('color-picker-container');
+    const textarea = document.getElementById('reflection-textarea');
+
+    // --- INICIALIZAÇÃO ---
+    function init() {
+      textarea.value = reflectiveText;
+      updateTextMetrics();
+
+      colorPickerContainer.innerHTML = PALETTE.map(c => `
+        <button 
+          onclick="changeSelectedColor('${c.value}')"
+          style="background-color: ${c.value};"
+          class="w-4 h-4 rounded-full border border-white cursor-pointer hover:scale-110 transition-transform"
+          title="${c.name}"
+        ></button>
+      `).join('');
+
+      inspectorInput.addEventListener('input', (e) => {
+        const node = nodes.find(n => n.id === selectedNodeId);
+        if (node) {
+          node.text = e.target.value;
+          saveAndRender();
+        }
+      });
+
+      document.getElementById('btn-add-child-selected').addEventListener('click', () => {
+        addChildNode(selectedNodeId);
+      });
+
+      document.getElementById('btn-add-new-branch').addEventListener('click', () => {
+        addChildNode('root');
+      });
+
+      btnDeleteSelected.addEventListener('click', () => {
+        deleteNode(selectedNodeId);
+      });
+
+      document.getElementById('btn-load-preset').addEventListener('click', () => {
+        if (confirm('Carregar o modelo de aula sugerido?')) {
+          nodes = JSON.parse(JSON.stringify(DEFAULT_NODES));
+          selectedNodeId = 'root';
+          centerRootNode();
+          saveAndRender();
+        }
+      });
+
+      document.getElementById('btn-reset-map').addEventListener('click', () => {
+        if (confirm('Deseja reiniciar mantendo apenas o tema central?')) {
+          nodes = [{ id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#0284c7', isRoot: true }];
+          selectedNodeId = 'root';
+          centerRootNode();
+          saveAndRender();
+        }
+      });
+
+      document.getElementById('btn-export-json').addEventListener('click', () => {
+        const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(nodes, null, 2));
+        const a = document.createElement('a');
+        a.href = dataStr;
+        a.download = `mapa_mental_esdhubem_${Date.now()}.json`;
+        a.click();
+      });
+
+      textarea.addEventListener('input', (e) => {
+        reflectiveText = e.target.value;
+        localStorage.setItem('esdhubem_gh_text', reflectiveText);
+        updateTextMetrics();
+        updateChecklist();
+      });
+
+      document.getElementById('btn-copy-text').addEventListener('click', () => {
+        navigator.clipboard.writeText(reflectiveText);
+        alert('Texto copiado com sucesso!');
+      });
+
+      document.getElementById('btn-clear-text').addEventListener('click', () => {
+        if (confirm('Deseja limpar o texto reflexivo?')) {
+          reflectiveText = '';
+          textarea.value = '';
+          localStorage.setItem('esdhubem_gh_text', '');
+          updateTextMetrics();
+          updateChecklist();
+        }
+      });
+
+      document.getElementById('btn-toggle-watched').addEventListener('click', () => {
+        hasWatchedVideo = !hasWatchedVideo;
+        localStorage.setItem('esdhubem_gh_watched', hasWatchedVideo ? 'true' : 'false');
+        updateVideoBtn();
+        updateChecklist();
+      });
+
+      setupVideo();
+      setupCanvasEvents();
+
+      window.addEventListener('keydown', (e) => {
+        if ((e.key === 'Delete' || e.key === 'Backspace') && selectedNodeId !== 'root') {
+          if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+            deleteNode(selectedNodeId);
+          }
+        }
+      });
+
+      document.getElementById('btn-submit-activity').addEventListener('click', handleFinalSubmit);
+
+      centerRootNode();
+      saveAndRender();
+      updateVideoBtn();
+      lucide.createIcons();
+    }
+
+    // --- RENDERIZAR MAPA MENTAL ---
+    function saveAndRender() {
+      localStorage.setItem('esdhubem_gh_nodes', JSON.stringify(nodes));
+      renderMap();
+      updateInspector();
+      updateChecklist();
+    }
+
+    function renderMap() {
+      const transformStyle = `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`;
+      nodesLayer.style.transform = transformStyle;
+      nodesLayer.style.transformOrigin = '0 0';
+
+      svgConnections.style.transform = transformStyle;
+      svgConnections.style.transformOrigin = '0 0';
+
+      let svgHtml = '';
+      nodes.forEach(node => {
+        if (!node.parentId) return;
+        const parent = nodes.find(p => p.id === node.parentId);
+        if (!parent) return;
+
+        const startX = parent.x;
+        const startY = parent.y;
+        const endX = node.x;
+        const endY = node.y;
+        const dx = endX - startX;
+        const cx1 = startX + dx * 0.5;
+        const cy1 = startY;
+        const cx2 = startX + dx * 0.5;
+        const cy2 = endY;
+
+        const isRelated = selectedNodeId === node.id || selectedNodeId === parent.id;
+        const pathData = `M ${startX} ${startY} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${endX} ${endY}`;
+
+        svgHtml += `
+          <path d="${pathData}" fill="none" stroke="${node.color}" stroke-width="${isRelated ? '3.5' : '2.5'}" stroke-opacity="${isRelated ? '0.95' : '0.55'}" stroke-linecap="round"></path>
+          <circle cx="${endX}" cy="${endY}" r="3.5" fill="${node.color}"></circle>
+        `;
+      });
+      svgConnections.innerHTML = svgHtml;
+
+      let nodesHtml = '';
+      nodes.forEach(node => {
+        const isSelected = selectedNodeId === node.id;
+        const isRoot = !!node.isRoot;
+
+        nodesHtml += `
+          <div 
+            id="node-el-${node.id}"
+            data-id="${node.id}"
+            style="transform: translate(${node.x}px, ${node.y}px) translate(-50%, -50%); border-color: ${node.color};"
+            class="mindmap-node absolute min-w-[130px] max-w-[240px] p-2.5 rounded-xl text-center shadow-xs cursor-grab active:cursor-grabbing pointer-events-auto border-2 ${
+              isRoot ? 'bg-sky-700 text-white font-bold text-sm shadow-md' : 'bg-white text-slate-800 text-xs font-semibold'
+            } ${isSelected ? 'ring-3 ring-sky-400 ring-offset-2 shadow-lg z-30' : 'hover:shadow-md z-10'}"
+          >
+            <div class="flex items-center justify-between pb-1 mb-1 border-b border-black/5 opacity-70">
+              <span class="text-[10px] text-slate-400">${isRoot ? 'Central' : 'Ideia'}</span>
+              <div class="flex items-center gap-1">
+                <button onclick="addChildNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform" title="Adicionar ramo filho">➕</button>
+                ${!isRoot ? `<button onclick="deleteNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform text-rose-500" title="Apagar bloco">🗑️</button>` : ''}
+              </div>
+            </div>
+            <div class="py-0.5 break-words select-text">${node.text}</div>
+          </div>
+        `;
+      });
+      nodesLayer.innerHTML = nodesHtml;
+
+      document.querySelectorAll('.mindmap-node').forEach(el => {
+        const id = el.getAttribute('data-id');
+        el.addEventListener('pointerdown', (e) => {
+          if (e.target.tagName === 'BUTTON') return;
+          e.stopPropagation();
+          selectNode(id);
+          startDraggingNode(e, id);
+        });
+      });
+
+      document.getElementById('mindmap-count-info').innerHTML = `
+        <span>Total: <strong>${nodes.length} nós</strong></span>
+        <span class="text-slate-300">·</span>
+        <span>Ramificações: <strong>${nodes.filter(n => !n.isRoot).length}</strong></span>
+      `;
+
+      const isValid = nodes.length >= 4;
+      const pill = document.getElementById('mindmap-status-pill');
+      if (isValid) {
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-50 border-emerald-200 text-emerald-800';
+        pill.innerHTML = `✓ Mapa Válido (${nodes.length} nós)`;
+      } else {
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-slate-100 border-slate-200 text-slate-500';
+        pill.innerHTML = `Mínimo 4 nós (${nodes.length}/4)`;
+      }
+    }
+
+    // --- SELEÇÃO & INSPETOR ---
+    function selectNode(id) {
+      selectedNodeId = id;
+      renderMap();
+    }
+
+    function updateInspector() {
+      const node = nodes.find(n => n.id === selectedNodeId) || nodes[0];
+      if (!node) return;
+      inspectorInput.value = node.text;
+      inspectorLabel.innerText = node.isRoot ? 'Tema Central:' : 'Nó Selecionado:';
+      btnDeleteSelected.style.display = node.isRoot ? 'none' : 'inline-flex';
+    }
+
+    function changeSelectedColor(color) {
+      const node = nodes.find(n => n.id === selectedNodeId);
+      if (node) {
+        node.color = color;
+        saveAndRender();
+      }
+    }
+
+    function nudgeSelected(dx, dy) {
+      const node = nodes.find(n => n.id === selectedNodeId);
+      if (node) {
+        node.x += dx;
+        node.y += dy;
+        saveAndRender();
+      }
+    }
+
+    function addChildNode(parentId) {
+      const parent = nodes.find(n => n.id === parentId) || nodes[0];
+      const children = nodes.filter(n => n.parentId === parent.id);
+      const isRight = parent.x >= 400;
+      const offsetX = isRight ? (parent.isRoot ? 200 : 160) : -(parent.isRoot ? 200 : 160);
+      const offsetY = (children.length - 1) * 70;
+
+      const nextColor = PALETTE[nodes.length % PALETTE.length].value;
+
+      const newNode = {
+        id: 'node_' + Date.now(),
+        parentId: parent.id,
+        text: 'Nova Ideia ' + nodes.length,
+        x: parent.x + offsetX,
+        y: parent.y + offsetY,
+        color: parent.isRoot ? nextColor : parent.color
+      };
+
+      nodes.push(newNode);
+      selectedNodeId = newNode.id;
+      saveAndRender();
+      inspectorInput.focus();
+      inspectorInput.select();
+    }
+
+    function deleteNode(id) {
+      const target = nodes.find(n => n.id === id);
+      if (!target) return;
+      if (target.isRoot) {
+        alert('O tema central não pode ser excluído.');
+        return;
+      }
+
+      const toDelete = new Set([id]);
+      let added = true;
+      while (added) {
+        added = false;
+        nodes.forEach(n => {
+          if (n.parentId && toDelete.has(n.parentId) && !toDelete.has(n.id)) {
+            toDelete.add(n.id);
+            added = true;
+          }
+        });
+      }
+
+      nodes = nodes.filter(n => !toDelete.has(n.id));
+      selectedNodeId = 'root';
+      saveAndRender();
+    }
+
+    // --- ARRASTE E PAN DO CANVAS ---
+    function setupCanvasEvents() {
+      container.addEventListener('pointerdown', (e) => {
+        if (e.target.closest('.mindmap-node')) return;
+        isPanning = true;
+        panStart = { x: e.clientX - pan.x, y: e.clientY - pan.y };
+      });
+
+      window.addEventListener('pointermove', (e) => {
+        if (dragInfo) {
+          const deltaX = (e.clientX - dragInfo.startX) / zoom;
+          const deltaY = (e.clientY - dragInfo.startY) / zoom;
+          const node = nodes.find(n => n.id === dragInfo.nodeId);
+          if (node) {
+            node.x = Math.round(dragInfo.initX + deltaX);
+            node.y = Math.round(dragInfo.initY + deltaY);
+            renderMap();
+          }
+        } else if (isPanning) {
+          pan.x = e.clientX - panStart.x;
+          pan.y = e.clientY - panStart.y;
+          renderMap();
+        }
+      });
+
+      window.addEventListener('pointerup', () => {
+        if (dragInfo) {
+          dragInfo = null;
+          saveAndRender();
+        }
+        isPanning = false;
+      });
+    }
+
+    function startDraggingNode(e, id) {
+      const node = nodes.find(n => n.id === id);
+      if (!node) return;
+      dragInfo = {
+        nodeId: id,
+        startX: e.clientX,
+        startY: e.clientY,
+        initX: node.x,
+        initY: node.y
+      };
+    }
+
+    function adjustZoom(delta) {
+      zoom = Math.max(0.4, Math.min(1.8, zoom + delta));
+      document.getElementById('zoom-text').innerText = Math.round(zoom * 100) + '%';
+      renderMap();
+    }
+
+    function centerRootNode() {
+      const root = nodes.find(n => n.isRoot) || nodes[0];
+      if (root && container) {
+        pan.x = container.clientWidth / 2 - root.x;
+        pan.y = container.clientHeight / 2 - root.y;
+        zoom = 1;
+        document.getElementById('zoom-text').innerText = '100%';
+        renderMap();
+      }
+    }
+
+    // --- VIDEO PLAYER ---
+    function setupVideo() {
+      const video = document.getElementById('main-video');
+      const playBtn = document.getElementById('btn-play-pause');
+      const overlayPlay = document.getElementById('video-overlay-play');
+      const seekbar = document.getElementById('video-seekbar');
+      const timeDisplay = document.getElementById('video-time-display');
+
+      function togglePlay() {
+        if (video.paused) {
+          video.play();
+          overlayPlay.classList.add('hidden');
+        } else {
+          video.pause();
+          overlayPlay.classList.remove('hidden');
+        }
+      }
+
+      playBtn.addEventListener('click', togglePlay);
+      overlayPlay.addEventListener('click', togglePlay);
+      video.addEventListener('click', togglePlay);
+
+      video.addEventListener('timeupdate', () => {
+        if (video.duration) {
+          seekbar.value = (video.currentTime / video.duration) * 100;
+          timeDisplay.innerText = formatTime(video.currentTime) + ' / ' + formatTime(video.duration);
+        }
+      });
+
+      seekbar.addEventListener('input', (e) => {
+        if (video.duration) {
+          video.currentTime = (e.target.value / 100) * video.duration;
+        }
+      });
+
+      document.getElementById('btn-restart').addEventListener('click', () => {
+        video.currentTime = 0;
+        video.play();
+        overlayPlay.classList.add('hidden');
+      });
+
+      document.getElementById('btn-mute').addEventListener('click', () => {
+        video.muted = !video.muted;
+      });
+
+      document.getElementById('btn-fullscreen').addEventListener('click', () => {
+        if (video.requestFullscreen) video.requestFullscreen();
+      });
+    }
+
+    function seekVideo(seconds) {
+      const video = document.getElementById('main-video');
+      video.currentTime = seconds;
+      video.play();
+      document.getElementById('video-overlay-play').classList.add('hidden');
+    }
+
+    function formatTime(s) {
+      const m = Math.floor(s / 60);
+      const sec = Math.floor(s % 60);
+      return (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    function updateVideoBtn() {
+      const btn = document.getElementById('btn-toggle-watched');
+      if (hasWatchedVideo) {
+        btn.className = 'text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg';
+        btn.innerText = '✓ Videoaula Concluída';
+      } else {
+        btn.className = 'text-xs font-medium text-sky-700 hover:text-sky-900 hover:bg-sky-50 px-3 py-1.5 rounded-lg border border-sky-200 transition-colors';
+        btn.innerText = 'Marcar como Assistida';
+      }
+    }
+
+    // --- ESCRITA REFLEXIVA ---
+    function updateTextMetrics() {
+      const chars = reflectiveText.length;
+      const words = reflectiveText.trim() ? reflectiveText.trim().split(/\s+/).length : 0;
+      document.getElementById('text-char-count').innerText = chars + ' caracteres';
+      document.getElementById('text-word-count').innerText = words + ' palavras';
+
+      const progress = Math.min(100, Math.round((chars / 100) * 100));
+      document.getElementById('text-progress-bar').style.width = progress + '%';
+      document.getElementById('text-progress-percent').innerText = progress + '%';
+
+      const isValid = chars >= 100;
+      const pill = document.getElementById('text-status-pill');
+      if (isValid) {
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-50 border-emerald-200 text-emerald-800';
+        pill.innerHTML = '✓ Reflexão Consistente';
+      } else {
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-slate-100 border-slate-200 text-slate-500';
+        pill.innerHTML = `Mínimo 100 caracteres (${chars}/100)`;
+      }
+    }
+
+    function insertPrompt(promptText) {
+      if (textarea.value.trim()) {
+        textarea.value += `\n\n[Reflexão: ${promptText}]\n`;
+      } else {
+        textarea.value = `[Reflexão: ${promptText}]\n`;
+      }
+      reflectiveText = textarea.value;
+      localStorage.setItem('esdhubem_gh_text', reflectiveText);
+      updateTextMetrics();
+      updateChecklist();
+      textarea.focus();
+    }
+
+    // --- CHECKLIST & SUBMISSÃO ---
+    function updateChecklist() {
+      const isMapValid = nodes.length >= 4;
+      const isTextValid = reflectiveText.trim().length >= 100;
+
+      const cVideo = document.getElementById('check-video-card');
+      const sVideo = document.getElementById('check-video-sub');
+      if (hasWatchedVideo) {
+        cVideo.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
+        sVideo.innerText = '✓ Conteúdo assistido';
+      } else {
+        cVideo.className = 'p-3 rounded-lg border bg-white border-slate-200 text-xs';
+        sVideo.innerText = 'Pendente';
+      }
+
+      const cMap = document.getElementById('check-map-card');
+      const sMap = document.getElementById('check-map-sub');
+      if (isMapValid) {
+        cMap.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
+        sMap.innerText = `✓ ${nodes.length} nós criados`;
+      } else {
+        cMap.className = 'p-3 rounded-lg border bg-white border-amber-200 text-xs';
+        sMap.innerText = `Faltam ${4 - nodes.length} nós`;
+      }
+
+      const cText = document.getElementById('check-text-card');
+      const sText = document.getElementById('check-text-sub');
+      if (isTextValid) {
+        cText.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
+        sText.innerText = `✓ ${reflectiveText.length} caracteres`;
+      } else {
+        cText.className = 'p-3 rounded-lg border bg-white border-amber-200 text-xs';
+        sText.innerText = `Faltam ${100 - reflectiveText.length} carac.`;
+      }
+    }
+
+    function handleFinalSubmit() {
+      const isMapValid = nodes.length >= 4;
+      const isTextValid = reflectiveText.trim().length >= 100;
+
+      if (!isMapValid || !isTextValid) {
+        alert('Por favor, atenda aos critérios antes de enviar:\n- Mapa Mental: ao menos 4 nós\n- Escrita Reflexiva: ao menos 100 caracteres');
+        return;
+      }
+
+      document.getElementById('modal-summary-nodes').innerHTML = `<strong>Mapa Mental:</strong> ${nodes.length} nós interconectados`;
+      document.getElementById('modal-summary-text').innerHTML = `<strong>Texto Reflexivo:</strong> ${reflectiveText.length} caracteres preenchidos`;
+      document.getElementById('completion-modal').classList.remove('hidden');
+      document.getElementById('completion-modal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('completion-modal').classList.add('hidden');
+      document.getElementById('completion-modal').classList.remove('flex');
+    }
+
+    function downloadSummaryFile() {
+      const name = document.getElementById('modal-student-name').value || 'Estudante';
+      const content = `=====================================================
+ESDHUBEM - ESCOLA DE DESENVOLVIMENTO HUMANO E BEM-ESTAR
+COMPROVANTE DE CONCLUSÃO DE AULA
+=====================================================
+Aula: Tecnologia do Escrever e do Mapear
+Estudante: ${name}
+Data: ${new Date().toLocaleString('pt-BR')}
+
+1. TEXTO REFLEXIVO:
+${reflectiveText}
+
+2. MAPA MENTAL:
+Total de nós: ${nodes.length}
+Ramos:
+${nodes.map(n => ` - [${n.text}]`).join('\n')}
+=====================================================`;
+
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `comprovante_esdhubem_${Date.now()}.txt`;
+      a.click();
+    }
+
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
