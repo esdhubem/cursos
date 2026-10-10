@@ -219,45 +219,48 @@
 
     <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (LOGO ABAIXO DO VÍDEO) -->
     <section id="mindmap-section" class="scroll-mt-20">
-      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden flex flex-col">
-        <!-- Header do Mapa -->
-        <div class="px-6 py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-sky-50/70 via-white to-indigo-50/40">
+      <div class="bg-white rounded-2xl border border-[#0f2c66]/40 shadow-sm overflow-hidden flex flex-col">
+        <!-- Header do Mapa (Mesmo tom azul profundo elegante do topo) -->
+        <div class="px-6 py-5 border-b border-[#0f2c66] flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] text-white">
           <div>
-            <div class="flex items-center gap-2 text-xs font-semibold text-sky-800 uppercase tracking-wider">
+            <div class="flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-wider">
               <span>Etapa 2</span>
-              <span>·</span>
+              <span class="text-white/30">·</span>
               <span>Construção Concomitante à Aula</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5 flex items-center gap-2">
-              <i data-lucide="network" class="w-5 h-5 text-sky-600"></i>
-              Mapa Mental da Aula: Escrever & Mapear
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-1 flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/30 flex items-center justify-center text-sky-400 shrink-0 shadow-sm">
+                <i data-lucide="network" class="w-5 h-5"></i>
+              </div>
+              <span>Mapa Mental da Aula: Escrever & Mapear</span>
             </h3>
-            <p class="text-sm text-slate-600 mt-1">
+            <p class="text-sm text-slate-300 mt-1">
               Construa o mapa enquanto assiste à aula ao lado! Edite textos, adicione ramos filhos e arraste livremente.
             </p>
           </div>
-          <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border">
+          <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300">
+            ✓ Mapa Válido (4 nós)
           </div>
         </div>
 
         <!-- Painel / Inspetor de Edição Rápida do Bloco Selecionado -->
-        <div id="inspector-bar" class="bg-sky-50/80 border-b border-sky-100 p-3 sm:px-6 flex flex-wrap items-center justify-between gap-3">
+        <div id="inspector-bar" class="bg-[#051c4a] border-b border-[#0f2c66] p-3 sm:px-6 flex flex-wrap items-center justify-between gap-3 text-white">
           <div class="flex flex-1 items-center gap-3 min-w-[280px]">
-            <span class="text-xs font-bold text-sky-900 shrink-0 flex items-center gap-1">
-              <i data-lucide="edit-3" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span class="text-xs font-bold text-sky-300 shrink-0 flex items-center gap-1.5">
+              <i data-lucide="edit-3" class="w-3.5 h-3.5 text-sky-400"></i>
               <span id="inspector-label">Nó Selecionado:</span>
             </span>
             <input 
               type="text" 
               id="inspector-input" 
               placeholder="Digite o texto deste bloco..." 
-              class="flex-1 max-w-md text-xs sm:text-sm bg-white text-slate-800 border border-sky-300 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-sky-400 font-medium"
+              class="flex-1 max-w-md text-xs sm:text-sm bg-[#082255] text-white placeholder-slate-400 border border-[#1a3d80] rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-sky-400 font-medium"
             >
-            <button id="btn-add-child-selected" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg shadow-2xs transition-colors flex items-center gap-1 cursor-pointer">
+            <button id="btn-add-child-selected" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center gap-1 cursor-pointer">
               <i data-lucide="plus" class="w-3.5 h-3.5"></i>
               <span>+ Ramo Filho</span>
             </button>
-            <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1 cursor-pointer">
+            <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1 cursor-pointer">
               <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
               <span>Apagar Nó</span>
             </button>
@@ -267,39 +270,39 @@
           <div class="flex items-center gap-3">
             <div class="flex items-center gap-1" id="color-picker-container"></div>
             <!-- Setas de Mover -->
-            <div class="flex items-center bg-white border border-slate-200 rounded-lg p-0.5">
-              <button onclick="nudgeSelected(-25, 0)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(25, 0)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(0, -25)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(0, 25)" class="p-1 text-slate-600 hover:text-sky-700 hover:bg-slate-100 rounded" title="Baixo"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></button>
+            <div class="flex items-center bg-[#082255] border border-[#1a3d80] rounded-lg p-0.5">
+              <button onclick="nudgeSelected(-25, 0)" class="p-1 text-slate-300 hover:text-white hover:bg-white/10 rounded cursor-pointer" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(25, 0)" class="p-1 text-slate-300 hover:text-white hover:bg-white/10 rounded cursor-pointer" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, -25)" class="p-1 text-slate-300 hover:text-white hover:bg-white/10 rounded cursor-pointer" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, 25)" class="p-1 text-slate-300 hover:text-white hover:bg-white/10 rounded cursor-pointer" title="Baixo"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
         </div>
 
         <!-- Barra de Ferramentas Global -->
-        <div class="bg-slate-50 px-4 sm:px-6 py-2.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs">
+        <div class="bg-[#031538] px-4 sm:px-6 py-2.5 border-b border-[#0f2c66] flex flex-wrap items-center justify-between gap-2 text-xs text-white">
           <div class="flex flex-wrap items-center gap-2">
-            <button id="btn-add-new-branch" class="px-2.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-md font-medium flex items-center gap-1 cursor-pointer">
-              <i data-lucide="plus" class="w-3.5 h-3.5 text-sky-600"></i>
+            <button id="btn-add-new-branch" class="px-2.5 py-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 rounded-md font-medium flex items-center gap-1 cursor-pointer">
+              <i data-lucide="plus" class="w-3.5 h-3.5 text-sky-400"></i>
               <span>Novo Ramo (+ Ideia)</span>
             </button>
-            <button id="btn-load-preset" class="px-2.5 py-1.5 bg-white hover:bg-sky-50 text-sky-700 border border-sky-200 rounded-md font-medium cursor-pointer">
+            <button id="btn-load-preset" class="px-2.5 py-1.5 bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-400/30 rounded-md font-medium cursor-pointer">
               Carregar Modelo Sugerido
             </button>
-            <button id="btn-reset-map" class="p-1.5 bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 rounded-md cursor-pointer" title="Reiniciar do zero">
+            <button id="btn-reset-map" class="p-1.5 bg-white/10 hover:bg-white/15 text-slate-300 border border-white/15 rounded-md cursor-pointer" title="Reiniciar do zero">
               <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
             </button>
           </div>
 
           <div class="flex items-center gap-2">
-            <div class="flex items-center bg-white border border-slate-200 rounded-lg p-0.5">
-              <button onclick="adjustZoom(-0.15)" class="p-1 hover:text-sky-600 cursor-pointer"><i data-lucide="zoom-out" class="w-3.5 h-3.5"></i></button>
-              <span id="zoom-text" class="text-[11px] font-mono px-1.5 text-slate-500">100%</span>
-              <button onclick="adjustZoom(0.15)" class="p-1 hover:text-sky-600 cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
-              <button onclick="centerRootNode()" class="p-1 hover:text-sky-600 border-l border-slate-100 cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
+            <div class="flex items-center bg-white/10 border border-white/15 rounded-lg p-0.5">
+              <button onclick="adjustZoom(-0.15)" class="p-1 text-slate-300 hover:text-white cursor-pointer"><i data-lucide="zoom-out" class="w-3.5 h-3.5"></i></button>
+              <span id="zoom-text" class="text-[11px] font-mono px-1.5 text-slate-300">100%</span>
+              <button onclick="adjustZoom(0.15)" class="p-1 text-slate-300 hover:text-white cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
+              <button onclick="centerRootNode()" class="p-1 text-slate-300 hover:text-white border-l border-white/15 cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
             </div>
-            <button id="btn-export-json" class="px-2.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-md font-medium flex items-center gap-1 cursor-pointer">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-slate-500"></i>
+            <button id="btn-export-json" class="px-2.5 py-1.5 bg-white/10 hover:bg-white/15 text-white border border-white/15 rounded-md font-medium flex items-center gap-1 cursor-pointer">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-slate-300"></i>
               <span>Exportar</span>
             </button>
           </div>
@@ -924,10 +927,10 @@
       const isValid = nodes.length >= 4;
       const pill = document.getElementById('mindmap-status-pill');
       if (isValid) {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-50 border-emerald-200 text-emerald-800';
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300';
         pill.innerHTML = `✓ Mapa Válido (${nodes.length} nós)`;
       } else {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-slate-100 border-slate-200 text-slate-500';
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/10 border-white/20 text-slate-300';
         pill.innerHTML = `Mínimo 4 nós (${nodes.length}/4)`;
       }
     }

@@ -24,8 +24,10 @@ import {
   ChevronRight,
   GraduationCap,
   Calendar,
-  QrCode
+  QrCode,
+  Network
 } from 'lucide-react';
+import { InteractiveMindMap } from './InteractiveMindMap';
 
 interface StudentPortalPageProps {
   onBackToHome: () => void;
@@ -76,7 +78,7 @@ export const StudentPortalPage: React.FC<StudentPortalPageProps> = ({
   const [notesSavedAlert, setNotesSavedAlert] = useState(false);
 
   // Active tab in bottom pane
-  const [activeBottomTab, setActiveBottomTab] = useState<'anotacoes' | 'materiais' | 'certificado' | 'duvidas'>('materiais');
+  const [activeBottomTab, setActiveBottomTab] = useState<'anotacoes' | 'materiais' | 'mapa_mental' | 'certificado' | 'duvidas'>('materiais');
 
   // Student info
   const [studentName, setStudentName] = useState('Silviano S.');
@@ -438,6 +440,18 @@ export const StudentPortalPage: React.FC<StudentPortalPageProps> = ({
                 </button>
 
                 <button
+                  onClick={() => setActiveBottomTab('mapa_mental')}
+                  className={`pb-2 border-b-2 transition-all cursor-pointer whitespace-nowrap flex items-center gap-2 ${
+                    activeBottomTab === 'mapa_mental'
+                      ? 'border-[#243042] text-[#243042] font-black'
+                      : 'border-transparent text-slate-500 hover:text-slate-800'
+                  }`}
+                >
+                  <Network className="w-4 h-4 text-indigo-600" />
+                  <span>🧠 Mapa Mental da Aula</span>
+                </button>
+
+                <button
                   onClick={() => setActiveBottomTab('certificado')}
                   className={`pb-2 border-b-2 transition-all cursor-pointer whitespace-nowrap flex items-center gap-2 ${
                     activeBottomTab === 'certificado'
@@ -552,6 +566,15 @@ export const StudentPortalPage: React.FC<StudentPortalPageProps> = ({
                     </div>
                   )}
                 </div>
+              )}
+
+              {/* Tab: Mapa Mental Interativo */}
+              {activeBottomTab === 'mapa_mental' && (
+                <InteractiveMindMap
+                  courseId={currentCourse.id}
+                  lessonIndex={activeLessonIndex}
+                  lessonTitle={currentCourse.syllabus[activeLessonIndex] || 'Aula Atual'}
+                />
               )}
 
               {/* Tab 3: Certificado Oficial */}
