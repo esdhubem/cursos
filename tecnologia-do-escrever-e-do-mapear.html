@@ -5,76 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESDHubem - Tecnologia do Escrever e do Mapear</title>
   <meta name="description" content="Plataforma de aprendizagem da ESDHubem para a aula Tecnologia do Escrever e do Mapear, com videoaula, mapa mental interativo e escrita reflexiva.">
-  
+
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Ícones Lucide via CDN -->
+
+  <!-- Lucide Icons via CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
+    /* Scrollbar personalizada para a lista de aulas */
+    #lessons-list-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    #lessons-list-container::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+    }
+    #lessons-list-container::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+    #lessons-list-container::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
 
-  <!-- ==================== HEADER ==================== -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-100 shadow-xs">
+  <!-- ==================== HEADER (TOM DE AZUL PROFUNDO E ELEGANTE) ==================== -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] border-b border-[#0f2c66] text-white shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3.5 gap-3">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
         <!-- Logo & Título -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-600 via-sky-700 to-indigo-800 flex items-center justify-center text-white shadow-sm shrink-0 mt-0.5">
-            <i data-lucide="sparkles" class="w-5 h-5 text-sky-100"></i>
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-yellow-500 flex items-center justify-center text-slate-950 font-black shadow-md shrink-0">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
           </div>
           <div>
-            <div class="flex items-center gap-2 text-xs font-semibold tracking-wide text-sky-800 uppercase">
+            <div class="flex items-center gap-2 text-[11px] font-semibold tracking-wider text-sky-300 uppercase">
               <span>ESDHubem</span>
-              <span class="text-slate-300">·</span>
-              <span class="text-slate-500 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
+              <span class="text-white/30">·</span>
+              <span class="text-slate-300 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
             </div>
-            <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+            <h1 class="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
               Tecnologia do Escrever e do Mapear
             </h1>
-            <div class="flex items-center gap-2 text-xs text-slate-500 mt-0.5">
+            <div class="flex items-center gap-2 text-xs text-slate-300 mt-0.5">
               <span>Módulo 3: Práticas Cognitivas</span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" class="text-white/30">·</span>
               <span>Carga: 2h de imersão e prática</span>
-              <span aria-hidden="true">·</span>
-              <span id="header-save-indicator" class="text-emerald-700 font-medium">Salvo automaticamente</span>
+              <span aria-hidden="true" class="text-white/30">·</span>
+              <span id="header-save-indicator" class="text-emerald-400 font-semibold flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Salvo automaticamente
+              </span>
             </div>
           </div>
         </div>
 
         <!-- Progresso e Atalhos -->
         <div class="flex flex-wrap items-center gap-2 sm:gap-4 justify-between md:justify-end">
-          <div class="hidden lg:flex items-center gap-3 text-xs text-slate-600 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
-            <span class="font-medium text-slate-700">Trilha:</span>
-            <a href="#video-section" class="flex items-center gap-1 hover:text-sky-700">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+          <div class="hidden lg:flex items-center gap-3 text-xs text-slate-200 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15 backdrop-blur-sm">
+            <span class="font-bold text-sky-300">Trilha:</span>
+            <a href="#video-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
               <span>1. Vídeo</span>
             </a>
-            <span class="text-slate-300">|</span>
-            <a href="#mindmap-section" class="flex items-center gap-1 hover:text-sky-700">
-              <span class="w-2 h-2 rounded-full bg-sky-500 inline-block"></span>
+            <span class="text-white/20">|</span>
+            <a href="#mindmap-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
+              <span class="w-2 h-2 rounded-full bg-sky-400 inline-block"></span>
               <span>2. Mapa Mental</span>
             </a>
-            <span class="text-slate-300">|</span>
-            <a href="#reflection-section" class="flex items-center gap-1 hover:text-sky-700">
-              <span class="w-2 h-2 rounded-full bg-indigo-500 inline-block"></span>
+            <span class="text-white/20">|</span>
+            <a href="#reflection-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
+              <span class="w-2 h-2 rounded-full bg-indigo-400 inline-block"></span>
               <span>3. Reflexão</span>
             </a>
           </div>
 
-          <a href="#submission-section" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-sky-600 hover:bg-sky-700 text-white shadow-xs transition-colors flex items-center gap-1.5">
-            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+          <a href="#submission-section" class="px-4 py-2 text-xs font-bold rounded-xl bg-[#FFC72C] hover:bg-[#F5B014] text-slate-950 shadow-md transition-transform hover:scale-105 flex items-center gap-1.5">
+            <i data-lucide="award" class="w-4 h-4"></i>
             <span>Concluir Aula</span>
           </a>
         </div>
@@ -83,56 +100,33 @@
   </header>
 
   <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
 
-    <!-- Banner de Boas-Vindas -->
-    <section class="bg-gradient-to-br from-sky-600 via-sky-700 to-indigo-800 rounded-2xl text-white p-6 sm:p-10 shadow-sm relative overflow-hidden">
-      <div class="relative z-10 max-w-3xl space-y-4">
-        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-sky-200">
-          <i data-lucide="compass" class="w-4 h-4"></i>
-          <span>ESDHubem · Desenvolvimento Humano & Cognição</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
-          A Tecnologia do Escrever e do Mapear
-        </h2>
-        <p class="text-sm sm:text-base text-sky-100 leading-relaxed font-light">
-          Escrever não é apenas documentar o que já pensamos: é a principal tecnologia de elaboração do próprio pensamento. Ao organizar palavras em mapas e frases conscientes, descarregamos a sobrecarga mental e abrimos espaço para a presença e a serenidade.
-        </p>
-        <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-sky-100">
-          <span class="flex items-center gap-1.5"><i data-lucide="heart" class="w-3.5 h-3.5 text-rose-300"></i> Autorregulação emocional</span>
-          <span>·</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="lightbulb" class="w-3.5 h-3.5 text-amber-300"></i> Pensamento estruturado em rede</span>
-          <span>·</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5 text-emerald-300"></i> Síntese ativa do aprendizado</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 1. SEÇÃO DE VÍDEO -->
+    <!-- 1. SEÇÃO DE VÍDEO COMPACTO + LATERAL DE AULAS (ESTILO MODELO) -->
     <section id="video-section" class="scroll-mt-20">
-      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden">
-        <div class="px-6 py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-sky-50/60 via-white to-indigo-50/30">
-          <div>
-            <div class="flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
-              <span>Etapa 1</span>
-              <span>·</span>
-              <span>Videoaula Teórico-Prática</span>
-            </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
-              A Arte e a Tecnologia do Escrever e do Mapear
-            </h3>
-            <p class="text-sm text-slate-600 mt-1">
-              Aprenda a orquestrar seu fluxo mental e acompanhe montando o mapa mental logo abaixo.
-            </p>
-          </div>
-          <button id="btn-toggle-watched" class="text-xs font-medium text-sky-700 hover:text-sky-900 hover:bg-sky-50 px-3 py-1.5 rounded-lg border border-sky-200 transition-colors">
-            Marcar como Assistida
-          </button>
-        </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-        <!-- Player Centralizado -->
-        <div class="p-4 sm:p-6 lg:p-8 bg-slate-950 flex flex-col items-center">
-          <div class="w-full max-w-4xl relative rounded-xl overflow-hidden shadow-2xl bg-black border border-slate-800">
+        <!-- COLUNA DA ESQUERDA: VÍDEO DE TAMANHO COMPACTO + TÍTULO DA AULA ATIVA -->
+        <div class="lg:col-span-7 xl:col-span-8 space-y-3">
+          
+          <!-- Título da Aula Atual Acima do Player (como no modelo de referência) -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-1">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span id="active-lesson-module-tag">Módulo 1 · Introdução</span>
+              </div>
+              <h2 id="active-lesson-title" class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight mt-0.5">
+                1. A Mente como Sistema Vivo e a Descarga Cognitiva
+              </h2>
+            </div>
+            <button id="btn-toggle-watched" class="text-xs font-semibold text-sky-700 hover:text-sky-900 bg-sky-50 border border-sky-200 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer shrink-0 self-start sm:self-auto">
+              Marcar como Assistida
+            </button>
+          </div>
+
+          <!-- Player de Vídeo em Tamanho Menor/Compacto -->
+          <div class="relative rounded-2xl overflow-hidden shadow-xl bg-slate-950 border border-slate-800 group">
             <video 
               id="main-video" 
               class="w-full aspect-video object-cover cursor-pointer"
@@ -150,7 +144,7 @@
 
             <!-- Botão Central Play (quando pausado) -->
             <div id="video-overlay-play" class="absolute inset-0 bg-slate-950/40 backdrop-blur-[1px] flex items-center justify-center cursor-pointer">
-              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-sky-600/90 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
+              <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-sky-600/90 hover:bg-sky-500 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
               </div>
             </div>
@@ -171,30 +165,55 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Capítulos do Vídeo -->
-        <div class="p-5 border-t border-slate-100 bg-white">
-          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-3">Capítulos & Momentos-Chave:</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs">
-            <button onclick="seekVideo(0)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
-              <span class="font-mono text-sky-700 font-bold block">00:00</span>
-              <span class="font-semibold text-slate-800">1. A Mente como Sistema Vivo</span>
+          <!-- Barra de Navegação entre Aulas (Anterior / Próxima) -->
+          <div class="flex items-center justify-between p-3 bg-white rounded-xl border border-slate-200/80 shadow-2xs text-xs">
+            <button id="btn-prev-lesson" onclick="prevLesson()" class="flex items-center gap-1.5 font-bold text-slate-600 hover:text-sky-700 disabled:opacity-40 cursor-pointer">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i> Aula Anterior
             </button>
-            <button onclick="seekVideo(15)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
-              <span class="font-mono text-sky-700 font-bold block">00:15</span>
-              <span class="font-semibold text-slate-800">2. A Ciência da Escrita Expressiva</span>
-            </button>
-            <button onclick="seekVideo(35)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
-              <span class="font-mono text-sky-700 font-bold block">00:35</span>
-              <span class="font-semibold text-slate-800">3. Redes Radiais vs. Linearidade</span>
-            </button>
-            <button onclick="seekVideo(55)" class="p-2.5 rounded-lg border border-slate-200 text-left hover:border-sky-300 hover:bg-sky-50 transition-colors">
-              <span class="font-mono text-sky-700 font-bold block">00:55</span>
-              <span class="font-semibold text-slate-800">4. Mapeamento & Síntese Prática</span>
+            <span id="lesson-counter-pill" class="text-slate-500 font-medium">Capítulo 1 de 4</span>
+            <button id="btn-next-lesson" onclick="nextLesson()" class="flex items-center gap-1.5 font-bold text-sky-700 hover:text-sky-900 cursor-pointer">
+              Próxima Aula <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </button>
           </div>
+
         </div>
+
+        <!-- COLUNA DA DIREITA: AULAS E CAPÍTULOS NA LATERAL (TOM DE AZUL COMBINANDO COM O TOPO) -->
+        <div class="lg:col-span-5 xl:col-span-4 bg-gradient-to-b from-[#031436] via-[#051c4a] to-[#031538] text-white rounded-2xl border border-[#0f2c66] shadow-xl p-4 sm:p-5 flex flex-col gap-4">
+          
+          <!-- Topo da Lateral: Título e Progresso do Curso -->
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-300 pb-2">
+              <span class="font-bold uppercase tracking-wider text-sky-300 flex items-center gap-1.5">
+                <i data-lucide="layers" class="w-4 h-4"></i> Grade de Aulas
+              </span>
+              <span id="sidebar-progress-text" class="font-mono text-emerald-400 font-bold">25% Concluído</span>
+            </div>
+            <div class="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+              <div id="sidebar-progress-bar" class="bg-gradient-to-r from-emerald-400 to-sky-400 h-full transition-all duration-300" style="width: 25%;"></div>
+            </div>
+          </div>
+
+          <!-- Campo de Busca de Aulas (como na imagem 5 de referência) -->
+          <div class="relative">
+            <input 
+              type="text" 
+              id="search-lessons-input" 
+              oninput="filterLessons(this.value)" 
+              placeholder="Buscar conteúdo..." 
+              class="w-full bg-white/10 border border-white/15 text-white placeholder-slate-400 text-xs rounded-xl pl-9 pr-3 py-2.5 outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/15 transition-all"
+            />
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+          </div>
+
+          <!-- Lista de Aulas e Capítulos Sanfonados / Clicáveis -->
+          <div id="lessons-list-container" class="space-y-2.5 max-h-[460px] overflow-y-auto pr-1">
+            <!-- Renderizado dinamicamente via JavaScript -->
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -214,7 +233,7 @@
               Mapa Mental da Aula: Escrever & Mapear
             </h3>
             <p class="text-sm text-slate-600 mt-1">
-              Construa o mapa enquanto assiste ao vídeo acima! Edite textos, adicione ramos filhos e arraste livremente.
+              Construa o mapa enquanto assiste à aula ao lado! Edite textos, adicione ramos filhos e arraste livremente.
             </p>
           </div>
           <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border">
@@ -491,10 +510,10 @@
           <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
         </div>
         <div class="flex items-center justify-end gap-2 pt-2">
-          <button onclick="downloadSummaryFile()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5">
+          <button onclick="downloadSummaryFile()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Comprovante (.txt)
           </button>
-          <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5">
+          <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir / PDF
           </button>
         </div>
@@ -504,7 +523,50 @@
 
   <!-- ==================== SCRIPT COMPLETO INTEGRADO ==================== -->
   <script>
-    // --- ESTADO INICIAL ---
+    // --- DADOS DAS AULAS E CAPÍTULOS NA LATERAL ---
+    const LESSONS_DATA = [
+      {
+        id: 'c1',
+        number: '1',
+        title: 'A Mente como Sistema Vivo e Descarga Cognitiva',
+        module: 'Módulo 1 · Introdução',
+        timeSec: 0,
+        timeLabel: '00:00',
+        duration: '15 min'
+      },
+      {
+        id: 'c2',
+        number: '2',
+        title: 'A Ciência da Escrita Expressiva & Foco',
+        module: 'Módulo 1 · Fundamentos',
+        timeSec: 15,
+        timeLabel: '00:15',
+        duration: '20 min'
+      },
+      {
+        id: 'c3',
+        number: '3',
+        title: 'Redes Radiais vs. Linearidade Mental',
+        module: 'Módulo 2 · Estruturação',
+        timeSec: 35,
+        timeLabel: '00:35',
+        duration: '25 min'
+      },
+      {
+        id: 'c4',
+        number: '4',
+        title: 'Mapeamento Ativo & Síntese Prática',
+        module: 'Módulo 2 · Aplicação',
+        timeSec: 55,
+        timeLabel: '00:55',
+        duration: '30 min'
+      }
+    ];
+
+    let currentLessonIndex = 0;
+    let completedLessonIds = JSON.parse(localStorage.getItem('esdhubem_completed_lessons') || '["c1"]');
+
+    // --- ESTADO INICIAL DO MAPA MENTAL ---
     const DEFAULT_NODES = [
       { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#0284c7', isRoot: true },
       { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#059669' },
@@ -546,6 +608,9 @@
 
     // --- INICIALIZAÇÃO ---
     function init() {
+      renderSidebarLessons();
+      updateActiveLessonUI();
+
       textarea.value = reflectiveText;
       updateTextMetrics();
 
@@ -629,7 +694,17 @@
       document.getElementById('btn-toggle-watched').addEventListener('click', () => {
         hasWatchedVideo = !hasWatchedVideo;
         localStorage.setItem('esdhubem_gh_watched', hasWatchedVideo ? 'true' : 'false');
+        
+        const activeLesson = LESSONS_DATA[currentLessonIndex];
+        if (hasWatchedVideo && !completedLessonIds.includes(activeLesson.id)) {
+          completedLessonIds.push(activeLesson.id);
+        } else if (!hasWatchedVideo) {
+          completedLessonIds = completedLessonIds.filter(id => id !== activeLesson.id);
+        }
+        localStorage.setItem('esdhubem_completed_lessons', JSON.stringify(completedLessonIds));
+        
         updateVideoBtn();
+        renderSidebarLessons();
         updateChecklist();
       });
 
@@ -650,6 +725,115 @@
       saveAndRender();
       updateVideoBtn();
       lucide.createIcons();
+    }
+
+    // --- RENDERIZAR LATERAL DE AULAS (ESTILO MODELO) ---
+    function renderSidebarLessons(filter = '') {
+      const listContainer = document.getElementById('lessons-list-container');
+      const filtered = LESSONS_DATA.filter(l => 
+        l.title.toLowerCase().includes(filter.toLowerCase()) || 
+        l.module.toLowerCase().includes(filter.toLowerCase())
+      );
+
+      const percent = Math.round((completedLessonIds.length / LESSONS_DATA.length) * 100);
+      document.getElementById('sidebar-progress-text').innerText = `${percent}% Concluído`;
+      document.getElementById('sidebar-progress-bar').style.width = `${percent}%`;
+
+      if (filtered.length === 0) {
+        listContainer.innerHTML = `
+          <div class="text-center py-8 text-xs text-slate-400">
+            Nenhuma aula encontrada para "${filter}".
+          </div>
+        `;
+        return;
+      }
+
+      listContainer.innerHTML = filtered.map((lesson) => {
+        const isCurrent = LESSONS_DATA[currentLessonIndex].id === lesson.id;
+        const isCompleted = completedLessonIds.includes(lesson.id);
+
+        return `
+          <div 
+            onclick="selectLessonById('${lesson.id}')"
+            class="p-3 rounded-xl transition-all cursor-pointer border ${
+              isCurrent 
+                ? 'bg-sky-500/25 border-sky-400 text-white shadow-md ring-1 ring-sky-400/50' 
+                : 'bg-white/5 hover:bg-white/10 border-white/10 text-slate-200'
+            }"
+          >
+            <div class="flex items-center gap-3">
+              <!-- Círculo com Número -->
+              <div class="w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 ${
+                isCompleted 
+                  ? 'bg-emerald-500 text-slate-950 font-black' 
+                  : (isCurrent ? 'bg-sky-400 text-slate-950 font-black' : 'bg-white/10 text-slate-300')
+              }">
+                ${isCompleted ? '✓' : lesson.number}
+              </div>
+
+              <!-- Título & Módulo -->
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-0.5">
+                  <span class="truncate">${lesson.module}</span>
+                  <span class="font-mono text-sky-300 ml-1 shrink-0 font-semibold">${lesson.timeLabel}</span>
+                </div>
+                <h4 class="text-xs font-bold leading-snug truncate ${isCurrent ? 'text-white' : 'text-slate-100'}">
+                  ${lesson.title}
+                </h4>
+              </div>
+            </div>
+
+            <!-- Mini barra de conclusão na aula -->
+            <div class="mt-2.5 w-full bg-white/10 rounded-full h-1 overflow-hidden">
+              <div class="h-full ${isCompleted ? 'bg-emerald-400 w-full' : (isCurrent ? 'bg-sky-400 w-1/2' : 'w-0')}"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    function selectLessonById(id) {
+      const idx = LESSONS_DATA.findIndex(l => l.id === id);
+      if (idx !== -1) {
+        currentLessonIndex = idx;
+        updateActiveLessonUI();
+        seekVideo(LESSONS_DATA[idx].timeSec);
+        renderSidebarLessons();
+      }
+    }
+
+    function updateActiveLessonUI() {
+      const lesson = LESSONS_DATA[currentLessonIndex];
+      document.getElementById('active-lesson-module-tag').innerText = lesson.module;
+      document.getElementById('active-lesson-title').innerText = `${lesson.number}. ${lesson.title}`;
+      document.getElementById('lesson-counter-pill').innerText = `Capítulo ${currentLessonIndex + 1} de ${LESSONS_DATA.length}`;
+
+      document.getElementById('btn-prev-lesson').disabled = currentLessonIndex === 0;
+      document.getElementById('btn-next-lesson').disabled = currentLessonIndex === LESSONS_DATA.length - 1;
+    }
+
+    function prevLesson() {
+      if (currentLessonIndex > 0) {
+        currentLessonIndex--;
+        updateActiveLessonUI();
+        seekVideo(LESSONS_DATA[currentLessonIndex].timeSec);
+        renderSidebarLessons();
+      }
+    }
+
+    function nextLesson() {
+      if (currentLessonIndex < LESSONS_DATA.length - 1) {
+        currentLessonIndex++;
+        updateActiveLessonUI();
+        seekVideo(LESSONS_DATA[currentLessonIndex].timeSec);
+        renderSidebarLessons();
+      }
+    }
+
+    function filterLessons(term) {
+      renderSidebarLessons(term);
     }
 
     // --- RENDERIZAR MAPA MENTAL ---
@@ -958,10 +1142,10 @@
     function updateVideoBtn() {
       const btn = document.getElementById('btn-toggle-watched');
       if (hasWatchedVideo) {
-        btn.className = 'text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg';
+        btn.className = 'text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-lg';
         btn.innerText = '✓ Videoaula Concluída';
       } else {
-        btn.className = 'text-xs font-medium text-sky-700 hover:text-sky-900 hover:bg-sky-50 px-3 py-1.5 rounded-lg border border-sky-200 transition-colors';
+        btn.className = 'text-xs font-semibold text-sky-700 hover:text-sky-900 bg-sky-50 border border-sky-200 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer';
         btn.innerText = 'Marcar como Assistida';
       }
     }
