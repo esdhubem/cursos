@@ -31171,9 +31171,9 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: [
 													"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
-													" do curso ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-													" um artigo autoral aprofundado para publicação no Blog Oficial da ESDHUBEM, com ",
+													" do curso, mas aqui o texto é maior e se trata de um artigo autoral aprofundado para publicação no ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Blog Oficial da ESDHUBEM" }),
+													", com ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
 													" para gerar autoridade e indexação no Google (SEO)."
 												]
