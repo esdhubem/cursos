@@ -2902,12 +2902,12 @@
     background-color: oklab(30.6644% -.00741088 -.0358329 / .9);
   }
 
-  .bg-\[\#F8FAFC\] {
-    background-color: #f8fafc;
+  .bg-\[\#E9F2FB\] {
+    background-color: #e9f2fb;
   }
 
-  .bg-\[\#FBFBFC\] {
-    background-color: #fbfbfc;
+  .bg-\[\#F8FAFC\] {
+    background-color: #f8fafc;
   }
 
   .bg-\[\#FDFDFD\] {
@@ -4017,6 +4017,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-white\/20 {
       background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+
+  .bg-white\/80 {
+    background-color: #fffc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-white\/80 {
+      background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
     }
   }
 
@@ -7196,6 +7206,10 @@
     .hover\:to-amber-300:hover {
       --tw-gradient-to: var(--color-amber-300);
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+
+    .hover\:text-\[\#011049\]:hover {
+      color: #011049;
     }
 
     .hover\:text-\[\#182333\]:hover {

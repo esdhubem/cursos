@@ -18908,7 +18908,7 @@ var COURSE_LEVELS = [
 	}
 ];
 var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator, onOpenCertificatePreview, onNavigate, onSelectCourse }) => {
-	const [activeTab, setActiveTab] = (0, import_react.useState)("quadro");
+	const [activeTab, setActiveTab] = (0, import_react.useState)("sobre");
 	const [expandedModules, setExpandedModules] = (0, import_react.useState)([0, 1]);
 	const [copied, setCopied] = (0, import_react.useState)(false);
 	const [enrollmentMode, setEnrollmentMode] = (0, import_react.useState)("nivel");
@@ -18954,14 +18954,14 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 	];
 	const targetAudienceText = course?.targetAudience || "";
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "bg-[#F8FAFC] min-h-screen py-8 pb-20",
+		className: "bg-[#E9F2FB] min-h-screen py-8 pb-20",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "flex items-center justify-between mb-6",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 					onClick: onBackToHome,
-					className: "inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#182333] transition py-2 px-3 rounded-lg hover:bg-white border border-transparent hover:border-slate-200 cursor-pointer",
+					className: "inline-flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-[#011049] transition py-2 px-3.5 rounded-xl bg-white/80 hover:bg-white border border-blue-100 shadow-2xs cursor-pointer",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Voltar ao Início" })]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "flex items-center gap-2",
