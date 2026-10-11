@@ -19038,7 +19038,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "bg-white rounded-xl border border-slate-200 p-1.5 shadow-sm flex flex-wrap gap-1",
+							className: "bg-gradient-to-r from-[#0d4494] via-[#0a3576] to-[#072458] rounded-2xl border border-cyan-400/30 p-2 shadow-lg flex flex-wrap gap-1.5",
 							children: [
 								{
 									id: "sobre",
@@ -19086,7 +19086,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 								const isActive = activeTab === tab.id;
 								return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 									onClick: () => setActiveTab(tab.id),
-									className: `flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold transition cursor-pointer ${isActive ? "bg-[#182333] text-[#FFC72C] shadow-sm" : tab.highlight ? "text-amber-800 bg-amber-50 hover:bg-amber-100" : "text-slate-600 hover:text-[#182333] hover:bg-slate-100"}`,
+									className: `flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${isActive ? "bg-[#FFC72C] text-[#072458] shadow-md ring-2 ring-[#FFC72C]/40" : tab.highlight ? "text-amber-300 bg-amber-400/15 border border-amber-300/30 hover:bg-amber-400/25" : "text-blue-100 hover:text-white hover:bg-white/10"}`,
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "w-3.5 h-3.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: tab.label })]
 								}, tab.id);
 							})
