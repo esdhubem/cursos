@@ -30919,7 +30919,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-												children: "Comunicação da modalidade"
+												children: "Comunicação da modalidade de manuscrito"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[#FFC72C] font-bold text-base",
@@ -30927,7 +30927,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-												children: "Produção do trabalho"
+												children: "Pagamento da taxa do nível específico"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[#FFC72C] font-bold text-base",
@@ -30935,7 +30935,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-												children: "Registro de autoria (OSF / Zenodo / BN)"
+												children: "Produção do manuscrito"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[#FFC72C] font-bold text-base",
@@ -30943,7 +30943,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-												children: "Análise & Curadoria pedagógica"
+												children: "Envio para análise"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[#FFC72C] font-bold text-base",
@@ -30951,15 +30951,23 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-												children: "Publicação (Wiki / Blog / Repositório / Mural)"
+												children: "Devolutiva da escola"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[#FFC72C] font-bold text-base",
 												children: "→"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "bg-[#FFC72C] text-slate-950 font-black px-3 py-1.5 rounded-xl shadow-md border border-amber-300",
-												children: "Emissão do certificado de autoria"
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Aprovação de ambas as partes"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-[#FFC72C] text-slate-950 font-black px-3.5 py-1.5 rounded-xl shadow-md border border-amber-300",
+												children: "Emissão do certificado e publicação do trabalho"
 											})
 										]
 									})]
