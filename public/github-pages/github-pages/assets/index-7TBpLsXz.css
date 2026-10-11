@@ -6059,16 +6059,6 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
-  .shadow-\[\#011049\]\/40 {
-    --tw-shadow-color: #01104966;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .shadow-\[\#011049\]\/40 {
-      --tw-shadow-color: color-mix(in oklab, oklab(21.2637% -.0115839 -.106784 / .4) var(--tw-shadow-alpha), transparent);
-    }
-  }
-
   .shadow-\[\#182333\]\/20 {
     --tw-shadow-color: #18233333;
   }
@@ -7158,10 +7148,6 @@
       color: var(--color-blue-800);
     }
 
-    .hover\:text-cyan-200:hover {
-      color: var(--color-cyan-200);
-    }
-
     .hover\:text-cyan-300:hover {
       color: var(--color-cyan-300);
     }
@@ -7262,16 +7248,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-amber-500\/50:hover {
         --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-amber-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
-      }
-    }
-
-    .hover\:shadow-cyan-400\/20:hover {
-      --tw-shadow-color: #00d2ef33;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-cyan-400\/20:hover {
-        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-cyan-400) 20%, transparent) var(--tw-shadow-alpha), transparent);
       }
     }
 

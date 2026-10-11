@@ -15292,39 +15292,15 @@ var MindMapCoursePromoBanner = ({ onSelectCourse, onNavigatePedagogy, onNavigate
 											})
 										]
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "flex flex-wrap items-center gap-3 pt-2",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: odyseeWatchUrl,
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 active:scale-95 text-slate-950 font-black text-sm tracking-wide shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all cursor-pointer hover:-translate-y-0.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-4 h-4 fill-current text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assistir Aulas Grátis" })]
-											}),
-											onSelectCourse && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-												type: "button",
-												onClick: onSelectCourse,
-												className: "inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white font-bold text-sm border border-white/20 hover:border-cyan-400/50 transition-all cursor-pointer",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-cyan-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ver Grade do Curso" })]
-											}),
-											onNavigatePedagogy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-												type: "button",
-												onClick: onNavigatePedagogy,
-												className: "inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-full text-slate-300 hover:text-cyan-200 text-xs sm:text-sm font-semibold hover:underline cursor-pointer",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Entenda a Metodologia" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "w-3.5 h-3.5" })]
-											}),
-											onNavigateModalities && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-												type: "button",
-												onClick: onNavigateModalities,
-												className: "inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#011049] hover:bg-[#061e47] active:scale-95 text-[#FFC72C] font-black text-xs sm:text-sm border border-cyan-400/40 shadow-lg shadow-[#011049]/40 hover:shadow-cyan-400/20 hover:scale-105 transition-all cursor-pointer",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ClipboardList, { className: "w-4 h-4 text-[#FFC72C]" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ver Guia das Modalidades" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "w-4 h-4" })
-												]
-											})
-										]
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: odyseeWatchUrl,
+											target: "_blank",
+											rel: "noopener noreferrer",
+											className: "inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 active:scale-95 text-slate-950 font-black text-sm tracking-wide shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all cursor-pointer hover:-translate-y-0.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-4 h-4 fill-current text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Comece já o curso" })]
+										})
 									})
 								]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
