@@ -22090,87 +22090,39 @@ var CategoryDetailPage = ({ categorySlug = "desenvolvimento-nas-empresas", onBac
 								})
 							]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-5 flex-1 flex flex-col justify-between space-y-4",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-2",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "text-[10px] font-bold text-slate-600 uppercase tracking-wider",
-											children: course.category
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-											onClick: () => {
-												onSelectCourse(course);
-												onNavigateToCourseDetail();
-											},
-											className: "text-base font-bold text-slate-900 leading-snug group-hover:text-[#243042] transition-colors line-clamp-2 cursor-pointer",
-											children: course.title
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs text-slate-600 line-clamp-2 leading-relaxed",
-											children: course.subtitle
-										})
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-50 rounded-xl p-3 text-[11px] text-slate-600 space-y-1.5 border border-slate-100",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "font-bold text-slate-800 block text-[10px] uppercase tracking-wider",
-											children: "Tópicos Principais do Curso:"
-										}),
-										course.syllabus.slice(0, 2).map((item, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-start gap-1.5 text-slate-600",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-3 h-3 text-emerald-600 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "truncate",
-												children: item
-											})]
-										}, idx)),
-										course.syllabus.length > 2 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											className: "text-[10px] text-slate-600 italic block",
-											children: [
-												"+ ",
-												course.syllabus.length - 2,
-												" outros tópicos no plano de aula"
-											]
-										})
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "pt-2 border-t border-slate-100 flex flex-col gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center justify-between text-xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px]",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "hidden sm:inline",
-												children: course.category === "Horas Complementares" ? "Horas Complementares*" : "Certificado Livre"
-											})
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "font-bold text-[#243042]",
-											children: course.pillar === "freepremium" ? "Acesso Grátis" : course.priceValue ? `R$ ${course.priceValue.toFixed(2).replace(".", ",")}` : "Incluso"
-										})]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "grid grid-cols-2 gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											onClick: () => {
-												onSelectCourse(course);
-												onNavigateToCourseDetail();
-											},
-											className: "w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-2 rounded-xl transition-colors text-center cursor-pointer",
-											children: "Ver Detalhes"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-											onClick: () => {
-												onSelectCourse(course);
-												onNavigateToCourseDetail();
-											},
-											className: "w-full bg-[#243042] hover:bg-[#182333] text-white text-xs font-bold py-2 rounded-xl transition-all text-center flex items-center justify-center gap-1 cursor-pointer shadow-xs",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Página do Curso" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3.5 h-3.5" })]
-										})]
-									})]
+							className: "pt-6 px-4 pb-5 flex-1 flex flex-col justify-between items-center text-center space-y-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "w-full space-y-2",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-[10px] font-bold text-blue-700 uppercase tracking-wider",
+										children: course.category
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+										onClick: () => {
+											onSelectCourse(course);
+											onNavigateToCourseDetail();
+										},
+										className: "text-base font-extrabold text-slate-900 leading-snug group-hover:text-emerald-700 transition-colors line-clamp-2 min-h-[44px] flex items-center justify-center cursor-pointer",
+										children: course.title
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs text-slate-600 line-clamp-3 leading-relaxed",
+										children: course.subtitle
+									})
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "pt-2 w-full flex justify-center",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									type: "button",
+									onClick: () => {
+										onSelectCourse(course);
+										onNavigateToCourseDetail();
+									},
+									className: "inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs tracking-wide shadow-[0_10px_20px_-3px_rgba(5,150,105,0.45)] hover:shadow-[0_16px_28px_-3px_rgba(5,150,105,0.6)] border border-emerald-400/60 transition-all duration-300 cursor-pointer -translate-y-0.5 hover:-translate-y-1.5 active:translate-y-0 w-full max-w-[200px]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-3.5 h-3.5 text-emerald-100" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Página do Curso" })]
 								})
-							]
+							})]
 						})]
 					}, course.id))
 				})]
