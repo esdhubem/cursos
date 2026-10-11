@@ -31312,11 +31312,13 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-slate-700 text-sm leading-relaxed",
 												children: [
-													"O Ouro é destinado ao estudante que entrega a ",
+													"O nível Ouro é destinado ao estudante que entrega a ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
-													" do curso ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-													" um Manuscrito de Conclusão de Curso estruturado ou artigo de investigação científica com registro DOI."
+													" do curso, mas o texto será um ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Conclusão de Curso" }),
+													" estruturado ou artigo de investigação científica com registro ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
+													"."
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
