@@ -2568,6 +2568,10 @@
     }
   }
 
+  .border-rose-300 {
+    border-color: var(--color-rose-300);
+  }
+
   .border-sky-200 {
     border-color: var(--color-sky-200);
   }
@@ -3130,6 +3134,16 @@
     background-color: var(--color-blue-50);
   }
 
+  .bg-blue-50\/40 {
+    background-color: #eff6ff66;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-blue-50\/40 {
+      background-color: color-mix(in oklab, var(--color-blue-50) 40%, transparent);
+    }
+  }
+
   .bg-blue-50\/50 {
     background-color: #eff6ff80;
   }
@@ -3360,6 +3374,16 @@
 
   .bg-emerald-50 {
     background-color: var(--color-emerald-50);
+  }
+
+  .bg-emerald-50\/30 {
+    background-color: #ecfdf54d;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-emerald-50\/30 {
+      background-color: color-mix(in oklab, var(--color-emerald-50) 30%, transparent);
+    }
   }
 
   .bg-emerald-50\/40 {
