@@ -15406,118 +15406,121 @@ var cat_bemestar_tech_default = new URL("cat_bemestar_tech-Y7Tav0iK.jpg", import
 //#region src/components/WelcomeVideoSection.tsx
 var WelcomeVideoSection = () => {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		className: "py-10 sm:py-14 bg-gradient-to-b from-[#e8f2fc] via-white to-white border-b border-slate-200",
+		className: "py-8 sm:py-10 bg-gradient-to-b from-[#e8f2fc] via-white to-white border-b border-slate-200",
 		id: "apresentacao-esdhubem",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8",
+			className: "max-w-4xl mx-auto px-4 sm:px-6",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "text-center max-w-3xl mx-auto mb-8 sm:mb-10",
+					className: "text-center max-w-2xl mx-auto mb-5 sm:mb-6",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-blue-900 text-xs sm:text-sm font-extrabold tracking-wide uppercase shadow-2xs mb-3",
+							className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 border border-blue-200 text-blue-900 text-xs font-extrabold tracking-wide uppercase shadow-2xs mb-2",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-700 animate-pulse" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo de Boas-Vindas & Apresentação" })]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-							className: "text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight leading-tight",
+							className: "text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight leading-tight",
 							children: ["Conheça a Proposta da ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-[#011049]",
 								children: "ESDHUBEM"
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-2 text-sm sm:text-base text-slate-600 leading-relaxed",
+							className: "mt-1.5 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto",
 							children: "Um vídeo breve para você ficar por dentro da nossa escola, entender o método de ensino em mapas mentais e descobrir como potencializar seu aprendizado."
 						})
 					]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "relative rounded-3xl overflow-hidden bg-slate-950 border border-slate-300/80 shadow-2xl shadow-blue-950/15",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "px-4 py-3 bg-[#011049] border-b border-white/10 flex items-center justify-between",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-2",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2.5 h-2.5 rounded-full bg-rose-500" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2.5 h-2.5 rounded-full bg-amber-500" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2.5 h-2.5 rounded-full bg-emerald-500" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs font-bold text-white ml-2 truncate",
-										children: "Apresentação Oficial • Bem-vindo à ESDHUBEM"
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "max-w-2xl mx-auto",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-300/80 shadow-xl shadow-blue-950/15",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "px-3.5 py-2 bg-[#011049] border-b border-white/10 flex items-center justify-between",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-1.5",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2 h-2 rounded-full bg-rose-500" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2 h-2 rounded-full bg-amber-500" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-2 h-2 rounded-full bg-emerald-500" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[11px] sm:text-xs font-bold text-white ml-1.5 truncate",
+											children: "Apresentação Oficial • Bem-vindo à ESDHUBEM"
+										})
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "flex items-center gap-1.5",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[10px] font-black text-emerald-300 bg-emerald-950/80 border border-emerald-500/40 px-2 py-0.5 rounded-full flex items-center gap-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tv, { className: "w-2.5 h-2.5 text-emerald-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo Oficial" })]
 									})
-								]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "flex items-center gap-2",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-									className: "text-[11px] font-black text-emerald-300 bg-emerald-950/80 border border-emerald-500/40 px-2.5 py-0.5 rounded-full flex items-center gap-1",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tv, { className: "w-3 h-3 text-emerald-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo Oficial" })]
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "relative w-full aspect-video bg-black",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+									id: "welcome-odysee-iframe",
+									title: "Bem-vindo à ESDHUBEM - Apresentação da Escola",
+									style: {
+										width: "100%",
+										height: "100%",
+										border: "none"
+									},
+									src: "https://odysee.com/$/embed/@esdhubem:a/Bem-vindo-a-ESDHUBEM:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+									allowFullScreen: true
 								})
-							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "relative w-full aspect-video bg-black",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-								id: "welcome-odysee-iframe",
-								title: "Bem-vindo à ESDHUBEM - Apresentação da Escola",
-								style: {
-									width: "100%",
-									height: "100%",
-									border: "none"
-								},
-								src: "https://odysee.com/$/embed/@esdhubem:a/Bem-vindo-a-ESDHUBEM:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-								allowFullScreen: true
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "px-4 py-2 bg-[#011049] border-t border-white/10 flex items-center justify-center text-center",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "inline-flex items-center gap-2 text-white font-black text-xs sm:text-sm tracking-wide",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-3.5 h-3.5 text-[#FFC72C] fill-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assista o vídeo" })]
+								})
 							})
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "px-5 py-3.5 bg-[#011049] border-t border-white/10 flex items-center justify-center text-center",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "inline-flex items-center gap-2.5 text-white font-black text-sm sm:text-base tracking-wide",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-4 h-4 text-[#FFC72C] fill-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assista o vídeo" })]
-							})
-						})
-					]
+						]
+					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6",
+					className: "grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-5 max-w-2xl mx-auto",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-4 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-3",
+							className: "p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs flex items-start gap-2.5",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-700 shrink-0",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrainCircuit, { className: "w-5 h-5" })
+								className: "w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-700 shrink-0",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrainCircuit, { className: "w-4 h-4" })
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-								className: "text-xs font-black uppercase text-slate-800 tracking-wider",
+								className: "text-[11px] font-black uppercase text-slate-800 tracking-wider",
 								children: "Método Visual"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs text-slate-600 mt-0.5 leading-snug",
-								children: "Mapas mentais que aceleram a fixação e o entendimento profundo."
+								className: "text-[11px] text-slate-600 mt-0.5 leading-snug",
+								children: "Mapas mentais que aceleram a fixação e o entendimento."
 							})] })]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-4 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-3",
+							className: "p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs flex items-start gap-2.5",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-5 h-5" })
+								className: "w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4" })
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-								className: "text-xs font-black uppercase text-slate-800 tracking-wider",
+								className: "text-[11px] font-black uppercase text-slate-800 tracking-wider",
 								children: "Certificação Válida"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs text-slate-600 mt-0.5 leading-snug",
-								children: "Cursos livres com amparo legal para currículo e horas complementares."
+								className: "text-[11px] text-slate-600 mt-0.5 leading-snug",
+								children: "Cursos livres com amparo legal para currículo e horas."
 							})] })]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-4 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex items-start gap-3",
+							className: "p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs flex items-start gap-2.5",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 shrink-0",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-5 h-5" })
+								className: "w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 shrink-0",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4" })
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-								className: "text-xs font-black uppercase text-slate-800 tracking-wider",
+								className: "text-[11px] font-black uppercase text-slate-800 tracking-wider",
 								children: "Estude no seu Tempo"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs text-slate-600 mt-0.5 leading-snug",
-								children: "Acesso flexível em qualquer dispositivo, sem travas ou prazos rígidos."
+								className: "text-[11px] text-slate-600 mt-0.5 leading-snug",
+								children: "Acesso flexível em qualquer dispositivo, sem prazos rígidos."
 							})] })]
 						})
 					]

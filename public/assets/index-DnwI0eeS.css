@@ -978,6 +978,10 @@
     margin-left: var(--spacing);
   }
 
+  .ml-1\.5 {
+    margin-left: calc(var(--spacing) * 1.5);
+  }
+
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -7415,8 +7419,8 @@
       grid-column: span 2 / span 2;
     }
 
-    .sm\:mb-10 {
-      margin-bottom: calc(var(--spacing) * 10);
+    .sm\:mb-6 {
+      margin-bottom: calc(var(--spacing) * 6);
     }
 
     .sm\:block {
@@ -7647,6 +7651,10 @@
       padding-block: calc(var(--spacing) * 8);
     }
 
+    .sm\:py-10 {
+      padding-block: calc(var(--spacing) * 10);
+    }
+
     .sm\:py-12 {
       padding-block: calc(var(--spacing) * 12);
     }
@@ -7717,6 +7725,11 @@
     .sm\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+
+    .sm\:text-xs {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
     }
 
     .sm\:text-\[10px\] {
