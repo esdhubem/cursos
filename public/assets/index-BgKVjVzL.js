@@ -31151,7 +31151,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															children: "📝"
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
 															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
-															children: "Orientações para Produção do Artigo / Manuscrito"
+															children: "Orientações para Produção do Artigo"
 														})]
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
