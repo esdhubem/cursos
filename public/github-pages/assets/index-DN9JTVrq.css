@@ -2872,6 +2872,10 @@
     background-color: #061c44;
   }
 
+  .bg-\[\#00227B\] {
+    background-color: #00227b;
+  }
+
   .bg-\[\#011049\] {
     background-color: #011049;
   }
@@ -4243,6 +4247,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-blue-50 {
+    --tw-gradient-from: var(--color-blue-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .from-blue-50\/50 {
     --tw-gradient-from: #eff6ff80;
   }
@@ -4701,6 +4710,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+  .via-sky-50 {
+    --tw-gradient-via: var(--color-sky-50);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
   .via-slate-50\/80 {
     --tw-gradient-via: #f8fafccc;
   }
@@ -4899,6 +4914,11 @@
 
   .to-emerald-700 {
     --tw-gradient-to: var(--color-emerald-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-indigo-50 {
+    --tw-gradient-to: var(--color-indigo-50);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -5569,6 +5589,10 @@
 
   .text-\[\#1DB954\] {
     color: #1db954;
+  }
+
+  .text-\[\#00227B\] {
+    color: #00227b;
   }
 
   .text-\[\#011049\] {
@@ -6880,6 +6904,10 @@
 
     .hover\:border-violet-300:hover {
       border-color: var(--color-violet-300);
+    }
+
+    .hover\:bg-\[\#001b63\]:hover {
+      background-color: #001b63;
     }
 
     .hover\:bg-\[\#1DB954\]\/30:hover {

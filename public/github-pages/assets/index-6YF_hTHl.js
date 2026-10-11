@@ -30942,6 +30942,60 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-3 pb-8 border-b border-slate-200",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center justify-between gap-3 flex-wrap",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-cyan-400/30",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-sm",
+											children: "🎬"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 2: Níveis e Plataforma OSF" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+										href: "https://odysee.com/@esdhubem:a/diretriz-de-publicacao-2:f",
+										target: "_blank",
+										rel: "noopener noreferrer",
+										className: "text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assistir no Odysee" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+										id: "odysee-iframe-parte-2",
+										className: "w-full h-full border-0 absolute inset-0",
+										src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-de-publicacao-2:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+										allowFullScreen: true,
+										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 2: Os Quatro Percursos e OSF)",
+										loading: "lazy"
+									})
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "flex items-center gap-2",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+												className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Plataforma Oficial OSF (Open Science Framework)"]
+											})
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+										href: "https://osf.io/",
+										target: "_blank",
+										rel: "noopener noreferrer",
+										className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+									})]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-8",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "text-center space-y-1",
