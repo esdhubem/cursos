@@ -28004,7 +28004,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Prata: Produção de Conteúdo"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-slate-600 font-semibold",
-													children: "Artigo de Blog & Autoridade Profissional"
+													children: "Tríade de Fixação + Artigo de Blog (1.200 a 2.500 palavras)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28022,32 +28022,33 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
-														"O aluno desenvolve um artigo de blog aprofundado e estratégico de ",
+														"O estudante entrega a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														" do curso ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+														" um artigo de blog aprofundado e estratégico de ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
-														" — extensão de referência para construir autoridade temática sólida, manter alta retenção de leitura e ranquear com destaque nas primeiras posições de busca orgânica do ",
+														" — extensão de referência para construir autoridade temática sólida, manter alta retenção de leitura e ranquear com destaque nas primeiras posições do ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Google (SEO)" }),
-														". O artigo é publicado no Blog Oficial e Wiki da ESDHUBEM com autoria e perfil do estudante."
+														". Publicado no Blog Oficial e Wiki da ESDHUBEM com perfil de autor."
 													]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "space-y-2.5 pt-2 border-t border-slate-200",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 														className: "block text-sm font-bold text-slate-900 uppercase tracking-wide",
-														children: "📌 Requisitos & Benefícios de Autoridade:"
+														children: "📌 Requisitos & Entregáveis Obrigatórios:"
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																"Elaboração de um artigo de ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Autoral de Blog:" }),
+																" Redação aprofundada de ",
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
-																" com estrutura escaneável (subtítulos H2/H3, estudo de caso ou aplicação prática) e boas práticas de SEO."
+																" estruturada para SEO (títulos H2/H3, estudo prático e referências)."
 															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																"Comprovante de registro de autoria prévio no ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF (Open Science Framework)" }),
-																"."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Benefício de Portfólio:" }), " Página pública indexável no Google com link de autor, biografia e selo digital para impulsionar o currículo Lattes, LinkedIn e autoridade profissional."] })
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Comprovante de Registro no OSF:" }), " Registro de autoria no Open Science Framework garantindo anterioridade e titularidade."] })
 														]
 													})]
 												}),
@@ -28093,7 +28094,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Ouro: Pesquisa & Preprint"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-amber-700 font-semibold",
-													children: "DOI Criptográfico & Publicação Científica"
+													children: "Tríade de Fixação + Manuscrito Científico / DOI"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28111,26 +28112,26 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
-														"Destinado a trabalhos acadêmicos densos. Aqui entram os Trabalhos de Conclusão de Curso (TCCs) estruturados ou artigos científicos submetidos a plataformas de repositório aberto como Zenodo (CERN) ou OSF, garantindo um registro ",
+														"O estudante entrega a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														" do curso ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+														" um Trabalho de Conclusão de Curso (TCC) estruturado ou artigo científico de investigação densa, com depósito em plataforma de repositório aberto como Zenodo (CERN) ou OSF, garantindo um código ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI (Digital Object Identifier)" }),
-														" universal e persistente."
+														" universal."
 													]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "space-y-2.5 pt-2 border-t border-amber-200",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 														className: "block text-sm font-bold text-amber-950 uppercase tracking-wide",
-														children: "📌 Requisitos & Registro DOI:"
+														children: "📌 Requisitos & Entregáveis Obrigatórios:"
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																"Envio de TCC estruturado com ementa acadêmica ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OU" }),
-																" artigo de investigação com metodologia."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Depósito e indexação com atribuição de código DOI no repositório Zenodo / OSF." }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro DOI:" }), " Atribuição de um código DOI permanente para citação direta no Currículo Lattes."] })
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Pesquisa / TCC:" }), " Produção estruturada com ementa acadêmica, introdução, fundamentação teórica e metodologia."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Depósito e Atribuição de DOI:" }), " Depósito no repositório Zenodo / OSF gerando DOI permanente para citação no Currículo Lattes."] })
 														]
 													})]
 												}),
@@ -28176,7 +28177,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Diamante: Autorar e Construir"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-cyan-700 font-semibold",
-													children: "Livro Autoral & Registro de Direitos Autorais"
+													children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28191,22 +28192,28 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "p-5 sm:p-6 rounded-2xl bg-cyan-50/70 border border-cyan-200 text-sm space-y-4 text-slate-800",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
-													children: "O nível mais elevado da escala autoral. Destinado ao estudante que deseja transformar seu conhecimento, experiência, estudo ou investigação em uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo), com orientação estrutural e registro formal de direitos autorais."
+													children: [
+														"O nível mais elevado da escala autoral. O estudante entrega a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														" do curso ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+														" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido), com orientação estrutural e registro formal de direitos autorais."
+													]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "space-y-2.5 pt-2 border-t border-cyan-200",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 														className: "block text-sm font-bold text-cyan-950 uppercase tracking-wide",
-														children: "📌 Requisitos & Destaque Especial:"
+														children: "📌 Requisitos & Entregáveis Obrigatórios:"
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Produção de livro autoral com mínimo de 50 páginas de conteúdo desenvolvido e estruturado." }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Orientação e preparação editorial da obra para autopublicação ou registro." }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro de Direitos Autorais:" }), " Registro formal da obra na Fundação Biblioteca Nacional (EDA/FBN) e no OSF amparado pela Lei nº 9.610/1998."] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Chancela Diamante:" }), " Impressão de honraria máxima no certificado do aluno com QR Code de validação e destaque no Mural de Livros da ESDHUBEM."] })
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Livro Autoral Completo:" }), " Mínimo de 50 páginas de conteúdo textual desenvolvido (sem contar elementos pré e pós-textuais)."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro de Direitos Autorais:" }), " Registro formal da obra na Fundação Biblioteca Nacional (EDA/FBN) e no OSF (Lei nº 9.610/1998)."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Chancela Diamante:" }), " Destaque no Mural de Livros da ESDHUBEM e QR Code de validação no certificado."] })
 														]
 													})]
 												}),
@@ -31116,7 +31123,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-slate-700 text-sm leading-relaxed",
 												children: [
-													"O Prata é destinado ao estudante que deseja transformar o conhecimento desenvolvido no curso em um artigo autoral aprofundado para publicação no Blog Oficial e Wiki da ESDHUBEM, com ",
+													"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" um artigo autoral aprofundado para publicação no Blog Oficial e Wiki da ESDHUBEM, com ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
 													" para gerar autoridade e indexação no Google (SEO)."
 												]
@@ -31180,9 +31191,15 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													children: "Manuscrito de Conclusão de Curso + Zenodo + DOI"
 												})] })]
 											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-slate-700 text-sm leading-relaxed",
-												children: "O Ouro é destinado ao estudante que deseja aprofundar o conhecimento desenvolvido no curso por meio de um Manuscrito de Conclusão de Curso."
+												children: [
+													"O Ouro é destinado ao estudante que entrega a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" um Manuscrito de Conclusão de Curso estruturado ou artigo de investigação científica com registro DOI."
+												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 												className: "text-slate-700 text-sm leading-relaxed",
@@ -31245,7 +31262,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													children: "DIAMANTE — AUTORAR E CONSTRUIR"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-xs font-bold text-cyan-800",
-													children: "Livro Autoral + Registro de Direitos Autorais na Biblioteca Nacional"
+													children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
 												})] })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -31253,7 +31270,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: [
 													"O nível ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
-													" é destinado ao participante que deseja transformar conhecimento, experiência, estudo ou investigação em uma obra autoral de maior extensão."
+													" é destinado ao participante que entrega a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido)."
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31821,11 +31842,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
-															children: "Elabora artigo de blog e submete com registro no OSF"
+															children: "Entrega a Tríade de Fixação + Artigo de blog (1.200 a 2.500 palavras) no OSF"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 font-medium text-slate-900",
-															children: "Artigo aprofundado (1.200 a 2.500 palavras, SEO e autoridade) + Registro OSF"
+															children: "Tríade de Fixação Ativa + Artigo de Blog & Wiki (SEO) + Registro OSF"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
@@ -31846,15 +31867,15 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
-															children: "Produz manuscrito/TCC estruturado e realiza depósito no Zenodo"
+															children: "Entrega a Tríade de Fixação + Manuscrito/TCC estruturado no Zenodo com DOI"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 font-medium text-slate-900",
-															children: "Manuscrito de Conclusão / Artigo Científico + Depósito Zenodo + DOI Permanente"
+															children: "Tríade de Fixação Ativa + Manuscrito Científico + DOI Permanente"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
-															children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com citação do DOI"
+															children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com DOI"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 text-slate-600 font-medium",
@@ -31871,11 +31892,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
-															children: "Produz livro autoral completo e realiza registro de direitos autorais"
+															children: "Entrega a Tríade de Fixação + Livro autoral completo (mín. 50 págs) e registro na BN"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 font-medium text-slate-900",
-															children: "Livro com mínimo de 50 páginas + Registro EDA na Biblioteca Nacional e OSF"
+															children: "Tríade de Fixação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
