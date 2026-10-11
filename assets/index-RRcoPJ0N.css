@@ -4319,6 +4319,20 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-cyan-100\/90 {
+    --tw-gradient-from: #cefafee6;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-cyan-100\/90 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-cyan-100) 90%, transparent);
+    }
+  }
+
+  .from-cyan-100\/90 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .from-cyan-600 {
     --tw-gradient-from: var(--color-cyan-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -4945,6 +4959,20 @@
 
   .to-sky-50 {
     --tw-gradient-to: var(--color-sky-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-sky-100\/90 {
+    --tw-gradient-to: #dff2fee6;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-sky-100\/90 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-sky-100) 90%, transparent);
+    }
+  }
+
+  .to-sky-100\/90 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -6804,6 +6832,10 @@
       }
     }
 
+    .hover\:border-cyan-500:hover {
+      border-color: var(--color-cyan-500);
+    }
+
     .hover\:border-emerald-300:hover {
       border-color: var(--color-emerald-300);
     }
@@ -7363,6 +7395,11 @@
 
     .hover\:shadow-md:hover {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+
+    .hover\:shadow-sm:hover {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
 

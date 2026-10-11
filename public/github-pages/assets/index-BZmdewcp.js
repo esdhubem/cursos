@@ -31445,55 +31445,55 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														children: "A obra poderá assumir diferentes formatos, conforme a finalidade e o público-alvo:"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs text-slate-700 pt-1",
+														className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs pt-1",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Livros de desenvolvimento pessoal"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Livros de desenvolvimento pessoal" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Ensaios"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ensaios" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Obras acadêmicas ou didáticas"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Obras acadêmicas ou didáticas" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Manuais técnicos"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Manuais técnicos" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Guias profissionais"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Guias profissionais" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Livros de referência"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Livros de referência" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Biografias e autobiografias"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Biografias e autobiografias" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Memórias"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Memórias" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Livros-reportagem"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Livros-reportagem" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Obras sobre espiritualidade e religião"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Obras sobre espiritualidade e religião" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Outras formas de não ficção"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Outras formas de não ficção" })]
 															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-																children: "• Obras de ficção adulta (compatíveis com os princípios da escola)"
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "p-2.5 rounded-xl bg-gradient-to-br from-cyan-100/90 to-sky-100/90 border-2 border-cyan-400 text-cyan-950 font-bold shadow-xs hover:border-cyan-500 hover:shadow-sm transition-all flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Obras de ficção adulta (compatíveis com os princípios da escola)" })]
 															})
 														]
 													})
