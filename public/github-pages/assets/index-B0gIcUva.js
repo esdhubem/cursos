@@ -27775,12 +27775,12 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-[#FFC72C] text-base sm:text-lg font-semibold leading-relaxed",
+								className: "text-white text-base sm:text-lg font-normal leading-relaxed text-slate-100",
 								children: "Valorize sua jornada de estudos! Na ESDHUBEM, além da conclusão do curso, você pode elevar a categoria do seu certificado conquistando Selos de Autoria (Bronze, Prata, Ouro e Diamante) através da publicação de artigos de blog, manuscritos com registro DOI ou Livros na Biblioteca Nacional."
 							})
 						]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-[#182333] border border-slate-700 p-6 rounded-2xl shadow-xl max-w-sm w-full space-y-4 shrink-0",
+						className: "bg-[#011049]/90 border border-blue-800/80 p-6 rounded-2xl shadow-xl max-w-sm w-full space-y-4 shrink-0 backdrop-blur-xs",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "text-xs font-bold text-[#FFC72C] uppercase tracking-wider flex items-center gap-2",
@@ -27820,7 +27820,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-[11px] text-slate-400 leading-tight pt-1",
+								className: "text-[11px] text-blue-200/80 leading-tight pt-1",
 								children: "✓ Cada nível concede uma insígnia exclusiva impressa no certificado e cadastrada no registro público de validação."
 							})
 						]
@@ -27850,7 +27850,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 									})] })]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed font-normal",
+									className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed font-normal text-justify",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 											"A ",
