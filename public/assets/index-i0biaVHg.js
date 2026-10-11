@@ -32031,7 +32031,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
-														children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min com registro no OSF"
+														children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min + registro no OSF"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
