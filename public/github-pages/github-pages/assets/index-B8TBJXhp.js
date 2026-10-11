@@ -27954,7 +27954,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
 														" — extensão de referência para construir autoridade temática sólida, manter alta retenção de leitura e ranquear com destaque nas primeiras posições do ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Google (SEO)" }),
-														". Publicado no Blog Oficial e Wiki da ESDHUBEM com perfil de autor."
+														". Publicado no Blog Oficial da ESDHUBEM com perfil de autor."
 													]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -27985,7 +27985,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 															children: "📍 Destino da Publicação:"
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 															className: "block text-sm text-slate-700 leading-relaxed",
-															children: "Blog Oficial e Wiki da ESDHUBEM com link público de autor e registro OSF."
+															children: "Blog Oficial da ESDHUBEM com link público de autor e registro OSF."
 														})]
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 														className: "bg-white p-3.5 rounded-xl border border-slate-200 text-slate-800 space-y-1 shadow-2xs",
@@ -31163,7 +31163,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													children: "PRATA — EXPRESSAR E COMUNICAR"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-xs font-semibold text-slate-600",
-													children: "Artigo para o Blog & Wiki da ESDHUBEM (1.200 a 2.500 palavras)"
+													children: "Artigo para o Blog da ESDHUBEM (1.200 a 2.500 palavras)"
 												})] })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -31173,7 +31173,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
 													" do curso ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-													" um artigo autoral aprofundado para publicação no Blog Oficial e Wiki da ESDHUBEM, com ",
+													" um artigo autoral aprofundado para publicação no Blog Oficial da ESDHUBEM, com ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
 													" para gerar autoridade e indexação no Google (SEO)."
 												]
@@ -31215,7 +31215,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional e acadêmico." }),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 														className: "font-semibold text-slate-800",
-														children: "Após a aprovação, o artigo será publicado no Blog Oficial e Wiki da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
+														children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
 													})
 												]
 											})
@@ -32154,11 +32154,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 font-medium text-slate-900",
-															children: "Tríade de Fixação Ativa + Artigo de Blog & Wiki (SEO) + Registro OSF"
+															children: "Tríade de Fixação Ativa + Artigo de Blog (SEO) + Registro OSF"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4",
-															children: "Publicação no Blog & Wiki ESDHUBEM + Certificado com Selo Prata"
+															children: "Publicação no Blog Oficial ESDHUBEM + Certificado com Selo Prata"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-3.5 px-4 text-slate-600 font-medium",
@@ -32834,7 +32834,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-4 px-4 font-bold text-slate-800 bg-slate-100/50",
-														children: "✍️ Artigo de Blog & Wiki (Prata)"
+														children: "✍️ Artigo de Blog (Prata)"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-4 px-4 text-xs text-slate-700 leading-relaxed",
