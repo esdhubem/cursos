@@ -31211,7 +31211,19 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/50",
 												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM e deve ser enviado para nós pelo e-mail: ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+															href: "mailto:esdhubem@proton.me",
+															className: "font-bold text-[#00227B] hover:underline",
+															children: "esdhubem@proton.me"
+														}),
+														" juntamente com o mapa mental, o áudio de 3 minutos explicando o que você aprendeu com o curso e juntamente com a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
+														" e a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
+														"."
+													] }),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional e acadêmico." }),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 														className: "font-semibold text-slate-800",
