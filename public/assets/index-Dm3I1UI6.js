@@ -30995,8 +30995,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
 												" da ESDHUBEM, elaborando um ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico" }),
-												" para a Wiki oficial da escola (conceito claro, informativo, objetivo, histórico e com aplicação prática)."
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete" }),
+												" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclopédico Wiki oficial" }),
+												" da escola."
 											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31036,10 +31038,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													className: "pt-2 border-t border-amber-100 flex flex-wrap gap-2 text-xs",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "📍 Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)"
+														children: "🛡️ Registro de Autoria: OSF (Open Science Framework)"
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "🛡️ Registro de Autoria: OSF (Open Science Framework)"
+														children: "📍 Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)"
 													})]
 												})
 											]
