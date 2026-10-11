@@ -1067,6 +1067,10 @@
     height: calc(var(--spacing) * 4);
   }
 
+  .h-4\.5 {
+    height: calc(var(--spacing) * 4.5);
+  }
+
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -1237,6 +1241,10 @@
 
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+
+  .w-4\.5 {
+    width: calc(var(--spacing) * 4.5);
   }
 
   .w-5 {
@@ -7553,10 +7561,6 @@
 
     .sm\:gap-4 {
       gap: calc(var(--spacing) * 4);
-    }
-
-    .sm\:gap-5 {
-      gap: calc(var(--spacing) * 5);
     }
 
     .sm\:gap-6 {

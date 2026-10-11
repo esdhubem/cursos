@@ -31246,6 +31246,268 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														children: "O Certificado Ouro será emitido após o cumprimento dos requisitos da modalidade e o pagamento da taxa correspondente."
 													})
 												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
+															children: "📝"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+															children: "Orientações para Produção do Artigo / Manuscrito"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: "Após a confirmação da participação e o pagamento da taxa correspondente, o autor receberá material de orientação detalhado e vídeo explicativo com diretrizes para estruturação e preparação do artigo científico / manuscrito de conclusão."
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+															className: "w-full text-left text-xs sm:text-sm border-collapse",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																className: "bg-slate-900 text-white",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3",
+																	children: "Etapa"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider",
+																	children: "Conteúdo Abordado"
+																})]
+															}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																className: "divide-y divide-slate-200 bg-white text-slate-700",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Planejamento & Tema"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Definição do tema vinculado a um dos 4 Eixos Temáticos de Pesquisa, problema de estudo e objetivos do trabalho"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Fundamentação Teórica"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Revisão bibliográfica, contextualização teórica, estado da arte e citação de fontes confiáveis (normas ABNT)"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Metodologia Científica"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Enquadramento metodológico (revisão integrativa/narrativa, estudo de caso ou ensaio teórico reflexivo) e procedimentos adotados"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Desenvolvimento & Discussão"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Estruturação dos tópicos de desenvolvimento, análise crítica e argumentativa, articulação teórica e conclusões"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Elementos Acadêmicos"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Título, resumo, abstract, palavras-chave, referências bibliográficas completas e adequação aos padrões científicos"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Depósito & Atribuição DOI"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Padronização do arquivo final em PDF e depósito no repositório Zenodo para geração e atribuição do DOI permanente"
+																		})]
+																	})
+																]
+															})]
+														})
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white rounded-2xl p-5 sm:p-6 border border-amber-200/90 shadow-sm space-y-5",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-3 pb-3 border-b border-slate-100",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "w-11 h-11 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-600 shrink-0",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Target, { className: "w-6 h-6" })
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-[11px] font-bold text-purple-600 uppercase tracking-wider",
+															children: "Alinhamento CAPES dos Manuscritos e Artigos"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+															className: "text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎯 Nossos Eixos Temáticos de Pesquisa" })
+														})] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "font-bold text-slate-900 flex items-center gap-2",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento importante:" })]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+															"A ESDHUBEM adota este alinhamento como ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
+															" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
+															" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
+														] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: [
+															"Alinhados aos critérios de avaliação da ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																className: "text-slate-900",
+																children: "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)"
+															}),
+															", os artigos e manuscritos científicos da ESDHUBEM conectam-se diretamente a quatro grandes áreas do conhecimento:"
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-1",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-rose-50/50 to-white border border-rose-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-rose-600 block",
+																			children: "Eixo 01"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Saúde Coletiva"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Práticas Integrativas, Bem-Estar e Saúde Mental."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Estudos sobre coaching, espiritualidade aplicada, meditação e Práticas Integrativas e Complementares (PICS)."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-blue-50/50 to-white border border-blue-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-blue-600 block",
+																			children: "Eixo 02"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Interdisciplinar"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Desenvolvimento Pessoal, Humano, Profissional e Consciencial."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Competências socioemocionais cruzando áreas como psicologia, administração e filosofia."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-emerald-600 block",
+																			children: "Eixo 03"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Ensino & Educação"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Pedagogia Integrativa e Ética."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Metodologias inovadoras de ensino e educação voltada para adultos."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-amber-50/50 to-white border border-amber-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-amber-600 block",
+																			children: "Eixo 04"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base leading-tight",
+																			children: "Ciências da Religião, História & Cultura"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Esoterismo Ocidental, Novas Formas de Espiritualidade e Fenômenos Contemporâneos."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Estudos históricos, antropológicos e sociológicos sobre correntes tradicionais (Alquimia, Cabala, Teosofia, Ocultismo, Maçonaria) e manifestações modernas."] })]
+																		})
+																	]
+																})
+															})
+														]
+													})
+												]
 											})
 										]
 									}),
@@ -31915,169 +32177,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-xs text-slate-500 italic",
 									children: "* Os certificados Prata, Ouro e Diamante dependem da entrega e aprovação da produção correspondente."
-								})
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-3 pb-3 border-b border-slate-100",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-600 shrink-0",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Target, { className: "w-6 h-6" })
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs font-bold text-purple-600 uppercase tracking-wider",
-										children: "Alinhamento CAPES"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-2",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎯 Nossos Eixos Temáticos de Pesquisa" })
-									})] })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-1.5",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "font-bold text-slate-900 flex items-center gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento importante:" })]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"A ESDHUBEM adota este alinhamento como ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
-										" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
-										" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
-									] })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-slate-700 text-xs sm:text-sm sm:text-base leading-relaxed",
-									children: [
-										"Alinhados aos critérios de avaliação da ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-slate-900",
-											children: "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)"
-										}),
-										", os cursos livres e os projetos da ESDHUBEM conectam-se diretamente a quatro grandes áreas do conhecimento:"
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 pt-1",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "bg-gradient-to-b from-rose-50/50 to-white border border-rose-200/80 rounded-2xl p-5 space-y-4 shadow-xs flex flex-col justify-between",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-600 font-bold",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-5 h-5" })
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[11px] font-bold uppercase tracking-wider text-rose-600 block",
-														children: "Eixo 01"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-base sm:text-lg",
-														children: "Saúde Coletiva"
-													})] }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "text-xs space-y-2 text-slate-600 leading-relaxed",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Foco:"
-														}), " Práticas Integrativas, Bem-Estar e Saúde Mental."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Aplicação:"
-														}), " Estudos sobre coaching, espiritualidade aplicada, meditação e Práticas Integrativas e Complementares (PICS)."] })]
-													})
-												]
-											})
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "bg-gradient-to-b from-blue-50/50 to-white border border-blue-200/80 rounded-2xl p-5 space-y-4 shadow-xs flex flex-col justify-between",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600 font-bold",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-5 h-5" })
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[11px] font-bold uppercase tracking-wider text-blue-600 block",
-														children: "Eixo 02"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-base sm:text-lg",
-														children: "Interdisciplinar"
-													})] }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "text-xs space-y-2 text-slate-600 leading-relaxed",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Foco:"
-														}), " Desenvolvimento Pessoal, Humano, Profissional e Consciencial."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Aplicação:"
-														}), " Competências socioemocionais cruzando áreas como psicologia, administração e filosofia."] })]
-													})
-												]
-											})
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-200/80 rounded-2xl p-5 space-y-4 shadow-xs flex flex-col justify-between",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-5 h-5" })
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[11px] font-bold uppercase tracking-wider text-emerald-600 block",
-														children: "Eixo 03"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-base sm:text-lg",
-														children: "Ensino & Educação"
-													})] }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "text-xs space-y-2 text-slate-600 leading-relaxed",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Foco:"
-														}), " Pedagogia Integrativa e Ética."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Aplicação:"
-														}), " Metodologias inovadoras de ensino e educação voltada para adultos."] })]
-													})
-												]
-											})
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "bg-gradient-to-b from-amber-50/50 to-white border border-amber-200/80 rounded-2xl p-5 space-y-4 shadow-xs flex flex-col justify-between",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-5 h-5" })
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[11px] font-bold uppercase tracking-wider text-amber-600 block",
-														children: "Eixo 04"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-base sm:text-lg",
-														children: "Ciências da Religião, História & Cultura"
-													})] }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "text-xs space-y-2 text-slate-600 leading-relaxed",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Foco:"
-														}), " Esoterismo Ocidental, Novas Formas de Espiritualidade e Fenômenos Contemporâneos."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-800",
-															children: "Aplicação:"
-														}), " Estudos históricos, antropológicos e sociológicos sobre correntes tradicionais (Alquimia, Cabala, Teosofia, Ocultismo, Maçonaria) e manifestações modernas, como os movimentos New Age, a espiritualidade sem religião e os reflexos culturais do esoterismo na sociedade contemporânea."] })]
-													})
-												]
-											})
-										})
-									]
 								})
 							]
 						}),
