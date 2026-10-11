@@ -1169,6 +1169,10 @@
     height: calc(var(--spacing) * 96);
   }
 
+  .h-\[450px\] {
+    height: 450px;
+  }
+
   .h-auto {
     height: auto;
   }
@@ -7358,6 +7362,10 @@
       color: var(--color-blue-800);
     }
 
+    .hover\:text-blue-900:hover {
+      color: var(--color-blue-900);
+    }
+
     .hover\:text-cyan-300:hover {
       color: var(--color-cyan-300);
     }
@@ -7664,6 +7672,10 @@
 
     .sm\:h-64 {
       height: calc(var(--spacing) * 64);
+    }
+
+    .sm\:h-\[500px\] {
+      height: 500px;
     }
 
     .sm\:w-1\/5 {
