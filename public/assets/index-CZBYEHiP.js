@@ -27883,7 +27883,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-xs sm:text-sm text-slate-600",
-									children: "Conheça os requisitos de cada nível, a complexidade acadêmica, o destino da publicação e os benefícios para seu portfólio e currículo."
+									children: "Conheça os requisitos de cada nível, a complexidade dos manuscritos, o destino da publicação, o nível da certificação de acordo com o tipo de produção e os benefícios para seu portfólio e currículo."
 								})
 							]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
