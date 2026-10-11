@@ -1789,10 +1789,6 @@
     border-bottom-right-radius: var(--radius-2xl);
   }
 
-  .rounded-bl-2xl {
-    border-bottom-left-radius: var(--radius-2xl);
-  }
-
   .rounded-bl-xl {
     border-bottom-left-radius: var(--radius-xl);
   }
@@ -3216,8 +3212,14 @@
     }
   }
 
-  .bg-cyan-50 {
-    background-color: var(--color-cyan-50);
+  .bg-cyan-50\/70 {
+    background-color: #ecfeffb3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-cyan-50\/70 {
+      background-color: color-mix(in oklab, var(--color-cyan-50) 70%, transparent);
+    }
   }
 
   .bg-cyan-100 {
@@ -6783,26 +6785,6 @@
       }
     }
 
-    .hover\:bg-amber-50\/50:hover {
-      background-color: #fffbeb80;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-amber-50\/50:hover {
-        background-color: color-mix(in oklab, var(--color-amber-50) 50%, transparent);
-      }
-    }
-
-    .hover\:bg-amber-50\/70:hover {
-      background-color: #fffbebb3;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-amber-50\/70:hover {
-        background-color: color-mix(in oklab, var(--color-amber-50) 70%, transparent);
-      }
-    }
-
     .hover\:bg-amber-100:hover {
       background-color: var(--color-amber-100);
     }
@@ -6878,16 +6860,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-cyan-50\/40:hover {
         background-color: color-mix(in oklab, var(--color-cyan-50) 40%, transparent);
-      }
-    }
-
-    .hover\:bg-cyan-50\/60:hover {
-      background-color: #ecfeff99;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-cyan-50\/60:hover {
-        background-color: color-mix(in oklab, var(--color-cyan-50) 60%, transparent);
       }
     }
 
