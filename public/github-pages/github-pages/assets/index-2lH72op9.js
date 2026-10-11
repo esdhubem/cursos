@@ -32027,7 +32027,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
-														children: "Conclui o curso e entrega a Tríade de Fixação Ativa"
+														children: "Entrega a Tríade de Fixação Ativa"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
@@ -32052,7 +32052,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação + Artigo de blog (1.200 a 2.500 palavras)"
+														children: "Entrega a Tríade de Fixação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
@@ -32077,7 +32077,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação + Manuscrito/TCC estruturado no Zenodo com DOI"
+														children: "Entrega a Tríade de Fixação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
@@ -32102,7 +32102,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação + Livro autoral completo (mín. 50 págs) e registro na BN"
+														children: "Entrega a Tríade de Fixação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
