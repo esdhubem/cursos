@@ -30799,6 +30799,42 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 					className: "bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-xl space-y-10",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-3 pb-8 border-b border-slate-200",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center justify-between gap-3 flex-wrap",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-cyan-400/30",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-sm",
+											children: "🎬"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 1: Boas-Vindas" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+										href: "https://odysee.com/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f",
+										target: "_blank",
+										rel: "noopener noreferrer",
+										className: "text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assistir no Odysee" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+										id: "odysee-iframe-parte-1",
+										className: "w-full h-full border-0 absolute inset-0",
+										src: "https://odysee.com/$/embed/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+										allowFullScreen: true,
+										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 1: Boas-vindas)",
+										loading: "lazy"
+									})
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 1: Introdução e boas-vindas ao percurso de autoria e publicação da ESDHUBEM" })]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-6 pb-8 border-b border-slate-200",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
