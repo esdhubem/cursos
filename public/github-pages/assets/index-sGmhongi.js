@@ -36258,10 +36258,10 @@ function App() {
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "grid grid-cols-1 md:grid-cols-2 gap-6",
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CorporateBanner, { onNavigate: () => handleNavigate("categoria:treinamentos-palestras-corporativas") }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookstoreBanner, { onNavigate: () => handleNavigate("livraria") }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PublicationBanner, { onNavigate: () => handleNavigate("diretrizes-publicacao-parcerias") }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DigitalPresenceBanner, { onNavigate: () => handleNavigate("categoria:landing-pages-biolinks") })
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookstoreBanner, { onNavigate: () => handleNavigate("livraria") }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DigitalPresenceBanner, { onNavigate: () => handleNavigate("categoria:landing-pages-biolinks") }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CorporateBanner, { onNavigate: () => handleNavigate("categoria:treinamentos-palestras-corporativas") })
 								]
 							})]
 						})
