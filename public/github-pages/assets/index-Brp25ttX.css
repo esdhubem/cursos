@@ -1173,6 +1173,10 @@
     height: 450px;
   }
 
+  .h-\[500px\] {
+    height: 500px;
+  }
+
   .h-auto {
     height: auto;
   }
@@ -7676,6 +7680,10 @@
 
     .sm\:h-\[500px\] {
       height: 500px;
+    }
+
+    .sm\:h-\[600px\] {
+      height: 600px;
     }
 
     .sm\:w-1\/5 {
