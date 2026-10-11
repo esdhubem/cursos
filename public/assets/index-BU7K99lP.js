@@ -22090,27 +22090,20 @@ var CategoryDetailPage = ({ categorySlug = "desenvolvimento-nas-empresas", onBac
 								})
 							]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "pt-6 px-4 pb-5 flex-1 flex flex-col justify-between items-center text-center space-y-3",
+							className: "pt-6 px-4 pb-5 flex-1 flex flex-col justify-between items-center text-center space-y-4",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "w-full space-y-2",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "text-[10px] font-bold text-blue-700 uppercase tracking-wider",
-										children: course.category
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-										onClick: () => {
-											onSelectCourse(course);
-											onNavigateToCourseDetail();
-										},
-										className: "text-base font-extrabold text-slate-900 leading-snug group-hover:text-emerald-700 transition-colors line-clamp-2 min-h-[44px] flex items-center justify-center cursor-pointer",
-										children: course.title
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs text-slate-600 line-clamp-3 leading-relaxed",
-										children: course.subtitle
-									})
-								]
+								className: "w-full space-y-1.5",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "text-[10px] font-bold text-blue-700 uppercase tracking-wider",
+									children: course.category
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									onClick: () => {
+										onSelectCourse(course);
+										onNavigateToCourseDetail();
+									},
+									className: "text-base font-extrabold text-slate-900 leading-snug group-hover:text-emerald-700 transition-colors line-clamp-2 min-h-[44px] flex items-center justify-center cursor-pointer",
+									children: course.title
+								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "pt-2 w-full flex justify-center",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
