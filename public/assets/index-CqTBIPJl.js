@@ -30849,1489 +30849,2567 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 flex-1 w-full -mt-6 relative z-20",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-xl space-y-10",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "space-y-6 pb-8 border-b border-slate-200",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-xs font-bold text-amber-600 uppercase tracking-wider block",
-									children: "Da aprendizagem à autoria"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-									className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-									children: "Diretrizes de Publicação"
-								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"A ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-slate-900 font-semibold",
-											children: "ESDHUBEM"
-										}),
-										" oferece diferentes possibilidades para que o estudante transforme sua experiência de aprendizagem em uma produção escrita e autoral."
-									] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir o percurso formativo previsto no curso, o estudante deverá comunicar à ESDHUBEM qual modalidade de produção pretende desenvolver." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A partir dessa escolha, receberá as orientações específicas para elaboração do trabalho." })
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "p-6 rounded-2xl bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white space-y-4 shadow-xl border border-blue-900/60 border-l-4 border-l-[#FFC72C]",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center justify-between gap-2 flex-wrap",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-										className: "text-xs uppercase tracking-wider text-[#FFC72C] font-black block flex items-center gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O percurso segue esta sequência:" })]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-[11px] text-blue-200 bg-blue-950/70 border border-blue-800/80 px-2.5 py-0.5 rounded-full font-medium",
-										children: "Fluxo Integrado de Autoria & Proteção"
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-slate-100 leading-relaxed",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Conclusão do curso"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Comunicação da modalidade de manuscrito"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Pagamento da taxa do nível específico"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Produção do manuscrito"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Envio para análise"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Devolutiva da escola"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
-											children: "Aprovação de ambas as partes"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] font-bold text-base",
-											children: "→"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-[#FFC72C] text-slate-950 font-black px-3.5 py-1.5 rounded-xl shadow-md border border-amber-300",
-											children: "Emissão do certificado e publicação do trabalho"
-										})
-									]
-								})]
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "space-y-8",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "text-center space-y-1",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								className: "text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-tight",
-								children: "Os Quatro Percursos"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-slate-500 text-xs sm:text-sm",
-								children: "Escolha o nível que melhor atende aos seus objetivos formativos e autorais"
-							})]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "space-y-6",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-amber-50/50 via-white to-white border-2 border-amber-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-3",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-3xl",
-												children: "🥉"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-												className: "text-lg sm:text-xl font-bold text-amber-950",
-												children: "BRONZE — APRENDER E CONCEITUAR (FIXAÇÃO ATIVA)"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-semibold text-amber-800",
-												children: "Tríade de Fixação & Verbete Enciclopédico na Wiki"
-											})] })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm leading-relaxed",
-											children: [
-												"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
-												" da ESDHUBEM, elaborando um ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete" }),
-												" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclopédico Wiki oficial" }),
-												" da escola."
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border border-amber-200/80 rounded-xl p-4 space-y-2.5",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "font-bold text-xs uppercase tracking-wider text-amber-900 block",
-													children: "Requisitos da Tríade de Fixação:"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-													className: "text-xs sm:text-sm text-slate-700 space-y-2 list-none",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "🧠"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado (à mão ou digital) estruturando os conceitos centrais e conexões pedagógicas da aula."] })]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "✍️"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão explicando o significado, o contexto histórico e a aplicação do tema."] })]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "🎙️"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo de 1 Minuto:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."] })]
-														})
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "pt-2 border-t border-amber-100 flex flex-wrap gap-2 text-xs",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "🛡️ Registro de Autoria: OSF (Open Science Framework)"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "📍 Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)"
-													})]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs sm:text-sm text-slate-600 font-medium italic",
-											children: "* O trabalho chega às mãos da coordenação com comprovante de registro no OSF, resguardando integralmente a anterioridade e a autoria do aluno."
-										})
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-slate-50 via-white to-white border-2 border-slate-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-3",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-3xl",
-												children: "🥈"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-												className: "text-lg sm:text-xl font-bold text-slate-900",
-												children: "PRATA — EXPRESSAR E COMUNICAR"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-semibold text-slate-600",
-												children: "Artigo para o Blog & Wiki da ESDHUBEM (1.200 a 2.500 palavras)"
-											})] })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm leading-relaxed",
-											children: [
-												"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
-												" do curso ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-												" um artigo autoral aprofundado para publicação no Blog Oficial e Wiki da ESDHUBEM, com ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
-												" para gerar autoridade e indexação no Google (SEO)."
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm leading-relaxed",
-											children: [
-												"Após a escolha dessa modalidade, o estudante receberá orientações detalhadas para a elaboração do artigo e seu registro de autoria no ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF (Open Science Framework)" }),
-												"."
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "font-bold text-xs uppercase tracking-wider text-slate-900 block",
-												children: "As orientações poderão incluir:"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-xs sm:text-sm text-slate-700",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Estrutura do artigo (1.200 a 2.500 palavras)" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Definição do tema e do público" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Título, subtítulos H2/H3 e escaneabilidade" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Organização das informações e casos práticos" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Linguagem clara e acessível" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Técnicas de redação para a internet" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Princípios de SEO para busca orgânica" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Registro de autoria prévio no OSF" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Direitos autorais e Lei 9.610/98" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Utilização responsável de fontes e bibliografia" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Revisão e preparação para publicação" })
-												]
-											})]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/50",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional e acadêmico." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "font-semibold text-slate-800",
-													children: "Após a aprovação, o artigo será publicado no Blog Oficial e Wiki da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
-												})
-											]
-										})
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-3",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-3xl",
-												children: "🥇"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-												className: "text-lg sm:text-xl font-bold text-amber-950",
-												children: "OURO — INVESTIGAR E APROFUNDAR"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-semibold text-amber-800",
-												children: "Manuscrito de Conclusão de Curso + Zenodo + DOI"
-											})] })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm leading-relaxed",
-											children: [
-												"O Ouro é destinado ao estudante que entrega a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
-												" do curso ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-												" um Manuscrito de Conclusão de Curso estruturado ou artigo de investigação científica com registro DOI."
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-slate-700 text-sm leading-relaxed",
-											children: "O trabalho deverá apresentar uma estrutura compatível com uma produção de investigação e receberá orientações específicas para sua elaboração."
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border border-amber-200 rounded-xl p-4 space-y-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "font-bold text-xs uppercase tracking-wider text-amber-950 block",
-												children: "Após a escolha da modalidade e o pagamento da taxa correspondente, o estudante receberá um vídeo com orientações sobre a construção do manuscrito, incluindo, conforme a natureza do trabalho:"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-xs sm:text-sm text-slate-700",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Definição do tema" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Questão ou problema de estudo" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Objetivos" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Introdução" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Fundamentação" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Metodologia, quando aplicável" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Desenvolvimento" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Análise e discussão" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Conclusão" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Citações e referências" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Organização das fontes" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Apresentação final do trabalho" })
-												]
-											})]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/70 p-4 rounded-xl border border-amber-200",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após a conclusão e aprovação do manuscrito, será realizado o depósito no Zenodo, conforme as orientações fornecidas." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"Quando o depósito for concluído e o Zenodo atribuir o identificador correspondente, o trabalho terá um ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI — Digital Object Identifier" }),
-													", que permite sua identificação e localização persistente na internet."
-												] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-slate-600 italic",
-													children: "O DOI identifica a publicação. Ele não significa, por si só, revisão por pares, certificação científica ou validação acadêmica do conteúdo."
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "font-bold text-amber-950 pt-1",
-													children: "O Certificado Ouro será emitido após o cumprimento dos requisitos da modalidade e o pagamento da taxa correspondente."
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-4 pt-1",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-lg",
-														children: "📝"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-														className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
-														children: "Orientações para Produção do Artigo / Manuscrito"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-													children: "Após a confirmação da participação e o pagamento da taxa correspondente, o autor receberá material de orientação detalhado e vídeo explicativo com diretrizes para estruturação e preparação do artigo científico / manuscrito de conclusão."
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-														className: "w-full text-left text-xs sm:text-sm border-collapse",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-															className: "bg-slate-900 text-white",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3",
-																children: "Etapa"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-2.5 px-4 font-bold uppercase tracking-wider",
-																children: "Conteúdo Abordado"
-															})]
-														}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-															className: "divide-y divide-slate-200 bg-white text-slate-700",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Planejamento & Tema"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Definição do tema vinculado a um dos 4 Eixos Temáticos de Pesquisa, problema de estudo e objetivos do trabalho"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Fundamentação Teórica"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Revisão bibliográfica, contextualização teórica, estado da arte e citação de fontes confiáveis (normas ABNT)"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Metodologia Científica"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Enquadramento metodológico (revisão integrativa/narrativa, estudo de caso ou ensaio teórico reflexivo) e procedimentos adotados"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Desenvolvimento & Discussão"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Estruturação dos tópicos de desenvolvimento, análise crítica e argumentativa, articulação teórica e conclusões"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Elementos Acadêmicos"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Título, resumo, abstract, palavras-chave, referências bibliográficas completas e adequação aos padrões científicos"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Depósito & Atribuição DOI"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Padronização do arquivo final em PDF e depósito no repositório Zenodo para geração e atribuição do DOI permanente"
-																	})]
-																})
-															]
-														})]
-													})
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white rounded-2xl p-5 sm:p-6 border border-amber-200/90 shadow-sm space-y-5",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-3 pb-3 border-b border-slate-100",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "w-11 h-11 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-600 shrink-0",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Target, { className: "w-6 h-6" })
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[11px] font-bold text-purple-600 uppercase tracking-wider",
-														children: "Alinhamento CAPES dos Manuscritos e Artigos"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎯 Nossos Eixos Temáticos de Pesquisa" })
-													})] })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-1.5",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "font-bold text-slate-900 flex items-center gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento importante:" })]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-														"A ESDHUBEM adota este alinhamento como ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
-														" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
-														" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
-													] })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-													children: [
-														"Alinhados aos critérios de avaliação da ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-															className: "text-slate-900",
-															children: "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)"
-														}),
-														", os artigos e manuscritos científicos da ESDHUBEM conectam-se diretamente a quatro grandes áreas do conhecimento:"
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-1",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "bg-gradient-to-b from-rose-50/50 to-white border border-rose-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "space-y-2.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																		className: "w-9 h-9 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-600 font-bold",
-																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4.5 h-4.5" })
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-[10px] font-bold uppercase tracking-wider text-rose-600 block",
-																		children: "Eixo 01"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-																		className: "font-bold text-slate-900 text-sm sm:text-base",
-																		children: "Saúde Coletiva"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Foco:"
-																		}), " Práticas Integrativas, Bem-Estar e Saúde Mental."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Aplicação:"
-																		}), " Estudos sobre coaching, espiritualidade aplicada, meditação e Práticas Integrativas e Complementares (PICS)."] })]
-																	})
-																]
-															})
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "bg-gradient-to-b from-blue-50/50 to-white border border-blue-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "space-y-2.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																		className: "w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600 font-bold",
-																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4.5 h-4.5" })
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-[10px] font-bold uppercase tracking-wider text-blue-600 block",
-																		children: "Eixo 02"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-																		className: "font-bold text-slate-900 text-sm sm:text-base",
-																		children: "Interdisciplinar"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Foco:"
-																		}), " Desenvolvimento Pessoal, Humano, Profissional e Consciencial."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Aplicação:"
-																		}), " Competências socioemocionais cruzando áreas como psicologia, administração e filosofia."] })]
-																	})
-																]
-															})
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "space-y-2.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																		className: "w-9 h-9 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold",
-																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4.5 h-4.5" })
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-[10px] font-bold uppercase tracking-wider text-emerald-600 block",
-																		children: "Eixo 03"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-																		className: "font-bold text-slate-900 text-sm sm:text-base",
-																		children: "Ensino & Educação"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Foco:"
-																		}), " Pedagogia Integrativa e Ética."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Aplicação:"
-																		}), " Metodologias inovadoras de ensino e educação voltada para adultos."] })]
-																	})
-																]
-															})
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "bg-gradient-to-b from-amber-50/50 to-white border border-amber-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "space-y-2.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																		className: "w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold",
-																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-4.5 h-4.5" })
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-[10px] font-bold uppercase tracking-wider text-amber-600 block",
-																		children: "Eixo 04"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-																		className: "font-bold text-slate-900 text-sm sm:text-base leading-tight",
-																		children: "Ciências da Religião, História & Cultura"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Foco:"
-																		}), " Esoterismo Ocidental, Novas Formas de Espiritualidade e Fenômenos Contemporâneos."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																			className: "text-slate-800",
-																			children: "Aplicação:"
-																		}), " Estudos históricos, antropológicos e sociológicos sobre correntes tradicionais (Alquimia, Cabala, Teosofia, Ocultismo, Maçonaria) e manifestações modernas."] })]
-																	})
-																]
-															})
-														})
-													]
-												})
-											]
-										})
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-cyan-50/50 via-white to-white border-2 border-cyan-400 rounded-2xl p-6 sm:p-8 space-y-6 shadow-sm",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-3",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-3xl",
-												children: "💎"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-												className: "text-lg sm:text-xl font-black text-cyan-950",
-												children: "DIAMANTE — AUTORAR E CONSTRUIR"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-bold text-cyan-800",
-												children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
-											})] })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-											children: [
-												"O nível ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
-												" é destinado ao participante que entrega a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
-												" do curso ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
-												" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido)."
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border border-cyan-200 rounded-2xl p-5 space-y-3 shadow-2xs",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-													className: "font-extrabold text-xs uppercase tracking-wider text-cyan-950 flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📚" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Formatos de Obra Aceitos" })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs text-slate-600",
-													children: "A obra poderá assumir diferentes formatos, conforme a finalidade e o público-alvo:"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs text-slate-700 pt-1",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Livros de desenvolvimento pessoal"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Ensaios"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Obras acadêmicas ou didáticas"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Manuais técnicos"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Guias profissionais"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Livros de referência"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Biografias e autobiografias"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Memórias"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Livros-reportagem"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Obras sobre espiritualidade e religião"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Outras formas de não ficção"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
-															children: "• Obras de ficção adulta (compatíveis com os princípios da escola)"
-														})
-													]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-cyan-100/70 border-l-4 border-cyan-600 p-5 rounded-r-2xl space-y-2 text-xs sm:text-sm text-cyan-950 shadow-2xs",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 font-black uppercase tracking-wider text-cyan-900",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "✅" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Requisito Mínimo de Extensão" })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "font-semibold text-slate-900",
-													children: [
-														"O texto deverá conter no ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mínimo 50 páginas de conteúdo" }),
-														"."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-slate-700",
-													children: [
-														"⚠️ ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não são contabilizadas para este mínimo:" }),
-														" capa, folha de rosto, sumário, referências e demais elementos editoriais pré e pós-textuais."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-slate-600 italic text-xs pt-1",
-													children: "A extensão, entretanto, não substitui a qualidade. A obra deverá apresentar conteúdo desenvolvido, organização coerente e proposta autoral definida."
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-4 pt-1",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-lg",
-														children: "📝"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-														className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
-														children: "Orientações para Produção"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-													children: "Após a confirmação da participação e do pagamento da taxa correspondente, o autor receberá material de orientação detalhado com diretrizes para estruturação e preparação da obra."
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-														className: "w-full text-left text-xs sm:text-sm border-collapse",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-															className: "bg-slate-900 text-white",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3",
-																children: "Etapa"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-2.5 px-4 font-bold uppercase tracking-wider",
-																children: "Conteúdo Abordado"
-															})]
-														}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-															className: "divide-y divide-slate-200 bg-white text-slate-700",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Planejamento"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Definição de público, proposta da obra, estrutura geral"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Desenvolvimento"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Organização de capítulos, introdução, desenvolvimento, conclusão"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Elementos editoriais"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Folha de rosto, dedicatória, agradecimentos, sumário, referências"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Preparação do arquivo"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Formatação, padronização, versões para impressão e digital"
-																	})]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																	className: "hover:bg-slate-50",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-slate-900",
-																		children: "Apresentação"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4",
-																		children: "Descrição da obra, texto de divulgação, palavras-chave"
-																	})]
-																})
-															]
-														})]
-													})
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-1",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-														className: "text-slate-900 font-bold block",
-														children: "Para Manuais Técnicos e Guias Profissionais:"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Poderão ser utilizadas como base artigos científicos, normas, documentos oficiais e fontes pertinentes. O foco será clareza, utilidade, organização e responsabilidade das informações." })]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-cyan-950 font-black text-sm sm:text-base uppercase tracking-wide",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-5 h-5 text-cyan-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📜 Registro de Direitos Autorais (EDA / FBN)" })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-													children: [
-														"Para o nível Diamante, o autor deverá realizar o ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro oficial da obra junto ao Escritório de Direitos Autorais da Fundação Biblioteca Nacional (EDA/FBN)" }),
-														"."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "space-y-2 text-xs sm:text-sm text-slate-700",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "font-bold text-slate-900",
-														children: "Como funciona:"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-														className: "space-y-1.5",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O pedido é realizado pelo próprio autor diretamente no Portal Gov.Br;" })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acesso com conta Gov.Br; preenchimento de dados; anexo da obra e documentos;" })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Pagamento das taxas conforme valores vigentes na plataforma;" })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O processo passa por análise e pode ser deferido ou indeferido;" })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O resultado e o certificado ficam disponíveis no próprio portal." })]
-															})
-														]
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "pt-2",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-														href: "https://www.gov.br/pt-br/servicos/registrar-ou-averbar-direitos-autorais-na-biblioteca-nacional",
-														target: "_blank",
-														rel: "noopener noreferrer",
-														className: "inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-800 hover:bg-cyan-900 text-white font-bold text-xs sm:text-sm transition-all shadow-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔗 Acessar Registro na Biblioteca Nacional — Portal Gov.Br" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-4 h-4" })]
-													})
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-2 text-slate-700",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-															className: "font-bold text-slate-900",
-															children: "Papel da ESDHUBEM:"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "space-y-1",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																	className: "flex items-start gap-1.5",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), " Orienta sobre a preparação da obra para atender aos requisitos;"]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																	className: "flex items-start gap-1.5",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), " Apoia na organização dos elementos necessários;"]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																	className: "flex items-start gap-1.5",
-																	children: [
-																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-rose-600 font-bold",
-																			children: "❌"
-																		}),
-																		" ",
-																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não realiza o registro em nome do autor" }),
-																		" — é procedimento pessoal e intransferível;"
-																	]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																	className: "flex items-start gap-1.5",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-rose-600 font-bold",
-																		children: "❌"
-																	}), " Não tem ingerência sobre a análise e decisão da Fundação Biblioteca Nacional."]
-																})
-															]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-															className: "text-slate-500 italic pt-1 border-t border-slate-200",
-															children: "* Para informações atualizadas sobre documentos, valores, procedimentos e prazos, consulte sempre diretamente as orientações oficiais da Fundação Biblioteca Nacional."
-														})
-													]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-4 pt-1",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-lg",
-														children: "📖"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-														className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
-														children: "Publicação e Mural de Livros da ESDHUBEM"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-													children: [
-														"Após cumprir todos os requisitos, a obra poderá ser incluída no ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mural de Livros da ESDHUBEM" }),
-														"."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "bg-emerald-50/60 border border-emerald-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "flex items-center gap-2 font-bold text-emerald-950",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🆓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																className: "text-base",
-																children: "Disponibilização Gratuita"
-															})]
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-															className: "space-y-1.5 text-slate-700",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Página própria no site da ESDHUBEM;" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Disponível a capa da imagem do livro e a descrição e informação do certificado diamante emitido pela escola." })]
-														})]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "bg-amber-50/70 border border-amber-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "flex items-center gap-2 font-bold text-amber-950",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "💰" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																className: "text-base",
-																children: "Sobre Disponibilização para Venda"
-															})]
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-															className: "text-slate-700 leading-relaxed",
-															children: [
-																"Caso você queira disponibilizar seu livro ou obra para venda ao público, a ESDHUBEM estabelece uma ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "parceria como afiliado por meio da plataforma Hotmart" }),
-																". Por que fazemos assim?"
-															]
-														})]
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "bg-white border border-amber-200/80 rounded-2xl p-5 space-y-3 text-xs sm:text-sm shadow-xs",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "font-bold text-amber-950",
-														children: "Por que fazemos assim?"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-														className: "space-y-2 text-slate-700",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você continua sendo o autor e o titular dos direitos" }), " — a parceria não altera a propriedade da obra;"] })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Hotmart cuida de toda a estrutura:" }), " processamento de pagamentos, entrega, segurança digital e relatórios;"] })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A parceria permite que a escola divulgue a venda do seu trabalho" }), " para nossa rede de contatos, ampliando sua visibilidade;"] })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Cada parte recebe a participação combinada sobre as vendas" }), ", você como autor, a escola como parceira de divulgação;"] })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tudo com transparência:" }), " valores, porcentagens e condições são combinados previamente, de forma clara e acordada;"] })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-2",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você pode optar por não vender:" }), " a publicação gratuita no site ou repositório não exige parceria de venda, isso é uma escolha sua, feita quando quiser avançar para comercialização."] })]
-															})
-														]
-													})]
-												})
-											]
-										})
-									]
-								})
-							]
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-									className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Autoria e Responsabilidade" })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-									children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold",
-									children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-[11px] text-slate-500 italic pt-1",
-									children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
-								})
-							]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-									className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Inteligência Artificial e Autoria" })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-									children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-									children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "bg-purple-100/60 p-3 rounded-xl border border-purple-200 text-xs text-purple-950 font-medium",
-									children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
-								})
-							]
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "space-y-4 pt-4 border-t border-slate-200",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-								className: "font-bold text-slate-900 text-base sm:text-lg uppercase tracking-wider",
-								children: "Certificação e Valores"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cada modalidade possui um valor específico para a emissão do certificado correspondente." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O valor da certificação será informado ao estudante antes da escolha da modalidade." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "font-semibold text-slate-900",
-										children: "O pagamento da certificação não substitui a necessidade de cumprir os requisitos da modalidade escolhida."
-									})
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs pt-1",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-									className: "w-full text-left text-xs sm:text-sm border-collapse min-w-[700px]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-										className: "bg-[#011049] text-white",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-												className: "py-3 px-4 font-bold uppercase tracking-wider",
-												children: "Nível"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-												className: "py-3 px-4 font-bold uppercase tracking-wider",
-												children: "O estudante faz"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-												className: "py-3 px-4 font-bold uppercase tracking-wider",
-												children: "Produção / requisito"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-												className: "py-3 px-4 font-bold uppercase tracking-wider",
-												children: "Resultado"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-												className: "py-3 px-4 font-bold uppercase tracking-wider",
-												children: "O que paga"
-											})
-										]
-									}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-										className: "divide-y divide-slate-200 bg-white text-slate-700",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-												className: "hover:bg-amber-50/30",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-bold text-amber-950 whitespace-nowrap",
-														children: "🥉 Bronze"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação Ativa"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-medium text-slate-900",
-														children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min + registro no OSF"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Publicação na Wiki ESDHUBEM + Certificado com Selo Bronze"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 text-slate-600 font-medium",
-														children: "Taxa do Certificado Bronze"
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-												className: "hover:bg-slate-50",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-bold text-slate-900 whitespace-nowrap",
-														children: "🥈 Prata"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-medium text-slate-900",
-														children: "Tríade de Fixação Ativa + Artigo de Blog & Wiki (SEO) + Registro OSF"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Publicação no Blog & Wiki ESDHUBEM + Certificado com Selo Prata"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 text-slate-600 font-medium",
-														children: "Taxa do Certificado Prata"
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-												className: "hover:bg-amber-50/30",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-bold text-amber-800 whitespace-nowrap",
-														children: "🥇 Ouro"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-medium text-slate-900",
-														children: "Tríade de Fixação Ativa + Manuscrito Científico + DOI Permanente"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com DOI"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 text-slate-600 font-medium",
-														children: "Taxa do Certificado Ouro"
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-												className: "hover:bg-cyan-50/30",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-bold text-cyan-900 whitespace-nowrap",
-														children: "💎 Diamante"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 font-medium text-slate-900",
-														children: "Tríade de Fixação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4",
-														children: "Mural de Livros / Livraria Digital + Certificado Diamante de Honraria Máxima"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-														className: "py-3.5 px-4 text-slate-600 font-medium",
-														children: "Taxa do Certificado Diamante"
-													})
-												]
-											})
-										]
-									})]
-								})
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs text-slate-500 italic",
-								children: "* Os certificados Prata, Ouro e Diamante dependem da entrega e aprovação da produção correspondente."
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white p-6 sm:p-8 rounded-2xl space-y-4 shadow-xl border border-blue-900/60 text-center",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-								className: "text-lg sm:text-xl font-black uppercase tracking-wider text-[#FFC72C]",
-								children: "Um Percurso de Autoria"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "max-w-2xl mx-auto space-y-1.5 text-xs sm:text-sm text-slate-200 leading-relaxed",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O estudante não é obrigado a realizar todos os níveis." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"Pode concluir o curso e permanecer no ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Bronze" }),
-										"."
-									] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"Pode escolher escrever um artigo e avançar para o ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Prata" }),
-										"."
-									] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"Pode desenvolver um manuscrito e seguir para o ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ouro" }),
-										"."
-									] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"Pode transformar seu conhecimento em um livro e alcançar o ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
-										"."
-									] }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "pt-2 font-medium text-white",
-										children: "Cada percurso corresponde a uma forma diferente de transformar aprendizagem em produção."
-									})
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-black text-[#FFC72C]",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "APRENDER" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "EXPRESSAR" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "INVESTIGAR" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "AUTORAR" })
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs text-slate-400 italic pt-1",
-								children: "O curso pode ser o começo. A produção é uma possibilidade. A autoria é uma construção."
-							})
-						]
-					})
-				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-xl space-y-8",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex items-center gap-3 pb-4 border-b border-slate-100",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shrink-0",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
-						children: "Transparência & Integridade"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "text-xl sm:text-2xl font-bold text-slate-900",
-						children: "Avisos Importantes sobre Publicação e Autoria"
-					})] })]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-xl space-y-10",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+							className: "space-y-6 pb-8 border-b border-slate-200",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Sobre Publicação em Periódicos e Revistas" })]
+									className: "space-y-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-xs font-bold text-amber-600 uppercase tracking-wider block",
+										children: "Da aprendizagem à autoria"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "Diretrizes de Publicação"
+									})]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs text-slate-600 leading-relaxed",
-									children: ["A ESDHUBEM oferece orientação, estruturação, revisão e encaminhamento para plataformas científicas. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não garantimos, porém, a aceitação do trabalho em revista, periódico ou repositório específico." })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A decisão de aceite é exclusiva da instituição ou comitê responsável;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O trabalho poderá ser devolvido para ajustes ou recusado sem prejuízo;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira." })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"A ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+												className: "text-slate-900 font-semibold",
+												children: "ESDHUBEM"
+											}),
+											" oferece diferentes possibilidades para que o estudante transforme sua experiência de aprendizagem em uma produção escrita e autoral."
+										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir o percurso formativo previsto no curso, o estudante deverá comunicar à ESDHUBEM qual modalidade de produção pretende desenvolver." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A partir dessa escolha, receberá as orientações específicas para elaboração do trabalho." })
 									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-6 rounded-2xl bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white space-y-4 shadow-xl border border-blue-900/60 border-l-4 border-l-[#FFC72C]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center justify-between gap-2 flex-wrap",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "text-xs uppercase tracking-wider text-[#FFC72C] font-black block flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O percurso segue esta sequência:" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[11px] text-blue-200 bg-blue-950/70 border border-blue-800/80 px-2.5 py-0.5 rounded-full font-medium",
+											children: "Fluxo Integrado de Autoria & Proteção"
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-slate-100 leading-relaxed",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Conclusão do curso"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Comunicação da modalidade de manuscrito"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Pagamento da taxa do nível específico"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Produção do manuscrito"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Envio para análise"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Devolutiva da escola"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-xl text-white font-semibold border border-white/10 shadow-xs",
+												children: "Aprovação de ambas as partes"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[#FFC72C] font-bold text-base",
+												children: "→"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "bg-[#FFC72C] text-slate-950 font-black px-3.5 py-1.5 rounded-xl shadow-md border border-amber-300",
+												children: "Emissão do certificado e publicação do trabalho"
+											})
+										]
+									})]
 								})
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+							className: "space-y-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "text-center space-y-1",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+									className: "text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-tight",
+									children: "Os Quatro Percursos"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-slate-500 text-xs sm:text-sm",
+									children: "Escolha o nível que melhor atende aos seus objetivos formativos e autorais"
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "space-y-6",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-gradient-to-r from-amber-50/50 via-white to-white border-2 border-amber-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-3",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-3xl",
+													children: "🥉"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "text-lg sm:text-xl font-bold text-amber-950",
+													children: "BRONZE — APRENDER E CONCEITUAR (FIXAÇÃO ATIVA)"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-semibold text-amber-800",
+													children: "Tríade de Fixação & Verbete Enciclopédico na Wiki"
+												})] })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-slate-700 text-sm leading-relaxed",
+												children: [
+													"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
+													" da ESDHUBEM, elaborando um ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete" }),
+													" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclopédico Wiki oficial" }),
+													" da escola."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white border border-amber-200/80 rounded-xl p-4 space-y-2.5",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "font-bold text-xs uppercase tracking-wider text-amber-900 block",
+														children: "Requisitos da Tríade de Fixação:"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+														className: "text-xs sm:text-sm text-slate-700 space-y-2 list-none",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																className: "flex items-start gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-amber-800 font-bold shrink-0",
+																	children: "🧠"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado (à mão ou digital) estruturando os conceitos centrais e conexões pedagógicas da aula."] })]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																className: "flex items-start gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-amber-800 font-bold shrink-0",
+																	children: "✍️"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão explicando o significado, o contexto histórico e a aplicação do tema."] })]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																className: "flex items-start gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-amber-800 font-bold shrink-0",
+																	children: "🎙️"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo de 1 Minuto:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."] })]
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "pt-2 border-t border-amber-100 flex flex-wrap gap-2 text-xs",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
+															children: "🛡️ Registro de Autoria: OSF (Open Science Framework)"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
+															children: "📍 Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)"
+														})]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-600 font-medium italic",
+												children: "* O trabalho chega às mãos da coordenação com comprovante de registro no OSF, resguardando integralmente a anterioridade e a autoria do aluno."
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-gradient-to-r from-slate-50 via-white to-white border-2 border-slate-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-3",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-3xl",
+													children: "🥈"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "text-lg sm:text-xl font-bold text-slate-900",
+													children: "PRATA — EXPRESSAR E COMUNICAR"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-semibold text-slate-600",
+													children: "Artigo para o Blog & Wiki da ESDHUBEM (1.200 a 2.500 palavras)"
+												})] })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-slate-700 text-sm leading-relaxed",
+												children: [
+													"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" um artigo autoral aprofundado para publicação no Blog Oficial e Wiki da ESDHUBEM, com ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
+													" para gerar autoridade e indexação no Google (SEO)."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-slate-700 text-sm leading-relaxed",
+												children: [
+													"Após a escolha dessa modalidade, o estudante receberá orientações detalhadas para a elaboração do artigo e seu registro de autoria no ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF (Open Science Framework)" }),
+													"."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "font-bold text-xs uppercase tracking-wider text-slate-900 block",
+													children: "As orientações poderão incluir:"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-xs sm:text-sm text-slate-700",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Estrutura do artigo (1.200 a 2.500 palavras)" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Definição do tema e do público" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Título, subtítulos H2/H3 e escaneabilidade" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Organização das informações e casos práticos" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Linguagem clara e acessível" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Técnicas de redação para a internet" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Princípios de SEO para busca orgânica" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Registro de autoria prévio no OSF" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Direitos autorais e Lei 9.610/98" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Utilização responsável de fontes e bibliografia" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Revisão e preparação para publicação" })
+													]
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/50",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional e acadêmico." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "font-semibold text-slate-800",
+														children: "Após a aprovação, o artigo será publicado no Blog Oficial e Wiki da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
+													})
+												]
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-3",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-3xl",
+													children: "🥇"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "text-lg sm:text-xl font-bold text-amber-950",
+													children: "OURO — INVESTIGAR E APROFUNDAR"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-semibold text-amber-800",
+													children: "Manuscrito de Conclusão de Curso + Zenodo + DOI"
+												})] })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-slate-700 text-sm leading-relaxed",
+												children: [
+													"O Ouro é destinado ao estudante que entrega a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" um Manuscrito de Conclusão de Curso estruturado ou artigo de investigação científica com registro DOI."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-slate-700 text-sm leading-relaxed",
+												children: "O trabalho deverá apresentar uma estrutura compatível com uma produção de investigação e receberá orientações específicas para sua elaboração."
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white border border-amber-200 rounded-xl p-4 space-y-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "font-bold text-xs uppercase tracking-wider text-amber-950 block",
+													children: "Após a escolha da modalidade e o pagamento da taxa correspondente, o estudante receberá um vídeo com orientações sobre a construção do manuscrito, incluindo, conforme a natureza do trabalho:"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-xs sm:text-sm text-slate-700",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Definição do tema" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Questão ou problema de estudo" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Objetivos" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Introdução" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Fundamentação" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Metodologia, quando aplicável" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Desenvolvimento" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Análise e discussão" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Conclusão" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Citações e referências" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Organização das fontes" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Apresentação final do trabalho" })
+													]
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/70 p-4 rounded-xl border border-amber-200",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após a conclusão e aprovação do manuscrito, será realizado o depósito no Zenodo, conforme as orientações fornecidas." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Quando o depósito for concluído e o Zenodo atribuir o identificador correspondente, o trabalho terá um ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI — Digital Object Identifier" }),
+														", que permite sua identificação e localização persistente na internet."
+													] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-slate-600 italic",
+														children: "O DOI identifica a publicação. Ele não significa, por si só, revisão por pares, certificação científica ou validação acadêmica do conteúdo."
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "font-bold text-amber-950 pt-1",
+														children: "O Certificado Ouro será emitido após o cumprimento dos requisitos da modalidade e o pagamento da taxa correspondente."
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
+															children: "📝"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+															children: "Orientações para Produção do Artigo / Manuscrito"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: "Após a confirmação da participação e o pagamento da taxa correspondente, o autor receberá material de orientação detalhado e vídeo explicativo com diretrizes para estruturação e preparação do artigo científico / manuscrito de conclusão."
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+															className: "w-full text-left text-xs sm:text-sm border-collapse",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																className: "bg-slate-900 text-white",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3",
+																	children: "Etapa"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider",
+																	children: "Conteúdo Abordado"
+																})]
+															}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																className: "divide-y divide-slate-200 bg-white text-slate-700",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Planejamento & Tema"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Definição do tema vinculado a um dos 4 Eixos Temáticos de Pesquisa, problema de estudo e objetivos do trabalho"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Fundamentação Teórica"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Revisão bibliográfica, contextualização teórica, estado da arte e citação de fontes confiáveis (normas ABNT)"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Metodologia Científica"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Enquadramento metodológico (revisão integrativa/narrativa, estudo de caso ou ensaio teórico reflexivo) e procedimentos adotados"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Desenvolvimento & Discussão"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Estruturação dos tópicos de desenvolvimento, análise crítica e argumentativa, articulação teórica e conclusões"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Elementos Acadêmicos"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Título, resumo, abstract, palavras-chave, referências bibliográficas completas e adequação aos padrões científicos"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Depósito & Atribuição DOI"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Padronização do arquivo final em PDF e depósito no repositório Zenodo para geração e atribuição do DOI permanente"
+																		})]
+																	})
+																]
+															})]
+														})
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white rounded-2xl p-5 sm:p-6 border border-amber-200/90 shadow-sm space-y-5",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-3 pb-3 border-b border-slate-100",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "w-11 h-11 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-600 shrink-0",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Target, { className: "w-6 h-6" })
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-[11px] font-bold text-purple-600 uppercase tracking-wider",
+															children: "Alinhamento CAPES dos Manuscritos e Artigos"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+															className: "text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎯 Nossos Eixos Temáticos de Pesquisa" })
+														})] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "font-bold text-slate-900 flex items-center gap-2",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento importante:" })]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+															"A ESDHUBEM adota este alinhamento como ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
+															" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
+															" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
+														] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: [
+															"Alinhados aos critérios de avaliação da ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																className: "text-slate-900",
+																children: "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)"
+															}),
+															", os artigos e manuscritos científicos da ESDHUBEM conectam-se diretamente a quatro grandes áreas do conhecimento:"
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-1",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-rose-50/50 to-white border border-rose-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-rose-600 block",
+																			children: "Eixo 01"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Saúde Coletiva"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Práticas Integrativas, Bem-Estar e Saúde Mental."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Estudos sobre coaching, espiritualidade aplicada, meditação e Práticas Integrativas e Complementares (PICS)."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-blue-50/50 to-white border border-blue-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-blue-600 block",
+																			children: "Eixo 02"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Interdisciplinar"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Desenvolvimento Pessoal, Humano, Profissional e Consciencial."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Competências socioemocionais cruzando áreas como psicologia, administração e filosofia."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-emerald-600 block",
+																			children: "Eixo 03"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base",
+																			children: "Ensino & Educação"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Pedagogia Integrativa e Ética."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Metodologias inovadoras de ensino e educação voltada para adultos."] })]
+																		})
+																	]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "bg-gradient-to-b from-amber-50/50 to-white border border-amber-200/80 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "space-y-2.5",
+																	children: [
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																			className: "w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold",
+																			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-4.5 h-4.5" })
+																		}),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-[10px] font-bold uppercase tracking-wider text-amber-600 block",
+																			children: "Eixo 04"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-slate-900 text-sm sm:text-base leading-tight",
+																			children: "Ciências da Religião, História & Cultura"
+																		})] }),
+																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																			className: "text-xs space-y-1.5 text-slate-600 leading-relaxed",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Foco:"
+																			}), " Esoterismo Ocidental, Novas Formas de Espiritualidade e Fenômenos Contemporâneos."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																				className: "text-slate-800",
+																				children: "Aplicação:"
+																			}), " Estudos históricos, antropológicos e sociológicos sobre correntes tradicionais (Alquimia, Cabala, Teosofia, Ocultismo, Maçonaria) e manifestações modernas."] })]
+																		})
+																	]
+																})
+															})
+														]
+													})
+												]
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-gradient-to-r from-cyan-50/50 via-white to-white border-2 border-cyan-400 rounded-2xl p-6 sm:p-8 space-y-6 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-3",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-3xl",
+													children: "💎"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "text-lg sm:text-xl font-black text-cyan-950",
+													children: "DIAMANTE — AUTORAR E CONSTRUIR"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-bold text-cyan-800",
+													children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
+												})] })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+												children: [
+													"O nível ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
+													" é destinado ao participante que entrega a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+													" do curso ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
+													" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido)."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white border border-cyan-200 rounded-2xl p-5 space-y-3 shadow-2xs",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "font-extrabold text-xs uppercase tracking-wider text-cyan-950 flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📚" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Formatos de Obra Aceitos" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs text-slate-600",
+														children: "A obra poderá assumir diferentes formatos, conforme a finalidade e o público-alvo:"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs text-slate-700 pt-1",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Livros de desenvolvimento pessoal"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Ensaios"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Obras acadêmicas ou didáticas"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Manuais técnicos"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Guias profissionais"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Livros de referência"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Biografias e autobiografias"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Memórias"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Livros-reportagem"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Obras sobre espiritualidade e religião"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Outras formas de não ficção"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "p-2 rounded-lg bg-slate-50 border border-slate-100 font-medium",
+																children: "• Obras de ficção adulta (compatíveis com os princípios da escola)"
+															})
+														]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-cyan-100/70 border-l-4 border-cyan-600 p-5 rounded-r-2xl space-y-2 text-xs sm:text-sm text-cyan-950 shadow-2xs",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 font-black uppercase tracking-wider text-cyan-900",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "✅" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Requisito Mínimo de Extensão" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "font-semibold text-slate-900",
+														children: [
+															"O texto deverá conter no ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mínimo 50 páginas de conteúdo" }),
+															"."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700",
+														children: [
+															"⚠️ ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não são contabilizadas para este mínimo:" }),
+															" capa, folha de rosto, sumário, referências e demais elementos editoriais pré e pós-textuais."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-slate-600 italic text-xs pt-1",
+														children: "A extensão, entretanto, não substitui a qualidade. A obra deverá apresentar conteúdo desenvolvido, organização coerente e proposta autoral definida."
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
+															children: "📝"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+															children: "Orientações para Produção"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: "Após a confirmação da participação e do pagamento da taxa correspondente, o autor receberá material de orientação detalhado com diretrizes para estruturação e preparação da obra."
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+															className: "w-full text-left text-xs sm:text-sm border-collapse",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																className: "bg-slate-900 text-white",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3",
+																	children: "Etapa"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-2.5 px-4 font-bold uppercase tracking-wider",
+																	children: "Conteúdo Abordado"
+																})]
+															}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																className: "divide-y divide-slate-200 bg-white text-slate-700",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Planejamento"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Definição de público, proposta da obra, estrutura geral"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Desenvolvimento"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Organização de capítulos, introdução, desenvolvimento, conclusão"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Elementos editoriais"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Folha de rosto, dedicatória, agradecimentos, sumário, referências"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Preparação do arquivo"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Formatação, padronização, versões para impressão e digital"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "hover:bg-slate-50",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4 font-bold text-slate-900",
+																			children: "Apresentação"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																			className: "py-3 px-4",
+																			children: "Descrição da obra, texto de divulgação, palavras-chave"
+																		})]
+																	})
+																]
+															})]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+															className: "text-slate-900 font-bold block",
+															children: "Para Manuais Técnicos e Guias Profissionais:"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Poderão ser utilizadas como base artigos científicos, normas, documentos oficiais e fontes pertinentes. O foco será clareza, utilidade, organização e responsabilidade das informações." })]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 text-cyan-950 font-black text-sm sm:text-base uppercase tracking-wide",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-5 h-5 text-cyan-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📜 Registro de Direitos Autorais (EDA / FBN)" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: [
+															"Para o nível Diamante, o autor deverá realizar o ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro oficial da obra junto ao Escritório de Direitos Autorais da Fundação Biblioteca Nacional (EDA/FBN)" }),
+															"."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-2 text-xs sm:text-sm text-slate-700",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "font-bold text-slate-900",
+															children: "Como funciona:"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1.5",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O pedido é realizado pelo próprio autor diretamente no Portal Gov.Br;" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acesso com conta Gov.Br; preenchimento de dados; anexo da obra e documentos;" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Pagamento das taxas conforme valores vigentes na plataforma;" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O processo passa por análise e pode ser deferido ou indeferido;" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O resultado e o certificado ficam disponíveis no próprio portal." })]
+																})
+															]
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "pt-2",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+															href: "https://www.gov.br/pt-br/servicos/registrar-ou-averbar-direitos-autorais-na-biblioteca-nacional",
+															target: "_blank",
+															rel: "noopener noreferrer",
+															className: "inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-800 hover:bg-cyan-900 text-white font-bold text-xs sm:text-sm transition-all shadow-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔗 Acessar Registro na Biblioteca Nacional — Portal Gov.Br" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-4 h-4" })]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-2 text-slate-700",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+																className: "font-bold text-slate-900",
+																children: "Papel da ESDHUBEM:"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "space-y-1",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																		className: "flex items-start gap-1.5",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-emerald-600 font-bold",
+																			children: "✅"
+																		}), " Orienta sobre a preparação da obra para atender aos requisitos;"]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																		className: "flex items-start gap-1.5",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-emerald-600 font-bold",
+																			children: "✅"
+																		}), " Apoia na organização dos elementos necessários;"]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																		className: "flex items-start gap-1.5",
+																		children: [
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																				className: "text-rose-600 font-bold",
+																				children: "❌"
+																			}),
+																			" ",
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não realiza o registro em nome do autor" }),
+																			" — é procedimento pessoal e intransferível;"
+																		]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																		className: "flex items-start gap-1.5",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-rose-600 font-bold",
+																			children: "❌"
+																		}), " Não tem ingerência sobre a análise e decisão da Fundação Biblioteca Nacional."]
+																	})
+																]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+																className: "text-slate-500 italic pt-1 border-t border-slate-200",
+																children: "* Para informações atualizadas sobre documentos, valores, procedimentos e prazos, consulte sempre diretamente as orientações oficiais da Fundação Biblioteca Nacional."
+															})
+														]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
+															children: "📖"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+															children: "Publicação e Mural de Livros da ESDHUBEM"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: [
+															"Após cumprir todos os requisitos, a obra poderá ser incluída no ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mural de Livros da ESDHUBEM" }),
+															"."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-emerald-50/60 border border-emerald-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center gap-2 font-bold text-emerald-950",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🆓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "text-base",
+																	children: "Disponibilização Gratuita"
+																})]
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+																className: "space-y-1.5 text-slate-700",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Página própria no site da ESDHUBEM;" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Disponível a capa da imagem do livro e a descrição e informação do certificado diamante emitido pela escola." })]
+															})]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-amber-50/70 border border-amber-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center gap-2 font-bold text-amber-950",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "💰" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "text-base",
+																	children: "Sobre Disponibilização para Venda"
+																})]
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-slate-700 leading-relaxed",
+																children: [
+																	"Caso você queira disponibilizar seu livro ou obra para venda ao público, a ESDHUBEM estabelece uma ",
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "parceria como afiliado por meio da plataforma Hotmart" }),
+																	". Por que fazemos assim?"
+																]
+															})]
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "bg-white border border-amber-200/80 rounded-2xl p-5 space-y-3 text-xs sm:text-sm shadow-xs",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "font-bold text-amber-950",
+															children: "Por que fazemos assim?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-2 text-slate-700",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você continua sendo o autor e o titular dos direitos" }), " — a parceria não altera a propriedade da obra;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Hotmart cuida de toda a estrutura:" }), " processamento de pagamentos, entrega, segurança digital e relatórios;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A parceria permite que a escola divulgue a venda do seu trabalho" }), " para nossa rede de contatos, ampliando sua visibilidade;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Cada parte recebe a participação combinada sobre as vendas" }), ", você como autor, a escola como parceira de divulgação;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tudo com transparência:" }), " valores, porcentagens e condições são combinados previamente, de forma clara e acordada;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você pode optar por não vender:" }), " a publicação gratuita no site ou repositório não exige parceria de venda, isso é uma escolha sua, feita quando quiser avançar para comercialização."] })]
+																})
+															]
+														})]
+													})
+												]
+											})
+										]
+									})
+								]
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+										className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Autoria e Responsabilidade" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold",
+										children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+										className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-[11px] text-slate-500 italic pt-1",
+										children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
+									})
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+										className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Inteligência Artificial e Autoria" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "bg-purple-100/60 p-3 rounded-xl border border-purple-200 text-xs text-purple-950 font-medium",
+										children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
+									})
+								]
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-4 pt-4 border-t border-slate-200",
 							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									className: "font-bold text-slate-900 text-base sm:text-lg uppercase tracking-wider",
+									children: "Certificação e Valores"
+								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Pré-print e Depósito com DOI" })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs text-slate-600 leading-relaxed",
+									className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed",
 									children: [
-										"O depósito em repositório com atribuição de ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
-										" constitui ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
-										" da obra (pré-print):"
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "text-xs text-slate-600 space-y-1",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-											className: "flex items-start gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-emerald-600 font-bold",
-												children: "✅"
-											}), " Fica registrada oficialmente a autoria e data de criação;"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-											className: "flex items-start gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-emerald-600 font-bold",
-												children: "✅"
-											}), " O trabalho passa a ser acessível publicamente;"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-											className: "flex items-start gap-1.5",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-rose-600 font-bold",
-													children: "❌"
-												}),
-												" ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }),
-												";"
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-											className: "flex items-start gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-rose-600 font-bold",
-												children: "❌"
-											}), " Verifique a política do periódico caso queira submeter a mesma obra."]
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cada modalidade possui um valor específico para a emissão do certificado correspondente." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O valor da certificação será informado ao estudante antes da escolha da modalidade." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "font-semibold text-slate-900",
+											children: "O pagamento da certificação não substitui a necessidade de cumprir os requisitos da modalidade escolhida."
 										})
 									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs pt-1",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+										className: "w-full text-left text-xs sm:text-sm border-collapse min-w-[700px]",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+											className: "bg-[#011049] text-white",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold uppercase tracking-wider",
+													children: "Nível"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold uppercase tracking-wider",
+													children: "O estudante faz"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold uppercase tracking-wider",
+													children: "Produção / requisito"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold uppercase tracking-wider",
+													children: "Resultado"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold uppercase tracking-wider",
+													children: "O que paga"
+												})
+											]
+										}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+											className: "divide-y divide-slate-200 bg-white text-slate-700",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-amber-50/30",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-bold text-amber-950 whitespace-nowrap",
+															children: "🥉 Bronze"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Entrega a Tríade de Fixação Ativa"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-medium text-slate-900",
+															children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min + registro no OSF"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Publicação na Wiki ESDHUBEM + Certificado com Selo Bronze"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 text-slate-600 font-medium",
+															children: "Taxa do Certificado Bronze"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-bold text-slate-900 whitespace-nowrap",
+															children: "🥈 Prata"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Entrega a Tríade de Fixação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-medium text-slate-900",
+															children: "Tríade de Fixação Ativa + Artigo de Blog & Wiki (SEO) + Registro OSF"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Publicação no Blog & Wiki ESDHUBEM + Certificado com Selo Prata"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 text-slate-600 font-medium",
+															children: "Taxa do Certificado Prata"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-amber-50/30",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-bold text-amber-800 whitespace-nowrap",
+															children: "🥇 Ouro"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Entrega a Tríade de Fixação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-medium text-slate-900",
+															children: "Tríade de Fixação Ativa + Manuscrito Científico + DOI Permanente"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com DOI"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 text-slate-600 font-medium",
+															children: "Taxa do Certificado Ouro"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-cyan-50/30",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-bold text-cyan-900 whitespace-nowrap",
+															children: "💎 Diamante"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Entrega a Tríade de Fixação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 font-medium text-slate-900",
+															children: "Tríade de Fixação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4",
+															children: "Mural de Livros / Livraria Digital + Certificado Diamante de Honraria Máxima"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3.5 px-4 text-slate-600 font-medium",
+															children: "Taxa do Certificado Diamante"
+														})
+													]
+												})
+											]
+										})]
+									})
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs text-slate-500 italic",
+									children: "* Os certificados Prata, Ouro e Diamante dependem da entrega e aprovação da produção correspondente."
 								})
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+							className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white p-6 sm:p-8 rounded-2xl space-y-4 shadow-xl border border-blue-900/60 text-center",
 							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									className: "text-lg sm:text-xl font-black uppercase tracking-wider text-[#FFC72C]",
+									children: "Um Percurso de Autoria"
+								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🤖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Uso Responsável de Inteligência Artificial" })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs text-slate-600 leading-relaxed",
+									className: "max-w-2xl mx-auto space-y-1.5 text-xs sm:text-sm text-slate-200 leading-relaxed",
 									children: [
-										"A tecnologia é ferramenta de apoio, ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
-										" do pensamento e criação humana."
-									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-											"Se utilizou IA em qualquer etapa, ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
-											" como foi aplicada;"
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O estudante não é obrigado a realizar todos os níveis." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Pode concluir o curso e permanecer no ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Bronze" }),
+											"."
 										] }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Pode escolher escrever um artigo e avançar para o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Prata" }),
+											"."
+										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Pode desenvolver um manuscrito e seguir para o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ouro" }),
+											"."
+										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Pode transformar seu conhecimento em um livro e alcançar o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
+											"."
+										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "pt-2 font-medium text-white",
+											children: "Cada percurso corresponde a uma forma diferente de transformar aprendizagem em produção."
+										})
 									]
-								})
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📂" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Direito de Remoção / Retirada" })]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs text-slate-600 leading-relaxed",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-black text-[#FFC72C]",
 									children: [
-										"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
-										"."
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "APRENDER" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "EXPRESSAR" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "INVESTIGAR" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "AUTORAR" })
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-[11px] text-slate-500 italic",
-									children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
+									className: "text-xs text-slate-400 italic pt-1",
+									children: "O curso pode ser o começo. A produção é uma possibilidade. A autoria é uma construção."
 								})
 							]
 						})
 					]
-				})]
-			})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-xl space-y-8",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex items-center gap-3 pb-4 border-b border-slate-100",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shrink-0",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
+							children: "Transparência & Integridade"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "text-xl sm:text-2xl font-bold text-slate-900",
+							children: "Avisos Importantes sobre Publicação e Autoria"
+						})] })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Sobre Publicação em Periódicos e Revistas" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-slate-600 leading-relaxed",
+										children: ["A ESDHUBEM oferece orientação, estruturação, revisão e encaminhamento para plataformas científicas. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não garantimos, porém, a aceitação do trabalho em revista, periódico ou repositório específico." })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+										className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A decisão de aceite é exclusiva da instituição ou comitê responsável;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O trabalho poderá ser devolvido para ajustes ou recusado sem prejuízo;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira." })
+										]
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Pré-print e Depósito com DOI" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-slate-600 leading-relaxed",
+										children: [
+											"O depósito em repositório com atribuição de ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
+											" constitui ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
+											" da obra (pré-print):"
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+										className: "text-xs text-slate-600 space-y-1",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+												className: "flex items-start gap-1.5",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-emerald-600 font-bold",
+													children: "✅"
+												}), " Fica registrada oficialmente a autoria e data de criação;"]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+												className: "flex items-start gap-1.5",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-emerald-600 font-bold",
+													children: "✅"
+												}), " O trabalho passa a ser acessível publicamente;"]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+												className: "flex items-start gap-1.5",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-rose-600 font-bold",
+														children: "❌"
+													}),
+													" ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }),
+													";"
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+												className: "flex items-start gap-1.5",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-rose-600 font-bold",
+													children: "❌"
+												}), " Verifique a política do periódico caso queira submeter a mesma obra."]
+											})
+										]
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🤖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Uso Responsável de Inteligência Artificial" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-slate-600 leading-relaxed",
+										children: [
+											"A tecnologia é ferramenta de apoio, ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
+											" do pensamento e criação humana."
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+										className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+												"Se utilizou IA em qualquer etapa, ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
+												" como foi aplicada;"
+											] }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
+										]
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📂" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Direito de Remoção / Retirada" })]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-slate-600 leading-relaxed",
+										children: [
+											"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
+											"."
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-[11px] text-slate-500 italic",
+										children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
+									})
+								]
+							})
+						]
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm relative overflow-hidden space-y-12",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "border-b border-slate-100 pb-8",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "inline-flex items-center gap-2 px-3 py-1 bg-amber-50 border border-amber-200 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider mb-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-3.5 h-3.5 text-amber-600" }), "Diretrizes de Publicação"]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+									className: "text-2xl md:text-3xl font-extrabold text-[#011049] flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📑" }), " Áreas de Atenção e Aprofundamento Necessário"]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-slate-600 text-sm md:text-base mt-2 max-w-4xl",
+									children: "Consolidação de normas operacionais, prazos institucionais de referência, critérios de avaliação formativa, integridade de autoria, passo a passo técnico e orientações editoriais para todos os níveis de produção."
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-4",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "1"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Prazos de Análise e Devolutiva"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-sm text-slate-600",
+									children: "Com base em práticas adotadas por instituições de ensino e periódicos acadêmicos, estabelecemos os seguintes prazos de referência:"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-sm",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+										className: "w-full text-left text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+											className: "bg-slate-50 border-b border-slate-200 text-[#011049]",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold",
+													children: "Etapa"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold w-52",
+													children: "Prazo Estimado"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold",
+													children: "Observação"
+												})
+											] })
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+											className: "divide-y divide-slate-100 text-slate-700",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Análise inicial do trabalho enviado"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-blue-700",
+															children: "até 10 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Contados a partir do recebimento completo do material"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Devolutiva com ajustes ou aprovação"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-blue-700",
+															children: "até 15 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Prazo pode ser reduzido conforme disponibilidade; ajustes solicitados reiniciam a contagem"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Reenvio após ajustes e nova análise"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-blue-700",
+															children: "até 7 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Aplica-se à segunda avaliação"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Emissão de certificado após aprovação"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-emerald-700 font-semibold",
+															children: "até 5 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Após confirmação do cumprimento de todos os requisitos"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Registro OSF / Zenodo / DOI"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-blue-700",
+															children: "até 10 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Após orientação e envio do arquivo final"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Registro de obra no EDA/FBN (Diamante)"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-purple-700",
+															children: "Conforme prazos da Fundação Biblioteca Nacional"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Procedimento de responsabilidade pessoal do autor"
+														})
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "hover:bg-slate-50/50",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Remoção de conteúdo publicado"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-rose-700",
+															children: "até 15 dias úteis"
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-xs text-slate-600",
+															children: "Após solicitação formal"
+														})
+													]
+												})
+											]
+										})]
+									})
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 flex items-start gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-slate-500 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Nota institucional:" }), " Estes são prazos de referência, não constituem obrigação contratual, podendo ser ajustados conforme volume de demandas. Sempre que houver previsão de atraso, o estudante será comunicado."] })]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-6",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "2"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Critérios de Avaliação, Publicação e Direito de Retirada"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-3",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+												className: "font-bold text-[#011049] text-base flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-5 h-5 text-emerald-600" }), "O que define aprovação"]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs text-slate-600 leading-relaxed",
+												children: "A aprovação se dá pelo cumprimento integral dos requisitos específicos de cada nível, com entrega do trabalho desenvolvido de acordo com as orientações recebidas e em comum acordo entre autor e escola. A avaliação verifica:"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2 pl-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Aderência ao tema" }), " e aos eixos temáticos"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Cumprimento da extensão mínima" }), " e estrutura definida"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Clareza, coerência e organização" }), " das ideias"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Uso responsável de fontes" }), " e direitos autorais"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Adequação às normas de escrita" }), " e citação quando aplicável"] })]
+													})
+												]
+											})
+										]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-4",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-emerald-50/60 border border-emerald-200 rounded-2xl p-5 space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+												className: "font-bold text-emerald-950 text-sm flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-4 h-4 text-emerald-700" }), "Publicação é opcional"]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs text-emerald-900 leading-relaxed",
+												children: "Caso o estudante não deseje a publicação do seu trabalho no site da ESDHUBEM, sua escolha será integralmente respeitada. O certificado será emitido normalmente, e o trabalho será mantido em registro privado, sem divulgação pública. A publicação é um benefício adicional — não uma exigência."
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-amber-50/60 border border-amber-200 rounded-2xl p-5 space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+												className: "font-bold text-amber-950 text-sm flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4 text-amber-700" }), "Direito de retirada a qualquer momento"]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs text-amber-900 leading-relaxed",
+												children: [
+													"Mesmo após a publicação, o autor pode solicitar a retirada do conteúdo a qualquer instante, pelo e-mail: ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+														href: "mailto:esdhubem@proton.me",
+														className: "font-bold underline text-amber-950 hover:text-amber-800",
+														children: "esdhubem@proton.me"
+													}),
+													". O prazo para remoção das páginas e dos índices públicos é de até ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
+													". Em repositórios externos (Zenodo, OSF), a exclusão segue as regras próprias de cada plataforma."
+												]
+											})]
+										})]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "border border-slate-200 rounded-2xl p-5 bg-white space-y-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-[#011049] text-sm flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-blue-600" }), "Quem avalia"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs text-slate-600 leading-relaxed",
+											children: "A avaliação é realizada pelo corpo docente da ESDHUBEM e docentes auxiliares contratados, conforme os critérios próprios de cada nível de certificação."
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "border border-slate-200 rounded-2xl p-5 bg-white space-y-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-[#011049] text-sm flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-indigo-600" }), "Sobre revisão por pares e banca"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs text-slate-600 leading-relaxed",
+											children: "A ESDHUBEM não realiza revisão por pares nem dispõe de serviços de revistas científicas. Não há composição de banca examinadora. A avaliação tem caráter formativo e orientador, focada no desenvolvimento do autor e no cumprimento das diretrizes estabelecidas."
+										})]
+									})]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-4",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+									children: "3"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+									className: "text-xl font-bold text-[#011049]",
+									children: "Estrutura e Formato por Nível de Produção"
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-sm",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+									className: "w-full text-left text-sm",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+										className: "bg-slate-50 border-b border-slate-200 text-[#011049]",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4 font-bold w-1/5",
+												children: "Elemento"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4 font-bold w-2/5",
+												children: "Estrutura Mínima"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4 font-bold w-1/4",
+												children: "Normas de Estilo"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4 font-bold",
+												children: "Extensão"
+											})
+										] })
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+										className: "divide-y divide-slate-100 text-slate-700 align-top",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "hover:bg-slate-50/50",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-amber-900 bg-amber-50/30",
+														children: "📝 Verbete Enciclopédico (Bronze)"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-700 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Título claro e preciso" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Definição direta do tema" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Contexto histórico e conceitual" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Aplicação prática ou relevância atual" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Ligação com os eixos temáticos" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Sem referências extensas — informações integradas ao texto" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-600 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Linguagem objetiva e informativa" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Tom neutro e educativo" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Parágrafos curtos" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Sem jargões desnecessários" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Sem citações longas" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-slate-900 text-xs whitespace-nowrap",
+														children: "500 a 800 palavras"
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "hover:bg-slate-50/50",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-slate-800 bg-slate-100/50",
+														children: "✍️ Artigo de Blog & Wiki (Prata)"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-700 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Título + subtítulo chamativo" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Introdução (contexto e objetivo)" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Desenvolvimento dividido em seções (H2/H3)" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Exemplos práticos ou relatos" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Conclusão com fechamento" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Referências quando aplicável" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-600 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Linguagem acessível e fluida" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Escaneabilidade: parágrafos curtos, destaques, listas" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Princípios de clareza e encontrabilidade (SEO)" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Transição suave entre seções" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Normas ABNT para referências" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-slate-900 text-xs whitespace-nowrap",
+														children: "1.200 a 2.500 palavras"
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "hover:bg-slate-50/50",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-yellow-900 bg-yellow-50/30",
+														children: "🔬 Manuscrito / Artigo de Investigação (Ouro)"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-700 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Título" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Resumo + palavras-chave" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Introdução (problema, objetivos)" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Fundamentação teórica" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Metodologia" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Desenvolvimento e discussão" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Conclusão" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Referências bibliográficas completas" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-600 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Linguagem formal e analítica" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Normas ABNT integral" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Citações no texto e lista de referências" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Estrutura lógica e sequencial" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Distinção clara entre ideias do autor e ideias de outros autores" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-slate-900 text-xs",
+														children: "Conforme orientação recebida"
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "hover:bg-slate-50/50",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-cyan-950 bg-cyan-50/30",
+														children: "📘 Livro Autoral (Diamante)"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-700 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Folha de rosto" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Sumário detalhado" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Introdução geral" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Capítulos sequenciais com unidade temática" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Considerações finais" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Referências / bibliografia" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Elementos opcionais: dedicatória, agradecimentos, apêndices" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 text-xs text-slate-600 leading-relaxed",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-1",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Formato consistente ao longo da obra" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Normas ABNT para referências e citações" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Padronização de títulos, subtítulos e corpo de texto" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Versão final em PDF formatado" })
+															]
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-4 px-4 font-bold text-slate-900 text-xs",
+														children: "Mínimo de 50 páginas de conteúdo efetivo"
+													})
+												]
+											})
+										]
+									})]
+								})
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-4",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "4"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Registro no OSF — Passo a Passo Prático"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									className: "text-sm text-slate-600 leading-relaxed",
+									children: [
+										"O ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Open Science Framework (OSF)" }),
+										" é uma plataforma gratuita que registra e preserva a autoria e a data de criação do seu trabalho, garantindo reconhecimento e proteção de anterioridade. Siga os passos:"
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-3 gap-4 pt-2",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-xs font-black text-blue-700 uppercase tracking-wider",
+												children: "Etapa 1: Acesso & Criação"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "1."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["Acesse: ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+															href: "https://osf.io",
+															target: "_blank",
+															rel: "noopener noreferrer",
+															className: "text-blue-600 font-bold underline",
+															children: "osf.io"
+														})] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "2."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+															"Clique em ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sign Up" }),
+															" e crie sua conta com e-mail preferencial"
+														] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "3."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Confirme seu endereço de e-mail clicando no link recebido" })]
+													})
+												]
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-xs font-black text-blue-700 uppercase tracking-wider",
+												children: "Etapa 2: Projeto & Upload"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "4."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["Faça login e clique em ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Create New Project" })] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "5."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Dê um título ao projeto (mesmo título do seu trabalho) e descrição breve" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "6."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+															"Salve o projeto → clique em ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Files" }),
+															" → ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Upload File" })
+														] })]
+													})
+												]
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-xs font-black text-blue-700 uppercase tracking-wider",
+												children: "Etapa 3: Publicação & Envio"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "7."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Selecione o arquivo final do seu trabalho (formato PDF recomendado)" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "8."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+															"Após o envio, clique em ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Make Public" }),
+															" — isso torna o registro acessível e datado"
+														] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-bold text-blue-600 shrink-0",
+															children: "9."
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Copie o link público da página do projeto e envie para a ESDHUBEM junto com seu trabalho" })]
+													})
+												]
+											})]
+										})
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-4 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-900 flex items-start gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-amber-600 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+										"💡 ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "O link público é o seu comprovante de registro:" }),
+										" Guarde-o e envie junto com a entrega do trabalho. O registro é gratuito e imediato."
+									] })]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-6",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "5"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Uso de Inteligência Artificial — Declaração e Limites"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-sm text-slate-600 leading-relaxed",
+									children: "A ferramenta de Inteligência Artificial é vista como apoio à produção, nunca como substituta do pensamento e da criação humana. A responsabilidade sobre todo o conteúdo publicado é sempre do autor."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-emerald-50/40 border border-emerald-200 rounded-2xl p-5 space-y-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-emerald-950 text-sm flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-600" }), "Em quais etapas pode ser usada?"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs text-emerald-900 space-y-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-emerald-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Organização de ideias e estruturação de esboços" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-emerald-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Revisão textual e sugestões de redação" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-emerald-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verificação de coerência e clareza" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-emerald-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sugestões de referências e fontes (sempre conferir!)" })]
+												})
+											]
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-rose-50/40 border border-rose-200 rounded-2xl p-5 space-y-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-rose-950 text-sm flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-rose-600" }), "O que NÃO pode ser feito sem verificação integral?"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs text-rose-900 space-y-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-rose-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Apresentar conteúdos gerados sem leitura, confirmação e edição" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-rose-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Usar dados, citações ou referências sem verificação na fonte original" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-rose-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Transferir a autoria para a ferramenta ou omitir sua participação" })]
+												})
+											]
+										})]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-3 pt-2",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+											className: "font-bold text-[#011049] text-base",
+											children: "Modelo de Declaração de Uso de IA"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs text-slate-600",
+											children: "Insira no final do trabalho (antes das referências) um texto conforme o exemplo que melhor se aplica:"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "grid grid-cols-1 md:grid-cols-3 gap-4 pt-1",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "border border-slate-200 rounded-2xl p-5 bg-slate-50 space-y-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-1.5 text-xs font-bold text-emerald-700",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "w-4 h-4" }), "✅ Exemplo 1 — Uso parcial:"]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs text-slate-700 italic bg-white p-3 rounded-xl border border-slate-200 leading-relaxed",
+														children: "\"Declaro que utilizei ferramenta de Inteligência Artificial para apoio na organização de ideias e revisão de redação. Todo o conteúdo foi lido, verificado e desenvolvido por mim. A versão final é de minha autoria e responsabilidade integral.\""
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "border border-slate-200 rounded-2xl p-5 bg-slate-50 space-y-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-1.5 text-xs font-bold text-blue-700",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "w-4 h-4" }), "✅ Exemplo 2 — Uso estrutural:"]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs text-slate-700 italic bg-white p-3 rounded-xl border border-slate-200 leading-relaxed",
+														children: "\"Declaro que utilizei ferramenta de Inteligência Artificial para elaboração de esboço e estruturação de seções. O desenvolvimento, análise e redação final foram realizados por mim. Assumo total responsabilidade pelo texto apresentado.\""
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "border border-slate-200 rounded-2xl p-5 bg-slate-50 space-y-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-1.5 text-xs font-bold text-slate-700",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "w-4 h-4" }), "✅ Exemplo 3 — Não utilizei:"]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs text-slate-700 italic bg-white p-3 rounded-xl border border-slate-200 leading-relaxed",
+														children: "\"Declaro que não utilizei ferramentas de Inteligência Artificial na elaboração deste trabalho.\""
+													})]
+												})
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-4 bg-amber-50/70 border border-amber-200 rounded-xl text-xs text-amber-950 flex items-start gap-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-amber-700 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+												"⚠️ ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A não declaração quando houver uso de IA pode impedir ou cancelar a publicação." }),
+												" Se tiver dúvida sobre como declarar, entre em contato antes do envio."
+											] })]
+										})
+									]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-4",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "6"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Sobre Horas Complementares e Alinhamento Temático"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-sm text-slate-600 leading-relaxed",
+									children: "Os eixos temáticos definidos pela ESDHUBEM foram estruturados com base nas áreas de conhecimento da CAPES, visando manter uniformidade, coerência e um norteamento conceitual comum aos trabalhos. Este alinhamento temático não significa certificação ou validação oficial pela CAPES nem confere status de instituição de ensino superior à ESDHUBEM — trata-se de referência organizacional."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-[#011049] text-base flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-5 h-5 text-blue-700" }), "Validação de horas complementares"]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs text-slate-600 leading-relaxed",
+											children: "O reconhecimento de horas complementares é competência de cada instituição de ensino onde o estudante estiver matriculado. Recomendamos:"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs text-slate-700 space-y-2 pl-1",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-blue-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Consultar previamente a secretaria ou coordenação do seu curso sobre os requisitos, documentos aceitos e critérios de validação" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-blue-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Se necessário, solicitar à ESDHUBEM carta de apresentação, declaração de participação ou detalhamento da carga horária para entrega à sua instituição" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-blue-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cada instituição possui suas próprias regras — a ESDHUBEM fornece os documentos comprobatórios, mas a decisão de validação cabe exclusivamente à instituição de origem do estudante" })]
+												})
+											]
+										})
+									]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-6",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-8 h-8 rounded-full bg-blue-100 text-blue-900 font-bold flex items-center justify-center text-sm",
+										children: "7"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-xl font-bold text-[#011049]",
+										children: "Livro Autoral — Formato e Contagem de Páginas"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-[#011049] text-base flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-5 h-5 text-indigo-700" }), "Extensão mínima"]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs text-slate-700 leading-relaxed",
+											children: "O trabalho deve conter no mínimo 50 páginas de conteúdo efetivo. Não são contabilizadas neste mínimo:"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs text-slate-600 pt-1",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Capa e contracapa"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Folha de rosto"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Sumário"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Dedicatória, agradecimentos, epígrafe"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Lista de tabelas, figuras ou abreviações"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Referências bibliográficas"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-1.5 bg-white p-2.5 rounded-xl border border-slate-200 sm:col-span-2 md:col-span-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-slate-400",
+														children: "•"
+													}), " Apêndices e anexos"]
+												})
+											]
+										})
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+										className: "font-bold text-[#011049] text-base",
+										children: "Orientações de formatação sugeridas"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-sm",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+											className: "w-full text-left text-sm",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+												className: "bg-slate-50 border-b border-slate-200 text-[#011049]",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold w-1/3",
+													children: "Aspecto"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 font-bold",
+													children: "Recomendação"
+												})] })
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+												className: "divide-y divide-slate-100 text-slate-700 text-xs",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Formato de página"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "A4 (210 × 297 mm)"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Margens"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "3 cm (superior e esquerda) / 2 cm (inferior e direita)"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Fonte"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Times New Roman ou Arial, tamanho 12"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Espaçamento entre linhas"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "1,5"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Parágrafo"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Recuo de 1,25 cm na primeira linha"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Numeração de páginas"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Canto superior direito, a partir da primeira página de conteúdo"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Títulos de capítulo"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Iniciando em página nova, em destaque"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/50",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Arquivo final"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-medium text-blue-700",
+															children: "PDF, pronto para publicação e eventual impressão"
+														})]
+													})
+												]
+											})]
+										})
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 text-xs text-slate-600 space-y-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "leading-relaxed",
+										children: "A qualidade do conteúdo prevalece sobre a quantidade de páginas. O texto deve apresentar coerência, desenvolvimento completo das ideias e proposta autoral definida."
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "leading-relaxed",
+										children: "Após aprovação, o autor orienta-se sobre o registro oficial junto à Fundação Biblioteca Nacional (EDA/FBN), procedimento pessoal e intransferível."
+									})]
+								})
+							]
+						})
+					]
+				})
+			]
 		})]
 	});
 };
