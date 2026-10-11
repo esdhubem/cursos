@@ -31349,13 +31349,31 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												})]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/70 p-4 rounded-xl border border-amber-200",
+												className: "space-y-2.5 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/70 p-4 rounded-xl border border-amber-200",
 												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após a conclusão e aprovação do manuscrito, será realizado o depósito no Zenodo, conforme as orientações fornecidas." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Após a conclusão o aluno deverá realizar o depósito no site do ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Zenodo" }),
+														", conforme as orientações fornecidas."
+													] }),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 														"Quando o depósito for concluído e o Zenodo atribuir o identificador correspondente, o trabalho terá um ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI — Digital Object Identifier" }),
-														", que permite sua identificação e localização persistente na internet."
+														", que permite sua identificação e localização persistente na internet e deve ser enviado para o e-mail da escola (",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+															href: "mailto:esdhubem@proton.me",
+															className: "font-bold text-[#00227B] hover:underline",
+															children: "esdhubem@proton.me"
+														}),
+														") para aprovação do manuscrito, juntamente com o ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
+														", ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 5 minutos" }),
+														" explicando o que aprendeu, juntamente com a ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria" }),
+														" e ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
+														"."
 													] }),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 														className: "text-slate-600 italic",
