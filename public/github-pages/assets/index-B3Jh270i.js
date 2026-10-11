@@ -32052,7 +32052,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4",
-														children: "Entrega a Tríade de Fixação + Artigo de blog (1.200 a 2.500 palavras) no OSF"
+														children: "Entrega a Tríade de Fixação + Artigo de blog (1.200 a 2.500 palavras)"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 														className: "py-3.5 px-4 font-medium text-slate-900",
