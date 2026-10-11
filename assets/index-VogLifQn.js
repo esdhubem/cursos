@@ -30980,38 +30980,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										})
 									]
 								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed pt-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-									"O ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-										className: "text-amber-900 font-bold",
-										children: "Certificado Bronze"
-									}),
-									" valida a fixação ativa do aprendizado através do ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico" }),
-									" publicado na Wiki ESDHUBEM e registrado no ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF (Open Science Framework)" }),
-									"."
-								] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-									"Os certificados ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-										className: "text-slate-800 font-semibold",
-										children: "Prata"
-									}),
-									", ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-										className: "text-amber-600 font-semibold",
-										children: "Ouro"
-									}),
-									" e ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-										className: "text-cyan-700 font-semibold",
-										children: "Diamante"
-									}),
-									" estão vinculados às respectivas produções avançadas (Artigo de Blog no OSF, Manuscrito com DOI no Zenodo e Livro na Biblioteca Nacional/OSF) e serão emitidos após a entrega, validação do registro e aprovação da comissão editorial."
-								] })]
 							})
 						]
 					}),
