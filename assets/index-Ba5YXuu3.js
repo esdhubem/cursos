@@ -31730,20 +31730,13 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-3",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-700/10 text-blue-900 text-xs font-bold uppercase tracking-wider border border-blue-700/20",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes e Normas Editoriais para Artigo de Blog & SEO" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-											children: "Guia Completo do Artigo de Blog - Nível Prata"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-											children: "Consulte o documento oficial abaixo com o modelo completo, regras de SEO para ranqueamento nos buscadores, estrutura recomendada (1.200 a 2.500 palavras) e orientações de registro e submissão para o Blog Oficial da ESDHUBEM."
-										})
-									]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "Guia Completo do Artigo de Blog - Nível Prata"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+										children: "Consulte o documento oficial abaixo com o modelo completo, regras de SEO para ranqueamento nos buscadores, estrutura recomendada (1.200 a 2.500 palavras) e orientações de registro e submissão para o Blog Oficial da ESDHUBEM."
+									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-white border-2 border-slate-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
