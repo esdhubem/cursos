@@ -31376,84 +31376,101 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}), openSections["2"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-									className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-									children: "Declarações de autorização e de autoria"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-										"Estas declarações são modelos oficiais de preenchimento obrigatório que atendem a ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-[#00227B] font-bold",
-											children: "todas as categorias e níveis de publicação"
-										}),
-										" (Bronze, Prata, Ouro e Diamante). Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais."
-									] })
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "space-y-4 pt-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center justify-between gap-3 flex-wrap",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-2 text-[#00227B] font-extrabold text-sm sm:text-base",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Modelos de Documentos Oficiais para Publicação" })]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs text-slate-600 font-medium",
-										children: "Documentos oficiais para download e preenchimento"
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4 pb-6 border-b border-[#badbf7]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+										id: "odysee-iframe-declaracoes-autoria",
+										src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-8:a?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Declarações de Autorização e de Autoria)",
+										thumbnail: "./images/thumb_video_diretrizes_8.webp",
+										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
+										badge: "Modelos Oficiais • Declarações"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo: Orientações completas sobre o preenchimento das declarações de autorização e autoria" })]
 									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "grid grid-cols-1 lg:grid-cols-2 gap-5",
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "Declarações de autorização e de autoria"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Estas declarações são modelos oficiais de preenchimento obrigatório que atendem a ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+												className: "text-[#00227B] font-bold",
+												children: "todas as categorias e níveis de publicação"
+											}),
+											" (Bronze, Prata, Ouro e Diamante). Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais."
+										] })
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4 pt-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-white border-2 border-blue-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+										className: "flex items-center justify-between gap-3 flex-wrap",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center justify-between gap-2 flex-wrap",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-												className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-amber-600" }), "Declaração de Autorização de Publicação"]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: "https://docs.google.com/document/d/e/2PACX-1vTvaBZHkV5P8aFmiVQv8qk4QGvTa_QFiwgHq3raRSLQjq1-xpQtFJMHOCWVmIHh1SH4K2gWH7N7WBvZ/pub",
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "w-full h-[450px] sm:h-[500px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-												src: "https://docs.google.com/document/d/e/2PACX-1vTvaBZHkV5P8aFmiVQv8qk4QGvTa_QFiwgHq3raRSLQjq1-xpQtFJMHOCWVmIHh1SH4K2gWH7N7WBvZ/pub?embedded=true",
-												className: "w-full h-full border-0",
-												title: "Declaração de Autorização de Publicação ESDHUBEM",
-												loading: "lazy"
-											})
+											className: "flex items-center gap-2 text-[#00227B] font-extrabold text-sm sm:text-base",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Modelos de Documentos Oficiais para Publicação" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-xs text-slate-600 font-medium",
+											children: "Documentos oficiais para download e preenchimento"
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-white border-2 border-blue-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+										className: "grid grid-cols-1 lg:grid-cols-2 gap-5",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center justify-between gap-2 flex-wrap",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-												className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-4 h-4 text-blue-600" }), "Declaração de Autoria e Responsabilidade"]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: "https://docs.google.com/document/d/e/2PACX-1vRrM84I2aCUSWkSh40jNbufvDMKMcL2ZurNRImp9nFvKC8-uxKLz7cr-TRbhe0i0eVH9govf3lz85xB/pub",
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+											className: "bg-white border-2 border-blue-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center justify-between gap-2 flex-wrap",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+													className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-amber-600" }), "Declaração de Autorização de Publicação"]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+													href: "https://docs.google.com/document/d/e/2PACX-1vTvaBZHkV5P8aFmiVQv8qk4QGvTa_QFiwgHq3raRSLQjq1-xpQtFJMHOCWVmIHh1SH4K2gWH7N7WBvZ/pub",
+													target: "_blank",
+													rel: "noopener noreferrer",
+													className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "w-full h-[450px] sm:h-[500px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+													src: "https://docs.google.com/document/d/e/2PACX-1vTvaBZHkV5P8aFmiVQv8qk4QGvTa_QFiwgHq3raRSLQjq1-xpQtFJMHOCWVmIHh1SH4K2gWH7N7WBvZ/pub?embedded=true",
+													className: "w-full h-full border-0",
+													title: "Declaração de Autorização de Publicação ESDHUBEM",
+													loading: "lazy"
+												})
 											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "w-full h-[450px] sm:h-[500px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-												src: "https://docs.google.com/document/d/e/2PACX-1vRrM84I2aCUSWkSh40jNbufvDMKMcL2ZurNRImp9nFvKC8-uxKLz7cr-TRbhe0i0eVH9govf3lz85xB/pub?embedded=true",
-												className: "w-full h-full border-0",
-												title: "Declaração de Autoria e Responsabilidade ESDHUBEM",
-												loading: "lazy"
-											})
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-white border-2 border-blue-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center justify-between gap-2 flex-wrap",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+													className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-4 h-4 text-blue-600" }), "Declaração de Autoria e Responsabilidade"]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+													href: "https://docs.google.com/document/d/e/2PACX-1vRrM84I2aCUSWkSh40jNbufvDMKMcL2ZurNRImp9nFvKC8-uxKLz7cr-TRbhe0i0eVH9govf3lz85xB/pub",
+													target: "_blank",
+													rel: "noopener noreferrer",
+													className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "w-full h-[450px] sm:h-[500px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+													src: "https://docs.google.com/document/d/e/2PACX-1vRrM84I2aCUSWkSh40jNbufvDMKMcL2ZurNRImp9nFvKC8-uxKLz7cr-TRbhe0i0eVH9govf3lz85xB/pub?embedded=true",
+													className: "w-full h-full border-0",
+													title: "Declaração de Autoria e Responsabilidade ESDHUBEM",
+													loading: "lazy"
+												})
+											})]
 										})]
 									})]
-								})]
-							})]
+								})
+							]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
