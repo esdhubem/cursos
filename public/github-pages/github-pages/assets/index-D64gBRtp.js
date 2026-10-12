@@ -32304,7 +32304,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "space-y-2.5 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/70 p-4 rounded-xl border border-amber-200",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"Após a conclusão o aluno deverá realizar o depósito no site do ",
+													"Antes do aluno enviar seu portfolio para a escola fazer avaliação, ele deverá realizar o depósito no site do ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Zenodo" }),
 													", conforme as orientações fornecidas."
 												] }),
