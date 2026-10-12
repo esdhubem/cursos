@@ -32134,7 +32134,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-600" }), "Documento Integrado • Artigo de Blog & SEO (1.200 a 2.500 palavras)"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "6 - Guia Completo do Artigo de Blog - Nível Prata"
+											children: "6 - Guia Completo para publicar o artigo de Blog - Nível Prata"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32153,7 +32153,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "space-y-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-										children: "Guia Completo do Artigo de Blog - Nível Prata"
+										children: "Guia Completo para publicar o artigo de Blog - Nível Prata"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
 										children: "Consulte o documento oficial abaixo com o modelo completo, regras de SEO para ranqueamento nos buscadores, estrutura recomendada (1.200 a 2.500 palavras) e orientações de registro e submissão para o Blog Oficial da ESDHUBEM."
@@ -32164,20 +32164,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "flex items-center justify-between gap-2 flex-wrap",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 											className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-blue-600" }), "Guia Completo — Artigo de Blog & SEO (Nível Prata)"]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-blue-600" }), "Guia Completo para publicar o artigo de Blog - Nível Prata"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 											href: "https://docs.google.com/document/d/e/2PACX-1vRU1IGDHMqKJGO9dXcA7q4BgeWy_UMpY7WG8ocLglse36452RquRkvmo54mgeVukjhpqDWYzPlac8af/pub",
 											target: "_blank",
 											rel: "noopener noreferrer",
 											className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-full h-[500px] sm:h-[600px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
 											src: "https://docs.google.com/document/d/e/2PACX-1vRU1IGDHMqKJGO9dXcA7q4BgeWy_UMpY7WG8ocLglse36452RquRkvmo54mgeVukjhpqDWYzPlac8af/pub?embedded=true",
 											className: "w-full h-full border-0",
-											title: "Guia Completo do Artigo de Blog - Nível Prata ESDHUBEM",
+											title: "Guia Completo para publicar o artigo de Blog - Nível Prata ESDHUBEM",
 											loading: "lazy"
 										})
 									})]
