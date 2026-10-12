@@ -32177,7 +32177,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 4 • Manuscrito Científico, Zenodo & DOI"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-											children: "7 - Certificação Ouro"
+											children: "7- Certificação Ouro - Publicação de artigo de investigação"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32253,9 +32253,9 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [
 												"O nível Ouro é destinado ao estudante que entrega a ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
-												" do curso, mas o texto será um ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Conclusão de Curso" }),
-												" estruturado ou artigo de investigação científica com registro ",
+												" do curso e o ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo de investigação" }),
+												" com registro ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
 												"."
 											]
