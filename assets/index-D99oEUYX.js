@@ -31227,24 +31227,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00227B]/10 text-[#00227B] text-xs font-bold uppercase tracking-wider border border-[#00227B]/20",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-4 h-4 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Documentação Jurídica & Direitos Autorais" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-											children: "Declarações de autorização e de autoria"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-											children: [
-												"Estas declarações são modelos oficiais de preenchimento obrigatório que atendem a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "todas as categorias e níveis de publicação" }),
-												" (Bronze, Prata, Ouro e Diamante). Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais."
-											]
-										})
-									]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "Declarações de autorização e de autoria"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+										children: [
+											"Estas declarações são modelos oficiais de preenchimento obrigatório que atendem a ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "todas as categorias e níveis de publicação" }),
+											" (Bronze, Prata, Ouro e Diamante). Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais."
+										]
+									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 pt-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {

@@ -1904,10 +1904,6 @@
     border-color: #7cbbf2;
   }
 
-  .border-\[\#00227B\]\/20 {
-    border-color: oklab(30.6249% -.018812 -.153093 / .2);
-  }
-
   .border-\[\#011049\] {
     border-color: #011049;
   }
@@ -3050,10 +3046,6 @@
 
   .bg-\[\#00227B\] {
     background-color: #00227b;
-  }
-
-  .bg-\[\#00227B\]\/10 {
-    background-color: oklab(30.6249% -.018812 -.153093 / .1);
   }
 
   .bg-\[\#011049\] {
