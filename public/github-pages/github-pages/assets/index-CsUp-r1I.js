@@ -31492,9 +31492,9 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
 										children: "Guia Completo para publicar o Verbete"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-										children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM." })
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-white border-2 border-amber-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
