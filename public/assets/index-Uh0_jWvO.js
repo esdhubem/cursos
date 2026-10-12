@@ -30902,7 +30902,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"14": false,
 		"15": false,
 		"16": false,
-		"17": false
+		"17": false,
+		"18": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30929,7 +30930,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"14": true,
 			"15": true,
 			"16": true,
-			"17": true
+			"17": true,
+			"18": true
 		});
 	};
 	const collapseAll = () => {
@@ -30951,7 +30953,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"14": false,
 			"15": false,
 			"16": false,
-			"17": false
+			"17": false,
+			"18": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -31154,6 +31157,12 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									onClick: () => openAndScrollTo("17"),
 									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["17"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
 									children: "🌐 17. Registro nas Plataformas"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									type: "button",
+									onClick: () => openAndScrollTo("18"),
+									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["18"] ? "bg-purple-400 text-slate-950 font-black shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
+									children: "🤖 18. Inteligência Artificial"
 								})
 							]
 						})]
@@ -35117,6 +35126,204 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													]
 												})]
 											})
+										})]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-18",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("18"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["18"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
+									children: "🤖 18"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Transparência, Ética, Limites de Uso e Modelos de Declaração"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "18 - Uso de Inteligência Artificial — Declaração e Limites"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["18"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["18"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["18"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-7 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
+											children: "5"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+											className: "font-black text-base sm:text-lg text-slate-900",
+											children: "Uso de Inteligência Artificial — Declaração e Limites"
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: [
+											"A ferramenta de Inteligência Artificial é vista como ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "apoio à produção" }),
+											", nunca como substituta do pensamento e da criação humana. A responsabilidade sobre todo o conteúdo publicado é ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "sempre do autor" }),
+											"."
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "grid grid-cols-1 md:grid-cols-2 gap-5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-emerald-50/50 border border-emerald-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-emerald-950",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Em quais etapas pode ser usada?" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Organização de ideias e estruturação de esboços" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Revisão textual e sugestões de redação" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verificação de coerência e clareza" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["Sugestões de referências e fontes ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "(sempre conferir!)" })] })]
+													})
+												]
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-rose-50/50 border border-rose-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-rose-950",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-rose-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "O que NÃO pode ser feito sem verificação integral?" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-rose-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Apresentar conteúdos gerados sem leitura, confirmação e edição" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-rose-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Usar dados, citações ou referências sem verificação na fonte original" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-rose-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Transferir a autoria para a ferramenta ou omitir sua participação" })]
+													})
+												]
+											})]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-4 pt-3 border-t border-slate-200",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+												className: "font-bold text-base text-slate-900",
+												children: "Modelo de Declaração de Uso de IA"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-600 leading-relaxed",
+												children: "Insira no final do trabalho (antes das referências) um texto conforme o exemplo que melhor se aplica:"
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "bg-white border-2 border-slate-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-900",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[11px] font-bold",
+															children: "Exemplo 1 — Uso parcial:"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-xs text-slate-700 italic leading-relaxed flex-1 flex items-center",
+														children: "\"Declaro que utilizei ferramenta de Inteligência Artificial para apoio na organização de ideias e revisão de redação. Todo o conteúdo foi lido, verificado e desenvolvido por mim. A versão final é de minha autoria e responsabilidade integral.\""
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "bg-white border-2 border-slate-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-900",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "px-2 py-0.5 rounded bg-blue-100 text-blue-800 text-[11px] font-bold",
+															children: "Exemplo 2 — Uso estrutural:"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-xs text-slate-700 italic leading-relaxed flex-1 flex items-center",
+														children: "\"Declaro que utilizei ferramenta de Inteligência Artificial para elaboração de esboço e estruturação de seções. O desenvolvimento, análise e redação final foram realizados por mim. Assumo total responsabilidade pelo texto apresentado.\""
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "bg-white border-2 border-slate-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col justify-between",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-900",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-slate-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "px-2 py-0.5 rounded bg-slate-100 text-slate-800 text-[11px] font-bold",
+															children: "Exemplo 3 — Não utilizei:"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-xs text-slate-700 italic leading-relaxed flex-1 flex items-center",
+														children: "\"Declaro que não utilizei ferramentas de Inteligência Artificial na elaboração deste trabalho.\""
+													})]
+												})
+											]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-amber-50/80 border-2 border-amber-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-2.5 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-amber-600 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "⚠️ A não declaração quando houver uso de IA pode impedir ou cancelar a publicação." }), " Se tiver dúvida sobre como declarar, entre em contato antes do envio."]
 										})]
 									})
 								]

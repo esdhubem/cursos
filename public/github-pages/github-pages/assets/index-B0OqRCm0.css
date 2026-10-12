@@ -4016,6 +4016,10 @@
     }
   }
 
+  .bg-purple-400 {
+    background-color: var(--color-purple-400);
+  }
+
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
@@ -4083,6 +4087,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-rose-50\/40 {
       background-color: color-mix(in oklab, var(--color-rose-50) 40%, transparent);
+    }
+  }
+
+  .bg-rose-50\/50 {
+    background-color: #fff1f280;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-rose-50\/50 {
+      background-color: color-mix(in oklab, var(--color-rose-50) 50%, transparent);
     }
   }
 
