@@ -30980,7 +30980,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										type: "button",
 										onClick: () => openAndScrollTo("3"),
 										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["3"] ? "bg-amber-500 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-600/40 hover:bg-amber-900/80"}`,
-										children: "🥉 3. Bronze"
+										children: "🥉 3. Bronze: Publicação de Verbete"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
@@ -31311,7 +31311,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 2 • Níveis, Plataforma OSF & Fixação Ativa"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-											children: "3 - Certificação Bronze"
+											children: "3 - Certificação Bronze - Publicação de Verbete"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
