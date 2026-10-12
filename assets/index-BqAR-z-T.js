@@ -38770,7 +38770,7 @@ var DiretrizesAvaliacaoManuscritosPage = ({ onBackToHome, onNavigate }) => {
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "/" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-[#FFC72C] font-semibold truncate",
-								children: "Diretrizes de Avaliação de Manuscritos"
+								children: "Diretrizes de Avaliação de Manuscritos dos Alunos"
 							})
 						]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -38790,7 +38790,7 @@ var DiretrizesAvaliacaoManuscritosPage = ({ onBackToHome, onNavigate }) => {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 							className: "text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight uppercase",
-							children: "Diretrizes de Análise e Avaliação de Manuscritos"
+							children: "Diretrizes de Avaliação de Manuscritos dos Alunos"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "text-cyan-300 font-bold text-base sm:text-lg tracking-wide",
