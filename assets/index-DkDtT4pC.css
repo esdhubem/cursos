@@ -3530,6 +3530,10 @@
     }
   }
 
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
+  }
+
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }

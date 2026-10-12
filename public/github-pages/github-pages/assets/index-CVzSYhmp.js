@@ -30903,7 +30903,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"15": false,
 		"16": false,
 		"17": false,
-		"18": false
+		"18": false,
+		"19": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30931,7 +30932,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"15": true,
 			"16": true,
 			"17": true,
-			"18": true
+			"18": true,
+			"19": true
 		});
 	};
 	const collapseAll = () => {
@@ -30954,7 +30956,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"15": false,
 			"16": false,
 			"17": false,
-			"18": false
+			"18": false,
+			"19": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -31163,6 +31166,12 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									onClick: () => openAndScrollTo("18"),
 									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["18"] ? "bg-purple-400 text-slate-950 font-black shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
 									children: "🤖 18. Inteligência Artificial"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									type: "button",
+									onClick: () => openAndScrollTo("19"),
+									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["19"] ? "bg-blue-400 text-slate-950 font-black shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
+									children: "🏛️ 19. Horas Complementares"
 								})
 							]
 						})]
@@ -35325,6 +35334,111 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "leading-relaxed",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "⚠️ A não declaração quando houver uso de IA pode impedir ou cancelar a publicação." }), " Se tiver dúvida sobre como declarar, entre em contato antes do envio."]
 										})]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-19",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("19"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["19"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
+									children: "🏛️ 19"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Referência Organizacional CAPES & Critérios Institucionais de Validação"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "19 - Sobre Horas Complementares e Alinhamento Temático"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["19"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["19"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["19"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
+											children: "6"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+											className: "font-black text-base sm:text-lg text-slate-900",
+											children: "Sobre Horas Complementares e Alinhamento Temático"
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: [
+											"Os eixos temáticos definidos pela ESDHUBEM foram estruturados com base nas ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áreas de conhecimento da CAPES" }),
+											", visando manter uniformidade, coerência e um norteamento conceitual comum aos trabalhos. Este alinhamento temático não significa certificação ou validação oficial pela CAPES nem confere status de instituição de ensino superior à ESDHUBEM — ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "trata-se de referência organizacional" }),
+											"."
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-5 sm:p-6 space-y-3.5 shadow-xs",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 text-sky-950 font-bold text-sm sm:text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-5 h-5 text-sky-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Validação de horas complementares" })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: [
+													"O reconhecimento de horas complementares é ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "competência de cada instituição de ensino" }),
+													" onde o estudante estiver matriculado. Recomendamos:"
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs sm:text-sm text-slate-700 space-y-2 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-sky-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Consultar previamente a secretaria ou coordenação do seu curso sobre os requisitos, documentos aceitos e critérios de validação" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-sky-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Se necessário, solicitar à ESDHUBEM carta de apresentação, declaração de participação ou detalhamento de carga horária para entrega à sua instituição" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-sky-600 font-bold",
+															children: "•"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cada instituição possui suas próprias regras — a ESDHUBEM fornece os documentos comprobatórios, mas a decisão de validação cabe exclusivamente à instituição de origem do estudante" })]
+													})
+												]
+											})
+										]
 									})
 								]
 							})
