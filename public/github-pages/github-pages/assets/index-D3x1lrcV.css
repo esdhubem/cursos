@@ -2140,6 +2140,10 @@
     border-color: var(--color-amber-800);
   }
 
+  .border-amber-900 {
+    border-color: var(--color-amber-900);
+  }
+
   .border-blue-100 {
     border-color: var(--color-blue-100);
   }
@@ -5870,6 +5874,11 @@
   .leading-\[1\.2\] {
     --tw-leading: 1.2;
     line-height: 1.2;
+  }
+
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
   }
 
   .leading-relaxed {
