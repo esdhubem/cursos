@@ -19241,7 +19241,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-xl font-bold text-[#182333]",
-											children: "O Método da Tríade de Fixação Ativa"
+											children: "O Método da Tríade da Assimilação Ativa"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-sm text-slate-600 mt-2 leading-relaxed",
@@ -19710,7 +19710,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 									a: "Para celebrar o lançamento do nosso novo ecossistema, estamos oferecendo vagas na Turma Fundadora com valores promocionais ancorados em até 70% de desconto em relação ao mercado. Você escolhe o nível desejado (Bronze, Prata, Ouro ou Diamante) de acordo com a sua meta de certificação ou publicação."
 								},
 								{
-									q: "O que é a Metodologia da Tríade de Fixação Ativa?",
+									q: "O que é a Metodologia da Tríade da Assimilação Ativa?",
 									a: "Em vez de testes automatizados de múltipla escolha onde ninguém avalia nada, o aluno elabora 1 Mapa Mental do curso, escreve 1 síntese à mão (neurociência de retenção profunda) e grava 1 áudio de 1 minuto explicando a ideia central. Isso comprova 100% o aprendizado genuíno e elimina qualquer fraude."
 								},
 								{
@@ -27829,7 +27829,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Bronze: Aproveitamento Básico"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-amber-800 font-semibold",
-													children: "Tríade de Fixação & Verbete Enciclopédico na Wiki"
+													children: "Tríade da Assimilação Ativa & Verbete Enciclopédico na Wiki"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -27849,7 +27849,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: [
 														"Focado na consolidação prática do aprendizado através da ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
-														" da ESDHUBEM. O aluno assiste às aulas completas e valida sua absorção entregando a tríade de fixação para publicação na ",
+														" da ESDHUBEM. O aluno assiste às aulas completas e valida sua absorção entregando a tríade da assimilação ativa para publicação na ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Wiki da Escola" }),
 														":"
 													]
@@ -27928,7 +27928,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Prata: Produção de Conteúdo"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-slate-600 font-semibold",
-													children: "Tríade de Fixação + Artigo de Blog (1.200 a 2.500 palavras)"
+													children: "Tríade da Assimilação Ativa + Artigo de Blog (1.200 a 2.500 palavras)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -27947,7 +27947,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" um artigo de blog aprofundado e estratégico de ",
@@ -27965,7 +27965,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Autoral de Blog:" }),
 																" Redação aprofundada de ",
@@ -28018,7 +28018,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Ouro: Pesquisa & Preprint"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-amber-700 font-semibold",
-													children: "Tríade de Fixação + Manuscrito Científico / DOI"
+													children: "Tríade da Assimilação Ativa + Manuscrito Científico / DOI"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28037,7 +28037,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" um Trabalho de Conclusão de Curso (TCC) estruturado ou artigo científico de investigação densa, com depósito em plataforma de repositório aberto como Zenodo (CERN) ou OSF, garantindo um código ",
@@ -28053,7 +28053,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Pesquisa / TCC:" }), " Produção estruturada com ementa acadêmica, introdução, fundamentação teórica e metodologia."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Depósito e Atribuição de DOI:" }), " Depósito no repositório Zenodo / OSF gerando DOI permanente para citação no Currículo Lattes."] })
 														]
@@ -28101,7 +28101,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Diamante: Autorar e Construir"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-cyan-700 font-semibold",
-													children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
+													children: "Tríade da Assimilação Ativa + Livro Autoral (Mín. 50 páginas)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28120,7 +28120,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O nível mais elevado da escala autoral. O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido), com orientação estrutural e registro formal de direitos autorais."
@@ -28134,7 +28134,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade de Fixação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Livro Autoral Completo:" }), " Mínimo de 50 páginas de conteúdo textual desenvolvido (sem contar elementos pré e pós-textuais)."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro de Direitos Autorais:" }), " Registro formal da obra na Fundação Biblioteca Nacional (EDA/FBN) e no OSF (Lei nº 9.610/1998)."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Chancela Diamante:" }), " Destaque no Mural de Livros da ESDHUBEM e QR Code de validação no certificado."] })
@@ -31388,7 +31388,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: "BRONZE — APRENDER E CONCEITUAR (FIXAÇÃO ATIVA)"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-xs font-semibold text-amber-800",
-												children: "Tríade de Fixação & Verbete Enciclopédico na Wiki"
+												children: "Tríade da Assimilação Ativa & Verbete Enciclopédico na Wiki"
 											})] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -31408,7 +31408,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "font-bold text-xs uppercase tracking-wider text-amber-900 block",
-													children: "Requisitos da Tríade de Fixação:"
+													children: "Requisitos da Tríade da Assimilação Ativa:"
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 													className: "text-xs sm:text-sm text-slate-700 space-y-2 list-none",
@@ -31473,7 +31473,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 											className: "text-[11px] font-bold uppercase tracking-wider text-amber-800 block flex items-center gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade de Fixação Ativa"]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade da Assimilação Ativa"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
 											children: "4 - GUIA COMPLETO DO VERBETE — NÍVEL BRONZE"
@@ -31504,7 +31504,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-											children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade de Fixação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
+											children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
 										})
 									]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31626,7 +31626,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "text-slate-700 text-sm leading-relaxed",
 											children: [
 												"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 												" do curso, mas aqui o texto é maior e se trata de um artigo autoral aprofundado para publicação no ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Blog Oficial da ESDHUBEM" }),
 												", com ",
@@ -31876,7 +31876,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "text-slate-700 text-sm leading-relaxed",
 											children: [
 												"O nível Ouro é destinado ao estudante que entrega a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 												" do curso, mas o texto será um ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Conclusão de Curso" }),
 												" estruturado ou artigo de investigação científica com registro ",
@@ -32463,7 +32463,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: "DIAMANTE — AUTORAR E CONSTRUIR"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-xs font-bold text-cyan-800",
-												children: "Tríade de Fixação + Livro Autoral (Mín. 50 páginas)"
+												children: "Tríade da Assimilação Ativa + Livro Autoral (Mín. 50 páginas)"
 											})] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -32472,7 +32472,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												"O nível ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
 												" é destinado ao participante que entrega a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade de Fixação Ativa" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
 												" do curso ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 												" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido)."
@@ -33140,7 +33140,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade de Fixação Ativa"
+																		children: "Entrega a Tríade da Assimilação Ativa"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4 font-medium text-slate-900",
@@ -33165,11 +33165,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade de Fixação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
+																		children: "Entrega a Tríade da Assimilação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade de Fixação Ativa + Artigo de Blog (SEO) + Registro OSF"
+																		children: "Tríade da Assimilação Ativa + Artigo de Blog (SEO) + Registro OSF"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
@@ -33190,11 +33190,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade de Fixação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
+																		children: "Entrega a Tríade da Assimilação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade de Fixação Ativa + Manuscrito Científico + DOI Permanente"
+																		children: "Tríade da Assimilação Ativa + Manuscrito Científico + DOI Permanente"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
@@ -33215,11 +33215,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade de Fixação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
+																		children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade de Fixação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
+																		children: "Tríade da Assimilação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																		className: "py-3.5 px-4",
