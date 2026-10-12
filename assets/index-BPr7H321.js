@@ -27848,7 +27848,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"Focado na consolidação prática do aprendizado através da ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Assimilação Ativa" }),
 														" da ESDHUBEM. O aluno assiste às aulas completas e valida sua absorção entregando a tríade da assimilação ativa para publicação na ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Wiki da Escola" }),
 														":"
@@ -31322,7 +31322,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-[11px] font-bold uppercase tracking-wider text-amber-700 block",
-											children: "Vídeo 2 • Níveis, Plataforma OSF & Fixação Ativa"
+											children: "Vídeo 2 • Níveis, Plataforma OSF & Assimilação Ativa"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
 											children: "3 - Certificação Bronze - Publicação de Verbete"
@@ -31381,7 +31381,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: "🥉"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 												className: "text-lg sm:text-xl font-bold text-amber-950",
-												children: "BRONZE — APRENDER E CONCEITUAR (FIXAÇÃO ATIVA)"
+												children: "BRONZE — APRENDER E CONCEITUAR (ASSIMILAÇÃO ATIVA)"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-xs font-semibold text-amber-800",
 												children: "Tríade da Assimilação Ativa & Verbete Enciclopédico na Wiki"
@@ -31391,7 +31391,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "text-slate-700 text-sm leading-relaxed",
 											children: [
 												"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Fixação Ativa" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Assimilação Ativa" }),
 												" da ESDHUBEM, elaborando um ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete" }),
 												" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
