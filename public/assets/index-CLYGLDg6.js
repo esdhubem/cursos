@@ -31132,124 +31132,123 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							}), openSections["1"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-3 pb-8 border-b border-slate-200",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-										id: "odysee-iframe-parte-1",
-										src: "https://odysee.com/$/embed/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 1: Boas-vindas)",
-										thumbnail: "./images/thumb_video_diretrizes_1.webp",
-										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
-										badge: "Parte 1 • Boas-Vindas"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 1: Introdução e boas-vindas ao percurso de autoria e publicação da ESDHUBEM" })]
+									className: "space-y-6 pb-8 border-b border-[#badbf7]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+											id: "odysee-iframe-parte-1",
+											src: "https://odysee.com/$/embed/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 1: Boas-vindas)",
+											thumbnail: "./images/thumb_video_diretrizes_1.webp",
+											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
+											badge: "Parte 1 • Boas-Vindas"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 1: Introdução e boas-vindas ao percurso de autoria e publicação da ESDHUBEM" })]
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "p-6 rounded-2xl bg-gradient-to-r from-[#0d4494] via-[#0a3576] to-[#072458] text-white space-y-4 shadow-xl border border-cyan-400/40 relative overflow-hidden",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center justify-between gap-2 flex-wrap relative z-10",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+												className: "text-xs sm:text-sm uppercase tracking-wider text-cyan-200 font-black flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O percurso segue esta sequência:" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-[11px] text-cyan-100 bg-[#001c4e]/80 border border-cyan-400/30 px-3 py-1 rounded-full font-bold shadow-xs",
+												children: "Fluxo Integrado de Autoria & Proteção"
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-medium leading-relaxed relative z-10",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Conclusão do curso"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Comunicação da modalidade de manuscrito"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Pagamento da taxa do nível específico"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Produção do manuscrito"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Envio para análise"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Devolutiva da escola"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
+													children: "Aprovação de ambas as partes"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-cyan-300 font-black text-base sm:text-lg",
+													children: "→"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "bg-[#FFC72C] hover:bg-amber-400 text-slate-950 font-black px-4 py-2 rounded-xl shadow-lg border-2 border-amber-300 transition-all",
+													children: "Emissão do certificado e publicação do trabalho"
+												})
+											]
+										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-6 pb-8 border-b border-slate-200",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-bold text-amber-600 uppercase tracking-wider block",
-												children: "Da aprendizagem à autoria"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-												className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-												children: "Apresentação das Diretrizes de Publicação"
-											})]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm space-y-3.5 text-slate-800 text-sm sm:text-base leading-relaxed",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"A ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-														className: "text-[#00227B] font-bold",
-														children: "ESDHUBEM"
-													}),
-													" oferece diferentes possibilidades para que o estudante transforme sua experiência de aprendizagem em uma produção escrita e autoral."
-												] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir o percurso formativo previsto no curso, o estudante deverá comunicar à ESDHUBEM qual modalidade de produção pretende desenvolver." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A partir dessa escolha, receberá as orientações específicas para elaboração do trabalho." })
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "p-6 rounded-2xl bg-gradient-to-r from-[#0d4494] via-[#0a3576] to-[#072458] text-white space-y-4 shadow-xl border border-cyan-400/40 relative overflow-hidden",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between gap-2 flex-wrap relative z-10",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-													className: "text-xs sm:text-sm uppercase tracking-wider text-cyan-200 font-black flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O percurso segue esta sequência:" })]
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[11px] text-cyan-100 bg-[#001c4e]/80 border border-cyan-400/30 px-3 py-1 rounded-full font-bold shadow-xs",
-													children: "Fluxo Integrado de Autoria & Proteção"
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-medium leading-relaxed relative z-10",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Conclusão do curso"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Comunicação da modalidade de manuscrito"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Pagamento da taxa do nível específico"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Produção do manuscrito"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Envio para análise"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Devolutiva da escola"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#001c4e] hover:bg-[#00286e] px-3.5 py-2 rounded-xl text-white font-bold shadow-md border border-cyan-400/30 transition-all",
-														children: "Aprovação de ambas as partes"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-cyan-300 font-black text-base sm:text-lg",
-														children: "→"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "bg-[#FFC72C] hover:bg-amber-400 text-slate-950 font-black px-4 py-2 rounded-xl shadow-lg border-2 border-amber-300 transition-all",
-														children: "Emissão do certificado e publicação do trabalho"
-													})
-												]
-											})]
-										})
-									]
+									className: "space-y-6 pb-8 border-b border-[#badbf7]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-xs font-bold text-amber-600 uppercase tracking-wider block",
+											children: "Da aprendizagem à autoria"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+											children: "Apresentação das Diretrizes de Publicação"
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm space-y-3.5 text-slate-800 text-sm sm:text-base leading-relaxed",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+												"A ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+													className: "text-[#00227B] font-bold",
+													children: "ESDHUBEM"
+												}),
+												" oferece diferentes possibilidades para que o estudante transforme sua experiência de aprendizagem em uma produção escrita e autoral."
+											] }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir o percurso formativo previsto no curso, o estudante deverá comunicar à ESDHUBEM qual modalidade de produção pretende desenvolver." }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A partir dessa escolha, receberá as orientações específicas para elaboração do trabalho." })
+										]
+									})]
 								})]
 							})]
 						}),
