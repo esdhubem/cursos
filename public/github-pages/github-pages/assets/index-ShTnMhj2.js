@@ -32046,6 +32046,114 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														className: "flex items-center gap-2",
 														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 															className: "text-lg",
+															children: "📖"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+															children: "Publicação e Mural de Livros da ESDHUBEM"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
+														children: [
+															"Após cumprir todos os requisitos, a obra poderá ser incluída no ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mural de Livros da ESDHUBEM" }),
+															"."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-emerald-50/60 border border-emerald-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center gap-2 font-bold text-emerald-950",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🆓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "text-base",
+																	children: "Disponibilização Gratuita"
+																})]
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+																className: "space-y-1.5 text-slate-700",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Página própria no site da ESDHUBEM;" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Disponível a capa da imagem do livro e a descrição e informação do certificado diamante emitido pela escola." })]
+															})]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-amber-50/70 border border-amber-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center gap-2 font-bold text-amber-950",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "💰" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+																	className: "text-base",
+																	children: "Sobre Disponibilização para Venda"
+																})]
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-slate-700 leading-relaxed",
+																children: [
+																	"Caso você queira disponibilizar seu livro ou obra para venda ao público, a ESDHUBEM estabelece uma ",
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "parceria como afiliado por meio da plataforma Hotmart" }),
+																	". Por que fazemos assim?"
+																]
+															})]
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "bg-white border border-amber-200/80 rounded-2xl p-5 space-y-3 text-xs sm:text-sm shadow-xs",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "font-bold text-amber-950",
+															children: "Por que fazemos assim?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+															className: "space-y-2 text-slate-700",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você continua sendo o autor e o titular dos direitos" }), " — a parceria não altera a propriedade da obra;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Hotmart cuida de toda a estrutura:" }), " processamento de pagamentos, entrega, segurança digital e relatórios;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A parceria permite que a escola divulgue a venda do seu trabalho" }), " para nossa rede de contatos, ampliando sua visibilidade;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Cada parte recebe a participação combinada sobre as vendas" }), ", você como autor, a escola como parceira de divulgação;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tudo com transparência:" }), " valores, porcentagens e condições são combinados previamente, de forma clara e acordada;"] })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+																	className: "flex items-start gap-2",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-emerald-600 font-bold",
+																		children: "✅"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você pode optar por não vender:" }), " a publicação gratuita no site ou repositório não exige parceria de venda, isso é uma escolha sua, feita quando quiser avançar para comercialização."] })]
+																})
+															]
+														})]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
 															children: "📝"
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
 															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
@@ -32256,114 +32364,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																children: "* Para informações atualizadas sobre documentos, valores, procedimentos e prazos, consulte sempre diretamente as orientações oficiais da Fundação Biblioteca Nacional."
 															})
 														]
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-4 pt-1",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-lg",
-															children: "📖"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-															className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
-															children: "Publicação e Mural de Livros da ESDHUBEM"
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-														className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-														children: [
-															"Após cumprir todos os requisitos, a obra poderá ser incluída no ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mural de Livros da ESDHUBEM" }),
-															"."
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "bg-emerald-50/60 border border-emerald-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "flex items-center gap-2 font-bold text-emerald-950",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🆓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																	className: "text-base",
-																	children: "Disponibilização Gratuita"
-																})]
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-																className: "space-y-1.5 text-slate-700",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Página própria no site da ESDHUBEM;" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "• Disponível a capa da imagem do livro e a descrição e informação do certificado diamante emitido pela escola." })]
-															})]
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "bg-amber-50/70 border border-amber-200 rounded-2xl p-5 space-y-2.5 text-xs sm:text-sm",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "flex items-center gap-2 font-bold text-amber-950",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "💰" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-																	className: "text-base",
-																	children: "Sobre Disponibilização para Venda"
-																})]
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																className: "text-slate-700 leading-relaxed",
-																children: [
-																	"Caso você queira disponibilizar seu livro ou obra para venda ao público, a ESDHUBEM estabelece uma ",
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "parceria como afiliado por meio da plataforma Hotmart" }),
-																	". Por que fazemos assim?"
-																]
-															})]
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "bg-white border border-amber-200/80 rounded-2xl p-5 space-y-3 text-xs sm:text-sm shadow-xs",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-															className: "font-bold text-amber-950",
-															children: "Por que fazemos assim?"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-															className: "space-y-2 text-slate-700",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você continua sendo o autor e o titular dos direitos" }), " — a parceria não altera a propriedade da obra;"] })]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Hotmart cuida de toda a estrutura:" }), " processamento de pagamentos, entrega, segurança digital e relatórios;"] })]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A parceria permite que a escola divulgue a venda do seu trabalho" }), " para nossa rede de contatos, ampliando sua visibilidade;"] })]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Cada parte recebe a participação combinada sobre as vendas" }), ", você como autor, a escola como parceira de divulgação;"] })]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tudo com transparência:" }), " valores, porcentagens e condições são combinados previamente, de forma clara e acordada;"] })]
-																}),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																	className: "flex items-start gap-2",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-600 font-bold",
-																		children: "✅"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Você pode optar por não vender:" }), " a publicação gratuita no site ou repositório não exige parceria de venda, isso é uma escolha sua, feita quando quiser avançar para comercialização."] })]
-																})
-															]
-														})]
 													})
 												]
 											})
