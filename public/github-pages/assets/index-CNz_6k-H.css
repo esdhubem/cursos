@@ -7965,6 +7965,10 @@
       --tw-leading: calc(var(--spacing) * 8);
       line-height: calc(var(--spacing) * 8);
     }
+
+    .sm\:whitespace-normal {
+      white-space: normal;
+    }
   }
 
   @media (min-width: 48rem) {

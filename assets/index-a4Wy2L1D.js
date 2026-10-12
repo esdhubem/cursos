@@ -31764,123 +31764,141 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																		})
 																	]
 																})
-															}),
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-3 pt-4 border-t border-slate-200",
+														children: [
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "space-y-3 pt-5 border-t border-slate-200",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "flex items-center gap-2",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-lg",
-																			children: "📚"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-																			className: "font-bold text-xs sm:text-sm uppercase tracking-wider text-slate-900",
-																			children: "Resumo das plataformas para pesquisa de artigos para referência bibliográfica"
+																className: "flex items-center gap-2",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-lg",
+																	children: "📚"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																	className: "font-bold text-xs sm:text-sm uppercase tracking-wider text-slate-900",
+																	children: "Resumo das plataformas para pesquisa de artigos para referência bibliográfica"
+																})]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs bg-white",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+																	className: "w-full text-left text-xs sm:text-sm border-collapse",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																		className: "bg-slate-900 text-white",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																			className: "py-3 px-4 font-bold uppercase tracking-wider w-1/3 sm:w-2/5",
+																			children: "Plataforma"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																			className: "py-3 px-4 font-bold uppercase tracking-wider",
+																			children: "Por que usar"
 																		})]
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-																		className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs bg-white",
-																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-																			className: "w-full text-left text-xs sm:text-sm border-collapse",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																				className: "bg-slate-900 text-white",
-																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																					className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3 sm:w-2/5",
-																					children: "Plataforma"
-																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																					className: "py-2.5 px-4 font-bold uppercase tracking-wider",
-																					children: "Por que usar"
-																				})]
-																			}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-																				className: "divide-y divide-slate-100 text-slate-700",
-																				children: [
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🌐" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Scielo + Google Acadêmico" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Já conhecidos, mantidos como você pediu"
-																						})]
-																					}),
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏛️" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Portal Periódicos CAPES" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Acesso a várias bases de uma vez"
-																						})]
-																					}),
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "BDTD" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Teses e dissertações brasileiras"
-																						})]
-																					}),
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "OasisBr" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Produção científica nacional em acesso aberto"
-																						})]
-																					}),
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🌎" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Redalyc" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Artigos em português/espanhol — América Latina"
-																						})]
-																					}),
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																						className: "hover:bg-amber-50/40 transition-colors",
-																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 font-bold text-slate-900",
-																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-																								className: "flex items-center gap-1.5",
-																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "DOAJ" })]
-																							})
-																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																							className: "py-3 px-4 text-slate-600",
-																							children: "Revistas internacionais de acesso livre"
-																						})]
+																	}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																		className: "divide-y divide-slate-100 text-slate-700",
+																		children: [
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "🌐"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Scielo + Google Acadêmico" })]
 																					})
-																				]
-																			})]
-																		})
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																		className: "text-xs text-amber-900 font-semibold bg-amber-50 p-2.5 rounded-lg border border-amber-200 flex items-center gap-1.5",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "✅" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Todas são gratuitas e confiáveis." })]
-																	})
-																]
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Já conhecidos, mantidos como você pediu"
+																				})]
+																			}),
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "🏛️"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Portal Periódicos CAPES" })]
+																					})
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Acesso a várias bases de uma vez"
+																				})]
+																			}),
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "🎓"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "BDTD" })]
+																					})
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Teses e dissertações brasileiras"
+																				})]
+																			}),
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "🔬"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "OasisBr" })]
+																					})
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Produção científica nacional em acesso aberto"
+																				})]
+																			}),
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "🌎"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Redalyc" })]
+																					})
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Artigos em português/espanhol — América Latina"
+																				})]
+																			}),
+																			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "hover:bg-amber-50/40 transition-colors",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 font-bold text-slate-900 whitespace-nowrap sm:whitespace-normal",
+																					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																						className: "flex items-center gap-2",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																							className: "text-base",
+																							children: "📖"
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "DOAJ" })]
+																					})
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																					className: "py-3 px-4 text-slate-600",
+																					children: "Revistas internacionais de acesso livre"
+																				})]
+																			})
+																		]
+																	})]
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-xs text-amber-900 font-semibold bg-amber-50 p-2.5 rounded-lg border border-amber-200 flex items-center gap-1.5",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "✅" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Todas são gratuitas e confiáveis." })]
 															})
 														]
 													})
