@@ -31472,6 +31472,42 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-4 py-4 border-y border-amber-200/80",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center justify-between gap-3 flex-wrap",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-sm",
+																children: "🎬"
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 5: Orientações para Produção do Artigo" })]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+															href: "https://odysee.com/@esdhubem:a/diretrizes-publicacao-5:b",
+															target: "_blank",
+															rel: "noopener noreferrer",
+															className: "text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline flex items-center gap-1.5",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assistir no Odysee" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+															id: "odysee-iframe-parte-5",
+															className: "w-full h-full border-0 absolute inset-0",
+															src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-5:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+															allowFullScreen: true,
+															title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 5: Orientações para Produção do Artigo)",
+															loading: "lazy"
+														})
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 5: Diretrizes práticas e passo a passo para a estruturação do artigo científico e manuscrito" })]
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "space-y-4 pt-1",
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
