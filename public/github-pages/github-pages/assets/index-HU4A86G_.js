@@ -31957,7 +31957,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [
 												"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
-												" do curso, mas aqui o texto é maior e se trata de um artigo autoral aprofundado para publicação no ",
+												" do curso e ainda publicar um texto maior, um artigo autoral aprofundado para publicação no ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Blog Oficial da ESDHUBEM" }),
 												", com ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
