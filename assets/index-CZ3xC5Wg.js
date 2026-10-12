@@ -32203,17 +32203,42 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 py-6 border-y border-slate-200",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-										id: "odysee-iframe-parte-4",
-										src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 4: Manuscrito Científico, Zenodo & DOI)",
-										thumbnail: "./images/thumb_video_diretrizes_4.webp",
-										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/533c4cb48d38f26d2b7e62a08cf35318.webp",
-										badge: "Parte 4 • Manuscrito & Zenodo/DOI"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 4: Orientações práticas para elaboração do manuscrito científico, depósito no Zenodo e atribuição de DOI" })]
-									})]
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+											id: "odysee-iframe-parte-4",
+											src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 4: Manuscrito Científico, Zenodo & DOI)",
+											thumbnail: "./images/thumb_video_diretrizes_4.webp",
+											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/533c4cb48d38f26d2b7e62a08cf35318.webp",
+											badge: "Parte 4 • Manuscrito & Zenodo/DOI"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 4: Orientações práticas para elaboração do manuscrito científico, depósito no Zenodo e atribuição de DOI" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "flex items-center gap-2",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial Zenodo (Depósito & DOI)"]
+													})
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+													children: "O Zenodo é uma plataforma aberta e gratuita desenvolvida pelo CERN para apoiar pesquisas científicas, possibilitar o depósito de manuscritos e atribuição de registro DOI internacional."
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+												href: "https://zenodo.org/",
+												target: "_blank",
+												rel: "noopener noreferrer",
+												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar Zenodo (zenodo.org)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+											})]
+										})
+									]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
 									children: [
