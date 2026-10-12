@@ -30933,7 +30933,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 					className: "space-y-5",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white rounded-3xl p-5 sm:p-7 border border-blue-900/80 shadow-xl space-y-4 relative overflow-hidden",
+							className: "bg-gradient-to-r from-[#0d4494] via-[#0a3576] to-[#072458] text-white rounded-3xl p-5 sm:p-7 border border-cyan-400/30 shadow-2xl space-y-4 relative overflow-hidden",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
@@ -30946,7 +30946,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Diretrizes de Publicação em Formato Sanfona"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed",
+										className: "text-xs sm:text-sm text-blue-100 mt-1 leading-relaxed",
 										children: "Clique nas seções para abrir ou recolher os vídeos, modelos de documentos e orientações detalhadas de cada nível."
 									})
 								] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -30964,10 +30964,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex flex-wrap items-center gap-2 pt-3 border-t border-blue-800/60 text-xs font-semibold relative z-10",
+								className: "flex flex-wrap items-center gap-2 pt-3 border-t border-cyan-400/20 text-xs font-semibold relative z-10",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-blue-200 text-[11px] uppercase tracking-wider mr-1 font-bold",
+										className: "text-cyan-200 text-[11px] uppercase tracking-wider mr-1 font-bold",
 										children: "Ir para:"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
