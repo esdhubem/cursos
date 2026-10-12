@@ -31400,46 +31400,261 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-white border border-amber-200/80 rounded-xl p-4 space-y-2.5",
+											className: "bg-gradient-to-b from-amber-50/70 via-white to-amber-50/40 border-2 border-amber-300 rounded-2xl p-4 sm:p-6 shadow-sm space-y-6",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "font-bold text-xs uppercase tracking-wider text-amber-900 block",
-													children: "Requisitos da Tríade da Assimilação Ativa:"
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center justify-between flex-wrap gap-2 border-b border-amber-200/80 pb-3",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "w-7 h-7 rounded-lg bg-amber-700 text-white flex items-center justify-center font-black text-xs shadow-xs",
+															children: "▲"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "font-extrabold text-xs sm:text-sm uppercase tracking-wider text-amber-950",
+															children: "Requisitos da Tríade da Assimilação Ativa"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-[11px] font-bold text-amber-900 bg-amber-100/90 px-3 py-1 rounded-full border border-amber-300",
+														children: "Estrutura em Triângulo Pedagógico"
+													})]
 												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-													className: "text-xs sm:text-sm text-slate-700 space-y-2 list-none",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "🧠"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado (à mão ou digital) estruturando os conceitos centrais e conexões pedagógicas da aula."] })]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "✍️"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão explicando o significado, o contexto histórico e a aplicação do tema."] })]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-2",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-amber-800 font-bold shrink-0",
-																children: "🎙️"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo de 1 Minuto:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."] })]
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "flex justify-center",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "w-full max-w-md bg-white border border-amber-200 rounded-2xl p-3 sm:p-4 shadow-xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
+															viewBox: "0 0 360 210",
+															className: "w-full h-auto",
+															fill: "none",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("defs", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("linearGradient", {
+																	id: "triGradient",
+																	x1: "0%",
+																	y1: "0%",
+																	x2: "100%",
+																	y2: "100%",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", {
+																		offset: "0%",
+																		stopColor: "#fef3c7",
+																		stopOpacity: "0.8"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", {
+																		offset: "100%",
+																		stopColor: "#fed7aa",
+																		stopOpacity: "0.4"
+																	})]
+																}) }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("polygon", {
+																	points: "180,24 45,178 315,178",
+																	fill: "url(#triGradient)",
+																	stroke: "#d97706",
+																	strokeWidth: "2.5",
+																	strokeDasharray: "5 5"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("line", {
+																	x1: "180",
+																	y1: "24",
+																	x2: "180",
+																	y2: "128",
+																	stroke: "#f59e0b",
+																	strokeWidth: "1.5",
+																	strokeDasharray: "3 3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("line", {
+																	x1: "45",
+																	y1: "178",
+																	x2: "180",
+																	y2: "128",
+																	stroke: "#f59e0b",
+																	strokeWidth: "1.5",
+																	strokeDasharray: "3 3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("line", {
+																	x1: "315",
+																	y1: "178",
+																	x2: "180",
+																	y2: "128",
+																	stroke: "#f59e0b",
+																	strokeWidth: "1.5",
+																	strokeDasharray: "3 3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
+																	cx: "180",
+																	cy: "128",
+																	r: "26",
+																	fill: "#ffffff",
+																	stroke: "#b45309",
+																	strokeWidth: "2"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "180",
+																	y: "125",
+																	textAnchor: "middle",
+																	fontSize: "8",
+																	fontWeight: "900",
+																	fill: "#78350f",
+																	children: "ASSIMILAÇÃO"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "180",
+																	y: "137",
+																	textAnchor: "middle",
+																	fontSize: "8",
+																	fontWeight: "900",
+																	fill: "#78350f",
+																	children: "ATIVA"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
+																	cx: "180",
+																	cy: "24",
+																	r: "18",
+																	fill: "#b45309",
+																	stroke: "#ffffff",
+																	strokeWidth: "3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "180",
+																	y: "30",
+																	textAnchor: "middle",
+																	fontSize: "13",
+																	children: "🧠"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "180",
+																	y: "55",
+																	textAnchor: "middle",
+																	fontSize: "9.5",
+																	fontWeight: "bold",
+																	fill: "#92400e",
+																	children: "1. MAPA MENTAL"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
+																	cx: "45",
+																	cy: "178",
+																	r: "18",
+																	fill: "#b45309",
+																	stroke: "#ffffff",
+																	strokeWidth: "3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "45",
+																	y: "184",
+																	textAnchor: "middle",
+																	fontSize: "13",
+																	children: "✍️"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "50",
+																	y: "202",
+																	textAnchor: "start",
+																	fontSize: "9.5",
+																	fontWeight: "bold",
+																	fill: "#92400e",
+																	children: "2. VERBETE"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
+																	cx: "315",
+																	cy: "178",
+																	r: "18",
+																	fill: "#b45309",
+																	stroke: "#ffffff",
+																	strokeWidth: "3"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "315",
+																	y: "184",
+																	textAnchor: "middle",
+																	fontSize: "13",
+																	children: "🎙️"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("text", {
+																	x: "310",
+																	y: "202",
+																	textAnchor: "end",
+																	fontSize: "9.5",
+																	fontWeight: "bold",
+																	fill: "#92400e",
+																	children: "3. ÁUDIO 1 MIN"
+																})
+															]
 														})
-													]
+													})
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "pt-2 border-t border-amber-100 flex flex-wrap gap-2 text-xs",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "🛡️ Registro de Autoria: OSF (Open Science Framework)"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-medium",
-														children: "📍 Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)"
+													className: "space-y-4",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "max-w-xl mx-auto",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-white border-2 border-amber-400 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all text-left sm:text-center relative overflow-hidden",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-400 via-amber-600 to-amber-400" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-black uppercase tracking-wider mb-2 border border-amber-200",
+																	children: "▲ Vértice Superior 1 • Síntese Visual"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "flex items-center sm:justify-center gap-2 text-amber-950 font-bold text-sm sm:text-base mb-1.5",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-xl",
+																		children: "🧠"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Mapa Mental do Conteúdo" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																	className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado (à mão ou digital) estruturando os conceitos centrais e conexões pedagógicas da aula."]
+																})
+															]
+														})
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-white border-2 border-amber-300 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-500 to-amber-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-black uppercase tracking-wider mb-2 border border-amber-200",
+																	children: "◀ Vértice Inferior 2 • Estrutura Conceitual"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "flex items-center gap-2 text-amber-950 font-bold text-sm sm:text-base mb-1.5",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-xl",
+																		children: "✍️"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verbete Enciclopédico (500 a 800 palavras)" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																	className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão explicando o significado, o contexto histórico e a aplicação do tema."]
+																})
+															] })]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "bg-white border-2 border-amber-300 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-300 to-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-black uppercase tracking-wider mb-2 border border-amber-200",
+																	children: "▶ Vértice Inferior 3 • Retenção Oral"
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																	className: "flex items-center gap-2 text-amber-950 font-bold text-sm sm:text-base mb-1.5",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																		className: "text-xl",
+																		children: "🎙️"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Áudio Explicativo de 1 Minuto" })]
+																}),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																	className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo de 1 Minuto:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."]
+																})
+															] })]
+														})]
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "pt-2 border-t border-amber-200/80 flex flex-wrap gap-2 text-xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "px-3 py-1.5 rounded-lg bg-amber-100 text-amber-900 font-semibold border border-amber-200 flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🛡️" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Registro de Autoria: OSF (Open Science Framework)" })]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "px-3 py-1.5 rounded-lg bg-amber-100 text-amber-900 font-semibold border border-amber-200 flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📍" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Publicação: Wiki Oficial ESDHUBEM (Enciclopédia Temática)" })]
 													})]
 												})
 											]
