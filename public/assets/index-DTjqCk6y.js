@@ -30838,7 +30838,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"5": false,
 		"6": false,
 		"7": false,
-		"8": false
+		"8": false,
+		"9": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30855,7 +30856,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"5": true,
 			"6": true,
 			"7": true,
-			"8": true
+			"8": true,
+			"9": true
 		});
 	};
 	const collapseAll = () => {
@@ -30867,7 +30869,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"5": false,
 			"6": false,
 			"7": false,
-			"8": false
+			"8": false,
+			"9": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -30933,7 +30936,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC72C]/15 text-[#FFC72C] text-xs font-bold uppercase tracking-wider mb-2 border border-[#FFC72C]/30 shadow-xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa dos 8 Módulos" })]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa dos 9 Módulos" })]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-xl sm:text-2xl font-black text-white tracking-tight",
@@ -30985,32 +30988,38 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("4"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["4"] ? "bg-slate-200 text-slate-950 font-black shadow-md" : "bg-slate-800/80 text-slate-200 border border-slate-600/50 hover:bg-slate-700/80"}`,
-										children: "🥈 4. Prata"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["4"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/70 text-amber-200 border border-amber-500/50 hover:bg-amber-900/90"}`,
+										children: "📖 4. Guia do Verbete (Bronze)"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("5"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["5"] ? "bg-[#FFC72C] text-slate-950 font-black shadow-md" : "bg-amber-900/60 text-amber-300 border border-amber-500/40 hover:bg-amber-800/80"}`,
-										children: "🥇 5. Ouro"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["5"] ? "bg-slate-200 text-slate-950 font-black shadow-md" : "bg-slate-800/80 text-slate-200 border border-slate-600/50 hover:bg-slate-700/80"}`,
+										children: "🥈 5. Prata"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("6"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["6"] ? "bg-purple-500 text-white font-bold shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
-										children: "📝 6. Orientações de Artigo"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["6"] ? "bg-[#FFC72C] text-slate-950 font-black shadow-md" : "bg-amber-900/60 text-amber-300 border border-amber-500/40 hover:bg-amber-800/80"}`,
+										children: "🥇 6. Ouro"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("7"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["7"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-										children: "💎 7. Diamante"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["7"] ? "bg-purple-500 text-white font-bold shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
+										children: "📝 7. Orientações de Artigo"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("8"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["8"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
-										children: "ℹ️ 8. Informação Extra"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["8"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
+										children: "💎 8. Diamante"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+										type: "button",
+										onClick: () => openAndScrollTo("9"),
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["9"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
+										children: "ℹ️ 9. Informação Extra"
 									})
 								]
 							})]
@@ -31449,8 +31458,85 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-800",
+										children: "📖 4"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "min-w-0",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "text-[11px] font-bold uppercase tracking-wider text-amber-800 block flex items-center gap-1.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade de Fixação Ativa"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
+											children: "4 - GUIA COMPLETO DO VERBETE — NÍVEL BRONZE"
+										})]
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2 shrink-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+										children: openSections["4"] ? "Recolher" : "Expandir"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: `w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-900 transition-transform duration-300 ${openSections["4"] ? "rotate-180 bg-amber-700 text-white" : ""}`,
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+									})]
+								})]
+							}), openSections["4"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-700/10 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-700/20",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes e Normas Editoriais para o Verbete" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+											children: "GUIA COMPLETO DO VERBETE — NÍVEL BRONZE"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+											children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade de Fixação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
+										})
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-white border-2 border-amber-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center justify-between gap-2 flex-wrap",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-amber-600" }), "Guia Completo do Verbete — Nível Bronze"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: "https://docs.google.com/document/d/e/2PACX-1vTnwqqsY7e8DzHbrMwYl5fIn8r8pdJgN30S4SPsqKgsYGS5H7OnEkitqtJBF9O1DILc2re0s279Azkn/pub",
+											target: "_blank",
+											rel: "noopener noreferrer",
+											className: "inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 font-semibold hover:underline",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-full h-[500px] sm:h-[600px] rounded-xl overflow-hidden border border-slate-200 bg-white shadow-inner",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+											src: "https://docs.google.com/document/d/e/2PACX-1vTnwqqsY7e8DzHbrMwYl5fIn8r8pdJgN30S4SPsqKgsYGS5H7OnEkitqtJBF9O1DILc2re0s279Azkn/pub?embedded=true",
+											className: "w-full h-full border-0",
+											title: "Guia Completo do Verbete — Nível Bronze ESDHUBEM",
+											loading: "lazy"
+										})
+									})]
+								})]
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							id: "secao-sanfona-5",
+							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								onClick: () => toggleSection("5"),
+								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+								"aria-expanded": openSections["5"],
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-slate-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-slate-800",
-										children: "🥈 4"
+										children: "🥈 5"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -31458,20 +31544,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 3 • Artigo de Blog & SEO (1.200 a 2.500 palavras)"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "4 - Certificação Prata"
+											children: "5 - Certificação Prata"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["4"] ? "Recolher" : "Expandir"
+										children: openSections["5"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["4"] ? "rotate-180 bg-slate-800 text-white" : ""}`,
+										className: `w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["5"] ? "rotate-180 bg-slate-800 text-white" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["4"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["5"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 py-6 border-y border-slate-200",
@@ -31634,18 +31720,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							id: "secao-sanfona-5",
+							id: "secao-sanfona-6",
 							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
-								onClick: () => toggleSection("5"),
+								onClick: () => toggleSection("6"),
 								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-								"aria-expanded": openSections["5"],
+								"aria-expanded": openSections["6"],
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-600",
-										children: "🥇 5"
+										children: "🥇 6"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -31653,20 +31739,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 4 • Manuscrito Científico, Zenodo & DOI"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-											children: "5 - Certificação Ouro"
+											children: "6 - Certificação Ouro"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["5"] ? "Recolher" : "Expandir"
+										children: openSections["6"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-amber-200/80 flex items-center justify-center text-amber-950 transition-transform duration-300 ${openSections["5"] ? "rotate-180 bg-amber-500 text-slate-950" : ""}`,
+										className: `w-8 h-8 rounded-full bg-amber-200/80 flex items-center justify-center text-amber-950 transition-transform duration-300 ${openSections["6"] ? "rotate-180 bg-amber-500 text-slate-950" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["5"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["6"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 py-6 border-y border-slate-200",
@@ -31818,18 +31904,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							id: "secao-sanfona-6",
+							id: "secao-sanfona-7",
 							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
-								onClick: () => toggleSection("6"),
+								onClick: () => toggleSection("7"),
 								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-								"aria-expanded": openSections["6"],
+								"aria-expanded": openSections["7"],
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-purple-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-purple-900",
-										children: "📝 6"
+										children: "📝 7"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -31837,20 +31923,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 5 • Metodologia, Eixos Temáticos & Fontes Bibliográficas"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-purple-950 truncate sm:whitespace-normal",
-											children: "6 - Orientações para publicação de Artigo"
+											children: "7 - Orientações para publicação de Artigo"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["6"] ? "Recolher" : "Expandir"
+										children: openSections["7"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-800 transition-transform duration-300 ${openSections["6"] ? "rotate-180 bg-purple-800 text-white" : ""}`,
+										className: `w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-800 transition-transform duration-300 ${openSections["7"] ? "rotate-180 bg-purple-800 text-white" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["6"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["7"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32268,18 +32354,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							id: "secao-sanfona-7",
+							id: "secao-sanfona-8",
 							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
-								onClick: () => toggleSection("7"),
+								onClick: () => toggleSection("8"),
 								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-								"aria-expanded": openSections["7"],
+								"aria-expanded": openSections["8"],
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-										children: "💎 7"
+										children: "💎 8"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -32287,20 +32373,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeos 6 e 7 • Livro Autoral (Mín. 50 Páginas) & Registro EDA/FBN"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-											children: "7 - Certificação Diamante: Orientação para publicação de livro"
+											children: "8 - Certificação Diamante: Orientação para publicação de livro"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["7"] ? "Recolher" : "Expandir"
+										children: openSections["8"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["7"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+										className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["8"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["7"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							}), openSections["8"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-gradient-to-r from-cyan-50/50 via-white to-white border-2 border-cyan-400 rounded-2xl p-6 sm:p-8 space-y-6 shadow-sm",
@@ -32845,18 +32931,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							id: "secao-sanfona-8",
+							id: "secao-sanfona-9",
 							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
-								onClick: () => toggleSection("8"),
+								onClick: () => toggleSection("9"),
 								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-								"aria-expanded": openSections["8"],
+								"aria-expanded": openSections["9"],
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-										children: "ℹ️ 8"
+										children: "ℹ️ 9"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -32864,20 +32950,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Autoria, Responsabilidade, Inteligência Artificial, Valores & Percursos"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "8 - Informação Extra"
+											children: "9 - Informação Extra"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["8"] ? "Recolher" : "Expandir"
+										children: openSections["9"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["8"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
+										className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["9"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["8"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["9"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
