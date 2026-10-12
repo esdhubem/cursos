@@ -30849,20 +30849,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 					className: "space-y-5",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-white rounded-3xl p-5 sm:p-7 border border-slate-200/90 shadow-md space-y-4",
+							className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white rounded-3xl p-5 sm:p-7 border border-blue-900/80 shadow-xl space-y-4 relative overflow-hidden",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4",
+								className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 text-xs font-bold uppercase tracking-wider mb-2 border border-amber-500/20",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa dos 7 Módulos" })]
+										className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC72C]/15 text-[#FFC72C] text-xs font-bold uppercase tracking-wider mb-2 border border-[#FFC72C]/30 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa dos 7 Módulos" })]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-xl sm:text-2xl font-black text-[#011049] tracking-tight",
+										className: "text-xl sm:text-2xl font-black text-white tracking-tight",
 										children: "Diretrizes de Publicação em Formato Sanfona"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed",
+										className: "text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed",
 										children: "Clique nas seções para abrir ou recolher os vídeos, modelos de documentos e orientações detalhadas de cada nível."
 									})
 								] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -30870,62 +30870,62 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: expandAll,
-										className: "px-3.5 py-2 rounded-xl text-xs font-bold bg-[#011049] text-white hover:bg-[#061e47] transition-all cursor-pointer shadow-xs",
+										className: "px-3.5 py-2 rounded-xl text-xs font-black bg-[#FFC72C] text-slate-950 hover:bg-amber-400 transition-all cursor-pointer shadow-md",
 										children: "Expandir Todas"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: collapseAll,
-										className: "px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all cursor-pointer border border-slate-200",
+										className: "px-3.5 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer border border-white/20 shadow-xs",
 										children: "Recolher Todas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100 text-xs font-semibold",
+								className: "flex flex-wrap items-center gap-2 pt-3 border-t border-blue-800/60 text-xs font-semibold relative z-10",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-slate-400 text-[11px] uppercase tracking-wider mr-1",
+										className: "text-blue-200 text-[11px] uppercase tracking-wider mr-1 font-bold",
 										children: "Ir para:"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("1"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["1"] ? "bg-[#011049] text-white shadow-xs" : "bg-slate-100 text-slate-700 hover:bg-slate-200"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["1"] ? "bg-white text-[#011049] font-black shadow-md" : "bg-white/10 text-white hover:bg-white/20 border border-white/15"}`,
 										children: "1. Diretrizes"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("2"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["2"] ? "bg-amber-600 text-white shadow-xs" : "bg-amber-50 text-amber-900 border border-amber-200/60 hover:bg-amber-100"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["2"] ? "bg-amber-500 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-600/40 hover:bg-amber-900/80"}`,
 										children: "🥉 2. Bronze"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("3"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["3"] ? "bg-slate-700 text-white shadow-xs" : "bg-slate-100 text-slate-700 hover:bg-slate-200"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["3"] ? "bg-slate-200 text-slate-950 font-black shadow-md" : "bg-slate-800/80 text-slate-200 border border-slate-600/50 hover:bg-slate-700/80"}`,
 										children: "🥈 3. Prata"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("4"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["4"] ? "bg-amber-500 text-slate-950 font-black shadow-xs" : "bg-amber-100/70 text-amber-950 border border-amber-300 hover:bg-amber-200"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["4"] ? "bg-[#FFC72C] text-slate-950 font-black shadow-md" : "bg-amber-900/60 text-amber-300 border border-amber-500/40 hover:bg-amber-800/80"}`,
 										children: "🥇 4. Ouro"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("5"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["5"] ? "bg-purple-700 text-white shadow-xs" : "bg-purple-50 text-purple-900 border border-purple-200 hover:bg-purple-100"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["5"] ? "bg-purple-500 text-white font-bold shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
 										children: "📝 5. Orientações de Artigo"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("6"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["6"] ? "bg-cyan-700 text-white shadow-xs" : "bg-cyan-50 text-cyan-900 border border-cyan-200 hover:bg-cyan-100"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["6"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
 										children: "💎 6. Diamante"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("7"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["7"] ? "bg-[#011049] text-white shadow-xs" : "bg-slate-100 text-slate-700 hover:bg-slate-200"}`,
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["7"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
 										children: "ℹ️ 7. Informação Extra"
 									})
 								]
