@@ -3338,6 +3338,16 @@
     }
   }
 
+  .bg-cyan-50\/40 {
+    background-color: #ecfeff66;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-cyan-50\/40 {
+      background-color: color-mix(in oklab, var(--color-cyan-50) 40%, transparent);
+    }
+  }
+
   .bg-cyan-50\/70 {
     background-color: #ecfeffb3;
   }
@@ -7392,6 +7402,10 @@
 
     .hover\:text-cyan-300:hover {
       color: var(--color-cyan-300);
+    }
+
+    .hover\:text-cyan-950:hover {
+      color: var(--color-cyan-950);
     }
 
     .hover\:text-emerald-300:hover {
