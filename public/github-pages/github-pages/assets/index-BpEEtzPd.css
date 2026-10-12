@@ -1904,10 +1904,6 @@
     border-color: oklab(68.8828% -.160126 .0965147 / .5);
   }
 
-  .border-\[\#3393ea\] {
-    border-color: #3393ea;
-  }
-
   .border-\[\#011049\] {
     border-color: #011049;
   }
@@ -2960,10 +2956,6 @@
     }
   }
 
-  .border-l-\[\#00227B\] {
-    border-left-color: #00227b;
-  }
-
   .border-l-amber-500 {
     border-left-color: var(--color-amber-500);
   }
@@ -3000,6 +2992,14 @@
     background-color: #0a1128;
   }
 
+  .bg-\[\#001c4e\] {
+    background-color: #001c4e;
+  }
+
+  .bg-\[\#001c4e\]\/80 {
+    background-color: oklab(24.4389% -.0174467 -.0972041 / .8);
+  }
+
   .bg-\[\#1DB954\] {
     background-color: #1db954;
   }
@@ -3014,10 +3014,6 @@
 
   .bg-\[\#25D366\] {
     background-color: #25d366;
-  }
-
-  .bg-\[\#55abfa\] {
-    background-color: #55abfa;
   }
 
   .bg-\[\#061c44\] {
@@ -6100,6 +6096,10 @@
     color: var(--color-blue-950);
   }
 
+  .text-cyan-100 {
+    color: var(--color-cyan-100);
+  }
+
   .text-cyan-100\/80 {
     color: #cefafecc;
   }
@@ -7324,10 +7324,6 @@
       border-color: var(--color-violet-300);
     }
 
-    .hover\:bg-\[\#001a5e\]:hover {
-      background-color: #001a5e;
-    }
-
     .hover\:bg-\[\#001b63\]:hover {
       background-color: #001b63;
     }
@@ -7350,6 +7346,10 @@
 
     .hover\:bg-\[\#061e47\]:hover {
       background-color: #061e47;
+    }
+
+    .hover\:bg-\[\#00286e\]:hover {
+      background-color: #00286e;
     }
 
     .hover\:bg-\[\#011049\]:hover {
