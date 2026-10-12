@@ -103,7 +103,6 @@
     --color-yellow-400: oklch(85.2% .199 91.936);
     --color-yellow-600: oklch(68.1% .162 75.834);
     --color-yellow-700: oklch(55.4% .135 66.442);
-    --color-yellow-900: oklch(42.1% .095 57.708);
     --color-green-600: oklch(62.7% .194 149.214);
     --color-emerald-50: oklch(97.9% .021 166.113);
     --color-emerald-100: oklch(95% .052 163.051);
@@ -1346,12 +1345,12 @@
     width: calc(var(--spacing) * 36);
   }
 
-  .w-48 {
-    width: calc(var(--spacing) * 48);
+  .w-44 {
+    width: calc(var(--spacing) * 44);
   }
 
-  .w-52 {
-    width: calc(var(--spacing) * 52);
+  .w-48 {
+    width: calc(var(--spacing) * 48);
   }
 
   .w-64 {
@@ -3186,16 +3185,6 @@
     background-color: var(--color-amber-50);
   }
 
-  .bg-amber-50\/30 {
-    background-color: #fffbeb4d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-amber-50\/30 {
-      background-color: color-mix(in oklab, var(--color-amber-50) 30%, transparent);
-    }
-  }
-
   .bg-amber-50\/50 {
     background-color: #fffbeb80;
   }
@@ -3462,16 +3451,6 @@
     }
   }
 
-  .bg-blue-50\/40 {
-    background-color: #eff6ff66;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-blue-50\/40 {
-      background-color: color-mix(in oklab, var(--color-blue-50) 40%, transparent);
-    }
-  }
-
   .bg-blue-50\/50 {
     background-color: #eff6ff80;
   }
@@ -3638,16 +3617,6 @@
     background-color: var(--color-cyan-50);
   }
 
-  .bg-cyan-50\/30 {
-    background-color: #ecfeff4d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-cyan-50\/30 {
-      background-color: color-mix(in oklab, var(--color-cyan-50) 30%, transparent);
-    }
-  }
-
   .bg-cyan-50\/70 {
     background-color: #ecfeffb3;
   }
@@ -3754,26 +3723,6 @@
 
   .bg-emerald-50 {
     background-color: var(--color-emerald-50);
-  }
-
-  .bg-emerald-50\/30 {
-    background-color: #ecfdf54d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-emerald-50\/30 {
-      background-color: color-mix(in oklab, var(--color-emerald-50) 30%, transparent);
-    }
-  }
-
-  .bg-emerald-50\/40 {
-    background-color: #ecfdf566;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-emerald-50\/40 {
-      background-color: color-mix(in oklab, var(--color-emerald-50) 40%, transparent);
-    }
   }
 
   .bg-emerald-50\/50 {
@@ -4503,16 +4452,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-white\/95 {
       background-color: color-mix(in oklab, var(--color-white) 95%, transparent);
-    }
-  }
-
-  .bg-yellow-50\/30 {
-    background-color: #fefce84d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-yellow-50\/30 {
-      background-color: color-mix(in oklab, var(--color-yellow-50) 30%, transparent);
     }
   }
 
@@ -6767,10 +6706,6 @@
     color: var(--color-yellow-700);
   }
 
-  .text-yellow-900 {
-    color: var(--color-yellow-900);
-  }
-
   .uppercase {
     text-transform: uppercase;
   }
@@ -6785,6 +6720,12 @@
 
   .underline {
     text-decoration-line: underline;
+  }
+
+  .decoration-amber-400 {
+    -webkit-text-decoration-color: var(--color-amber-400);
+    -webkit-text-decoration-color: var(--color-amber-400);
+    text-decoration-color: var(--color-amber-400);
   }
 
   .decoration-cyan-400\/40 {
@@ -7725,6 +7666,16 @@
       background-color: var(--color-amber-50);
     }
 
+    .hover\:bg-amber-50\/20:hover {
+      background-color: #fffbeb33;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-amber-50\/20:hover {
+        background-color: color-mix(in oklab, var(--color-amber-50) 20%, transparent);
+      }
+    }
+
     .hover\:bg-amber-50\/30:hover {
       background-color: #fffbeb4d;
     }
@@ -7853,6 +7804,16 @@
       }
     }
 
+    .hover\:bg-cyan-50\/20:hover {
+      background-color: #ecfeff33;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-cyan-50\/20:hover {
+        background-color: color-mix(in oklab, var(--color-cyan-50) 20%, transparent);
+      }
+    }
+
     .hover\:bg-cyan-50\/30:hover {
       background-color: #ecfeff4d;
     }
@@ -7871,10 +7832,6 @@
       .hover\:bg-cyan-50\/40:hover {
         background-color: color-mix(in oklab, var(--color-cyan-50) 40%, transparent);
       }
-    }
-
-    .hover\:bg-cyan-800:hover {
-      background-color: var(--color-cyan-800);
     }
 
     .hover\:bg-cyan-900:hover {
@@ -7925,6 +7882,16 @@
 
     .hover\:bg-emerald-500:hover {
       background-color: var(--color-emerald-500);
+    }
+
+    .hover\:bg-emerald-900\/80:hover {
+      background-color: #004e3bcc;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-emerald-900\/80:hover {
+        background-color: color-mix(in oklab, var(--color-emerald-900) 80%, transparent);
+      }
     }
 
     .hover\:bg-purple-50\/30:hover {
@@ -7991,16 +7958,6 @@
 
     .hover\:bg-slate-50:hover {
       background-color: var(--color-slate-50);
-    }
-
-    .hover\:bg-slate-50\/50:hover {
-      background-color: #f8fafc80;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-slate-50\/50:hover {
-        background-color: color-mix(in oklab, var(--color-slate-50) 50%, transparent);
-      }
     }
 
     .hover\:bg-slate-50\/60:hover {
@@ -8596,6 +8553,10 @@
       width: calc(var(--spacing) * 36);
     }
 
+    .sm\:w-52 {
+      width: calc(var(--spacing) * 52);
+    }
+
     .sm\:w-auto {
       width: auto;
     }
@@ -8860,10 +8821,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:col-span-1 {
-      grid-column: span 1 / span 1;
-    }
-
     .md\:w-5\/12 {
       width: 41.6667%;
     }
@@ -8945,10 +8902,6 @@
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
 
-    .md\:p-12 {
-      padding: calc(var(--spacing) * 12);
-    }
-
     .md\:py-16 {
       padding-block: calc(var(--spacing) * 16);
     }
@@ -8973,11 +8926,6 @@
       text-align: left;
     }
 
-    .md\:text-3xl {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-
     .md\:text-4xl {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -8986,11 +8934,6 @@
     .md\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-
-    .md\:text-base {
-      font-size: var(--text-base);
-      line-height: var(--tw-leading, var(--text-base--line-height));
     }
 
     .md\:text-xl {
