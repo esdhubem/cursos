@@ -31052,30 +31052,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-3 pb-8 border-b border-slate-200",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "flex items-center",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-cyan-400/30",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-sm",
-													children: "🎬"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 1: Boas-Vindas" })]
-											})
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-											id: "odysee-iframe-parte-1",
-											src: "https://odysee.com/$/embed/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 1: Boas-vindas)",
-											thumbnail: "./images/thumb_video_diretrizes_1.webp",
-											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
-											badge: "Parte 1 • Boas-Vindas"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 1: Introdução e boas-vindas ao percurso de autoria e publicação da ESDHUBEM" })]
-										})
-									]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+										id: "odysee-iframe-parte-1",
+										src: "https://odysee.com/$/embed/@esdhubem:a/Diretrizes-de-Publica%C3%A7%C3%A3o-Parte-1-:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 1: Boas-vindas)",
+										thumbnail: "./images/thumb_video_diretrizes_1.webp",
+										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
+										badge: "Parte 1 • Boas-Vindas"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 1: Introdução e boas-vindas ao percurso de autoria e publicação da ESDHUBEM" })]
+									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-6 pb-8 border-b border-slate-200",
 									children: [
@@ -31341,48 +31328,35 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-3 pb-8 border-b border-slate-200",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "flex items-center",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-cyan-400/30",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-sm",
-													children: "🎬"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 2: Níveis e Plataforma OSF" })]
-											})
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-											id: "odysee-iframe-parte-2",
-											src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-de-publicacao-2:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 2: Os Quatro Percursos e OSF)",
-											thumbnail: "./images/thumb_video_diretrizes_2.webp",
-											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/05ebc84738c2eb46184d9cbad0fec902.webp",
-											badge: "Parte 2 • Níveis e OSF"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center gap-2",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-														className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Plataforma Oficial OSF (Open Science Framework)"]
-													})
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-													children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: "https://osf.io/",
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+										id: "odysee-iframe-parte-2",
+										src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-de-publicacao-2:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 2: Os Quatro Percursos e OSF)",
+										thumbnail: "./images/thumb_video_diretrizes_2.webp",
+										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/05ebc84738c2eb46184d9cbad0fec902.webp",
+										badge: "Parte 2 • Níveis e OSF"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "flex items-center gap-2",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+													className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Plataforma Oficial OSF (Open Science Framework)"]
+												})
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
 											})]
-										})
-									]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: "https://osf.io/",
+											target: "_blank",
+											rel: "noopener noreferrer",
+											className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+										})]
+									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-gradient-to-r from-amber-50/50 via-white to-white border-2 border-amber-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
 									children: [
@@ -31502,16 +31476,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 py-6 border-y border-slate-200",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "flex items-center",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-cyan-400/30",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-sm",
-													children: "🎬"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 3: Artigo de Blog & SEO" })]
-											})
-										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
 											id: "odysee-iframe-parte-3",
 											src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-3:4?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
@@ -31685,16 +31649,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-4 py-6 border-y border-slate-200",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "flex items-center",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-sm",
-													children: "🎬"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 4: Manuscrito Científico, Zenodo & DOI" })]
-											})
-										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
 											id: "odysee-iframe-parte-4",
 											src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
@@ -31879,30 +31833,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "space-y-4 py-4 border-y border-amber-200/80",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "flex items-center",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-sm",
-														children: "🎬"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 5: Orientações para Produção do Artigo" })]
-												})
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-												id: "odysee-iframe-parte-5",
-												src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-5:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 5: Orientações para Produção do Artigo)",
-												thumbnail: "./images/thumb_video_diretrizes_5.webp",
-												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/b278d110bda87d4316ff0fb0fc59e6d2.webp",
-												badge: "Parte 5 • Produção do Artigo"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 5: Diretrizes práticas e passo a passo para a estruturação do artigo científico e manuscrito" })]
-											})
-										]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+											id: "odysee-iframe-parte-5",
+											src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-5:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 5: Orientações para Produção do Artigo)",
+											thumbnail: "./images/thumb_video_diretrizes_5.webp",
+											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/b278d110bda87d4316ff0fb0fc59e6d2.webp",
+											badge: "Parte 5 • Produção do Artigo"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 5: Diretrizes práticas e passo a passo para a estruturação do artigo científico e manuscrito" })]
+										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "space-y-4 pt-1",
@@ -32369,30 +32310,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "space-y-4 py-4 border-y border-cyan-200/80",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-sm",
-															children: "🎬"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 6: Livro Autoral & Nível Diamante" })]
-													})
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-													id: "odysee-iframe-parte-6",
-													src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-6:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 6: Livro Autoral & Nível Diamante)",
-													thumbnail: "./images/thumb_video_diretrizes_6.webp",
-													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/7a9351c5cdd6fae99bc88d2cd611d9cd.webp",
-													badge: "Parte 6 • Livro Autoral & Diamante"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 6: Orientações completas para produção da obra autoral e requisitos do nível Diamante" })]
-												})
-											]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+												id: "odysee-iframe-parte-6",
+												src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-6:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 6: Livro Autoral & Nível Diamante)",
+												thumbnail: "./images/thumb_video_diretrizes_6.webp",
+												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/7a9351c5cdd6fae99bc88d2cd611d9cd.webp",
+												badge: "Parte 6 • Livro Autoral & Diamante"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 6: Orientações completas para produção da obra autoral e requisitos do nível Diamante" })]
+											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-white border border-cyan-200 rounded-2xl p-5 space-y-3 shadow-2xs",
@@ -32609,30 +32537,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "space-y-4 py-4 border-y border-cyan-200/80",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-sm",
-															children: "🎬"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 7: Orientações para Produção do Livro Autoral" })]
-													})
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-													id: "odysee-iframe-parte-7",
-													src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-7:8?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 7: Orientações para Produção do Livro Autoral)",
-													thumbnail: "./images/thumb_video_diretrizes_7.webp",
-													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/22b85158397a9448375c556425d8aada.webp",
-													badge: "Parte 7 • Produção do Livro"
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 7: Diretrizes detalhadas para a estruturação, escrita e preparação do livro autoral" })]
-												})
-											]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+												id: "odysee-iframe-parte-7",
+												src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-7:8?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 7: Orientações para Produção do Livro Autoral)",
+												thumbnail: "./images/thumb_video_diretrizes_7.webp",
+												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/22b85158397a9448375c556425d8aada.webp",
+												badge: "Parte 7 • Produção do Livro"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 7: Diretrizes detalhadas para a estruturação, escrita e preparação do livro autoral" })]
+											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-cyan-50/40 border border-cyan-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col pt-2",
