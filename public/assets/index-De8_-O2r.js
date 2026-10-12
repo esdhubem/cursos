@@ -32076,7 +32076,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
 													"."
 												] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional e acadêmico." }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional." }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 													className: "font-semibold text-slate-900",
 													children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
