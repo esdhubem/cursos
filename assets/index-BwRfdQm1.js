@@ -31343,7 +31343,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												className: "flex items-center gap-2",
 												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 													className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Plataforma Oficial OSF (Open Science Framework)"]
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
 												})
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
@@ -31487,6 +31487,28 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 3: Orientações práticas para elaboração do artigo de blog, técnicas de SEO e estruturação" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "flex items-center gap-2",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
+													})
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+													children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+												href: "https://osf.io/",
+												target: "_blank",
+												rel: "noopener noreferrer",
+												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col pt-2",
@@ -32310,17 +32332,42 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "space-y-4 py-4 border-y border-cyan-200/80",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-												id: "odysee-iframe-parte-6",
-												src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-6:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 6: Livro Autoral & Nível Diamante)",
-												thumbnail: "./images/thumb_video_diretrizes_6.webp",
-												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/7a9351c5cdd6fae99bc88d2cd611d9cd.webp",
-												badge: "Parte 6 • Livro Autoral & Diamante"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 6: Orientações completas para produção da obra autoral e requisitos do nível Diamante" })]
-											})]
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+													id: "odysee-iframe-parte-6",
+													src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-6:b?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 6: Livro Autoral & Nível Diamante)",
+													thumbnail: "./images/thumb_video_diretrizes_6.webp",
+													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/7a9351c5cdd6fae99bc88d2cd611d9cd.webp",
+													badge: "Parte 6 • Livro Autoral & Diamante"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 6: Orientações completas para produção da obra autoral e requisitos do nível Diamante" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
+															})
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+															children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+														href: "https://osf.io/",
+														target: "_blank",
+														rel: "noopener noreferrer",
+														className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+													})]
+												})
+											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-white border border-cyan-200 rounded-2xl p-5 space-y-3 shadow-2xs",
