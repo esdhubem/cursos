@@ -31542,7 +31542,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Vídeo 3 • Artigo de Blog & SEO (1.200 a 2.500 palavras)"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "5 - Certificação Prata"
+											children: "5 - Certificação Prata - Publicação de Artigo de Blog"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
