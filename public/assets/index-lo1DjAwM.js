@@ -31949,7 +31949,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: "PRATA — EXPRESSAR E COMUNICAR"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-xs font-semibold text-slate-600",
-												children: "Artigo para o Blog da ESDHUBEM (1.200 a 2.500 palavras)"
+												children: "Verbete + Artigo para o Blog da ESDHUBEM (1.200 a 2.500 palavras)"
 											})] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
