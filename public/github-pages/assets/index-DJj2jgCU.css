@@ -2974,6 +2974,16 @@
     }
   }
 
+  .bg-amber-50\/40 {
+    background-color: #fffbeb66;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-amber-50\/40 {
+      background-color: color-mix(in oklab, var(--color-amber-50) 40%, transparent);
+    }
+  }
+
   .bg-amber-50\/50 {
     background-color: #fffbeb80;
   }
@@ -7688,6 +7698,10 @@
 
     .sm\:w-1\/5 {
       width: 20%;
+    }
+
+    .sm\:w-2\/5 {
+      width: 40%;
     }
 
     .sm\:w-14 {

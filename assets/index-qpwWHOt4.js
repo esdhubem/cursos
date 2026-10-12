@@ -31307,6 +31307,66 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-4 py-6 border-y border-slate-200",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center justify-between gap-3 flex-wrap",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#011049] via-[#0a3576] to-[#072458] text-white text-xs font-bold uppercase tracking-wider shadow-sm border border-amber-400/30",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-sm",
+														children: "🎬"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Tutorial ESDHUBEM • Parte 4: Manuscrito Científico, Zenodo & DOI" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+													href: "https://odysee.com/@esdhubem:a/diretriz-publicacao-4:1",
+													target: "_blank",
+													rel: "noopener noreferrer",
+													className: "text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline flex items-center gap-1.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Assistir no Odysee" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+													id: "odysee-iframe-parte-4",
+													className: "w-full h-full border-0 absolute inset-0",
+													src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+													allowFullScreen: true,
+													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 4: Manuscrito Científico, Zenodo & DOI)",
+													loading: "lazy"
+												})
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 4: Orientações práticas para elaboração do manuscrito científico, depósito no Zenodo e atribuição de DOI" })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "bg-amber-50/40 border border-amber-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col pt-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center justify-between gap-2 flex-wrap",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "font-bold text-xs uppercase tracking-wide text-amber-950 flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), "Modelo de Manuscrito & Artigo de Investigação (Nível Ouro)"]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+														href: "https://docs.google.com/document/d/e/2PACX-1vRqu0ZL5-NLsPebaChDs4SM5CcbvCWzzZa6cKexbeBGZqWvlpXS560IF5kuIS7jvf1y5HF2fXZtto98/pub",
+														target: "_blank",
+														rel: "noopener noreferrer",
+														className: "inline-flex items-center gap-1 text-xs text-amber-800 hover:text-amber-950 font-semibold hover:underline",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+													})]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "w-full h-[500px] sm:h-[600px] rounded-xl overflow-hidden border border-amber-200 bg-white shadow-inner",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+														src: "https://docs.google.com/document/d/e/2PACX-1vRqu0ZL5-NLsPebaChDs4SM5CcbvCWzzZa6cKexbeBGZqWvlpXS560IF5kuIS7jvf1y5HF2fXZtto98/pub?embedded=true",
+														className: "w-full h-full border-0",
+														title: "Modelo de Manuscrito e Artigo de Investigação ESDHUBEM",
+														loading: "lazy"
+													})
+												})]
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31668,6 +31728,123 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																		})
 																	]
 																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "space-y-3 pt-5 border-t border-slate-200",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																		className: "flex items-center gap-2",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-lg",
+																			children: "📚"
+																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+																			className: "font-bold text-xs sm:text-sm uppercase tracking-wider text-slate-900",
+																			children: "Resumo das plataformas para pesquisa de artigos para referência bibliográfica"
+																		})]
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+																		className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs bg-white",
+																		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+																			className: "w-full text-left text-xs sm:text-sm border-collapse",
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																				className: "bg-slate-900 text-white",
+																				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																					className: "py-2.5 px-4 font-bold uppercase tracking-wider w-1/3 sm:w-2/5",
+																					children: "Plataforma"
+																				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																					className: "py-2.5 px-4 font-bold uppercase tracking-wider",
+																					children: "Por que usar"
+																				})]
+																			}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																				className: "divide-y divide-slate-100 text-slate-700",
+																				children: [
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🌐" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Scielo + Google Acadêmico" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Já conhecidos, mantidos como você pediu"
+																						})]
+																					}),
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏛️" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Portal Periódicos CAPES" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Acesso a várias bases de uma vez"
+																						})]
+																					}),
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎓" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "BDTD" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Teses e dissertações brasileiras"
+																						})]
+																					}),
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "OasisBr" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Produção científica nacional em acesso aberto"
+																						})]
+																					}),
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🌎" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Redalyc" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Artigos em português/espanhol — América Latina"
+																						})]
+																					}),
+																					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+																						className: "hover:bg-amber-50/40 transition-colors",
+																						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 font-bold text-slate-900",
+																							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																								className: "flex items-center gap-1.5",
+																								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "DOAJ" })]
+																							})
+																						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																							className: "py-3 px-4 text-slate-600",
+																							children: "Revistas internacionais de acesso livre"
+																						})]
+																					})
+																				]
+																			})]
+																		})
+																	}),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																		className: "text-xs text-amber-900 font-semibold bg-amber-50 p-2.5 rounded-lg border border-amber-200 flex items-center gap-1.5",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "✅" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Todas são gratuitas e confiáveis." })]
+																	})
+																]
 															})
 														]
 													})
