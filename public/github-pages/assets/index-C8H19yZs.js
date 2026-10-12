@@ -27874,7 +27874,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "text-amber-800 font-bold shrink-0 text-base",
 																	children: "✍️"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto formal e informativo conceituando o tema central (significado, histórico e aplicação prática)."] })]
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto formal e informativo escrito à mão conceituando o tema central (significado, histórico e aplicação prática)."] })]
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 																className: "flex items-start gap-2.5",
@@ -31611,18 +31611,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-500 to-amber-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-black uppercase tracking-wider mb-2 border border-amber-200",
-																	children: "◀ Vértice Inferior 2 • Estrutura Conceitual"
+																	children: "◀ Vértice Inferior 2 • Estrutura Conceitual (Escrito à Mão)"
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 																	className: "flex items-center gap-2 text-amber-950 font-bold text-sm sm:text-base mb-1.5",
 																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																		className: "text-xl",
 																		children: "✍️"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verbete Enciclopédico (500 a 800 palavras)" })]
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verbete Enciclopédico (500 a 800 palavras) (Escrito à Mão)" })]
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 																	className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão explicando o significado, o contexto histórico e a aplicação do tema."]
+																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão, escrito à mão, explicando o significado, o contexto histórico e a aplicação do tema."]
 																})
 															] })]
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
