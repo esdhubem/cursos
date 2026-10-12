@@ -30896,7 +30896,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"8": false,
 		"9": false,
 		"10": false,
-		"11": false
+		"11": false,
+		"12": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30917,7 +30918,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"8": true,
 			"9": true,
 			"10": true,
-			"11": true
+			"11": true,
+			"12": true
 		});
 	};
 	const collapseAll = () => {
@@ -30933,7 +30935,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"8": false,
 			"9": false,
 			"10": false,
-			"11": false
+			"11": false,
+			"12": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -31099,8 +31102,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
 										onClick: () => openAndScrollTo("11"),
-										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["11"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
-										children: "ℹ️ 11. Informação Extra"
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["11"] ? "bg-cyan-300 text-slate-950 font-black shadow-md" : "bg-cyan-950/70 text-cyan-200 border border-cyan-500/50 hover:bg-cyan-900/90"}`,
+										children: "📖 11. Guia do Livro (Diamante)"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+										type: "button",
+										onClick: () => openAndScrollTo("12"),
+										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["12"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
+										children: "ℹ️ 12. Informação Extra"
 									})
 								]
 							})]
@@ -33208,27 +33217,24 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-cyan-50/40 border border-cyan-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs flex flex-col pt-2",
+											className: "p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-cyan-50 via-sky-50 to-blue-50 border-2 border-cyan-300 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between gap-2 flex-wrap",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-													className: "font-bold text-xs uppercase tracking-wide text-cyan-950 flex items-center gap-1.5",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-cyan-700" }), "Modelo de Livro Autoral (Nível Diamante)"]
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-													href: "https://docs.google.com/document/d/e/2PACX-1vRpvgiYjDDTq_7wQRfkhN07kb4CtiHDR262klfU88tg0rnEWMyiVYipHlo-In7tjL3HNzeDjdCX4g-w/pub",
-													target: "_blank",
-													rel: "noopener noreferrer",
-													className: "inline-flex items-center gap-1 text-xs text-cyan-800 hover:text-cyan-950 font-semibold hover:underline",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" })]
+												className: "space-y-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "flex items-center gap-2",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+														className: "font-extrabold text-sm text-cyan-950 flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-cyan-700" }), "Guia Completo para publicar o livro - Nível Diamante"]
+													})
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+													children: "Consulte o modelo estruturado da obra autoral (mínimo de 50 páginas), formatação, sumário e orientações da Fundação Biblioteca Nacional (EDA/FBN) na sanfona a seguir."
 												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "w-full h-[500px] sm:h-[600px] rounded-xl overflow-hidden border border-cyan-200 bg-white shadow-inner",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-													src: "https://docs.google.com/document/d/e/2PACX-1vRpvgiYjDDTq_7wQRfkhN07kb4CtiHDR262klfU88tg0rnEWMyiVYipHlo-In7tjL3HNzeDjdCX4g-w/pub?embedded=true",
-													className: "w-full h-full border-0",
-													title: "Modelo de Livro Autoral — Nível Diamante ESDHUBEM",
-													loading: "lazy"
-												})
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+												type: "button",
+												onClick: () => openAndScrollTo("11"),
+												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-cyan-700 hover:bg-cyan-800 text-white text-xs font-bold transition-all shadow-sm shrink-0 cursor-pointer",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar Guia do Livro (Seção 11)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-3.5 h-3.5" })]
 											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33466,8 +33472,78 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
+										children: "📖 11"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "min-w-0",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Documento Integrado • Livro Autoral & EDA/FBN (Mín. 50 Páginas)"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+											className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+											children: "11 - Guia Completo para publicar o livro - Nível Diamante"
+										})]
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2 shrink-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+										children: openSections["11"] ? "Recolher" : "Expandir"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["11"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+									})]
+								})]
+							}), openSections["11"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "Guia Completo para publicar o livro - Nível Diamante"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+										children: "Consulte o documento oficial abaixo com o modelo completo e formatado para a obra autoral (mínimo de 50 páginas), organização editorial, orientação para depósito de direitos autorais no EDA da Fundação Biblioteca Nacional e diretrizes da ESDHUBEM."
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-white border-2 border-cyan-200 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center justify-between gap-2 flex-wrap",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "font-bold text-xs uppercase tracking-wide text-cyan-950 flex items-center gap-1.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-cyan-700" }), "Guia Completo para publicar o livro - Nível Diamante"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: "https://docs.google.com/document/d/e/2PACX-1vRpvgiYjDDTq_7wQRfkhN07kb4CtiHDR262klfU88tg0rnEWMyiVYipHlo-In7tjL3HNzeDjdCX4g-w/pub",
+											target: "_blank",
+											rel: "noopener noreferrer",
+											className: "inline-flex items-center gap-1 text-xs text-cyan-800 hover:text-cyan-950 font-semibold hover:underline",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Abrir Documento" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-full h-[500px] sm:h-[600px] rounded-xl overflow-hidden border border-cyan-200 bg-white shadow-inner",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+											src: "https://docs.google.com/document/d/e/2PACX-1vRpvgiYjDDTq_7wQRfkhN07kb4CtiHDR262klfU88tg0rnEWMyiVYipHlo-In7tjL3HNzeDjdCX4g-w/pub?embedded=true",
+											className: "w-full h-full border-0",
+											title: "Guia Completo para publicar o livro - Nível Diamante ESDHUBEM",
+											loading: "lazy"
+										})
+									})]
+								})]
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							id: "secao-sanfona-12",
+							className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								onClick: () => toggleSection("12"),
+								className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+								"aria-expanded": openSections["12"],
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-										children: "ℹ️ 11"
+										children: "ℹ️ 12"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -33475,20 +33551,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "Autoria, Responsabilidade, Inteligência Artificial, Valores & Percursos"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "11 - Informação Extra"
+											children: "12 - Informação Extra"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2 shrink-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-										children: openSections["11"] ? "Recolher" : "Expandir"
+										children: openSections["12"] ? "Recolher" : "Expandir"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["11"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
+										className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["12"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["11"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["12"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
