@@ -32244,6 +32244,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo de investigação" }),
 												" com registro ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
+												", que será publicado na página de ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Repositório de Artigos da ESDHUBEM" }),
 												"."
 											]
 										}),
