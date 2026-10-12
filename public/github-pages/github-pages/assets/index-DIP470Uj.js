@@ -30760,64 +30760,73 @@ var LazyVideoPlayer = ({ id, src, title, thumbnail, fallbackThumbnail, badge }) 
 	if (isPlaying) {
 		const embedUrl = src.includes("autoplay") ? src : `${src}&autoplay=1`;
 		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
-				id,
-				className: "w-full h-full border-0 absolute inset-0",
-				src: embedUrl,
-				allowFullScreen: true,
-				allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
-				title
+			className: "w-full flex justify-center py-2",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "relative rounded-2xl overflow-hidden shadow-xl border-2 border-slate-800 bg-slate-950 aspect-video w-full max-w-md sm:max-w-lg",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+					id,
+					className: "w-full h-full border-0 absolute inset-0",
+					src: embedUrl,
+					allowFullScreen: true,
+					allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+					title
+				})
 			})
 		});
 	}
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		role: "button",
-		tabIndex: 0,
-		onClick: () => setIsPlaying(true),
-		onKeyDown: (e) => {
-			if (e.key === "Enter" || e.key === " ") {
-				e.preventDefault();
-				setIsPlaying(true);
-			}
-		},
-		className: "group relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-slate-950 aspect-video w-full cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#FFC72C] select-none transition-all duration-300 hover:border-amber-400/80",
-		"aria-label": `Assistir ao vídeo: ${title}`,
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: imgSrc,
-				alt: title,
-				onError: () => {
-					if (fallbackThumbnail && imgSrc !== fallbackThumbnail) setImgSrc(fallbackThumbnail);
-				},
-				className: "w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105",
-				loading: "lazy"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:via-slate-950/35 transition-colors duration-300" }),
-			badge && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "absolute top-3 sm:top-4 left-3 sm:left-4 z-10",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-					className: "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md text-[#FFC72C] text-[11px] sm:text-xs font-black uppercase tracking-wider border border-[#FFC72C]/40 shadow-lg",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: badge })]
-				})
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "absolute inset-0 flex flex-col items-center justify-center gap-3.5 z-10 p-4 text-center",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-[#FFC72C] to-amber-300 text-slate-950 flex items-center justify-center shadow-[0_0_35px_rgba(255,199,44,0.65)] group-hover:shadow-[0_0_55px_rgba(255,199,44,0.95)] group-hover:scale-110 transition-all duration-300 border-2 border-white/40",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-8 h-8 sm:w-10 sm:h-10 fill-current translate-x-0.5 text-slate-950" })
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "space-y-1 drop-shadow-md",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "text-white font-black text-sm sm:text-base block tracking-tight group-hover:text-[#FFC72C] transition-colors",
-						children: "Clique para assistir ao vídeo"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "inline-flex items-center gap-1.5 text-slate-300 text-[11px] sm:text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-xs border border-white/10",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3 h-3 text-[#FFC72C]" }), "Carregamento leve e instantâneo"]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "w-full flex justify-center py-2",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			role: "button",
+			tabIndex: 0,
+			onClick: () => setIsPlaying(true),
+			onKeyDown: (e) => {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					setIsPlaying(true);
+				}
+			},
+			className: "group relative rounded-2xl overflow-hidden shadow-xl border-2 border-slate-800 bg-slate-950 aspect-video w-full max-w-md sm:max-w-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#FFC72C] select-none transition-all duration-300 hover:border-amber-400/80 hover:scale-[1.01]",
+			"aria-label": `Assistir ao vídeo: ${title}`,
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: imgSrc,
+					alt: title,
+					onError: () => {
+						if (fallbackThumbnail && imgSrc !== fallbackThumbnail) setImgSrc(fallbackThumbnail);
+					},
+					className: "w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105",
+					loading: "lazy"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30 group-hover:via-slate-950/35 transition-colors duration-300" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "absolute top-2.5 sm:top-3 left-2.5 sm:left-3 right-2.5 sm:right-3 flex items-center justify-between gap-2 z-10 pointer-events-none",
+					children: [badge ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900/85 backdrop-blur-md text-[#FFC72C] text-[10px] sm:text-xs font-black uppercase tracking-wider border border-[#FFC72C]/40 shadow-md",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🎬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: badge })]
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/85 backdrop-blur-md text-cyan-300 text-[10px] sm:text-[11px] font-bold border border-cyan-400/30 shadow-md",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Headphones, { className: "w-3 h-3 text-cyan-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Áudio Explicativo" })]
 					})]
-				})]
-			})
-		]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "absolute inset-0 flex flex-col items-center justify-center gap-2.5 z-10 p-4 text-center",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "w-13 h-13 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#FFC72C] to-amber-300 text-slate-950 flex items-center justify-center shadow-[0_0_30px_rgba(255,199,44,0.6)] group-hover:shadow-[0_0_45px_rgba(255,199,44,0.9)] group-hover:scale-110 transition-all duration-300 border-2 border-white/40",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "w-6 h-6 sm:w-8 sm:h-8 fill-current translate-x-0.5 text-slate-950" })
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "space-y-0.5 drop-shadow-md",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-white font-black text-xs sm:text-sm block tracking-tight group-hover:text-[#FFC72C] transition-colors",
+							children: "Clique para ouvir e assistir"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "inline-flex items-center gap-1 text-slate-300 text-[10px] sm:text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-xs border border-white/10",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-2.5 h-2.5 text-[#FFC72C]" }), "Formato compacto • Conteúdo essencial"]
+						})]
+					})]
+				})
+			]
+		})
 	});
 };
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
