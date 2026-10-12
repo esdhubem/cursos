@@ -31486,20 +31486,13 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "space-y-3",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-700/10 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-700/20",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes e Normas Editoriais para o Verbete" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-											children: "GUIA COMPLETO DO VERBETE — NÍVEL BRONZE"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
-											children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
-										})
-									]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+										children: "GUIA COMPLETO DO VERBETE — NÍVEL BRONZE"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-slate-700 text-sm sm:text-base leading-relaxed",
+										children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM."
+									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "bg-white border-2 border-amber-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
