@@ -14678,10 +14678,10 @@ var Header = ({ onSearch, searchTerm, onNavigate, onOpenValidator, onOpenAbout, 
 												className: `w-full text-left px-3 py-2.5 rounded-xl transition-all flex items-center gap-2.5 cursor-pointer ${currentPage === "diretrizes-avaliacao-manuscritos" ? "bg-blue-600/20 text-blue-300 font-bold" : "text-slate-200 hover:text-white hover:bg-blue-900/30"}`,
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Feather, { className: "w-4 h-4 text-amber-400 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 													className: "font-semibold text-xs",
-													children: "Avaliação de Manuscritos"
+													children: "Diretrizes de Avaliação"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 													className: "text-[10px] text-slate-400",
-													children: "Critérios Formativos (Sem Notas)"
+													children: "Análise de Manuscritos (Sem Notas)"
 												})] })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -15003,7 +15003,7 @@ var Header = ({ onSearch, searchTerm, onNavigate, onOpenValidator, onOpenAbout, 
 									setMobileMenuOpen(false);
 								},
 								className: "w-full text-left px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/10 text-amber-300 flex items-center gap-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Feather, { className: "w-4 h-4 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Avaliação de Manuscritos" })]
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Feather, { className: "w-4 h-4 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes de Avaliação" })]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								onClick: () => {
@@ -17892,7 +17892,7 @@ var Footer = ({ onSelectCategory, onOpenValidator, onOpenAbout, onNavigate, onOp
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-amber-400",
 											children: "•"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Avaliação de Manuscritos" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes de Avaliação" })]
 									}) }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 										onClick: () => onNavigate("gerador-abnt"),
