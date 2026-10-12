@@ -31741,41 +31741,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["3"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["3"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-3 pb-8 border-b border-slate-200",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-										id: "odysee-iframe-parte-2",
-										src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-de-publicacao-2:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-										title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 2: Os Quatro Percursos e OSF)",
-										thumbnail: "./images/thumb_video_diretrizes_2.webp",
-										fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/05ebc84738c2eb46184d9cbad0fec902.webp",
-										badge: "Parte 2 • Níveis e OSF"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-1",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "flex items-center gap-2",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-													className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
-												})
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-											href: "https://osf.io/",
-											target: "_blank",
-											rel: "noopener noreferrer",
-											className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
-										})]
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-amber-50/50 via-white to-white border-2 border-amber-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-gradient-to-r from-amber-50/50 via-white to-white border-2 border-amber-300/80 rounded-2xl p-6 sm:p-7 space-y-6 shadow-sm",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "flex items-center gap-3",
@@ -31800,6 +31769,45 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclopédico Wiki oficial" }),
 												" da escola."
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-4 py-4 border-y border-amber-200/80",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+													id: "odysee-iframe-parte-2",
+													src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-de-publicacao-2:f?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 2: Os Quatro Percursos e OSF)",
+													thumbnail: "./images/thumb_video_diretrizes_2.webp",
+													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/05ebc84738c2eb46184d9cbad0fec902.webp",
+													badge: "Parte 2 • Níveis e OSF"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 2: Apresentação dos 4 percursos formativos, níveis de mérito e registro de autoria no OSF" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
+															})
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+															children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+														href: "https://osf.io/",
+														target: "_blank",
+														rel: "noopener noreferrer",
+														className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+													})]
+												})
 											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31852,7 +31860,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "* O trabalho chega às mãos da coordenação com comprovante de registro no OSF, resguardando integralmente a anterioridade e a autoria do aluno."
 										})
 									]
-								})]
+								})
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31958,48 +31966,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["5"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["5"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-4 py-6 border-y border-slate-200",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-											id: "odysee-iframe-parte-3",
-											src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-3:4?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 3: Artigo de Blog & SEO)",
-											thumbnail: "./images/thumb_video_diretrizes_3.webp",
-											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/c9d9e1cc9fd5cffa400edb14d2f1ed0b.webp",
-											badge: "Parte 3 • Artigo de Blog & SEO"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 3: Orientações práticas para elaboração do artigo de blog, técnicas de SEO e estruturação" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center gap-2",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-														className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
-													})
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-													children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: "https://osf.io/",
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
-											})]
-										})
-									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-slate-50 via-white to-white border-2 border-slate-300/80 rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-gradient-to-r from-slate-50 via-white to-white border-2 border-slate-300/80 rounded-2xl p-6 sm:p-7 space-y-6 shadow-sm",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "flex items-center gap-3",
@@ -32032,6 +32002,45 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												"Após a escolha dessa modalidade, o estudante receberá orientações detalhadas para a elaboração do artigo e seu registro de autoria no ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF (Open Science Framework)" }),
 												"."
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-4 py-4 border-y border-slate-200",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+													id: "odysee-iframe-parte-3",
+													src: "https://odysee.com/$/embed/@esdhubem:a/diretrizes-publicacao-3:4?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 3: Artigo de Blog & SEO)",
+													thumbnail: "./images/thumb_video_diretrizes_3.webp",
+													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/c9d9e1cc9fd5cffa400edb14d2f1ed0b.webp",
+													badge: "Parte 3 • Artigo de Blog & SEO"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 3: Orientações práticas para elaboração do artigo de blog, técnicas de SEO e estruturação" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial OSF (Open Science Framework)"]
+															})
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+															children: "OSF é uma plataforma gratuita e aberta para apoiar sua pesquisa e possibilitar a colaboração e fazer gerenciamento de pesquisas."
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+														href: "https://osf.io/",
+														target: "_blank",
+														rel: "noopener noreferrer",
+														className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar OSF (osf.io)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+													})]
+												})
 											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32093,7 +32102,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											]
 										})
 									]
-								})]
+								})
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32199,48 +32208,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 									})]
 								})]
-							}), openSections["7"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							}), openSections["7"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "space-y-4 py-6 border-y border-slate-200",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
-											id: "odysee-iframe-parte-4",
-											src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-											title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 4: Manuscrito Científico, Zenodo & DOI)",
-											thumbnail: "./images/thumb_video_diretrizes_4.webp",
-											fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/533c4cb48d38f26d2b7e62a08cf35318.webp",
-											badge: "Parte 4 • Manuscrito & Zenodo/DOI"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 4: Orientações práticas para elaboração do manuscrito científico, depósito no Zenodo e atribuição de DOI" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "flex items-center gap-2",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-														className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial Zenodo (Depósito & DOI)"]
-													})
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-													children: "O Zenodo é uma plataforma aberta e gratuita desenvolvida pelo CERN para apoiar pesquisas científicas, possibilitar o depósito de manuscritos e atribuição de registro DOI internacional."
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-												href: "https://zenodo.org/",
-												target: "_blank",
-												rel: "noopener noreferrer",
-												className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar Zenodo (zenodo.org)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
-											})]
-										})
-									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-4 shadow-sm",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-gradient-to-r from-amber-50/60 via-white to-white border-2 border-[#FFC72C] rounded-2xl p-6 sm:p-7 space-y-6 shadow-sm",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "flex items-center gap-3",
@@ -32270,6 +32241,45 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-slate-700 text-sm leading-relaxed",
 											children: "O trabalho deverá apresentar uma estrutura compatível com uma produção de investigação e receberá orientações específicas para sua elaboração."
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-4 py-4 border-y border-amber-200/80",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+													id: "odysee-iframe-parte-4",
+													src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-4:1?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+													title: "Tutorial ESDHUBEM - Diretrizes de Publicação (Parte 4: Manuscrito Científico, Zenodo & DOI)",
+													thumbnail: "./images/thumb_video_diretrizes_4.webp",
+													fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/533c4cb48d38f26d2b7e62a08cf35318.webp",
+													badge: "Parte 4 • Manuscrito & Zenodo/DOI"
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 4: Orientações práticas para elaboração do manuscrito científico, depósito no Zenodo e atribuição de DOI" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "p-4 rounded-xl bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-200 text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "space-y-1",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "flex items-center gap-2",
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+																className: "font-extrabold text-sm text-[#00227B] flex items-center gap-1.5",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, { className: "w-4 h-4 text-blue-600" }), "Publicação na Plataforma Oficial Zenodo (Depósito & DOI)"]
+															})
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+															children: "O Zenodo é uma plataforma aberta e gratuita desenvolvida pelo CERN para apoiar pesquisas científicas, possibilitar o depósito de manuscritos e atribuição de registro DOI internacional."
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+														href: "https://zenodo.org/",
+														target: "_blank",
+														rel: "noopener noreferrer",
+														className: "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#00227B] hover:bg-[#001b63] text-white text-xs font-bold transition-all shadow-sm shrink-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Acessar Zenodo (zenodo.org)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+													})]
+												})
+											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-white border border-amber-200 rounded-xl p-4 space-y-2",
@@ -32345,7 +32355,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											]
 										})
 									]
-								})]
+								})
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
