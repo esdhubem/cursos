@@ -31095,12 +31095,12 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed",
+											className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm space-y-3.5 text-slate-800 text-sm sm:text-base leading-relaxed",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 													"A ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-														className: "text-slate-900 font-semibold",
+														className: "text-[#00227B] font-bold",
 														children: "ESDHUBEM"
 													}),
 													" oferece diferentes possibilidades para que o estudante transforme sua experiência de aprendizagem em uma produção escrita e autoral."
