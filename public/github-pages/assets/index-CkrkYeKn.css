@@ -8928,6 +8928,10 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+
     .md\:w-5\/12 {
       width: 41.6667%;
     }
