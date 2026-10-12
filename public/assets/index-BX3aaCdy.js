@@ -31866,7 +31866,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade da Assimilação Ativa"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-											children: "4 - Guia Completo para publicar o Verbete"
+											children: "4 - Guia Completo para publicar o Verbete - Nível Bronze"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31885,7 +31885,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "space-y-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-										children: "Guia Completo para publicar o Verbete"
+										children: "Guia Completo para publicar o Verbete - Nível Bronze"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM." })
@@ -31896,7 +31896,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "flex items-center justify-between gap-2 flex-wrap",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 											className: "font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-1.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-amber-600" }), "Guia Completo para publicar o Verbete"]
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileCheck, { className: "w-4 h-4 text-amber-600" }), "Guia Completo para publicar o Verbete - Nível Bronze"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 											href: "https://docs.google.com/document/d/e/2PACX-1vTnwqqsY7e8DzHbrMwYl5fIn8r8pdJgN30S4SPsqKgsYGS5H7OnEkitqtJBF9O1DILc2re0s279Azkn/pub",
 											target: "_blank",
@@ -31909,7 +31909,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
 											src: "https://docs.google.com/document/d/e/2PACX-1vTnwqqsY7e8DzHbrMwYl5fIn8r8pdJgN30S4SPsqKgsYGS5H7OnEkitqtJBF9O1DILc2re0s279Azkn/pub?embedded=true",
 											className: "w-full h-full border-0",
-											title: "Guia Completo para publicar o Verbete — ESDHUBEM",
+											title: "Guia Completo para publicar o Verbete - Nível Bronze — ESDHUBEM",
 											loading: "lazy"
 										})
 									})]
