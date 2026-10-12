@@ -30989,7 +30989,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										type: "button",
 										onClick: () => openAndScrollTo("triade"),
 										className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["triade"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-500/40 hover:bg-amber-900/80"}`,
-										children: "🔺 Tríade da Assimilação"
+										children: "🔺 3. O que é a Tríade da Assimilação Ativa"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										type: "button",
@@ -31326,7 +31326,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-900",
-										children: "🔺"
+										children: "🔺 3"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "min-w-0",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -31334,7 +31334,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), "Metodologia Pedagógica ESDHUBEM • Válida para Todos os Níveis"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-											children: "Tríade da Assimilação Ativa — Estrutura em Triângulo Pedagógico"
+											children: "3 - O que é a Tríade da Assimilação Ativa"
 										})]
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31359,7 +31359,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 												className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-												children: "Metodologia da Tríade da Assimilação Ativa"
+												children: "3 - O que é a Tríade da Assimilação Ativa"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-slate-700 text-sm sm:text-base leading-relaxed",
