@@ -30859,7 +30859,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-xl sm:text-2xl font-black text-[#011049] tracking-tight",
-										children: "Percurso Completo em Formato Sanfona"
+										children: "Diretrizes de Publicação em Formato Sanfona"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed",
