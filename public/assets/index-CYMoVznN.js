@@ -30032,9 +30032,15 @@ var DiretrizesProtecaoAutoriaPage = ({ onBackToHome, onNavigate }) => {
 								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
 								children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
-								children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa Tríade da Organização, Assimilação e Comunicação juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+								children: [
+									"A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Organização, Assimilação e Comunicação" }),
+									" e o ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
+									" é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+								]
 							})
 						]
 					}),
@@ -35335,9 +35341,15 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
 												children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
 											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa Tríade da Organização, Assimilação e Comunicação juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+												children: [
+													"A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Organização, Assimilação e Comunicação" }),
+													" e o ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
+													" é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+												]
 											})
 										]
 									}),
