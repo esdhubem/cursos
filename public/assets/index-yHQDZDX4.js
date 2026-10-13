@@ -31516,6 +31516,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold tracking-wide uppercase shadow-2xs",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Destaque Metodológico Oficial da ESDHUBEM" })]
 										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-3 py-3 border-y border-amber-200/80",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
+												id: "odysee-iframe-triade-assimilacao",
+												src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-9:4?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
+												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (A Tríade da Assimilação Ativa)",
+												thumbnail: "./images/thumb_video_diretrizes_9.webp",
+												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
+												badge: "Metodologia • Assimilação Ativa"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo: Orientações completas sobre a Tríade da Assimilação Ativa e seus três vértices de validação" })]
+											})]
+										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
 											children: "3 - O que é a Tríade da Assimilação Ativa"
