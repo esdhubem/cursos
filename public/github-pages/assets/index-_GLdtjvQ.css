@@ -1786,6 +1786,10 @@
     row-gap: calc(var(--spacing) * 2);
   }
 
+  .gap-y-2\.5 {
+    row-gap: calc(var(--spacing) * 2.5);
+  }
+
   .gap-y-3 {
     row-gap: calc(var(--spacing) * 3);
   }
@@ -3064,10 +3068,6 @@
 
   .bg-\[\#00227B\] {
     background-color: #00227b;
-  }
-
-  .bg-\[\#02184d\]\/60 {
-    background-color: oklab(23.4933% -.0134536 -.10123 / .6);
   }
 
   .bg-\[\#011049\] {

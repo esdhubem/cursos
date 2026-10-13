@@ -31137,29 +31137,32 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: "Recolher Todas"
 								})]
 							})]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "pt-4 border-t border-cyan-400/20 relative z-10 space-y-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "flex items-center gap-2 text-cyan-200 text-xs font-bold uppercase tracking-wider",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sumário das Sanfonas (Clique para ir ao título correspondente):" })
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "bg-[#02184d]/60 rounded-2xl p-4 sm:p-5 border border-cyan-400/20",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-									className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-xs sm:text-sm",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-lg text-slate-800",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-slate-900 font-bold text-xs sm:text-sm uppercase tracking-wider",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-amber-500 font-black",
+										children: "📋"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sumário das Sanfonas (Clique para ir ao título correspondente):" })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5 text-xs sm:text-sm",
 									children: LISTA_SANFONAS_DIRETRIZES.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 										className: "flex items-start gap-2",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[#FFC72C] text-xs font-bold shrink-0 pt-0.5 select-none",
+											className: "text-amber-500 font-bold text-xs shrink-0 pt-0.5 select-none",
 											children: "→"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 											type: "button",
 											onClick: () => openAndScrollTo(item.id),
-											className: "text-left text-blue-100 hover:text-white hover:underline transition-colors leading-snug cursor-pointer font-medium",
+											className: "text-left text-slate-700 hover:text-[#011049] hover:underline transition-colors leading-snug cursor-pointer font-medium",
 											children: item.titulo
 										})]
 									}, item.id))
-								})
-							})]
+								})]
+							})
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
