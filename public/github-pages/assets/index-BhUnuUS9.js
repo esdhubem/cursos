@@ -31554,12 +31554,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													className: "text-[#00227B]",
 													children: "Assimilação Ativa"
 												}),
-												" é a base pedagógica e epistemológica estruturante de autoria e validação do conhecimento na ESDHUBEM. Válida e transversal a ",
+												" é a base pedagógica e epistemológica que estrutura a autoria do estudante e a validação do conhecimento na ESDHUBEM através de certificado por meio da produção de um portfólio. Esse portfólio primordial chamado ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+												" é exigido em ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 													className: "text-amber-900 font-bold",
-													children: "todos os níveis de certificação acadêmica"
+													children: "todos os níveis de certificação da ESDHUBEM"
 												}),
-												" (Bronze, Prata, Ouro e Diamante), ela consolida a aprendizagem por meio de três vértices dinâmicos e complementares: síntese visual desenhada à mão, elaboração textual conceitual e fixação oral através da técnica Feynman."
+												" (Bronze, Prata, Ouro e Diamante). A criação desse portfólio contribui para o estudante consolidar a aprendizagem por meio de três bases fundamentais, dinâmicas e complementares: síntese visual desenhada à mão, elaboração textual conceitual e a prática da comunicação na apresentação dos conceitos aprendidos via áudio."
 											]
 										})
 									]
