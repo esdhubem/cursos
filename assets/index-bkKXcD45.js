@@ -29278,11 +29278,11 @@ var DiretrizesProtecaoAutoriaPage = ({ onBackToHome, onNavigate }) => {
 									className: "font-bold text-slate-900 flex items-center gap-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento prévio:" })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-									"A ESDHUBEM adota este alinhamento como ",
+									"A ESDHUBEM adota o alinhamento temático com o CAPES apenas como ",
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
-									" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
+									" que serve para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
-									" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
+									". Esse posicionamento trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
 								] })]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -32382,7 +32382,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														})
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 														className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-														children: "O Zenodo é uma plataforma aberta e gratuita desenvolvida pelo CERN para apoiar pesquisas científicas, possibilitar o depósito de manuscritos e atribuição de registro DOI internacional."
+														children: "O Zenodo é uma plataforma aberta e gratuita desenvolvida pelo CERN para apoiar pesquisas, possibilitar o depósito de artigos e outros documentos e atribuição de registro DOI internacional."
 													})]
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 													href: "https://zenodo.org/",
@@ -32712,11 +32712,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												className: "font-bold text-slate-900 flex items-center gap-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Esclarecimento importante:" })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-												"A ESDHUBEM adota este alinhamento como ",
+												"A ESDHUBEM adota o alinhamento temático com o CAPES apenas como ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "referência organizacional e metodológica" }),
-												" para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
+												" que serve para nortear, estruturar e dar coerência interna aos nossos cursos e produções. Esta escolha não confere à escola status de instituição acadêmica ou científica ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "stricto sensu" }),
-												" — trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
+												". Esse posicionamento trata-se de uma forma de ordenar nosso sistema de ensino, definir linhas de estudo e seguir critérios reconhecidos, sem, contudo, assumir natureza ou competência que não nos cabe."
 											] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
