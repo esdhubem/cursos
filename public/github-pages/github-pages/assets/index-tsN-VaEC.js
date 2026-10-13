@@ -31242,15 +31242,12 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									})]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "p-6 rounded-2xl bg-gradient-to-r from-[#0d4494] via-[#0a3576] to-[#072458] text-white space-y-4 shadow-xl border border-cyan-400/40 relative overflow-hidden",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 										className: "flex items-center justify-between gap-2 flex-wrap relative z-10",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 											className: "text-xs sm:text-sm uppercase tracking-wider text-cyan-200 font-black flex items-center gap-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O percurso segue esta sequência:" })]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] text-cyan-100 bg-[#001c4e]/80 border border-cyan-400/30 px-3 py-1 rounded-full font-bold shadow-xs",
-											children: "Fluxo Integrado de Autoria & Proteção"
-										})]
+										})
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-medium leading-relaxed relative z-10",
 										children: [

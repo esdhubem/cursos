@@ -3043,10 +3043,6 @@
     background-color: #001c4e;
   }
 
-  .bg-\[\#001c4e\]\/80 {
-    background-color: oklab(24.4389% -.0174467 -.0972041 / .8);
-  }
-
   .bg-\[\#1DB954\] {
     background-color: #1db954;
   }
@@ -6465,10 +6461,6 @@
 
   .text-blue-950 {
     color: var(--color-blue-950);
-  }
-
-  .text-cyan-100 {
-    color: var(--color-cyan-100);
   }
 
   .text-cyan-100\/80 {
