@@ -30927,7 +30927,7 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "10",
-		titulo: "10 - Sobre Horas Complementares e Alinhamento Temático"
+		titulo: "10 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
 	},
 	{
 		id: "11",
@@ -33771,10 +33771,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Referência Organizacional CAPES & Critérios Institucionais de Validação"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Referência Institucional & Critérios de Validação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "10 - Sobre Horas Complementares e Alinhamento Temático"
+										children: "10 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33791,71 +33791,58 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
-											children: "6"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-											className: "font-black text-base sm:text-lg text-slate-900",
-											children: "Sobre Horas Complementares e Alinhamento Temático"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-										children: [
-											"Os eixos temáticos definidos pela ESDHUBEM foram estruturados com base nas ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áreas de conhecimento da CAPES" }),
-											", visando manter uniformidade, coerência e um norteamento conceitual comum aos trabalhos. Este alinhamento temático não significa certificação ou validação oficial pela CAPES nem confere status de instituição de ensino superior à ESDHUBEM — ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "trata-se de referência organizacional" }),
-											"."
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-5 sm:p-6 space-y-3.5 shadow-xs",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2 text-sky-950 font-bold text-sm sm:text-base",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-5 h-5 text-sky-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Validação de horas complementares" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: [
-													"O reconhecimento de horas complementares é ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "competência de cada instituição de ensino" }),
-													" onde o estudante estiver matriculado. Recomendamos:"
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-												className: "text-xs sm:text-sm text-slate-700 space-y-2 pt-1",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-sky-600 font-bold",
-															children: "•"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Consultar previamente a secretaria ou coordenação do seu curso sobre os requisitos, documentos aceitos e critérios de validação" })]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-sky-600 font-bold",
-															children: "•"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Se necessário, solicitar à ESDHUBEM carta de apresentação, declaração de participação ou detalhamento de carga horária para entrega à sua instituição" })]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-sky-600 font-bold",
-															children: "•"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cada instituição possui suas próprias regras — a ESDHUBEM fornece os documentos comprobatórios, mas a decisão de validação cabe exclusivamente à instituição de origem do estudante" })]
-													})
-												]
-											})
-										]
-									})
-								]
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
+										children: "6"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+										className: "font-black text-base sm:text-lg text-slate-900",
+										children: "Sobre o uso do nosso certificado como Horas Complementares na faculdade."
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-5 sm:p-6 space-y-3.5 shadow-xs",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2 text-sky-950 font-bold text-sm sm:text-base",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Landmark, { className: "w-5 h-5 text-sky-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Validação de horas complementares" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: [
+												"O reconhecimento de horas complementares é ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "competência de cada instituição de ensino" }),
+												" onde o estudante estiver matriculado. Recomendamos:"
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs sm:text-sm text-slate-700 space-y-2 pt-1",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-sky-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Consultar previamente a secretaria ou coordenação do seu curso sobre os requisitos, documentos aceitos e critérios de validação" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-sky-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Se necessário, solicitar à ESDHUBEM carta de apresentação, declaração de participação ou detalhamento de carga horária para entrega à sua instituição" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+													className: "flex items-start gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-sky-600 font-bold",
+														children: "•"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cada instituição possui suas próprias regras — a ESDHUBEM fornece os documentos comprobatórios, mas a decisão de validação cabe exclusivamente à instituição de origem do estudante" })]
+												})
+											]
+										})
+									]
+								})]
 							})
 						})]
 					}),
