@@ -31494,16 +31494,16 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
 										children: "Declarações de autorização e de autoria"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed space-y-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 											"Estas declarações são modelos oficiais de preenchimento obrigatório que atendem a ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 												className: "text-[#00227B] font-bold",
 												children: "todas as categorias e níveis de publicação"
 											}),
-											" (Bronze, Prata, Ouro e Diamante). Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais."
-										] })
+											" (Bronze, Prata, Ouro e Diamante)."
+										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Elas asseguram a titularidade intelectual do estudante, o consentimento para divulgação nos canais da ESDHUBEM e a conformidade ética com a legislação de direitos autorais." })]
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
