@@ -30971,7 +30971,7 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "17",
-		titulo: "17 - Critérios de Avaliação, Publicação e Direito de Retirada"
+		titulo: "17 - Critérios de Análise, Publicação e Direito de Retirada"
 	},
 	{
 		id: "18",
@@ -35802,10 +35802,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Critérios de Avaliação, Publicação e Direito de Retirada"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Critérios de Análise, Publicação e Direito de Retirada"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "17 - Critérios de Avaliação, Publicação e Direito de Retirada"
+										children: "17 - Critérios de Análise, Publicação e Direito de Retirada"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35830,7 +35830,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "2"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 											className: "font-black text-base sm:text-lg text-slate-900",
-											children: "Critérios de Avaliação, Publicação e Direito de Retirada"
+											children: "Critérios de Análise, Publicação e Direito de Retirada"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
