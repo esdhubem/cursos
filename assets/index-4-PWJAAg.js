@@ -32717,7 +32717,9 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Blog Oficial da ESDHUBEM" }),
 											", com ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1.200 a 2.500 palavras" }),
-											" para gerar autoridade e indexação no Google (SEO)."
+											" para gerar autoridade e indexação no Google (SEO), assim completando o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
+											"."
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
