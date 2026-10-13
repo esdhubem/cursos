@@ -3570,6 +3570,10 @@
     }
   }
 
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
+
   .bg-blue-900\/60 {
     background-color: #1c398e99;
   }
@@ -8605,10 +8609,6 @@
       height: calc(var(--spacing) * 8);
     }
 
-    .sm\:h-10 {
-      height: calc(var(--spacing) * 10);
-    }
-
     .sm\:h-12 {
       height: calc(var(--spacing) * 12);
     }
@@ -8663,10 +8663,6 @@
 
     .sm\:w-8 {
       width: calc(var(--spacing) * 8);
-    }
-
-    .sm\:w-10 {
-      width: calc(var(--spacing) * 10);
     }
 
     .sm\:w-12 {
@@ -9082,11 +9078,6 @@
     .md\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-
-    .md\:text-base {
-      font-size: var(--text-base);
-      line-height: var(--tw-leading, var(--text-base--line-height));
     }
 
     .md\:text-xl {
