@@ -31417,11 +31417,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }), " entrega um artigo de blog;"] })]
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }), " entrega um artigo de blog (1.200 a 2.500 palavras) voltado à divulgação do conhecimento e indexação orgânica (SEO) e publicação no Blog Oficial da ESDHUBEM;"] })]
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }), " um artigo investigativo;"] })]
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }), " desenvolve um artigo investigativo estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM;"] })]
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 														className: "flex items-start gap-2",
@@ -32005,7 +32005,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }),
 																" entrega um ",
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo de blog" }),
-																" (1.200 a 2.500 palavras) voltado à divulgação do conhecimento e indexação orgânica (SEO);"
+																" (1.200 a 2.500 palavras) voltado à divulgação do conhecimento e indexação orgânica (SEO) e publicação no Blog Oficial da ESDHUBEM;"
 															] })]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
@@ -32016,7 +32016,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo investigativo" }),
 																" estruturado no repositório internacional Zenodo com ",
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI permanente" }),
-																";"
+																" e publicação no Repositório de Artigos da ESDHUBEM;"
 															] })]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
@@ -32234,7 +32234,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															fontSize: "9",
 															fontWeight: "bold",
 															fill: "#312e81",
-															children: "3. ÁUDIO 1 MIN"
+															children: "3. ÁUDIO 3 MIN"
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("circle", {
 															cx: "190",
@@ -32333,11 +32333,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "text-xl",
 																	children: "🎙️"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Áudio Explicativo de 1 Minuto" })]
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Áudio Explicativo de 3 Minutos" })]
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 																className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."]
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo:" }), " Gravação de voz de 3 minutos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."]
 															})
 														] })]
 													})]
@@ -32379,7 +32379,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🥈" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Prata" })]
 																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 																			className: "text-slate-600",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo de Blog" }), " (1.200 a 2.500 palavras) com foco em autoridade digital e SEO no Blog ESDHUBEM."]
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo de Blog" }), " (1.200 a 2.500 palavras) voltado à divulgação do conhecimento e indexação orgânica (SEO) e publicação no Blog Oficial da ESDHUBEM."]
 																		})]
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32389,7 +32389,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🥇" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ouro" })]
 																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 																			className: "text-slate-600",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Investigativo" }), " com rigor crítico, depositado no Zenodo com registro DOI internacional permanente."]
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Investigativo" }), " estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM."]
 																		})]
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
