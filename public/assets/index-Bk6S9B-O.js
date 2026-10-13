@@ -30887,103 +30887,115 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "triade",
-		titulo: "Metodologia: O que é a Tríade da Organização, Assimilação e Comunicação"
+		titulo: "3 - O que é a Tríade da Organização, Assimilação e Comunicação"
 	},
 	{
 		id: "quadrilatero",
-		titulo: "Metodologia: O que é o Quadrilátero da Organização, Assimilação, Comunicação e Produção"
+		titulo: "4 - O que é o Quadrilátero da Organização, Assimilação, Comunicação e Produção"
 	},
 	{
 		id: "3",
-		titulo: "3 - Certificação Bronze - Publicação de Verbete"
+		titulo: "5 - Certificação Bronze - Publicação de Verbete"
 	},
 	{
 		id: "4",
-		titulo: "4 - Guia Completo para publicar o Verbete - Nível Bronze"
+		titulo: "6 - Guia Completo para publicar o Verbete - Nível Bronze"
 	},
 	{
 		id: "5",
-		titulo: "5 - Certificação Prata - Publicação de Artigo de Blog"
+		titulo: "7 - Certificação Prata - Publicação de Artigo de Blog"
 	},
 	{
 		id: "6",
-		titulo: "6 - Guia Completo para publicar o artigo de Blog - Nível Prata"
+		titulo: "8 - Guia Completo para publicar o artigo de Blog - Nível Prata"
 	},
 	{
 		id: "7",
-		titulo: "7 - Certificação Ouro - Publicação de artigo de investigação"
+		titulo: "9 - Certificação Ouro - Publicação de artigo de investigação"
 	},
 	{
 		id: "8",
-		titulo: "8 - Guia Completo do Artigo de Investigação - Nível Ouro"
+		titulo: "10 - Guia Completo do Artigo de Investigação - Nível Ouro"
 	},
 	{
 		id: "9",
-		titulo: "9 - Orientações para Produção do Artigo de investigação"
+		titulo: "11 - Orientações para Produção do Artigo de investigação"
 	},
 	{
 		id: "plataformas-pesquisa",
-		titulo: "Sugestão de plataformas onde o aluno pode fazer pesquisa de artigos"
+		titulo: "12 - Sugestão de plataformas onde o aluno pode fazer pesquisa de artigos para compor suas referências bibliográficas"
 	},
 	{
 		id: "10",
-		titulo: "10 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
+		titulo: "13 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
 	},
 	{
 		id: "11",
-		titulo: "11 - Certificação Diamante: Orientação para publicação de livro"
+		titulo: "14 - Certificação Diamante: Orientação para publicação de livro"
 	},
 	{
 		id: "12",
-		titulo: "12 - Guia Completo para publicar o livro - Nível Diamante"
+		titulo: "15 - Guia Completo para publicar o livro - Nível Diamante"
 	},
 	{
 		id: "13",
-		titulo: "13 - Orientações para Produção do Livro & Registro de Direitos Autorais"
+		titulo: "16 - Orientações para Produção do Livro & Registro de Direitos Autorais"
 	},
 	{
 		id: "14",
-		titulo: "14 - Livro Autoral — Formato e Contagem de Páginas"
+		titulo: "17 - Livro Autoral — Formato e Contagem de Páginas"
 	},
 	{
 		id: "analise-portfolios",
-		titulo: "O que é a análise dos portfólios dos estudantes?"
+		titulo: "18 - O que é a análise dos portfólios dos estudantes?"
 	},
 	{
 		id: "certificacao-valores",
-		titulo: "Certificação e Valores (Modalidades, Requisitos & Percursos)"
+		titulo: "19 - Certificação e Valores (Modalidades, Requisitos & Percursos)"
 	},
 	{
 		id: "autoria-responsabilidade",
-		titulo: "Autoria e Responsabilidade"
+		titulo: "20 - Autoria e Responsabilidade"
 	},
 	{
 		id: "publicacao-periodicos-revistas",
-		titulo: "Publicação em Repositórios, Periódicos e Revistas"
+		titulo: "21 - Publicação em Repositórios, Periódicos e Revistas"
 	},
 	{
 		id: "15",
-		titulo: "15 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
+		titulo: "22 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
 	},
 	{
 		id: "16",
-		titulo: "16 - Prazos de Análise e Devolutiva"
+		titulo: "23 - Prazos de Análise e Devolutiva"
 	},
 	{
 		id: "17",
-		titulo: "17 - Critérios de Análise, Publicação e Direito de Retirada"
+		titulo: "24 - Critérios de Análise, Publicação e Direito de Retirada"
 	},
 	{
 		id: "18",
-		titulo: "18 - Estrutura e Formato por Nível de Produção"
+		titulo: "25 - Estrutura e Formato por Nível de Produção"
 	},
 	{
 		id: "19",
-		titulo: "19 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+		titulo: "26 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+	},
+	{
+		id: "como-publicar-osf",
+		titulo: "27 - Como publicar na plataforma OSF?"
+	},
+	{
+		id: "como-publicar-zenodo",
+		titulo: "28 - Como publicar no Zenodo?"
+	},
+	{
+		id: "registro-atualizacao-versoes",
+		titulo: "29 - Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
 	},
 	{
 		id: "20",
-		titulo: "20 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
+		titulo: "30 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
 	}
 ];
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
@@ -31158,7 +31170,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC72C]/15 text-[#FFC72C] text-xs font-bold uppercase tracking-wider mb-2 border border-[#FFC72C]/30 shadow-xs",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa dos 11 Módulos" })]
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-[#FFC72C]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Navegação Interativa das 30 Seções" })]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 									className: "text-xl sm:text-2xl font-black text-white tracking-tight",
@@ -31949,7 +31961,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-indigo-600" }), "Metodologia Pedagógica Avançada ESDHUBEM • Válida para Níveis Prata, Ouro e Diamante"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "O que é o Quadrilátero da Organização, Assimilação, Comunicação e Produção"
+										children: "4 - O que é o Quadrilátero da Organização, Assimilação, Comunicação e Produção"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32451,7 +32463,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-800",
-									children: "🥉 3"
+									children: "🥉 5"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -32459,7 +32471,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Vídeo 2 • Níveis, Plataforma OSF & Assimilação Ativa"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-										children: "3 - Certificação Bronze - Publicação de Verbete"
+										children: "5 - Certificação Bronze - Publicação de Verbete"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32612,7 +32624,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-800",
-									children: "📖 4"
+									children: "📖 6"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -32620,7 +32632,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade da Organização, Assimilação e Comunicação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-										children: "4 - Guia Completo para publicar o Verbete - Nível Bronze"
+										children: "6 - Guia Completo para publicar o Verbete - Nível Bronze"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32682,7 +32694,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-slate-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-slate-800",
-									children: "🥈 5"
+									children: "🥈 7"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -32690,7 +32702,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Vídeo 3 • Artigo de Blog & SEO (1.200 a 2.500 palavras)"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "5 - Certificação Prata - Publicação de Artigo de Blog"
+										children: "7 - Certificação Prata - Publicação de Artigo de Blog"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32840,7 +32852,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-slate-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-slate-800",
-									children: "📖 6"
+									children: "📖 8"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -32848,7 +32860,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-600" }), "Documento Integrado • Artigo de Blog & SEO (1.200 a 2.500 palavras)"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "6 - Guia Completo para publicar o artigo de Blog - Nível Prata"
+										children: "8 - Guia Completo para publicar o artigo de Blog - Nível Prata"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32910,7 +32922,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-600",
-									children: "🥇 7"
+									children: "🥇 9"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -32918,7 +32930,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Vídeo 4 • Manuscrito Científico, Zenodo & DOI"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-										children: "7- Certificação Ouro - Publicação de artigo de investigação"
+										children: "9 - Certificação Ouro - Publicação de artigo de investigação"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33103,7 +33115,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-600",
-									children: "📖 8"
+									children: "🔬 10"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -33111,7 +33123,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Artigo de Investigação (Zenodo & DOI)"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
-										children: "8 - Guia Completo do Artigo de Investigação - Nível Ouro"
+										children: "10 - Guia Completo do Artigo de Investigação - Nível Ouro"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33173,7 +33185,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-purple-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-purple-900",
-									children: "📝 9"
+									children: "📝 11"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -33181,7 +33193,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Vídeo 5 • Metodologia, Eixos Temáticos & Fontes Bibliográficas"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-purple-950 truncate sm:whitespace-normal",
-										children: "9 - Orientações para Produção do Artigo de investigação"
+										children: "11 - Orientações para Produção do Artigo de investigação"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33507,7 +33519,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-blue-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-800",
-									children: "📚"
+									children: "📚 12"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -33515,7 +33527,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-600" }), "Fontes & Bases Acadêmicas Recomendadas"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-blue-950 truncate sm:whitespace-normal",
-										children: "Sugestão de plataformas onde o aluno pode fazer pesquisa de artigos para compor suas referências bibliográficas"
+										children: "12 - Sugestão de plataformas onde o aluno pode fazer pesquisa de artigos para compor suas referências bibliográficas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33766,7 +33778,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🏛️ 10"
+									children: "🏛️ 13"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -33774,7 +33786,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Referência Institucional & Critérios de Validação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "10 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
+										children: "13 - Sobre o uso do nosso certificado como Horas Complementares na faculdade"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -33795,7 +33807,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
-										children: "6"
+										children: "13"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 										className: "font-black text-base sm:text-lg text-slate-900",
 										children: "Sobre o uso do nosso certificado como Horas Complementares na faculdade."
@@ -33858,7 +33870,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "💎 11"
+									children: "💎 14"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -33866,7 +33878,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Vídeos 6 e 7 • Livro Autoral (Mín. 50 Páginas) & Registro EDA/FBN"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "11 - Certificação Diamante: Orientação para publicação de livro"
+										children: "14 - Certificação Diamante: Orientação para publicação de livro"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34177,7 +34189,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📖 12"
+									children: "📘 15"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34185,7 +34197,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Documento Integrado • Livro Autoral (Mín. 50 Páginas)"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "12 - Guia Completo para publicar o livro - Nível Diamante"
+										children: "15 - Guia Completo para publicar o livro - Nível Diamante"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34251,7 +34263,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📜 13"
+									children: "✍️ 16"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34259,7 +34271,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Etapas de Produção & Registro Oficial EDA/FBN"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "13 - Orientações para Produção do Livro & Registro de Direitos Autorais"
+										children: "16 - Orientações para Produção do Livro & Registro de Direitos Autorais"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34507,7 +34519,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📖 14"
+									children: "📄 17"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34515,7 +34527,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Extensão Mínima de 50 Páginas, Parâmetros Gráficos e EDA/FBN"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "14 - Livro Autoral — Formato e Contagem de Páginas"
+										children: "17 - Livro Autoral — Formato e Contagem de Páginas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34537,7 +34549,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
-											children: "14"
+											children: "17"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 											className: "font-black text-base sm:text-lg text-slate-900",
 											children: "Livro Autoral — Formato e Contagem de Páginas"
@@ -34705,7 +34717,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-900",
-									children: "🔍"
+									children: "🔍 18"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34713,7 +34725,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Avaliação Pedagógica • Mediação & Investigação da Aprendizagem"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "O que é a análise dos portfólios dos estudantes?"
+										children: "18 - O que é a análise dos portfólios dos estudantes?"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34868,7 +34880,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5 sm:w-6 sm:h-6 text-[#FFC72C]" })
+									children: "🎗️ 19"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34876,7 +34888,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-600" }), "Modalidades, Requisitos & Percursos"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "Certificação e Valores"
+										children: "19 - Certificação e Valores (Modalidades, Requisitos & Percursos)"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35115,7 +35127,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-5 h-5 sm:w-6 sm:h-6 text-[#FFC72C]" })
+									children: "📑 20"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -35123,7 +35135,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Produção Intelectual, Ética & Uso de Inteligência Artificial"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "Autoria e Responsabilidade"
+										children: "20 - Autoria e Responsabilidade"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35191,10 +35203,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xl",
-										children: "📚"
-									})
+									children: "📚 21"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -35202,7 +35211,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: "Orientações, Pré-prints com DOI & Direito de Remoção"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "Publicação em Repositórios, Periódicos e Revistas"
+										children: "21 - Publicação em Repositórios, Periódicos e Revistas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35354,7 +35363,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📏 15"
+									children: "📏 22"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35362,7 +35371,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Parâmetros de Contagem de Palavras e Páginas Sugeridas"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "15 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
+										children: "22 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35589,7 +35598,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "⏱️ 16"
+									children: "⏱️ 23"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35597,7 +35606,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Prazos Institucionais & Devolutivas de Avaliação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "16 - Prazos de Análise e Devolutiva"
+										children: "23 - Prazos de Análise e Devolutiva"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35797,7 +35806,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "⚖️ 17"
+									children: "⚖️ 24"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35805,7 +35814,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Critérios de Análise, Publicação e Direito de Retirada"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "17 - Critérios de Análise, Publicação e Direito de Retirada"
+										children: "24 - Critérios de Análise, Publicação e Direito de Retirada"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -35983,7 +35992,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📐 18"
+									children: "📐 25"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35991,7 +36000,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Parâmetros Textuais, Normas de Estilo & Extensão"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "18 - Estrutura e Formato por Nível de Produção"
+										children: "25 - Estrutura e Formato por Nível de Produção"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -36258,7 +36267,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🌐 19"
+									children: "🌐 26"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -36266,7 +36275,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "OSF, Zenodo com DOI, Autoria Perpétua e Gestão de Versões"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "19 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+										children: "26 - Registro Obrigatório nas Plataformas e Atualização de Versões"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -36472,15 +36481,15 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-sky-600 to-sky-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-sky-900",
-									children: "🌐"
+									children: "🌐 27"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-sky-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-sky-600" }), "Open Science Framework • Níveis Bronze e Prata"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-sky-600" }), "Open Science Framework • Níveis Bronze, Prata e Diamante"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "Como publicar na plataforma OSF?"
+										children: "27 - Como publicar na plataforma OSF?"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -36648,7 +36657,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-teal-600 to-teal-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-teal-900",
-									children: "🔬"
+									children: "🔬 28"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -36656,7 +36665,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-teal-600" }), "Zenodo + DOI • Nível Ouro"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "Como publicar no Zenodo?"
+										children: "28 - Como publicar no Zenodo?"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -36742,7 +36751,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-900 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-indigo-950",
-									children: "🔄"
+									children: "🔄 29"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -36750,7 +36759,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-indigo-600" }), "Gestão de Versões & Homologação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
+										children: "29 - Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -36923,7 +36932,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🤖 20"
+									children: "🤖 30"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -36931,7 +36940,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Ética, Transparência, Limites de Uso e Modelos de Declaração"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "20 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
+										children: "30 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
