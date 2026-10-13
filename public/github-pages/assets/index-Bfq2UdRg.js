@@ -35207,7 +35207,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 													className: "text-xs sm:text-sm text-slate-600 leading-relaxed",
-													children: "O trabalho deverá ser entregue devidamente registrado na plataforma correspondente ao nível escolhido. Entretanto, sabemos que ajustes podem ser necessários. Funciona assim:"
+													children: "O trabalho do aluno deverá ser enviado por e-mail para a nossa escola apenas quando estiver devidamente registrado na plataforma correspondente ao nível escolhido, OSF ou Zenodo. Entretanto, sabemos que ajustes podem ser necessários. Funciona assim:"
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "grid grid-cols-1 md:grid-cols-2 gap-4",
@@ -35218,7 +35218,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-sky-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Antes do registro público" })]
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 															className: "text-xs text-slate-700 leading-relaxed",
-															children: "O estudante pode elaborar, corrigir e aprimorar o texto quantas vezes desejar. Envia para avaliação, recebe orientações, faz ajustes — somente após a aprovação final é realizado o registro público, garantindo que o material publicado represente a versão definitiva."
+															children: "O estudante pode elaborar, corrigir e aprimorar o texto. Registra seu trabalho no Zenodo ou OSF e envia para a ESDHUBEM para que seja feita a avaliação. O aluno recebe a devolutiva com orientações para modificações. O aluno faz ajustes. Ocorrendo a aprovação final da escola, o aluno atualiza a nova versão no Zenodo ou OSF e, com o DOI gerado na plataforma, realizamos a publicação e lançamento do certificado, garantindo que o material publicado represente a versão definitiva."
 														})]
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 														className: "bg-indigo-50/60 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2",
