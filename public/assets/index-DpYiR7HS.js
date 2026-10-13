@@ -33066,7 +33066,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												") para aprovação do manuscrito, juntamente com o ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
 												", ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 5 minutos" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 3 minutos" }),
 												" explicando o que aprendeu, juntamente com a ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria" }),
 												" e ",
