@@ -145,6 +145,7 @@
     --color-sky-500: oklch(68.5% .169 237.323);
     --color-sky-600: oklch(58.8% .158 241.966);
     --color-sky-700: oklch(50% .134 242.749);
+    --color-sky-800: oklch(44.3% .11 240.79);
     --color-sky-900: oklch(39.1% .09 240.876);
     --color-sky-950: oklch(29.3% .066 243.157);
     --color-blue-50: oklch(97% .014 254.604);
@@ -4195,6 +4196,10 @@
     }
   }
 
+  .bg-sky-100 {
+    background-color: var(--color-sky-100);
+  }
+
   .bg-sky-100\/70 {
     background-color: #dff2feb3;
   }
@@ -5018,6 +5023,20 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-sky-50\/70 {
+    --tw-gradient-from: #f0f9ffb3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-sky-50\/70 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-sky-50) 70%, transparent);
+    }
+  }
+
+  .from-sky-50\/70 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .from-sky-500 {
     --tw-gradient-from: var(--color-sky-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -5699,6 +5718,20 @@
 
   .to-sky-50 {
     --tw-gradient-to: var(--color-sky-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-sky-50\/50 {
+    --tw-gradient-to: #f0f9ff80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-sky-50\/50 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-sky-50) 50%, transparent);
+    }
+  }
+
+  .to-sky-50\/50 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -6706,6 +6739,10 @@
 
   .text-sky-700 {
     color: var(--color-sky-700);
+  }
+
+  .text-sky-800 {
+    color: var(--color-sky-800);
   }
 
   .text-sky-900 {
@@ -8078,6 +8115,16 @@
 
     .hover\:bg-sky-100:hover {
       background-color: var(--color-sky-100);
+    }
+
+    .hover\:bg-sky-100\/60:hover {
+      background-color: #dff2fe99;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-sky-100\/60:hover {
+        background-color: color-mix(in oklab, var(--color-sky-100) 60%, transparent);
+      }
     }
 
     .hover\:bg-sky-500:hover {
