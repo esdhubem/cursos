@@ -36416,19 +36416,17 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "w-8 h-8 rounded-xl bg-teal-100 border border-teal-300 flex items-center justify-center shrink-0 text-teal-700 mt-0.5",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Lightbulb, { className: "w-4 h-4" })
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-1",
+											className: "space-y-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
 												className: "font-bold text-sm text-teal-900 flex items-center gap-1.5",
 												children: "Como funciona a garantia de autoria e datação perpétua"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: [
-													"A pessoa pode registrar, enviar para avaliação, corrigir e atualizar... ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mas a forma de fazer depende da plataforma." }),
-													" O que nunca muda: ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "a versão original fica guardada para sempre" }),
-													" (é a garantia jurídica internacional de autoria e carimbo de data). Ninguém \"apaga\" o que já foi registrado — o que se faz tecnicamente é acrescentar uma nova versão corrigida."
-												]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O estudante deve registrar seu manuscrito na plataforma OSF ou Zenodo, depois enviar para análise na nossa escola. A ESDHUBEM vai analisar e caso seja necessário fazer sugestões de ajustes equilibrados. O estudante pode corrigir seu manuscrito e enviar novamente na plataforma de publicação e assim gerar uma versão atualizada..." }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+													"O Zenodo e OSF foram criados com esse objetivo de proporcionar liberdade, segurança e desenvolvimento de projetos de escrita. Quando você atualiza o seu trabalho com uma nova versão nunca muda a versão original. ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ela fica guardada para sempre" }),
+													" (é a garantia jurídica internacional de autoria e carimbo de data). Ninguém \"apaga\" o que já foi registrado. O que se faz tecnicamente é acrescentar uma nova versão aprimorada."
+												] })]
 											})]
 										})]
 									}),
