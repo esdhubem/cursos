@@ -30954,10 +30954,6 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "Autoria e Responsabilidade"
 	},
 	{
-		id: "uso-responsavel-ia",
-		titulo: "Uso Responsável de Inteligência Artificial"
-	},
-	{
 		id: "publicacao-periodicos-revistas",
 		titulo: "Publicação em Repositórios, Periódicos e Revistas"
 	},
@@ -30983,7 +30979,7 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "20",
-		titulo: "20 - Uso de Inteligência Artificial — Declaração e Limites"
+		titulo: "20 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
 	}
 ];
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
@@ -35174,112 +35170,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-uso-responsavel-ia",
-						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-							type: "button",
-							onClick: () => toggleSection("uso-responsavel-ia"),
-							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["uso-responsavel-ia"],
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xl",
-										children: "🤖"
-									})
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "min-w-0",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
-										children: "Ética, Transparência & Ferramentas Tecnológicas"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "Uso Responsável de Inteligência Artificial"
-									})]
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-2 shrink-0",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-									children: openSections["uso-responsavel-ia"] ? "Recolher" : "Expandir"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["uso-responsavel-ia"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-								})]
-							})]
-						}), openSections["uso-responsavel-ia"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "grid grid-cols-1 md:grid-cols-2 gap-6",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-white border-2 border-purple-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm flex flex-col justify-between",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-4",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-5 h-5 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-													className: "font-extrabold text-[#011049] text-base sm:text-lg uppercase tracking-wide",
-													children: "INTELIGÊNCIA ARTIFICIAL E AUTORIA"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
-											})
-										]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "bg-purple-50/80 border border-purple-200/80 p-4 rounded-2xl text-xs sm:text-sm text-purple-950 font-medium",
-										children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm flex flex-col justify-between",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-4",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-2xl",
-													children: "🤖"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-													className: "font-extrabold text-[#011049] text-base sm:text-lg tracking-normal",
-													children: "Uso Responsável de Inteligência Artificial"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: [
-													"A tecnologia é ferramenta de apoio, ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
-													" do pensamento e criação humana."
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-												className: "text-xs sm:text-sm text-slate-700 space-y-3 list-disc list-inside pl-1",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-														"Se utilizou IA em qualquer etapa, ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
-														" como foi aplicada;"
-													] }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
-												]
-											})
-										]
-									})
-								})]
-							})
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						id: "secao-sanfona-publicacao-periodicos-revistas",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -37021,10 +36911,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Transparência, Ética, Limites de Uso e Modelos de Declaração"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Ética, Transparência, Limites de Uso e Modelos de Declaração"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "20 - Uso de Inteligência Artificial — Declaração e Limites"
+										children: "20 - Uso Responsável de Inteligência Artificial — Declaração e Limites"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -37049,7 +36939,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "5"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
 											className: "font-black text-base sm:text-lg text-slate-900",
-											children: "Uso de Inteligência Artificial — Declaração e Limites"
+											children: "Uso Responsável de Inteligência Artificial — Declaração e Limites"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -37061,6 +36951,72 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "sempre do autor" }),
 											"."
 										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-white border-2 border-purple-200/80 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs flex flex-col justify-between",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-3",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-5 h-5 text-purple-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-extrabold text-[#011049] text-sm sm:text-base uppercase tracking-wide",
+															children: "INTELIGÊNCIA ARTIFICIAL E AUTORIA"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+														children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+														children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
+													})
+												]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "bg-purple-50/80 border border-purple-200/80 p-3.5 rounded-xl text-xs sm:text-sm text-purple-950 font-medium",
+												children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs flex flex-col justify-between",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "space-y-3",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-2xl",
+															children: "🤖"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+															className: "font-extrabold text-[#011049] text-sm sm:text-base tracking-normal",
+															children: "Uso Responsável de Inteligência Artificial"
+														})]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+														children: [
+															"A tecnologia é ferramenta de apoio, ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
+															" do pensamento e criação humana."
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+														className: "text-xs sm:text-sm text-slate-700 space-y-2.5 list-disc list-inside pl-1",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+																"Se utilizou IA em qualquer etapa, ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
+																" como foi aplicada;"
+															] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
+														]
+													})
+												]
+											})
+										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "grid grid-cols-1 md:grid-cols-2 gap-5",
