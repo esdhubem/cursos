@@ -30853,7 +30853,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"20": false,
 		"plataformas-pesquisa": false,
 		"como-publicar-osf": false,
-		"como-publicar-zenodo": false
+		"como-publicar-zenodo": false,
+		"registro-atualizacao-versoes": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30886,7 +30887,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"20": true,
 			"plataformas-pesquisa": true,
 			"como-publicar-osf": true,
-			"como-publicar-zenodo": true
+			"como-publicar-zenodo": true,
+			"registro-atualizacao-versoes": true
 		});
 	};
 	const collapseAll = () => {
@@ -30914,7 +30916,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"20": false,
 			"plataformas-pesquisa": false,
 			"como-publicar-osf": false,
-			"como-publicar-zenodo": false
+			"como-publicar-zenodo": false,
+			"registro-atualizacao-versoes": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -35167,153 +35170,181 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-4 pt-4 border-t border-slate-200",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-													className: "font-bold text-base text-slate-900",
-													children: "Registro e Atualização de Versões"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										id: "sanfona-registro-atualizacao-versoes",
+										className: "rounded-2xl border-2 border-slate-200 bg-white shadow-sm overflow-hidden transition-all duration-200",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+											type: "button",
+											onClick: () => toggleSection("registro-atualizacao-versoes"),
+											className: "w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3 bg-gradient-to-r from-blue-50/70 via-white to-indigo-50/50 hover:bg-blue-100/60 transition-colors cursor-pointer border-b border-slate-200",
+											"aria-expanded": openSections["registro-atualizacao-versoes"],
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-3 min-w-0",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-black text-lg sm:text-xl shadow-xs shrink-0 border border-blue-200",
+													children: "🔄"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "min-w-0",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-blue-700 block",
+														children: "Gestão de Versões & Homologação"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+														className: "font-extrabold text-sm sm:text-base text-slate-900 leading-snug",
+														children: "Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
+													})]
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 shrink-0",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
+													children: openSections["registro-atualizacao-versoes"] ? "Recolher" : "Expandir"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["registro-atualizacao-versoes"] ? "rotate-180 bg-[#00227B] text-white" : ""}`,
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+												})]
+											})]
+										}), openSections["registro-atualizacao-versoes"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-4 sm:p-6 space-y-5 animate-fadeIn",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 													className: "text-xs sm:text-sm text-slate-600 leading-relaxed",
 													children: "O trabalho deverá ser entregue devidamente registrado na plataforma correspondente ao nível escolhido. Entretanto, sabemos que ajustes podem ser necessários. Funciona assim:"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "bg-sky-50/60 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-2",
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "grid grid-cols-1 md:grid-cols-2 gap-4",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-sky-950",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-sky-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Antes do registro público" })]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-700 leading-relaxed",
-														children: "O estudante pode elaborar, corrigir e aprimorar o texto quantas vezes desejar. Envia para avaliação, recebe orientações, faz ajustes — somente após a aprovação final é realizado o registro público, garantindo que o material publicado represente a versão definitiva."
+														className: "bg-sky-50/60 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-sky-950",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-sky-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Antes do registro público" })]
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-xs text-slate-700 leading-relaxed",
+															children: "O estudante pode elaborar, corrigir e aprimorar o texto quantas vezes desejar. Envia para avaliação, recebe orientações, faz ajustes — somente após a aprovação final é realizado o registro público, garantindo que o material publicado represente a versão definitiva."
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "bg-indigo-50/60 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-indigo-950",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4 text-indigo-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Após o registro — posso atualizar?" })]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-xs text-slate-700 leading-relaxed",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sim! Nenhuma correção posterior é perdida" }), ", mas também não se apaga o que já foi registrado. O sistema funciona por versões:"]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-xs text-slate-700 leading-relaxed pt-1",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No OSF:" }), " O projeto pode receber versões atualizadas antes do registro público. Após registrado, qualquer alteração gera um histórico transparente — a versão original permanece visível e datada, preservando a autoria."]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+																className: "text-xs text-slate-700 leading-relaxed",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No Zenodo:" }), " Publicou e precisa corrigir? Cria-se uma nova versão (ex: v1.1 corrigida). O identificador principal continua o mesmo, apontando sempre para a versão mais recente, e cada versão fica preservada com seu próprio registro."]
+															})
+														]
 													})]
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "bg-indigo-50/60 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2",
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5",
 													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-indigo-950",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4 text-indigo-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Após o registro — posso atualizar?" })]
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+															className: "font-bold text-xs sm:text-sm text-slate-900",
+															children: "Como proceder se precisar corrigir após já ter registrado:"
 														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-															className: "text-xs text-slate-700 leading-relaxed",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sim! Nenhuma correção posterior é perdida" }), ", mas também não se apaga o que já foi registrado. O sistema funciona por versões:"]
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+															className: "text-xs text-slate-700 space-y-1 list-decimal list-inside leading-relaxed",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Acesse seu projeto/registro na plataforma" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Faça upload do arquivo corrigido como nova versão" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Atualize a justificativa descrevendo o que foi ajustado" }),
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Envie o novo link para a ESDHUBEM" })
+															]
 														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-															className: "text-xs text-slate-700 leading-relaxed pt-1",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No OSF:" }), " O projeto pode receber versões atualizadas antes do registro público. Após registrado, qualquer alteração gera um histórico transparente — a versão original permanece visível e datada, preservando a autoria."]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-															className: "text-xs text-slate-700 leading-relaxed",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No Zenodo:" }), " Publicou e precisa corrigir? Cria-se uma nova versão (ex: v1.1 corrigida). O identificador principal continua o mesmo, apontando sempre para a versão mais recente, e cada versão fica preservada com seu próprio registro."]
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+															className: "text-[11px] sm:text-xs text-slate-500 italic pt-1 border-t border-slate-200",
+															children: "Ambas as versões ficarão acessíveis — isso fortalece a transparência e a autoria, não a enfraquece."
 														})
 													]
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-														className: "font-bold text-xs sm:text-sm text-slate-900",
-														children: "Como proceder se precisar corrigir após já ter registrado:"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
-														className: "text-xs text-slate-700 space-y-1 list-decimal list-inside leading-relaxed",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Acesse seu projeto/registro na plataforma" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Faça upload do arquivo corrigido como nova versão" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Atualize a justificativa descrevendo o que foi ajustado" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Envie o novo link para a ESDHUBEM" })
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-[11px] sm:text-xs text-slate-500 italic pt-1 border-t border-slate-200",
-														children: "Ambas as versões ficarão acessíveis — isso fortalece a transparência e a autoria, não a enfraquece."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-emerald-50/80 border-2 border-emerald-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-emerald-950 flex items-start gap-2.5",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-700 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "leading-relaxed",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Resumo prático:" }), " Registre a versão aprovada. Se corrigir depois, crie uma nova versão na plataforma e nos envie o link atualizado. Nada é apagado — tudo é documentado."]
-												})]
-											})
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-3.5 pt-4 border-t border-slate-200",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-lg",
-												children: "🎯"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-												className: "font-bold text-base text-slate-900",
-												children: "Resumo Prático de Perguntas & Respostas"
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-												className: "w-full text-left text-xs sm:text-sm",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-													className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-														className: "py-3 px-4 w-1/3",
-														children: "Pergunta"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-														className: "py-3 px-4",
-														children: "Resposta"
-													})] })
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-													className: "divide-y divide-slate-200 bg-white",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Aceito sem registro?"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-bold text-rose-700",
-															children: "❌ Não — só recebemos com registro concluído"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Pode registrar e depois corrigir?"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-															className: "py-3 px-4 text-slate-800",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-emerald-700 font-bold",
-																children: "✅ Sim, criando nova versão"
-															}), " — original fica guardada"]
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "A versão antiga some?"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-															className: "py-3 px-4 text-slate-800",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-rose-700 font-bold",
-																children: "❌ Não"
-															}), " — permanece como histórico, isso é garantia de autoria"]
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "O DOI muda?"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 text-slate-700",
-															children: "O principal não muda; cada versão ganha um identificador específico"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Melhor prática"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Só registrar após aprovação final para evitar versões desnecessárias"
-														})] })
-													]
-												})]
-											})
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "bg-emerald-50/80 border-2 border-emerald-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-emerald-950 flex items-start gap-2.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-700 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														className: "leading-relaxed",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Resumo prático:" }), " Registre a versão aprovada. Se corrigir depois, crie uma nova versão na plataforma e nos envie o link atualizado. Nada é apagado — tudo é documentado."]
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "space-y-3.5 pt-3 border-t border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-lg",
+															children: "🎯"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+															className: "font-bold text-sm sm:text-base text-slate-900",
+															children: "Resumo Prático de Perguntas & Respostas"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+															className: "w-full text-left text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+																className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-3 px-4 w-1/3",
+																	children: "Pergunta"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-3 px-4",
+																	children: "Resposta"
+																})] })
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																className: "divide-y divide-slate-200 bg-white",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Aceito sem registro?"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-bold text-rose-700",
+																		children: "❌ Não — só recebemos com registro concluído"
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Pode registrar e depois corrigir?"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+																		className: "py-3 px-4 text-slate-800",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-emerald-700 font-bold",
+																			children: "✅ Sim, criando nova versão"
+																		}), " — original fica guardada"]
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "A versão antiga some?"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+																		className: "py-3 px-4 text-slate-800",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-rose-700 font-bold",
+																			children: "❌ Não"
+																		}), " — permanece como histórico, isso é garantia de autoria"]
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "O DOI muda?"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 text-slate-700",
+																		children: "O principal não muda; cada versão ganha um identificador específico"
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Melhor prática"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Só registrar após aprovação final para evitar versões desnecessárias"
+																	})] })
+																]
+															})]
+														})
+													})]
+												})
+											]
 										})]
 									})
 								]
