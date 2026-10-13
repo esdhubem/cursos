@@ -5382,6 +5382,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+  .via-slate-50 {
+    --tw-gradient-via: var(--color-slate-50);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
   .via-slate-50\/80 {
     --tw-gradient-via: #f8fafccc;
   }
@@ -5627,6 +5633,20 @@
   }
 
   .to-blue-50\/50 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-blue-50\/80 {
+    --tw-gradient-to: #eff6ffcc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-blue-50\/80 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-blue-50) 80%, transparent);
+    }
+  }
+
+  .to-blue-50\/80 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -7995,6 +8015,16 @@
 
     .hover\:bg-blue-100:hover {
       background-color: var(--color-blue-100);
+    }
+
+    .hover\:bg-blue-100\/50:hover {
+      background-color: #dbeafe80;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-blue-100\/50:hover {
+        background-color: color-mix(in oklab, var(--color-blue-100) 50%, transparent);
+      }
     }
 
     .hover\:bg-blue-100\/60:hover {
