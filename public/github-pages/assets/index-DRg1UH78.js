@@ -28204,7 +28204,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 															children: "📍 Destino da Publicação:"
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 															className: "block text-sm text-slate-700 leading-relaxed",
-															children: "Mural de Livros / Livraria Digital da ESDHUBEM + Registro EDA na Biblioteca Nacional e OSF."
+															children: "Mural de Livros / Livraria Digital da ESDHUBEM + Registro na OSF (Registro EDA na Biblioteca Nacional é opcional)."
 														})]
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 														className: "bg-white p-3.5 rounded-xl border border-cyan-200 text-cyan-950 space-y-1 shadow-2xs",
@@ -33935,11 +33935,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4",
-																	children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na BN"
+																	children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na OSF"
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4 font-medium text-slate-900",
-																	children: "Tríade da Assimilação Ativa + Livro Autoral + Registro EDA na Biblioteca Nacional"
+																	children: "Tríade da Assimilação Ativa + Livro Autoral + Registro na OSF (O Registro EDA na Biblioteca Nacional, é opcional)"
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4",
