@@ -30924,6 +30924,10 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "12 - Orientações para Produção do Livro & Registro de Direitos Autorais"
 	},
 	{
+		id: "13",
+		titulo: "13 - Livro Autoral — Formato e Contagem de Páginas"
+	},
+	{
 		id: "certificacao-valores",
 		titulo: "Certificação e Valores (Modalidades, Requisitos & Percursos)"
 	},
@@ -30936,8 +30940,8 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "Uso Responsável de Inteligência Artificial"
 	},
 	{
-		id: "13",
-		titulo: "13 - Avisos Importantes sobre Publicação"
+		id: "publicacao-periodicos-revistas",
+		titulo: "Publicação em Repositórios, Periódicos e Revistas"
 	},
 	{
 		id: "14",
@@ -30966,10 +30970,6 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	{
 		id: "20",
 		titulo: "20 - Sobre Horas Complementares e Alinhamento Temático"
-	},
-	{
-		id: "21",
-		titulo: "21 - Livro Autoral — Formato e Contagem de Páginas"
 	}
 ];
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
@@ -30995,14 +30995,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"18": false,
 		"19": false,
 		"20": false,
-		"21": false,
 		"plataformas-pesquisa": false,
 		"como-publicar-osf": false,
 		"como-publicar-zenodo": false,
 		"registro-atualizacao-versoes": false,
 		"certificacao-valores": false,
 		"autoria-responsabilidade": false,
-		"uso-responsavel-ia": false
+		"uso-responsavel-ia": false,
+		"publicacao-periodicos-revistas": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -31033,14 +31033,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"18": true,
 			"19": true,
 			"20": true,
-			"21": true,
 			"plataformas-pesquisa": true,
 			"como-publicar-osf": true,
 			"como-publicar-zenodo": true,
 			"registro-atualizacao-versoes": true,
 			"certificacao-valores": true,
 			"autoria-responsabilidade": true,
-			"uso-responsavel-ia": true
+			"uso-responsavel-ia": true,
+			"publicacao-periodicos-revistas": true
 		});
 	};
 	const collapseAll = () => {
@@ -31066,14 +31066,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"18": false,
 			"19": false,
 			"20": false,
-			"21": false,
 			"plataformas-pesquisa": false,
 			"como-publicar-osf": false,
 			"como-publicar-zenodo": false,
 			"registro-atualizacao-versoes": false,
 			"certificacao-valores": false,
 			"autoria-responsabilidade": false,
-			"uso-responsavel-ia": false
+			"uso-responsavel-ia": false,
+			"publicacao-periodicos-revistas": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -33778,6 +33778,204 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-13",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("13"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["13"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
+									children: "📖 13"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Extensão Mínima de 50 Páginas, Parâmetros Gráficos e EDA/FBN"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "13 - Livro Autoral — Formato e Contagem de Páginas"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["13"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["13"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["13"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
+											children: "13"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+											className: "font-black text-base sm:text-lg text-slate-900",
+											children: "Livro Autoral — Formato e Contagem de Páginas"
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 text-sky-950 font-bold text-sm sm:text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-5 h-5 text-sky-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Extensão mínima" })]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: [
+													"O trabalho deve conter ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "no mínimo 50 páginas de conteúdo efetivo" }),
+													". Não são contabilizadas neste mínimo:"
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pt-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Capa e contracapa"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Folha de rosto"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Sumário"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Dedicatória, agradecimentos, epígrafe"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Lista de tabelas, figuras ou abreviações"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
+														children: "• Referências bibliográficas"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs sm:col-span-2 md:col-span-1",
+														children: "• Apêndices e anexos"
+													})
+												]
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-3.5 pt-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+											className: "font-bold text-sm sm:text-base text-slate-900",
+											children: "Orientações de formatação sugeridas"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+												className: "w-full text-left text-xs sm:text-sm",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+													className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 w-1/3",
+														children: "Aspecto"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4",
+														children: "Recomendação"
+													})] })
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+													className: "divide-y divide-slate-200 bg-white text-slate-700",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Formato de página"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "A4 (210 × 297 mm)"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Margens"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "3 cm (superior e esquerda) / 2 cm (inferior e direita)"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Fonte"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Times New Roman ou Arial, tamanho 12"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Espaçamento entre linhas"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "1,5"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Parágrafo"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Recuo de 1,25 cm na primeira linha"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Numeração de páginas"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Canto superior direito, a partir da primeira página de conteúdo"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Títulos de capítulo"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4",
+															children: "Iniciando em página nova, em destaque"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Arquivo final"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-cyan-900",
+															children: "PDF, pronto para publicação e eventual impressão"
+														})] })
+													]
+												})]
+											})
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm text-slate-700 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A qualidade do conteúdo prevalece sobre a quantidade de páginas." }), " O texto deve apresentar coerência, desenvolvimento completo das ideias e proposta autoral definida."]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed pt-2 border-t border-slate-200",
+											children: [
+												"Após aprovação, o autor orienta-se sobre o registro oficial junto à ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Fundação Biblioteca Nacional (EDA/FBN)" }),
+												", procedimento pessoal e intransferível."
+											]
+										})]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						id: "secao-sanfona-certificacao-valores",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -34207,167 +34405,159 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-13",
+						id: "secao-sanfona-publicacao-periodicos-revistas",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("13"),
+							onClick: () => toggleSection("publicacao-periodicos-revistas"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["13"],
+							"aria-expanded": openSections["publicacao-periodicos-revistas"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
-									children: "ℹ️ 13"
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-xl",
+										children: "📚"
+									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
-										children: "Periódicos, Repositórios com DOI & Direito de Remoção"
+										children: "Orientações, Pré-prints com DOI & Direito de Remoção"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "13 - Avisos Importantes sobre Publicação"
+										children: "Publicação em Repositórios, Periódicos e Revistas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-									children: openSections["13"] ? "Recolher" : "Expandir"
+									children: openSections["publicacao-periodicos-revistas"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["13"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["publicacao-periodicos-revistas"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["13"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["publicacao-periodicos-revistas"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-3 pb-4 border-b border-slate-100",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shrink-0",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
-										children: "Transparência & Diretrizes Institucionais"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "text-lg sm:text-xl font-bold text-slate-900",
-										children: "Avisos Importantes sobre Publicação"
-									})] })]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "grid grid-cols-1 md:grid-cols-2 gap-6",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900",
-														children: "Sobre Publicação em Periódicos e Revistas"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs text-slate-700 leading-relaxed",
-													children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs text-slate-700 leading-relaxed",
-													children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs text-slate-700 leading-relaxed",
-													children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900",
-														children: "Pré-print e Depósito com DOI"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-xs text-slate-600 leading-relaxed",
-													children: [
-														"O depósito em repositório com atribuição de ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
-														" constitui ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
-														" da obra (pré-print):"
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-													className: "text-xs text-slate-600 space-y-1",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-1.5",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-emerald-600 font-bold",
-																children: "✅"
-															}), " Fica registrada oficialmente a autoria e data de criação;"]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-1.5",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-emerald-600 font-bold",
-																children: "✅"
-															}), " O trabalho passa a ser acessível publicamente;"]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-1.5",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-rose-600 font-bold",
-																	children: "❌"
-																}),
-																" ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }),
-																";"
-															]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-															className: "flex items-start gap-1.5",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-rose-600 font-bold",
-																children: "❌"
-															}), " Verifique a política do periódico caso queira submeter a mesma obra."]
-														})
-													]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3 md:col-span-2",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📂" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900",
-														children: "Direito de Remoção / Retirada"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-xs text-slate-600 leading-relaxed",
-													children: [
-														"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
-														"."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-[11px] text-slate-500 italic",
-													children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
-												})
-											]
-										})
-									]
-								})]
+								className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-7 space-y-3.5 shadow-sm md:col-span-2",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2.5 text-slate-900 font-extrabold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "📤"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "font-extrabold text-[#011049] text-base sm:text-lg",
+													children: "Sobre Publicação em Periódicos e Revistas"
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-7 space-y-3.5 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2.5 text-slate-900 font-extrabold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "🔬"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "font-extrabold text-[#011049] text-base sm:text-lg",
+													children: "Pré-print e Depósito com DOI"
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: [
+													"O depósito em repositório com atribuição de ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
+													" constitui ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
+													" da obra (pré-print):"
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs sm:text-sm text-slate-700 space-y-2",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "✅"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Fica registrada oficialmente a autoria e data de criação;" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-emerald-600 font-bold",
+															children: "✅"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O trabalho passa a ser acessível publicamente;" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-rose-600 font-bold",
+															children: "❌"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }), ";"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-rose-600 font-bold",
+															children: "❌"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verifique a política do periódico caso queira submeter a mesma obra." })]
+													})
+												]
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-7 space-y-3.5 shadow-sm",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2.5 text-slate-900 font-extrabold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "📁"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+													className: "font-extrabold text-[#011049] text-base sm:text-lg",
+													children: "Direito de Remoção / Retirada"
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: [
+													"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
+													"."
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs text-slate-500 italic pt-2 border-t border-slate-100",
+												children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
+											})
+										]
+									})
+								]
 							})
 						})]
 					}),
@@ -36227,204 +36417,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												]
 											})
 										]
-									})
-								]
-							})
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-21",
-						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-							type: "button",
-							onClick: () => toggleSection("21"),
-							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["21"],
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📖 21"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "min-w-0",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Extensão Mínima de 50 Páginas, Parâmetros Gráficos e EDA/FBN"]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "21 - Livro Autoral — Formato e Contagem de Páginas"
-									})]
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-2 shrink-0",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["21"] ? "Recolher" : "Expandir"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["21"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-								})]
-							})]
-						}), openSections["21"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-2.5 pb-2 border-b border-slate-100",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
-											children: "7"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-											className: "font-black text-base sm:text-lg text-slate-900",
-											children: "Livro Autoral — Formato e Contagem de Páginas"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2 text-sky-950 font-bold text-sm sm:text-base",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-5 h-5 text-sky-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Extensão mínima" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: [
-													"O trabalho deve conter ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "no mínimo 50 páginas de conteúdo efetivo" }),
-													". Não são contabilizadas neste mínimo:"
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pt-1",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Capa e contracapa"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Folha de rosto"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Sumário"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Dedicatória, agradecimentos, epígrafe"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Lista de tabelas, figuras ou abreviações"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs",
-														children: "• Referências bibliográficas"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-700 font-medium shadow-2xs sm:col-span-2 md:col-span-1",
-														children: "• Apêndices e anexos"
-													})
-												]
-											})
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-3.5 pt-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-											className: "font-bold text-sm sm:text-base text-slate-900",
-											children: "Orientações de formatação sugeridas"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-												className: "w-full text-left text-xs sm:text-sm",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-													className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-														className: "py-3 px-4 w-1/3",
-														children: "Aspecto"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-														className: "py-3 px-4",
-														children: "Recomendação"
-													})] })
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-													className: "divide-y divide-slate-200 bg-white text-slate-700",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Formato de página"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "A4 (210 × 297 mm)"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Margens"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "3 cm (superior e esquerda) / 2 cm (inferior e direita)"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Fonte"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "Times New Roman ou Arial, tamanho 12"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Espaçamento entre linhas"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "1,5"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Parágrafo"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "Recuo de 1,25 cm na primeira linha"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Numeração de páginas"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "Canto superior direito, a partir da primeira página de conteúdo"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Títulos de capítulo"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4",
-															children: "Iniciando em página nova, em destaque"
-														})] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-slate-900",
-															children: "Arquivo final"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-															className: "py-3 px-4 font-semibold text-cyan-900",
-															children: "PDF, pronto para publicação e eventual impressão"
-														})] })
-													]
-												})]
-											})
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm text-slate-700 shadow-xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "leading-relaxed",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A qualidade do conteúdo prevalece sobre a quantidade de páginas." }), " O texto deve apresentar coerência, desenvolvimento completo das ideias e proposta autoral definida."]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "leading-relaxed pt-2 border-t border-slate-200",
-											children: [
-												"Após aprovação, o autor orienta-se sobre o registro oficial junto à ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Fundação Biblioteca Nacional (EDA/FBN)" }),
-												", procedimento pessoal e intransferível."
-											]
-										})]
 									})
 								]
 							})
