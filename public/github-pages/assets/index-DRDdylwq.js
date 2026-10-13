@@ -30929,31 +30929,35 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "14",
-		titulo: "14 - Prazos de Análise e Devolutiva"
+		titulo: "14 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
 	},
 	{
 		id: "15",
-		titulo: "15 - Critérios de Avaliação, Publicação e Direito de Retirada"
+		titulo: "15 - Prazos de Análise e Devolutiva"
 	},
 	{
 		id: "16",
-		titulo: "16 - Estrutura e Formato por Nível de Produção"
+		titulo: "16 - Critérios de Avaliação, Publicação e Direito de Retirada"
 	},
 	{
 		id: "17",
-		titulo: "17 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+		titulo: "17 - Estrutura e Formato por Nível de Produção"
 	},
 	{
 		id: "18",
-		titulo: "18 - Uso de Inteligência Artificial — Declaração e Limites"
+		titulo: "18 - Registro Obrigatório nas Plataformas e Atualização de Versões"
 	},
 	{
 		id: "19",
-		titulo: "19 - Sobre Horas Complementares e Alinhamento Temático"
+		titulo: "19 - Uso de Inteligência Artificial — Declaração e Limites"
 	},
 	{
 		id: "20",
-		titulo: "20 - Livro Autoral — Formato e Contagem de Páginas"
+		titulo: "20 - Sobre Horas Complementares e Alinhamento Temático"
+	},
+	{
+		id: "21",
+		titulo: "21 - Livro Autoral — Formato e Contagem de Páginas"
 	}
 ];
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
@@ -30979,6 +30983,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"18": false,
 		"19": false,
 		"20": false,
+		"21": false,
 		"plataformas-pesquisa": false,
 		"como-publicar-osf": false,
 		"como-publicar-zenodo": false,
@@ -31014,6 +31019,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"18": true,
 			"19": true,
 			"20": true,
+			"21": true,
 			"plataformas-pesquisa": true,
 			"como-publicar-osf": true,
 			"como-publicar-zenodo": true,
@@ -31044,6 +31050,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"18": false,
 			"19": false,
 			"20": false,
+			"21": false,
 			"plataformas-pesquisa": false,
 			"como-publicar-osf": false,
 			"como-publicar-zenodo": false,
@@ -34261,15 +34268,15 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "⏱️ 14"
+									children: "📏 14"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Prazos Institucionais & Devolutivas de Avaliação"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Parâmetros de Contagem de Palavras e Páginas Sugeridas"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "14 - Prazos de Análise e Devolutiva"
+										children: "14 - Padrão de Extensão: Palavras Sugeridas e Páginas por Nível"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34283,6 +34290,241 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								})]
 							})]
 						}), openSections["14"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-6 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "w-7 h-7 rounded-full bg-blue-100 text-blue-900 font-black flex items-center justify-center text-xs shadow-xs",
+												children: "📏"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+												className: "font-black text-base sm:text-lg text-slate-900",
+												children: "Padrão de Extensão por Nível"
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-sm sm:text-base font-medium text-slate-700 leading-relaxed",
+											children: "O nosso padrão é acessível e coerente com a nossa proposta:"
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "overflow-x-auto rounded-xl border border-slate-200 shadow-xs",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+											className: "w-full text-left text-xs sm:text-sm border-collapse",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "bg-slate-900 text-white",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold",
+														children: "Nível"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold",
+														children: "Tipo de trabalho"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold",
+														children: "Palavras sugeridas"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold",
+														children: "Páginas aproximadas"
+													})
+												]
+											}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+												className: "divide-y divide-slate-200 bg-white text-slate-700",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50/80 transition-colors",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center px-2.5 py-1 rounded-full text-xs font-black bg-slate-100 text-slate-700 border border-slate-300",
+																	children: "🥈 Prata"
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-semibold text-slate-900",
+																children: "Artigo de Blog"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-slate-800",
+																children: "1.200 a 2.500 palavras"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-700",
+																children: "4 a 8 páginas"
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-amber-50/50 transition-colors",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center px-2.5 py-1 rounded-full text-xs font-black bg-amber-100 text-amber-800 border border-amber-300",
+																	children: "🥇 Ouro"
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-semibold text-slate-900",
+																children: "Manuscrito de Investigação"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-amber-900",
+																children: "2.500 a 5.000 palavras"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-700",
+																children: "8 a 15 páginas"
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-cyan-50/50 transition-colors",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "inline-flex items-center px-2.5 py-1 rounded-full text-xs font-black bg-cyan-100 text-cyan-800 border border-cyan-300",
+																	children: "💎 Diamante"
+																})
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-semibold text-slate-900",
+																children: "Livro Autoral"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-cyan-900",
+																children: "Mín. 50 pág. conteúdo"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-700",
+																children: "50+ páginas"
+															})
+														]
+													})
+												]
+											})]
+										})
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-3 pt-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h5", {
+											className: "font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📝" }), " O que conta e o que NÃO conta"]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "overflow-x-auto rounded-xl border border-slate-200 shadow-xs",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+												className: "w-full text-left text-xs sm:text-sm border-collapse",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+													className: "border-b border-slate-200",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold bg-emerald-50 text-emerald-900 border-r border-slate-200",
+														children: "✅ Conta no total"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold bg-rose-50 text-rose-900",
+														children: "❌ Não entra na contagem"
+													})]
+												}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+													className: "divide-y divide-slate-200 bg-white text-slate-700",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 font-medium text-slate-800 border-r border-slate-200",
+															children: "Introdução"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 text-slate-600",
+															children: "Resumo (às vezes separado)"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 font-medium text-slate-800 border-r border-slate-200",
+															children: "Desenvolvimento"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 text-slate-600",
+															children: "Folha de rosto, capa"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 font-medium text-slate-800 border-r border-slate-200",
+															children: "Discussão"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 text-slate-600",
+															children: "Sumário, dedicatória"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 font-medium text-slate-800 border-r border-slate-200",
+															children: "Conclusão"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 text-slate-600",
+															children: "Referências bibliográficas"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 font-medium text-slate-800 border-r border-slate-200",
+															children: "Citações no texto"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-2.5 px-4 text-slate-600",
+															children: "Anexos e apêndices"
+														})] })
+													]
+												})]
+											})
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-amber-50/70 border border-amber-200 rounded-2xl p-5 sm:p-6 space-y-2.5 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2 text-amber-900 font-bold text-sm sm:text-base",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-lg",
+												children: "💡"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { children: "Recomendação prática para a ESDHUBEM" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-amber-950/90 leading-relaxed italic bg-white/70 p-4 rounded-xl border border-amber-200/80",
+											children: "\"Para o Artigo de Investigação do Nível Ouro, sugerimos entre 2.500 e 5.000 palavras de conteúdo efetivo — o suficiente para desenvolver o tema com profundidade sem exigir volume excessivo. O que prevalece é a coerência, a clareza e o desenvolvimento das ideias, não a quantidade de páginas.\""
+										})]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-15",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("15"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["15"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
+									children: "⏱️ 15"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-cyan-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Prazos Institucionais & Devolutivas de Avaliação"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "15 - Prazos de Análise e Devolutiva"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["15"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["15"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["15"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-5 shadow-sm",
@@ -34458,18 +34700,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-15",
+						id: "secao-sanfona-16",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("15"),
+							onClick: () => toggleSection("16"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["15"],
+							"aria-expanded": openSections["16"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "⚖️ 15"
+									children: "⚖️ 16"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34477,20 +34719,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Critérios de Avaliação, Publicação e Direito de Retirada"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "15 - Critérios de Avaliação, Publicação e Direito de Retirada"
+										children: "16 - Critérios de Avaliação, Publicação e Direito de Retirada"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["15"] ? "Recolher" : "Expandir"
+									children: openSections["16"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["15"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["16"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["15"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["16"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-6 shadow-sm",
@@ -34625,18 +34867,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-16",
+						id: "secao-sanfona-17",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("16"),
+							onClick: () => toggleSection("17"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["16"],
+							"aria-expanded": openSections["17"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📐 16"
+									children: "📐 17"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34644,20 +34886,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Parâmetros Textuais, Normas de Estilo & Extensão"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "16 - Estrutura e Formato por Nível de Produção"
+										children: "17 - Estrutura e Formato por Nível de Produção"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["16"] ? "Recolher" : "Expandir"
+									children: openSections["17"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["16"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["17"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["16"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["17"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-6 space-y-5 shadow-sm",
@@ -34900,18 +35142,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-17",
+						id: "secao-sanfona-18",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("17"),
+							onClick: () => toggleSection("18"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["17"],
+							"aria-expanded": openSections["18"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🌐 17"
+									children: "🌐 18"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -34919,20 +35161,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "OSF, Zenodo com DOI, Autoria Perpétua e Gestão de Versões"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "17 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+										children: "18 - Registro Obrigatório nas Plataformas e Atualização de Versões"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["17"] ? "Recolher" : "Expandir"
+									children: openSections["18"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["17"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["18"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["17"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["18"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-7 shadow-sm",
@@ -35573,18 +35815,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-18",
+						id: "secao-sanfona-19",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("18"),
+							onClick: () => toggleSection("19"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["18"],
+							"aria-expanded": openSections["19"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🤖 18"
+									children: "🤖 19"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35592,20 +35834,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Transparência, Ética, Limites de Uso e Modelos de Declaração"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "18 - Uso de Inteligência Artificial — Declaração e Limites"
+										children: "19 - Uso de Inteligência Artificial — Declaração e Limites"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["18"] ? "Recolher" : "Expandir"
+									children: openSections["19"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["18"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["19"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["18"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["19"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-7 shadow-sm",
@@ -35771,18 +36013,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-19",
+						id: "secao-sanfona-20",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("19"),
+							onClick: () => toggleSection("20"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["19"],
+							"aria-expanded": openSections["20"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "🏛️ 19"
+									children: "🏛️ 20"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35790,20 +36032,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Referência Organizacional CAPES & Critérios Institucionais de Validação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "19 - Sobre Horas Complementares e Alinhamento Temático"
+										children: "20 - Sobre Horas Complementares e Alinhamento Temático"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["19"] ? "Recolher" : "Expandir"
+									children: openSections["20"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["19"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["20"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["19"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["20"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
@@ -35876,18 +36118,18 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						id: "secao-sanfona-20",
+						id: "secao-sanfona-21",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 							type: "button",
-							onClick: () => toggleSection("20"),
+							onClick: () => toggleSection("21"),
 							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
-							"aria-expanded": openSections["20"],
+							"aria-expanded": openSections["21"],
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-cyan-700 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-cyan-800",
-									children: "📖 20"
+									children: "📖 21"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -35895,20 +36137,20 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-600" }), "Extensão Mínima de 50 Páginas, Parâmetros Gráficos e EDA/FBN"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
-										children: "20 - Livro Autoral — Formato e Contagem de Páginas"
+										children: "21 - Livro Autoral — Formato e Contagem de Páginas"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-center gap-2 shrink-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
-									children: openSections["20"] ? "Recolher" : "Expandir"
+									children: openSections["21"] ? "Recolher" : "Expandir"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["20"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["21"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["20"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						}), openSections["21"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
