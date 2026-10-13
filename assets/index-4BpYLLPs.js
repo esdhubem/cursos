@@ -30936,6 +30936,10 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "14 - Livro Autoral — Formato e Contagem de Páginas"
 	},
 	{
+		id: "analise-portfolios",
+		titulo: "O que é a análise dos portfólios dos estudantes?"
+	},
+	{
 		id: "certificacao-valores",
 		titulo: "Certificação e Valores (Modalidades, Requisitos & Percursos)"
 	},
@@ -30994,6 +30998,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"12": false,
 		"13": false,
 		"14": false,
+		"analise-portfolios": false,
 		"15": false,
 		"16": false,
 		"17": false,
@@ -31033,6 +31038,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"12": true,
 			"13": true,
 			"14": true,
+			"analise-portfolios": true,
 			"15": true,
 			"16": true,
 			"17": true,
@@ -31067,6 +31073,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"12": false,
 			"13": false,
 			"14": false,
+			"analise-portfolios": false,
 			"15": false,
 			"16": false,
 			"17": false,
@@ -32805,61 +32812,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/80 p-5 rounded-2xl border-2 border-amber-300/80 shadow-xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-2",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h5", {
-													className: "font-bold text-sm sm:text-base text-amber-950 flex items-center gap-2",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-base sm:text-lg",
-														children: "🔍"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O que é a análise dos portfólios dos estudantes?" })]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Na ESDHUBEM a análise do portfólio é um processo pedagógico onde o manuscrito será analisado segundo o como e o porquê do trabalho desenvolvido, verificando o raciocínio lógico, concordância com o tema do curso, caminhos cognitivos que o estudante percorreu para chegar àquela resposta, compreender a linha de pensamento do estudante, identificar dificuldades específicas e entender onde o aluno tropeçou ou brilhou conceitualmente." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"Aqui na ESDHUBEM os nossos tutores atuam como um investigador da aprendizagem. Não é nosso objetivo atuar com julgamento ou atribuição de nota. O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM que estão disponíveis na",
-													" ",
-													onNavigate ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-														type: "button",
-														onClick: () => onNavigate("diretrizes-avaliacao-manuscritos"),
-														className: "font-bold text-[#00227B] hover:underline cursor-pointer inline",
-														children: "página de diretrizes de avaliação"
-													}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "font-bold text-[#00227B]",
-														children: "página de diretrizes de avaliação"
-													}),
-													"."
-												] })
-											]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "pt-2 border-t border-amber-200/80 space-y-2",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"O portfólio deve ser enviado para a escola pelo e-mail:",
-													" ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-														href: "mailto:esdhubem@proton.me",
-														className: "font-bold text-[#00227B] hover:underline",
-														children: "esdhubem@proton.me"
-													}),
-													" ",
-													"juntamente com o ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
-													", o ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 3 minutos" }),
-													" explicando o que você aprendeu com o curso e juntamente com a ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
-													" e a ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
-													"."
-												] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional." }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "font-semibold text-slate-900",
-													children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
-												})
-											]
+										className: "space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed bg-slate-50 p-5 rounded-2xl border border-slate-200 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "font-semibold text-slate-900",
+											children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
 										})]
 									})
 								]
@@ -34723,6 +34679,169 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									})
 								]
 							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-analise-portfolios",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("analise-portfolios"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["analise-portfolios"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-amber-900",
+									children: "🔍"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-amber-900 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Avaliação Pedagógica • Mediação & Investigação da Aprendizagem"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
+										children: "O que é a análise dos portfólios dos estudantes?"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["analise-portfolios"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-900 transition-transform duration-300 ${openSections["analise-portfolios"] ? "rotate-180 bg-amber-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["analise-portfolios"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-xs font-bold tracking-wide uppercase shadow-2xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Processo Pedagógico Investigativo Oficial da ESDHUBEM" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
+											children: "O que é a análise dos portfólios dos estudantes?"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+												"Na ESDHUBEM a análise do portfólio é um processo pedagógico onde o manuscrito será analisado segundo o ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "como" }),
+												" e o ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "porquê" }),
+												" do trabalho desenvolvido, verificando o raciocínio lógico, concordância com o tema do curso, caminhos cognitivos que o estudante percorreu para chegar àquela resposta, compreender a linha de pensamento do estudante, identificar dificuldades específicas e entender onde o aluno tropeçou ou brilhou conceitualmente."
+											] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+												"Aqui na ESDHUBEM os nossos tutores atuam como um ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "investigador da aprendizagem" }),
+												". Não é nosso objetivo atuar com julgamento ou atribuição de nota. O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM que estão disponíveis na",
+												" ",
+												onNavigate ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+													type: "button",
+													onClick: () => onNavigate("diretrizes-avaliacao-manuscritos"),
+													className: "font-bold text-[#00227B] hover:underline cursor-pointer inline",
+													children: "página de diretrizes de avaliação"
+												}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "font-bold text-[#00227B]",
+													children: "página de diretrizes de avaliação"
+												}),
+												"."
+											] })]
+										})
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-white border-2 border-amber-300 rounded-2xl p-5 space-y-2 shadow-xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 text-amber-950 font-bold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "🧭"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Investigação Cognitiva" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "Compreender as conexões mentais, a evolução lógica e a apreensão conceitual do estudante ao longo do percurso formativo."
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-white border-2 border-amber-300 rounded-2xl p-5 space-y-2 shadow-xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 text-amber-950 font-bold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "🤝"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Mediação sem Julgamento" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: "Tutores dedicados a acolher e orientar o aprendizado, sem notas punitivas ou classificação excludente."
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-white border-2 border-amber-300 rounded-2xl p-5 space-y-2 shadow-xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 text-amber-950 font-bold text-base",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xl",
+													children: "📨"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Canal Oficial de Envio" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+												children: [
+													"Envio de todo o material para o e-mail oficial",
+													" ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+														href: "mailto:esdhubem@proton.me",
+														className: "font-bold text-[#00227B] hover:underline",
+														children: "esdhubem@proton.me"
+													}),
+													" ",
+													"com as declarações devidamente preenchidas."
+												]
+											})]
+										})
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-gradient-to-br from-amber-50 via-white to-amber-50/60 border-2 border-amber-300 rounded-2xl p-5 sm:p-6 space-y-3 shadow-xs",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "font-extrabold text-xs uppercase tracking-wider text-amber-950 flex items-center gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📋" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Documentos que Acompanham o Portfólio" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: [
+											"O portfólio deve ser enviado para a escola pelo e-mail:",
+											" ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+												href: "mailto:esdhubem@proton.me",
+												className: "font-bold text-[#00227B] hover:underline",
+												children: "esdhubem@proton.me"
+											}),
+											" ",
+											"juntamente com o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
+											", o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 3 minutos" }),
+											" explicando o que você aprendeu com o curso e juntamente com a ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
+											" e a ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
+											"."
+										]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs sm:text-sm text-slate-600 font-medium italic",
+									children: "* A análise do portfólio é um ato pedagógico colaborativo, visando aprimorar a escrita, a oratória e a autonomia intelectual de cada aluno da ESDHUBEM."
+								})
+							]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
