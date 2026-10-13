@@ -30858,6 +30858,92 @@ var LazyVideoPlayer = ({ id, src, title, thumbnail, fallbackThumbnail, badge }) 
 		})
 	});
 };
+var LISTA_SANFONAS_DIRETRIZES = [
+	{
+		id: "1",
+		titulo: "1 - Apresentação das Diretrizes de Publicação"
+	},
+	{
+		id: "2",
+		titulo: "2 - Declarações de autorização e de autoria"
+	},
+	{
+		id: "triade",
+		titulo: "Metodologia: O que é a Tríade da Assimilação Ativa"
+	},
+	{
+		id: "3",
+		titulo: "3 - Certificação Bronze - Publicação de Verbete"
+	},
+	{
+		id: "4",
+		titulo: "4 - Guia Completo para publicar o Verbete - Nível Bronze"
+	},
+	{
+		id: "5",
+		titulo: "5 - Certificação Prata - Publicação de Artigo de Blog"
+	},
+	{
+		id: "6",
+		titulo: "6 - Guia Completo para publicar o artigo de Blog - Nível Prata"
+	},
+	{
+		id: "7",
+		titulo: "7 - Certificação Ouro - Publicação de artigo de investigação"
+	},
+	{
+		id: "8",
+		titulo: "8 - Guia Completo do Artigo de Investigação - Nível Ouro"
+	},
+	{
+		id: "9",
+		titulo: "9 - Orientações para Produção do Artigo de investigação"
+	},
+	{
+		id: "10",
+		titulo: "10 - Certificação Diamante: Orientação para publicação de livro"
+	},
+	{
+		id: "11",
+		titulo: "11 - Guia Completo para publicar o livro - Nível Diamante"
+	},
+	{
+		id: "12",
+		titulo: "12 - Orientações para Produção do Livro & Registro de Direitos Autorais"
+	},
+	{
+		id: "13",
+		titulo: "13 - Informação Extra (Autoria, IA, Certificação e Valores)"
+	},
+	{
+		id: "14",
+		titulo: "14 - Prazos de Análise e Devolutiva"
+	},
+	{
+		id: "15",
+		titulo: "15 - Critérios de Avaliação, Publicação e Direito de Retirada"
+	},
+	{
+		id: "16",
+		titulo: "16 - Estrutura e Formato por Nível de Produção"
+	},
+	{
+		id: "17",
+		titulo: "17 - Registro Obrigatório nas Plataformas e Atualização de Versões"
+	},
+	{
+		id: "18",
+		titulo: "18 - Uso de Inteligência Artificial — Declaração e Limites"
+	},
+	{
+		id: "19",
+		titulo: "19 - Sobre Horas Complementares e Alinhamento Temático"
+	},
+	{
+		id: "20",
+		titulo: "20 - Livro Autoral — Formato e Contagem de Páginas"
+	}
+];
 var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, onNavigateToPortal, onNavigate }) => {
 	const [openSections, setOpenSections] = (0, import_react.useState)({
 		"1": true,
@@ -31040,139 +31126,28 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								})]
 							})]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex flex-wrap items-center gap-2 pt-3 border-t border-cyan-400/20 text-xs font-semibold relative z-10",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-cyan-200 text-[11px] uppercase tracking-wider mr-1 font-bold",
-									children: "Ir para:"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("1"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["1"] ? "bg-white text-[#011049] font-black shadow-md" : "bg-white/10 text-white hover:bg-white/20 border border-white/15"}`,
-									children: "1. Apresentação das Diretrizes"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("2"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["2"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-									children: "📄 2. Declarações de Autoria"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("triade"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["triade"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-500/40 hover:bg-amber-900/80"}`,
-									children: "🔺 3. O que é a Tríade da Assimilação Ativa"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("3"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["3"] ? "bg-amber-500 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-600/40 hover:bg-amber-900/80"}`,
-									children: "🥉 3. Bronze: Publicação de Verbete"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("4"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["4"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/70 text-amber-200 border border-amber-500/50 hover:bg-amber-900/90"}`,
-									children: "📖 4. Guia do Verbete (Bronze)"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("5"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["5"] ? "bg-slate-200 text-slate-950 font-black shadow-md" : "bg-slate-800/80 text-slate-200 border border-slate-600/50 hover:bg-slate-700/80"}`,
-									children: "🥈 5. Prata"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("6"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["6"] ? "bg-slate-300 text-slate-950 font-black shadow-md" : "bg-slate-800/80 text-slate-200 border border-slate-500/50 hover:bg-slate-700/80"}`,
-									children: "📝 6. Guia do Artigo (Prata)"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("7"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["7"] ? "bg-[#FFC72C] text-slate-950 font-black shadow-md" : "bg-amber-900/60 text-amber-300 border border-amber-500/40 hover:bg-amber-800/80"}`,
-									children: "🥇 7. Ouro"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("8"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["8"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/70 text-amber-200 border border-amber-500/50 hover:bg-amber-900/90"}`,
-									children: "📖 8. Guia do Artigo (Ouro)"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("9"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["9"] ? "bg-purple-500 text-white font-bold shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
-									children: "📚 9. Orientações de Artigo"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("10"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["10"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-									children: "💎 10. Diamante"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("11"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["11"] ? "bg-cyan-300 text-slate-950 font-black shadow-md" : "bg-cyan-950/70 text-cyan-200 border border-cyan-500/50 hover:bg-cyan-900/90"}`,
-									children: "📖 11. Guia do Livro (Diamante)"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("12"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["12"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-500/40 hover:bg-amber-900/80"}`,
-									children: "📜 12. Produção & Direitos Autorais"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("13"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["13"] ? "bg-blue-500 text-white font-bold shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
-									children: "ℹ️ 13. Informação Extra"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("14"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["14"] ? "bg-emerald-400 text-slate-950 font-black shadow-md" : "bg-emerald-950/60 text-emerald-200 border border-emerald-500/40 hover:bg-emerald-900/80"}`,
-									children: "⏱️ 14. Prazos de Análise"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("15"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["15"] ? "bg-cyan-300 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-									children: "⚖️ 15. Critérios & Retirada"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("16"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["16"] ? "bg-amber-400 text-slate-950 font-black shadow-md" : "bg-amber-950/60 text-amber-200 border border-amber-500/40 hover:bg-amber-900/80"}`,
-									children: "📐 16. Estrutura por Nível"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("17"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["17"] ? "bg-cyan-400 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-									children: "🌐 17. Registro nas Plataformas"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("18"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["18"] ? "bg-purple-400 text-slate-950 font-black shadow-md" : "bg-purple-950/60 text-purple-200 border border-purple-500/40 hover:bg-purple-900/80"}`,
-									children: "🤖 18. Inteligência Artificial"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("19"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["19"] ? "bg-blue-400 text-slate-950 font-black shadow-md" : "bg-blue-950/60 text-blue-200 border border-blue-500/40 hover:bg-blue-900/80"}`,
-									children: "🏛️ 19. Horas Complementares"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									type: "button",
-									onClick: () => openAndScrollTo("20"),
-									className: `px-3 py-1.5 rounded-xl transition-all cursor-pointer ${openSections["20"] ? "bg-cyan-300 text-slate-950 font-black shadow-md" : "bg-cyan-950/60 text-cyan-200 border border-cyan-500/40 hover:bg-cyan-900/80"}`,
-									children: "📖 20. Livro: Formato & Páginas"
+							className: "pt-4 border-t border-cyan-400/20 relative z-10 space-y-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "flex items-center gap-2 text-cyan-200 text-xs font-bold uppercase tracking-wider",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sumário das Sanfonas (Clique para ir ao título correspondente):" })
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "bg-[#02184d]/60 rounded-2xl p-4 sm:p-5 border border-cyan-400/20",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-xs sm:text-sm",
+									children: LISTA_SANFONAS_DIRETRIZES.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+										className: "flex items-start gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[#FFC72C] text-xs font-bold shrink-0 pt-0.5 select-none",
+											children: "→"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+											type: "button",
+											onClick: () => openAndScrollTo(item.id),
+											className: "text-left text-blue-100 hover:text-white hover:underline transition-colors leading-snug cursor-pointer font-medium",
+											children: item.titulo
+										})]
+									}, item.id))
 								})
-							]
+							})]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
