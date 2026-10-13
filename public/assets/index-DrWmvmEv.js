@@ -29997,6 +29997,36 @@ var DiretrizesProtecaoAutoriaPage = ({ onBackToHome, onNavigate }) => {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+						className: "bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md space-y-4",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-xl border border-amber-200",
+									children: "📤"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-bold text-amber-700 uppercase tracking-wider block",
+									children: "Periódicos e Revistas Externas"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+									className: "text-xl sm:text-2xl font-extrabold text-slate-900",
+									children: "Sobre Publicação em Periódicos e Revistas"
+								})] })]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
+								children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
+								children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
+								children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 						className: "bg-[#FFC72C] rounded-3xl p-8 sm:p-12 text-slate-950 text-center border border-amber-400 shadow-xl space-y-4",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-black/10 text-slate-950",
@@ -35868,8 +35898,29 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						children: "Avisos Importantes sobre Publicação e Autoria"
 					})] })]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+					className: "grid grid-cols-1 md:grid-cols-2 gap-6",
 					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Sobre Publicação em Periódicos e Revistas" })]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs text-slate-700 leading-relaxed",
+									children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs text-slate-700 leading-relaxed",
+									children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-xs text-slate-700 leading-relaxed",
+									children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+								})
+							]
+						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
 							children: [
@@ -38669,7 +38720,7 @@ var PerguntasFrequentesPage = ({ onBackToHome, onNavigate }) => {
 										children: "A ESDHUBEM garante que meu texto será aceito por uma revista?"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-base sm:text-lg text-slate-700 leading-relaxed",
-										children: "Não. A escola oferece orientação de estruturação, revisão e encaminhamento, mas a decisão de aceitação, recusa ou ajuste é exclusiva do periódico. O mérito e a avaliação são independentes da instituição."
+										children: "Não. A ESDHUBEM oferece orientação, estruturação e revisão dos manuscritos de acordo com nossos modelos de publicação investigativa. Não exigimos rigor científico nem realizamos encaminhamento para revistas externas. A aceitação em revistas ou periódicos é decisão exclusiva de cada comitê independente."
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
