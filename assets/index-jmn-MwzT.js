@@ -36548,462 +36548,456 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												})
 											]
 										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-6 pt-2",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2 pb-2 border-b border-slate-100",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-lg",
-													children: "📄"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
-													className: "font-bold text-base text-slate-900",
-													children: "Como funciona em cada plataforma"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												id: "sanfona-como-publicar-osf",
-												className: "rounded-2xl border-2 border-slate-200 bg-white shadow-sm overflow-hidden transition-all duration-200",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-													type: "button",
-													onClick: () => toggleSection("como-publicar-osf"),
-													className: "w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3 bg-gradient-to-r from-sky-50/70 via-white to-sky-50/50 hover:bg-sky-100/60 transition-colors cursor-pointer border-b border-slate-200",
-													"aria-expanded": openSections["como-publicar-osf"],
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-3 min-w-0",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-sky-100 text-sky-800 flex items-center justify-center font-black text-lg sm:text-xl shadow-xs shrink-0 border border-sky-200",
-															children: "🌐"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "min-w-0",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-sky-700 block",
-																children: "Open Science Framework • Níveis Bronze e Prata"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-																className: "font-extrabold text-sm sm:text-base text-slate-900 leading-snug",
-																children: "Como publicar na plataforma OSF?"
-															})]
-														})]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 shrink-0",
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-como-publicar-osf",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("como-publicar-osf"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["como-publicar-osf"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-sky-600 to-sky-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-sky-900",
+									children: "🌐"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-sky-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-sky-600" }), "Open Science Framework • Níveis Bronze e Prata"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "Como publicar na plataforma OSF?"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["como-publicar-osf"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["como-publicar-osf"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["como-publicar-osf"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+											className: "w-full text-left text-xs sm:text-sm",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+												className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4 w-1/3",
+													children: "Situação"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+													className: "py-3 px-4",
+													children: "O que acontece"
+												})] })
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+												className: "divide-y divide-slate-200 bg-white",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-3 px-4 font-semibold text-slate-900",
+														children: "Projeto antes de registrar"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+														className: "py-3 px-4 text-slate-700 leading-relaxed",
 														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-															children: openSections["como-publicar-osf"] ? "Recolher" : "Expandir"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["como-publicar-osf"] ? "rotate-180 bg-[#00227B] text-white" : ""}`,
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-														})]
-													})]
-												}), openSections["como-publicar-osf"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "p-4 sm:p-6 space-y-4 animate-fadeIn",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-																className: "w-full text-left text-xs sm:text-sm",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-																	className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-																	children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																		className: "py-3 px-4 w-1/3",
-																		children: "Situação"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																		className: "py-3 px-4",
-																		children: "O que acontece"
-																	})] })
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-																	className: "divide-y divide-slate-200 bg-white",
-																	children: [
-																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																			className: "py-3 px-4 font-semibold text-slate-900",
-																			children: "Projeto antes de registrar"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																			className: "py-3 px-4 text-slate-700 leading-relaxed",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																				className: "text-emerald-700 font-semibold",
-																				children: "✅ Pode criar, corrigir, renomear quantas vezes quiser"
-																			}), " — o OSF guarda histórico de versões automaticamente."]
-																		})] }),
-																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																			className: "py-3 px-4 font-semibold text-slate-900",
-																			children: "Após fazer o REGISTRO"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																			className: "py-3 px-4 text-slate-700 leading-relaxed",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																				className: "text-rose-700 font-semibold",
-																				children: "🛑 O arquivo fica arquivado"
-																			}), " — não dá para alterar nem substituir silenciosamente. O registro é um \"congelamento\" daquele momento, garantindo data e autoria."]
-																		})] }),
-																		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																			className: "py-3 px-4 font-semibold text-slate-900",
-																			children: "Para corrigir depois de registrado"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																			className: "py-3 px-4 text-slate-700 leading-relaxed",
-																			children: "Cria-se uma atualização formal com justificativa, mas os arquivos originais permanecem. A nova versão é registrada separadamente."
-																		})] })
-																	]
-																})]
-															})
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "bg-amber-50/80 border border-amber-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-2.5",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-base shrink-0",
-																children: "⚠️"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																className: "leading-relaxed",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Atenção importante:" }), " O OSF possui fase de transição — projetos deixarão de ser editáveis a partir de fevereiro/2026. Recomendamos ao estudante orientar o registro após a aprovação final."]
-															})]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-3.5",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-																className: "font-bold text-xs sm:text-sm text-sky-950 uppercase tracking-wider",
-																children: "PASSO A PASSO PRÁTICO NO OSF (OSF.IO)"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "grid grid-cols-1 md:grid-cols-3 gap-3.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
-																			children: "ETAPA 1: CONTA E CRIAÇÃO"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
-																			className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
-																			children: [
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: ["Acessar ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-																					href: "https://osf.io",
-																					target: "_blank",
-																					rel: "noopener noreferrer",
-																					className: "text-cyan-700 underline font-semibold",
-																					children: "osf.io"
-																				})] }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																					"Clique em ",
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sign Up" }),
-																					" e crie sua conta com o e-mail preferencial."
-																				] }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Confirme seu endereço de e-mail clicando no link recebido." })
-																			]
-																		})]
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
-																			children: "ETAPA 2: PROJETO E UPLOAD"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
-																			start: 4,
-																			className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
-																			children: [
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																					"Na página inicial, clique em ",
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Create New Project" }),
-																					"."
-																				] }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Dê um título ao projeto (mesmo título do seu trabalho) e descrição breve." }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																					"Salve o projeto — clique em ",
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Files → Upload Files" }),
-																					" (formato PDF)."
-																				] })
-																			]
-																		})]
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																		className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
-																			children: "ETAPA 3: PUBLICAÇÃO E ENVIO"
-																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
-																			start: 7,
-																			className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
-																			children: [
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Selecione o arquivo final de seu trabalho." }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																					"Após upload, clique em ",
-																					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Make Public" }),
-																					" — isso torna o registro acessível e datado."
-																				] }),
-																				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Copie o link público da página do projeto e envie para a ESDHUBEM." })
-																			]
-																		})]
-																	})
-																]
-															})]
-														})
-													]
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												id: "sanfona-como-publicar-zenodo",
-												className: "rounded-2xl border-2 border-slate-200 bg-white shadow-sm overflow-hidden transition-all duration-200",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-													type: "button",
-													onClick: () => toggleSection("como-publicar-zenodo"),
-													className: "w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3 bg-gradient-to-r from-teal-50/70 via-white to-cyan-50/50 hover:bg-teal-100/60 transition-colors cursor-pointer border-b border-slate-200",
-													"aria-expanded": openSections["como-publicar-zenodo"],
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-3 min-w-0",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-black text-lg sm:text-xl shadow-xs shrink-0 border border-teal-200",
-															children: "🔬"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "min-w-0",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-teal-700 block",
-																children: "Zenodo + DOI • Nível Ouro"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-																className: "font-extrabold text-sm sm:text-base text-slate-900 leading-snug",
-																children: "Como publicar no Zenodo?"
-															})]
-														})]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 shrink-0",
+															className: "text-emerald-700 font-semibold",
+															children: "✅ Pode criar, corrigir, renomear quantas vezes quiser"
+														}), " — o OSF guarda histórico de versões automaticamente."]
+													})] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-3 px-4 font-semibold text-slate-900",
+														children: "Após fazer o REGISTRO"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+														className: "py-3 px-4 text-slate-700 leading-relaxed",
 														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-															children: openSections["como-publicar-zenodo"] ? "Recolher" : "Expandir"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["como-publicar-zenodo"] ? "rotate-180 bg-[#00227B] text-white" : ""}`,
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-														})]
-													})]
-												}), openSections["como-publicar-zenodo"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "p-4 sm:p-6 space-y-4 animate-fadeIn",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-															className: "w-full text-left text-xs sm:text-sm",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-																className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																	className: "py-3 px-4 w-1/3",
-																	children: "Situação"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																	className: "py-3 px-4",
-																	children: "O que acontece"
-																})] })
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-																className: "divide-y divide-slate-200 bg-white",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Antes de publicar"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																		className: "py-3 px-4 text-slate-700 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-emerald-700 font-semibold",
-																			children: "✅ Salva como rascunho"
-																		}), ", edita e revisa livremente."]
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Após publicado com DOI"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																		className: "py-3 px-4 text-slate-700 leading-relaxed",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-rose-700 font-semibold",
-																			children: "🛑 Não se substitui o arquivo antigo"
-																		}), ". Cria-se uma nova versão (ex: v1.1 corrigida a partir de v1.0)."]
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "O que muda"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 text-slate-700 leading-relaxed",
-																		children: "O DOI principal (conceitual) continua o mesmo e aponta sempre para a versão mais recente; cada versão recebe seu próprio identificador."
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "O que permanece"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 text-slate-700 leading-relaxed",
-																		children: "A versão original continua acessível, com data e conteúdo preservados."
-																	})] })
-																]
-															})]
-														})
-													})
-												})]
-											})
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										id: "sanfona-registro-atualizacao-versoes",
-										className: "rounded-2xl border-2 border-slate-200 bg-white shadow-sm overflow-hidden transition-all duration-200",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-											type: "button",
-											onClick: () => toggleSection("registro-atualizacao-versoes"),
-											className: "w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3 bg-gradient-to-r from-blue-50/70 via-white to-indigo-50/50 hover:bg-blue-100/60 transition-colors cursor-pointer border-b border-slate-200",
-											"aria-expanded": openSections["registro-atualizacao-versoes"],
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-3 min-w-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-black text-lg sm:text-xl shadow-xs shrink-0 border border-blue-200",
-													children: "🔄"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "min-w-0",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-blue-700 block",
-														children: "Gestão de Versões & Homologação"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-														className: "font-extrabold text-sm sm:text-base text-slate-900 leading-snug",
-														children: "Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
-													})]
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center gap-2 shrink-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-													children: openSections["registro-atualizacao-versoes"] ? "Recolher" : "Expandir"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["registro-atualizacao-versoes"] ? "rotate-180 bg-[#00227B] text-white" : ""}`,
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-												})]
+															className: "text-rose-700 font-semibold",
+															children: "🛑 O arquivo fica arquivado"
+														}), " — não dá para alterar nem substituir silenciosamente. O registro é um \"congelamento\" daquele momento, garantindo data e autoria."]
+													})] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-3 px-4 font-semibold text-slate-900",
+														children: "Para corrigir depois de registrado"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+														className: "py-3 px-4 text-slate-700 leading-relaxed",
+														children: "Cria-se uma atualização formal com justificativa, mas os arquivos originais permanecem. A nova versão é registrada separadamente."
+													})] })
+												]
 											})]
-										}), openSections["registro-atualizacao-versoes"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "p-4 sm:p-6 space-y-5 animate-fadeIn",
+										})
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-amber-50/80 border border-amber-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-2.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-base shrink-0",
+											children: "⚠️"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Atenção importante:" }), " O OSF possui fase de transição — projetos deixarão de ser editáveis a partir de fevereiro/2026. Recomendamos ao estudante orientar o registro após a aprovação final."]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-3.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+											className: "font-bold text-xs sm:text-sm text-sky-950 uppercase tracking-wider",
+											children: "PASSO A PASSO PRÁTICO NO OSF (OSF.IO)"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "grid grid-cols-1 md:grid-cols-3 gap-3.5",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-													className: "text-xs sm:text-sm text-slate-600 leading-relaxed",
-													children: "O trabalho do aluno deverá ser enviado por e-mail para a nossa escola apenas quando estiver devidamente registrado na plataforma correspondente ao nível escolhido, OSF ou Zenodo. Entretanto, sabemos que ajustes podem ser necessários. Funciona assim:"
-												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "bg-sky-50/60 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-sky-950",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-sky-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Antes do registro público" })]
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-															className: "text-xs text-slate-700 leading-relaxed",
-															children: "O estudante pode elaborar, corrigir e aprimorar o texto. Registra seu trabalho no Zenodo ou OSF e envia para a ESDHUBEM para que seja feita a avaliação. O aluno recebe a devolutiva com orientações para modificações. O aluno faz ajustes. Ocorrendo a aprovação final da escola, o aluno atualiza a nova versão no Zenodo ou OSF e, com o DOI gerado na plataforma, realizamos a publicação e lançamento do certificado, garantindo que o material publicado represente a versão definitiva."
-														})]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "bg-indigo-50/60 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2",
+													className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
+														children: "ETAPA 1: CONTA E CRIAÇÃO"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+														className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-indigo-950",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4 text-indigo-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Após o registro — posso atualizar?" })]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																className: "text-xs text-slate-700 leading-relaxed",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sim! Nenhuma correção posterior é perdida" }), ", mas também não se apaga o que já foi registrado. O sistema funciona por versões:"]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																className: "text-xs text-slate-700 leading-relaxed pt-1",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No OSF:" }), " O projeto pode receber versões atualizadas antes do registro público. Após registrado, qualquer alteração gera um histórico transparente — a versão original permanece visível e datada, preservando a autoria."]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-																className: "text-xs text-slate-700 leading-relaxed",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No Zenodo:" }), " Publicou e precisa corrigir? Cria-se uma nova versão (ex: v1.1 corrigida). O identificador principal continua o mesmo, apontando sempre para a versão mais recente, e cada versão fica preservada com seu próprio registro."]
-															})
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: ["Acessar ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+																href: "https://osf.io",
+																target: "_blank",
+																rel: "noopener noreferrer",
+																className: "text-cyan-700 underline font-semibold",
+																children: "osf.io"
+															})] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+																"Clique em ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sign Up" }),
+																" e crie sua conta com o e-mail preferencial."
+															] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Confirme seu endereço de e-mail clicando no link recebido." })
 														]
 													})]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-															className: "font-bold text-xs sm:text-sm text-slate-900",
-															children: "Como proceder se precisar corrigir após já ter registrado:"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
-															className: "text-xs text-slate-700 space-y-1 list-decimal list-inside leading-relaxed",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Acesse seu projeto/registro na plataforma" }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Faça upload do arquivo corrigido como nova versão" }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Atualize a justificativa descrevendo o que foi ajustado" }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Envie o novo link para a ESDHUBEM" })
-															]
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-															className: "text-[11px] sm:text-xs text-slate-500 italic pt-1 border-t border-slate-200",
-															children: "Ambas as versões ficarão acessíveis — isso fortalece a transparência e a autoria, não a enfraquece."
-														})
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "bg-emerald-50/80 border-2 border-emerald-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-emerald-950 flex items-start gap-2.5",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-700 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-														className: "leading-relaxed",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Resumo prático:" }), " Registre a versão aprovada. Se corrigir depois, crie uma nova versão na plataforma e nos envie o link atualizado. Nada é apagado — tudo é documentado."]
+													className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
+														children: "ETAPA 2: PROJETO E UPLOAD"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+														start: 4,
+														className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+																"Na página inicial, clique em ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Create New Project" }),
+																"."
+															] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Dê um título ao projeto (mesmo título do seu trabalho) e descrição breve." }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+																"Salve o projeto — clique em ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Files → Upload Files" }),
+																" (formato PDF)."
+															] })
+														]
 													})]
 												}),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "space-y-3.5 pt-3 border-t border-slate-200",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-															className: "text-lg",
-															children: "🎯"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
-															className: "font-bold text-sm sm:text-base text-slate-900",
-															children: "Resumo Prático de Perguntas & Respostas"
-														})]
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-															className: "w-full text-left text-xs sm:text-sm",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-																className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																	className: "py-3 px-4 w-1/3",
-																	children: "Pergunta"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																	className: "py-3 px-4",
-																	children: "Resposta"
-																})] })
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-																className: "divide-y divide-slate-200 bg-white",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Aceito sem registro?"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-bold text-rose-700",
-																		children: "❌ Não — só recebemos com registro concluído"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Pode registrar e depois corrigir?"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																		className: "py-3 px-4 text-slate-800",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-emerald-700 font-bold",
-																			children: "✅ Sim, criando nova versão"
-																		}), " — original fica guardada"]
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "A versão antiga some?"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																		className: "py-3 px-4 text-slate-800",
-																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																			className: "text-rose-700 font-bold",
-																			children: "❌ Não"
-																		}), " — permanece como histórico, isso é garantia de autoria"]
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "O DOI muda?"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 text-slate-700",
-																		children: "O principal não muda; cada versão ganha um identificador específico"
-																	})] }),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Melhor prática"
-																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3 px-4 font-semibold text-slate-900",
-																		children: "Só registrar após aprovação final para evitar versões desnecessárias"
-																	})] })
-																]
-															})]
-														})
+													className: "bg-white border border-sky-200 rounded-xl p-3.5 space-y-2 shadow-xs",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "inline-block text-[10px] font-black uppercase tracking-wider text-sky-700 bg-sky-100/70 px-2 py-0.5 rounded",
+														children: "ETAPA 3: PUBLICAÇÃO E ENVIO"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+														start: 7,
+														className: "text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Selecione o arquivo final de seu trabalho." }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+																"Após upload, clique em ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Make Public" }),
+																" — isso torna o registro acessível e datado."
+															] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Copie o link público da página do projeto e envie para a ESDHUBEM." })
+														]
 													})]
 												})
 											]
+										})]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-como-publicar-zenodo",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("como-publicar-zenodo"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["como-publicar-zenodo"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-teal-600 to-teal-800 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-teal-900",
+									children: "🔬"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-teal-800 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-teal-600" }), "Zenodo + DOI • Nível Ouro"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "Como publicar no Zenodo?"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["como-publicar-zenodo"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["como-publicar-zenodo"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["como-publicar-zenodo"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+										className: "w-full text-left text-xs sm:text-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+											className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4 w-1/3",
+												children: "Situação"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+												className: "py-3 px-4",
+												children: "O que acontece"
+											})] })
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+											className: "divide-y divide-slate-200 bg-white",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 font-semibold text-slate-900",
+													children: "Antes de publicar"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+													className: "py-3 px-4 text-slate-700 leading-relaxed",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-emerald-700 font-semibold",
+														children: "✅ Salva como rascunho"
+													}), ", edita e revisa livremente."]
+												})] }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 font-semibold text-slate-900",
+													children: "Após publicado com DOI"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+													className: "py-3 px-4 text-slate-700 leading-relaxed",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-rose-700 font-semibold",
+														children: "🛑 Não se substitui o arquivo antigo"
+													}), ". Cria-se uma nova versão (ex: v1.1 corrigida a partir de v1.0)."]
+												})] }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 font-semibold text-slate-900",
+													children: "O que muda"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 text-slate-700 leading-relaxed",
+													children: "O DOI principal (conceitual) continua o mesmo e aponta sempre para a versão mais recente; cada versão recebe seu próprio identificador."
+												})] }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 font-semibold text-slate-900",
+													children: "O que permanece"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+													className: "py-3 px-4 text-slate-700 leading-relaxed",
+													children: "A versão original continua acessível, com data e conteúdo preservados."
+												})] })
+											]
+										})]
+									})
+								})
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-registro-atualizacao-versoes",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("registro-atualizacao-versoes"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["registro-atualizacao-versoes"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-900 text-white flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-indigo-950",
+									children: "🔄"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-indigo-900 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-indigo-600" }), "Gestão de Versões & Homologação"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-cyan-950 truncate sm:whitespace-normal",
+										children: "Registro Nas Plataformas, Atualização de Versões e Publicação na ESDHUBEM"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["registro-atualizacao-versoes"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["registro-atualizacao-versoes"] ? "rotate-180 bg-cyan-700 text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["registro-atualizacao-versoes"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-7 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-cyan-200 rounded-2xl p-5 sm:p-7 space-y-5 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-600 leading-relaxed",
+										children: "O trabalho do aluno deverá ser enviado por e-mail para a nossa escola apenas quando estiver devidamente registrado na plataforma correspondente ao nível escolhido, OSF ou Zenodo. Entretanto, sabemos que ajustes podem ser necessários. Funciona assim:"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-sky-50/60 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-sky-950",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-sky-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Antes do registro público" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs text-slate-700 leading-relaxed",
+												children: "O estudante pode elaborar, corrigir e aprimorar o texto. Registra seu trabalho no Zenodo ou OSF e envia para a ESDHUBEM para que seja feita a avaliação. O aluno recebe a devolutiva com orientações para modificações. O aluno faz ajustes. Ocorrendo a aprovação final da escola, o aluno atualiza a nova versão no Zenodo ou OSF e, com o DOI gerado na plataforma, realizamos a publicação e lançamento do certificado, garantindo que o material publicado represente a versão definitiva."
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-indigo-50/60 border border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2 font-bold text-xs sm:text-sm text-indigo-950",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-4 h-4 text-indigo-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Após o registro — posso atualizar?" })]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-700 leading-relaxed",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Sim! Nenhuma correção posterior é perdida" }), ", mas também não se apaga o que já foi registrado. O sistema funciona por versões:"]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-700 leading-relaxed pt-1",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No OSF:" }), " O projeto pode receber versões atualizadas antes do registro público. Após registrado, qualquer alteração gera um histórico transparente — a versão original permanece visível e datada, preservando a autoria."]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-700 leading-relaxed",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "No Zenodo:" }), " Publicou e precisa corrigir? Cria-se uma nova versão (ex: v1.1 corrigida). O identificador principal continua o mesmo, apontando sempre para a versão mais recente, e cada versão fica preservada com seu próprio registro."]
+												})
+											]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 space-y-2.5",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+												className: "font-bold text-xs sm:text-sm text-slate-900",
+												children: "Como proceder se precisar corrigir após já ter registrado:"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ol", {
+												className: "text-xs text-slate-700 space-y-1 list-decimal list-inside leading-relaxed",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Acesse seu projeto/registro na plataforma" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Faça upload do arquivo corrigido como nova versão" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Atualize a justificativa descrevendo o que foi ajustado" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Envie o novo link para a ESDHUBEM" })
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-[11px] sm:text-xs text-slate-500 italic pt-1 border-t border-slate-200",
+												children: "Ambas as versões ficarão acessíveis — isso fortalece a transparência e a autoria, não a enfraquece."
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-emerald-50/80 border-2 border-emerald-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-emerald-950 flex items-start gap-2.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4 text-emerald-700 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Resumo prático:" }), " Registre a versão aprovada. Se corrigir depois, crie uma nova versão na plataforma e nos envie o link atualizado. Nada é apagado — tudo é documentado."]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-3.5 pt-3 border-t border-slate-200",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-lg",
+												children: "🎯"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+												className: "font-bold text-sm sm:text-base text-slate-900",
+												children: "Resumo Prático de Perguntas & Respostas"
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+												className: "w-full text-left text-xs sm:text-sm",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+													className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 w-1/3",
+														children: "Pergunta"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4",
+														children: "Resposta"
+													})] })
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+													className: "divide-y divide-slate-200 bg-white",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Aceito sem registro?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-bold text-rose-700",
+															children: "❌ Não — só recebemos com registro concluído"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Pode registrar e depois corrigir?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+															className: "py-3 px-4 text-slate-800",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-emerald-700 font-bold",
+																children: "✅ Sim, criando nova versão"
+															}), " — original fica guardada"]
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "A versão antiga some?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+															className: "py-3 px-4 text-slate-800",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-rose-700 font-bold",
+																children: "❌ Não"
+															}), " — permanece como histórico, isso é garantia de autoria"]
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "O DOI muda?"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 text-slate-700",
+															children: "O principal não muda; cada versão ganha um identificador específico"
+														})] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Melhor prática"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+															className: "py-3 px-4 font-semibold text-slate-900",
+															children: "Só registrar após aprovação final para evitar versões desnecessárias"
+														})] })
+													]
+												})]
+											})
 										})]
 									})
 								]
