@@ -32210,27 +32210,62 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "space-y-2.5 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/80 p-5 rounded-2xl border-2 border-amber-300/80 shadow-xs",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-												"O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM e deve ser enviado para nós pelo e-mail: ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-													href: "mailto:esdhubem@proton.me",
-													className: "font-bold text-[#00227B] hover:underline",
-													children: "esdhubem@proton.me"
+										className: "space-y-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed bg-amber-50/80 p-5 rounded-2xl border-2 border-amber-300/80 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h5", {
+													className: "font-bold text-sm sm:text-base text-amber-950 flex items-center gap-2",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-base sm:text-lg",
+														children: "🔍"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O que é a análise dos portfólios dos estudantes?" })]
 												}),
-												" juntamente com o mapa mental, o áudio de 3 minutos explicando o que você aprendeu com o curso e juntamente com a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
-												" e a ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
-												"."
-											] }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional." }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "font-semibold text-slate-900",
-												children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
-											})
-										]
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Na ESDHUBEM a análise do portfólio é um processo pedagógico onde o manuscrito será analisado segundo o como e o porquê do trabalho desenvolvido, verificando o raciocínio lógico, concordância com o tema do curso, caminhos cognitivos que o estudante percorreu para chegar àquela resposta, compreender a linha de pensamento do estudante, identificar dificuldades específicas e entender onde o aluno tropeçou ou brilhou conceitualmente." }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+													"Aqui na ESDHUBEM os nossos tutores atuam como um investigador da aprendizagem. Não é nosso objetivo atuar com julgamento ou atribuição de nota. O artigo será analisado conforme as diretrizes editoriais da ESDHUBEM que estão disponíveis na",
+													" ",
+													onNavigate ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+														type: "button",
+														onClick: () => onNavigate("diretrizes-avaliacao-manuscritos"),
+														className: "font-bold text-[#00227B] hover:underline cursor-pointer inline",
+														children: "página de diretrizes de avaliação"
+													}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "font-bold text-[#00227B]",
+														children: "página de diretrizes de avaliação"
+													}),
+													"."
+												] })
+											]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "pt-2 border-t border-amber-200/80 space-y-2",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+													"O portfólio deve ser enviado para a escola pelo e-mail:",
+													" ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+														href: "mailto:esdhubem@proton.me",
+														className: "font-bold text-[#00227B] hover:underline",
+														children: "esdhubem@proton.me"
+													}),
+													" ",
+													"juntamente com o ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
+													", o ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio de 3 minutos" }),
+													" explicando o que você aprendeu com o curso e juntamente com a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autorização de Publicação" }),
+													" e a ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Declaração de Autoria e Responsabilidade" }),
+													"."
+												] }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A aplicação de técnicas de SEO tem como objetivo favorecer a organização e a encontrabilidade do conteúdo nos mecanismos de busca, potencializando seu portfólio profissional." }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "font-semibold text-slate-900",
+													children: "Após a aprovação, o artigo será publicado no Blog Oficial da ESDHUBEM, com biografia do autor, link público de portfólio e chancela do Selo Prata."
+												})
+											]
+										})]
 									})
 								]
 							})
