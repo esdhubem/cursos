@@ -30928,8 +30928,12 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "Certificação e Valores (Modalidades, Requisitos & Percursos)"
 	},
 	{
+		id: "autoria-responsabilidade",
+		titulo: "Autoria e Responsabilidade"
+	},
+	{
 		id: "13",
-		titulo: "13 - Informação Extra"
+		titulo: "13 - Avisos Importantes sobre Publicação"
 	},
 	{
 		id: "14",
@@ -30992,7 +30996,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"como-publicar-osf": false,
 		"como-publicar-zenodo": false,
 		"registro-atualizacao-versoes": false,
-		"certificacao-valores": false
+		"certificacao-valores": false,
+		"autoria-responsabilidade": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -31028,7 +31033,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"como-publicar-osf": true,
 			"como-publicar-zenodo": true,
 			"registro-atualizacao-versoes": true,
-			"certificacao-valores": true
+			"certificacao-valores": true,
+			"autoria-responsabilidade": true
 		});
 	};
 	const collapseAll = () => {
@@ -31059,7 +31065,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"como-publicar-osf": false,
 			"como-publicar-zenodo": false,
 			"registro-atualizacao-versoes": false,
-			"certificacao-valores": false
+			"certificacao-valores": false,
+			"autoria-responsabilidade": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -34011,6 +34018,119 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-autoria-responsabilidade",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("autoria-responsabilidade"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["autoria-responsabilidade"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-5 h-5 sm:w-6 sm:h-6 text-[#FFC72C]" })
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
+										children: "Produção Intelectual, Ética & Uso de Inteligência Artificial"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
+										children: "Autoria e Responsabilidade"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
+									children: openSections["autoria-responsabilidade"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["autoria-responsabilidade"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["autoria-responsabilidade"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-2xl",
+												children: "📄"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+												className: "font-extrabold text-[#011049] text-base sm:text-lg uppercase tracking-wide",
+												children: "AUTORIA E RESPONSABILIDADE"
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs sm:text-sm text-slate-900 font-bold",
+												children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside pl-1",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
+												]
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-[12px] sm:text-xs text-slate-500 italic pt-2 border-t border-slate-100 leading-relaxed",
+											children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
+										})
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-white border-2 border-blue-200/80 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2.5",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-2xl",
+												children: "🤖"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+												className: "font-extrabold text-[#011049] text-base sm:text-lg tracking-normal",
+												children: "Uso Responsável de Inteligência Artificial"
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: [
+												"A tecnologia é ferramenta de apoio, ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
+												" do pensamento e criação humana."
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs sm:text-sm text-slate-700 space-y-2.5 list-disc list-inside pl-1",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+													"Se utilizou IA em qualquer etapa, ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
+													" como foi aplicada;"
+												] }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
+											]
+										})
+									]
+								})]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						id: "secao-sanfona-13",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -34027,10 +34147,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
-										children: "Autoria, Responsabilidade, Inteligência Artificial & Avisos de Publicação"
+										children: "Periódicos, Repositórios com DOI & Direito de Remoção"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "13 - Informação Extra"
+										children: "13 - Avisos Importantes sobre Publicação"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -34043,62 +34163,9 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
 								})]
 							})]
-						}), openSections["13"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-											className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Autoria e Responsabilidade" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-											children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold",
-											children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-											className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-[11px] text-slate-500 italic pt-1",
-											children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
-										})
-									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-											className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Inteligência Artificial e Autoria" })]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-											children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-											children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "bg-purple-100/60 p-3 rounded-xl border border-purple-200 text-xs text-purple-950 font-medium",
-											children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
-										})
-									]
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						}), openSections["13"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-3 pb-4 border-b border-slate-100",
@@ -34107,10 +34174,10 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
-										children: "Transparência & Integridade"
+										children: "Transparência & Diretrizes Institucionais"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-lg sm:text-xl font-bold text-slate-900",
-										children: "Avisos Importantes sobre Publicação e Autoria"
+										children: "Avisos Importantes sobre Publicação"
 									})] })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "grid grid-cols-1 md:grid-cols-2 gap-6",
@@ -34200,39 +34267,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🤖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900",
-														children: "Uso Responsável de Inteligência Artificial"
-													})]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-													className: "text-xs text-slate-600 leading-relaxed",
-													children: [
-														"A tecnologia é ferramenta de apoio, ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
-														" do pensamento e criação humana."
-													]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-													className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-															"Se utilizou IA em qualquer etapa, ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
-															" como foi aplicada;"
-														] }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
-													]
-												})
-											]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3 md:col-span-2",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
@@ -34257,7 +34292,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										})
 									]
 								})]
-							})]
+							})
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {

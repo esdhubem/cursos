@@ -259,6 +259,7 @@
     --font-weight-extrabold: 800;
     --font-weight-black: 900;
     --tracking-tight: -.025em;
+    --tracking-normal: 0em;
     --tracking-wide: .025em;
     --tracking-wider: .05em;
     --tracking-widest: .1em;
@@ -3906,16 +3907,6 @@
     background-color: var(--color-purple-100);
   }
 
-  .bg-purple-100\/60 {
-    background-color: #f3e8ff99;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-purple-100\/60 {
-      background-color: color-mix(in oklab, var(--color-purple-100) 60%, transparent);
-    }
-  }
-
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
@@ -6217,6 +6208,10 @@
     font-size: 11px;
   }
 
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+
   .leading-\[1\.2\] {
     --tw-leading: 1.2;
     line-height: 1.2;
@@ -6275,6 +6270,11 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+
+  .tracking-normal {
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
 
   .tracking-tight {
@@ -8912,6 +8912,10 @@
   @media (min-width: 48rem) {
     .md\:col-span-1 {
       grid-column: span 1 / span 1;
+    }
+
+    .md\:col-span-2 {
+      grid-column: span 2 / span 2;
     }
 
     .md\:w-5\/12 {
