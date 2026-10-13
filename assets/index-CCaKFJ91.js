@@ -34802,11 +34802,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
 															className: "font-bold text-xs sm:text-sm text-slate-900",
-															children: "Envio para Avaliação"
+															children: "Registro Oficial nas plataformas Zenodo ou OSF"
 														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 															className: "text-xs text-slate-600 leading-relaxed",
-															children: ["Envie para a coordenação escolar. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não registrar ainda." })]
+															children: "Acesse a plataforma e efetue o registro com seu manuscrito e obtenha o link público."
 														})
 													]
 												}),
@@ -34857,7 +34857,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 															className: "text-xs text-emerald-900 leading-relaxed",
-															children: "Acesse a plataforma e efetue o registro com seu manuscrito e anexe o link público."
+															children: "Publicação do trabalho na plataforma e lançamento do certificado de conclusão de curso."
 														})
 													]
 												}),
@@ -34874,7 +34874,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 															className: "text-xs text-purple-900 leading-relaxed",
-															children: "Crie uma nova versão na plataforma e nos envie o link novo. A versão originária fica guardada com carimbo perpétuo."
+															children: "Crie uma nova versão na plataforma, insira o link da publicação na nossa escola nas informações e nos envie o link novo da sua publicação. A versão originária fica guardada com carimbo perpétuo."
 														})
 													]
 												})
