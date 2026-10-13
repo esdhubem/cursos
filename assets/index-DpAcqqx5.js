@@ -31334,7 +31334,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												className: "text-[#00227B] font-bold",
 												children: "ESDHUBEM"
 											}),
-											" oferece ao aluno um sistema de aprendizagem na área do desenvolvimento humano e bem-estar que contribui para o desenvolvimento da memorização, raciocínio, escrita e oralidade, com a finalidade de proporcionar ao aluno uma chance de transformar sua experiência de aprendizagem em uma produção escrita e autoral."
+											" oferece ao aluno um sistema de aprendizagem na área do desenvolvimento humano e bem-estar que contribui para o desenvolvimento da memorização, raciocínio, escrita e oralidade, com a finalidade de proporcionar ao aluno chance de transformar sua experiência de aprendizagem em uma produção escrita e autoral."
 										] }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 											"Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar qual modalidade de produção pretende desenvolver, pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante) e seguir com a preparação do trabalho — um portfólio que é comum a todos os tipos de certificados: ",
