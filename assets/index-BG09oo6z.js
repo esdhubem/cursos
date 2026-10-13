@@ -36279,7 +36279,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 															className: "py-4 px-4 font-bold text-blue-700",
-															children: "Conforme orientação recebida"
+															children: "2.500 a 5.000 palavras de conteúdo efetivo"
 														})
 													]
 												}),
