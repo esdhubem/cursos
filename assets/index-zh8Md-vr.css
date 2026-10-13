@@ -5100,6 +5100,20 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-teal-50\/70 {
+    --tw-gradient-from: #f0fdfab3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-teal-50\/70 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-teal-50) 70%, transparent);
+    }
+  }
+
+  .from-teal-50\/70 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .from-teal-500 {
     --tw-gradient-from: var(--color-teal-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -5614,6 +5628,20 @@
 
   .to-blue-950 {
     --tw-gradient-to: var(--color-blue-950);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-cyan-50\/50 {
+    --tw-gradient-to: #ecfeff80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-cyan-50\/50 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-cyan-50) 50%, transparent);
+    }
+  }
+
+  .to-cyan-50\/50 {
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -6819,6 +6847,10 @@
 
   .text-teal-700 {
     color: var(--color-teal-700);
+  }
+
+  .text-teal-800 {
+    color: var(--color-teal-800);
   }
 
   .text-teal-900 {
@@ -8221,6 +8253,16 @@
 
     .hover\:bg-stone-300:hover {
       background-color: var(--color-stone-300);
+    }
+
+    .hover\:bg-teal-100\/60:hover {
+      background-color: #cbfbf199;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-teal-100\/60:hover {
+        background-color: color-mix(in oklab, var(--color-teal-100) 60%, transparent);
+      }
     }
 
     .hover\:bg-white:hover {

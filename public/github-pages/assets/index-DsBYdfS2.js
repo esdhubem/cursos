@@ -30852,7 +30852,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 		"19": false,
 		"20": false,
 		"plataformas-pesquisa": false,
-		"como-publicar-osf": false
+		"como-publicar-osf": false,
+		"como-publicar-zenodo": false
 	});
 	const toggleSection = (id) => {
 		setOpenSections((prev) => ({
@@ -30884,7 +30885,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"19": true,
 			"20": true,
 			"plataformas-pesquisa": true,
-			"como-publicar-osf": true
+			"como-publicar-osf": true,
+			"como-publicar-zenodo": true
 		});
 	};
 	const collapseAll = () => {
@@ -30911,7 +30913,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 			"19": false,
 			"20": false,
 			"plataformas-pesquisa": false,
-			"como-publicar-osf": false
+			"como-publicar-osf": false,
+			"como-publicar-zenodo": false
 		});
 	};
 	const openAndScrollTo = (id) => {
@@ -35071,62 +35074,93 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												})]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-4 pt-4 border-t border-slate-200",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "flex items-center gap-2 text-cyan-950 font-bold text-sm sm:text-base",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", { children: "Zenodo + DOI (Nível Ouro)" })]
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-														className: "w-full text-left text-xs sm:text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
-															className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
-															children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 w-1/3",
-																children: "Situação"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4",
-																children: "O que acontece"
-															})] })
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-															className: "divide-y divide-slate-200 bg-white",
-															children: [
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 font-semibold text-slate-900",
-																	children: "Antes de publicar"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																	className: "py-3 px-4 text-slate-700 leading-relaxed",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-emerald-700 font-semibold",
-																		children: "✅ Salva como rascunho"
-																	}), ", edita e revisa livremente."]
-																})] }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 font-semibold text-slate-900",
-																	children: "Após publicado com DOI"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
-																	className: "py-3 px-4 text-slate-700 leading-relaxed",
-																	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-rose-700 font-semibold",
-																		children: "🛑 Não se substitui o arquivo antigo"
-																	}), ". Cria-se uma nova versão (ex: v1.1 corrigida a partir de v1.0)."]
-																})] }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 font-semibold text-slate-900",
-																	children: "O que muda"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 text-slate-700 leading-relaxed",
-																	children: "O DOI principal (conceitual) continua o mesmo e aponta sempre para a versão mais recente; cada versão recebe seu próprio identificador."
-																})] }),
-																/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 font-semibold text-slate-900",
-																	children: "O que permanece"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																	className: "py-3 px-4 text-slate-700 leading-relaxed",
-																	children: "A versão original continua acessível, com data e conteúdo preservados."
-																})] })
-															]
+												id: "sanfona-como-publicar-zenodo",
+												className: "rounded-2xl border-2 border-slate-200 bg-white shadow-sm overflow-hidden transition-all duration-200",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+													type: "button",
+													onClick: () => toggleSection("como-publicar-zenodo"),
+													className: "w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3 bg-gradient-to-r from-teal-50/70 via-white to-cyan-50/50 hover:bg-teal-100/60 transition-colors cursor-pointer border-b border-slate-200",
+													"aria-expanded": openSections["como-publicar-zenodo"],
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-3 min-w-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: "w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-black text-lg sm:text-xl shadow-xs shrink-0 border border-teal-200",
+															children: "🔬"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+															className: "min-w-0",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-teal-700 block",
+																children: "Zenodo + DOI • Nível Ouro"
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
+																className: "font-extrabold text-sm sm:text-base text-slate-900 leading-snug",
+																children: "Como publicar no Zenodo?"
+															})]
 														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "flex items-center gap-2 shrink-0",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
+															children: openSections["como-publicar-zenodo"] ? "Recolher" : "Expandir"
+														}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+															className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["como-publicar-zenodo"] ? "rotate-180 bg-[#00227B] text-white" : ""}`,
+															children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+														})]
+													})]
+												}), openSections["como-publicar-zenodo"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "p-4 sm:p-6 space-y-4 animate-fadeIn",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs",
+														children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+															className: "w-full text-left text-xs sm:text-sm",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", {
+																className: "bg-slate-100 text-slate-700 font-bold text-xs uppercase tracking-wider",
+																children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-3 px-4 w-1/3",
+																	children: "Situação"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+																	className: "py-3 px-4",
+																	children: "O que acontece"
+																})] })
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+																className: "divide-y divide-slate-200 bg-white",
+																children: [
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Antes de publicar"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+																		className: "py-3 px-4 text-slate-700 leading-relaxed",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-emerald-700 font-semibold",
+																			children: "✅ Salva como rascunho"
+																		}), ", edita e revisa livremente."]
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "Após publicado com DOI"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("td", {
+																		className: "py-3 px-4 text-slate-700 leading-relaxed",
+																		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																			className: "text-rose-700 font-semibold",
+																			children: "🛑 Não se substitui o arquivo antigo"
+																		}), ". Cria-se uma nova versão (ex: v1.1 corrigida a partir de v1.0)."]
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "O que muda"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 text-slate-700 leading-relaxed",
+																		children: "O DOI principal (conceitual) continua o mesmo e aponta sempre para a versão mais recente; cada versão recebe seu próprio identificador."
+																	})] }),
+																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 font-semibold text-slate-900",
+																		children: "O que permanece"
+																	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																		className: "py-3 px-4 text-slate-700 leading-relaxed",
+																		children: "A versão original continua acessível, com data e conteúdo preservados."
+																	})] })
+																]
+															})]
+														})
 													})
 												})]
 											})
