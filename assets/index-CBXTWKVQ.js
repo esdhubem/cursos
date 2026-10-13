@@ -33470,6 +33470,25 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													})
 												})
 											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-50/80 via-white to-indigo-50/60 border border-blue-200 text-slate-700 space-y-2 shadow-2xs",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-blue-600 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", {
+													className: "font-black text-sm sm:text-base text-slate-900 uppercase tracking-wide",
+													children: "Alinhamento Temático"
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "text-xs sm:text-sm leading-relaxed text-slate-700",
+												children: [
+													"Os eixos temáticos definidos pela ESDHUBEM foram estruturados com base nas áreas de conhecimento da ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "CAPES" }),
+													", visando manter uniformidade, coerência e um norteamento conceitual comum aos trabalhos. Este alinhamento temático não significa certificação ou validação oficial pela CAPES nem confere status de instituição de ensino superior à ESDHUBEM — ",
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "trata-se de referência organizacional" }),
+													"."
+												]
+											})]
 										})
 									]
 								})
