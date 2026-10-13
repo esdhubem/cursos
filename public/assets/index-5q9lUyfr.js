@@ -31336,7 +31336,26 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											" oferece ao aluno um sistema de aprendizagem na área do desenvolvimento humano e bem-estar que contribui para o desenvolvimento da memorização, raciocínio, escrita e oralidade, com a finalidade de proporcionar ao aluno chance de transformar sua experiência de aprendizagem em uma produção escrita e autoral."
 										] }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar nesse passo a passo: 👉 qual modalidade de produção pretende desenvolver 👉 pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante) 👉 seguir com a preparação do seu portfólio." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar nesse passo a passo:" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "space-y-1.5 pl-2 text-sm sm:text-base",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "👉" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Qual modalidade de produção pretende desenvolver;" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "👉" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante);" })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "👉" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Seguir com a preparação do seu portfólio." })]
+													})
+												]
+											})]
+										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O portfólio é o trabalho fundamental desenvolvido pelo estudante para ter direito a receber qualquer tipo de certificados da ESDHUBEM." }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "space-y-2",
