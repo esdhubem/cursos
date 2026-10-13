@@ -31390,17 +31390,30 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											", que seguirá para a análise por parte dos nossos tutores de acordo com as diretrizes de análise da ESDHUBEM, publicação no wiki enciclopédia da ESDHUBEM e lançamento do Certificado Bronze para quem escolheu este tipo de certificado."
 										] }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-											"Os estudantes que escolheram outros tipos de certificado não recebem o certificado bronze, pois ainda seguirão com mais uma etapa que chamamos de ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
-											", onde o estudante vai produzir mais um trabalho de acordo com o tipo de certificado que quer receber: 🏆 ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }),
-											" entrega um artigo de blog; 🏆 ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }),
-											" um artigo investigativo; 🏆 ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Diamante:" }),
-											" um livro."
-										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+												"Os estudantes que escolheram outros tipos de certificado não recebem o certificado bronze, pois ainda seguirão com mais uma etapa que chamamos de ",
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
+												", onde o estudante vai produzir mais um trabalho de acordo com o tipo de certificado que quer receber:"
+											] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+												className: "space-y-1.5 pl-2 text-sm sm:text-base",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }), " entrega um artigo de blog;"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }), " um artigo investigativo;"] })]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+														className: "flex items-start gap-2",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Diamante:" }), " um livro."] })]
+													})
+												]
+											})]
+										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A partir dessa escolha, receberá as orientações específicas para elaboração do tipo de trabalho que quer realizar. Quando o aluno concluir o seu manuscrito, deve fazer um registro nas plataformas internacionais OSF (para verbete, artigo de blog e livro) ou Zenodo (para artigo investigativo). As plataformas de repositórios gratuitas e internacionais registram seus trabalhos, proporcionando mais tranquilidade autoral. Por fim, envia para a escola o link de publicação para que a ESDHUBEM possa avaliar, publicar no site da escola e emitir o certificado associado ao trabalho." })
 									]
 								})]
