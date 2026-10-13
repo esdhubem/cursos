@@ -31421,7 +31421,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 														className: "flex items-start gap-2",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }), " desenvolve um artigo investigativo estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM;"] })]
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🏆" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }), " desenvolve um artigo investigativo (2.500 a 5.000 palavras) estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM;"] })]
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 														className: "flex items-start gap-2",
@@ -32014,7 +32014,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Ouro:" }),
 																" desenvolve um ",
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo investigativo" }),
-																" estruturado no repositório internacional Zenodo com ",
+																" (2.500 a 5.000 palavras) estruturado no repositório internacional Zenodo com ",
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI permanente" }),
 																" e publicação no Repositório de Artigos da ESDHUBEM;"
 															] })]
@@ -32389,7 +32389,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🥇" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ouro" })]
 																		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 																			className: "text-slate-600",
-																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Investigativo" }), " estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM."]
+																			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Investigativo" }), " (2.500 a 5.000 palavras) estruturado no repositório internacional Zenodo com DOI permanente e publicação no Repositório de Artigos da ESDHUBEM."]
 																		})]
 																	}),
 																	/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32942,7 +32942,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "OURO — INVESTIGAR E APROFUNDAR"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-xs font-semibold text-amber-800",
-											children: "Manuscrito de Conclusão de Curso + Zenodo + DOI"
+											children: "Manuscrito de Conclusão de Curso + Zenodo + DOI (2.500 a 5.000 palavras)"
 										})] })]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
