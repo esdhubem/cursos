@@ -31337,7 +31337,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											" oferece ao aluno um sistema de aprendizagem na área do desenvolvimento humano e bem-estar que contribui para o desenvolvimento da memorização, raciocínio, escrita e oralidade, com a finalidade de proporcionar ao aluno chance de transformar sua experiência de aprendizagem em uma produção escrita e autoral."
 										] }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-											"Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar qual modalidade de produção pretende desenvolver, pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante) e seguir com a preparação do trabalho — um portfólio que é comum a todos os tipos de certificados: ",
+											"Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar nesse passo a passo: 👉 qual modalidade de produção pretende desenvolver 👉 pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante) 👉 seguir com a preparação do seu portfólio — um portfólio que é comum a todos os tipos de certificados: ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Tríade da Assimilação e Comunicação" }),
 											", composta por 3 tipos de trabalhos. O primeiro é a criação de um mapa mental de acordo com os conceitos do curso percorrido; o segundo é um texto verbete de 500 a 800 palavras; e o terceiro é um áudio explicando o que aprendeu. Em seguida, faz o envio do portfólio via e-mail ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
