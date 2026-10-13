@@ -3893,6 +3893,16 @@
     }
   }
 
+  .bg-purple-50\/80 {
+    background-color: #faf5ffcc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-purple-50\/80 {
+      background-color: color-mix(in oklab, var(--color-purple-50) 80%, transparent);
+    }
+  }
+
   .bg-purple-50\/90 {
     background-color: #faf5ffe6;
   }
