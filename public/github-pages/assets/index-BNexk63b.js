@@ -32335,6 +32335,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "text-slate-700 text-sm leading-relaxed",
 										children: "O trabalho deverá apresentar uma estrutura compatível com uma produção de investigação e receberá orientações específicas para sua elaboração."
 									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "text-slate-700 text-sm leading-relaxed",
+										children: [
+											"Para o Manuscrito de Investigação do Nível Ouro, sugerimos entre ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "2.500 e 5.000 palavras" }),
+											" de conteúdo efetivo — o suficiente para desenvolver o tema com profundidade sem exigir volume excessivo. O que prevalece é a coerência, a clareza e o desenvolvimento das ideias, não a quantidade de páginas."
+										]
+									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "space-y-4 py-4 border-y border-amber-200/80",
 										children: [
