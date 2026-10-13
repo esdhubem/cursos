@@ -31993,7 +31993,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero" }),
 													" introduz o quarto vértice decisivo: a ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Produção Autoral Ampliada" }),
-													", que certifica a autonomia, a pesquisa e a capacidade do estudante de produzir obras científicas e editoriais de impacto."
+													", que certifica a autonomia, a pesquisa e a capacidade do estudante de produzir obras investigativas e editoriais de impacto."
 												] }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A quarta etapa (Produção) desdobra-se em conformidade com o tipo de certificado escolhido:" }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
