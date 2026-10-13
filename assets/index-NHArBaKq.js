@@ -31384,11 +31384,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 											"Após o estudante concluir as atividades, faz o envio do portfólio via e-mail ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-												href: "mailto:esdhubem@gmail.com",
+												href: "mailto:esdhubem@proton.me",
 												className: "text-blue-700 font-bold underline hover:text-blue-900",
-												children: "esdhubem@gmail.com"
+												children: "esdhubem@proton.me"
 											}),
-											", que seguirá para a análise por parte dos nossos tutores de acordo com as diretrizes de análise da ESDHUBEM, publicação no wiki enciclopédia da ESDHUBEM e lançamento do Certificado Bronze para quem escolheu este tipo de certificado. Os estudantes que escolheram outros tipos de certificado não recebem o certificado bronze, pois ainda seguirão com mais uma etapa que chamamos de ",
+											", que seguirá para a análise por parte dos nossos tutores de acordo com as diretrizes de análise da ESDHUBEM, publicação no wiki enciclopédia da ESDHUBEM e lançamento do Certificado Bronze para quem escolheu este tipo de certificado."
+										] }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+											"Os estudantes que escolheram outros tipos de certificado não recebem o certificado bronze, pois ainda seguirão com mais uma etapa que chamamos de ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Quadrilátero da Organização, Assimilação, Comunicação e Produção" }),
 											", onde o estudante vai produzir mais um trabalho de acordo com o tipo de certificado que quer receber: 🏆 ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Certificado Prata:" }),
