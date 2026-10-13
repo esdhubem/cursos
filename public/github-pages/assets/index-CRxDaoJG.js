@@ -31142,7 +31142,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 									className: "text-xl sm:text-2xl font-black text-white tracking-tight",
-									children: "Diretrizes de Publicação em Formato Sanfona"
+									children: "Diretrizes de Publicação"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-xs sm:text-sm text-blue-100 mt-1 leading-relaxed",
@@ -31171,7 +31171,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-amber-500 font-black",
 										children: "📋"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sumário das Sanfonas (Clique para ir ao título correspondente):" })]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Sumário das Diretrizes de Publicação :" })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 									className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5 text-xs sm:text-sm",
 									children: LISTA_SANFONAS_DIRETRIZES.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
