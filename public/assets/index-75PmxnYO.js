@@ -27696,7 +27696,7 @@ var SecretariaDocumentacaoPage = ({ onBackToHome, onOpenValidator, onOpenCertifi
 };
 //#endregion
 //#region src/components/RegrasCertificacaoMeritoPage.tsx
-var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCertificatePreview, onNavigateToArticles }) => {
+var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCertificatePreview, onNavigateToArticles, onNavigate }) => {
 	const [selectedTier, setSelectedTier] = (0, import_react.useState)("all");
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "min-h-screen bg-[#F8FAFC] text-slate-800 font-sans pb-20",
@@ -28556,7 +28556,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed font-normal",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Caso o aluno não concorde com as sugestões e orientações da revisão, tem todo o direito de solicitar o reembolso do valor pago. Nessa situação:" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Caso não haja acordo com as sugestões e orientações da revisão pedagógica e o estudante opte por não seguir as correções e instruções da equipe docente, a obra não poderá ser publicada nas modalidades superiores (Prata, Ouro ou Diamante). Nessa situação:" }),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 									className: "space-y-3 pl-1 text-sm sm:text-base",
 									children: [
@@ -28567,8 +28567,8 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 												children: "✅"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 												className: "text-slate-900 font-bold",
-												children: "Será emitido e entregue o Certificado Bronze"
-											}), " de Conclusão de Curso, referente à participação e aproveitamento do conteúdo;"] })]
+												children: "Certificado Bronze e Publicação do Verbete:"
+											}), " O estudante recebe o Certificado Bronze de Conclusão de Curso (referente à participação e aproveitamento do conteúdo) e ainda assim pode ter seu Verbete publicado na Wiki ESDHUBEM;"] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 											className: "flex items-start gap-3",
@@ -28577,8 +28577,8 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 												children: "✅"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 												className: "text-slate-900 font-bold",
-												children: "Do valor total, será descontada"
-											}), " a taxa correspondente à emissão do certificado e ao suporte pedagógico prestado;"] })]
+												children: "Restituição do Valor Excedente:"
+											}), " Caso tenha sido pago o valor correspondente ao Nível Prata, Ouro ou Diamante, o valor que excede a certificação do Nível Bronze será integralmente restituído ao aluno em até 7 dias úteis;"] })]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 											className: "flex items-start gap-3",
@@ -28587,17 +28587,29 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 												children: "✅"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 												className: "text-slate-900 font-bold",
-												children: "O valor restante"
-											}), " será devolvido em até 7 dias úteis."] })]
+												children: "Cobrança da Taxa Bronze mesmo sem Publicação do Verbete:"
+											}), " Caso o estudante decida não publicar nem mesmo o Verbete, ainda assim será cobrado e retido o valor do Certificado Bronze, pois a escola teve todo o trabalho pedagógico e técnico de avaliar, ler e orientar o manuscrito."] })]
 										})
 									]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs sm:text-sm text-slate-500 leading-relaxed pt-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-										className: "text-slate-700 font-semibold",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-600 space-y-2.5 mt-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+										className: "text-slate-800 font-semibold",
 										children: "Justificativa:"
-									}), " O trabalho de análise, leitura e orientação já foi realizado pela equipe — por isso, a emissão do certificado Bronze e o desconto correspondente reconhecem o atendimento e a participação no percurso, devolvendo o que excede esse valor."]
+									}), " O trabalho de análise, leitura e orientação já foi realizado pela equipe docente — por isso, a emissão do certificado Bronze e a retenção do valor correspondente reconhecem o atendimento, avaliação e participação no percurso, restituindo com total clareza aquilo que excede esse valor."] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+										className: "pt-2 border-t border-slate-200 text-slate-700",
+										children: [
+											"Caso o aluno queira mais esclarecimentos sobre nossos critérios de análise e devolução pedagógica, deve consultar a página:",
+											" ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+												type: "button",
+												onClick: () => onNavigate ? onNavigate("diretrizes-avaliacao-manuscritos") : void 0,
+												className: "inline-flex items-center gap-1 font-bold text-blue-900 hover:text-blue-700 hover:underline cursor-pointer ml-1",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes de Avaliação de Manuscritos dos Alunos" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3.5 h-3.5" })]
+											})
+										]
+									})]
 								})
 							]
 						})]
@@ -41366,7 +41378,8 @@ function App() {
 							top: 0,
 							behavior: "smooth"
 						});
-					}
+					},
+					onNavigate: handleNavigate
 				})
 			}),
 			currentPage === "diretrizes-pedagogicas" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
