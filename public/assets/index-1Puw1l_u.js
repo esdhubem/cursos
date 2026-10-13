@@ -35854,7 +35854,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																className: "text-rose-600 font-bold",
 																children: "•"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro prévio obrigatório:" }), " Não recebemos trabalhos que não foram registrados no OSF (Bronze/Prata) ou Zenodo (Ouro)"] })]
+															}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro prévio obrigatório:" }), " Não recebemos trabalhos que não foram registrados no OSF (Bronze, Prata e Diamante) ou Zenodo (Ouro)"] })]
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 															className: "flex items-start gap-2",
@@ -36309,7 +36309,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não recebemos trabalhos que não foram registrados." }),
 													" O estudante deve obrigatoriamente realizar o registro na plataforma correspondente (",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF para Níveis Bronze e Prata" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "OSF para Níveis Bronze, Prata e Diamante" }),
 													"; ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Zenodo com DOI para Ouro" }),
 													") e anexar o link público oficial no ato da entrega final. Trabalhos sem comprovação de registro não avançam para homologação nem certificação."
