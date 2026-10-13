@@ -32430,7 +32430,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-xs sm:text-sm text-slate-600 font-medium italic",
-									children: "* O Quadrilátero garante a integridade acadêmica, a rastreabilidade autoral internacional e a consolidação prática do aprendizado do estudante."
+									children: "* O Quadrilátero garante a integridade investigativa, a rastreabilidade autoral internacional e a consolidação prática do aprendizado do estudante."
 								})
 							]
 						})]
