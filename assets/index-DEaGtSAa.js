@@ -31887,13 +31887,19 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 										className: "text-slate-700 text-sm leading-relaxed",
 										children: [
-											"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Assimilação Ativa" }),
-											" da ESDHUBEM, elaborando um ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete" }),
-											" com conceito claro, informativo, objetivo, histórico e com aplicação prática que será publicado no setor ",
+											"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da criação da ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+											" da ESDHUBEM, onde o estudante elabora um ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
+											", para demonstrar como absorveu os conceitos do curso, um ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete escrito à mão" }),
+											" de forma clara, informativa, objetiva, histórica, baseado nos assuntos do curso assistido, com cerca de 500 a 800 palavras e com aplicação prática que será publicado no setor ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclopédico Wiki oficial" }),
-											" da escola."
+											" da escola e um ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "áudio" }),
+											" explicando o que aprendeu a respeito do assunto estudado. O verbete será publicado na wiki enciclopédia e lançado o ",
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "certificado Bronze" }),
+											"."
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
