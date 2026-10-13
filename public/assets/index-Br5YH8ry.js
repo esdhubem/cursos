@@ -32536,7 +32536,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										badge: "Parte 5 • Produção do Artigo de investigação"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 										className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 5: Diretrizes práticas e passo a passo para a estruturação do artigo de investigação e manuscrito" })]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo 5: Diretrizes práticas e passo a passo para a estruturação do artigo de investigação" })]
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32554,7 +32554,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-slate-700 text-xs sm:text-sm leading-relaxed",
-											children: "Após a confirmação da participação e o pagamento da taxa correspondente, o autor receberá material de orientação detalhado e vídeo explicativo com diretrizes para estruturação e preparação do artigo de investigação / manuscrito de conclusão."
+											children: "Após a confirmação da participação e o pagamento da taxa correspondente, o autor receberá material de orientação detalhado e vídeo explicativo com diretrizes para estruturação e preparação do artigo de investigação."
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "overflow-x-auto rounded-xl border border-slate-200 shadow-2xs",
@@ -33983,7 +33983,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													"."
 												] }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-													"Pode desenvolver um manuscrito e seguir para o ",
+													"Pode desenvolver um artigo de investigação e seguir para o ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ouro" }),
 													"."
 												] }),
@@ -34572,7 +34572,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "text-base shrink-0",
 																	children: "🔬"
-																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Manuscrito / Artigo de Investigação" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Artigo de Investigação" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "block text-xs font-semibold text-amber-700",
 																	children: "(Ouro)"
 																})] })]
