@@ -36032,10 +36032,22 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 font-bold text-slate-900 text-sm",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-blue-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Quem avalia" })]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-blue-700 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Quem analisa os portfólios dos alunos?" })]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-xs text-slate-600 leading-relaxed",
-												children: "A avaliação é realizada pelo corpo docente da ESDHUBEM e docentes auxiliares contratados, conforme os critérios próprios de cada nível de certificação."
+												children: [
+													"A análise é realizada pelo corpo docente da ESDHUBEM e docentes auxiliares contratados, conforme os critérios próprios de cada nível de certificação.",
+													" ",
+													onNavigate ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+														type: "button",
+														onClick: () => onNavigate("diretrizes-avaliacao-manuscritos"),
+														className: "font-bold text-[#00227B] hover:underline cursor-pointer inline text-left",
+														children: "Consulte a página das Diretrizes de Análise dos Portfólios dos estudantes."
+													}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "font-bold text-[#00227B]",
+														children: "Consulte a página das Diretrizes de Análise dos Portfólios dos estudantes."
+													})
+												]
 											})]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-2",
