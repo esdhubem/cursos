@@ -30924,8 +30924,12 @@ var LISTA_SANFONAS_DIRETRIZES = [
 		titulo: "12 - Orientações para Produção do Livro & Registro de Direitos Autorais"
 	},
 	{
+		id: "certificacao-valores",
+		titulo: "Certificação e Valores (Modalidades, Requisitos & Percursos)"
+	},
+	{
 		id: "13",
-		titulo: "13 - Informação Extra (Autoria, IA, Certificação e Valores)"
+		titulo: "13 - Informação Extra"
 	},
 	{
 		id: "14",
@@ -33760,6 +33764,253 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						id: "secao-sanfona-certificacao-valores",
+						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => toggleSection("certificacao-valores"),
+							className: "w-full text-left p-5 sm:p-7 flex items-center justify-between gap-4 bg-gradient-to-r from-[#cbe4fb] via-[#dcedfc] to-[#cbe4fb] hover:bg-[#bfe0fa] transition-colors cursor-pointer border-b border-[#badbf7]",
+							"aria-expanded": openSections["certificacao-valores"],
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3.5 sm:gap-4 min-w-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base sm:text-lg shadow-sm shrink-0 border border-blue-900",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5 sm:w-6 sm:h-6 text-[#FFC72C]" })
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "min-w-0",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-blue-600" }), "Modalidades, Requisitos & Percursos"]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
+										children: "Certificação e Valores"
+									})]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-2 shrink-0",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs font-semibold text-slate-600 hidden sm:inline-block",
+									children: openSections["certificacao-valores"] ? "Recolher" : "Expandir"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: `w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-900 transition-transform duration-300 ${openSections["certificacao-valores"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
+								})]
+							})]
+						}), openSections["certificacao-valores"] && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "p-6 sm:p-8 lg:p-10 space-y-6 animate-fadeIn",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white border-2 border-blue-200 rounded-2xl p-5 sm:p-7 space-y-6 shadow-sm",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cada modalidade possui um valor específico para a emissão do certificado correspondente." }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O valor da certificação será informado ao estudante antes da escolha da modalidade." }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "font-semibold text-slate-900",
+												children: "O pagamento da certificação não substitui a necessidade de cumprir os requisitos da modalidade escolhida."
+											})
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs pt-1",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+											className: "w-full text-left text-xs sm:text-sm border-collapse min-w-[700px]",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+												className: "bg-[#011049] text-white",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold uppercase tracking-wider",
+														children: "Nível"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold uppercase tracking-wider",
+														children: "O estudante faz"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold uppercase tracking-wider",
+														children: "Produção / requisito"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold uppercase tracking-wider",
+														children: "Resultado"
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
+														className: "py-3 px-4 font-bold uppercase tracking-wider",
+														children: "O que paga"
+													})
+												]
+											}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
+												className: "divide-y divide-slate-200 bg-white text-slate-700",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-amber-50/30",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-amber-950 whitespace-nowrap",
+																children: "🥉 Bronze"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Entrega a Tríade da Assimilação Ativa"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-medium text-slate-900",
+																children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min + registro no OSF"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Publicação na Wiki ESDHUBEM + Certificado com Selo Bronze"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-600 font-medium",
+																children: "Taxa do Certificado Bronze"
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-slate-50",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-slate-900 whitespace-nowrap",
+																children: "🥈 Prata"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Entrega a Tríade da Assimilação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-medium text-slate-900",
+																children: "Tríade da Assimilação Ativa + Artigo de Blog (SEO) + Registro OSF"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Publicação no Blog Oficial ESDHUBEM + Certificado com Selo Prata"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-600 font-medium",
+																children: "Taxa do Certificado Prata"
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-amber-50/30",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-amber-800 whitespace-nowrap",
+																children: "🥇 Ouro"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Entrega a Tríade da Assimilação Ativa + artigo investigativo estruturado no Zenodo com DOI"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-medium text-slate-900",
+																children: "Tríade da Assimilação Ativa + Artigo Investigativo + DOI Permanente"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com DOI"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-600 font-medium",
+																children: "Taxa do Certificado Ouro"
+															})
+														]
+													}),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
+														className: "hover:bg-cyan-50/30",
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-bold text-cyan-900 whitespace-nowrap",
+																children: "💎 Diamante"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na OSF"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 font-medium text-slate-900",
+																children: "Tríade da Assimilação Ativa + Livro Autoral + Registro na OSF (O Registro EDA na Biblioteca Nacional, é opcional)"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4",
+																children: "Mural de Livros / Livraria Digital + Certificado Diamante de Honraria Máxima"
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
+																className: "py-3.5 px-4 text-slate-600 font-medium",
+																children: "Taxa do Certificado Diamante"
+															})
+														]
+													})
+												]
+											})]
+										})
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs text-slate-500 italic",
+										children: "* Os certificados Prata, Ouro e Diamante dependem da entrega e aprovação da produção correspondente."
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white p-6 sm:p-8 rounded-2xl space-y-4 shadow-xl border border-blue-900/60 text-center",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+												className: "text-lg sm:text-xl font-black uppercase tracking-wider text-[#FFC72C]",
+												children: "Um Percurso de Autoria"
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "max-w-2xl mx-auto space-y-1.5 text-xs sm:text-sm text-slate-200 leading-relaxed",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O estudante não é obrigado a realizar todos os níveis." }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Pode concluir o curso e permanecer no ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Bronze" }),
+														"."
+													] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Pode escolher escrever um artigo e avançar para o ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Prata" }),
+														"."
+													] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Pode desenvolver um artigo de investigação e seguir para o ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ouro" }),
+														"."
+													] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+														"Pode transformar seu conhecimento em um livro e alcançar o ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
+														"."
+													] }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+														className: "pt-2 font-medium text-white",
+														children: "Cada percurso corresponde a uma forma diferente de transformar aprendizagem em produção."
+													})
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-black text-[#FFC72C]",
+												children: [
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "APRENDER" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "EXPRESSAR" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "INVESTIGAR" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
+													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "AUTORAR" })
+												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-xs text-slate-400 italic pt-1",
+												children: "O curso pode ser o começo. A produção é uma possibilidade. A autoria é uma construção."
+											})
+										]
+									})
+								]
+							})
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						id: "secao-sanfona-13",
 						className: "bg-[#d8ecfc] rounded-3xl border-2 border-[#b0d6f8] shadow-md overflow-hidden transition-all duration-200",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -33776,7 +34027,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
-										children: "Autoria, Responsabilidade, Inteligência Artificial, Valores & Percursos"
+										children: "Autoria, Responsabilidade, Inteligência Artificial & Avisos de Publicação"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
 										children: "13 - Informação Extra"
@@ -33794,466 +34045,219 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 							})]
 						}), openSections["13"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "p-6 sm:p-8 lg:p-10 space-y-8 animate-fadeIn",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-												className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Autoria e Responsabilidade" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold",
-												children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-												className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-[11px] text-slate-500 italic pt-1",
-												children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
-											})
-										]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-												className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Inteligência Artificial e Autoria" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "bg-purple-100/60 p-3 rounded-xl border border-purple-200 text-xs text-purple-950 font-medium",
-												children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
-											})
-										]
-									})]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									id: "secao-sanfona-certificacao-valores",
-									className: "bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-200",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										type: "button",
-										onClick: () => toggleSection("certificacao-valores"),
-										className: "w-full text-left p-4 sm:p-6 flex items-center justify-between gap-4 bg-gradient-to-r from-blue-50/80 via-slate-50 to-blue-50/80 hover:bg-blue-100/50 transition-colors cursor-pointer border-b border-slate-200",
-										"aria-expanded": openSections["certificacao-valores"],
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-3.5 min-w-0",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "w-10 h-10 rounded-xl bg-[#011049] text-[#FFC72C] flex items-center justify-center font-black text-base shadow-xs shrink-0 border border-blue-900",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5 text-[#FFC72C]" })
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "min-w-0",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[11px] font-bold uppercase tracking-wider text-blue-900 block",
-													children: "Modalidades, Requisitos & Percursos"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-													className: "text-base sm:text-lg font-black text-slate-900 uppercase tracking-wider",
-													children: "Certificação e Valores"
-												})]
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-2 shrink-0",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-xs font-semibold text-slate-500 hidden sm:inline-block",
-												children: openSections["certificacao-valores"] ? "Recolher" : "Expandir"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: `w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 transition-transform duration-300 ${openSections["certificacao-valores"] ? "rotate-180 bg-[#011049] text-white" : ""}`,
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "w-4 h-4" })
-											})]
-										})]
-									}), openSections["certificacao-valores"] && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-5 sm:p-7 space-y-6 animate-fadeIn",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cada modalidade possui um valor específico para a emissão do certificado correspondente." }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O valor da certificação será informado ao estudante antes da escolha da modalidade." }),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "font-semibold text-slate-900",
-														children: "O pagamento da certificação não substitui a necessidade de cumprir os requisitos da modalidade escolhida."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "overflow-x-auto rounded-2xl border border-slate-200 shadow-xs pt-1",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
-													className: "w-full text-left text-xs sm:text-sm border-collapse min-w-[700px]",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-														className: "bg-[#011049] text-white",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 font-bold uppercase tracking-wider",
-																children: "Nível"
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 font-bold uppercase tracking-wider",
-																children: "O estudante faz"
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 font-bold uppercase tracking-wider",
-																children: "Produção / requisito"
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 font-bold uppercase tracking-wider",
-																children: "Resultado"
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", {
-																className: "py-3 px-4 font-bold uppercase tracking-wider",
-																children: "O que paga"
-															})
-														]
-													}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tbody", {
-														className: "divide-y divide-slate-200 bg-white text-slate-700",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																className: "hover:bg-amber-50/30",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-bold text-amber-950 whitespace-nowrap",
-																		children: "🥉 Bronze"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade da Assimilação Ativa"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Verbete Enciclopédico (500-800 palavras) + Mapa Mental + Áudio 1 min + registro no OSF"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Publicação na Wiki ESDHUBEM + Certificado com Selo Bronze"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 text-slate-600 font-medium",
-																		children: "Taxa do Certificado Bronze"
-																	})
-																]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																className: "hover:bg-slate-50",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-bold text-slate-900 whitespace-nowrap",
-																		children: "🥈 Prata"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade da Assimilação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade da Assimilação Ativa + Artigo de Blog (SEO) + Registro OSF"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Publicação no Blog Oficial ESDHUBEM + Certificado com Selo Prata"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 text-slate-600 font-medium",
-																		children: "Taxa do Certificado Prata"
-																	})
-																]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																className: "hover:bg-amber-50/30",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-bold text-amber-800 whitespace-nowrap",
-																		children: "🥇 Ouro"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade da Assimilação Ativa + artigo investigativo estruturado no Zenodo com DOI"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade da Assimilação Ativa + Artigo Investigativo + DOI Permanente"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Publicação no Portal Acadêmico ESDHUBEM + Certificado Ouro com DOI"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 text-slate-600 font-medium",
-																		children: "Taxa do Certificado Ouro"
-																	})
-																]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("tr", {
-																className: "hover:bg-cyan-50/30",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-bold text-cyan-900 whitespace-nowrap",
-																		children: "💎 Diamante"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na OSF"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 font-medium text-slate-900",
-																		children: "Tríade da Assimilação Ativa + Livro Autoral + Registro na OSF (O Registro EDA na Biblioteca Nacional, é opcional)"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4",
-																		children: "Mural de Livros / Livraria Digital + Certificado Diamante de Honraria Máxima"
-																	}),
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
-																		className: "py-3.5 px-4 text-slate-600 font-medium",
-																		children: "Taxa do Certificado Diamante"
-																	})
-																]
-															})
-														]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Autoria e Responsabilidade" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: "A produção intelectual pertence ao seu autor. A ESDHUBEM oferece orientação, modelos e critérios para desenvolvimento e publicação, mas não substitui o autor na criação da obra."
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold",
+											children: "O autor é responsável pelo conteúdo que apresenta e assina, incluindo:"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+											className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Informações, argumentos e interpretações;" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Referências e citações;" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Imagens e materiais utilizados;" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Respeito aos direitos de terceiros;" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Revisão final da produção." })
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-[11px] text-slate-500 italic pt-1",
+											children: "A publicação de uma obra pela ESDHUBEM não significa que a instituição endosse automaticamente todas as opiniões, interpretações ou conclusões apresentadas pelo autor."
+										})
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+											className: "font-bold text-slate-900 text-sm sm:text-base uppercase tracking-wider flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-4 h-4 text-purple-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Inteligência Artificial e Autoria" })]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: "Ferramentas de inteligência artificial poderão ser utilizadas como apoio à produção, de acordo com as orientações da ESDHUBEM. Podem auxiliar na organização de ideias, elaboração de estruturas, revisão textual e aprimoramento da linguagem."
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
+											children: "Entretanto, o autor continua responsável por compreender, verificar e revisar aquilo que publica. Informações, referências, dados ou resultados não devem ser apresentados como verdadeiros sem verificação adequada."
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "bg-purple-100/60 p-3 rounded-xl border border-purple-200 text-xs text-purple-950 font-medium",
+											children: "A tecnologia pode auxiliar a produção. A autoria e a responsabilidade permanecem com o autor."
+										})
+									]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3 pb-4 border-b border-slate-100",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shrink-0",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
+										children: "Transparência & Integridade"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "text-lg sm:text-xl font-bold text-slate-900",
+										children: "Avisos Importantes sobre Publicação e Autoria"
+									})] })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+														className: "font-bold text-slate-900",
+														children: "Sobre Publicação em Periódicos e Revistas"
 													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs text-slate-700 leading-relaxed",
+													children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs text-slate-700 leading-relaxed",
+													children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-xs text-slate-700 leading-relaxed",
+													children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
 												})
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-500 italic",
-												children: "* Os certificados Prata, Ouro e Diamante dependem da entrega e aprovação da produção correspondente."
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-gradient-to-r from-[#011049] via-[#061e47] to-[#011049] text-white p-6 sm:p-8 rounded-2xl space-y-4 shadow-xl border border-blue-900/60 text-center",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "text-lg sm:text-xl font-black uppercase tracking-wider text-[#FFC72C]",
-														children: "Um Percurso de Autoria"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "max-w-2xl mx-auto space-y-1.5 text-xs sm:text-sm text-slate-200 leading-relaxed",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O estudante não é obrigado a realizar todos os níveis." }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-																"Pode concluir o curso e permanecer no ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Bronze" }),
-																"."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-																"Pode escolher escrever um artigo e avançar para o ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Prata" }),
-																"."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-																"Pode desenvolver um artigo de investigação e seguir para o ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Ouro" }),
-																"."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-																"Pode transformar seu conhecimento em um livro e alcançar o ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
-																"."
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-																className: "pt-2 font-medium text-white",
-																children: "Cada percurso corresponde a uma forma diferente de transformar aprendizagem em produção."
-															})
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-black text-[#FFC72C]",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "APRENDER" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "EXPRESSAR" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "INVESTIGAR" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "→" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "AUTORAR" })
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-400 italic pt-1",
-														children: "O curso pode ser o começo. A produção é uma possibilidade. A autoria é uma construção."
-													})
-												]
-											})
-										]
-									})]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-3 pb-4 border-b border-slate-100",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shrink-0",
-											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "w-6 h-6" })
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-xs font-bold text-amber-600 uppercase tracking-wider",
-											children: "Transparência & Integridade"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-											className: "text-lg sm:text-xl font-bold text-slate-900",
-											children: "Avisos Importantes sobre Publicação e Autoria"
-										})] })]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "grid grid-cols-1 md:grid-cols-2 gap-6",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-															className: "font-bold text-slate-900",
-															children: "Sobre Publicação em Periódicos e Revistas"
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-700 leading-relaxed",
-														children: "A ESDHUBEM oferece orientação, estruturação, revisão dos manuscritos dos alunos de acordo com nossos modelos de publicação. Não exigimos rigor científico. Nosso trabalho é voltado para o investigativo e não realizamos encaminhamento, nem garantimos que o aluno faça publicação em plataformas de revistas científicas. Não garantimos, a aceitação do trabalho em revista, periódico ou repositório específico."
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-700 leading-relaxed",
-														children: "Mesmo que seu trabalho seja publicado no site da nossa escola, a decisão de aceitar o seu trabalho em outros sites é exclusiva da instituição ou comitê responsável que segue regras próprias. Muitas revistas científicas têm suas próprias regras de publicação e os pesquisadores devem seguir o que as revistas exigem."
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-700 leading-relaxed",
-														children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-															className: "font-bold text-slate-900",
-															children: "Pré-print e Depósito com DOI"
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: [
-															"O depósito em repositório com atribuição de ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
-															" constitui ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
-															" da obra (pré-print):"
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-														className: "text-xs text-slate-600 space-y-1",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-1.5",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), " Fica registrada oficialmente a autoria e data de criação;"]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-1.5",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-emerald-600 font-bold",
-																	children: "✅"
-																}), " O trabalho passa a ser acessível publicamente;"]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-1.5",
-																children: [
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																		className: "text-rose-600 font-bold",
-																		children: "❌"
-																	}),
-																	" ",
-																	/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }),
-																	";"
-																]
-															}),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-																className: "flex items-start gap-1.5",
-																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🔬" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+														className: "font-bold text-slate-900",
+														children: "Pré-print e Depósito com DOI"
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-600 leading-relaxed",
+													children: [
+														"O depósito em repositório com atribuição de ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "DOI" }),
+														" constitui ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "registro e divulgação prévia" }),
+														" da obra (pré-print):"
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+													className: "text-xs text-slate-600 space-y-1",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+															className: "flex items-start gap-1.5",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-emerald-600 font-bold",
+																children: "✅"
+															}), " Fica registrada oficialmente a autoria e data de criação;"]
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+															className: "flex items-start gap-1.5",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-emerald-600 font-bold",
+																children: "✅"
+															}), " O trabalho passa a ser acessível publicamente;"]
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+															className: "flex items-start gap-1.5",
+															children: [
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 																	className: "text-rose-600 font-bold",
 																	children: "❌"
-																}), " Verifique a política do periódico caso queira submeter a mesma obra."]
-															})
-														]
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🤖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-															className: "font-bold text-slate-900",
-															children: "Uso Responsável de Inteligência Artificial"
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: [
-															"A tecnologia é ferramenta de apoio, ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
-															" do pensamento e criação humana."
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-														className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-																"Se utilizou IA em qualquer etapa, ",
-																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
-																" como foi aplicada;"
-															] }),
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
-														]
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📂" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-															className: "font-bold text-slate-900",
-															children: "Direito de Remoção / Retirada"
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: [
-															"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
-															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
-															"."
-														]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-[11px] text-slate-500 italic",
-														children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
-													})
-												]
-											})
-										]
-									})]
-								})
-							]
+																}),
+																" ",
+																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não equivale a publicação em revista com revisão por pares" }),
+																";"
+															]
+														}),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+															className: "flex items-start gap-1.5",
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																className: "text-rose-600 font-bold",
+																children: "❌"
+															}), " Verifique a política do periódico caso queira submeter a mesma obra."]
+														})
+													]
+												})
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "🤖" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+														className: "font-bold text-slate-900",
+														children: "Uso Responsável de Inteligência Artificial"
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-600 leading-relaxed",
+													children: [
+														"A tecnologia é ferramenta de apoio, ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "não de substituição" }),
+														" do pensamento e criação humana."
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+													className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
+													children: [
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A responsabilidade sobre o conteúdo é sempre do autor;" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+															"Se utilizou IA em qualquer etapa, ",
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "declare com transparência" }),
+															" como foi aplicada;"
+														] }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O uso não declarado poderá impedir ou cancelar a publicação." })
+													]
+												})
+											]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📂" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+														className: "font-bold text-slate-900",
+														children: "Direito de Remoção / Retirada"
+													})]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "text-xs text-slate-600 leading-relaxed",
+													children: [
+														"O autor pode solicitar a exclusão de seu texto a qualquer momento. O prazo para retirada da página e dos índices públicos é de até ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "15 dias úteis" }),
+														"."
+													]
+												}),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+													className: "text-[11px] text-slate-500 italic",
+													children: "* Em repositórios externos (Zenodo/CERN), a exclusão segue as normas da plataforma terceira."
+												})
+											]
+										})
+									]
+								})]
+							})]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
