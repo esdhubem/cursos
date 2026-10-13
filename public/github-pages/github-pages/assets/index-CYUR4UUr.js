@@ -19295,7 +19295,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "text-xl font-bold text-[#182333]",
-											children: "O Método da Tríade da Assimilação Ativa"
+											children: "O Método da Tríade da Assimilação e Comunicação"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-sm text-slate-600 mt-2 leading-relaxed",
@@ -19764,7 +19764,7 @@ var CourseDetailLaunchPage = ({ course, onBackToHome, onEnroll, onOpenValidator,
 									a: "Para celebrar o lançamento do nosso novo ecossistema, estamos oferecendo vagas na Turma Fundadora com valores promocionais ancorados em até 70% de desconto em relação ao mercado. Você escolhe o nível desejado (Bronze, Prata, Ouro ou Diamante) de acordo com a sua meta de certificação ou publicação."
 								},
 								{
-									q: "O que é a Metodologia da Tríade da Assimilação Ativa?",
+									q: "O que é a Metodologia da Tríade da Assimilação e Comunicação?",
 									a: "Em vez de testes automatizados de múltipla escolha onde ninguém avalia nada, o aluno elabora 1 Mapa Mental do curso, escreve 1 síntese à mão (neurociência de retenção profunda) e grava 1 áudio de 1 minuto explicando a ideia central. Isso comprova 100% o aprendizado genuíno e elimina qualquer fraude."
 								},
 								{
@@ -27883,7 +27883,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Bronze: Aproveitamento Básico"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-amber-800 font-semibold",
-													children: "Tríade da Assimilação Ativa & Verbete Enciclopédico na Wiki"
+													children: "Tríade da Assimilação e Comunicação & Verbete Enciclopédico na Wiki"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -27902,8 +27902,8 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"Focado na consolidação prática do aprendizado através da ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica de Assimilação Ativa" }),
-														" da ESDHUBEM. O aluno assiste às aulas completas e valida sua absorção entregando a tríade da assimilação ativa para publicação na ",
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "metodologia pedagógica da Tríade da Assimilação e Comunicação" }),
+														" da ESDHUBEM. O aluno assiste às aulas completas e valida sua absorção entregando a Tríade da Assimilação e Comunicação para publicação na ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Wiki da Escola" }),
 														":"
 													]
@@ -27982,7 +27982,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Prata: Produção de Conteúdo"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-slate-600 font-semibold",
-													children: "Tríade da Assimilação Ativa + Artigo de Blog (1.200 a 2.500 palavras)"
+													children: "Tríade da Assimilação e Comunicação + Artigo de Blog (1.200 a 2.500 palavras)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28001,7 +28001,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" um artigo de blog aprofundado e estratégico de ",
@@ -28019,7 +28019,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação e Comunicação:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Artigo Autoral de Blog:" }),
 																" Redação aprofundada de ",
@@ -28072,7 +28072,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Ouro: Pesquisa & Preprint"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-amber-700 font-semibold",
-													children: "Tríade da Assimilação Ativa + Manuscrito Científico / DOI"
+													children: "Tríade da Assimilação e Comunicação + Manuscrito Científico / DOI"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28091,7 +28091,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" um Trabalho de Conclusão de Curso (TCC) estruturado ou artigo científico de investigação densa, com depósito em plataforma de repositório aberto como Zenodo (CERN) ou OSF, garantindo um código ",
@@ -28107,7 +28107,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação e Comunicação:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Manuscrito de Pesquisa / TCC:" }), " Produção estruturada com ementa acadêmica, introdução, fundamentação teórica e metodologia."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Depósito e Atribuição de DOI:" }), " Depósito no repositório Zenodo / OSF gerando DOI permanente para citação no Currículo Lattes."] })
 														]
@@ -28155,7 +28155,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													children: "Nível Diamante: Autorar e Construir"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-sm text-cyan-700 font-semibold",
-													children: "Tríade da Assimilação Ativa + Livro Autoral (Mín. 50 páginas)"
+													children: "Tríade da Assimilação e Comunicação + Livro Autoral (Mín. 50 páginas)"
 												})] })]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center gap-2 flex-wrap",
@@ -28174,7 +28174,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													className: "text-sm text-slate-700 leading-relaxed font-normal",
 													children: [
 														"O nível mais elevado da escala autoral. O estudante entrega a ",
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 														" do curso ",
 														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 														" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido), com orientação estrutural e registro formal de direitos autorais."
@@ -28188,7 +28188,7 @@ var RegrasCertificacaoMeritoPage = ({ onBackToHome, onOpenValidator, onOpenCerti
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 														className: "list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed",
 														children: [
-															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação Ativa:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Entrega da Tríade da Assimilação e Comunicação:" }), " Mapa mental, verbete enciclopédico para a Wiki e áudio de 1 minuto do curso."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Livro Autoral Completo:" }), " Mínimo de 50 páginas de conteúdo textual desenvolvido (sem contar elementos pré e pós-textuais)."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Registro de Direitos Autorais:" }), " Registro formal da obra na Fundação Biblioteca Nacional (EDA/FBN) e no OSF (Lei nº 9.610/1998)."] }),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Chancela Diamante:" }), " Destaque no Mural de Livros da ESDHUBEM e QR Code de validação no certificado."] })
@@ -30034,7 +30034,7 @@ var DiretrizesProtecaoAutoriaPage = ({ onBackToHome, onNavigate }) => {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
-								children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+								children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa Tríade da Assimilação e Comunicação juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
 							})
 						]
 					}),
@@ -30881,7 +30881,7 @@ var LISTA_SANFONAS_DIRETRIZES = [
 	},
 	{
 		id: "triade",
-		titulo: "Metodologia: O que é a Tríade da Assimilação Ativa"
+		titulo: "Metodologia: O que é a Tríade da Assimilação e Comunicação"
 	},
 	{
 		id: "3",
@@ -31338,7 +31338,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										] }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 											"Após concluir as videoaulas, o estudante deverá entrar em contato com a ESDHUBEM via WhatsApp e comunicar qual modalidade de produção pretende desenvolver, pagar a taxa do tipo de certificado escolhido (Bronze, Prata, Ouro ou Diamante) e seguir com a preparação do trabalho — um portfólio que é comum a todos os tipos de certificados: ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Tríade da Assimilação Ativa" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "A Tríade da Assimilação e Comunicação" }),
 											", composta por 3 tipos de trabalhos. O primeiro é a criação de um mapa mental de acordo com os conceitos do curso percorrido; o segundo é um texto verbete de 500 a 800 palavras; e o terceiro é um áudio explicando o que aprendeu. Em seguida, faz o envio do portfólio via e-mail ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 												href: "mailto:esdhubem@gmail.com",
@@ -31505,7 +31505,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-500" }), "Metodologia Pedagógica ESDHUBEM • Válida para Todos os Níveis"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-slate-900 truncate sm:whitespace-normal",
-										children: "3 - O que é a Tríade da Assimilação Ativa"
+										children: "3 - O que é a Tríade da Assimilação e Comunicação"
 									})]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31533,29 +31533,29 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LazyVideoPlayer, {
 												id: "odysee-iframe-triade-assimilacao",
 												src: "https://odysee.com/$/embed/@esdhubem:a/diretriz-publicacao-9:4?r=Bow3KBdVnTzHQq8X9Q4nFDppobfbLNBJ",
-												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (A Tríade da Assimilação Ativa)",
+												title: "Tutorial ESDHUBEM - Diretrizes de Publicação (A Tríade da Assimilação e Comunicação)",
 												thumbnail: "./images/thumb_video_diretrizes_9.webp",
 												fallbackThumbnail: "https://thumbnails.odycdn.com/card/s:1280:720/quality:85/plain/https://thumbs.odycdn.com/fb4830417af8c53f1df8747696760ee2.webp",
-												badge: "Metodologia • Assimilação Ativa"
+												badge: "Metodologia • Assimilação e Comunicação"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 												className: "text-xs text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo: Orientações completas sobre a Tríade da Assimilação Ativa e seus três vértices de validação" })]
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Vídeo: Orientações completas sobre a Tríade da Assimilação e Comunicação e seus três vértices de validação" })]
 											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 											className: "text-2xl sm:text-3xl font-black text-slate-900 tracking-tight",
-											children: "3 - O que é a Tríade da Assimilação Ativa"
+											children: "3 - O que é a Tríade da Assimilação e Comunicação"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 											className: "text-slate-700 text-sm sm:text-base leading-relaxed",
 											children: [
-												"A metodologia de ",
+												"A metodologia da ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 													className: "text-[#00227B]",
-													children: "Assimilação Ativa"
+													children: "Tríade da Assimilação e Comunicação"
 												}),
 												" é a base pedagógica e epistemológica que estrutura a autoria do estudante e a validação do conhecimento na ESDHUBEM através de certificado por meio da produção de um portfólio. Esse portfólio primordial chamado ",
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 												" é exigido em ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
 													className: "text-amber-900 font-bold",
@@ -31578,7 +31578,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													children: "▲"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "font-extrabold text-xs sm:text-sm uppercase tracking-wider text-amber-950",
-													children: "Requisitos da Tríade da Assimilação Ativa"
+													children: "Requisitos da Tríade da Assimilação e Comunicação"
 												})]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "text-[11px] font-bold text-amber-900 bg-amber-100/90 px-3 py-1 rounded-full border border-amber-300",
@@ -31881,14 +31881,14 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "BRONZE — APRENDER E CONCEITUAR (ASSIMILAÇÃO ATIVA)"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-xs font-semibold text-amber-800",
-											children: "Tríade de Assimilação & Verbete Enciclopédico na Wiki"
+											children: "Tríade da Assimilação e Comunicação & Verbete Enciclopédico na Wiki"
 										})] })]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 										className: "text-slate-700 text-sm leading-relaxed",
 										children: [
 											"O Bronze é destinado ao estudante que deseja consolidar sua aprendizagem através da criação da ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 											" da ESDHUBEM, onde o estudante elabora um ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "mapa mental" }),
 											", para demonstrar como absorveu os conceitos do curso, um ",
@@ -31946,7 +31946,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "font-extrabold text-xs uppercase tracking-wider text-amber-950 block",
-												children: "Requisitos da Tríade de Assimilação:"
+												children: "Requisitos da Tríade da Assimilação e Comunicação:"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 												className: "space-y-2.5 text-xs sm:text-sm text-slate-700",
@@ -32011,7 +32011,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									className: "min-w-0",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 										className: "text-[11px] font-bold uppercase tracking-wider text-amber-800 block flex items-center gap-1.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade da Assimilação Ativa"]
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-amber-600" }), "Documento Integrado • Tríade da Assimilação e Comunicação"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 										className: "text-base sm:text-xl font-black text-amber-950 truncate sm:whitespace-normal",
 										children: "4 - Guia Completo para publicar o Verbete - Nível Bronze"
@@ -32036,7 +32036,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 									children: "Guia Completo para publicar o Verbete - Nível Bronze"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "bg-white border-2 border-blue-200/80 rounded-2xl p-5 sm:p-6 shadow-sm text-slate-800 text-sm sm:text-base leading-relaxed",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação Ativa (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM." })
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Consulte o documento oficial abaixo com o modelo passo a passo, critérios de formatação (500 a 800 palavras), estrutura da Tríade da Assimilação e Comunicação (verbete, mapa mental e áudio de 1 minuto) e orientações para publicação na Wiki Oficial da ESDHUBEM." })
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-white border-2 border-amber-200/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-md flex flex-col",
@@ -32119,7 +32119,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "text-slate-700 text-sm leading-relaxed",
 										children: [
 											"O Prata é destinado ao estudante que deseja demonstrar sua aprendizagem entregando a ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 											" do curso e ainda publicar um texto maior, um artigo autoral aprofundado para publicação no ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Blog Oficial da ESDHUBEM" }),
 											", com ",
@@ -32396,7 +32396,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										className: "text-slate-700 text-sm leading-relaxed",
 										children: [
 											"O nível Ouro é destinado ao estudante que entrega a ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 											" do curso e o ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "artigo de investigação" }),
 											" com registro ",
@@ -33331,7 +33331,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											children: "DIAMANTE — AUTORAR E CONSTRUIR"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-xs font-bold text-cyan-800",
-											children: "Tríade da Assimilação Ativa + Livro Autoral (Mín. 50 páginas)"
+											children: "Tríade da Assimilação e Comunicação + Livro Autoral (Mín. 50 páginas)"
 										})] })]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -33340,7 +33340,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											"O nível ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Diamante" }),
 											" é destinado ao participante que entrega a ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação Ativa" }),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Tríade da Assimilação e Comunicação" }),
 											" do curso ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "MAIS" }),
 											" uma obra autoral completa de maior extensão (livro com no mínimo 50 páginas de conteúdo desenvolvido)."
@@ -34219,7 +34219,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
-																children: "Entrega a Tríade da Assimilação Ativa"
+																children: "Entrega a Tríade da Assimilação e Comunicação"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4 font-medium text-slate-900",
@@ -34244,11 +34244,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
-																children: "Entrega a Tríade da Assimilação Ativa + Artigo de blog (1.200 a 2.500 palavras)"
+																children: "Entrega a Tríade da Assimilação e Comunicação + Artigo de blog (1.200 a 2.500 palavras)"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4 font-medium text-slate-900",
-																children: "Tríade da Assimilação Ativa + Artigo de Blog (SEO) + Registro OSF"
+																children: "Tríade da Assimilação e Comunicação + Artigo de Blog (SEO) + Registro OSF"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
@@ -34269,11 +34269,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
-																children: "Entrega a Tríade da Assimilação Ativa + artigo investigativo estruturado no Zenodo com DOI"
+																children: "Entrega a Tríade da Assimilação e Comunicação + artigo investigativo estruturado no Zenodo com DOI"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4 font-medium text-slate-900",
-																children: "Tríade da Assimilação Ativa + Artigo Investigativo + DOI Permanente"
+																children: "Tríade da Assimilação e Comunicação + Artigo Investigativo + DOI Permanente"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
@@ -34294,11 +34294,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
-																children: "Entrega a Tríade da Assimilação Ativa + Livro autoral completo (mín. 50 págs) e registro na OSF"
+																children: "Entrega a Tríade da Assimilação e Comunicação + Livro autoral completo (mín. 50 págs) e registro na OSF"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4 font-medium text-slate-900",
-																children: "Tríade da Assimilação Ativa + Livro Autoral + Registro na OSF (O Registro EDA na Biblioteca Nacional, é opcional)"
+																children: "Tríade da Assimilação e Comunicação + Livro Autoral + Registro na OSF (O Registro EDA na Biblioteca Nacional, é opcional)"
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																className: "py-3.5 px-4",
@@ -34623,7 +34623,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 												className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-												children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa tríade de assimilação ativa juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
+												children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira. Nosso trabalho é focado no treinamento e desenvolvimento de habilidades, capacitações onde a nossa Tríade da Assimilação e Comunicação juntamente com as publicações de artigos ou livros é um treinamento da escrita e da oralidade voltada para o desenvolvimento pessoal e humano."
 											})
 										]
 									}),
@@ -40760,7 +40760,7 @@ var DiretrizesAvaliacaoManuscritosPage = ({ onBackToHome, onNavigate }) => {
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "text-xs text-slate-500",
-											children: "Metodologia e Tríade de Assimilação Ativa"
+											children: "Metodologia e Tríade da Assimilação e Comunicação"
 										})
 									]
 								}),
