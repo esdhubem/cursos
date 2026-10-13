@@ -29997,61 +29997,6 @@ var DiretrizesProtecaoAutoriaPage = ({ onBackToHome, onNavigate }) => {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-						className: "bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md space-y-4",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center gap-3",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-xl border border-amber-200",
-									children: "📤"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-xs font-bold text-amber-700 uppercase tracking-wider block",
-									children: "Periódicos Externos"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "text-xl sm:text-2xl font-extrabold text-slate-900",
-									children: "Sobre Publicação em Periódicos Científicos"
-								})] })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "text-sm sm:text-base text-slate-700 leading-relaxed",
-								children: ["A ESDHUBEM oferece orientação, estruturação, revisão e encaminhamento para plataformas científicas. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não garantimos, porém, a aceitação do trabalho em revista, periódico ou repositório específico." })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-								className: "space-y-2 text-xs sm:text-sm text-slate-700",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex items-start gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-400 font-bold",
-											children: "•"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "A decisão de aceite é exclusiva da instituição ou comitê responsável pelo periódico;" })]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex items-start gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-400 font-bold",
-											children: "•"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O trabalho poderá ser devolvido para ajustes ou recusado sem prejuízo;" })]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex items-start gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-400 font-bold",
-											children: "•"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira;" })]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-										className: "flex items-start gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-400 font-bold",
-											children: "•"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "O suporte prestado visa preparar o texto — o mérito e a decisão final são totalmente independentes." })]
-									})
-								]
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 						className: "bg-[#FFC72C] rounded-3xl p-8 sm:p-12 text-slate-950 text-center border border-amber-400 shadow-xl space-y-4",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-black/10 text-slate-950",
@@ -33965,11 +33910,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4",
-																	children: "Entrega a Tríade da Assimilação Ativa + Manuscrito/TCC estruturado no Zenodo com DOI"
+																	children: "Entrega a Tríade da Assimilação Ativa + artigo investigativo estruturado no Zenodo com DOI"
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4 font-medium text-slate-900",
-																	children: "Tríade da Assimilação Ativa + Manuscrito Científico + DOI Permanente"
+																	children: "Tríade da Assimilação Ativa + Artigo Investigativo + DOI Permanente"
 																}),
 																/* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 																	className: "py-3.5 px-4",
@@ -35825,29 +35770,8 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 						children: "Avisos Importantes sobre Publicação e Autoria"
 					})] })]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+					className: "grid grid-cols-1 md:grid-cols-3 gap-6",
 					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2 text-slate-900 font-bold text-sm",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "📤" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Sobre Publicação em Periódicos e Revistas" })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									className: "text-xs text-slate-600 leading-relaxed",
-									children: ["A ESDHUBEM oferece orientação, estruturação, revisão e encaminhamento para plataformas científicas. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Não garantimos, porém, a aceitação do trabalho em revista, periódico ou repositório específico." })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "text-xs text-slate-600 space-y-1 list-disc list-inside",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A decisão de aceite é exclusiva da instituição ou comitê responsável;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "O trabalho poderá ser devolvido para ajustes ou recusado sem prejuízo;" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A ESDHUBEM não responde por recusa, avaliação ou prazo de revista terceira." })
-									]
-								})
-							]
-						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3",
 							children: [
