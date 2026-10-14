@@ -36575,16 +36575,6 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-amber-50/80 border border-amber-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-2.5",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-base shrink-0",
-											children: "⚠️"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-											className: "leading-relaxed",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Atenção importante:" }), " O OSF possui fase de transição — projetos deixarão de ser editáveis a partir de fevereiro/2026. Recomendamos ao estudante orientar o registro após a aprovação final."]
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "bg-sky-50/50 border border-sky-200 rounded-2xl p-4 sm:p-5 space-y-3.5",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h6", {
 											className: "font-bold text-xs sm:text-sm text-sky-950 uppercase tracking-wider",
@@ -36659,6 +36649,16 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 													})]
 												})
 											]
+										})]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-amber-50/90 border-2 border-amber-300 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-2.5 shadow-xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-lg shrink-0 mt-0.5",
+											children: "⚠️"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+											className: "leading-relaxed",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Atenção ao Registro no OSF:" }), " A partir de fevereiro de 2026, os projetos na plataforma OSF não permitirão edições diretas após o registro público. Recomendamos efetuar o registro definitivo apenas após a aprovação final do trabalho pela escola."]
 										})]
 									})
 								]
