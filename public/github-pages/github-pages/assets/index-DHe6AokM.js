@@ -31875,7 +31875,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado à mão estruturando os conceitos centrais e conexões pedagógicas da aula."]
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mapa Mental do Conteúdo:" }), " Diagrama visual desenhado (Feito à Mão) estruturando os conceitos centrais e conexões pedagógicas da aula."]
 														})
 													]
 												})
@@ -31897,7 +31897,7 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}),
 														/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 															className: "text-xs sm:text-sm text-slate-700 leading-relaxed",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão, escrito à mão, explicando o significado, o contexto histórico e a aplicação do tema."]
+															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Verbete Enciclopédico (500 a 800 palavras):" }), " Texto conceitual e informativo em norma-padrão (Escrito à Mão), explicando o significado, o contexto histórico e a aplicação do tema."]
 														})
 													] })]
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31920,6 +31920,16 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														})
 													] })]
 												})]
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "p-3.5 sm:p-4 rounded-xl bg-amber-100/70 border border-amber-300/80 flex items-start gap-2.5 text-xs sm:text-sm text-amber-950",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "text-base leading-none shrink-0 mt-0.5",
+												children: "💡"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+												className: "leading-relaxed",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Nota de evolução:" }), " O Áudio Explicativo possui duração de 1 minuto para a Tríade (nível Bronze) e expande-se para 3 minutos no Quadrilátero (níveis Prata, Ouro e Diamante), acompanhando o aprofundamento do trabalho autoral."]
 											})]
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32591,6 +32601,16 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Áudio Explicativo de 1 Minuto:" }), " Gravação de voz de 60 segundos sintetizando o conceito oralmente com clareza (Técnica Feynman de retenção)."] })]
 													})
 												]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "p-3 rounded-lg bg-amber-100/70 border border-amber-200 flex items-start gap-2 text-xs sm:text-sm text-amber-950",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-base leading-none shrink-0 mt-0.5",
+													children: "💡"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+													className: "leading-relaxed",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Nota de evolução:" }), " O Áudio Explicativo possui duração de 1 minuto para a Tríade (nível Bronze) e expande-se para 3 minutos no Quadrilátero (níveis Prata, Ouro e Diamante), acompanhando o aprofundamento do trabalho autoral."]
+												})]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "pt-2 border-t border-amber-200/60 flex flex-wrap gap-2 text-xs",
