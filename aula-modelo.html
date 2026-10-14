@@ -26,15 +26,15 @@
       width: 6px;
     }
     #lessons-list-container::-webkit-scrollbar-track {
-      background: rgba(255, 255, 255, 0.05);
+      background: #09142b;
       border-radius: 8px;
     }
     #lessons-list-container::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.2);
+      background: #18284e;
       border-radius: 8px;
     }
     #lessons-list-container::-webkit-scrollbar-thumb:hover {
-      background: rgba(255, 255, 255, 0.35);
+      background: #00dfc4;
     }
   </style>
 </head>
@@ -109,24 +109,24 @@
         <!-- COLUNA DA ESQUERDA: VÍDEO DE TAMANHO COMPACTO + TÍTULO DA AULA ATIVA -->
         <div class="lg:col-span-7 xl:col-span-8 space-y-3">
           
-          <!-- Título da Aula Atual Acima do Player (Mesmo tom azul profundo elegante do topo) -->
-          <div class="px-5 py-4 rounded-2xl bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] border border-[#0f2c66] text-white shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <!-- Título da Aula Atual Acima do Player (Mesmo tom dark obsidian do design) -->
+          <div class="px-5 py-4 rounded-3xl bg-[#070E1E] border border-[#142347] text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <div class="flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-wider">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#00dfc4] uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-[#00dfa2] animate-pulse"></span>
                 <span id="active-lesson-module-tag">Módulo 1 · Introdução</span>
               </div>
               <h2 id="active-lesson-title" class="text-base sm:text-lg font-bold text-white tracking-tight mt-0.5">
                 1. A Mente como Sistema Vivo e Descarga Cognitiva
               </h2>
             </div>
-            <button id="btn-toggle-watched" class="text-xs font-semibold text-sky-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer shrink-0 self-start sm:self-auto">
+            <button id="btn-toggle-watched" class="text-xs font-semibold text-sky-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto">
               Marcar como Assistida
             </button>
           </div>
 
           <!-- Player de Vídeo em Tamanho Menor/Compacto -->
-          <div class="relative rounded-2xl overflow-hidden shadow-xl bg-slate-950 border border-slate-800 group">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-950 border border-[#142347] group">
             <video 
               id="main-video" 
               class="w-full aspect-video object-cover cursor-pointer"
@@ -137,78 +137,78 @@
             <!-- Overlay Badge -->
             <div class="absolute top-4 left-4 z-20 pointer-events-none">
               <span class="bg-black/60 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md border border-white/10 font-medium flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="w-2 h-2 rounded-full bg-[#00dfa2] animate-pulse"></span>
                 ESDHubem Masterclass
               </span>
             </div>
 
             <!-- Botão Central Play (quando pausado) -->
             <div id="video-overlay-play" class="absolute inset-0 bg-slate-950/40 backdrop-blur-[1px] flex items-center justify-center cursor-pointer">
-              <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-sky-600/90 hover:bg-sky-500 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
+              <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-cyan-600/90 hover:bg-cyan-500 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
               </div>
             </div>
 
             <!-- Controles do Vídeo -->
             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3 sm:p-4 z-20 flex flex-col gap-2">
-              <input type="range" id="video-seekbar" min="0" max="100" value="0" step="0.5" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-sky-400">
+              <input type="range" id="video-seekbar" min="0" max="100" value="0" step="0.5" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-[#00dfc4]">
               <div class="flex items-center justify-between text-white text-xs">
                 <div class="flex items-center gap-3">
-                  <button id="btn-play-pause" class="p-1 hover:text-sky-300"><i data-lucide="play" class="w-5 h-5 fill-white"></i></button>
-                  <button id="btn-restart" class="p-1 hover:text-sky-300"><i data-lucide="rotate-ccw" class="w-4 h-4"></i></button>
-                  <button id="btn-mute" class="p-1 hover:text-sky-300"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
+                  <button id="btn-play-pause" class="p-1 hover:text-[#00dfc4]"><i data-lucide="play" class="w-5 h-5 fill-white"></i></button>
+                  <button id="btn-restart" class="p-1 hover:text-[#00dfc4]"><i data-lucide="rotate-ccw" class="w-4 h-4"></i></button>
+                  <button id="btn-mute" class="p-1 hover:text-[#00dfc4]"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
                   <span id="video-time-display" class="font-mono text-[11px] text-slate-300">00:00 / 00:00</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <button id="btn-fullscreen" class="p-1 hover:text-sky-300"><i data-lucide="maximize" class="w-4 h-4"></i></button>
+                  <button id="btn-fullscreen" class="p-1 hover:text-[#00dfc4]"><i data-lucide="maximize" class="w-4 h-4"></i></button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Barra de Navegação entre Aulas (Anterior / Próxima) -->
-          <div class="flex items-center justify-between p-3.5 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] rounded-xl border border-[#0f2c66] shadow-sm text-xs text-white">
+          <div class="flex items-center justify-between p-3.5 bg-[#070E1E] rounded-2xl border border-[#142347] shadow-md text-xs text-white">
             <button id="btn-prev-lesson" onclick="prevLesson()" class="flex items-center gap-1.5 font-bold text-slate-300 hover:text-white disabled:opacity-40 cursor-pointer">
               <i data-lucide="chevron-left" class="w-4 h-4"></i> Aula Anterior
             </button>
-            <span id="lesson-counter-pill" class="text-sky-300 font-semibold bg-white/10 px-3 py-1 rounded-lg border border-white/10">Capítulo 1 de 4</span>
-            <button id="btn-next-lesson" onclick="nextLesson()" class="flex items-center gap-1.5 font-bold text-sky-300 hover:text-white cursor-pointer">
+            <span id="lesson-counter-pill" class="text-[#00dfc4] font-semibold bg-white/5 px-3 py-1 rounded-lg border border-white/10">Capítulo 1 de 4</span>
+            <button id="btn-next-lesson" onclick="nextLesson()" class="flex items-center gap-1.5 font-bold text-[#00dfc4] hover:text-white cursor-pointer">
               Próxima Aula <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </button>
           </div>
 
         </div>
 
-        <!-- COLUNA DA DIREITA: AULAS E CAPÍTULOS NA LATERAL (TOM DE AZUL COMBINANDO COM O TOPO) -->
-        <div class="lg:col-span-5 xl:col-span-4 bg-gradient-to-b from-[#031436] via-[#051c4a] to-[#031538] text-white rounded-2xl border border-[#0f2c66] shadow-xl p-4 sm:p-5 flex flex-col gap-4">
+        <!-- COLUNA DA DIREITA: AULAS E CAPÍTULOS NA LATERAL (ESTILO EXATO DO ANEXO) -->
+        <div class="lg:col-span-5 xl:col-span-4 bg-[#070E1E] text-white rounded-3xl border border-[#142347] shadow-2xl p-5 sm:p-6 flex flex-col gap-4">
           
-          <!-- Topo da Lateral: Título e Progresso do Curso -->
+          <!-- Topo da Lateral: Título e Progresso do Curso (Como no anexo) -->
           <div>
-            <div class="flex items-center justify-between text-xs text-slate-300 pb-2">
-              <span class="font-bold uppercase tracking-wider text-sky-300 flex items-center gap-1.5">
-                <i data-lucide="layers" class="w-4 h-4"></i> Grade de Aulas
+            <div class="flex items-center justify-between text-xs sm:text-sm pb-2">
+              <span class="font-extrabold uppercase tracking-wider text-[#00dfc4] flex items-center gap-2">
+                <i data-lucide="layers" class="w-4 h-4 text-[#00dfc4]"></i> GRADE DE AULAS
               </span>
-              <span id="sidebar-progress-text" class="font-mono text-emerald-400 font-bold">25% Concluído</span>
+              <span id="sidebar-progress-text" class="font-bold text-[#00dfc4]">25% Concluído</span>
             </div>
-            <div class="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
-              <div id="sidebar-progress-bar" class="bg-gradient-to-r from-emerald-400 to-sky-400 h-full transition-all duration-300" style="width: 25%;"></div>
+            <div class="w-full bg-[#0d1a38] rounded-full h-1.5 overflow-hidden mt-1">
+              <div id="sidebar-progress-bar" class="bg-[#00dfc4] h-full rounded-full transition-all duration-300" style="width: 25%;"></div>
             </div>
           </div>
 
-          <!-- Campo de Busca de Aulas (como na imagem 5 de referência) -->
+          <!-- Campo de Busca de Aulas (Como no anexo) -->
           <div class="relative">
             <input 
               type="text" 
               id="search-lessons-input" 
               oninput="filterLessons(this.value)" 
               placeholder="Buscar conteúdo..." 
-              class="w-full bg-white/10 border border-white/15 text-white placeholder-slate-400 text-xs rounded-xl pl-9 pr-3 py-2.5 outline-none focus:ring-2 focus:ring-sky-400 focus:bg-white/15 transition-all"
+              class="w-full bg-[#0a152d] border border-[#18284e] text-white placeholder-slate-400 text-xs sm:text-sm rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-[#00dfc4]/50 focus:border-[#00dfc4] transition-all shadow-inner"
             />
-            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
           </div>
 
-          <!-- Lista de Aulas e Capítulos Sanfonados / Clicáveis -->
-          <div id="lessons-list-container" class="space-y-2.5 max-h-[460px] overflow-y-auto pr-1">
+          <!-- Lista de Aulas e Capítulos Clicáveis (Renderizados dinamicamente no estilo do anexo) -->
+          <div id="lessons-list-container" class="space-y-3 max-h-[480px] overflow-y-auto pr-1">
             <!-- Renderizado dinamicamente via JavaScript -->
           </div>
 
@@ -700,16 +700,16 @@
       });
 
       document.getElementById('btn-toggle-watched').addEventListener('click', () => {
-        hasWatchedVideo = !hasWatchedVideo;
-        localStorage.setItem('esdhubem_gh_watched', hasWatchedVideo ? 'true' : 'false');
-        
         const activeLesson = LESSONS_DATA[currentLessonIndex];
-        if (hasWatchedVideo && !completedLessonIds.includes(activeLesson.id)) {
-          completedLessonIds.push(activeLesson.id);
-        } else if (!hasWatchedVideo) {
+        const isCurrentlyCompleted = completedLessonIds.includes(activeLesson.id);
+        if (isCurrentlyCompleted) {
           completedLessonIds = completedLessonIds.filter(id => id !== activeLesson.id);
+        } else {
+          completedLessonIds.push(activeLesson.id);
         }
+        hasWatchedVideo = completedLessonIds.length > 0;
         localStorage.setItem('esdhubem_completed_lessons', JSON.stringify(completedLessonIds));
+        localStorage.setItem('esdhubem_gh_watched', hasWatchedVideo ? 'true' : 'false');
         
         updateVideoBtn();
         renderSidebarLessons();
@@ -735,7 +735,7 @@
       lucide.createIcons();
     }
 
-    // --- RENDERIZAR LATERAL DE AULAS (ESTILO MODELO) ---
+    // --- RENDERIZAR LATERAL DE AULAS (ESTILO EXATO DO ANEXO) ---
     function renderSidebarLessons(filter = '') {
       const listContainer = document.getElementById('lessons-list-container');
       const filtered = LESSONS_DATA.filter(l => 
@@ -760,43 +760,71 @@
         const isCurrent = LESSONS_DATA[currentLessonIndex].id === lesson.id;
         const isCompleted = completedLessonIds.includes(lesson.id);
 
-        return `
-          <div 
-            onclick="selectLessonById('${lesson.id}')"
-            class="p-3 rounded-xl transition-all cursor-pointer border ${
-              isCurrent 
-                ? 'bg-sky-500/25 border-sky-400 text-white shadow-md ring-1 ring-sky-400/50' 
-                : 'bg-white/5 hover:bg-white/10 border-white/10 text-slate-200'
-            }"
-          >
-            <div class="flex items-center gap-3">
-              <!-- Círculo com Número -->
-              <div class="w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 ${
-                isCompleted 
-                  ? 'bg-emerald-500 text-slate-950 font-black' 
-                  : (isCurrent ? 'bg-sky-400 text-slate-950 font-black' : 'bg-white/10 text-slate-300')
-              }">
-                ${isCompleted ? '✓' : lesson.number}
-              </div>
-
-              <!-- Título & Módulo -->
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-0.5">
-                  <span class="truncate">${lesson.module}</span>
-                  <span class="font-mono text-sky-300 ml-1 shrink-0 font-semibold">${lesson.timeLabel}</span>
+        if (isCurrent) {
+          return `
+            <div 
+              onclick="selectLessonById('${lesson.id}')"
+              class="p-3.5 sm:p-4 rounded-2xl border-2 border-[#00b4d8] bg-[#081836] shadow-[0_0_20px_rgba(6,182,212,0.18)] transition-all cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <!-- Círculo com Ícone ou Número -->
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full ${
+                  isCompleted 
+                    ? 'bg-[#00dfa2] text-slate-950 font-black' 
+                    : 'bg-cyan-400 text-slate-950 font-black'
+                } flex items-center justify-center text-xs shrink-0 shadow-md">
+                  ${isCompleted ? '✓' : lesson.number}
                 </div>
-                <h4 class="text-xs font-bold leading-snug truncate ${isCurrent ? 'text-white' : 'text-slate-100'}">
-                  ${lesson.title}
-                </h4>
-              </div>
-            </div>
 
-            <!-- Mini barra de conclusão na aula -->
-            <div class="mt-2.5 w-full bg-white/10 rounded-full h-1 overflow-hidden">
-              <div class="h-full ${isCompleted ? 'bg-emerald-400 w-full' : (isCurrent ? 'bg-sky-400 w-1/2' : 'w-0')}"></div>
+                <!-- Título & Módulo -->
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between text-[11px] sm:text-xs text-slate-300 mb-0.5 font-medium">
+                    <span class="truncate">${lesson.module}</span>
+                    <span class="font-mono text-cyan-400 ml-2 shrink-0 font-bold">${lesson.timeLabel}</span>
+                  </div>
+                  <h4 class="text-xs sm:text-sm font-bold leading-snug truncate text-white">
+                    ${lesson.title}
+                  </h4>
+                </div>
+              </div>
+
+              <!-- Barra de progresso ciano vibrante na base do card ativo (Como no anexo) -->
+              <div class="mt-3 w-full bg-[#00dfa2] h-1 rounded-full shadow-[0_0_8px_rgba(0,229,163,0.5)]"></div>
             </div>
-          </div>
-        `;
+          `;
+        } else {
+          return `
+            <div 
+              onclick="selectLessonById('${lesson.id}')"
+              class="p-3.5 sm:p-4 rounded-2xl border border-[#142347] bg-[#09152e]/90 hover:bg-[#0c1a38] hover:border-slate-700 transition-all cursor-pointer"
+            >
+              <div class="flex items-center gap-3">
+                <!-- Círculo com Número -->
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full ${
+                  isCompleted 
+                    ? 'bg-[#00dfa2] text-slate-950 font-black' 
+                    : 'bg-[#132242] border border-[#1f3460] text-slate-300 font-bold'
+                } flex items-center justify-center text-xs shrink-0 shadow-inner">
+                  ${isCompleted ? '✓' : lesson.number}
+                </div>
+
+                <!-- Título & Módulo -->
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between text-[11px] sm:text-xs text-slate-400 mb-0.5 font-medium">
+                    <span class="truncate">${lesson.module}</span>
+                    <span class="font-mono text-cyan-400 ml-2 shrink-0 font-bold">${lesson.timeLabel}</span>
+                  </div>
+                  <h4 class="text-xs sm:text-sm font-bold leading-snug truncate text-slate-100">
+                    ${lesson.title}
+                  </h4>
+                </div>
+              </div>
+
+              <!-- Linha sutil na base do card inativo (Como no anexo) -->
+              <div class="mt-3 w-full bg-slate-800/80 h-0.5 rounded-full"></div>
+            </div>
+          `;
+        }
       }).join('');
 
       lucide.createIcons();
@@ -820,6 +848,7 @@
 
       document.getElementById('btn-prev-lesson').disabled = currentLessonIndex === 0;
       document.getElementById('btn-next-lesson').disabled = currentLessonIndex === LESSONS_DATA.length - 1;
+      updateVideoBtn();
     }
 
     function prevLesson() {
@@ -1149,11 +1178,13 @@
 
     function updateVideoBtn() {
       const btn = document.getElementById('btn-toggle-watched');
-      if (hasWatchedVideo) {
-        btn.className = 'text-xs font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-sm';
+      const activeLesson = LESSONS_DATA[currentLessonIndex];
+      const isCompleted = completedLessonIds.includes(activeLesson.id);
+      if (isCompleted) {
+        btn.className = 'text-xs font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-sm';
         btn.innerText = '✓ Videoaula Concluída';
       } else {
-        btn.className = 'text-xs font-semibold text-sky-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-lg transition-colors cursor-pointer shrink-0 self-start sm:self-auto';
+        btn.className = 'text-xs font-semibold text-sky-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto';
         btn.innerText = 'Marcar como Assistida';
       }
     }
