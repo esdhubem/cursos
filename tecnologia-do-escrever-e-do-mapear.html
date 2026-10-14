@@ -42,7 +42,7 @@
 
   <!-- ==================== HEADER (TOM DE AZUL PROFUNDO E ELEGANTE) ==================== -->
   <header class="sticky top-0 z-40 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] border-b border-[#0f2c66] text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
         <!-- Logo & Título -->
         <div class="flex items-center gap-3.5">
@@ -100,14 +100,20 @@
   </header>
 
   <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
+  <main class="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
 
-    <!-- 1. SEÇÃO DE VÍDEO COMPACTO + LATERAL DE AULAS (ESTILO MODELO) -->
+    <!-- LAYOUT EM DUAS COLUNAS: ESQUERDA (VÍDEO + GRADE) / DIREITA (MAPA MENTAL + ESCRITA REFLEXIVA) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="lg:col-span-5 space-y-6">
+
+    <!-- 1. SEÇÃO DE VÍDEO COMPACTO + GRADE DE AULAS -->
     <section id="video-section" class="scroll-mt-20">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <div class="space-y-6">
 
-        <!-- COLUNA DA ESQUERDA: VÍDEO DE TAMANHO COMPACTO + TÍTULO DA AULA ATIVA -->
-        <div class="lg:col-span-7 xl:col-span-8 space-y-3">
+        <!-- VÍDEO + TÍTULO DA AULA ATIVA -->
+        <div class="space-y-3">
           
           <!-- Título da Aula Atual Acima do Player (Mesmo tom dark obsidian do design) -->
           <div class="px-5 py-4 rounded-3xl bg-[#070E1E] border border-[#142347] text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -180,7 +186,7 @@
         </div>
 
         <!-- COLUNA DA DIREITA: AULAS E CAPÍTULOS NA LATERAL (ESTILO EXATO DO ANEXO) -->
-        <div class="lg:col-span-5 xl:col-span-4 bg-[#070E1E] text-white rounded-3xl border border-[#142347] shadow-2xl p-5 sm:p-6 flex flex-col gap-4">
+        <div class="bg-[#070E1E] text-white rounded-3xl border border-[#142347] shadow-2xl p-5 sm:p-6 flex flex-col gap-4">
           
           <!-- Topo da Lateral: Título e Progresso do Curso (Como no anexo) -->
           <div>
@@ -217,7 +223,13 @@
       </div>
     </section>
 
-    <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (LOGO ABAIXO DO VÍDEO) -->
+    </div>
+    <!-- FIM COLUNA ESQUERDA -->
+
+    <!-- COLUNA DIREITA -->
+    <div class="lg:col-span-7 space-y-6">
+
+    <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (AO LADO DO VÍDEO) -->
     <section id="mindmap-section" class="scroll-mt-20">
       <div class="bg-white rounded-2xl border border-[#0f2c66]/40 shadow-sm overflow-hidden flex flex-col">
         <!-- Header do Mapa (Mesmo tom azul profundo elegante do topo) -->
@@ -445,6 +457,12 @@
         </div>
       </div>
     </section>
+
+    </div>
+    <!-- FIM COLUNA DIREITA -->
+
+    </div>
+    <!-- FIM LAYOUT EM DUAS COLUNAS -->
 
     <!-- 4. ENVIO E VALIDAÇÃO DA ATIVIDADE -->
     <section id="submission-section" class="scroll-mt-20">
