@@ -35807,8 +35807,11 @@ var DiretrizesPublicacaoParceriasPage = ({ onBackToHome, onNavigateToArticles, o
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 flex items-start gap-3",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-slate-500 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Nota institucional:" }), " Estes são prazos de referência, não constituem obrigação contratual, podendo ser ajustados conforme volume de demandas. Sempre que houver previsão de atraso, o estudante será comunicado."] })]
+										className: "bg-blue-50/80 border border-blue-200 rounded-xl p-3.5 sm:p-4 text-xs sm:text-sm text-slate-700 flex items-start gap-2.5 shadow-2xs",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Info, { className: "w-4 h-4 text-blue-600 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "leading-relaxed",
+											children: "Os prazos indicados referem-se a estimativas operacionais de atendimento. Havendo necessidade de adequação devido ao volume de entregas, o estudante será comunicado."
+										})]
 									})
 								]
 							})
