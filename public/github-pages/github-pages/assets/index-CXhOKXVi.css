@@ -833,6 +833,10 @@
     }
   }
 
+  .m-0 {
+    margin: 0;
+  }
+
   .m-auto {
     margin: auto;
   }
@@ -851,6 +855,10 @@
 
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
+  }
+
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
 
   .my-8 {
@@ -2546,6 +2554,10 @@
     .border-emerald-400\/60 {
       border-color: color-mix(in oklab, var(--color-emerald-400) 60%, transparent);
     }
+  }
+
+  .border-emerald-500 {
+    border-color: var(--color-emerald-500);
   }
 
   .border-emerald-500\/20 {

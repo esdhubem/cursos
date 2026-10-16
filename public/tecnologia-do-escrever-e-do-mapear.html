@@ -6,10 +6,10 @@
   <title>ESDHubem - Tecnologia do Escrever e do Mapear</title>
   <meta name="description" content="Plataforma de aprendizagem da ESDHubem para a aula Tecnologia do Escrever e do Mapear, com videoaula, mapa mental interativo e escrita reflexiva.">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Outfit (títulos serenos e acolhedores) + Inter (leitura fluida, calma e sem cansaço) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,9 +19,17 @@
 
   <style>
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      letter-spacing: -0.011em;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    /* Scrollbar personalizada para a lista de aulas */
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      letter-spacing: -0.02em;
+    }
+    /* Scrollbar personalizada suave para a lista de aulas */
     #lessons-list-container::-webkit-scrollbar {
       width: 6px;
     }
@@ -35,6 +43,35 @@
     }
     #lessons-list-container::-webkit-scrollbar-thumb:hover {
       background: #00dfc4;
+    }
+
+    /* Reordenação Inteligente para Celular (Mobile):
+       1. Vídeo
+       2. Mapa Mental ("Crie aqui o seu mapa mental")
+       3. Grade de Aulas
+       4. Escrita Reflexiva ("Escreva seu texto reflexivo")
+    */
+    @media (max-width: 1023px) {
+      .main-classroom-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+      .mobile-column-wrapper {
+        display: contents !important;
+      }
+      .mobile-order-1-video {
+        order: 1 !important;
+      }
+      .mobile-order-2-mindmap {
+        order: 2 !important;
+      }
+      .mobile-order-3-grade {
+        order: 3 !important;
+      }
+      .mobile-order-4-reflection {
+        order: 4 !important;
+      }
     }
   </style>
 </head>
@@ -102,18 +139,15 @@
   <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
   <main class="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
 
-    <!-- LAYOUT EM DUAS COLUNAS: ESQUERDA (VÍDEO + GRADE) / DIREITA (MAPA MENTAL + ESCRITA REFLEXIVA) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+    <!-- LAYOUT EM DUAS COLUNAS NO DESKTOP / ORDEM INTELIGENTE NO CELULAR (VÍDEO -> MAPA MENTAL -> GRADE -> TEXTO) -->
+    <div class="main-classroom-grid grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-    <!-- COLUNA ESQUERDA -->
-    <div class="lg:col-span-5 space-y-6">
+    <!-- COLUNA ESQUERDA (DESKTOP) / WRAPPER CONTENTS (CELULAR) -->
+    <div class="mobile-column-wrapper lg:col-span-5 space-y-6">
 
-    <!-- 1. SEÇÃO DE VÍDEO COMPACTO + GRADE DE AULAS -->
-    <section id="video-section" class="scroll-mt-20">
-      <div class="space-y-6">
-
-        <!-- VÍDEO + TÍTULO DA AULA ATIVA -->
-        <div class="space-y-3">
+    <!-- 1. SEÇÃO DE VÍDEO COMPACTO (Ordem 1 no Celular) -->
+    <section id="video-section" class="mobile-order-1-video scroll-mt-20">
+      <div class="space-y-3">
           
           <!-- Título da Aula Atual Acima do Player (Mesmo tom dark obsidian do design) -->
           <div class="px-5 py-4 rounded-3xl bg-[#070E1E] border border-[#142347] text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -183,41 +217,41 @@
             </button>
           </div>
 
+      </div>
+    </section>
+
+    <!-- 3. GRADE DE AULAS (Ordem 3 no Celular) -->
+    <section id="grade-section" class="mobile-order-3-grade scroll-mt-20">
+      <div class="bg-[#070E1E] text-white rounded-3xl border border-[#142347] shadow-2xl p-5 sm:p-6 flex flex-col gap-4">
+        
+        <!-- Topo da Lateral: Título e Progresso do Curso (Como no anexo) -->
+        <div>
+          <div class="flex items-center justify-between text-xs sm:text-sm pb-2">
+            <span class="font-extrabold uppercase tracking-wider text-[#00dfc4] flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-[#00dfc4]"></i> GRADE DE AULAS
+            </span>
+            <span id="sidebar-progress-text" class="font-bold text-[#00dfc4]">25% Concluído</span>
+          </div>
+          <div class="w-full bg-[#0d1a38] rounded-full h-1.5 overflow-hidden mt-1">
+            <div id="sidebar-progress-bar" class="bg-[#00dfc4] h-full rounded-full transition-all duration-300" style="width: 25%;"></div>
+          </div>
         </div>
 
-        <!-- COLUNA DA DIREITA: AULAS E CAPÍTULOS NA LATERAL (ESTILO EXATO DO ANEXO) -->
-        <div class="bg-[#070E1E] text-white rounded-3xl border border-[#142347] shadow-2xl p-5 sm:p-6 flex flex-col gap-4">
-          
-          <!-- Topo da Lateral: Título e Progresso do Curso (Como no anexo) -->
-          <div>
-            <div class="flex items-center justify-between text-xs sm:text-sm pb-2">
-              <span class="font-extrabold uppercase tracking-wider text-[#00dfc4] flex items-center gap-2">
-                <i data-lucide="layers" class="w-4 h-4 text-[#00dfc4]"></i> GRADE DE AULAS
-              </span>
-              <span id="sidebar-progress-text" class="font-bold text-[#00dfc4]">25% Concluído</span>
-            </div>
-            <div class="w-full bg-[#0d1a38] rounded-full h-1.5 overflow-hidden mt-1">
-              <div id="sidebar-progress-bar" class="bg-[#00dfc4] h-full rounded-full transition-all duration-300" style="width: 25%;"></div>
-            </div>
-          </div>
+        <!-- Campo de Busca de Aulas (Como no anexo) -->
+        <div class="relative">
+          <input 
+            type="text" 
+            id="search-lessons-input" 
+            oninput="filterLessons(this.value)" 
+            placeholder="Buscar conteúdo..." 
+            class="w-full bg-[#0a152d] border border-[#18284e] text-white placeholder-slate-400 text-xs sm:text-sm rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-[#00dfc4]/50 focus:border-[#00dfc4] transition-all shadow-inner"
+          />
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        </div>
 
-          <!-- Campo de Busca de Aulas (Como no anexo) -->
-          <div class="relative">
-            <input 
-              type="text" 
-              id="search-lessons-input" 
-              oninput="filterLessons(this.value)" 
-              placeholder="Buscar conteúdo..." 
-              class="w-full bg-[#0a152d] border border-[#18284e] text-white placeholder-slate-400 text-xs sm:text-sm rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-[#00dfc4]/50 focus:border-[#00dfc4] transition-all shadow-inner"
-            />
-            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-          </div>
-
-          <!-- Lista de Aulas e Capítulos Clicáveis (Renderizados dinamicamente no estilo do anexo) -->
-          <div id="lessons-list-container" class="space-y-3 max-h-[480px] overflow-y-auto pr-1">
-            <!-- Renderizado dinamicamente via JavaScript -->
-          </div>
-
+        <!-- Lista de Aulas e Capítulos Clicáveis (Renderizados dinamicamente no estilo do anexo) -->
+        <div id="lessons-list-container" class="space-y-3 max-h-[480px] overflow-y-auto pr-1">
+          <!-- Renderizado dinamicamente via JavaScript -->
         </div>
 
       </div>
@@ -226,11 +260,11 @@
     </div>
     <!-- FIM COLUNA ESQUERDA -->
 
-    <!-- COLUNA DIREITA -->
-    <div class="lg:col-span-7 space-y-6">
+    <!-- COLUNA DIREITA (DESKTOP) / WRAPPER CONTENTS (CELULAR) -->
+    <div class="mobile-column-wrapper lg:col-span-7 space-y-6">
 
-    <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (AO LADO DO VÍDEO) -->
-    <section id="mindmap-section" class="scroll-mt-20">
+    <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (Ordem 2 no Celular) -->
+    <section id="mindmap-section" class="mobile-order-2-mindmap scroll-mt-20">
       <div class="bg-white rounded-2xl border border-[#0f2c66]/40 shadow-sm overflow-hidden flex flex-col">
         <!-- Header do Mapa (Mesmo tom azul profundo elegante do topo) -->
         <div class="px-6 py-3 border-b border-[#0f2c66] flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] text-white">
@@ -239,7 +273,7 @@
               <div class="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/30 flex items-center justify-center text-sky-400 shrink-0 shadow-sm">
                 <i data-lucide="network" class="w-5 h-5"></i>
               </div>
-              <span>Mapa Mental da Aula: Escrever &amp; Mapear</span>
+              <span>Crie aqui o seu mapa mental</span>
             </h3>
           </div>
           <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300">
@@ -344,79 +378,32 @@
       </div>
     </section>
 
-    <!-- 3. SEÇÃO DE ESCRITA REFLEXIVA -->
-    <section id="reflection-section" class="scroll-mt-20">
+    <!-- 4. SEÇÃO DE ESCRITA REFLEXIVA (Ordem 4 no Celular) -->
+    <section id="reflection-section" class="mobile-order-4-reflection scroll-mt-20">
       <div class="bg-white rounded-2xl border border-[#0f2c66]/40 shadow-sm overflow-hidden">
-        <!-- Header da Etapa 3 (Mesmo tom azul profundo elegante do topo) -->
-        <div class="px-6 py-5 border-b border-[#0f2c66] flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] text-white">
+        <!-- Header da Escrita Reflexiva -->
+        <div class="px-6 py-4 sm:py-5 border-b border-[#0f2c66] flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] text-white">
           <div>
-            <div class="flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-wider">
-              <span>Etapa 3</span>
-              <span class="text-white/30">·</span>
-              <span>Exercício Reflexivo</span>
-            </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white mt-1 flex items-center gap-2.5">
+            <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2.5">
               <div class="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/30 flex items-center justify-center text-sky-400 shrink-0 shadow-sm">
                 <i data-lucide="pen-tool" class="w-5 h-5"></i>
               </div>
-              <span>Sua Escrita Reflexiva</span>
+              <span>Escreva seu texto reflexivo</span>
             </h3>
-            <p class="text-sm text-slate-300 mt-1">
-              Dedique este espaço para elaborar suas percepções pessoais consolidadas pela escrita.
-            </p>
           </div>
           <div id="text-status-pill" class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/10 border-white/20 text-slate-300">
-            Mínimo 100 caracteres (0/100)
+            Mínimo de 500 a 800 caracteres (0/500)
           </div>
         </div>
 
         <div class="p-5 sm:p-6 space-y-4">
-          <!-- Sugestões de Perguntas (Mesmo tom azul profundo elegante do topo) -->
-          <div class="rounded-2xl border border-[#0f2c66] bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] p-4 sm:p-5 text-white shadow-md">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-sky-300 flex items-center gap-1.5 uppercase tracking-wider">
-                <i data-lucide="help-circle" class="w-4 h-4 text-sky-400"></i>
-                Perguntas Norteadoras da ESDHubem
-              </span>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              <div class="p-3.5 bg-[#072152]/80 rounded-xl border border-[#1b3d7d] flex flex-col justify-between hover:border-sky-400/50 transition-colors">
-                <div>
-                  <span class="text-[11px] font-bold text-sky-300 block uppercase">1. Autoconhecimento & Descarga</span>
-                  <p class="text-xs text-slate-200 mt-1.5 leading-relaxed">"Quais nós mentais você descarregou ao colocar pensamentos em palavras durante a aula?"</p>
-                </div>
-                <button onclick="insertPrompt('Quais nós mentais você descarregou ao colocar pensamentos em palavras durante a aula?')" class="mt-3 text-[11px] text-sky-300 hover:text-white bg-white/10 hover:bg-white/20 px-2.5 py-1.5 rounded-lg border border-white/15 font-semibold flex items-center gap-1.5 self-start cursor-pointer transition-all">
-                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-400"></i> Inserir no texto
-                </button>
-              </div>
-              <div class="p-3.5 bg-[#072152]/80 rounded-xl border border-[#1b3d7d] flex flex-col justify-between hover:border-sky-400/50 transition-colors">
-                <div>
-                  <span class="text-[11px] font-bold text-sky-300 block uppercase">2. Transformação do Olhar</span>
-                  <p class="text-xs text-slate-200 mt-1.5 leading-relaxed">"Como a visão em rede (mapa) alterou a proporção e urgência das ideias?"</p>
-                </div>
-                <button onclick="insertPrompt('Como a visão em rede (mapa) alterou a proporção e urgência das ideias?')" class="mt-3 text-[11px] text-sky-300 hover:text-white bg-white/10 hover:bg-white/20 px-2.5 py-1.5 rounded-lg border border-white/15 font-semibold flex items-center gap-1.5 self-start cursor-pointer transition-all">
-                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-400"></i> Inserir no texto
-                </button>
-              </div>
-              <div class="p-3.5 bg-[#072152]/80 rounded-xl border border-[#1b3d7d] flex flex-col justify-between hover:border-sky-400/50 transition-colors">
-                <div>
-                  <span class="text-[11px] font-bold text-sky-300 block uppercase">3. Aplicação no Cotidiano</span>
-                  <p class="text-xs text-slate-200 mt-1.5 leading-relaxed">"Qual prática de escrita consciente ou mapeamento você incorporará nesta semana?"</p>
-                </div>
-                <button onclick="insertPrompt('Qual prática de escrita consciente ou mapeamento você incorporará nesta semana?')" class="mt-3 text-[11px] text-sky-300 hover:text-white bg-white/10 hover:bg-white/20 px-2.5 py-1.5 rounded-lg border border-white/15 font-semibold flex items-center gap-1.5 self-start cursor-pointer transition-all">
-                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-400"></i> Inserir no texto
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Textarea Amplo -->
+          <!-- Textarea Amplo com foco em leitura e escrita calma -->
           <div>
             <textarea 
               id="reflection-textarea" 
-              rows="8"
-              placeholder="Comece sua reflexão aqui... O que ecoou em você durante a aula sobre o poder de escrever e mapear? Deixe o fluxo fluir livremente, sem pressa de perfeição formal."
-              class="w-full p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-slate-800 bg-slate-50/40 hover:bg-white focus:bg-white border border-slate-200 focus:border-sky-500 focus:ring-3 focus:ring-sky-100 rounded-xl transition-all outline-none"
+              rows="10"
+              placeholder="Escreva seu texto reflexivo aqui (mínimo de 500 a 800 caracteres)... Registre suas percepções, conexões cognitivas e ideias consolidadas pela escrita consciente e mapeamento mental."
+              class="w-full p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-slate-800 bg-slate-50/50 hover:bg-white focus:bg-white border border-slate-200 focus:border-sky-500 focus:ring-3 focus:ring-sky-100 rounded-xl transition-all outline-none"
             ></textarea>
             
             <div class="flex flex-wrap items-center justify-between gap-2 mt-2 px-1 text-xs text-slate-500">
@@ -441,7 +428,7 @@
                 <div id="text-progress-bar" class="h-full bg-sky-500 transition-all duration-300" style="width: 0%;"></div>
               </div>
               <div class="flex justify-between items-center text-[11px] text-slate-400 mt-1">
-                <span>Critério mínimo (100 caracteres)</span>
+                <span>Critério: no mínimo 500 a 800 caracteres</span>
                 <span id="text-progress-percent">0%</span>
               </div>
             </div>
@@ -486,7 +473,7 @@
             </div>
             <div id="check-text-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
               <span class="font-semibold block text-slate-800">3. Escrita Reflexiva</span>
-              <span id="check-text-sub" class="text-[11px] text-slate-500">Mínimo 100 caracteres</span>
+              <span id="check-text-sub" class="text-[11px] text-slate-500">Mínimo 500 a 800 caracteres</span>
             </div>
           </div>
         </div>
@@ -1206,18 +1193,19 @@
       document.getElementById('text-char-count').innerText = chars + ' caracteres';
       document.getElementById('text-word-count').innerText = words + ' palavras';
 
-      const progress = Math.min(100, Math.round((chars / 100) * 100));
+      // Progresso baseado no critério mínimo de 500 caracteres (faixa ideal 500 a 800)
+      const progress = Math.min(100, Math.round((chars / 500) * 100));
       document.getElementById('text-progress-bar').style.width = progress + '%';
       document.getElementById('text-progress-percent').innerText = progress + '%';
 
-      const isValid = chars >= 100;
+      const isValid = chars >= 500;
       const pill = document.getElementById('text-status-pill');
       if (isValid) {
         pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300';
-        pill.innerHTML = '✓ Reflexão Consistente';
+        pill.innerHTML = `✓ Texto Reflexivo Válido (${chars} carac.)`;
       } else {
         pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/10 border-white/20 text-slate-300';
-        pill.innerHTML = `Mínimo 100 caracteres (${chars}/100)`;
+        pill.innerHTML = `Mínimo de 500 a 800 caracteres (${chars}/500)`;
       }
     }
 
@@ -1237,7 +1225,7 @@
     // --- CHECKLIST & SUBMISSÃO ---
     function updateChecklist() {
       const isMapValid = nodes.length >= 4;
-      const isTextValid = reflectiveText.trim().length >= 100;
+      const isTextValid = reflectiveText.trim().length >= 500;
 
       const cVideo = document.getElementById('check-video-card');
       const sVideo = document.getElementById('check-video-sub');
@@ -1266,16 +1254,16 @@
         sText.innerText = `✓ ${reflectiveText.length} caracteres`;
       } else {
         cText.className = 'p-3 rounded-lg border bg-white border-amber-200 text-xs';
-        sText.innerText = `Faltam ${100 - reflectiveText.length} carac.`;
+        sText.innerText = `Faltam ${Math.max(0, 500 - reflectiveText.length)} carac. (mín. 500)`;
       }
     }
 
     function handleFinalSubmit() {
       const isMapValid = nodes.length >= 4;
-      const isTextValid = reflectiveText.trim().length >= 100;
+      const isTextValid = reflectiveText.trim().length >= 500;
 
       if (!isMapValid || !isTextValid) {
-        alert('Por favor, atenda aos critérios antes de enviar:\n- Mapa Mental: ao menos 4 nós\n- Escrita Reflexiva: ao menos 100 caracteres');
+        alert('Por favor, atenda aos critérios antes de enviar:\n- Mapa Mental: ao menos 4 nós\n- Escrita Reflexiva: no mínimo 500 a 800 caracteres');
         return;
       }
 
