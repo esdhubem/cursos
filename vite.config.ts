@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/esdhubem/',
+    base: '/cursos/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
