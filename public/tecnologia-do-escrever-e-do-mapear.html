@@ -83,59 +83,59 @@
 </head>
 <body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
 
-  <!-- ==================== HEADER (TOM DE AZUL PROFUNDO E ELEGANTE) ==================== -->
-  <header class="sticky top-0 z-40 bg-gradient-to-r from-[#031436] via-[#041d4c] to-[#02102e] border-b border-[#0f2c66] text-white shadow-lg">
-    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
+  <!-- ==================== HEADER (AZUL SERENO E COMPACTO NO SMARTPHONE) ==================== -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-[#1e40af] via-[#2563eb] to-[#0284c7] border-b border-blue-200/30 text-white shadow-md">
+    <div class="max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-2.5 sm:py-3 gap-2">
         <!-- Logo & Título -->
-        <div class="flex items-center gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-yellow-500 flex items-center justify-center text-slate-950 font-black shadow-md shrink-0">
-            <i data-lucide="sparkles" class="w-5 h-5"></i>
+        <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-yellow-500 flex items-center justify-center text-slate-950 font-black shadow-md shrink-0">
+            <i data-lucide="sparkles" class="w-4 h-4 sm:w-5 sm:h-5"></i>
           </div>
-          <div>
-            <div class="flex items-center gap-2 text-[11px] font-semibold tracking-wider text-sky-300 uppercase">
+          <div class="min-w-0">
+            <div class="hidden sm:flex items-center gap-2 text-[11px] font-semibold tracking-wider text-cyan-200 uppercase">
               <span>ESDHUBEM</span>
               <span class="text-white/30">·</span>
-              <span class="text-slate-300 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
+              <span class="text-blue-100 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
             </div>
-            <h1 class="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
+            <h1 class="text-sm sm:text-base md:text-lg font-bold text-white tracking-tight truncate">
               Tecnologia do Escrever e do Mapear
             </h1>
-            <div class="flex items-center gap-2 text-xs text-slate-300 mt-0.5">
+            <div class="hidden sm:flex items-center gap-2 text-xs text-blue-100 mt-0.5">
               <span>Módulo 3: Práticas Cognitivas</span>
               <span aria-hidden="true" class="text-white/30">·</span>
-              <span>Carga: 2h de imersão e prática</span>
+              <span>Carga: 2h</span>
               <span aria-hidden="true" class="text-white/30">·</span>
-              <span id="header-save-indicator" class="text-emerald-400 font-semibold flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Salvo automaticamente
+              <span id="header-save-indicator" class="text-emerald-300 font-semibold flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Salvo
               </span>
             </div>
           </div>
         </div>
 
         <!-- Progresso e Atalhos -->
-        <div class="flex flex-wrap items-center gap-2 sm:gap-4 justify-between md:justify-end">
-          <div class="hidden lg:flex items-center gap-3 text-xs text-slate-200 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15 backdrop-blur-sm">
-            <span class="font-bold text-sky-300">Trilha:</span>
+        <div class="flex items-center gap-2 shrink-0">
+          <div class="hidden lg:flex items-center gap-3 text-xs text-blue-100 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/20 backdrop-blur-sm">
+            <span class="font-bold text-cyan-200">Trilha:</span>
             <a href="#video-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
               <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
               <span>1. Vídeo</span>
             </a>
             <span class="text-white/20">|</span>
             <a href="#mindmap-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
-              <span class="w-2 h-2 rounded-full bg-sky-400 inline-block"></span>
-              <span>2. Mapa Mental</span>
+              <span class="w-2 h-2 rounded-full bg-sky-300 inline-block"></span>
+              <span>2. Mapa</span>
             </a>
             <span class="text-white/20">|</span>
             <a href="#reflection-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
-              <span class="w-2 h-2 rounded-full bg-indigo-400 inline-block"></span>
-              <span>3. Reflexão</span>
+              <span class="w-2 h-2 rounded-full bg-amber-300 inline-block"></span>
+              <span>3. Texto</span>
             </a>
           </div>
 
-          <a href="#submission-section" class="px-4 py-2 text-xs font-bold rounded-xl bg-[#FFC72C] hover:bg-[#F5B014] text-slate-950 shadow-md transition-transform hover:scale-105 flex items-center gap-1.5">
-            <i data-lucide="award" class="w-4 h-4"></i>
-            <span>Concluir Aula</span>
+          <a href="#submission-section" class="px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-bold rounded-xl bg-[#FFC72C] hover:bg-[#F5B014] text-slate-950 shadow-md transition-transform hover:scale-105 flex items-center gap-1.5 shrink-0">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            <span>Concluir</span>
           </a>
         </div>
       </div>
@@ -288,33 +288,39 @@
         </div>
 
         <!-- Painel / Inspetor de Edição Rápida do Bloco Selecionado -->
-        <div id="inspector-bar" class="bg-[#1e40af] border-b border-blue-200/30 p-3 sm:px-6 flex flex-wrap items-center justify-between gap-3 text-white">
-          <div class="flex flex-1 items-center gap-3 min-w-[280px]">
-            <span class="text-xs font-bold text-cyan-200 shrink-0 flex items-center gap-1.5">
-              <i data-lucide="edit-3" class="w-3.5 h-3.5 text-cyan-300"></i>
-              <span id="inspector-label">Nó Selecionado:</span>
-            </span>
-            <input 
-              type="text" 
-              id="inspector-input" 
-              placeholder="Digite o texto deste bloco..." 
-              class="flex-1 max-w-md text-xs sm:text-sm bg-white/15 text-white placeholder-blue-100/70 border border-white/25 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-cyan-300 font-medium"
-            >
-            <button id="btn-add-child-selected" class="px-3 py-1.5 bg-sky-500 hover:bg-sky-400 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center gap-1 cursor-pointer">
-              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
-              <span>+ Ramo Filho</span>
-            </button>
-            <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 border border-rose-300/40 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1 cursor-pointer">
-              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
-              <span>Apagar Nó</span>
-            </button>
+        <div id="inspector-bar" class="bg-[#1e40af] border-b border-blue-200/30 p-3 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-white">
+          <!-- Linha do Nome do Nó e Botões de Ação -->
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 flex-1 w-full">
+            <div class="flex items-center gap-2 w-full sm:flex-1">
+              <span class="text-xs font-bold text-cyan-200 shrink-0 flex items-center gap-1">
+                <i data-lucide="edit-3" class="w-3.5 h-3.5 text-cyan-300"></i>
+                <span id="inspector-label">Nó:</span>
+              </span>
+              <input 
+                type="text" 
+                id="inspector-input" 
+                placeholder="Digite o texto do bloco..." 
+                class="flex-1 w-full text-xs sm:text-sm bg-white/15 text-white placeholder-blue-100/70 border border-white/25 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-cyan-300 font-medium"
+              >
+            </div>
+            
+            <div class="flex items-center gap-2 w-full sm:w-auto">
+              <button id="btn-add-child-selected" class="flex-1 sm:flex-none px-3 py-1.5 bg-sky-500 hover:bg-sky-400 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center justify-center gap-1 cursor-pointer">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                <span>+ Ramo Filho</span>
+              </button>
+              <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 border border-rose-300/40 text-xs font-semibold rounded-lg transition-colors flex items-center justify-center gap-1 cursor-pointer" title="Apagar Nó">
+                <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                <span>Apagar</span>
+              </button>
+            </div>
           </div>
 
           <!-- Cores e Mover por Setas -->
-          <div class="flex items-center gap-3">
+          <div class="flex items-center justify-between sm:justify-end gap-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-white/15 w-full sm:w-auto">
             <div class="flex items-center gap-1" id="color-picker-container"></div>
             <!-- Setas de Mover -->
-            <div class="flex items-center bg-white/15 border border-white/25 rounded-lg p-0.5">
+            <div class="flex items-center bg-white/15 border border-white/25 rounded-lg p-0.5 shrink-0">
               <button onclick="nudgeSelected(-25, 0)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
               <button onclick="nudgeSelected(25, 0)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
               <button onclick="nudgeSelected(0, -25)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
@@ -323,18 +329,17 @@
           </div>
         </div>
 
-        <!-- Barra de Ferramentas Global -->
-        <div class="bg-gradient-to-r from-[#1e3a8a] to-[#1e40af] px-4 sm:px-6 py-2.5 border-b border-blue-200/30 flex flex-wrap items-center justify-between gap-2 text-xs text-white">
+        <!-- Barra de Ferramentas Global (Limpa e sem botões desnecessários) -->
+        <div class="bg-gradient-to-r from-[#1e3a8a] to-[#1e40af] px-3 sm:px-6 py-2.5 border-b border-blue-200/30 flex flex-wrap items-center justify-between gap-2 text-xs text-white">
           <div class="flex flex-wrap items-center gap-2">
-            <button id="btn-add-new-branch" class="px-2.5 py-1.5 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-md font-medium flex items-center gap-1 cursor-pointer">
+            <button id="btn-add-new-branch" class="px-3 py-1.5 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-md font-medium flex items-center gap-1 cursor-pointer">
               <i data-lucide="plus" class="w-3.5 h-3.5 text-cyan-300"></i>
               <span>Novo Ramo (+ Ideia)</span>
             </button>
-            <button id="btn-load-preset" class="px-2.5 py-1.5 bg-sky-500/25 hover:bg-sky-500/35 text-cyan-200 border border-sky-300/40 rounded-md font-medium cursor-pointer">
-              Carregar Modelo Sugerido
-            </button>
-            <button id="btn-reset-map" class="p-1.5 bg-white/15 hover:bg-white/25 text-blue-100 border border-white/25 rounded-md cursor-pointer" title="Reiniciar do zero">
+            
+            <button id="btn-load-preset" class="px-3 py-1.5 bg-sky-500/25 hover:bg-sky-500/35 text-cyan-200 border border-sky-300/40 rounded-md font-medium flex items-center gap-1.5 cursor-pointer" title="Reiniciar mapa mental para o início da aula">
               <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+              <span>Reiniciar Mapa</span>
             </button>
           </div>
 
@@ -345,10 +350,6 @@
               <button onclick="adjustZoom(0.15)" class="p-1 text-blue-100 hover:text-white cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
               <button onclick="centerRootNode()" class="p-1 text-blue-100 hover:text-white border-l border-white/25 cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
             </div>
-            <button id="btn-export-json" class="px-2.5 py-1.5 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-md font-medium flex items-center gap-1 cursor-pointer">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-blue-100"></i>
-              <span>Exportar</span>
-            </button>
           </div>
         </div>
 
@@ -838,31 +839,18 @@
         deleteNode(selectedNodeId);
       });
 
-      document.getElementById('btn-load-preset').addEventListener('click', () => {
-        if (confirm('Carregar o modelo de aula sugerido?')) {
-          nodes = JSON.parse(JSON.stringify(DEFAULT_NODES));
-          selectedNodeId = 'root';
-          centerRootNode();
-          saveAndRender();
-        }
-      });
-
-      document.getElementById('btn-reset-map').addEventListener('click', () => {
-        if (confirm('Deseja reiniciar mantendo apenas o tema central?')) {
-          nodes = [{ id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#06B6D4', isRoot: true }];
-          selectedNodeId = 'root';
-          centerRootNode();
-          saveAndRender();
-        }
-      });
-
-      document.getElementById('btn-export-json').addEventListener('click', () => {
-        const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(nodes, null, 2));
-        const a = document.createElement('a');
-        a.href = dataStr;
-        a.download = `mapa_mental_esdhubem_${Date.now()}.json`;
-        a.click();
-      });
+      const btnLoadPreset = document.getElementById('btn-load-preset');
+      if (btnLoadPreset) {
+        btnLoadPreset.addEventListener('click', () => {
+          if (confirm('Deseja reiniciar o mapa mental para o modelo inicial da aula?')) {
+            nodes = JSON.parse(JSON.stringify(DEFAULT_NODES));
+            selectedNodeId = 'root';
+            centerRootNode();
+            saveAndRender();
+            updateChecklist();
+          }
+        });
+      }
 
       textarea.addEventListener('input', (e) => {
         reflectiveText = e.target.value;
