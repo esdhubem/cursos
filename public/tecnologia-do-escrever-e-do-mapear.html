@@ -428,7 +428,7 @@
               </div>
             </div>
 
-            <!-- Barra de Progresso -->
+            <!-- Barra de Progresso da Escrita -->
             <div class="mt-3">
               <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
                 <div id="text-progress-bar" class="h-full bg-sky-500 transition-all duration-300" style="width: 0%;"></div>
@@ -439,6 +439,98 @@
               </div>
             </div>
           </div>
+
+          <!-- ==================== GRAVADOR DE ÁUDIO REFLEXIVO ==================== -->
+          <div class="mt-6 pt-5 border-t border-slate-200/80">
+            <div class="rounded-2xl border-2 border-indigo-100 bg-gradient-to-r from-slate-50 via-sky-50/40 to-indigo-50/30 p-4 sm:p-5 shadow-xs">
+              
+              <!-- Cabeçalho do Gravador -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-200/60">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-xs shrink-0">
+                    <i data-lucide="mic" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                      Gravação de Relato em Áudio
+                      <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-2 py-0.5 rounded-md border border-amber-300/60">Obrigatório</span>
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Grave sua síntese falada com suas palavras sobre o aprendizado da aula (até 3 minutos).
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Status Pill do Áudio -->
+                <div id="audio-status-pill" class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-amber-400/15 border-amber-400 text-amber-800 self-start sm:self-auto">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> <span>🟡 Pendente de gravação</span>
+                </div>
+              </div>
+
+              <!-- Área de Interação e Gravação -->
+              <div class="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                
+                <!-- Botões de Ação -->
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <!-- Botão Iniciar / Parar -->
+                  <button 
+                    id="btn-record-audio" 
+                    type="button"
+                    onclick="toggleAudioRecording()"
+                    class="px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-red-600 hover:bg-red-700 text-white hover:shadow-md"
+                  >
+                    <i data-lucide="circle-dot" class="w-4 h-4"></i>
+                    <span id="btn-record-text">Iniciar Gravação de Áudio</span>
+                  </button>
+
+                  <!-- Botão Regravar (Aparece após gravar) -->
+                  <button 
+                    id="btn-re-record" 
+                    type="button"
+                    onclick="reRecordAudio()"
+                    class="hidden px-3.5 py-2 text-xs font-semibold rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 transition-colors flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+                    <span>Gravar Novamente</span>
+                  </button>
+
+                  <!-- Botão Excluir Áudio -->
+                  <button 
+                    id="btn-delete-audio" 
+                    type="button"
+                    onclick="deleteAudioRecording()"
+                    class="hidden px-3 py-2 text-xs font-semibold rounded-xl border border-rose-200 text-rose-600 hover:bg-rose-50 transition-colors flex items-center gap-1 cursor-pointer"
+                    title="Excluir gravação"
+                  >
+                    <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+
+                <!-- Timer e Ondas Sonoras -->
+                <div class="flex items-center gap-3 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-2xs">
+                  <div id="audio-rec-dot" class="hidden w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></div>
+                  <span id="audio-timer" class="font-mono text-xs font-bold text-slate-700">00:00 / 03:00</span>
+                  <!-- Ondas Sonoras CSS animadas durante a gravação -->
+                  <div id="audio-waveform-bars" class="hidden items-center gap-0.5 h-4">
+                    <span class="w-1 bg-red-500 rounded-full animate-pulse h-2"></span>
+                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-4" style="animation-delay: 0.1s"></span>
+                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-3" style="animation-delay: 0.2s"></span>
+                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-4" style="animation-delay: 0.3s"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reprodutor de Áudio (Aparece quando a gravação é concluída) -->
+              <div id="audio-player-container" class="hidden mt-4 pt-3 border-t border-slate-200/80">
+                <span class="text-[11px] font-bold text-slate-600 uppercase tracking-wider block mb-1.5">
+                  ✓ Áudio pronto. Ouça seu relato antes de enviar:
+                </span>
+                <audio id="recorded-audio-element" controls class="w-full h-10 rounded-lg outline-none"></audio>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -449,51 +541,134 @@
     </div>
     <!-- FIM LAYOUT EM DUAS COLUNAS -->
 
-    <!-- 4. ENVIO E VALIDAÇÃO DA ATIVIDADE -->
+    <!-- 4. ENVIO E VALIDAÇÃO DA ATIVIDADE (QUADRO AZUL DESTACADO COM REQUISITOS SEMÁFORO) -->
     <section id="submission-section" class="scroll-mt-20">
-      <div class="bg-white rounded-2xl border border-sky-100 shadow-sm overflow-hidden p-6 sm:p-8 text-center max-w-3xl mx-auto space-y-6">
-        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 text-sky-700">
-          <i data-lucide="send" class="w-6 h-6"></i>
+      <div class="bg-gradient-to-b from-[#061436] via-[#081c4b] to-[#04102c] border-2 border-[#163573] shadow-2xl rounded-3xl p-6 sm:p-8 text-center max-w-3xl mx-auto space-y-6 text-white">
+        
+        <!-- Ícone topo em destaque -->
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-sky-500/20 border-2 border-sky-400/40 text-[#00dfc4] shadow-lg">
+          <i data-lucide="send" class="w-7 h-7"></i>
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold text-slate-900 tracking-tight">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
             Envio e Validação da Atividade Completa
           </h3>
-          <p class="text-sm text-slate-600 mt-1 max-w-xl mx-auto">
-            Ao enviar, nosso sistema valida o cumprimento das etapas reflexivas e emite o registro de conclusão da ESDHubem.
+          <p class="text-sm text-slate-300 mt-1.5 max-w-xl mx-auto">
+            Ao enviar, nosso sistema valida o cumprimento das etapas reflexivas e emite o registro oficial de conclusão da ESDHUBEM.
           </p>
         </div>
 
-        <!-- Checklist de Validação -->
-        <div class="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200 text-left space-y-3">
-          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Requisitos da Aula:</span>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div id="check-video-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
-              <span class="font-semibold block text-slate-800">1. Videoaula</span>
-              <span id="check-video-sub" class="text-[11px] text-slate-500">Pendente de visualização</span>
-            </div>
-            <div id="check-map-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
-              <span class="font-semibold block text-slate-800">2. Mapa Mental</span>
-              <span id="check-map-sub" class="text-[11px] text-slate-500">Mínimo 4 nós</span>
-            </div>
-            <div id="check-text-card" class="p-3 rounded-lg border bg-white border-slate-200 text-xs">
-              <span class="font-semibold block text-slate-800">3. Escrita Reflexiva</span>
-              <span id="check-text-sub" class="text-[11px] text-slate-500">Mínimo 500 a 800 caracteres</span>
-            </div>
+        <!-- Checklist de Validação: 4 Cards estilo Semáforo (Amarelo / Verde) -->
+        <div class="bg-[#05112e]/90 rounded-2xl p-4 sm:p-6 border border-[#163573] text-left space-y-4 shadow-inner">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-sky-300 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i>
+              Requisitos da Aula (Semáforo de Conclusão):
+            </span>
+            <span id="requirements-counter" class="text-xs font-bold text-amber-300 bg-amber-400/10 px-2.5 py-1 rounded-lg border border-amber-400/30">
+              0 de 4 Concluídos
+            </span>
           </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            
+            <!-- 1. Videoaula -->
+            <div id="check-video-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
+              <div>
+                <span class="font-bold block text-sm text-white">1. Videoaula</span>
+                <span id="check-video-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Pendente</span>
+              </div>
+              <button 
+                id="btn-card-watch" 
+                type="button"
+                onclick="toggleWatchedVideoQuick()" 
+                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs"
+              >
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span id="btn-card-watch-text">Concluir Aula</span>
+              </button>
+            </div>
+
+            <!-- 2. Mapa Mental -->
+            <div id="check-map-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
+              <div>
+                <span class="font-bold block text-sm text-white">2. Mapa Mental</span>
+                <span id="check-map-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Mínimo 4 nós</span>
+              </div>
+              <a 
+                href="#canvas-container" 
+                id="btn-card-map"
+                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
+              >
+                <i data-lucide="git-branch" class="w-3.5 h-3.5"></i>
+                <span id="btn-card-map-text">Criar Nós</span>
+              </a>
+            </div>
+
+            <!-- 3. Escrita Reflexiva -->
+            <div id="check-text-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
+              <div>
+                <span class="font-bold block text-sm text-white">3. Escrita Reflexiva</span>
+                <span id="check-text-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Mín. 500 carac.</span>
+              </div>
+              <a 
+                href="#reflection-textarea" 
+                id="btn-card-text"
+                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
+              >
+                <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+                <span id="btn-card-text-text">Escrever Texto</span>
+              </a>
+            </div>
+
+            <!-- 4. Áudio Reflexivo -->
+            <div id="check-audio-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
+              <div>
+                <span class="font-bold block text-sm text-white">4. Áudio Reflexivo</span>
+                <span id="check-audio-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Gravação pendente</span>
+              </div>
+              <a 
+                href="#audio-recorder-container" 
+                id="btn-card-audio"
+                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
+              >
+                <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+                <span id="btn-card-audio-text">Gravar Áudio</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Onde a seta aponta: Faixa de Status de Liberação -->
+          <div id="release-status-banner" class="mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-amber-500/15 border-amber-400 text-amber-200 shadow-xs">
+            <div class="flex items-center gap-2.5">
+              <span id="release-status-icon" class="w-3.5 h-3.5 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+              <span id="release-status-text">Complete os requisitos pendentes (em amarelo) acima para liberar o envio da aula.</span>
+            </div>
+            <span id="release-status-badge" class="px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-amber-500/30 text-amber-300 border border-amber-400/40 font-bold shrink-0">
+              Aguardando Requisitos
+            </span>
+          </div>
+
         </div>
 
-        <!-- Botão Principal de Envio -->
-        <div>
-          <button id="btn-submit-activity" class="px-8 py-3.5 text-base font-bold rounded-xl transition-all shadow-md bg-sky-600 hover:bg-sky-700 text-white flex items-center gap-2 mx-auto cursor-pointer">
-            <i data-lucide="send" class="w-4 h-4"></i>
-            <span>Enviar Atividade Completa</span>
+        <!-- Botão Principal de Envio (Muda de Laranja para Amarelo após Envio) -->
+        <div class="space-y-3 pt-2">
+          <button 
+            id="btn-submit-activity" 
+            onclick="handleFinalSubmit()"
+            class="w-full sm:w-auto px-10 py-4 text-base font-black rounded-2xl transition-all shadow-xl flex items-center justify-center gap-2.5 mx-auto cursor-pointer bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 hover:scale-[1.02] active:scale-[0.98] border-2 border-yellow-300/40"
+          >
+            <i data-lucide="send" class="w-5 h-5 text-slate-950"></i>
+            <span id="btn-submit-text">Enviar Atividade Completa</span>
           </button>
-          <p class="text-xs text-slate-400 mt-2">
-            Seus dados permanecem salvos em seu navegador.
+          
+          <p id="submission-footer-note" class="text-xs text-slate-400">
+            Seus dados e gravações permanecem salvos em seu navegador.
           </p>
         </div>
+
       </div>
     </section>
 
@@ -505,23 +680,32 @@
       <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-sky-50/70">
         <div class="flex items-center gap-2">
           <i data-lucide="award" class="w-5 h-5 text-sky-700"></i>
-          <h4 class="text-base font-bold text-slate-900">Comprovante de Conclusão · ESDHubem</h4>
+          <h4 class="text-base font-bold text-slate-900">Comprovante de Conclusão · ESDHUBEM</h4>
         </div>
         <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700"><i data-lucide="x" class="w-5 h-5"></i></button>
       </div>
       <div class="p-6 space-y-4">
         <div>
           <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Nome Completo:</label>
-          <input type="text" id="modal-student-name" value="Estudante ESDHubem" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-lg outline-none focus:border-sky-500">
+          <input type="text" id="modal-student-name" value="Estudante ESDHUBEM" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-lg outline-none focus:border-sky-500">
         </div>
         <div class="border border-slate-200 rounded-xl p-4 bg-slate-50 text-xs space-y-2">
           <p class="text-slate-500 uppercase font-semibold text-[10px]">Resumo da Entrega:</p>
           <p><strong>Aula:</strong> Tecnologia do Escrever e do Mapear</p>
           <p id="modal-summary-nodes"><strong>Mapa Mental:</strong> 0 nós estruturados</p>
           <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
+          <p id="modal-summary-audio"><strong>Áudio Reflexivo:</strong> Pendente</p>
+          
+          <div id="modal-audio-container" class="hidden pt-2">
+            <span class="block text-[11px] font-bold text-slate-600 mb-1">Áudio Gravado:</span>
+            <audio id="modal-audio-element" controls class="w-full h-8"></audio>
+          </div>
         </div>
-        <div class="flex items-center justify-end gap-2 pt-2">
-          <button onclick="downloadSummaryFile()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
+        <div class="flex flex-wrap items-center justify-end gap-2 pt-2">
+          <button id="btn-modal-download-audio" onclick="downloadAudioFile()" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
+            <i data-lucide="music" class="w-3.5 h-3.5"></i> Baixar Áudio
+          </button>
+          <button onclick="downloadSummaryFile()" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Comprovante (.txt)
           </button>
           <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
@@ -735,6 +919,7 @@
       centerRootNode();
       saveAndRender();
       updateVideoBtn();
+      updateChecklist();
       lucide.createIcons();
     }
 
@@ -1228,55 +1413,404 @@
       textarea.focus();
     }
 
-    // --- CHECKLIST & SUBMISSÃO ---
-    function updateChecklist() {
-      const isMapValid = nodes.length >= 4;
-      const isTextValid = reflectiveText.trim().length >= 500;
+    // --- GRAVADOR DE ÁUDIO REFLEXIVO ---
+    let mediaRecorder = null;
+    let audioStream = null;
+    let audioChunks = [];
+    let audioBlob = null;
+    let audioUrl = null;
+    let audioDurationSec = 0;
+    let audioTimerInterval = null;
+    let isRecordingAudio = false;
+    let hasAudioRecorded = false;
+    let isActivitySubmitted = false;
 
-      const cVideo = document.getElementById('check-video-card');
-      const sVideo = document.getElementById('check-video-sub');
-      if (hasWatchedVideo) {
-        cVideo.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
-        sVideo.innerText = '✓ Conteúdo assistido';
+    async function toggleAudioRecording() {
+      if (isRecordingAudio) {
+        stopAudioRecording();
       } else {
-        cVideo.className = 'p-3 rounded-lg border bg-white border-slate-200 text-xs';
-        sVideo.innerText = 'Pendente';
-      }
-
-      const cMap = document.getElementById('check-map-card');
-      const sMap = document.getElementById('check-map-sub');
-      if (isMapValid) {
-        cMap.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
-        sMap.innerText = `✓ ${nodes.length} nós criados`;
-      } else {
-        cMap.className = 'p-3 rounded-lg border bg-white border-amber-200 text-xs';
-        sMap.innerText = `Faltam ${4 - nodes.length} nós`;
-      }
-
-      const cText = document.getElementById('check-text-card');
-      const sText = document.getElementById('check-text-sub');
-      if (isTextValid) {
-        cText.className = 'p-3 rounded-lg border bg-emerald-50/50 border-emerald-200 text-emerald-900 text-xs';
-        sText.innerText = `✓ ${reflectiveText.length} caracteres`;
-      } else {
-        cText.className = 'p-3 rounded-lg border bg-white border-amber-200 text-xs';
-        sText.innerText = `Faltam ${Math.max(0, 500 - reflectiveText.length)} carac. (mín. 500)`;
+        await startAudioRecording();
       }
     }
 
+    async function startAudioRecording() {
+      try {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+          alert('Seu navegador não possui suporte direto a gravação pelo microfone. Utilize um navegador atualizado.');
+          return;
+        }
+
+        audioChunks = [];
+        audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        
+        let mimeType = 'audio/webm';
+        if (typeof MediaRecorder.isTypeSupported === 'function') {
+          if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+            mimeType = 'audio/webm;codecs=opus';
+          } else if (MediaRecorder.isTypeSupported('audio/mp4')) {
+            mimeType = 'audio/mp4';
+          } else if (MediaRecorder.isTypeSupported('audio/ogg')) {
+            mimeType = 'audio/ogg';
+          }
+        }
+
+        mediaRecorder = new MediaRecorder(audioStream, { mimeType });
+
+        mediaRecorder.ondataavailable = (event) => {
+          if (event.data && event.data.size > 0) {
+            audioChunks.push(event.data);
+          }
+        };
+
+        mediaRecorder.onstop = () => {
+          audioBlob = new Blob(audioChunks, { type: mimeType });
+          if (audioUrl) URL.revokeObjectURL(audioUrl);
+          audioUrl = URL.createObjectURL(audioBlob);
+
+          const audioElement = document.getElementById('recorded-audio-element');
+          if (audioElement) {
+            audioElement.src = audioUrl;
+          }
+          const modalAudio = document.getElementById('modal-audio-element');
+          if (modalAudio) {
+            modalAudio.src = audioUrl;
+          }
+          document.getElementById('audio-player-container')?.classList.remove('hidden');
+          document.getElementById('modal-audio-container')?.classList.remove('hidden');
+          document.getElementById('btn-re-record')?.classList.remove('hidden');
+          document.getElementById('btn-delete-audio')?.classList.remove('hidden');
+
+          hasAudioRecorded = true;
+
+          // Atualizar status do card de áudio
+          const pill = document.getElementById('audio-status-pill');
+          if (pill) {
+            pill.className = 'inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-emerald-500/20 border-emerald-400 text-emerald-800 self-start sm:self-auto shadow-sm';
+            pill.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> <span>✓ Áudio Gravado (${formatDuration(audioDurationSec)})</span>`;
+          }
+
+          updateChecklist();
+          if (window.lucide) lucide.createIcons();
+        };
+
+        mediaRecorder.start(250);
+        isRecordingAudio = true;
+        audioDurationSec = 0;
+
+        // UI durante gravação
+        const btnRec = document.getElementById('btn-record-audio');
+        if (btnRec) {
+          btnRec.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer bg-slate-900 hover:bg-black text-white animate-pulse';
+        }
+        document.getElementById('btn-record-text').innerText = 'Parar Gravação (Concluir)';
+        document.getElementById('audio-rec-dot')?.classList.remove('hidden');
+        document.getElementById('audio-waveform-bars')?.classList.remove('hidden');
+        document.getElementById('audio-waveform-bars')?.classList.add('flex');
+
+        audioTimerInterval = setInterval(() => {
+          audioDurationSec++;
+          const timerEl = document.getElementById('audio-timer');
+          if (timerEl) {
+            timerEl.innerText = formatDuration(audioDurationSec) + ' / 03:00';
+          }
+          if (audioDurationSec >= 180) {
+            stopAudioRecording();
+          }
+        }, 1000);
+
+      } catch (err) {
+        console.error('Erro microfone:', err);
+        alert('Não foi possível acessar seu microfone. Verifique se autorizou a permissão no navegador.');
+      }
+    }
+
+    function stopAudioRecording() {
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+      }
+      if (audioStream) {
+        audioStream.getTracks().forEach(track => track.stop());
+      }
+      isRecordingAudio = false;
+      clearInterval(audioTimerInterval);
+
+      const btn = document.getElementById('btn-record-audio');
+      if (btn) {
+        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white';
+        document.getElementById('btn-record-text').innerText = '✓ Áudio Gravado';
+      }
+      document.getElementById('audio-rec-dot')?.classList.add('hidden');
+      document.getElementById('audio-waveform-bars')?.classList.add('hidden');
+      document.getElementById('audio-waveform-bars')?.classList.remove('flex');
+    }
+
+    function reRecordAudio() {
+      if (confirm('Deseja regravar seu áudio? O anterior será substituído.')) {
+        deleteAudioRecording(false);
+        startAudioRecording();
+      }
+    }
+
+    function deleteAudioRecording(askConfirm = true) {
+      if (askConfirm && !confirm('Deseja excluir a gravação de áudio atual?')) return;
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+      }
+      if (audioStream) {
+        audioStream.getTracks().forEach(track => track.stop());
+      }
+      isRecordingAudio = false;
+      hasAudioRecorded = false;
+      audioBlob = null;
+      if (audioUrl) {
+        URL.revokeObjectURL(audioUrl);
+        audioUrl = null;
+      }
+      clearInterval(audioTimerInterval);
+      audioDurationSec = 0;
+
+      const timerEl = document.getElementById('audio-timer');
+      if (timerEl) timerEl.innerText = '00:00 / 03:00';
+
+      document.getElementById('audio-player-container')?.classList.add('hidden');
+      document.getElementById('modal-audio-container')?.classList.add('hidden');
+      document.getElementById('btn-re-record')?.classList.add('hidden');
+      document.getElementById('btn-delete-audio')?.classList.add('hidden');
+      document.getElementById('audio-rec-dot')?.classList.add('hidden');
+      document.getElementById('audio-waveform-bars')?.classList.add('hidden');
+      document.getElementById('audio-waveform-bars')?.classList.remove('flex');
+
+      const btn = document.getElementById('btn-record-audio');
+      if (btn) {
+        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-red-600 hover:bg-red-700 text-white hover:shadow-md';
+        document.getElementById('btn-record-text').innerText = 'Iniciar Gravação de Áudio';
+      }
+
+      const pill = document.getElementById('audio-status-pill');
+      if (pill) {
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-amber-400/15 border-amber-400 text-amber-800 self-start sm:self-auto';
+        pill.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> <span>🟡 Pendente de gravação</span>`;
+      }
+
+      updateChecklist();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function formatDuration(sec) {
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    function downloadAudioFile() {
+      if (!audioBlob) {
+        alert('Nenhum áudio gravado para download.');
+        return;
+      }
+      const a = document.createElement('a');
+      a.href = audioUrl || URL.createObjectURL(audioBlob);
+      a.download = `audio_reflexivo_esdhubem_${Date.now()}.webm`;
+      a.click();
+    }
+
+    // Alternar conclusão rápida da videoaula
+    function toggleWatchedVideoQuick() {
+      hasWatchedVideo = !hasWatchedVideo;
+      localStorage.setItem('esdhubem_gh_watched', hasWatchedVideo ? 'true' : 'false');
+      const activeLesson = LESSONS_DATA[currentLessonIndex];
+      if (hasWatchedVideo) {
+        if (!completedLessonIds.includes(activeLesson.id)) {
+          completedLessonIds.push(activeLesson.id);
+          localStorage.setItem('esdhubem_completed_lessons', JSON.stringify(completedLessonIds));
+        }
+      } else {
+        completedLessonIds = completedLessonIds.filter(id => id !== activeLesson.id);
+        localStorage.setItem('esdhubem_completed_lessons', JSON.stringify(completedLessonIds));
+      }
+      updateVideoBtn();
+      renderSidebarLessons();
+      updateChecklist();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // --- CHECKLIST & SUBMISSÃO COM SEMÁFORO (AMARELO / VERDE) ---
+    function updateChecklist() {
+      const isMapValid = nodes.length >= 4;
+      const isTextValid = reflectiveText.trim().length >= 500;
+      const isVideoValid = hasWatchedVideo;
+      const isAudioValid = hasAudioRecorded;
+
+      // 1. VIDEOAULA
+      const cVideo = document.getElementById('check-video-card');
+      const sVideo = document.getElementById('check-video-sub');
+      const bVideo = document.getElementById('btn-card-watch');
+      const bVideoText = document.getElementById('btn-card-watch-text');
+
+      if (isVideoValid) {
+        cVideo.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
+        sVideo.className = 'text-xs mt-1 block font-bold text-emerald-300';
+        sVideo.innerText = '🟢 Conteúdo assistido';
+        if (bVideo) {
+          bVideo.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs';
+          bVideoText.innerText = 'Concluída ✓';
+        }
+      } else {
+        cVideo.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
+        sVideo.className = 'text-xs mt-1 block font-bold text-amber-300';
+        sVideo.innerText = '🟡 Pendente';
+        if (bVideo) {
+          bVideo.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs';
+          bVideoText.innerText = 'Concluir Aula';
+        }
+      }
+
+      // 2. MAPA MENTAL
+      const cMap = document.getElementById('check-map-card');
+      const sMap = document.getElementById('check-map-sub');
+      const bMap = document.getElementById('btn-card-map');
+      const bMapText = document.getElementById('btn-card-map-text');
+
+      if (isMapValid) {
+        cMap.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
+        sMap.className = 'text-xs mt-1 block font-bold text-emerald-300';
+        sMap.innerText = `🟢 ${nodes.length} nós criados`;
+        if (bMap) {
+          bMap.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
+          bMapText.innerText = 'Ver Mapa ✓';
+        }
+      } else {
+        cMap.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
+        sMap.className = 'text-xs mt-1 block font-bold text-amber-300';
+        sMap.innerText = `🟡 Faltam ${4 - nodes.length} nós`;
+        if (bMap) {
+          bMap.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
+          bMapText.innerText = 'Criar Nós';
+        }
+      }
+
+      // 3. ESCRITA REFLEXIVA
+      const cText = document.getElementById('check-text-card');
+      const sText = document.getElementById('check-text-sub');
+      const bText = document.getElementById('btn-card-text');
+      const bTextText = document.getElementById('btn-card-text-text');
+
+      if (isTextValid) {
+        cText.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
+        sText.className = 'text-xs mt-1 block font-bold text-emerald-300';
+        sText.innerText = `🟢 ${reflectiveText.length} carac.`;
+        if (bText) {
+          bText.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
+          bTextText.innerText = 'Ver Texto ✓';
+        }
+      } else {
+        cText.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
+        sText.className = 'text-xs mt-1 block font-bold text-amber-300';
+        sText.innerText = `🟡 Mín. 500 carac. (${reflectiveText.length}/500)`;
+        if (bText) {
+          bText.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
+          bTextText.innerText = 'Escrever Texto';
+        }
+      }
+
+      // 4. ÁUDIO REFLEXIVO
+      const cAudio = document.getElementById('check-audio-card');
+      const sAudio = document.getElementById('check-audio-sub');
+      const bAudio = document.getElementById('btn-card-audio');
+      const bAudioText = document.getElementById('btn-card-audio-text');
+
+      if (isAudioValid) {
+        cAudio.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
+        sAudio.className = 'text-xs mt-1 block font-bold text-emerald-300';
+        sAudio.innerText = `🟢 Gravado (${formatDuration(audioDurationSec)})`;
+        if (bAudio) {
+          bAudio.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
+          bAudioText.innerText = 'Ouvir Áudio ✓';
+        }
+      } else {
+        cAudio.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
+        sAudio.className = 'text-xs mt-1 block font-bold text-amber-300';
+        sAudio.innerText = '🟡 Gravação pendente';
+        if (bAudio) {
+          bAudio.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
+          bAudioText.innerText = 'Gravar Áudio';
+        }
+      }
+
+      // Contador de Requisitos
+      const completedCount = [isVideoValid, isMapValid, isTextValid, isAudioValid].filter(Boolean).length;
+      const counterEl = document.getElementById('requirements-counter');
+      if (counterEl) {
+        if (completedCount === 4) {
+          counterEl.className = 'text-xs font-bold text-emerald-300 bg-emerald-500/20 px-2.5 py-1 rounded-lg border border-emerald-400/40';
+          counterEl.innerText = '4 de 4 Concluídos ✓';
+        } else {
+          counterEl.className = 'text-xs font-bold text-amber-300 bg-amber-400/10 px-2.5 py-1 rounded-lg border border-amber-400/30';
+          counterEl.innerText = `${completedCount} de 4 Concluídos`;
+        }
+      }
+
+      // ONDE A SETA APONTA: Banner de Liberação de Envio
+      const banner = document.getElementById('release-status-banner');
+      const bIcon = document.getElementById('release-status-icon');
+      const bTextStatus = document.getElementById('release-status-text');
+      const bBadge = document.getElementById('release-status-badge');
+
+      if (completedCount === 4) {
+        banner.className = 'mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_20px_rgba(16,185,129,0.35)]';
+        bIcon.className = 'w-3.5 h-3.5 rounded-full bg-emerald-400 animate-ping shrink-0';
+        bTextStatus.innerText = '🟢 LIBERADO PARA ENVIO! Todos os 4 requisitos foram cumpridos com sucesso.';
+        bBadge.className = 'px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-emerald-500/40 text-emerald-100 border border-emerald-300 font-black shrink-0';
+        bBadge.innerText = 'Liberado para Envio';
+      } else {
+        banner.className = 'mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-amber-500/15 border-amber-400 text-amber-200 shadow-xs';
+        bIcon.className = 'w-3.5 h-3.5 rounded-full bg-amber-400 animate-pulse shrink-0';
+        bTextStatus.innerText = 'Complete os requisitos pendentes (em amarelo) acima para liberar o envio da aula.';
+        bBadge.className = 'px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-amber-500/30 text-amber-300 border border-amber-400/40 font-bold shrink-0';
+        bBadge.innerText = `Aguardando Requisitos (${completedCount}/4)`;
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // Ação do Botão Principal de Envio
     function handleFinalSubmit() {
       const isMapValid = nodes.length >= 4;
       const isTextValid = reflectiveText.trim().length >= 500;
+      const isVideoValid = hasWatchedVideo;
+      const isAudioValid = hasAudioRecorded;
 
-      if (!isMapValid || !isTextValid) {
-        alert('Por favor, atenda aos critérios antes de enviar:\n- Mapa Mental: ao menos 4 nós\n- Escrita Reflexiva: no mínimo 500 a 800 caracteres');
+      const missing = [];
+      if (!isVideoValid) missing.push('1. Videoaula (marcar como assistida)');
+      if (!isMapValid) missing.push('2. Mapa Mental (mínimo de 4 nós)');
+      if (!isTextValid) missing.push('3. Escrita Reflexiva (mínimo de 500 a 800 caracteres)');
+      if (!isAudioValid) missing.push('4. Áudio Reflexivo (gravar relato com sua voz)');
+
+      if (missing.length > 0) {
+        alert('Ainda faltam etapas pendentes (em amarelo) antes de enviar:\n\n' + missing.join('\n') + '\n\nCumpra as etapas para que o botão fique liberado!');
         return;
       }
 
+      // QUANDO A PESSOA ENVIAR: O BOTÃO DE BAIXO MUDA DE LARANJA PARA AMARELO DE TRÂNSITO!
+      isActivitySubmitted = true;
+      const btnSubmit = document.getElementById('btn-submit-activity');
+      if (btnSubmit) {
+        btnSubmit.className = 'w-full sm:w-auto px-10 py-4 text-base font-black rounded-2xl transition-all shadow-[0_0_25px_rgba(255,199,44,0.7)] flex items-center justify-center gap-2.5 mx-auto cursor-pointer bg-[#FFC72C] hover:bg-[#e5b327] text-slate-950 border-2 border-yellow-200 transform scale-105';
+        document.getElementById('btn-submit-text').innerText = '✓ Atividade Enviada com Sucesso!';
+      }
+
+      const note = document.getElementById('submission-footer-note');
+      if (note) {
+        note.innerHTML = '<span class="text-amber-300 font-extrabold flex items-center justify-center gap-1.5"><i data-lucide="check-check" class="w-4 h-4"></i> Atividade enviada e validada no sistema ESDHUBEM!</span>';
+      }
+
+      // Preencher dados do modal
       document.getElementById('modal-summary-nodes').innerHTML = `<strong>Mapa Mental:</strong> ${nodes.length} nós interconectados`;
       document.getElementById('modal-summary-text').innerHTML = `<strong>Texto Reflexivo:</strong> ${reflectiveText.length} caracteres preenchidos`;
+      document.getElementById('modal-summary-audio').innerHTML = `<strong>Áudio Reflexivo:</strong> Concluído e anexado (${formatDuration(audioDurationSec)})`;
+
       document.getElementById('completion-modal').classList.remove('hidden');
       document.getElementById('completion-modal').classList.add('flex');
+      if (window.lucide) lucide.createIcons();
     }
 
     function closeModal() {
