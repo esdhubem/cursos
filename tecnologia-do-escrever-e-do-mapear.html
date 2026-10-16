@@ -133,9 +133,9 @@
             </a>
           </div>
 
-          <a href="#submission-section" class="px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-bold rounded-xl bg-[#FFC72C] hover:bg-[#F5B014] text-slate-950 shadow-md transition-transform hover:scale-105 flex items-center gap-1.5 shrink-0">
-            <i data-lucide="award" class="w-3.5 h-3.5"></i>
-            <span>Concluir</span>
+          <a id="header-status-btn" href="#submission-section" class="px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-amber-300/40 cursor-pointer" title="Clique para rolar até as tarefas">
+            <span id="header-status-dot" class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+            <span id="header-status-btn-text">Cursando</span>
           </a>
         </div>
       </div>
@@ -696,6 +696,10 @@
           <p id="modal-summary-nodes"><strong>Mapa Mental:</strong> 0 nós estruturados</p>
           <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
           <p id="modal-summary-audio"><strong>Áudio Reflexivo:</strong> Pendente</p>
+          <p id="modal-summary-email" class="text-xs text-emerald-800 font-bold bg-emerald-100/80 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 border border-emerald-300">
+            <i data-lucide="mail-check" class="w-4 h-4 text-emerald-600"></i>
+            <span>Trabalho enviado para o e-mail: esdhubem@proton.me</span>
+          </p>
           
           <div id="modal-audio-container" class="hidden pt-2">
             <span class="block text-[11px] font-bold text-slate-600 mb-1">Áudio Gravado:</span>
@@ -703,14 +707,17 @@
           </div>
         </div>
         <div class="flex flex-wrap items-center justify-end gap-2 pt-2">
+          <a id="btn-modal-send-email" href="#" target="_blank" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg flex items-center gap-1.5 cursor-pointer shadow-sm">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i> Abrir E-mail Enviado
+          </a>
           <button id="btn-modal-download-audio" onclick="downloadAudioFile()" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="music" class="w-3.5 h-3.5"></i> Baixar Áudio
           </button>
           <button onclick="downloadSummaryFile()" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
-            <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Comprovante (.txt)
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar (.txt)
           </button>
           <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
-            <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir / PDF
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir
           </button>
         </div>
       </div>
@@ -908,6 +915,18 @@
       saveAndRender();
       updateVideoBtn();
       updateChecklist();
+
+      if (localStorage.getItem('esdhubem_activity_submitted') === 'true') {
+        const headerBtn = document.getElementById('header-status-btn');
+        const headerBtnText = document.getElementById('header-status-btn-text');
+        const headerBtnDot = document.getElementById('header-status-dot');
+        if (headerBtn) {
+          headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-emerald-300 cursor-pointer';
+          if (headerBtnText) headerBtnText.innerText = 'Cursado';
+          if (headerBtnDot) headerBtnDot.className = 'w-2 h-2 rounded-full bg-emerald-200';
+        }
+      }
+
       lucide.createIcons();
     }
 
@@ -1778,8 +1797,25 @@
         return;
       }
 
-      // QUANDO A PESSOA ENVIAR: O BOTÃO DE BAIXO MUDA DE LARANJA PARA AMARELO DE TRÂNSITO!
+      // 1. DISPARAR ENVIO POR E-MAIL PARA esdhubem@proton.me
+      sendAssignmentByEmail();
+
+      // 2. ATUALIZAR BOTÃO DO CABEÇALHO: DE "CURSANDO" (LARANJA) PARA "CURSADO" (VERDE)
       isActivitySubmitted = true;
+      localStorage.setItem('esdhubem_activity_submitted', 'true');
+
+      const headerBtn = document.getElementById('header-status-btn');
+      const headerBtnText = document.getElementById('header-status-btn-text');
+      const headerBtnDot = document.getElementById('header-status-dot');
+      if (headerBtn) {
+        headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-emerald-300 cursor-pointer';
+        if (headerBtnText) headerBtnText.innerText = 'Cursado';
+        if (headerBtnDot) {
+          headerBtnDot.className = 'w-2 h-2 rounded-full bg-emerald-200';
+        }
+      }
+
+      // 3. QUANDO A PESSOA ENVIAR: O BOTÃO DE BAIXO MUDA DE LARANJA PARA AMARELO DE TRÂNSITO!
       const btnSubmit = document.getElementById('btn-submit-activity');
       if (btnSubmit) {
         btnSubmit.className = 'w-full sm:w-auto px-10 py-4 text-base font-black rounded-2xl transition-all shadow-[0_0_25px_rgba(255,199,44,0.7)] flex items-center justify-center gap-2.5 mx-auto cursor-pointer bg-[#FFC72C] hover:bg-[#e5b327] text-slate-950 border-2 border-yellow-200 transform scale-105';
@@ -1788,17 +1824,68 @@
 
       const note = document.getElementById('submission-footer-note');
       if (note) {
-        note.innerHTML = '<span class="text-amber-300 font-extrabold flex items-center justify-center gap-1.5"><i data-lucide="check-check" class="w-4 h-4"></i> Atividade enviada e validada no sistema ESDHUBEM!</span>';
+        note.innerHTML = '<span class="text-amber-300 font-extrabold flex items-center justify-center gap-1.5"><i data-lucide="check-check" class="w-4 h-4"></i> Atividade enviada por e-mail (esdhubem@proton.me) e validada!</span>';
       }
 
       // Preencher dados do modal
       document.getElementById('modal-summary-nodes').innerHTML = `<strong>Mapa Mental:</strong> ${nodes.length} nós interconectados`;
       document.getElementById('modal-summary-text').innerHTML = `<strong>Texto Reflexivo:</strong> ${reflectiveText.length} caracteres preenchidos`;
-      document.getElementById('modal-summary-audio').innerHTML = `<strong>Áudio Reflexivo:</strong> Concluído e anexado (${formatDuration(audioDurationSec)})`;
+      document.getElementById('modal-summary-audio').innerHTML = `<strong>Áudio Reflexivo:</strong> Concluído (${formatDuration(audioDurationSec)})`;
 
       document.getElementById('completion-modal').classList.remove('hidden');
       document.getElementById('completion-modal').classList.add('flex');
       if (window.lucide) lucide.createIcons();
+    }
+
+    // Função para envio por e-mail para a escola
+    function sendAssignmentByEmail() {
+      const studentName = document.getElementById('modal-student-name')?.value || 'Estudante ESDHUBEM';
+      const emailBody = `ESDHUBEM - ESCOLA DE DESENVOLVIMENTO HUMANO E BEM-ESTAR
+ENTREGA DE ATIVIDADE CONCLUÍDA
+-----------------------------------------------------
+Aula: Tecnologia do Escrever e do Mapear
+Estudante: ${studentName}
+Data: ${new Date().toLocaleString('pt-BR')}
+
+1. TEXTO REFLEXIVO (${reflectiveText.length} caracteres):
+${reflectiveText}
+
+2. MAPA MENTAL (${nodes.length} nós criados):
+${nodes.map(n => ` - [${n.text}]`).join('\n')}
+
+3. ÁUDIO REFLEXIVO:
+${hasAudioRecorded ? 'Gravado no navegador (' + formatDuration(audioDurationSec) + ')' : 'Não anexado'}
+-----------------------------------------------------
+Enviado pela plataforma oficial de cursos ESDHUBEM.`;
+
+      // Envio assíncrono via FormSubmit para esdhubem@proton.me
+      try {
+        fetch("https://formsubmit.co/ajax/esdhubem@proton.me", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `Atividade Concluída: Tecnologia do Escrever e do Mapear - ${studentName}`,
+            aluno: studentName,
+            aula: "Tecnologia do Escrever e do Mapear",
+            caracteresTexto: reflectiveText.length,
+            textoReflexivo: reflectiveText,
+            totalNosMapa: nodes.length,
+            audioGravado: hasAudioRecorded ? `Sim (${formatDuration(audioDurationSec)})` : 'Não'
+          })
+        }).catch(err => console.log('Envio FormSubmit:', err));
+      } catch (e) {
+        console.log(e);
+      }
+
+      // Preparar link mailto para abrir no aplicativo de email do aluno se desejar
+      const mailtoUrl = `mailto:esdhubem@proton.me?subject=${encodeURIComponent("Entrega de Atividade: Tecnologia do Escrever e do Mapear - " + studentName)}&body=${encodeURIComponent(emailBody)}`;
+      const mailBtn = document.getElementById('btn-modal-send-email');
+      if (mailBtn) {
+        mailBtn.href = mailtoUrl;
+      }
     }
 
     function closeModal() {
