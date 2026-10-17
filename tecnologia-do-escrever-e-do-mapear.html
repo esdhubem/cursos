@@ -468,14 +468,14 @@
             </p>
           </div>
 
-          <!-- Benefício 3: Publicação na EncicloWiki -->
+          <!-- Benefício 3: Publicação de Texto e Áudio na EncicloWiki -->
           <div class="p-3 rounded-xl bg-[#F7FAFD] border border-[#C9D9EB] flex flex-col justify-between space-y-1">
             <div class="flex items-center gap-1.5">
-              <i data-lucide="book-marked" class="w-4 h-4 text-[#2E9372] shrink-0"></i>
-              <span class="text-xs font-bold text-[#065F46]">EncicloWiki</span>
+              <i data-lucide="volume-2" class="w-4 h-4 text-[#2E9372] shrink-0"></i>
+              <span class="text-xs font-bold text-[#065F46]">Texto & Áudio na EncicloWiki</span>
             </div>
             <p class="text-[11px] text-[#475569] leading-tight">
-              Oportunidade de ter seu texto reflexivo publicado na enciclopédia oficial da escola.
+              Oportunidade de ter seu texto e seu áudio explicativo publicados na EncicloWiki (mediante sua autorização).
             </p>
           </div>
 
@@ -912,6 +912,27 @@
           </p>
         </div>
 
+        <!-- Box de Autorização de Publicação na EncicloWiki (Texto & Áudio) -->
+        <div class="p-4 rounded-xl bg-[#F7FAFD] border border-[#C9D9EB] max-w-xl mx-auto text-left shadow-2xs">
+          <label class="flex items-start gap-3 cursor-pointer select-none">
+            <input 
+              type="checkbox" 
+              id="checkbox-enciclowiki-permission" 
+              checked 
+              class="mt-1 w-4 h-4 text-[#1E5BA8] rounded border-[#C9D9EB] focus:ring-[#1E5BA8] accent-[#1E5BA8] cursor-pointer shrink-0"
+            >
+            <div class="text-xs text-[#334155] leading-relaxed">
+              <span class="font-bold text-[#154B8C] block text-xs sm:text-sm mb-0.5 flex items-center gap-1.5">
+                <i data-lucide="book-open-check" class="w-4 h-4 text-[#2E9372] shrink-0"></i>
+                Autorização para a EncicloWiki (Texto & Áudio Explicativo)
+              </span>
+              <span>
+                Autorizo a ESDHUBEM a publicar meu <strong>texto reflexivo</strong> e meu <strong>áudio explicativo</strong> no acervo público da EncicloWiki da escola para compartilhar conhecimento e inspirar outros estudantes. <em>(Opcional: você pode desmarcar caso prefira manter sua entrega restrita à avaliação interna dos professores).</em>
+              </span>
+            </div>
+          </label>
+        </div>
+
         <!-- 6. Botão "Enviar Atividade Completa" Grande e Visível Embaixo -->
         <div class="text-center pt-2 space-y-2">
           <button 
@@ -1218,6 +1239,10 @@
           <p id="modal-summary-nodes"><strong>Mapa Mental:</strong> 0 nós estruturados</p>
           <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
           <p id="modal-summary-audio"><strong>Áudio Reflexivo:</strong> Pendente</p>
+          <p id="modal-summary-wiki" class="text-xs text-[#154B8C] font-semibold bg-[#F0F5FA] px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 border border-[#C9D9EB]">
+            <i data-lucide="book-open-check" class="w-4 h-4 text-[#2E9372] shrink-0"></i>
+            <span id="modal-summary-wiki-text"><strong>EncicloWiki:</strong> Autorizado para publicação de Texto e Áudio.</span>
+          </p>
           <p id="modal-summary-email" class="text-xs text-[#065F46] font-semibold bg-[#ECFDF5] px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 border border-[#A7F3D0]">
             <i data-lucide="mail-check" class="w-4 h-4 text-[#2E9372]"></i>
             <span>Trabalho enviado para o e-mail: esdhubem@proton.me</span>
@@ -2322,6 +2347,14 @@
       document.getElementById('modal-summary-text').innerHTML = `<strong>Texto Reflexivo:</strong> ${reflectiveText.length} caracteres preenchidos`;
       document.getElementById('modal-summary-audio').innerHTML = `<strong>Áudio Reflexivo:</strong> Concluído (${formatDuration(audioDurationSec)})`;
 
+      const hasWikiPermission = document.getElementById('checkbox-enciclowiki-permission')?.checked ?? true;
+      const wikiSummaryText = document.getElementById('modal-summary-wiki-text');
+      if (wikiSummaryText) {
+        wikiSummaryText.innerHTML = hasWikiPermission 
+          ? '<strong>EncicloWiki:</strong> Autorizado para publicação (Texto & Áudio Explicativo).' 
+          : '<strong>EncicloWiki:</strong> Uso privado (apenas avaliação pedagógica interna).';
+      }
+
       document.getElementById('completion-modal').classList.remove('hidden');
       document.getElementById('completion-modal').classList.add('flex');
       if (window.lucide) lucide.createIcons();
@@ -2330,6 +2363,11 @@
     // Função para envio por e-mail para a escola
     function sendAssignmentByEmail() {
       const studentName = document.getElementById('modal-student-name')?.value || 'Estudante ESDHUBEM';
+      const hasWikiPermission = document.getElementById('checkbox-enciclowiki-permission')?.checked ?? true;
+      const permissaoWikiDesc = hasWikiPermission 
+        ? 'SIM - Autorizo a publicação do meu Texto Reflexivo e do meu Áudio Explicativo na EncicloWiki da ESDHUBEM' 
+        : 'NÃO - Manter estritamente privado para avaliação interna';
+
       const emailBody = `ESDHUBEM - ESCOLA DE DESENVOLVIMENTO HUMANO E BEM-ESTAR
 ENTREGA DE ATIVIDADE CONCLUÍDA
 -----------------------------------------------------
@@ -2345,6 +2383,9 @@ ${nodes.map(n => ` - [${n.text}]`).join('\n')}
 
 3. ÁUDIO REFLEXIVO:
 ${hasAudioRecorded ? 'Gravado no navegador (' + formatDuration(audioDurationSec) + ')' : 'Não anexado'}
+
+4. AUTORIZAÇÃO DE PUBLICAÇÃO NA ENCICLOWIKI (TEXTO & ÁUDIO):
+${permissaoWikiDesc}
 -----------------------------------------------------
 Enviado pela plataforma oficial de cursos ESDHUBEM.`;
 
@@ -2363,7 +2404,8 @@ Enviado pela plataforma oficial de cursos ESDHUBEM.`;
             caracteresTexto: reflectiveText.length,
             textoReflexivo: reflectiveText,
             totalNosMapa: nodes.length,
-            audioGravado: hasAudioRecorded ? `Sim (${formatDuration(audioDurationSec)})` : 'Não'
+            audioGravado: hasAudioRecorded ? `Sim (${formatDuration(audioDurationSec)})` : 'Não',
+            autorizacaoEncicloWiki: permissaoWikiDesc
           })
         }).catch(err => console.log('Envio FormSubmit:', err));
       } catch (e) {
@@ -2385,6 +2427,11 @@ Enviado pela plataforma oficial de cursos ESDHUBEM.`;
 
     function downloadSummaryFile() {
       const name = document.getElementById('modal-student-name').value || 'Estudante';
+      const hasWikiPermission = document.getElementById('checkbox-enciclowiki-permission')?.checked ?? true;
+      const permissaoWikiDesc = hasWikiPermission 
+        ? 'SIM - Autorizada publicação de Texto Reflexivo e Áudio Explicativo na EncicloWiki' 
+        : 'NÃO - Uso exclusivo para avaliação interna';
+
       const content = `=====================================================
 ESDHUBEM - ESCOLA DE DESENVOLVIMENTO HUMANO E BEM-ESTAR
 COMPROVANTE DE CONCLUSÃO DE AULA
@@ -2400,6 +2447,12 @@ ${reflectiveText}
 Total de nós: ${nodes.length}
 Ramos:
 ${nodes.map(n => ` - [${n.text}]`).join('\n')}
+
+3. ÁUDIO EXPLICATIVO:
+${hasAudioRecorded ? 'Gravado com sucesso (' + formatDuration(audioDurationSec) + ')' : 'Não gravado'}
+
+4. AUTORIZAÇÃO ENCICLOWIKI (TEXTO & ÁUDIO):
+${permissaoWikiDesc}
 =====================================================`;
 
       const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
