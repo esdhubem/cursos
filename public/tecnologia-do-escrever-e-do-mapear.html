@@ -24,31 +24,51 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
+    :root {
+      --bg-page: #F0F5FA;
+      --header-bg: #1E5BA8;
+      --card-bg: #FFFFFF;
+      --canvas-bg: #F7FAFD;
+      --border-color: #C9D9EB;
+      --title-color: #154B8C;
+      --text-color: #334155;
+      --link-color: #3B82D6;
+      --success-color: #2E9372;
+      --warning-color: #E8A838;
+      --gray-color: #94A3B8;
+      --btn-primary: #1E5BA8;
+      --btn-primary-hover: #2970C8;
+    }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       letter-spacing: -0.011em;
       line-height: 1.6;
+      background-color: #F0F5FA;
+      color: #334155;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
     h1, h2, h3, h4, .font-heading {
       font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       letter-spacing: -0.02em;
     }
+
     /* Scrollbar personalizada suave para a lista de aulas */
     #lessons-list-container::-webkit-scrollbar {
       width: 6px;
     }
     #lessons-list-container::-webkit-scrollbar-track {
-      background: #09142b;
+      background: #F0F5FA;
       border-radius: 8px;
     }
     #lessons-list-container::-webkit-scrollbar-thumb {
-      background: #18284e;
+      background: #C9D9EB;
       border-radius: 8px;
     }
     #lessons-list-container::-webkit-scrollbar-thumb:hover {
-      background: #00dfc4;
+      background: #94A3B8;
     }
 
     /* Reordenação Inteligente para Celular (Mobile):
@@ -81,33 +101,33 @@
     }
   </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
+<body class="bg-[#F0F5FA] text-[#334155] antialiased selection:bg-[#C9D9EB] selection:text-[#154B8C]">
 
-  <!-- ==================== HEADER (AZUL SERENO E COMPACTO NO SMARTPHONE) ==================== -->
-  <header class="sticky top-0 z-40 bg-gradient-to-r from-[#1e40af] via-[#2563eb] to-[#0284c7] border-b border-blue-200/30 text-white shadow-md">
+  <!-- ==================== HEADER (AZUL MÉDIO CHAPADO #1E5BA8, SERENO E SEM BRILHO) ==================== -->
+  <header class="sticky top-0 z-40 bg-[#1E5BA8] border-b border-[#C9D9EB] text-white shadow-xs">
     <div class="max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-2.5 sm:py-3 gap-2">
         <!-- Logo & Título -->
         <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
-          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-yellow-500 flex items-center justify-center text-slate-950 font-black shadow-md shrink-0">
-            <i data-lucide="sparkles" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/15 border border-white/20 flex items-center justify-center text-white shrink-0">
+            <i data-lucide="sparkles" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
           </div>
           <div class="min-w-0">
-            <div class="hidden sm:flex items-center gap-2 text-[11px] font-semibold tracking-wider text-cyan-200 uppercase">
+            <div class="hidden sm:flex items-center gap-2 text-[11px] font-semibold tracking-wider text-blue-100 uppercase">
               <span>ESDHUBEM</span>
-              <span class="text-white/30">·</span>
+              <span class="text-white/40">·</span>
               <span class="text-blue-100 font-normal">Escola de Desenvolvimento Humano e Bem-Estar</span>
             </div>
             <h1 class="text-sm sm:text-base md:text-lg font-bold text-white tracking-tight truncate">
               Tecnologia do Escrever e do Mapear
             </h1>
-            <div class="hidden sm:flex items-center gap-2 text-xs text-blue-100 mt-0.5">
+            <div class="hidden sm:flex items-center gap-2 text-xs text-blue-100/90 mt-0.5">
               <span>Módulo 3: Práticas Cognitivas</span>
-              <span aria-hidden="true" class="text-white/30">·</span>
+              <span aria-hidden="true" class="text-white/40">·</span>
               <span>Carga: 2h</span>
-              <span aria-hidden="true" class="text-white/30">·</span>
-              <span id="header-save-indicator" class="text-emerald-300 font-semibold flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Salvo
+              <span aria-hidden="true" class="text-white/40">·</span>
+              <span id="header-save-indicator" class="text-white/95 font-medium flex items-center gap-1.5 bg-white/10 px-2 py-0.5 rounded-md text-xs">
+                <span class="w-2 h-2 rounded-full bg-[#2E9372]"></span> Salvo
               </span>
             </div>
           </div>
@@ -115,26 +135,28 @@
 
         <!-- Progresso e Atalhos -->
         <div class="flex items-center gap-2 shrink-0">
-          <div class="hidden lg:flex items-center gap-3 text-xs text-blue-100 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/20 backdrop-blur-sm">
-            <span class="font-bold text-cyan-200">Trilha:</span>
+          <!-- A trilha: concluído = #2E9372, ativo = #3B82D6, pendente = #94A3B8 -->
+          <div class="hidden lg:flex items-center gap-3 text-xs text-blue-100 bg-white/10 px-3.5 py-1.5 rounded-xl border border-white/15">
+            <span class="font-bold text-white">Trilha:</span>
             <a href="#video-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
-              <span>1. Vídeo</span>
+              <span id="trail-video-dot" class="w-2 h-2 rounded-full bg-[#2E9372] inline-block"></span>
+              <span class="text-white">1. Vídeo</span>
             </a>
-            <span class="text-white/20">|</span>
+            <span class="text-white/30">|</span>
             <a href="#mindmap-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
-              <span class="w-2 h-2 rounded-full bg-sky-300 inline-block"></span>
-              <span>2. Mapa</span>
+              <span id="trail-map-dot" class="w-2 h-2 rounded-full bg-[#3B82D6] inline-block"></span>
+              <span class="text-white">2. Mapa</span>
             </a>
-            <span class="text-white/20">|</span>
+            <span class="text-white/30">|</span>
             <a href="#reflection-section" class="flex items-center gap-1.5 hover:text-white transition-colors">
-              <span class="w-2 h-2 rounded-full bg-amber-300 inline-block"></span>
-              <span>3. Texto</span>
+              <span id="trail-text-dot" class="w-2 h-2 rounded-full bg-[#94A3B8] inline-block"></span>
+              <span class="text-blue-100">3. Texto</span>
             </a>
           </div>
 
-          <a id="header-status-btn" href="#submission-section" class="px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-amber-300/40 cursor-pointer" title="Clique para rolar até as tarefas">
-            <span id="header-status-dot" class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+          <!-- Botão de Estado: Cursando (Dourado Suave #E8A838) / Cursado (Verde Suave #2E9372) -->
+          <a id="header-status-btn" href="#submission-section" class="px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-bold rounded-xl bg-[#E8A838] hover:bg-[#d89728] text-white shadow-xs transition-colors flex items-center gap-1.5 shrink-0 border border-white/20 cursor-pointer" title="Clique para rolar até as tarefas">
+            <span id="header-status-dot" class="w-2 h-2 rounded-full bg-white"></span>
             <span id="header-status-btn-text">Cursando</span>
           </a>
         </div>
@@ -155,24 +177,24 @@
     <section id="video-section" class="mobile-order-1-video scroll-mt-20">
       <div class="space-y-3">
           
-          <!-- Título da Aula Atual Acima do Player (Azul sereno e relaxante) -->
-          <div class="px-5 py-4 rounded-3xl bg-gradient-to-r from-[#1e40af] via-[#2563eb] to-[#0284c7] border border-blue-200/40 text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <!-- Título da Aula Atual Acima do Player (Branco limpo #FFFFFF com borda suave #C9D9EB e título #154B8C) -->
+          <div class="px-5 py-4 rounded-2xl bg-white border border-[#C9D9EB] shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <div class="flex items-center gap-2 text-xs font-semibold text-cyan-200 uppercase tracking-wider">
-                <span class="w-2 h-2 rounded-full bg-cyan-300 animate-pulse"></span>
+              <div class="flex items-center gap-2 text-xs font-semibold text-[#3B82D6] uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-[#3B82D6]"></span>
                 <span id="active-lesson-module-tag">Módulo 1 · Introdução</span>
               </div>
-              <h2 id="active-lesson-title" class="text-base sm:text-lg font-bold text-white tracking-tight mt-0.5">
+              <h2 id="active-lesson-title" class="text-base sm:text-lg font-bold text-[#154B8C] tracking-tight mt-0.5">
                 1. A Mente como Sistema Vivo e Descarga Cognitiva
               </h2>
             </div>
-            <button id="btn-toggle-watched" class="text-xs font-semibold text-sky-100 hover:text-white bg-white/15 hover:bg-white/25 border border-white/25 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto">
+            <button id="btn-toggle-watched" class="text-xs font-semibold text-white bg-[#1E5BA8] hover:bg-[#2970C8] border border-[#1E5BA8] px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-xs">
               Marcar como Assistida
             </button>
           </div>
 
           <!-- Player de Vídeo em Tamanho Menor/Compacto -->
-          <div class="relative rounded-3xl overflow-hidden shadow-xl bg-slate-900 border border-blue-200/30 group">
+          <div class="relative rounded-2xl overflow-hidden shadow-xs bg-slate-900 border border-[#C9D9EB] group">
             <video 
               id="main-video" 
               class="w-full aspect-video object-cover cursor-pointer"
@@ -183,42 +205,42 @@
             <!-- Overlay Badge -->
             <div class="absolute top-4 left-4 z-20 pointer-events-none">
               <span class="bg-black/60 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md border border-white/10 font-medium flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-cyan-300 animate-pulse"></span>
+                <span class="w-2 h-2 rounded-full bg-[#3B82D6]"></span>
                 ESDHubem Masterclass
               </span>
             </div>
 
             <!-- Botão Central Play (quando pausado) -->
             <div id="video-overlay-play" class="absolute inset-0 bg-slate-950/40 backdrop-blur-[1px] flex items-center justify-center cursor-pointer">
-              <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-cyan-600/90 hover:bg-cyan-500 text-white flex items-center justify-center shadow-xl hover:scale-105 transition-transform">
+              <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#1E5BA8]/90 hover:bg-[#1E5BA8] text-white flex items-center justify-center shadow-md hover:scale-105 transition-transform">
                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
               </div>
             </div>
 
             <!-- Controles do Vídeo -->
             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3 sm:p-4 z-20 flex flex-col gap-2">
-              <input type="range" id="video-seekbar" min="0" max="100" value="0" step="0.5" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-[#00dfc4]">
+              <input type="range" id="video-seekbar" min="0" max="100" value="0" step="0.5" class="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-[#1E5BA8]">
               <div class="flex items-center justify-between text-white text-xs">
                 <div class="flex items-center gap-3">
-                  <button id="btn-play-pause" class="p-1 hover:text-[#00dfc4]"><i data-lucide="play" class="w-5 h-5 fill-white"></i></button>
-                  <button id="btn-restart" class="p-1 hover:text-[#00dfc4]"><i data-lucide="rotate-ccw" class="w-4 h-4"></i></button>
-                  <button id="btn-mute" class="p-1 hover:text-[#00dfc4]"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
+                  <button id="btn-play-pause" class="p-1 hover:text-[#3B82D6]"><i data-lucide="play" class="w-5 h-5 fill-white"></i></button>
+                  <button id="btn-restart" class="p-1 hover:text-[#3B82D6]"><i data-lucide="rotate-ccw" class="w-4 h-4"></i></button>
+                  <button id="btn-mute" class="p-1 hover:text-[#3B82D6]"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
                   <span id="video-time-display" class="font-mono text-[11px] text-slate-300">00:00 / 00:00</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <button id="btn-fullscreen" class="p-1 hover:text-[#00dfc4]"><i data-lucide="maximize" class="w-4 h-4"></i></button>
+                  <button id="btn-fullscreen" class="p-1 hover:text-[#3B82D6]"><i data-lucide="maximize" class="w-4 h-4"></i></button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Barra de Navegação entre Aulas (Anterior / Próxima) -->
-          <div class="flex items-center justify-between p-3.5 bg-gradient-to-r from-[#1e40af] to-[#2563eb] rounded-2xl border border-blue-200/40 shadow-md text-xs text-white">
-            <button id="btn-prev-lesson" onclick="prevLesson()" class="flex items-center gap-1.5 font-bold text-blue-100 hover:text-white disabled:opacity-40 cursor-pointer">
+          <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-[#C9D9EB] shadow-xs text-xs text-[#334155]">
+            <button id="btn-prev-lesson" onclick="prevLesson()" class="flex items-center gap-1.5 font-bold text-[#154B8C] hover:text-[#3B82D6] disabled:opacity-40 cursor-pointer">
               <i data-lucide="chevron-left" class="w-4 h-4"></i> Aula Anterior
             </button>
-            <span id="lesson-counter-pill" class="text-cyan-200 font-semibold bg-white/15 px-3 py-1 rounded-lg border border-white/20">Capítulo 1 de 4</span>
-            <button id="btn-next-lesson" onclick="nextLesson()" class="flex items-center gap-1.5 font-bold text-cyan-200 hover:text-white cursor-pointer">
+            <span id="lesson-counter-pill" class="text-[#154B8C] font-semibold bg-[#F0F5FA] px-3 py-1 rounded-lg border border-[#C9D9EB]">Capítulo 1 de 4</span>
+            <button id="btn-next-lesson" onclick="nextLesson()" class="flex items-center gap-1.5 font-bold text-[#154B8C] hover:text-[#3B82D6] cursor-pointer">
               Próxima Aula <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </button>
           </div>
@@ -226,20 +248,20 @@
       </div>
     </section>
 
-    <!-- 3. GRADE DE AULAS (Ordem 3 no Celular - Azul Sereno) -->
+    <!-- 3. GRADE DE AULAS (Ordem 3 no Celular - Caixa Branca Limpa #FFFFFF com borda #C9D9EB) -->
     <section id="grade-section" class="mobile-order-3-grade scroll-mt-20">
-      <div class="bg-gradient-to-b from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white rounded-3xl border border-blue-200/40 shadow-xl p-5 sm:p-6 flex flex-col gap-4">
+      <div class="bg-white text-[#334155] rounded-2xl border border-[#C9D9EB] shadow-xs p-5 sm:p-6 flex flex-col gap-4">
         
         <!-- Topo da Lateral: Título e Progresso do Curso -->
         <div>
           <div class="flex items-center justify-between text-xs sm:text-sm pb-2">
-            <span class="font-extrabold uppercase tracking-wider text-cyan-200 flex items-center gap-2">
-              <i data-lucide="layers" class="w-4 h-4 text-cyan-300"></i> GRADE DE AULAS
+            <span class="font-extrabold uppercase tracking-wider text-[#154B8C] flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-[#1E5BA8]"></i> GRADE DE AULAS
             </span>
-            <span id="sidebar-progress-text" class="font-bold text-cyan-200">25% Concluído</span>
+            <span id="sidebar-progress-text" class="font-bold text-[#154B8C]">25% Concluído</span>
           </div>
-          <div class="w-full bg-white/20 rounded-full h-1.5 overflow-hidden mt-1">
-            <div id="sidebar-progress-bar" class="bg-cyan-300 h-full rounded-full transition-all duration-300" style="width: 25%;"></div>
+          <div class="w-full bg-[#E2EBF5] rounded-full h-2 overflow-hidden mt-1">
+            <div id="sidebar-progress-bar" class="bg-[#2E9372] h-full rounded-full transition-all duration-300" style="width: 25%;"></div>
           </div>
         </div>
 
@@ -250,13 +272,13 @@
             id="search-lessons-input" 
             oninput="filterLessons(this.value)" 
             placeholder="Buscar conteúdo..." 
-            class="w-full bg-white/15 border border-white/25 text-white placeholder-blue-100/70 text-xs sm:text-sm rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-white/40 focus:border-white transition-all shadow-inner"
+            class="w-full bg-[#F7FAFD] border border-[#C9D9EB] text-[#334155] placeholder-[#94A3B8] text-xs sm:text-sm rounded-xl pl-10 pr-4 py-2.5 outline-none focus:border-[#3B82D6] transition-colors"
           />
-          <i data-lucide="search" class="w-4 h-4 text-blue-200 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <i data-lucide="search" class="w-4 h-4 text-[#94A3B8] absolute left-3.5 top-1/2 -translate-y-1/2"></i>
         </div>
 
         <!-- Lista de Aulas e Capítulos Clicáveis -->
-        <div id="lessons-list-container" class="space-y-3 max-h-[480px] overflow-y-auto pr-1">
+        <div id="lessons-list-container" class="space-y-2.5 max-h-[480px] overflow-y-auto pr-1">
           <!-- Renderizado dinamicamente via JavaScript -->
         </div>
 
@@ -271,45 +293,45 @@
 
     <!-- 2. SEÇÃO DE MAPA MENTAL INTERATIVO (Ordem 2 no Celular) -->
     <section id="mindmap-section" class="mobile-order-2-mindmap scroll-mt-20">
-      <div class="bg-white rounded-2xl border border-[#0f2c66]/40 shadow-sm overflow-hidden flex flex-col">
-        <!-- Header do Mapa (Azul sereno e agradável aos olhos) -->
-        <div class="px-6 py-3.5 border-b border-blue-200/30 flex flex-col md:flex-row md:items-center justify-between gap-3 bg-gradient-to-r from-[#1e40af] via-[#2563eb] to-[#0284c7] text-white">
+      <div class="bg-white rounded-2xl border border-[#C9D9EB] shadow-xs overflow-hidden flex flex-col">
+        <!-- Header do Mapa (#1E5BA8 sólido, chapado, sereno) -->
+        <div class="px-6 py-3.5 border-b border-[#C9D9EB] flex flex-col md:flex-row md:items-center justify-between gap-3 bg-[#1E5BA8] text-white">
           <div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-lg bg-white/20 border border-white/30 flex items-center justify-center text-cyan-200 shrink-0 shadow-sm">
-                <i data-lucide="network" class="w-5 h-5"></i>
+            <h3 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-white/15 border border-white/20 flex items-center justify-center text-white shrink-0">
+                <i data-lucide="network" class="w-4 h-4"></i>
               </div>
               <span>Crie aqui o seu mapa mental</span>
             </h3>
           </div>
-          <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/25 border-emerald-300 text-emerald-100 shadow-xs">
+          <div id="mindmap-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-white/15 border-white/20 text-white">
             ✓ Mapa Válido (4 nós)
           </div>
         </div>
 
-        <!-- Painel / Inspetor de Edição Rápida do Bloco Selecionado -->
-        <div id="inspector-bar" class="bg-[#1e40af] border-b border-blue-200/30 p-3 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-white">
+        <!-- Painel / Inspetor de Edição Rápida do Bloco Selecionado (#F7FAFD claro com bordas #C9D9EB) -->
+        <div id="inspector-bar" class="bg-[#F7FAFD] border-b border-[#C9D9EB] p-3 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[#334155]">
           <!-- Linha do Nome do Nó e Botões de Ação -->
           <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 flex-1 w-full">
             <div class="flex items-center gap-2 w-full sm:flex-1">
-              <span class="text-xs font-bold text-cyan-200 shrink-0 flex items-center gap-1">
-                <i data-lucide="edit-3" class="w-3.5 h-3.5 text-cyan-300"></i>
+              <span class="text-xs font-bold text-[#154B8C] shrink-0 flex items-center gap-1">
+                <i data-lucide="edit-3" class="w-3.5 h-3.5 text-[#1E5BA8]"></i>
                 <span id="inspector-label">Nó:</span>
               </span>
               <input 
                 type="text" 
                 id="inspector-input" 
                 placeholder="Digite o texto do bloco..." 
-                class="flex-1 w-full text-xs sm:text-sm bg-white/15 text-white placeholder-blue-100/70 border border-white/25 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-cyan-300 font-medium"
+                class="flex-1 w-full text-xs sm:text-sm bg-white text-[#334155] placeholder-[#94A3B8] border border-[#C9D9EB] rounded-lg px-3 py-1.5 outline-none focus:border-[#3B82D6] font-medium"
               >
             </div>
             
             <div class="flex items-center gap-2 w-full sm:w-auto">
-              <button id="btn-add-child-selected" class="flex-1 sm:flex-none px-3 py-1.5 bg-sky-500 hover:bg-sky-400 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center justify-center gap-1 cursor-pointer">
+              <button id="btn-add-child-selected" class="flex-1 sm:flex-none px-3 py-1.5 bg-[#1E5BA8] hover:bg-[#2970C8] text-white text-xs font-semibold rounded-lg shadow-xs transition-colors flex items-center justify-center gap-1 cursor-pointer">
                 <i data-lucide="plus" class="w-3.5 h-3.5"></i>
                 <span>+ Ramo Filho</span>
               </button>
-              <button id="btn-delete-selected" class="px-3 py-1.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 border border-rose-300/40 text-xs font-semibold rounded-lg transition-colors flex items-center justify-center gap-1 cursor-pointer" title="Apagar Nó">
+              <button id="btn-delete-selected" class="px-3 py-1.5 bg-[#FEE2E2] hover:bg-[#FECACA] text-[#B91C1C] border border-[#FCA5A5] text-xs font-semibold rounded-lg transition-colors flex items-center justify-center gap-1 cursor-pointer" title="Apagar Nó">
                 <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
                 <span>Apagar</span>
               </button>
@@ -317,52 +339,52 @@
           </div>
 
           <!-- Cores e Mover por Setas -->
-          <div class="flex items-center justify-between sm:justify-end gap-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-white/15 w-full sm:w-auto">
+          <div class="flex items-center justify-between sm:justify-end gap-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-[#C9D9EB] w-full sm:w-auto">
             <div class="flex items-center gap-1" id="color-picker-container"></div>
             <!-- Setas de Mover -->
-            <div class="flex items-center bg-white/15 border border-white/25 rounded-lg p-0.5 shrink-0">
-              <button onclick="nudgeSelected(-25, 0)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(25, 0)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(0, -25)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
-              <button onclick="nudgeSelected(0, 25)" class="p-1 text-blue-100 hover:text-white hover:bg-white/15 rounded cursor-pointer" title="Baixo"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></button>
+            <div class="flex items-center bg-white border border-[#C9D9EB] rounded-lg p-0.5 shrink-0">
+              <button onclick="nudgeSelected(-25, 0)" class="p-1 text-[#334155] hover:text-[#154B8C] hover:bg-[#F0F5FA] rounded cursor-pointer" title="Esquerda"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(25, 0)" class="p-1 text-[#334155] hover:text-[#154B8C] hover:bg-[#F0F5FA] rounded cursor-pointer" title="Direita"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, -25)" class="p-1 text-[#334155] hover:text-[#154B8C] hover:bg-[#F0F5FA] rounded cursor-pointer" title="Cima"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></button>
+              <button onclick="nudgeSelected(0, 25)" class="p-1 text-[#334155] hover:text-[#154B8C] hover:bg-[#F0F5FA] rounded cursor-pointer" title="Baixo"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
         </div>
 
-        <!-- Barra de Ferramentas Global (Limpa e sem botões desnecessários) -->
-        <div class="bg-gradient-to-r from-[#1e3a8a] to-[#1e40af] px-3 sm:px-6 py-2.5 border-b border-blue-200/30 flex flex-wrap items-center justify-between gap-2 text-xs text-white">
+        <!-- Barra de Ferramentas Global (Limpa e elegante) -->
+        <div class="bg-white px-3 sm:px-6 py-2.5 border-b border-[#C9D9EB] flex flex-wrap items-center justify-between gap-2 text-xs text-[#334155]">
           <div class="flex flex-wrap items-center gap-2">
-            <button id="btn-add-new-branch" class="px-3 py-1.5 bg-white/15 hover:bg-white/25 text-white border border-white/25 rounded-md font-medium flex items-center gap-1 cursor-pointer">
-              <i data-lucide="plus" class="w-3.5 h-3.5 text-cyan-300"></i>
+            <button id="btn-add-new-branch" class="px-3 py-1.5 bg-[#F7FAFD] hover:bg-[#E2EBF5] text-[#154B8C] border border-[#C9D9EB] rounded-lg font-medium flex items-center gap-1.5 cursor-pointer">
+              <i data-lucide="plus" class="w-3.5 h-3.5 text-[#1E5BA8]"></i>
               <span>Novo Ramo (+ Ideia)</span>
             </button>
             
-            <button id="btn-load-preset" class="px-3 py-1.5 bg-sky-500/25 hover:bg-sky-500/35 text-cyan-200 border border-sky-300/40 rounded-md font-medium flex items-center gap-1.5 cursor-pointer" title="Reiniciar mapa mental para o início da aula">
-              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            <button id="btn-load-preset" class="px-3 py-1.5 bg-[#F7FAFD] hover:bg-[#E2EBF5] text-[#334155] border border-[#C9D9EB] rounded-lg font-medium flex items-center gap-1.5 cursor-pointer" title="Reiniciar mapa mental para o início da aula">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5 text-[#64748B]"></i>
               <span>Reiniciar Mapa</span>
             </button>
           </div>
 
           <div class="flex items-center gap-2">
-            <div class="flex items-center bg-white/15 border border-white/25 rounded-lg p-0.5">
-              <button onclick="adjustZoom(-0.15)" class="p-1 text-blue-100 hover:text-white cursor-pointer"><i data-lucide="zoom-out" class="w-3.5 h-3.5"></i></button>
-              <span id="zoom-text" class="text-[11px] font-mono px-1.5 text-blue-100">100%</span>
-              <button onclick="adjustZoom(0.15)" class="p-1 text-blue-100 hover:text-white cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
-              <button onclick="centerRootNode()" class="p-1 text-blue-100 hover:text-white border-l border-white/25 cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
+            <div class="flex items-center bg-[#F7FAFD] border border-[#C9D9EB] rounded-lg p-0.5 text-[#334155]">
+              <button onclick="adjustZoom(-0.15)" class="p-1 text-[#334155] hover:text-[#154B8C] cursor-pointer"><i data-lucide="zoom-out" class="w-3.5 h-3.5"></i></button>
+              <span id="zoom-text" class="text-[11px] font-mono px-1.5 text-[#334155]">100%</span>
+              <button onclick="adjustZoom(0.15)" class="p-1 text-[#334155] hover:text-[#154B8C] cursor-pointer"><i data-lucide="zoom-in" class="w-3.5 h-3.5"></i></button>
+              <button onclick="centerRootNode()" class="p-1 text-[#334155] hover:text-[#154B8C] border-l border-[#C9D9EB] cursor-pointer" title="Centralizar"><i data-lucide="maximize-2" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
         </div>
 
-        <!-- Canvas Interativo -->
+        <!-- Canvas Interativo (Área do mapa mental: #F7FAFD claro com linhas de grade discretas #E2EBF5) -->
         <div 
           id="canvas-container" 
-          class="relative w-full h-[540px] bg-slate-50 overflow-hidden cursor-grab active:cursor-grabbing select-none"
-          style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 24px 24px; touch-action: none;"
+          class="relative w-full h-[540px] bg-[#F7FAFD] overflow-hidden cursor-grab active:cursor-grabbing select-none"
+          style="background-image: radial-gradient(#C9D9EB 1.2px, transparent 1.2px); background-size: 24px 24px; touch-action: none;"
         >
           <!-- Dica flutuante -->
           <div class="absolute top-3 left-3 z-10 pointer-events-none">
-            <span class="bg-white/95 backdrop-blur-xs text-[11px] text-slate-600 px-3 py-1.5 rounded-lg border border-slate-200 shadow-2xs flex items-center gap-1.5">
-              <i data-lucide="help-circle" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span class="bg-white/95 text-[11px] text-[#475569] px-3 py-1.5 rounded-lg border border-[#C9D9EB] shadow-xs flex items-center gap-1.5">
+              <i data-lucide="help-circle" class="w-3.5 h-3.5 text-[#1E5BA8]"></i>
               <span>Clique no bloco para selecionar e editar · Segure e arraste para mover · Use a lixeira para apagar</span>
             </span>
           </div>
@@ -375,10 +397,10 @@
         </div>
 
         <!-- Rodapé do Mapa -->
-        <div class="px-5 py-2.5 bg-white border-t border-slate-100 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
+        <div class="px-5 py-2.5 bg-white border-t border-[#C9D9EB] flex flex-wrap items-center justify-between text-xs text-[#475569] gap-2">
           <div>
-            <span class="font-semibold text-slate-700">Dica:</span>
-            <span>Você pode editar o texto tanto clicando no bloco quanto digitando na barra acima.</span>
+            <span class="font-semibold text-[#154B8C]">Dica:</span>
+            <span> Você pode editar o texto tanto clicando no bloco quanto digitando na barra acima.</span>
           </div>
           <div id="mindmap-count-info"></div>
         </div>
@@ -387,18 +409,18 @@
 
     <!-- 4. SEÇÃO DE ESCRITA REFLEXIVA (Ordem 4 no Celular) -->
     <section id="reflection-section" class="mobile-order-4-reflection scroll-mt-20">
-      <div class="bg-white rounded-2xl border border-blue-200/50 shadow-sm overflow-hidden">
-        <!-- Header da Escrita Reflexiva (Azul sereno e estimulante) -->
-        <div class="px-6 py-4 sm:py-5 border-b border-blue-200/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-gradient-to-r from-[#1e40af] via-[#2563eb] to-[#0284c7] text-white">
+      <div class="bg-white rounded-2xl border border-[#C9D9EB] shadow-xs overflow-hidden">
+        <!-- Header da Escrita Reflexiva (#1E5BA8 sólido) -->
+        <div class="px-6 py-4 border-b border-[#C9D9EB] flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[#1E5BA8] text-white">
           <div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-lg bg-white/20 border border-white/30 flex items-center justify-center text-cyan-200 shrink-0 shadow-sm">
-                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+            <h3 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-white/15 border border-white/20 flex items-center justify-center text-white shrink-0">
+                <i data-lucide="pen-tool" class="w-4 h-4"></i>
               </div>
               <span>Escreva seu texto reflexivo</span>
             </h3>
           </div>
-          <div id="text-status-pill" class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/15 border-white/25 text-blue-100">
+          <div id="text-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-white/15 border-white/20 text-white">
             Mínimo de 500 a 800 caracteres (0/500)
           </div>
         </div>
@@ -410,20 +432,20 @@
               id="reflection-textarea" 
               rows="10"
               placeholder="Escreva seu texto reflexivo aqui (mínimo de 500 a 800 caracteres)... Registre suas percepções, conexões cognitivas e ideias consolidadas pela escrita consciente e mapeamento mental."
-              class="w-full p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-slate-800 bg-slate-50/50 hover:bg-white focus:bg-white border border-slate-200 focus:border-sky-500 focus:ring-3 focus:ring-sky-100 rounded-xl transition-all outline-none"
+              class="w-full p-4 sm:p-5 text-sm sm:text-base leading-relaxed text-[#334155] bg-[#F7FAFD] hover:bg-white focus:bg-white border border-[#C9D9EB] focus:border-[#3B82D6] rounded-xl transition-all outline-none"
             ></textarea>
             
-            <div class="flex flex-wrap items-center justify-between gap-2 mt-2 px-1 text-xs text-slate-500">
+            <div class="flex flex-wrap items-center justify-between gap-2 mt-2 px-1 text-xs text-[#475569]">
               <div class="flex items-center gap-3">
                 <span id="text-word-count">0 palavras</span>
                 <span>·</span>
                 <span id="text-char-count">0 caracteres</span>
               </div>
               <div class="flex items-center gap-2">
-                <button id="btn-copy-text" class="px-2.5 py-1 text-xs bg-white border border-slate-200 rounded-md hover:bg-slate-50 flex items-center gap-1 cursor-pointer">
-                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> <span>Copiar</span>
+                <button id="btn-copy-text" class="px-2.5 py-1 text-xs bg-white border border-[#C9D9EB] text-[#334155] hover:bg-[#F7FAFD] rounded-lg flex items-center gap-1 cursor-pointer">
+                  <i data-lucide="copy" class="w-3.5 h-3.5 text-[#1E5BA8]"></i> <span>Copiar</span>
                 </button>
-                <button id="btn-clear-text" class="px-2.5 py-1 text-xs bg-white border border-slate-200 rounded-md hover:bg-slate-50 text-rose-600 flex items-center gap-1 cursor-pointer">
+                <button id="btn-clear-text" class="px-2.5 py-1 text-xs bg-white border border-[#C9D9EB] text-[#B91C1C] hover:bg-[#FEE2E2] rounded-lg flex items-center gap-1 cursor-pointer">
                   <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> <span>Limpar</span>
                 </button>
               </div>
@@ -431,40 +453,40 @@
 
             <!-- Barra de Progresso da Escrita -->
             <div class="mt-3">
-              <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                <div id="text-progress-bar" class="h-full bg-sky-500 transition-all duration-300" style="width: 0%;"></div>
+              <div class="w-full bg-[#E2EBF5] rounded-full h-2 overflow-hidden">
+                <div id="text-progress-bar" class="h-full bg-[#3B82D6] rounded-full transition-all duration-300" style="width: 0%;"></div>
               </div>
-              <div class="flex justify-between items-center text-[11px] text-slate-400 mt-1">
+              <div class="flex justify-between items-center text-[11px] text-[#475569] mt-1">
                 <span>Critério: no mínimo 500 a 800 caracteres</span>
                 <span id="text-progress-percent">0%</span>
               </div>
             </div>
           </div>
 
-          <!-- ==================== GRAVADOR DE ÁUDIO REFLEXIVO ==================== -->
-          <div class="mt-6 pt-5 border-t border-slate-200/80">
-            <div class="rounded-2xl border-2 border-indigo-100 bg-gradient-to-r from-slate-50 via-sky-50/40 to-indigo-50/30 p-4 sm:p-5 shadow-xs">
+          <!-- ==================== GRAVADOR DE ÁUDIO REFLEXIVO (#F7FAFD com borda #C9D9EB) ==================== -->
+          <div class="mt-6 pt-5 border-t border-[#C9D9EB]">
+            <div class="rounded-2xl border border-[#C9D9EB] bg-[#F7FAFD] p-4 sm:p-5 shadow-xs">
               
               <!-- Cabeçalho do Gravador -->
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-200/60">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[#C9D9EB]">
                 <div class="flex items-center gap-2.5">
-                  <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-xs shrink-0">
+                  <div class="w-9 h-9 rounded-xl bg-[#1E5BA8] text-white flex items-center justify-center shrink-0">
                     <i data-lucide="mic" class="w-4 h-4"></i>
                   </div>
                   <div>
-                    <h4 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                    <h4 class="text-sm sm:text-base font-bold text-[#154B8C] tracking-tight flex items-center gap-2">
                       Gravação de Relato em Áudio
-                      <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-2 py-0.5 rounded-md border border-amber-300/60">Obrigatório</span>
+                      <span class="text-[10px] font-bold uppercase tracking-wider bg-[#FEF3C7] text-[#92400E] border border-[#FCD34D] px-2 py-0.5 rounded-md">Obrigatório</span>
                     </h4>
-                    <p class="text-xs text-slate-500">
+                    <p class="text-xs text-[#475569]">
                       Grave sua síntese falada com suas palavras sobre o aprendizado da aula (até 3 minutos).
                     </p>
                   </div>
                 </div>
 
                 <!-- Status Pill do Áudio -->
-                <div id="audio-status-pill" class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-amber-400/15 border-amber-400 text-amber-800 self-start sm:self-auto">
-                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> <span>🟡 Pendente de gravação</span>
+                <div id="audio-status-pill" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-[#FEF3C7] border-[#FCD34D] text-[#92400E] self-start sm:self-auto">
+                  <span class="text-[#E8A838]">⏳</span> <span>Pendente de gravação</span>
                 </div>
               </div>
 
@@ -478,7 +500,7 @@
                     id="btn-record-audio" 
                     type="button"
                     onclick="toggleAudioRecording()"
-                    class="px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-red-600 hover:bg-red-700 text-white hover:shadow-md"
+                    class="px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-colors shadow-xs flex items-center gap-2 cursor-pointer bg-[#1E5BA8] hover:bg-[#2970C8] text-white"
                   >
                     <i data-lucide="circle-dot" class="w-4 h-4"></i>
                     <span id="btn-record-text">Iniciar Gravação de Áudio</span>
@@ -489,7 +511,7 @@
                     id="btn-re-record" 
                     type="button"
                     onclick="reRecordAudio()"
-                    class="hidden px-3.5 py-2 text-xs font-semibold rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 transition-colors flex items-center gap-1.5 cursor-pointer"
+                    class="hidden px-3.5 py-2 text-xs font-semibold rounded-xl border border-[#C9D9EB] bg-white hover:bg-[#F7FAFD] text-[#334155] transition-colors flex items-center gap-1.5 cursor-pointer"
                   >
                     <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
                     <span>Gravar Novamente</span>
@@ -500,7 +522,7 @@
                     id="btn-delete-audio" 
                     type="button"
                     onclick="deleteAudioRecording()"
-                    class="hidden px-3 py-2 text-xs font-semibold rounded-xl border border-rose-200 text-rose-600 hover:bg-rose-50 transition-colors flex items-center gap-1 cursor-pointer"
+                    class="hidden px-3 py-2 text-xs font-semibold rounded-xl border border-[#FCA5A5] bg-[#FEE2E2] text-[#B91C1C] hover:bg-[#FECACA] transition-colors flex items-center gap-1 cursor-pointer"
                     title="Excluir gravação"
                   >
                     <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
@@ -508,22 +530,22 @@
                 </div>
 
                 <!-- Timer e Ondas Sonoras -->
-                <div class="flex items-center gap-3 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-2xs">
+                <div class="flex items-center gap-3 bg-white px-3.5 py-2 rounded-xl border border-[#C9D9EB] shadow-xs">
                   <div id="audio-rec-dot" class="hidden w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></div>
-                  <span id="audio-timer" class="font-mono text-xs font-bold text-slate-700">00:00 / 03:00</span>
-                  <!-- Ondas Sonoras CSS animadas durante a gravação -->
+                  <span id="audio-timer" class="font-mono text-xs font-bold text-[#334155]">00:00 / 03:00</span>
+                  <!-- Ondas Sonoras CSS durante gravação -->
                   <div id="audio-waveform-bars" class="hidden items-center gap-0.5 h-4">
-                    <span class="w-1 bg-red-500 rounded-full animate-pulse h-2"></span>
-                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-4" style="animation-delay: 0.1s"></span>
-                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-3" style="animation-delay: 0.2s"></span>
-                    <span class="w-1 bg-red-500 rounded-full animate-bounce h-4" style="animation-delay: 0.3s"></span>
+                    <span class="w-1 bg-[#1E5BA8] rounded-full animate-pulse h-2"></span>
+                    <span class="w-1 bg-[#1E5BA8] rounded-full animate-bounce h-4" style="animation-delay: 0.1s"></span>
+                    <span class="w-1 bg-[#1E5BA8] rounded-full animate-bounce h-3" style="animation-delay: 0.2s"></span>
+                    <span class="w-1 bg-[#1E5BA8] rounded-full animate-bounce h-4" style="animation-delay: 0.3s"></span>
                   </div>
                 </div>
               </div>
 
               <!-- Reprodutor de Áudio (Aparece quando a gravação é concluída) -->
-              <div id="audio-player-container" class="hidden mt-4 pt-3 border-t border-slate-200/80">
-                <span class="text-[11px] font-bold text-slate-600 uppercase tracking-wider block mb-1.5">
+              <div id="audio-player-container" class="hidden mt-4 pt-3 border-t border-[#C9D9EB]">
+                <span class="text-[11px] font-bold text-[#334155] uppercase tracking-wider block mb-1.5">
                   ✓ Áudio pronto. Ouça seu relato antes de enviar:
                 </span>
                 <audio id="recorded-audio-element" controls class="w-full h-10 rounded-lg outline-none"></audio>
@@ -542,131 +564,141 @@
     </div>
     <!-- FIM LAYOUT EM DUAS COLUNAS -->
 
-    <!-- 4. ENVIO E VALIDAÇÃO DA ATIVIDADE (QUADRO AZUL SERENO E LUMINOSO) -->
-    <section id="submission-section" class="scroll-mt-20">
-      <div class="bg-gradient-to-br from-[#1d4ed8] via-[#2563eb] to-[#0284c7] border-2 border-blue-200/50 shadow-xl rounded-3xl p-6 sm:p-8 text-center max-w-3xl mx-auto space-y-6 text-white">
+    <!-- ==================== 4. ENVIO E VALIDAÇÃO DA ATIVIDADE COMPLETA ====================
+         REESTRUTURADA DE FORMA CALMA, CLARA, AREJADA E FÁCIL DE LER DE UM OLHAR SÓ
+         • Fundo da seção: gradiente suave de #F0F5FA para branco
+         • Caixa principal: #FFFFFF, borda suave #C9D9EB, cantos arredondados
+         • Título principal: #154B8C, bem visível e centralizado no topo
+         • Subtítulo explicativo: #475569, menor e discreto
+         • Barra de progresso visível no topo
+         • Quadros dos requisitos: fundo #F7FAFD, sem bordas grossas coloridas
+         • Apenas o ícone/símbolo de status recebe cor (✅ #2E9372, ⏳ #E8A838, ⭕ #94A3B8)
+         • Texto dos itens: #334155
+         • Botão Enviar Atividade: fundo #1E5BA8, texto branco, hover #2970C8
+    -->
+    <section id="submission-section" class="scroll-mt-20 py-8 px-4 rounded-3xl bg-gradient-to-b from-[#F0F5FA] to-white border border-[#C9D9EB]">
+      <div class="bg-white border border-[#C9D9EB] shadow-xs rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto space-y-6">
         
-        <!-- Ícone topo em destaque -->
-        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 border-2 border-white/40 text-cyan-200 shadow-md">
-          <i data-lucide="send" class="w-7 h-7"></i>
-        </div>
-
-        <div>
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+        <!-- 1. Título Grande e Centralizado + 2. Texto Explicativo Pequeno Abaixo -->
+        <div class="text-center space-y-1.5">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#154B8C] tracking-tight">
             Envio e Validação da Atividade Completa
           </h3>
-          <p class="text-sm text-blue-100 mt-1.5 max-w-xl mx-auto font-medium">
-            Ao enviar, nosso sistema valida o cumprimento das etapas reflexivas e emite o registro oficial de conclusão da ESDHUBEM.
+          <p class="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto">
+            Ao concluir todos os requisitos, envie sua produção para validação pedagógica e emissão do registro oficial da ESDHUBEM.
           </p>
         </div>
 
-        <!-- Checklist de Validação: 4 Cards estilo Semáforo (Amarelo / Verde) -->
-        <div class="bg-white/15 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/30 text-left space-y-4 shadow-sm">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-cyan-100 uppercase tracking-wider flex items-center gap-1.5">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-200"></i>
-              Requisitos da Aula (Semáforo de Conclusão):
+        <!-- 3. Barra de Progresso Visível no Topo dos Quadros -->
+        <div class="bg-[#F7FAFD] border border-[#C9D9EB] rounded-xl p-3.5 sm:p-4 space-y-2">
+          <div class="flex items-center justify-between text-xs sm:text-sm">
+            <span class="font-bold text-[#154B8C] flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-[#1E5BA8]"></i>
+              Progresso dos Requisitos:
             </span>
-            <span id="requirements-counter" class="text-xs font-bold text-amber-200 bg-amber-400/25 px-2.5 py-1 rounded-lg border border-amber-300/40">
-              0 de 4 Concluídos
+            <span id="requirements-counter" class="font-bold text-[#154B8C]">
+              0 de 4 concluídos
             </span>
           </div>
+          <div class="w-full bg-[#E2EBF5] rounded-full h-2.5 overflow-hidden">
+            <div id="requirements-progress-bar" class="h-full bg-[#2E9372] rounded-full transition-all duration-300" style="width: 0%;"></div>
+          </div>
+        </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            
-            <!-- 1. Videoaula -->
-            <div id="check-video-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
-              <div>
-                <span class="font-bold block text-sm text-white">1. Videoaula</span>
-                <span id="check-video-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Pendente</span>
+        <!-- 4. Os 4 Quadros Organizados (Fundo #F7FAFD, sem bordas grossas coloridas, ícone colorido) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- 1. Videoaula -->
+          <div id="check-video-card" class="bg-[#F7FAFD] border border-[#C9D9EB] rounded-xl p-4 flex flex-col justify-between min-h-[140px] shadow-xs transition-colors">
+            <div>
+              <span class="text-sm font-bold text-[#154B8C] block">1. Videoaula</span>
+              <div id="check-video-sub" class="text-xs text-[#334155] mt-2 flex items-center gap-1.5 font-medium">
+                <span class="text-[#E8A838]">⏳</span> <span>Pendente</span>
               </div>
-              <button 
-                id="btn-card-watch" 
-                type="button"
-                onclick="toggleWatchedVideoQuick()" 
-                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs"
-              >
-                <i data-lucide="check" class="w-3.5 h-3.5"></i>
-                <span id="btn-card-watch-text">Concluir Aula</span>
-              </button>
             </div>
-
-            <!-- 2. Mapa Mental -->
-            <div id="check-map-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
-              <div>
-                <span class="font-bold block text-sm text-white">2. Mapa Mental</span>
-                <span id="check-map-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Mínimo 4 nós</span>
-              </div>
-              <a 
-                href="#canvas-container" 
-                id="btn-card-map"
-                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
-              >
-                <i data-lucide="git-branch" class="w-3.5 h-3.5"></i>
-                <span id="btn-card-map-text">Criar Nós</span>
-              </a>
-            </div>
-
-            <!-- 3. Escrita Reflexiva -->
-            <div id="check-text-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
-              <div>
-                <span class="font-bold block text-sm text-white">3. Escrita Reflexiva</span>
-                <span id="check-text-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Mín. 500 carac.</span>
-              </div>
-              <a 
-                href="#reflection-textarea" 
-                id="btn-card-text"
-                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
-              >
-                <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
-                <span id="btn-card-text-text">Escrever Texto</span>
-              </a>
-            </div>
-
-            <!-- 4. Áudio Reflexivo -->
-            <div id="check-audio-card" class="p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-sm">
-              <div>
-                <span class="font-bold block text-sm text-white">4. Áudio Reflexivo</span>
-                <span id="check-audio-sub" class="text-xs mt-1 block font-bold text-amber-300">🟡 Gravação pendente</span>
-              </div>
-              <a 
-                href="#audio-recorder-container" 
-                id="btn-card-audio"
-                class="mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center"
-              >
-                <i data-lucide="mic" class="w-3.5 h-3.5"></i>
-                <span id="btn-card-audio-text">Gravar Áudio</span>
-              </a>
-            </div>
-
+            <button 
+              id="btn-card-watch" 
+              type="button"
+              onclick="toggleWatchedVideoQuick()" 
+              class="mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center"
+            >
+              <span id="btn-card-watch-text">Concluir Aula</span>
+            </button>
           </div>
 
-          <!-- Onde a seta aponta: Faixa de Status de Liberação -->
-          <div id="release-status-banner" class="mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-amber-500/15 border-amber-400 text-amber-200 shadow-xs">
-            <div class="flex items-center gap-2.5">
-              <span id="release-status-icon" class="w-3.5 h-3.5 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
-              <span id="release-status-text">Complete os requisitos pendentes (em amarelo) acima para liberar o envio da aula.</span>
+          <!-- 2. Mapa Mental -->
+          <div id="check-map-card" class="bg-[#F7FAFD] border border-[#C9D9EB] rounded-xl p-4 flex flex-col justify-between min-h-[140px] shadow-xs transition-colors">
+            <div>
+              <span class="text-sm font-bold text-[#154B8C] block">2. Mapa Mental</span>
+              <div id="check-map-sub" class="text-xs text-[#334155] mt-2 flex items-center gap-1.5 font-medium">
+                <span class="text-[#E8A838]">⏳</span> <span>Mínimo 4 nós</span>
+              </div>
             </div>
-            <span id="release-status-badge" class="px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-amber-500/30 text-amber-300 border border-amber-400/40 font-bold shrink-0">
-              Aguardando Requisitos
-            </span>
+            <a 
+              href="#canvas-container" 
+              id="btn-card-map"
+              class="mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center"
+            >
+              <span id="btn-card-map-text">Criar Nós</span>
+            </a>
+          </div>
+
+          <!-- 3. Escrita Reflexiva -->
+          <div id="check-text-card" class="bg-[#F7FAFD] border border-[#C9D9EB] rounded-xl p-4 flex flex-col justify-between min-h-[140px] shadow-xs transition-colors">
+            <div>
+              <span class="text-sm font-bold text-[#154B8C] block">3. Escrita Reflexiva</span>
+              <div id="check-text-sub" class="text-xs text-[#334155] mt-2 flex items-center gap-1.5 font-medium">
+                <span class="text-[#E8A838]">⏳</span> <span>Mín. 500 carac.</span>
+              </div>
+            </div>
+            <a 
+              href="#reflection-textarea" 
+              id="btn-card-text"
+              class="mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center"
+            >
+              <span id="btn-card-text-text">Escrever Texto</span>
+            </a>
+          </div>
+
+          <!-- 4. Áudio Reflexivo -->
+          <div id="check-audio-card" class="bg-[#F7FAFD] border border-[#C9D9EB] rounded-xl p-4 flex flex-col justify-between min-h-[140px] shadow-xs transition-colors">
+            <div>
+              <span class="text-sm font-bold text-[#154B8C] block">4. Áudio Reflexivo</span>
+              <div id="check-audio-sub" class="text-xs text-[#334155] mt-2 flex items-center gap-1.5 font-medium">
+                <span class="text-[#E8A838]">⏳</span> <span>Pendente</span>
+              </div>
+            </div>
+            <a 
+              href="#audio-recorder-container" 
+              id="btn-card-audio"
+              class="mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center"
+            >
+              <span id="btn-card-audio-text">Gravar Áudio</span>
+            </a>
           </div>
 
         </div>
 
-        <!-- Botão Principal de Envio (Muda de Laranja para Amarelo após Envio) -->
-        <div class="space-y-3 pt-2">
+        <!-- 5. Mensagem de Orientação Suave (#475569) -->
+        <div id="release-status-banner" class="text-center py-1">
+          <p id="release-status-text" class="text-xs sm:text-sm text-[#475569]">
+            Complete os requisitos pendentes para liberar o envio da aula.
+          </p>
+        </div>
+
+        <!-- 6. Botão "Enviar Atividade Completa" Grande e Visível Embaixo -->
+        <div class="text-center pt-2 space-y-2">
           <button 
             id="btn-submit-activity" 
             onclick="handleFinalSubmit()"
-            class="w-full sm:w-auto px-10 py-4 text-base font-black rounded-2xl transition-all shadow-xl flex items-center justify-center gap-2.5 mx-auto cursor-pointer bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 hover:scale-[1.02] active:scale-[0.98] border-2 border-yellow-300/40"
+            class="w-full sm:w-auto px-10 py-3.5 text-base font-bold rounded-xl transition-colors shadow-xs flex items-center justify-center gap-2 mx-auto cursor-pointer bg-[#1E5BA8] hover:bg-[#2970C8] text-white"
           >
-            <i data-lucide="send" class="w-5 h-5 text-slate-950"></i>
+            <i data-lucide="send" class="w-4 h-4"></i>
             <span id="btn-submit-text">Enviar Atividade Completa</span>
           </button>
           
-          <p id="submission-footer-note" class="text-xs text-slate-400">
-            Seus dados e gravações permanecem salvos em seu navegador.
+          <p id="submission-footer-note" class="text-xs text-[#475569]">
+            Seus dados e produções permanecem salvos em seu navegador.
           </p>
         </div>
 
@@ -676,47 +708,47 @@
   </main>
 
   <!-- MODAL DE CERTIFICADO E FINALIZAÇÃO -->
-  <div id="completion-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs hidden items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-xl w-full shadow-2xl border border-sky-100 overflow-hidden flex flex-col">
-      <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-sky-50/70">
+  <div id="completion-modal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-xs hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full shadow-xl border border-[#C9D9EB] overflow-hidden flex flex-col">
+      <div class="p-5 border-b border-[#C9D9EB] flex items-center justify-between bg-[#F0F5FA]">
         <div class="flex items-center gap-2">
-          <i data-lucide="award" class="w-5 h-5 text-sky-700"></i>
-          <h4 class="text-base font-bold text-slate-900">Comprovante de Conclusão · ESDHUBEM</h4>
+          <i data-lucide="award" class="w-5 h-5 text-[#154B8C]"></i>
+          <h4 class="text-base font-bold text-[#154B8C]">Comprovante de Conclusão · ESDHUBEM</h4>
         </div>
-        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700"><i data-lucide="x" class="w-5 h-5"></i></button>
+        <button onclick="closeModal()" class="text-[#64748B] hover:text-[#154B8C]"><i data-lucide="x" class="w-5 h-5"></i></button>
       </div>
-      <div class="p-6 space-y-4">
+      <div class="p-6 space-y-4 text-[#334155]">
         <div>
-          <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Nome Completo:</label>
-          <input type="text" id="modal-student-name" value="Estudante ESDHUBEM" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-lg outline-none focus:border-sky-500">
+          <label class="block text-xs font-semibold text-[#154B8C] mb-1">Seu Nome Completo:</label>
+          <input type="text" id="modal-student-name" value="Estudante ESDHUBEM" class="w-full px-3 py-2 text-sm border border-[#C9D9EB] rounded-lg outline-none focus:border-[#3B82D6] text-[#334155]">
         </div>
-        <div class="border border-slate-200 rounded-xl p-4 bg-slate-50 text-xs space-y-2">
-          <p class="text-slate-500 uppercase font-semibold text-[10px]">Resumo da Entrega:</p>
+        <div class="border border-[#C9D9EB] rounded-xl p-4 bg-[#F7FAFD] text-xs space-y-2">
+          <p class="text-[#64748B] uppercase font-semibold text-[10px]">Resumo da Entrega:</p>
           <p><strong>Aula:</strong> Tecnologia do Escrever e do Mapear</p>
           <p id="modal-summary-nodes"><strong>Mapa Mental:</strong> 0 nós estruturados</p>
           <p id="modal-summary-text"><strong>Texto Reflexivo:</strong> 0 caracteres</p>
           <p id="modal-summary-audio"><strong>Áudio Reflexivo:</strong> Pendente</p>
-          <p id="modal-summary-email" class="text-xs text-emerald-800 font-bold bg-emerald-100/80 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 border border-emerald-300">
-            <i data-lucide="mail-check" class="w-4 h-4 text-emerald-600"></i>
+          <p id="modal-summary-email" class="text-xs text-[#065F46] font-semibold bg-[#ECFDF5] px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 border border-[#A7F3D0]">
+            <i data-lucide="mail-check" class="w-4 h-4 text-[#2E9372]"></i>
             <span>Trabalho enviado para o e-mail: esdhubem@proton.me</span>
           </p>
           
           <div id="modal-audio-container" class="hidden pt-2">
-            <span class="block text-[11px] font-bold text-slate-600 mb-1">Áudio Gravado:</span>
+            <span class="block text-[11px] font-bold text-[#154B8C] mb-1">Áudio Gravado:</span>
             <audio id="modal-audio-element" controls class="w-full h-8"></audio>
           </div>
         </div>
         <div class="flex flex-wrap items-center justify-end gap-2 pt-2">
-          <a id="btn-modal-send-email" href="#" target="_blank" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg flex items-center gap-1.5 cursor-pointer shadow-sm">
+          <a id="btn-modal-send-email" href="#" target="_blank" class="px-3.5 py-2 bg-[#2E9372] hover:bg-[#257d61] text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer shadow-xs">
             <i data-lucide="mail" class="w-3.5 h-3.5"></i> Abrir E-mail Enviado
           </a>
-          <button id="btn-modal-download-audio" onclick="downloadAudioFile()" class="px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
+          <button id="btn-modal-download-audio" onclick="downloadAudioFile()" class="px-3.5 py-2 bg-[#F0F5FA] hover:bg-[#E2EBF5] text-[#154B8C] border border-[#C9D9EB] text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="music" class="w-3.5 h-3.5"></i> Baixar Áudio
           </button>
-          <button onclick="downloadSummaryFile()" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
+          <button onclick="downloadSummaryFile()" class="px-3.5 py-2 bg-[#F0F5FA] hover:bg-[#E2EBF5] text-[#334155] border border-[#C9D9EB] text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar (.txt)
           </button>
-          <button onclick="window.print()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
+          <button onclick="window.print()" class="px-4 py-2 bg-[#1E5BA8] hover:bg-[#2970C8] text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 cursor-pointer">
             <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir
           </button>
         </div>
@@ -769,21 +801,21 @@
     let currentLessonIndex = 0;
     let completedLessonIds = JSON.parse(localStorage.getItem('esdhubem_completed_lessons') || '["c1"]');
 
-    // --- ESTADO INICIAL DO MAPA MENTAL ---
+    // --- ESTADO INICIAL DO MAPA MENTAL (CORES SUAVES E PASTÉIS, SEM TONS FORTES OU NEONS) ---
     const DEFAULT_NODES = [
-      { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#06B6D4', isRoot: true },
-      { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#10B981' },
-      { id: 'b2', parentId: 'root', text: '2. Estrutura Radial & Conexões', x: 620, y: 350, color: '#8B5CF6' },
-      { id: 'b3', parentId: 'root', text: '3. Ação Consciente & Hábitos', x: 180, y: 260, color: '#F97316' }
+      { id: 'root', parentId: null, text: 'Tecnologia do Escrever e do Mapear', x: 400, y: 260, color: '#1E5BA8', isRoot: true },
+      { id: 'b1', parentId: 'root', text: '1. Descarga Cognitiva (Brain Dump)', x: 620, y: 170, color: '#2E9372' },
+      { id: 'b2', parentId: 'root', text: '2. Estrutura Radial & Conexões', x: 620, y: 350, color: '#3B82D6' },
+      { id: 'b3', parentId: 'root', text: '3. Ação Consciente & Hábitos', x: 180, y: 260, color: '#E8A838' }
     ];
 
     const PALETTE = [
-      { name: 'Ciano Luminoso', value: '#06B6D4' },
-      { name: 'Laranja Fogo', value: '#F97316' },
-      { name: 'Verde Esmeralda', value: '#10B981' },
-      { name: 'Rosa Choque', value: '#EC4899' },
-      { name: 'Amarelo Ouro', value: '#FACC15' },
-      { name: 'Roxo Elétrico', value: '#8B5CF6' }
+      { name: 'Azul Médio Sereno', value: '#1E5BA8' },
+      { name: 'Azul Ativo Suave', value: '#3B82D6' },
+      { name: 'Verde Suave', value: '#2E9372' },
+      { name: 'Dourado Suave', value: '#E8A838' },
+      { name: 'Lavanda Suave', value: '#8B5CF6' },
+      { name: 'Ardósia Equilibrada', value: '#64748B' }
     ];
 
     let nodes = JSON.parse(localStorage.getItem('esdhubem_gh_nodes') || JSON.stringify(DEFAULT_NODES));
@@ -821,7 +853,7 @@
         <button 
           onclick="changeSelectedColor('${c.value}')"
           style="background-color: ${c.value};"
-          class="w-5 h-5 rounded-full border-2 border-white/90 shadow-sm cursor-pointer hover:scale-125 transition-transform shrink-0"
+          class="w-5 h-5 rounded-full border border-white shadow-xs cursor-pointer hover:scale-110 transition-transform shrink-0"
           title="${c.name}"
         ></button>
       `).join('');
@@ -909,8 +941,6 @@
         }
       });
 
-      document.getElementById('btn-submit-activity').addEventListener('click', handleFinalSubmit);
-
       centerRootNode();
       saveAndRender();
       updateVideoBtn();
@@ -919,18 +949,16 @@
       if (localStorage.getItem('esdhubem_activity_submitted') === 'true') {
         const headerBtn = document.getElementById('header-status-btn');
         const headerBtnText = document.getElementById('header-status-btn-text');
-        const headerBtnDot = document.getElementById('header-status-dot');
         if (headerBtn) {
-          headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-emerald-300 cursor-pointer';
+          headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-bold rounded-xl bg-[#2E9372] hover:bg-[#257d61] text-white shadow-xs transition-colors flex items-center gap-1.5 shrink-0 border border-white/20 cursor-pointer';
           if (headerBtnText) headerBtnText.innerText = 'Cursado';
-          if (headerBtnDot) headerBtnDot.className = 'w-2 h-2 rounded-full bg-emerald-200';
         }
       }
 
       lucide.createIcons();
     }
 
-    // --- RENDERIZAR LATERAL DE AULAS (ESTILO EXATO DO ANEXO) ---
+    // --- RENDERIZAR LATERAL DE AULAS (#FFFFFF com bordas #C9D9EB e destaques suaves) ---
     function renderSidebarLessons(filter = '') {
       const listContainer = document.getElementById('lessons-list-container');
       const filtered = LESSONS_DATA.filter(l => 
@@ -944,7 +972,7 @@
 
       if (filtered.length === 0) {
         listContainer.innerHTML = `
-          <div class="text-center py-8 text-xs text-slate-400">
+          <div class="text-center py-8 text-xs text-[#64748B]">
             Nenhuma aula encontrada para "${filter}".
           </div>
         `;
@@ -959,64 +987,57 @@
           return `
             <div 
               onclick="selectLessonById('${lesson.id}')"
-              class="p-3.5 sm:p-4 rounded-2xl border-2 border-white bg-white/25 shadow-lg transition-all cursor-pointer"
+              class="p-3 sm:p-3.5 rounded-xl border-2 border-[#1E5BA8] bg-[#F0F5FA] shadow-xs transition-all cursor-pointer"
             >
               <div class="flex items-center gap-3">
-                <!-- Círculo com Ícone ou Número -->
-                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full ${
+                <div class="w-8 h-8 rounded-full ${
                   isCompleted 
-                    ? 'bg-[#00dfa2] text-slate-950 font-black' 
-                    : 'bg-white text-blue-900 font-black'
-                } flex items-center justify-center text-xs shrink-0 shadow-md">
+                    ? 'bg-[#2E9372] text-white font-bold' 
+                    : 'bg-[#1E5BA8] text-white font-bold'
+                } flex items-center justify-center text-xs shrink-0 shadow-xs">
                   ${isCompleted ? '✓' : lesson.number}
                 </div>
 
-                <!-- Título & Módulo -->
                 <div class="flex-1 min-w-0">
-                  <div class="flex items-center justify-between text-[11px] sm:text-xs text-blue-100 mb-0.5 font-medium">
+                  <div class="flex items-center justify-between text-[11px] text-[#475569] mb-0.5 font-medium">
                     <span class="truncate">${lesson.module}</span>
-                    <span class="font-mono text-cyan-200 ml-2 shrink-0 font-bold">${lesson.timeLabel}</span>
+                    <span class="font-mono text-[#3B82D6] ml-2 shrink-0 font-bold">${lesson.timeLabel}</span>
                   </div>
-                  <h4 class="text-xs sm:text-sm font-bold leading-snug truncate text-white">
+                  <h4 class="text-xs sm:text-sm font-bold leading-snug truncate text-[#154B8C]">
                     ${lesson.title}
                   </h4>
                 </div>
               </div>
 
-              <!-- Barra de progresso ciano vibrante na base do card ativo -->
-              <div class="mt-3 w-full bg-cyan-300 h-1 rounded-full shadow-[0_0_8px_rgba(103,232,249,0.7)]"></div>
+              <!-- Linha sutil azul do card ativo -->
+              <div class="mt-2.5 w-full bg-[#1E5BA8] h-1 rounded-full"></div>
             </div>
           `;
         } else {
           return `
             <div 
               onclick="selectLessonById('${lesson.id}')"
-              class="p-3.5 sm:p-4 rounded-2xl border border-white/20 bg-white/10 hover:bg-white/20 hover:border-white/40 transition-all cursor-pointer"
+              class="p-3 sm:p-3.5 rounded-xl border border-[#C9D9EB] bg-white hover:bg-[#F7FAFD] transition-colors cursor-pointer"
             >
               <div class="flex items-center gap-3">
-                <!-- Círculo com Número -->
-                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full ${
+                <div class="w-8 h-8 rounded-full ${
                   isCompleted 
-                    ? 'bg-[#00dfa2] text-slate-950 font-black' 
-                    : 'bg-white/20 border border-white/30 text-white font-bold'
-                } flex items-center justify-center text-xs shrink-0 shadow-inner">
+                    ? 'bg-[#2E9372] text-white font-bold' 
+                    : 'bg-[#F0F5FA] border border-[#C9D9EB] text-[#475569] font-bold'
+                } flex items-center justify-center text-xs shrink-0">
                   ${isCompleted ? '✓' : lesson.number}
                 </div>
 
-                <!-- Título & Módulo -->
                 <div class="flex-1 min-w-0">
-                  <div class="flex items-center justify-between text-[11px] sm:text-xs text-blue-100/80 mb-0.5 font-medium">
+                  <div class="flex items-center justify-between text-[11px] text-[#64748B] mb-0.5 font-medium">
                     <span class="truncate">${lesson.module}</span>
-                    <span class="font-mono text-cyan-200 ml-2 shrink-0 font-bold">${lesson.timeLabel}</span>
+                    <span class="font-mono text-[#64748B] ml-2 shrink-0">${lesson.timeLabel}</span>
                   </div>
-                  <h4 class="text-xs sm:text-sm font-bold leading-snug truncate text-white">
+                  <h4 class="text-xs sm:text-sm font-semibold leading-snug truncate text-[#334155]">
                     ${lesson.title}
                   </h4>
                 </div>
               </div>
-
-              <!-- Linha sutil na base do card inativo -->
-              <div class="mt-3 w-full bg-white/10 h-0.5 rounded-full"></div>
             </div>
           `;
         }
@@ -1104,8 +1125,8 @@
         const pathData = `M ${startX} ${startY} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${endX} ${endY}`;
 
         svgHtml += `
-          <path d="${pathData}" fill="none" stroke="${node.color}" stroke-width="${isRelated ? '3.5' : '2.5'}" stroke-opacity="${isRelated ? '0.95' : '0.55'}" stroke-linecap="round"></path>
-          <circle cx="${endX}" cy="${endY}" r="3.5" fill="${node.color}"></circle>
+          <path d="${pathData}" fill="none" stroke="${node.color || '#C9D9EB'}" stroke-width="${isRelated ? '3' : '2'}" stroke-opacity="${isRelated ? '0.9' : '0.5'}" stroke-linecap="round"></path>
+          <circle cx="${endX}" cy="${endY}" r="3.5" fill="${node.color || '#C9D9EB'}"></circle>
         `;
       });
       svgConnections.innerHTML = svgHtml;
@@ -1119,16 +1140,16 @@
           <div 
             id="node-el-${node.id}"
             data-id="${node.id}"
-            style="transform: translate(${node.x}px, ${node.y}px) translate(-50%, -50%); border-color: ${node.color};"
+            style="transform: translate(${node.x}px, ${node.y}px) translate(-50%, -50%); border-color: ${node.color || '#C9D9EB'};"
             class="mindmap-node absolute min-w-[130px] max-w-[240px] p-2.5 rounded-xl text-center shadow-xs cursor-grab active:cursor-grabbing pointer-events-auto border-2 ${
-              isRoot ? 'bg-sky-700 text-white font-bold text-sm shadow-md' : 'bg-white text-slate-800 text-xs font-semibold'
-            } ${isSelected ? 'ring-3 ring-sky-400 ring-offset-2 shadow-lg z-30' : 'hover:shadow-md z-10'}"
+              isRoot ? 'bg-white text-[#154B8C] font-bold text-sm shadow-xs' : 'bg-white text-[#334155] text-xs font-semibold'
+            } ${isSelected ? 'ring-2 ring-[#3B82D6] ring-offset-2 shadow-sm z-30' : 'hover:shadow-xs z-10'}"
           >
-            <div class="flex items-center justify-between pb-1 mb-1 border-b border-black/5 opacity-70">
-              <span class="text-[10px] text-slate-400">${isRoot ? 'Central' : 'Ideia'}</span>
+            <div class="flex items-center justify-between pb-1 mb-1 border-b border-[#C9D9EB]/60">
+              <span class="text-[10px] text-[#64748B] font-medium">${isRoot ? 'Central' : 'Ideia'}</span>
               <div class="flex items-center gap-1">
-                <button onclick="addChildNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform" title="Adicionar ramo filho">➕</button>
-                ${!isRoot ? `<button onclick="deleteNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform text-rose-500" title="Apagar bloco">🗑️</button>` : ''}
+                <button onclick="addChildNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform text-[#154B8C]" title="Adicionar ramo filho">➕</button>
+                ${!isRoot ? `<button onclick="deleteNode('${node.id}')" class="p-0.5 hover:scale-125 transition-transform text-[#B91C1C]" title="Apagar bloco">🗑️</button>` : ''}
               </div>
             </div>
             <div class="py-0.5 break-words select-text">${node.text}</div>
@@ -1148,40 +1169,76 @@
       });
 
       document.getElementById('mindmap-count-info').innerHTML = `
-        <span>Total: <strong>${nodes.length} nós</strong></span>
-        <span class="text-slate-300">·</span>
-        <span>Ramificações: <strong>${nodes.filter(n => !n.isRoot).length}</strong></span>
+        <span class="font-bold text-[#154B8C]">${nodes.length} nós</span> no mapa
       `;
-
-      const isValid = nodes.length >= 4;
-      const pill = document.getElementById('mindmap-status-pill');
-      if (isValid) {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300';
-        pill.innerHTML = `✓ Mapa Válido (${nodes.length} nós)`;
-      } else {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/10 border-white/20 text-slate-300';
-        pill.innerHTML = `Mínimo 4 nós (${nodes.length}/4)`;
-      }
     }
 
-    // --- SELEÇÃO & INSPETOR ---
     function selectNode(id) {
       selectedNodeId = id;
       renderMap();
+      updateInspector();
     }
 
     function updateInspector() {
-      const node = nodes.find(n => n.id === selectedNodeId) || nodes[0];
+      const node = nodes.find(n => n.id === selectedNodeId);
       if (!node) return;
       inspectorInput.value = node.text;
-      inspectorLabel.innerText = node.isRoot ? 'Tema Central:' : 'Nó Selecionado:';
-      btnDeleteSelected.style.display = node.isRoot ? 'none' : 'inline-flex';
+      inspectorLabel.innerText = node.isRoot ? 'Nó Central:' : 'Nó Selecionado:';
+      btnDeleteSelected.disabled = !!node.isRoot;
+      btnDeleteSelected.style.opacity = node.isRoot ? '0.4' : '1';
     }
 
-    function changeSelectedColor(color) {
+    function addChildNode(parentId) {
+      const parent = nodes.find(n => n.id === parentId) || nodes[0];
+      const newId = 'n_' + Date.now();
+      const offsetCount = nodes.filter(n => n.parentId === parent.id).length;
+      const angle = (offsetCount * 55) * (Math.PI / 180);
+      const dist = parent.isRoot ? 170 : 130;
+
+      const newX = Math.round(parent.x + Math.cos(angle) * dist);
+      const newY = Math.round(parent.y + Math.sin(angle) * dist);
+
+      const colorOption = PALETTE[(nodes.length) % PALETTE.length].value;
+
+      nodes.push({
+        id: newId,
+        parentId: parent.id,
+        text: 'Nova Ideia Reflexiva',
+        x: newX,
+        y: newY,
+        color: colorOption
+      });
+
+      selectedNodeId = newId;
+      saveAndRender();
+      setTimeout(() => {
+        inspectorInput.focus();
+        inspectorInput.select();
+      }, 50);
+    }
+
+    function deleteNode(id) {
+      if (id === 'root') return;
+      const toDelete = new Set([id]);
+      let added = true;
+      while (added) {
+        added = false;
+        nodes.forEach(n => {
+          if (n.parentId && toDelete.has(n.parentId) && !toDelete.has(n.id)) {
+            toDelete.add(n.id);
+            added = true;
+          }
+        });
+      }
+      nodes = nodes.filter(n => !toDelete.has(n.id));
+      selectedNodeId = 'root';
+      saveAndRender();
+    }
+
+    function changeSelectedColor(colorHex) {
       const node = nodes.find(n => n.id === selectedNodeId);
       if (node) {
-        node.color = color;
+        node.color = colorHex;
         saveAndRender();
       }
     }
@@ -1195,58 +1252,14 @@
       }
     }
 
-    function addChildNode(parentId) {
-      const parent = nodes.find(n => n.id === parentId) || nodes[0];
-      const children = nodes.filter(n => n.parentId === parent.id);
-      const isRight = parent.x >= 400;
-      const offsetX = isRight ? (parent.isRoot ? 200 : 160) : -(parent.isRoot ? 200 : 160);
-      const offsetY = (children.length - 1) * 70;
-
-      const nextColor = PALETTE[nodes.length % PALETTE.length].value;
-
-      const newNode = {
-        id: 'node_' + Date.now(),
-        parentId: parent.id,
-        text: 'Nova Ideia ' + nodes.length,
-        x: parent.x + offsetX,
-        y: parent.y + offsetY,
-        color: parent.isRoot ? nextColor : parent.color
-      };
-
-      nodes.push(newNode);
-      selectedNodeId = newNode.id;
-      saveAndRender();
-      inspectorInput.focus();
-      inspectorInput.select();
-    }
-
-    function deleteNode(id) {
-      const target = nodes.find(n => n.id === id);
-      if (!target) return;
-      if (target.isRoot) {
-        alert('O tema central não pode ser excluído.');
-        return;
-      }
-
-      const toDelete = new Set([id]);
-      let added = true;
-      while (added) {
-        added = false;
-        nodes.forEach(n => {
-          if (n.parentId && toDelete.has(n.parentId) && !toDelete.has(n.id)) {
-            toDelete.add(n.id);
-            added = true;
-          }
-        });
-      }
-
-      nodes = nodes.filter(n => !toDelete.has(n.id));
-      selectedNodeId = 'root';
-      saveAndRender();
-    }
-
-    // --- ARRASTE E PAN DO CANVAS ---
+    // --- CANVAS PAN & ZOOM ---
     function setupCanvasEvents() {
+      container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        adjustZoom(delta);
+      }, { passive: false });
+
       container.addEventListener('pointerdown', (e) => {
         if (e.target.closest('.mindmap-node')) return;
         isPanning = true;
@@ -1376,10 +1389,10 @@
       const activeLesson = LESSONS_DATA[currentLessonIndex];
       const isCompleted = completedLessonIds.includes(activeLesson.id);
       if (isCompleted) {
-        btn.className = 'text-xs font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-sm';
+        btn.className = 'text-xs font-semibold text-white bg-[#2E9372] hover:bg-[#257d61] border border-[#2E9372] px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-xs';
         btn.innerText = '✓ Videoaula Concluída';
       } else {
-        btn.className = 'text-xs font-semibold text-sky-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto';
+        btn.className = 'text-xs font-semibold text-white bg-[#1E5BA8] hover:bg-[#2970C8] border border-[#1E5BA8] px-3.5 py-1.5 rounded-xl transition-colors cursor-pointer shrink-0 self-start sm:self-auto shadow-xs';
         btn.innerText = 'Marcar como Assistida';
       }
     }
@@ -1391,7 +1404,6 @@
       document.getElementById('text-char-count').innerText = chars + ' caracteres';
       document.getElementById('text-word-count').innerText = words + ' palavras';
 
-      // Progresso baseado no critério mínimo de 500 caracteres (faixa ideal 500 a 800)
       const progress = Math.min(100, Math.round((chars / 500) * 100));
       document.getElementById('text-progress-bar').style.width = progress + '%';
       document.getElementById('text-progress-percent').innerText = progress + '%';
@@ -1399,25 +1411,12 @@
       const isValid = chars >= 500;
       const pill = document.getElementById('text-status-pill');
       if (isValid) {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-emerald-500/20 border-emerald-400/40 text-emerald-300';
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-[#2E9372] border-[#2E9372] text-white';
         pill.innerHTML = `✓ Texto Reflexivo Válido (${chars} carac.)`;
       } else {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/10 border-white/20 text-slate-300';
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border bg-white/15 border-white/20 text-white';
         pill.innerHTML = `Mínimo de 500 a 800 caracteres (${chars}/500)`;
       }
-    }
-
-    function insertPrompt(promptText) {
-      if (textarea.value.trim()) {
-        textarea.value += `\n\n[Reflexão: ${promptText}]\n`;
-      } else {
-        textarea.value = `[Reflexão: ${promptText}]\n`;
-      }
-      reflectiveText = textarea.value;
-      localStorage.setItem('esdhubem_gh_text', reflectiveText);
-      updateTextMetrics();
-      updateChecklist();
-      textarea.focus();
     }
 
     // --- GRAVADOR DE ÁUDIO REFLEXIVO ---
@@ -1449,28 +1448,16 @@
 
         audioChunks = [];
         audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        
-        let mimeType = 'audio/webm';
-        if (typeof MediaRecorder.isTypeSupported === 'function') {
-          if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
-            mimeType = 'audio/webm;codecs=opus';
-          } else if (MediaRecorder.isTypeSupported('audio/mp4')) {
-            mimeType = 'audio/mp4';
-          } else if (MediaRecorder.isTypeSupported('audio/ogg')) {
-            mimeType = 'audio/ogg';
-          }
-        }
+        mediaRecorder = new MediaRecorder(audioStream);
 
-        mediaRecorder = new MediaRecorder(audioStream, { mimeType });
-
-        mediaRecorder.ondataavailable = (event) => {
-          if (event.data && event.data.size > 0) {
-            audioChunks.push(event.data);
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data && e.data.size > 0) {
+            audioChunks.push(e.data);
           }
         };
 
         mediaRecorder.onstop = () => {
-          audioBlob = new Blob(audioChunks, { type: mimeType });
+          audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
           if (audioUrl) URL.revokeObjectURL(audioUrl);
           audioUrl = URL.createObjectURL(audioBlob);
 
@@ -1482,18 +1469,17 @@
           if (modalAudio) {
             modalAudio.src = audioUrl;
           }
+
+          hasAudioRecorded = true;
           document.getElementById('audio-player-container')?.classList.remove('hidden');
           document.getElementById('modal-audio-container')?.classList.remove('hidden');
           document.getElementById('btn-re-record')?.classList.remove('hidden');
           document.getElementById('btn-delete-audio')?.classList.remove('hidden');
 
-          hasAudioRecorded = true;
-
-          // Atualizar status do card de áudio
           const pill = document.getElementById('audio-status-pill');
           if (pill) {
-            pill.className = 'inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-emerald-500/20 border-emerald-400 text-emerald-800 self-start sm:self-auto shadow-sm';
-            pill.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> <span>✓ Áudio Gravado (${formatDuration(audioDurationSec)})</span>`;
+            pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-[#ECFDF5] border-[#A7F3D0] text-[#065F46] self-start sm:self-auto';
+            pill.innerHTML = `<span>✅</span> <span>Áudio gravado (${formatDuration(audioDurationSec)})</span>`;
           }
 
           updateChecklist();
@@ -1504,10 +1490,9 @@
         isRecordingAudio = true;
         audioDurationSec = 0;
 
-        // UI durante gravação
         const btnRec = document.getElementById('btn-record-audio');
         if (btnRec) {
-          btnRec.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer bg-slate-900 hover:bg-black text-white animate-pulse';
+          btnRec.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-colors shadow-xs flex items-center gap-2 cursor-pointer bg-[#DC2626] hover:bg-[#B91C1C] text-white';
         }
         document.getElementById('btn-record-text').innerText = 'Parar Gravação (Concluir)';
         document.getElementById('audio-rec-dot')?.classList.remove('hidden');
@@ -1543,7 +1528,7 @@
 
       const btn = document.getElementById('btn-record-audio');
       if (btn) {
-        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white';
+        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-colors shadow-xs flex items-center gap-2 cursor-pointer bg-[#2E9372] hover:bg-[#257d61] text-white';
         document.getElementById('btn-record-text').innerText = '✓ Áudio Gravado';
       }
       document.getElementById('audio-rec-dot')?.classList.add('hidden');
@@ -1589,14 +1574,14 @@
 
       const btn = document.getElementById('btn-record-audio');
       if (btn) {
-        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer bg-red-600 hover:bg-red-700 text-white hover:shadow-md';
+        btn.className = 'px-4 py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-colors shadow-xs flex items-center gap-2 cursor-pointer bg-[#1E5BA8] hover:bg-[#2970C8] text-white';
         document.getElementById('btn-record-text').innerText = 'Iniciar Gravação de Áudio';
       }
 
       const pill = document.getElementById('audio-status-pill');
       if (pill) {
-        pill.className = 'inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border-2 bg-amber-400/15 border-amber-400 text-amber-800 self-start sm:self-auto';
-        pill.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> <span>🟡 Pendente de gravação</span>`;
+        pill.className = 'inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-[#FEF3C7] border-[#FCD34D] text-[#92400E] self-start sm:self-auto';
+        pill.innerHTML = `<span class="text-[#E8A838]">⏳</span> <span>Pendente de gravação</span>`;
       }
 
       updateChecklist();
@@ -1640,7 +1625,7 @@
       if (window.lucide) lucide.createIcons();
     }
 
-    // --- CHECKLIST & SUBMISSÃO COM SEMÁFORO (AMARELO / VERDE) ---
+    // --- CHECKLIST & VALIDAÇÃO COM PALETA CALMA E CLARA ---
     function updateChecklist() {
       const isMapValid = nodes.length >= 4;
       const isTextValid = reflectiveText.trim().length >= 500;
@@ -1648,132 +1633,94 @@
       const isAudioValid = hasAudioRecorded;
 
       // 1. VIDEOAULA
-      const cVideo = document.getElementById('check-video-card');
       const sVideo = document.getElementById('check-video-sub');
-      const bVideo = document.getElementById('btn-card-watch');
       const bVideoText = document.getElementById('btn-card-watch-text');
+      const bVideo = document.getElementById('btn-card-watch');
 
       if (isVideoValid) {
-        cVideo.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
-        sVideo.className = 'text-xs mt-1 block font-bold text-emerald-300';
-        sVideo.innerText = '🟢 Conteúdo assistido';
-        if (bVideo) {
-          bVideo.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs';
-          bVideoText.innerText = 'Concluída ✓';
-        }
+        sVideo.innerHTML = '<span class="text-[#2E9372]">✅</span> <span class="text-[#334155] font-semibold">Assistida</span>';
+        if (bVideoText) bVideoText.innerText = 'Assistida ✓';
+        if (bVideo) bVideo.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#2E9372] hover:bg-[#257d61] text-white transition-colors cursor-pointer text-center';
       } else {
-        cVideo.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
-        sVideo.className = 'text-xs mt-1 block font-bold text-amber-300';
-        sVideo.innerText = '🟡 Pendente';
-        if (bVideo) {
-          bVideo.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs';
-          bVideoText.innerText = 'Concluir Aula';
-        }
+        sVideo.innerHTML = '<span class="text-[#E8A838]">⏳</span> <span class="text-[#334155]">Pendente</span>';
+        if (bVideoText) bVideoText.innerText = 'Concluir Aula';
+        if (bVideo) bVideo.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center';
       }
 
       // 2. MAPA MENTAL
-      const cMap = document.getElementById('check-map-card');
       const sMap = document.getElementById('check-map-sub');
-      const bMap = document.getElementById('btn-card-map');
       const bMapText = document.getElementById('btn-card-map-text');
+      const bMap = document.getElementById('btn-card-map');
 
       if (isMapValid) {
-        cMap.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
-        sMap.className = 'text-xs mt-1 block font-bold text-emerald-300';
-        sMap.innerText = `🟢 ${nodes.length} nós criados`;
-        if (bMap) {
-          bMap.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
-          bMapText.innerText = 'Ver Mapa ✓';
-        }
+        sMap.innerHTML = `<span class="text-[#2E9372]">✅</span> <span class="text-[#334155] font-semibold">${nodes.length} nós criados</span>`;
+        if (bMapText) bMapText.innerText = 'Ver Mapa ✓';
+        if (bMap) bMap.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#2E9372] hover:bg-[#257d61] text-white transition-colors cursor-pointer text-center';
       } else {
-        cMap.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
-        sMap.className = 'text-xs mt-1 block font-bold text-amber-300';
-        sMap.innerText = `🟡 Faltam ${4 - nodes.length} nós`;
-        if (bMap) {
-          bMap.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
-          bMapText.innerText = 'Criar Nós';
-        }
+        sMap.innerHTML = `<span class="text-[#E8A838]">⏳</span> <span class="text-[#334155]">Faltam ${4 - nodes.length} nós (mín. 4)</span>`;
+        if (bMapText) bMapText.innerText = 'Criar Nós';
+        if (bMap) bMap.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center';
       }
 
       // 3. ESCRITA REFLEXIVA
-      const cText = document.getElementById('check-text-card');
       const sText = document.getElementById('check-text-sub');
-      const bText = document.getElementById('btn-card-text');
       const bTextText = document.getElementById('btn-card-text-text');
+      const bText = document.getElementById('btn-card-text');
 
       if (isTextValid) {
-        cText.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
-        sText.className = 'text-xs mt-1 block font-bold text-emerald-300';
-        sText.innerText = `🟢 ${reflectiveText.length} carac.`;
-        if (bText) {
-          bText.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
-          bTextText.innerText = 'Ver Texto ✓';
-        }
+        sText.innerHTML = `<span class="text-[#2E9372]">✅</span> <span class="text-[#334155] font-semibold">${reflectiveText.length} caracteres</span>`;
+        if (bTextText) bTextText.innerText = 'Ver Texto ✓';
+        if (bText) bText.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#2E9372] hover:bg-[#257d61] text-white transition-colors cursor-pointer text-center';
       } else {
-        cText.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
-        sText.className = 'text-xs mt-1 block font-bold text-amber-300';
-        sText.innerText = `🟡 Mín. 500 carac. (${reflectiveText.length}/500)`;
-        if (bText) {
-          bText.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
-          bTextText.innerText = 'Escrever Texto';
-        }
+        sText.innerHTML = `<span class="text-[#E8A838]">⏳</span> <span class="text-[#334155]">Mín. 500 carac. (${reflectiveText.length}/500)</span>`;
+        if (bTextText) bTextText.innerText = 'Escrever Texto';
+        if (bText) bText.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center';
       }
 
       // 4. ÁUDIO REFLEXIVO
-      const cAudio = document.getElementById('check-audio-card');
       const sAudio = document.getElementById('check-audio-sub');
-      const bAudio = document.getElementById('btn-card-audio');
       const bAudioText = document.getElementById('btn-card-audio-text');
+      const bAudio = document.getElementById('btn-card-audio');
 
       if (isAudioValid) {
-        cAudio.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.3)]';
-        sAudio.className = 'text-xs mt-1 block font-bold text-emerald-300';
-        sAudio.innerText = `🟢 Gravado (${formatDuration(audioDurationSec)})`;
-        if (bAudio) {
-          bAudio.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-emerald-500/30 hover:bg-emerald-500/45 text-emerald-100 border-emerald-300/50 shadow-xs text-center';
-          bAudioText.innerText = 'Ouvir Áudio ✓';
-        }
+        sAudio.innerHTML = `<span class="text-[#2E9372]">✅</span> <span class="text-[#334155] font-semibold">Gravado (${formatDuration(audioDurationSec)})</span>`;
+        if (bAudioText) bAudioText.innerText = 'Ouvir Áudio ✓';
+        if (bAudio) bAudio.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#2E9372] hover:bg-[#257d61] text-white transition-colors cursor-pointer text-center';
       } else {
-        cAudio.className = 'p-3.5 rounded-xl border-2 transition-all duration-300 flex flex-col justify-between min-h-[96px] bg-amber-400/20 border-amber-400 text-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.2)]';
-        sAudio.className = 'text-xs mt-1 block font-bold text-amber-300';
-        sAudio.innerText = '🟡 Gravação pendente';
-        if (bAudio) {
-          bAudio.className = 'mt-2.5 w-full py-1.5 px-2.5 rounded-lg text-xs font-black border transition-all cursor-pointer flex items-center justify-center gap-1.5 bg-amber-400/25 hover:bg-amber-400/40 text-amber-100 border-amber-300/40 shadow-xs text-center';
-          bAudioText.innerText = 'Gravar Áudio';
-        }
+        sAudio.innerHTML = '<span class="text-[#E8A838]">⏳</span> <span class="text-[#334155]">Gravação pendente</span>';
+        if (bAudioText) bAudioText.innerText = 'Gravar Áudio';
+        if (bAudio) bAudio.className = 'mt-3 w-full py-1.5 px-3 rounded-lg text-xs font-semibold bg-[#1E5BA8] hover:bg-[#2970C8] text-white transition-colors cursor-pointer text-center';
       }
 
-      // Contador de Requisitos
+      // Atualizar Trilha no Header
+      const trailVideoDot = document.getElementById('trail-video-dot');
+      const trailMapDot = document.getElementById('trail-map-dot');
+      const trailTextDot = document.getElementById('trail-text-dot');
+      if (trailVideoDot) trailVideoDot.className = `w-2 h-2 rounded-full ${isVideoValid ? 'bg-[#2E9372]' : 'bg-[#E8A838]'} inline-block`;
+      if (trailMapDot) trailMapDot.className = `w-2 h-2 rounded-full ${isMapValid ? 'bg-[#2E9372]' : 'bg-[#3B82D6]'} inline-block`;
+      if (trailTextDot) trailTextDot.className = `w-2 h-2 rounded-full ${isTextValid ? 'bg-[#2E9372]' : 'bg-[#94A3B8]'} inline-block`;
+
+      // Contador e Barra de Progresso
       const completedCount = [isVideoValid, isMapValid, isTextValid, isAudioValid].filter(Boolean).length;
       const counterEl = document.getElementById('requirements-counter');
+      const progressBar = document.getElementById('requirements-progress-bar');
+      
       if (counterEl) {
-        if (completedCount === 4) {
-          counterEl.className = 'text-xs font-bold text-emerald-300 bg-emerald-500/20 px-2.5 py-1 rounded-lg border border-emerald-400/40';
-          counterEl.innerText = '4 de 4 Concluídos ✓';
-        } else {
-          counterEl.className = 'text-xs font-bold text-amber-300 bg-amber-400/10 px-2.5 py-1 rounded-lg border border-amber-400/30';
-          counterEl.innerText = `${completedCount} de 4 Concluídos`;
-        }
+        counterEl.innerText = `${completedCount} de 4 concluídos`;
+        counterEl.className = completedCount === 4 ? 'font-bold text-[#2E9372]' : 'font-bold text-[#154B8C]';
+      }
+      if (progressBar) {
+        progressBar.style.width = `${(completedCount / 4) * 100}%`;
       }
 
-      // ONDE A SETA APONTA: Banner de Liberação de Envio
-      const banner = document.getElementById('release-status-banner');
-      const bIcon = document.getElementById('release-status-icon');
-      const bTextStatus = document.getElementById('release-status-text');
-      const bBadge = document.getElementById('release-status-badge');
-
-      if (completedCount === 4) {
-        banner.className = 'mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-emerald-500/25 border-emerald-400 text-emerald-100 shadow-[0_0_20px_rgba(16,185,129,0.35)]';
-        bIcon.className = 'w-3.5 h-3.5 rounded-full bg-emerald-400 animate-ping shrink-0';
-        bTextStatus.innerText = '🟢 LIBERADO PARA ENVIO! Todos os 4 requisitos foram cumpridos com sucesso.';
-        bBadge.className = 'px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-emerald-500/40 text-emerald-100 border border-emerald-300 font-black shrink-0';
-        bBadge.innerText = 'Liberado para Envio';
-      } else {
-        banner.className = 'mt-3 p-3.5 rounded-xl border-2 transition-all flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold bg-amber-500/15 border-amber-400 text-amber-200 shadow-xs';
-        bIcon.className = 'w-3.5 h-3.5 rounded-full bg-amber-400 animate-pulse shrink-0';
-        bTextStatus.innerText = 'Complete os requisitos pendentes (em amarelo) acima para liberar o envio da aula.';
-        bBadge.className = 'px-3 py-1 rounded-md text-[11px] uppercase tracking-wider bg-amber-500/30 text-amber-300 border border-amber-400/40 font-bold shrink-0';
-        bBadge.innerText = `Aguardando Requisitos (${completedCount}/4)`;
+      // Mensagem de Orientação
+      const releaseMsg = document.getElementById('release-status-text');
+      if (releaseMsg) {
+        if (completedCount === 4) {
+          releaseMsg.innerHTML = '<span class="text-[#2E9372] font-bold">✅ Todos os 4 requisitos cumpridos! Sua atividade está liberada para envio.</span>';
+        } else {
+          releaseMsg.innerHTML = '<span class="text-[#475569]">Complete os requisitos pendentes para liberar o envio da aula.</span>';
+        }
       }
 
       if (window.lucide) lucide.createIcons();
@@ -1793,38 +1740,34 @@
       if (!isAudioValid) missing.push('4. Áudio Reflexivo (gravar relato com sua voz)');
 
       if (missing.length > 0) {
-        alert('Ainda faltam etapas pendentes (em amarelo) antes de enviar:\n\n' + missing.join('\n') + '\n\nCumpra as etapas para que o botão fique liberado!');
+        alert('Ainda faltam etapas pendentes antes de enviar:\n\n' + missing.join('\n') + '\n\nCumpra as etapas acima para que o envio seja liberado!');
         return;
       }
 
       // 1. DISPARAR ENVIO POR E-MAIL PARA esdhubem@proton.me
       sendAssignmentByEmail();
 
-      // 2. ATUALIZAR BOTÃO DO CABEÇALHO: DE "CURSANDO" (LARANJA) PARA "CURSADO" (VERDE)
+      // 2. ATUALIZAR BOTÃO DO CABEÇALHO: DE "CURSANDO" (#E8A838) PARA "CURSADO" (#2E9372)
       isActivitySubmitted = true;
       localStorage.setItem('esdhubem_activity_submitted', 'true');
 
       const headerBtn = document.getElementById('header-status-btn');
       const headerBtnText = document.getElementById('header-status-btn-text');
-      const headerBtnDot = document.getElementById('header-status-dot');
       if (headerBtn) {
-        headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-black rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white shadow-md transition-all hover:scale-105 flex items-center gap-1.5 shrink-0 border border-emerald-300 cursor-pointer';
+        headerBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-bold rounded-xl bg-[#2E9372] hover:bg-[#257d61] text-white shadow-xs transition-colors flex items-center gap-1.5 shrink-0 border border-white/20 cursor-pointer';
         if (headerBtnText) headerBtnText.innerText = 'Cursado';
-        if (headerBtnDot) {
-          headerBtnDot.className = 'w-2 h-2 rounded-full bg-emerald-200';
-        }
       }
 
-      // 3. QUANDO A PESSOA ENVIAR: O BOTÃO DE BAIXO MUDA DE LARANJA PARA AMARELO DE TRÂNSITO!
+      // 3. ATUALIZAR BOTÃO DE SUBMISSÃO
       const btnSubmit = document.getElementById('btn-submit-activity');
       if (btnSubmit) {
-        btnSubmit.className = 'w-full sm:w-auto px-10 py-4 text-base font-black rounded-2xl transition-all shadow-[0_0_25px_rgba(255,199,44,0.7)] flex items-center justify-center gap-2.5 mx-auto cursor-pointer bg-[#FFC72C] hover:bg-[#e5b327] text-slate-950 border-2 border-yellow-200 transform scale-105';
+        btnSubmit.className = 'w-full sm:w-auto px-10 py-3.5 text-base font-bold rounded-xl transition-colors shadow-xs flex items-center justify-center gap-2 mx-auto cursor-pointer bg-[#2E9372] hover:bg-[#257d61] text-white';
         document.getElementById('btn-submit-text').innerText = '✓ Atividade Enviada com Sucesso!';
       }
 
       const note = document.getElementById('submission-footer-note');
       if (note) {
-        note.innerHTML = '<span class="text-amber-300 font-extrabold flex items-center justify-center gap-1.5"><i data-lucide="check-check" class="w-4 h-4"></i> Atividade enviada por e-mail (esdhubem@proton.me) e validada!</span>';
+        note.innerHTML = '<span class="text-[#2E9372] font-semibold flex items-center justify-center gap-1.5"><i data-lucide="check-check" class="w-4 h-4"></i> Atividade enviada com sucesso para esdhubem@proton.me</span>';
       }
 
       // Preencher dados do modal
