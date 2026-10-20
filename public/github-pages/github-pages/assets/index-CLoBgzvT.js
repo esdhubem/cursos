@@ -14751,7 +14751,9 @@ var Header = ({ onSearch, searchTerm, onNavigate, onOpenValidator, onOpenAbout, 
 										"artigo-detalhe",
 										"blog",
 										"blog-post",
-										"podcasts"
+										"podcasts",
+										"enciclowiki",
+										"enciclowiki-verbete"
 									].includes(currentPage) ? "text-white font-bold bg-blue-600/30 border-b-2 border-blue-400" : "text-white/80 hover:text-white hover:bg-white/5"}`,
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5 text-cyan-400" }),
@@ -14766,6 +14768,23 @@ var Header = ({ onSearch, searchTerm, onNavigate, onOpenValidator, onOpenAbout, 
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "bg-[#0A1128] border border-blue-900/80 rounded-2xl p-2 shadow-2xl space-y-1",
 										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+												onClick: () => onNavigate("enciclowiki"),
+												className: `w-full text-left px-3 py-2.5 rounded-xl transition-all flex items-center justify-between cursor-pointer ${currentPage === "enciclowiki" || currentPage === "enciclowiki-verbete" ? "bg-blue-600/20 text-blue-300 font-bold" : "text-slate-200 hover:text-white hover:bg-blue-900/30"}`,
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-2.5",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-emerald-400 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "font-semibold text-xs flex items-center gap-1.5",
+														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Enciclowiki" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+															className: "bg-emerald-500/20 text-emerald-300 text-[9px] font-black px-1.5 py-0.2 rounded-full border border-emerald-500/30",
+															children: "NOVO"
+														})]
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "text-[10px] text-slate-400",
+														children: "Enciclopédia viva de verbetes"
+													})] })]
+												})
+											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 												onClick: () => onNavigate("artigos"),
 												className: `w-full text-left px-3 py-2.5 rounded-xl transition-all flex items-center gap-2.5 cursor-pointer ${currentPage === "artigos" || currentPage === "artigo-detalhe" ? "bg-blue-600/20 text-blue-300 font-bold" : "text-slate-200 hover:text-white hover:bg-blue-900/30"}`,
@@ -15053,6 +15072,20 @@ var Header = ({ onSearch, searchTerm, onNavigate, onOpenValidator, onOpenAbout, 
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-[11px] font-extrabold text-blue-400 uppercase tracking-wider block px-3",
 								children: "Conteúdo & Publicações"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								onClick: () => {
+									onNavigate("enciclowiki");
+									setMobileMenuOpen(false);
+								},
+								className: "w-full text-left px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/10 text-emerald-300 flex items-center justify-between",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-emerald-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Enciclowiki (Enciclopédia)" })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-[9px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-black border border-emerald-500/30",
+									children: "NOVO"
+								})]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 								onClick: () => {
@@ -41842,9 +41875,1199 @@ var DiretrizesAvaliacaoManuscritosPage = ({ onBackToHome, onNavigate }) => {
 	});
 };
 //#endregion
+//#region src/data/enciclowikiData.ts
+var ENCICLOWIKI_CATEGORIAS = [
+	{
+		id: "saude-integrativa",
+		nome: "Saúde & Práticas Integrativas",
+		descricao: "Abordagens biopsicossociais, PICS, fitoterapia e equilíbrio do organismo humano.",
+		icone: "HeartPulse",
+		corBadge: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30"
+	},
+	{
+		id: "desenvolvimento-humano",
+		nome: "Desenvolvimento Humano & Existencial",
+		descricao: "Autoconhecimento, inteligência emocional, psicologia positiva e construção de propósito.",
+		icone: "Compass",
+		corBadge: "bg-blue-500/15 text-blue-300 border-blue-500/30"
+	},
+	{
+		id: "ciencia-cidada",
+		nome: "Ciência Cidadã & Investigação Aberta",
+		descricao: "Pesquisa com rigor acessível, dados abertos (OSF), revisão ética e integridade investigativa.",
+		icone: "Microscope",
+		corBadge: "bg-indigo-500/15 text-indigo-300 border-indigo-500/30"
+	},
+	{
+		id: "tecnologia-escrever",
+		nome: "Tecnologia do Escrever & Mapeamento",
+		descricao: "Mapas mentais, cartografia conceitual, escrita reflexiva e produção autoral sem bloqueios.",
+		icone: "Network",
+		corBadge: "bg-amber-500/15 text-amber-300 border-amber-500/30"
+	},
+	{
+		id: "bem-estar-social",
+		nome: "Bem-Estar Social & Liderança Humanizada",
+		descricao: "Cultura ética, segurança psicológica, relações comunitárias e impacto coletivo.",
+		icone: "Users",
+		corBadge: "bg-rose-500/15 text-rose-300 border-rose-500/30"
+	}
+];
+var ENCICLOWIKI_VERBETES = [
+	{
+		id: "mapa-mental",
+		termo: "Mapa Mental (Pensamento Radial)",
+		letraInicial: "M",
+		categoriaId: "tecnologia-escrever",
+		categoriaNome: "Tecnologia do Escrever & Mapeamento",
+		resumoDireto: "Instrumento cognitivo visual e radial que estrutura ideias a partir de um núcleo central irradiando ramificações orgânicas por meio de palavras-chave, cores e conexões sinápticas. Simula a organização cerebral integrando ambos os hemisférios para potencializar memória, síntese e produção intelectual.",
+		etimologiaOuOrigem: "Do inglês \"Mind Map\", popularizado pelo psicólogo e pesquisador britânico Tony Buzan na década de 1970 com base em pesquisas neuroanatômicas.",
+		tags: [
+			"Pensamento Radial",
+			"Aprendizagem Ativa",
+			"Síntese Visual",
+			"Neurociência",
+			"Autoria"
+		],
+		autor: "Coordenação Pedagógica ESDHUBEM (Prof.ª Silviane Silvério)",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "5 minutos",
+		nivel: "Fundamental",
+		destaque: true,
+		conteudo: {
+			definicao: "O Mapa Mental é um dispositivo de cartografia do pensamento que rompe com o modelo sequencial e horizontal das anotações lineares. Ele organiza conceitos de maneira centrífuga e hierárquica, utilizando núcleos imagéticos e ramos orgânicos que refletem a morfologia dos neurônios e suas sinapses dendríticas.",
+			historico: "Embora o uso de diagramas radiais remonte a filósofos da Antiguidade como Porfírio de Tiro no século III, o termo e a metodologia científica moderna foram codificados por Tony Buzan nos anos 1970, demonstrando que a mente humana assimila dados por associação não-linear e ressonância visual.",
+			principios: [
+				"Núcleo Central Único: ponto de ancoragem temático no centro da folha ou tela.",
+				"Ramificação Hierárquica: troncos primários grossos que se subdividem em galhos secundários e terciários.",
+				"Economia Verbal: priorização de substantivos e verbos nucleares em detrimento de parágrafos extensos.",
+				"Diferenciação Cromática: cores específicas para cada grande eixo, ativando a retenção visual fotográfica.",
+				"Símbolos e Conexões Cruzadas: setas relacionais interligando ramos complementares para incentivar o pensamento sistêmico."
+			],
+			impactoBiopsicossocial: "Reduz substancialmente a sobrecarga cognitiva e a fadiga atencional durante sessões de estudo ou planejamento estratégico. Promove o \"Efeito de Superioridade da Imagem\", permitindo que o indivíduo processe e recupere informações até 60.000 vezes mais rápido do que texto monocromático.",
+			aplicacoes: [
+				"Planejamento de artigos científicos, monografias e capítulos de livros autorais.",
+				"Revisão espaçada de conteúdos densos em concursos e pós-graduações.",
+				"Estruturação de palestras, reuniões estratégicas e diagnósticos biopsicossociais.",
+				"Tomada de decisões complexas com múltiplos fatores concorrentes."
+			],
+			pontosAtencao: "Não deve ser confundido com o mapa conceitual, que exige proposições gramaticais explícitas entre os nós. O excesso de texto dentro dos nós anula a agilidade visual e a assimilação do mapa mental."
+		},
+		citacaoAbnt: "SILVÉRIO, Silviane. Mapa Mental (Pensamento Radial). In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=mapa-mental>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "tecnologia-do-escrever-e-mapear",
+				termo: "Tecnologia do Escrever e do Mapear",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			},
+			{
+				id: "autoria-consciente",
+				termo: "Autoria Consciente & Integridade Investigativa",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			},
+			{
+				id: "ciencia-cidada",
+				termo: "Ciência Cidadã",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			}
+		],
+		referencias: [{
+			author: "BUZAN, Tony; BUZAN, Barry",
+			title: "The Mind Map Book: How to Use Radiant Thinking to Maximize Your Brain's Untapped Potential",
+			source: "London: BBC Books",
+			year: "1993"
+		}, {
+			author: "SWELLER, John",
+			title: "Cognitive Load Theory and the Format of Instruction",
+			source: "Cognition and Instruction, v. 5, n. 4, p. 257-285",
+			year: "1988",
+			doiOrUrl: "https://doi.org/10.1207/s1532690xci0504_2"
+		}]
+	},
+	{
+		id: "praticas-integrativas-complementares",
+		termo: "Práticas Integrativas e Complementares em Saúde (PICS)",
+		letraInicial: "P",
+		categoriaId: "saude-integrativa",
+		categoriaNome: "Saúde & Práticas Integrativas",
+		resumoDireto: "Conjunto de abordagens terapêuticas fundamentadas em sistemas médicos tradicionais e conhecimentos baseados em evidências que visam à prevenção de agravos, à promoção do autocuidado e à restauração do equilíbrio biopsicossocial do ser humano de forma holística e interdisciplinar.",
+		etimologiaOuOrigem: "Terminologia oficial adotada pela Organização Mundial da Saúde (OMS) como Medicina Tradicional, Complementar e Integrativa (MTCI) e institucionalizada no Brasil pelo SUS pela Portaria MS nº 971/2006.",
+		tags: [
+			"PICS",
+			"Saúde Holística",
+			"Biopsicossocial",
+			"Autocuidado",
+			"Fitoterapia",
+			"SUS"
+		],
+		autor: "Prof.ª Silviane Silvério (Biomédica Integrativa)",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "6 minutos",
+		nivel: "Fundamental",
+		destaque: true,
+		conteudo: {
+			definicao: "As Práticas Integrativas e Complementares em Saúde (PICS) são recursos terapêuticos que consideram a pessoa em sua totalidade multidimensional — física, emocional, mental, relacional e existencial —, não atuando apenas no silenciamento do sintoma isolado, mas na regulação das causas profundas do desequilíbrio.",
+			historico: "Com o reconhecimento global da OMS da importância de valorizar tradições médicas milenares consagradas pela fitoterapia, medicina tradicional chinesa e práticas corporais, o Ministério da Saúde brasileiro oficializou a Política Nacional de Práticas Integrativas e Complementares (PNPIC) em 2006, hoje contando com 29 práticas regulamentadas no Sistema Único de Saúde.",
+			principios: [
+				"Visão Integral: o indivíduo compreendido como um ecossistema biopsicossocial vivo.",
+				"Promoção da Saúde e Prevenção: foco na conservação da vitalidade e na resiliência biológica antes do adoecimento crônico.",
+				"Relação Terapêutica Empática: escuta qualificada e protagonismo ativo do sujeito em seu processo de recuperação.",
+				"Estímulo dos Mecanismos Naturais de Autorregulação: fomento à homeostase e à salutogênese do organismo."
+			],
+			impactoBiopsicossocial: "Favorece o decréscimo do uso indiscriminado de fármacos sintéticos para queixas leves e moderadas, diminui índices de ansiedade crônica e estresse somatizado, e resgata o senso de pertencimento e autonomia corporal da pessoa atendida.",
+			aplicacoes: [
+				"Atendimento clínico individualizado em fitoterapia, aromaterapia e biofísica aplicada.",
+				"Oficinas comunitárias de saúde integrativa e rodas de conversa em saúde preventiva.",
+				"Gestão de estresse e suporte à saúde mental em ambientes corporativos e educacionais.",
+				"Pesquisa científica observacional sobre desfechos clínicos e qualidade de vida."
+			],
+			pontosAtencao: "As PICS são complementares e não devem substituir tratamentos médicos de emergência ou prescrições farmacológicas para patologias graves já diagnosticadas sem avaliação médica prévia."
+		},
+		citacaoAbnt: "SILVÉRIO, Silviane. Práticas Integrativas e Complementares em Saúde (PICS). In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=praticas-integrativas-complementares>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "saude-biopsicossocial",
+				termo: "Saúde Biopsicossocial",
+				categoriaNome: "Saúde & Práticas Integrativas"
+			},
+			{
+				id: "bem-estar-social",
+				termo: "Bem-Estar Social & Dimensão Relacional",
+				categoriaNome: "Bem-Estar Social & Liderança Humanizada"
+			},
+			{
+				id: "ciencia-cidada",
+				termo: "Ciência Cidadã",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			}
+		],
+		referencias: [{
+			author: "BRASIL. Ministério da Saúde",
+			title: "Política Nacional de Práticas Integrativas e Complementares no SUS: atitude de ampliação de acesso",
+			source: "Brasília: Ministério da Saúde, 2. ed.",
+			year: "2015"
+		}, {
+			author: "WORLD HEALTH ORGANIZATION (WHO)",
+			title: "WHO traditional medicine strategy: 2014-2023",
+			source: "Geneva: World Health Organization",
+			year: "2013",
+			doiOrUrl: "https://www.who.int/publications/i/item/9789241506096"
+		}]
+	},
+	{
+		id: "ciencia-cidada",
+		termo: "Ciência Cidadã (Citizen Science)",
+		letraInicial: "C",
+		categoriaId: "ciencia-cidada",
+		categoriaNome: "Ciência Cidadã & Investigação Aberta",
+		resumoDireto: "Metodologia participativa e emancipatória de pesquisa na qual cidadãos, pesquisadores independentes e comunidades cooperam ativamente nas etapas de coleta de dados, formulação de hipóteses e difusão do conhecimento, democratizando a produção científica com rigor e transparência.",
+		etimologiaOuOrigem: "Conceito consolidado na década de 1990 pelo sociólogo Alan Irwin (Reino Unido) e pelo ornitólogo Rick Bonney (Estados Unidos) para definir a colaboração social com a ciência formal.",
+		tags: [
+			"Ciência Aberta",
+			"Pesquisa Participativa",
+			"Rigor Acadêmico",
+			"OSF",
+			"Transparência"
+		],
+		autor: "Coordenação de Pesquisa ESDHUBEM",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "6 minutos",
+		nivel: "Intermediário",
+		destaque: true,
+		conteudo: {
+			definicao: "A Ciência Cidadã é um paradigma investigativo que quebra o monopólio corporativo e burocrático sobre a produção do saber. Ela capacita pessoas comuns e profissionais de diferentes áreas a atuarem como coinvestigadores rigorosos, submetendo seus métodos à validação pública por pares e à transparência documental irrestrita.",
+			historico: "Historicamente, grandes marcos da humanidade foram erguidos por pesquisadores independentes (como Gregor Mendel na genética e Charles Darwin na biologia evolutiva). No século XXI, impulsionada por redes digitais e repositórios de dados abertos como o Open Science Framework (OSF), a ciência cidadã ganhou escala global.",
+			principios: [
+				"Transparência Metodológica Total: divulgação clara das etapas, critérios amostrais e limitações de cada estudo.",
+				"Reprodutibilidade dos Dados: disponibilização aberta dos achados para que qualquer pesquisador possa replicá-los.",
+				"Ética e Não-Exploração: respeito aos colaboradores e proteção à integridade autoral de quem gera o conhecimento.",
+				"Impacto Social Real: orientação da pesquisa para a resolução de dores e demandas autênticas da comunidade."
+			],
+			impactoBiopsicossocial: "Desmistifica a linguagem hermética da academia, promove o pensamento crítico contra desinformações e fortalece o sentimento de agência, autoeficácia e utilidade pública dos participantes.",
+			aplicacoes: [
+				"Mapeamento comunitário de indicadores de saúde mental e hábitos alimentares.",
+				"Estudos de campo sobre biodiversidade, plantas medicinais e botânica local.",
+				"Desenvolvimento de trabalhos de conclusão e manuscritos independentes com registro em DOI e OSF.",
+				"Monitoramento de condições ambientais e sociais em bairros e cidades."
+			],
+			pontosAtencao: "A pesquisa cidadã não dispensa o rigor metodológico. É obrigatório seguir protocolos de ética em pesquisa, consentimento livre e esclarecido e verificação de inconsistências amostrais."
+		},
+		citacaoAbnt: "ESDHUBEM. Ciência Cidadã (Citizen Science). In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=ciencia-cidada>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "autoria-consciente",
+				termo: "Autoria Consciente & Integridade Investigativa",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			},
+			{
+				id: "tecnologia-do-escrever-e-mapear",
+				termo: "Tecnologia do Escrever e do Mapear",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			},
+			{
+				id: "saude-biopsicossocial",
+				termo: "Saúde Biopsicossocial",
+				categoriaNome: "Saúde & Práticas Integrativas"
+			}
+		],
+		referencias: [{
+			author: "IRWIN, Alan",
+			title: "Citizen Science: A Study of People, Expertise and Sustainable Development",
+			source: "London: Routledge",
+			year: "1995"
+		}, {
+			author: "EUROPEAN CITIZEN SCIENCE ASSOCIATION (ECSA)",
+			title: "Ten Principles of Citizen Science",
+			source: "Berlin: ECSA",
+			year: "2015",
+			doiOrUrl: "https://doi.org/10.17605/OSF.IO/XPR2N"
+		}]
+	},
+	{
+		id: "tecnologia-do-escrever-e-mapear",
+		termo: "Tecnologia do Escrever e do Mapear",
+		letraInicial: "T",
+		categoriaId: "tecnologia-escrever",
+		categoriaNome: "Tecnologia do Escrever & Mapeamento",
+		resumoDireto: "Metodologia autoral desenvolvida no âmbito da ESDHUBEM que articula o pensamento radial, a escrita reflexiva estruturada e a cartografia conceitual para destravar o processo criativo, superar o bloqueio da página em branco e transmutar o estudo passivo em produção intelectual autêntica.",
+		etimologiaOuOrigem: "Metodologia formulada pela pesquisadora e educadora Silviane Silvério, integrando neurociência da aprendizagem, psicologia cognitiva e práticas investigativas.",
+		tags: [
+			"Metodologia Autoral",
+			"Escrita Reflexiva",
+			"Cartografia Conceitual",
+			"Destravar Escrita",
+			"ESDHUBEM"
+		],
+		autor: "Prof.ª Silviane Silvério",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "5 minutos",
+		nivel: "Intermediário",
+		destaque: true,
+		conteudo: {
+			definicao: "A Tecnologia do Escrever e do Mapear é uma prática pedagógica e mental em que a escrita não é tratada como um ato mecânico final, mas como um ecossistema progressivo de investigação. O método prevê a transição fluida do pensamento caótico para a ancoragem em mapas mentais e a posterior redação fundamentada com voz autoral própria.",
+			historico: "Criada para combater a síndrome do \"conhecimento de gaveta\" — em que pessoas estudam centenas de horas mas nunca conseguem materializar o aprendizado em artigos, livros ou ensaios —, a metodologia foi estruturada como pilar transversal de todas as formações da ESDHUBEM.",
+			principios: [
+				"Mapear Antes de Redigir: clarificar a arquitetura relacional das ideias no mapa mental antes de redigir o primeiro parágrafo.",
+				"Autoria Consciente: substituir a paráfrase vazia e a cópia passiva por reflexões próprias embasadas em evidências.",
+				"Fracionamento Operacional: dividir teses densas em micromódulos conceituais para evitar paralisia decisória.",
+				"Iteração Sem Punição: o rascunho como território de teste seguro e aprimoramento contínuo."
+			],
+			impactoBiopsicossocial: "Promove a redução da ansiedade do estudante/pesquisador diante de prazos e bancas, eleva a autoconfiança intelectual e restaura o prazer pessoal na criação escrita.",
+			aplicacoes: [
+				"Concepção e redação de artigos acadêmicos, TCCs e ensaios investigativos.",
+				"Estruturação de livros, e-books e apostilas didáticas de professores e terapeutas.",
+				"Elaboração de planos de ação corporativos e sínteses de relatórios de gestão.",
+				"Desenvolvimento de projetos de vida e registros de diários reflexivos existenciais."
+			],
+			pontosAtencao: "Não se trata de uma fórmula algorítmica ou gerador automático de texto, mas de um processo de disciplina intelectual e reflexão ativa exigente de esforço cognitivo genuíno."
+		},
+		citacaoAbnt: "SILVÉRIO, Silviane. Tecnologia do Escrever e do Mapear. In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=tecnologia-do-escrever-e-mapear>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "mapa-mental",
+				termo: "Mapa Mental (Pensamento Radial)",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			},
+			{
+				id: "autoria-consciente",
+				termo: "Autoria Consciente & Integridade Investigativa",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			},
+			{
+				id: "desenvolvimento-humano-existencial",
+				termo: "Desenvolvimento Humano & Existencial",
+				categoriaNome: "Desenvolvimento Humano & Existencial"
+			}
+		],
+		referencias: [{
+			author: "SILVÉRIO, Silviane",
+			title: "Tecnologia do Escrever e do Mapear: Manual Prático de Autoria e Construção Conceitual",
+			source: "Curitiba: Editora ESDHUBEM",
+			year: "2026"
+		}, {
+			author: "GRAFF, Gerald; BIRKENSTEIN, Cathy",
+			title: "They Say / I Say: The Moves That Matter in Academic Writing",
+			source: "New York: W. W. Norton & Company, 4. ed.",
+			year: "2018"
+		}]
+	},
+	{
+		id: "autoria-consciente",
+		termo: "Autoria Consciente & Integridade Investigativa",
+		letraInicial: "A",
+		categoriaId: "ciencia-cidada",
+		categoriaNome: "Ciência Cidadã & Investigação Aberta",
+		resumoDireto: "Postura ética e intelectual em que o produtor de conteúdo assume a responsabilidade direta sobre suas ideias, dados e argumentos, repudiando o plágio, a cópia acrítica de modelos artificiais e a simulação de autoridade, com valorização da transparência de fontes e do mérito formativo real.",
+		etimologiaOuOrigem: "Desenvolvida como diretriz deontológica da ESDHUBEM em consonância com as normas internacionais de ética em pesquisa (COPE - Committee on Publication Ethics).",
+		tags: [
+			"Ética",
+			"Integridade",
+			"Combate ao Plágio",
+			"COPE",
+			"Meritocracia",
+			"Autoria"
+		],
+		autor: "Comitê de Ética e Publicações ESDHUBEM",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "5 minutos",
+		nivel: "Intermediário",
+		destaque: false,
+		conteudo: {
+			definicao: "A Autoria Consciente é o compromisso inegociável do autor com a veracidade das fontes, a originalidade da reflexão e o respeito aos direitos de terceiros. Em uma era de geração massiva de textos sintéticos por inteligência artificial, a autoria consciente distingue a produção genuína de valor da reciclagem oca de palavras.",
+			historico: "Historicamente fundamentada no direito moral do autor e no rigor dos comitês científicos internacionais, essa diretriz foi redefinida pela ESDHUBEM para responder aos desafios da era da desinformação algorítmica, estabelecendo critérios claros para a validação meritória de certificações.",
+			principios: [
+				"Transparência de Atribuição: citar fielmente todos os autores que inspiraram os conceitos discutidos.",
+				"Rigor Contra o Plágio: repúdio absoluto à cópia literal ou disfarçada sem as devidas aspas e fontes.",
+				"Uso Ético da Tecnologia: ferramentas digitais e IAs devem servir como coadjuvantes de organização, nunca substituindo o raciocínio autônomo do pesquisador.",
+				"Avaliação Meritória Formativa: foco no avanço real da compreensão do aluno em vez de notas punitivas."
+			],
+			impactoBiopsicossocial: "Cria um ambiente acadêmico e formativo baseado na confiança mútua, desfaz a ansiedade da impostura e confere relevância pública duradoura aos trabalhos apresentados pelos alunos.",
+			aplicacoes: [
+				"Submissão de manuscritos para a Escala de Autoria e Selos de Mérito da ESDHUBEM.",
+				"Produção de conteúdos digitais educativos com respaldo e credibilidade.",
+				"Estruturação de comitês de integridade e boas práticas editoriais.",
+				"Desenvolvimento de postura crítica na leitura de notícias e artigos científicos."
+			],
+			pontosAtencao: "A autoria não exige que a pessoa crie algo sem precedentes na história humana, mas que sua conexão de ideias seja honesta, transparente e traga seu olhar reflexivo autêntico."
+		},
+		citacaoAbnt: "ESDHUBEM. Autoria Consciente & Integridade Investigativa. In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=autoria-consciente>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "ciencia-cidada",
+				termo: "Ciência Cidadã",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			},
+			{
+				id: "tecnologia-do-escrever-e-mapear",
+				termo: "Tecnologia do Escrever e do Mapear",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			},
+			{
+				id: "mapa-mental",
+				termo: "Mapa Mental (Pensamento Radial)",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			}
+		],
+		referencias: [{
+			author: "COMMITTEE ON PUBLICATION ETHICS (COPE)",
+			title: "Core Practices and Guidelines on Authorship and Contributorship",
+			source: "London: COPE",
+			year: "2021",
+			doiOrUrl: "https://publicationethics.org/core-practices"
+		}, {
+			author: "ESDHUBEM",
+			title: "Diretrizes de Proteção à Autoria e Normas de Publicação",
+			source: "Curitiba: Conselho Editorial ESDHUBEM",
+			year: "2026"
+		}]
+	},
+	{
+		id: "saude-biopsicossocial",
+		termo: "Saúde Biopsicossocial",
+		letraInicial: "S",
+		categoriaId: "saude-integrativa",
+		categoriaNome: "Saúde & Práticas Integrativas",
+		resumoDireto: "Modelo compreensivo de saúde que entende o bem-estar e o adoecimento humano como a resultante complexa da interação dinâmica entre fatores biológicos (genética, bioquímica, fisiologia), psicológicos (pensamentos, emoções, memórias) e socioculturais (família, trabalho, economia, ambiente).",
+		etimologiaOuOrigem: "Modelo proposto formalmente em 1977 pelo médico e psiquiatra norte-americano George L. Engel na revista Science, em contraposição ao modelo biomédico reducionista.",
+		tags: [
+			"George Engel",
+			"Holismo",
+			"Salutogênese",
+			"Saúde Mental",
+			"Multidisciplinaridade"
+		],
+		autor: "Prof.ª Silviane Silvério (Biomédica Integrativa)",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "5 minutos",
+		nivel: "Fundamental",
+		destaque: false,
+		conteudo: {
+			definicao: "A Saúde Biopsicossocial supera a visão cartesiana do corpo como uma máquina puramente biológica dividida em órgãos isolados. Ela estabelece que o sistema imune, o sistema nervoso central e a estabilidade emocional de uma pessoa são diretamente influenciados por seus vínculos afetivos, condições habitacionais e crenças existenciais.",
+			historico: "Proposto por George Engel no artigo histórico \"The Need for a New Medical Model: A Challenge for Biomedicine\", o modelo influenciou a redefinição de saúde da OMS como \"um estado de completo bem-estar físico, mental e social, e não meramente a ausência de doença ou enfermidade\".",
+			principios: [
+				"Interdependência Sistêmica: nenhum sintoma corporal ocorre no vazio relacional ou psicológico.",
+				"Salutogênese: investigação dos fatores que geram vitalidade e resiliência, e não apenas dos agentes patogênicos.",
+				"Interdisciplinaridade: colaboração entre medicina, biomedicina, psicologia, nutrição e assistência social.",
+				"Escuta da Narrativa do Sujeito: a biografia do paciente tem peso diagnóstico fundamental na sua recuperação."
+			],
+			impactoBiopsicossocial: "Proporciona intervenções clínicas com muito maior índice de adesão e eficácia no tratamento de dores crônicas, distúrbios digestivos funcionais e desequilíbrios metabólicos relacionados ao estresse oxidativo prolongado.",
+			aplicacoes: [
+				"Consultoria e planos de cuidado em práticas integrativas e saúde comunitária.",
+				"Programas de medicina do trabalho focados em qualidade de vida e prevenção de burnout.",
+				"Projetos educacionais de alfabetização emocional em escolas e universidades.",
+				"Políticas públicas de acolhimento em unidades básicas de saúde."
+			],
+			pontosAtencao: "Não se deve confundir a dimensão psicossocial com \"culpabilização do paciente\" por sua enfermidade; fatores genéticos e ambientais tóxicos continuam tendo peso real."
+		},
+		citacaoAbnt: "SILVÉRIO, Silviane. Saúde Biopsicossocial. In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=saude-biopsicossocial>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "praticas-integrativas-complementares",
+				termo: "Práticas Integrativas e Complementares em Saúde (PICS)",
+				categoriaNome: "Saúde & Práticas Integrativas"
+			},
+			{
+				id: "bem-estar-social",
+				termo: "Bem-Estar Social & Dimensão Relacional",
+				categoriaNome: "Bem-Estar Social & Liderança Humanizada"
+			},
+			{
+				id: "desenvolvimento-humano-existencial",
+				termo: "Desenvolvimento Humano & Existencial",
+				categoriaNome: "Desenvolvimento Humano & Existencial"
+			}
+		],
+		referencias: [{
+			author: "ENGEL, George L.",
+			title: "The Need for a New Medical Model: A Challenge for Biomedicine",
+			source: "Science, v. 196, n. 4286, p. 129-136",
+			year: "1977",
+			doiOrUrl: "https://doi.org/10.1126/science.847460"
+		}, {
+			author: "ANTONOVSKY, Aaron",
+			title: "Unraveling the Mystery of Health: How People Manage Stress and Stay Well",
+			source: "San Francisco: Jossey-Bass",
+			year: "1987"
+		}]
+	},
+	{
+		id: "desenvolvimento-humano-existencial",
+		termo: "Desenvolvimento Humano & Existencial",
+		letraInicial: "D",
+		categoriaId: "desenvolvimento-humano",
+		categoriaNome: "Desenvolvimento Humano & Existencial",
+		resumoDireto: "Processo contínuo de amadurecimento cognitivo, afetivo e ético pelo qual o indivíduo constrói significado para a sua vida, aprimora suas competências relacionais e harmoniza suas escolhas práticas com valores existenciais profundos e senso de utilidade social.",
+		etimologiaOuOrigem: "Fundamentado na interseção entre a Logoterapia de Viktor Frankl, a Psicologia Humanista de Carl Rogers e os relatórios de desenvolvimento humano da UNESCO.",
+		tags: [
+			"Propósito",
+			"Viktor Frankl",
+			"Sentido da Vida",
+			"Maturidade Emocional",
+			"Existencialismo"
+		],
+		autor: "Coordenação Pedagógica ESDHUBEM",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "6 minutos",
+		nivel: "Fundamental",
+		destaque: true,
+		conteudo: {
+			definicao: "O Desenvolvimento Humano e Existencial compreende que o ser humano não busca apenas a satisfação biológica de impulsos ou o acúmulo de bens materiais, mas a realização de sentido e a autotranscendência — a capacidade de dedicar a sua vida a causas, pessoas ou criações que ultrapassam o próprio ego.",
+			historico: "Após as rupturas éticas do século XX, pensadores como Viktor Frankl demonstraram que a maior necessidade humana diante do sofrimento inevitável é a \"Vontade de Sentido\". No contexto do século XXI, diante do vazio existencial digital e da sobrecarga de estímulos rasos, a busca por fundamentos existenciais tornou-se imperativo de saúde pública.",
+			principios: [
+				"Vontade de Sentido: o ser humano é motivado primariamente pela busca de um propósito pessoal significativo.",
+				"Liberdade de Escolha: mesmo sob severas limitações externas, a pessoa preserva a liberdade íntima de escolher sua atitude diante da vida.",
+				"Autotranscendência: a realização pessoal acontece como consequência da dedicação a algo maior que si mesmo.",
+				"Integração Mente-Ação: valores e convicções morais precisam se converter em hábitos cotidianos concretos."
+			],
+			impactoBiopsicossocial: "Atua como fator protetivo primordial contra quadros depressivos reativos, previne a desesperança crônica e oferece âncoras emocionais sólidas para a superação de transições de carreira, lutos e crises existenciais.",
+			aplicacoes: [
+				"Mentorias de autogestão existencial e planejamento de carreira com propósito.",
+				"Mediação de conflitos interpessoais e processos de conciliação familiar.",
+				"Desenvolvimento de projetos sociais e iniciativas comunitárias com valor humanitário.",
+				"Formações e cursos livres voltados à expansão de consciência e autoria de vida."
+			],
+			pontosAtencao: "Não deve ser reduzido a fórmulas fáceis de autoajuda ou positividade tóxica que ignoram as dores reais da existência e as desigualdades estruturais da sociedade."
+		},
+		citacaoAbnt: "ESDHUBEM. Desenvolvimento Humano & Existencial. In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=desenvolvimento-humano-existencial>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "bem-estar-social",
+				termo: "Bem-Estar Social & Dimensão Relacional",
+				categoriaNome: "Bem-Estar Social & Liderança Humanizada"
+			},
+			{
+				id: "tecnologia-do-escrever-e-mapear",
+				termo: "Tecnologia do Escrever e do Mapear",
+				categoriaNome: "Tecnologia do Escrever & Mapeamento"
+			},
+			{
+				id: "saude-biopsicossocial",
+				termo: "Saúde Biopsicossocial",
+				categoriaNome: "Saúde & Práticas Integrativas"
+			}
+		],
+		referencias: [{
+			author: "FRANKL, Viktor E.",
+			title: "Man's Search for Meaning: An Introduction to Logotherapy",
+			source: "Boston: Beacon Press",
+			year: "2006"
+		}, {
+			author: "ROGERS, Carl R.",
+			title: "On Becoming a Person: A Therapist's View of Psychotherapy",
+			source: "Boston: Houghton Mifflin",
+			year: "1961"
+		}]
+	},
+	{
+		id: "bem-estar-social",
+		termo: "Bem-Estar Social & Dimensão Relacional",
+		letraInicial: "B",
+		categoriaId: "bem-estar-social",
+		categoriaNome: "Bem-Estar Social & Liderança Humanizada",
+		resumoDireto: "Condição dinâmica de harmonia, dignidade e cooperação comunitária na qual as pessoas têm acesso a oportunidades formativas, redes de apoio afetivo, segurança psicológica e ambientes éticos, permitindo o florescimento mútuo e a convivência cidadã solidária.",
+		etimologiaOuOrigem: "Evolução conceitual das Ciências Sociais e das teorias de Capital Social de Robert Putnam e Amartya Sen.",
+		tags: [
+			"Comunidade",
+			"Cooperação",
+			"Capital Social",
+			"Liderança Ética",
+			"Empatia",
+			"Amartya Sen"
+		],
+		autor: "Coordenação de Impacto Comunitário ESDHUBEM",
+		dataPublicacao: "20 de outubro de 2026",
+		dataAtualizacao: "20 de outubro de 2026",
+		tempoLeitura: "5 minutos",
+		nivel: "Fundamental",
+		destaque: false,
+		conteudo: {
+			definicao: "O Bem-Estar Social vai além de meros índices econômicos de renda per capita. Ele mede a qualidade do tecido relacional que une uma comunidade, a densidade de confiança mútua, a segurança psicológica em grupos de trabalho e o compromisso ético de acolhimento aos mais vulneráveis.",
+			historico: "O economista indiano e Prêmio Nobel Amartya Sen redefiniu o desenvolvimento social não como acúmulo de riqueza material, mas como \"expansão das liberdades reais que as pessoas desfrutam para levar a vida que têm razão para valorizar\" (Abordagem das Capacitações).",
+			principios: [
+				"Confiança e Cooperação: redes sociais saudáveis fundadas na reciprocidade e na solidariedade ativa.",
+				"Segurança Psicológica: ambientes onde a divergência respeitosa e a vulnerabilidade são acolhidas sem punição.",
+				"Acesso Democrático ao Saber: quebra de barreiras financeiras e elitistas na transmissão do conhecimento relevante.",
+				"Liderança Humanizada: exercício do poder como serviço à coletividade e promoção do bem comum."
+			],
+			impactoBiopsicossocial: "Comunidades e empresas com alto bem-estar social apresentam índices drasticamente menores de adoecimento psíquico, menor evasão escolar, maior inovação colaborativa e maior expectativa de vida saudável.",
+			aplicacoes: [
+				"Criação de comitês de bem-estar social e saúde mental em instituições de ensino.",
+				"Desenvolvimento de projetos comunitários de capacitação e geração de renda ética.",
+				"Programas corporativos de liderança empática e combate ao assédio moral.",
+				"Formações e oficinas de comunicação não-violenta e mediação de conflitos."
+			],
+			pontosAtencao: "O bem-estar social não se sustenta apenas com boas intenções discursivas; exige práticas concretas, políticas transparentes e consistência ética diária."
+		},
+		citacaoAbnt: "ESDHUBEM. Bem-Estar Social & Dimensão Relacional. In: ENCICLOWIKI ESDHUBEM: Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social. Curitiba: ESDHUBEM, 2026. Disponível em: <https://esdhubem.github.io/esdhubem/?page=enciclowiki-verbete&id=bem-estar-social>. Acesso em: 20 out. 2026.",
+		verbetesRelacionados: [
+			{
+				id: "desenvolvimento-humano-existencial",
+				termo: "Desenvolvimento Humano & Existencial",
+				categoriaNome: "Desenvolvimento Humano & Existencial"
+			},
+			{
+				id: "saude-biopsicossocial",
+				termo: "Saúde Biopsicossocial",
+				categoriaNome: "Saúde & Práticas Integrativas"
+			},
+			{
+				id: "ciencia-cidada",
+				termo: "Ciência Cidadã",
+				categoriaNome: "Ciência Cidadã & Investigação Aberta"
+			}
+		],
+		referencias: [{
+			author: "SEN, Amartya",
+			title: "Development as Freedom",
+			source: "New York: Anchor Books",
+			year: "1999"
+		}, {
+			author: "PUTNAM, Robert D.",
+			title: "Bowling Alone: The Collapse and Revival of American Community",
+			source: "New York: Simon & Schuster",
+			year: "2000"
+		}]
+	}
+];
+//#endregion
+//#region src/components/EnciclowikiPage.tsx
+var ALFABETO = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
+	const [busca, setBusca] = (0, import_react.useState)("");
+	const [categoriaAtiva, setCategoriaAtiva] = (0, import_react.useState)("todas");
+	const [letraAtiva, setLetraAtiva] = (0, import_react.useState)("todas");
+	const letrasDisponiveis = (0, import_react.useMemo)(() => {
+		return new Set(ENCICLOWIKI_VERBETES.map((v) => v.letraInicial.toUpperCase()));
+	}, []);
+	const verbetesFiltrados = (0, import_react.useMemo)(() => {
+		return ENCICLOWIKI_VERBETES.filter((verbete) => {
+			if (categoriaAtiva !== "todas" && verbete.categoriaId !== categoriaAtiva) return false;
+			if (letraAtiva !== "todas" && verbete.letraInicial.toUpperCase() !== letraAtiva) return false;
+			if (busca.trim() !== "") {
+				const query = busca.toLowerCase();
+				const noTermo = verbete.termo.toLowerCase().includes(query);
+				const noResumo = verbete.resumoDireto.toLowerCase().includes(query);
+				const nasTags = verbete.tags.some((tag) => tag.toLowerCase().includes(query));
+				const naCategoria = verbete.categoriaNome.toLowerCase().includes(query);
+				if (!noTermo && !noResumo && !nasTags && !naCategoria) return false;
+			}
+			return true;
+		});
+	}, [
+		busca,
+		categoriaAtiva,
+		letraAtiva
+	]);
+	const renderIconCategoria = (catId) => {
+		switch (catId) {
+			case "saude-integrativa": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4 h-4 text-emerald-400" });
+			case "desenvolvimento-humano": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4 h-4 text-blue-400" });
+			case "ciencia-cidada": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Microscope, { className: "w-4 h-4 text-indigo-400" });
+			case "tecnologia-escrever": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Network, { className: "w-4 h-4 text-amber-400" });
+			case "bem-estar-social": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Users, { className: "w-4 h-4 text-rose-400" });
+			default: return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-sky-400" });
+		}
+	};
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "min-h-screen bg-slate-900 text-slate-100",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "relative overflow-hidden bg-gradient-to-b from-[#011049] via-[#0A1435] to-slate-900 pt-16 pb-20 border-b border-blue-900/40",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-transparent pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs sm:text-sm font-bold tracking-wide mb-6 shadow-lg shadow-emerald-950/40 backdrop-blur-md",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-emerald-400 animate-pulse" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Enciclopédia Aberta da ESDHUBEM" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "bg-emerald-500/30 text-[10px] px-2 py-0.5 rounded font-black text-emerald-200",
+									children: "OFICIAL"
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
+							className: "text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4 leading-tight",
+							children: ["Enciclowiki ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-300 to-emerald-400",
+								children: "ESDHUBEM"
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-base sm:text-xl text-blue-100/90 max-w-3xl mx-auto font-medium leading-relaxed mb-8",
+							children: "Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-xs sm:text-sm text-slate-300/80 max-w-2xl mx-auto leading-relaxed mb-10",
+							children: "Um repositório público e formativo de conceitos, metodologias investigativas, práticas integrativas e tecnologias reflexivas desenvolvidas para democratizar o saber com rigor ético e autoral."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "max-w-2xl mx-auto relative shadow-2xl rounded-2xl",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "relative flex items-center",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+										type: "text",
+										value: busca,
+										onChange: (e) => setBusca(e.target.value),
+										placeholder: "Pesquisar verbetes (ex: mapa mental, PICS, ciência cidadã, autoria)...",
+										className: "w-full bg-slate-800/90 hover:bg-slate-800 focus:bg-slate-800 border-2 border-blue-500/40 focus:border-cyan-400 text-white placeholder-slate-400 pl-12 pr-10 py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden transition-all shadow-inner"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "w-5 h-5 text-cyan-400 absolute left-4 pointer-events-none" }),
+									busca && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+										onClick: () => setBusca(""),
+										className: "absolute right-4 text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-300 px-2 py-1 rounded-md transition-colors",
+										children: "Limpar"
+									})
+								]
+							})
+						})
+					]
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "max-w-6xl mx-auto px-4 sm:px-6 py-8",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-4 mb-8 shadow-lg",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex items-center justify-between mb-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+								className: "text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Funnel, { className: "w-3.5 h-3.5 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Índice Alfabético (Glossário A–Z)" })]
+							}), letraAtiva !== "todas" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								onClick: () => setLetraAtiva("todas"),
+								className: "text-xs text-cyan-400 hover:underline font-semibold",
+								children: [
+									"Limpar letra (",
+									letraAtiva,
+									")"
+								]
+							})]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex flex-wrap items-center gap-1.5 sm:gap-2",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => setLetraAtiva("todas"),
+								className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${letraAtiva === "todas" ? "bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/30" : "bg-slate-700/60 text-slate-300 hover:bg-slate-700 hover:text-white"}`,
+								children: "TODOS"
+							}), ALFABETO.map((letra) => {
+								const temVerbetes = letrasDisponiveis.has(letra);
+								return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									disabled: !temVerbetes,
+									onClick: () => setLetraAtiva(letra),
+									className: `w-8 h-8 rounded-lg text-xs font-bold transition-all flex items-center justify-center ${letraAtiva === letra ? "bg-cyan-500 text-slate-950 font-black shadow-md shadow-cyan-500/30 scale-105" : temVerbetes ? "bg-slate-700/80 text-white hover:bg-cyan-600/30 hover:border-cyan-400/50 border border-transparent cursor-pointer" : "bg-slate-800/40 text-slate-600 cursor-not-allowed border border-slate-800"}`,
+									title: temVerbetes ? `Ver verbetes com a letra ${letra}` : `Nenhum verbete com a letra ${letra}`,
+									children: letra
+								}, letra);
+							})]
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mb-8",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex items-center justify-between mb-4",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-sm font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Layers, { className: "w-4 h-4 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Filtrar por Eixo Temático" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+								className: "text-xs text-slate-400",
+								children: [
+									verbetesFiltrados.length,
+									" ",
+									verbetesFiltrados.length === 1 ? "verbete encontrado" : "verbetes encontrados"
+								]
+							})]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex flex-wrap gap-2.5",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								onClick: () => setCategoriaAtiva("todas"),
+								className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${categoriaAtiva === "todas" ? "bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-600/30 ring-2 ring-blue-500/20" : "bg-slate-800/80 text-slate-300 border-slate-700 hover:bg-slate-750 hover:text-white"}`,
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+									"Todos os Eixos (",
+									ENCICLOWIKI_VERBETES.length,
+									")"
+								] })]
+							}), ENCICLOWIKI_CATEGORIAS.map((cat) => {
+								const count = ENCICLOWIKI_VERBETES.filter((v) => v.categoriaId === cat.id).length;
+								const isSelected = categoriaAtiva === cat.id;
+								return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									onClick: () => setCategoriaAtiva(cat.id),
+									className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${isSelected ? "bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-600/30 ring-2 ring-blue-500/20" : "bg-slate-800/80 text-slate-300 border-slate-700 hover:bg-slate-750 hover:text-white"}`,
+									children: [
+										renderIconCategoria(cat.id),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: cat.nome }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[10px] px-1.5 py-0.5 rounded-full bg-slate-900/60 font-black text-slate-300",
+											children: count
+										})
+									]
+								}, cat.id);
+							})]
+						})]
+					}),
+					verbetesFiltrados.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "text-center py-16 bg-slate-800/40 rounded-3xl border border-dashed border-slate-700 p-8",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-12 h-12 text-slate-500 mx-auto mb-4" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "text-lg font-bold text-white mb-2",
+								children: "Nenhum verbete encontrado"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm text-slate-400 max-w-md mx-auto mb-6",
+								children: "Não encontramos verbetes para os critérios selecionados. Tente buscar por outros termos ou limpe os filtros."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => {
+									setBusca("");
+									setCategoriaAtiva("todas");
+									setLetraAtiva("todas");
+								},
+								className: "px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm transition-all cursor-pointer shadow-lg shadow-cyan-500/20",
+								children: "Redefinir Filtros"
+							})
+						]
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+						children: verbetesFiltrados.map((verbete) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+							onClick: () => onSelectVerbete(verbete.id),
+							className: "group relative bg-slate-800/70 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-cyan-950/30 flex flex-col justify-between cursor-pointer",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center justify-between gap-2 mb-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 font-black text-sm flex items-center justify-center",
+											children: verbete.letraInicial
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+											className: "text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-900/80 text-slate-300 border border-slate-700/60 flex items-center gap-1.5",
+											children: [renderIconCategoria(verbete.categoriaId), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "truncate max-w-[200px]",
+												children: verbete.categoriaNome
+											})]
+										})]
+									}), verbete.destaque && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3 h-3 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Destaque" })]
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+									className: "text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-3 leading-snug",
+									children: verbete.termo
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-sm text-slate-300 leading-relaxed mb-5 line-clamp-3",
+									children: verbete.resumoDireto
+								})
+							] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex flex-wrap gap-1.5 mb-5",
+								children: [verbete.tags.slice(0, 3).map((tag, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-[11px] font-medium px-2 py-0.5 rounded bg-slate-900/60 text-slate-400 border border-slate-800",
+									children: ["#", tag]
+								}, idx)), verbete.tags.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-[11px] text-slate-500 self-center",
+									children: ["+", verbete.tags.length - 3]
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "flex items-center gap-1.5",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-3.5 h-3.5 text-slate-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: verbete.tempoLeitura })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "inline-flex items-center gap-1 text-cyan-400 font-bold group-hover:translate-x-1 transition-transform",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Explorar Verbete" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "w-3.5 h-3.5" })]
+								})]
+							})] })]
+						}, verbete.id))
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+				className: "max-w-6xl mx-auto px-4 sm:px-6 pb-20",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "rounded-3xl bg-gradient-to-r from-blue-950/80 via-slate-800 to-indigo-950/80 border border-blue-500/30 p-8 sm:p-12 shadow-2xl relative overflow-hidden",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute right-0 top-0 translate-x-10 -translate-y-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "max-w-3xl relative z-10",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300 text-xs font-bold mb-4",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Microscope, { className: "w-3.5 h-3.5 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Manifesto da Enciclowiki" })]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								className: "text-2xl sm:text-3xl font-black text-white mb-4 tracking-tight",
+								children: "Conhecimento que liberta, investiga e transforma"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+								className: "text-sm sm:text-base text-slate-300 leading-relaxed mb-6",
+								children: [
+									"A ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Enciclowiki ESDHUBEM" }),
+									" nasceu para desafiar o elitismo acadêmico tradicional sem abrir mão do rigor de evidências. Cada verbete é elaborado com base em referenciais científicos consolidados, práticas integrativas reconhecidas e diretrizes éticas que colocam o florescimento humano no centro do saber."
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex flex-wrap gap-4",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									onClick: () => onNavigate("diretrizes-pedagogicas"),
+									className: "px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg shadow-cyan-500/25 cursor-pointer flex items-center gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Conhecer Diretrizes Pedagógicas" })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									onClick: () => onNavigate("catalogo-cursos"),
+									className: "px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all cursor-pointer flex items-center gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-cyan-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Explorar Cursos da Escola" })]
+								})]
+							})
+						]
+					})]
+				})
+			})
+		]
+	});
+};
+//#endregion
+//#region src/components/EnciclowikiArticlePage.tsx
+var EnciclowikiArticlePage = ({ verbeteId, onBack, onSelectVerbete, onNavigate }) => {
+	const [copiado, setCopiado] = (0, import_react.useState)(false);
+	const verbete = ENCICLOWIKI_VERBETES.find((v) => v.id === verbeteId) || ENCICLOWIKI_VERBETES[0];
+	const handleCopiarCitacao = () => {
+		navigator.clipboard.writeText(verbete.citacaoAbnt);
+		setCopiado(true);
+		setTimeout(() => setCopiado(false), 2500);
+	};
+	const renderIconCategoria = (catId) => {
+		switch (catId) {
+			case "saude-integrativa": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4 h-4 text-emerald-400" });
+			case "desenvolvimento-humano": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4 h-4 text-blue-400" });
+			case "ciencia-cidada": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Microscope, { className: "w-4 h-4 text-indigo-400" });
+			case "tecnologia-escrever": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Network, { className: "w-4 h-4 text-amber-400" });
+			case "bem-estar-social": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Users, { className: "w-4 h-4 text-rose-400" });
+			default: return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-sky-400" });
+		}
+	};
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "min-h-screen bg-slate-900 text-slate-100 py-10",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "max-w-4xl mx-auto px-4 sm:px-6",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "flex items-center justify-between gap-4 mb-8",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						onClick: onBack,
+						className: "inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-400 hover:text-cyan-400 transition-colors cursor-pointer group",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "w-4 h-4 group-hover:-translate-x-1 transition-transform" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Voltar para a Enciclowiki" })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+						className: "hidden sm:flex items-center gap-1.5 text-xs text-slate-500",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => onNavigate("inicio"),
+								className: "hover:text-slate-300",
+								children: "Início"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3 h-3" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: onBack,
+								className: "hover:text-slate-300",
+								children: "Enciclowiki"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3 h-3" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-cyan-400 truncate max-w-[180px]",
+								children: verbete.termo
+							})
+						]
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+					className: "bg-slate-800/80 border border-slate-700/80 rounded-3xl p-6 sm:p-10 mb-8 shadow-xl",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex flex-wrap items-center gap-2.5 mb-4",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 text-slate-300 border border-slate-700 flex items-center gap-1.5",
+									children: [renderIconCategoria(verbete.categoriaId), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: verbete.categoriaNome })]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-xs font-medium px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20",
+									children: ["Nível: ", verbete.nivel]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-xs text-slate-400 flex items-center gap-1 ml-auto",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-3.5 h-3.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [verbete.tempoLeitura, " de leitura"] })]
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+							className: "text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-4 leading-tight",
+							children: verbete.termo
+						}),
+						verbete.etimologiaOuOrigem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							className: "text-xs sm:text-sm text-cyan-300/90 font-mono bg-cyan-950/40 border border-cyan-800/40 rounded-xl px-4 py-2.5 mb-6",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Etimologia & Origem:" }),
+								" ",
+								verbete.etimologiaOuOrigem
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "p-5 sm:p-6 rounded-2xl bg-emerald-950/40 border-l-4 border-emerald-500 shadow-inner",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xs font-black uppercase tracking-wider text-emerald-400 mb-2 flex items-center gap-1.5",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Síntese Enciclopédica (Definição Rápida)" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-emerald-100/95 font-medium leading-relaxed m-0",
+								children: verbete.resumoDireto
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex flex-wrap items-center justify-between gap-4 mt-6 pt-6 border-t border-slate-700/60 text-xs text-slate-400",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-slate-500",
+								children: "Verbete catalogado por: "
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+								className: "text-slate-200",
+								children: verbete.autor
+							})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Última revisão: " }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
+								className: "text-slate-300",
+								children: verbete.dataAtualizacao
+							})] })]
+						})
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "space-y-8",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-7 h-7 rounded-lg bg-blue-600/30 text-blue-400 text-sm font-black flex items-center justify-center",
+									children: "1"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Definição Conceitual & Fundamentação" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-300 leading-relaxed",
+								children: verbete.conteudo.definicao
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-7 h-7 rounded-lg bg-blue-600/30 text-blue-400 text-sm font-black flex items-center justify-center",
+									children: "2"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Contexto Histórico & Científico" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-300 leading-relaxed",
+								children: verbete.conteudo.historico
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-7 h-7 rounded-lg bg-blue-600/30 text-blue-400 text-sm font-black flex items-center justify-center",
+									children: "3"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Princípios Estruturais & Funcionamento" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+								className: "space-y-3",
+								children: verbete.conteudo.principios.map((principio, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+									className: "flex items-start gap-3 text-sm sm:text-base text-slate-300",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "w-2 h-2 rounded-full bg-cyan-400 mt-2 shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: principio })]
+								}, idx))
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-7 h-7 rounded-lg bg-blue-600/30 text-blue-400 text-sm font-black flex items-center justify-center",
+									children: "4"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Impacto Biopsicossocial & Relevância" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm sm:text-base text-slate-300 leading-relaxed",
+								children: verbete.conteudo.impactoBiopsicossocial
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "w-7 h-7 rounded-lg bg-blue-600/30 text-blue-400 text-sm font-black flex items-center justify-center",
+									children: "5"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aplicações Práticas no Estudo, Pesquisa e Cotidiano" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "grid grid-cols-1 sm:grid-cols-2 gap-3",
+								children: verbete.conteudo.aplicacoes.map((app, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-4 rounded-xl bg-slate-900/60 border border-slate-700/60 flex items-start gap-2.5",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-cyan-400 font-bold text-xs mt-0.5",
+										children: "✦"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-xs sm:text-sm text-slate-300 m-0 leading-relaxed",
+										children: app
+									})]
+								}, idx))
+							})]
+						}),
+						verbete.conteudo.pontosAtencao && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "p-6 rounded-2xl bg-amber-950/30 border border-amber-500/40",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "text-sm font-bold text-amber-300 uppercase tracking-wider mb-2 flex items-center gap-1.5",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "⚠️ Pontos de Atenção & Delimitação de Uso" })
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-xs sm:text-sm text-amber-100/90 leading-relaxed m-0",
+								children: verbete.conteudo.pontosAtencao
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
+								className: "text-sm font-bold text-slate-300 uppercase tracking-wider mb-4 flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Layers, { className: "w-4 h-4 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Verbetes e Conceitos Conectados" })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "grid grid-cols-1 sm:grid-cols-3 gap-3",
+								children: verbete.verbetesRelacionados.map((rel) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									onClick: () => onSelectVerbete(rel.id),
+									className: "p-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-900 border border-slate-700/80 hover:border-cyan-400/60 text-left transition-all cursor-pointer group",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-[10px] text-slate-400 uppercase font-semibold mb-1 truncate",
+										children: rel.categoriaNome
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "text-xs font-bold text-white group-hover:text-cyan-300 transition-colors flex items-center justify-between",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "truncate",
+											children: rel.termo
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3.5 h-3.5 text-cyan-400 shrink-0 group-hover:translate-x-1 transition-transform" })]
+									})]
+								}, rel.id))
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-900 border-2 border-dashed border-cyan-500/40 rounded-2xl p-6",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center justify-between mb-3",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "text-xs font-black uppercase tracking-wider text-cyan-400 flex items-center gap-1.5",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Como Citar este Verbete (Padrão ABNT NBR 6023)" })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									onClick: handleCopiarCitacao,
+									className: "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/40 text-cyan-300 text-xs font-bold transition-all cursor-pointer shadow-xs active:scale-95",
+									children: copiado ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "w-3.5 h-3.5 text-emerald-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-emerald-300",
+										children: "Citação Copiada!"
+									})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Copy, { className: "w-3.5 h-3.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Copiar Citação ABNT" })] })
+								})]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-xs text-slate-300 font-mono bg-slate-950/70 p-4 rounded-xl border border-slate-800 leading-relaxed select-all",
+								children: verbete.citacaoAbnt
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+							className: "bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "text-xs font-bold text-slate-400 uppercase tracking-wider mb-4",
+								children: "Referências Científicas e Bibliografia Consultada"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+								className: "space-y-3",
+								children: verbete.referencias.map((ref, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+									className: "text-xs text-slate-300 font-mono leading-relaxed pl-3 border-l-2 border-slate-600",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: ref.author }),
+										". ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: ref.title }),
+										". ",
+										ref.source,
+										", ",
+										ref.year,
+										".",
+										ref.doiOrUrl && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+											href: ref.doiOrUrl,
+											target: "_blank",
+											rel: "noopener noreferrer",
+											className: "text-cyan-400 hover:underline ml-1 inline-flex items-center gap-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "[Acessar Fonte]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-2.5 h-2.5" })]
+										})
+									]
+								}, idx))
+							})]
+						})
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mt-12 pt-6 border-t border-slate-700/80 flex items-center justify-between",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						onClick: onBack,
+						className: "px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-300 font-bold text-xs sm:text-sm border border-slate-700 transition-all cursor-pointer flex items-center gap-2",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Retornar ao Índice da Enciclowiki" })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						onClick: () => onNavigate("diretrizes-pedagogicas"),
+						className: "px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs sm:text-sm transition-all cursor-pointer shadow-lg shadow-cyan-500/25 flex items-center gap-2",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Diretrizes Pedagógicas" })]
+					})]
+				})
+			]
+		})
+	});
+};
+//#endregion
 //#region src/App.tsx
 function App() {
 	const [currentPage, setCurrentPage] = (0, import_react.useState)("home");
+	const [activeVerbeteId, setActiveVerbeteId] = (0, import_react.useState)("mapa-mental");
 	const [activeCategorySlug, setActiveCategorySlug] = (0, import_react.useState)("desenvolvimento-nas-empresas");
 	const [activePolicyId, setActivePolicyId] = (0, import_react.useState)("privacidade");
 	const [activePortalCourseId, setActivePortalCourseId] = (0, import_react.useState)("hc-1");
@@ -41862,11 +43085,29 @@ function App() {
 	(0, import_react.useEffect)(() => {
 		const params = new URLSearchParams(window.location.search);
 		const hash = window.location.hash.replace("#", "");
+		const verbeteId = params.get("verbete") || (params.get("page") === "enciclowiki-verbete" ? params.get("id") : null);
 		const postId = params.get("post") || params.get("id") || (params.get("page") === "blog-post" ? params.get("id") : null);
 		const artigoId = params.get("artigo") || params.get("article");
 		const cursoId = params.get("curso") || params.get("course");
 		const categoriaId = params.get("categoria") || params.get("category");
 		const pagina = params.get("pagina") || params.get("page") || params.get("p") || hash;
+		if (verbeteId) {
+			setActiveVerbeteId(verbeteId);
+			setCurrentPage("enciclowiki-verbete");
+			window.scrollTo({
+				top: 0,
+				behavior: "instant"
+			});
+			return;
+		}
+		if (pagina === "enciclowiki" || pagina === "wiki" || pagina === "enciclopedia") {
+			setCurrentPage("enciclowiki");
+			window.scrollTo({
+				top: 0,
+				behavior: "instant"
+			});
+			return;
+		}
 		if (postId) {
 			const post = BLOG_POSTS.find((p) => p.id === postId);
 			if (post) {
@@ -42197,6 +43438,24 @@ function App() {
 		}
 		if (sectionId === "blog") {
 			setCurrentPage("blog");
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+			return;
+		}
+		if (sectionId === "enciclowiki" || sectionId === "wiki" || sectionId === "enciclopedia") {
+			setCurrentPage("enciclowiki");
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+			return;
+		}
+		if (sectionId === "enciclowiki-verbete" || sectionId.startsWith("verbete:")) {
+			const vId = sectionId.startsWith("verbete:") ? sectionId.replace("verbete:", "") : "mapa-mental";
+			setActiveVerbeteId(vId);
+			setCurrentPage("enciclowiki-verbete");
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth"
@@ -42970,6 +44229,41 @@ function App() {
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DiretrizesAvaliacaoManuscritosPage, {
 					onBackToHome: () => {
 						setCurrentPage("home");
+						window.scrollTo({
+							top: 0,
+							behavior: "smooth"
+						});
+					},
+					onNavigate: handleNavigate
+				})
+			}),
+			currentPage === "enciclowiki" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
+				className: "flex-1",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(EnciclowikiPage, {
+					onSelectVerbete: (id) => {
+						setActiveVerbeteId(id);
+						setCurrentPage("enciclowiki-verbete");
+						window.scrollTo({
+							top: 0,
+							behavior: "smooth"
+						});
+					},
+					onNavigate: handleNavigate
+				})
+			}),
+			currentPage === "enciclowiki-verbete" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
+				className: "flex-1",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(EnciclowikiArticlePage, {
+					verbeteId: activeVerbeteId,
+					onBack: () => {
+						setCurrentPage("enciclowiki");
+						window.scrollTo({
+							top: 0,
+							behavior: "smooth"
+						});
+					},
+					onSelectVerbete: (id) => {
+						setActiveVerbeteId(id);
 						window.scrollTo({
 							top: 0,
 							behavior: "smooth"
