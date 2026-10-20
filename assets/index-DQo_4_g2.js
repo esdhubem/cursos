@@ -42575,64 +42575,64 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 	]);
 	const renderIconCategoria = (catId) => {
 		switch (catId) {
-			case "saude-integrativa": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4 h-4 text-emerald-400" });
-			case "desenvolvimento-humano": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4 h-4 text-blue-400" });
-			case "ciencia-cidada": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Microscope, { className: "w-4 h-4 text-indigo-400" });
-			case "tecnologia-escrever": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Network, { className: "w-4 h-4 text-amber-400" });
-			case "bem-estar-social": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Users, { className: "w-4 h-4 text-rose-400" });
-			default: return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-sky-400" });
+			case "saude-integrativa": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartPulse, { className: "w-4 h-4 text-emerald-600" });
+			case "desenvolvimento-humano": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-4 h-4 text-blue-600" });
+			case "ciencia-cidada": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Microscope, { className: "w-4 h-4 text-indigo-600" });
+			case "tecnologia-escrever": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Network, { className: "w-4 h-4 text-amber-600" });
+			case "bem-estar-social": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Users, { className: "w-4 h-4 text-rose-600" });
+			default: return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-sky-600" });
 		}
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "min-h-screen bg-slate-900 text-slate-100",
+		className: "min-h-screen bg-white text-slate-900 font-sans antialiased",
 		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-				className: "relative overflow-hidden bg-gradient-to-b from-[#011049] via-[#0A1435] to-slate-900 pt-14 pb-16 border-b border-blue-900/40",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-transparent pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+				className: "relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/80 pt-12 pb-14 border-b border-slate-200",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold tracking-wide mb-6 shadow-lg shadow-amber-950/40 backdrop-blur-md",
+							className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold tracking-wide mb-5 shadow-xs",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-4 h-4 text-amber-400" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-4 h-4 text-amber-700" }),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Espaço Autoral dos Alunos Nível Bronze" }),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "bg-amber-500/30 text-[10px] px-2 py-0.5 rounded font-black text-amber-200",
+									className: "bg-amber-200/80 text-[10px] px-2 py-0.5 rounded font-black text-amber-950",
 									children: "MÉRITO CONCEITUAL"
 								})
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-							className: "text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4 leading-tight",
+							className: "text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight mb-3 leading-tight font-serif",
 							children: ["Enciclowiki ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-cyan-300 to-emerald-400",
+								className: "text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-cyan-700 to-emerald-700",
 								children: "ESDHUBEM"
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "text-base sm:text-xl text-blue-100/95 max-w-3xl mx-auto font-medium leading-relaxed mb-6",
+							className: "text-base sm:text-xl text-slate-800 max-w-3xl mx-auto font-medium leading-relaxed mb-4",
 							children: "Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-							className: "text-xs sm:text-sm text-slate-300/85 max-w-2xl mx-auto leading-relaxed mb-8",
+							className: "text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8",
 							children: [
 								"A enciclopédia livre e participativa da ESDHUBEM onde estudantes certificados com o ",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Selo Bronze" }),
-								" publicam verbetes canônicos de 500 a 800 palavras sob rigor ético, método investigativo e fundamentação filosófica clássica."
+								" publicam verbetes canônicos concisos sob rigor ético, método investigativo e fundamentação filosófica clássica."
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "max-w-3xl mx-auto mb-8 p-4 sm:p-5 rounded-2xl bg-amber-950/50 border border-amber-500/40 text-left shadow-xl",
+							className: "max-w-3xl mx-auto mb-8 p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-amber-300 text-left shadow-xs",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-start gap-3",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4" })
+									className: "w-8 h-8 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 mt-0.5",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-amber-800" })
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "text-xs sm:text-sm text-amber-100/90 leading-relaxed",
+									className: "text-xs sm:text-sm text-slate-800 leading-relaxed",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-amber-300 font-bold block mb-1",
+											className: "text-amber-950 font-bold block mb-1",
 											children: "Orientação aos Alunos: Pesquise no repositório antes de escrever seu verbete!"
 										}),
 										"Para preservar o rigor de uma enciclopédia canônica (estilo Wikipedia) e evitar duplicidades, ",
@@ -42643,7 +42643,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "max-w-2xl mx-auto relative shadow-2xl rounded-2xl",
+							className: "max-w-2xl mx-auto relative shadow-sm rounded-2xl",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "relative flex items-center",
 								children: [
@@ -42652,54 +42652,54 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 										value: busca,
 										onChange: (e) => setBusca(e.target.value),
 										placeholder: "Verificar se o verbete já existe (ex: mapa mental, PICS, ciência cidadã)...",
-										className: "w-full bg-slate-800/95 hover:bg-slate-800 focus:bg-slate-800 border-2 border-amber-500/40 focus:border-cyan-400 text-white placeholder-slate-400 pl-12 pr-10 py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden transition-all shadow-inner"
+										className: "w-full bg-white hover:bg-slate-50/80 focus:bg-white border-2 border-slate-300 focus:border-blue-600 text-slate-900 placeholder-slate-400 pl-12 pr-10 py-3.5 sm:py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden transition-all shadow-xs"
 									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "w-5 h-5 text-amber-400 absolute left-4 pointer-events-none" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "w-5 h-5 text-slate-400 absolute left-4 pointer-events-none" }),
 									busca && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										onClick: () => setBusca(""),
-										className: "absolute right-4 text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-300 px-2 py-1 rounded-md transition-colors",
+										className: "absolute right-4 text-xs font-bold bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-1 rounded-md transition-colors",
 										children: "Limpar"
 									})
 								]
 							}), busca.trim() !== "" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-2 text-xs text-left text-slate-300 flex items-center justify-between px-2",
+								className: "mt-2 text-xs text-left text-slate-600 flex items-center justify-between px-2",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
 									"Status no repositório: ",
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: verbetesFiltrados.length }),
 									" ",
 									verbetesFiltrados.length === 1 ? "verbete coincide com sua busca" : "verbetes coincidem com sua busca"
 								] }), verbetesFiltrados.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-emerald-400 font-bold",
+									className: "text-emerald-700 font-bold",
 									children: "✓ Termo livre para nova publicação autoral!"
 								})]
 							})]
 						})
 					]
-				})]
+				})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "max-w-6xl mx-auto px-4 sm:px-6 py-10",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-xl mb-12",
+						className: "bg-slate-50/80 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xs mb-12",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-wrap items-center justify-between gap-4 mb-6",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center gap-2.5",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5" })
+										className: "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-black",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5 text-amber-700" })
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-lg sm:text-xl font-bold text-white tracking-tight",
+										className: "text-lg sm:text-xl font-bold text-slate-900 tracking-tight font-serif",
 										children: "A Enciclowiki e o Sistema de Publicações da ESDHUBEM"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs sm:text-sm text-slate-400",
+										className: "text-xs sm:text-sm text-slate-600",
 										children: "Compreenda a diferença entre a Enciclowiki, o Blog, o Repositório de Artigos, a Biblioteca e a Livraria"
 									})] })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 									onClick: () => setAbaExplicacaoAberta(!abaExplicacaoAberta),
-									className: "text-xs font-bold text-cyan-400 hover:underline cursor-pointer",
+									className: "text-xs font-bold text-blue-700 hover:underline cursor-pointer",
 									children: abaExplicacaoAberta ? "Ocultar Detalhes [-]" : "Ver Estrutura Completa [+]"
 								})]
 							}),
@@ -42707,145 +42707,143 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 								className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-amber-950/30 border border-amber-500/40 flex flex-col justify-between",
+										className: "p-4 rounded-2xl bg-amber-50/70 border-2 border-amber-300 flex flex-col justify-between shadow-xs",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between mb-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300",
+													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-200 text-amber-900",
 													children: "Selo Bronze"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-amber-400" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-amber-700" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-white text-sm mb-1.5",
+												className: "font-bold text-slate-900 text-sm mb-1.5",
 												children: "Enciclowiki"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs text-slate-300 leading-relaxed",
+												className: "text-xs text-slate-700 leading-relaxed",
 												children: [
-													"Verbetes canônicos conceituais (500 a 800 palavras). Espaço exclusivo dos ",
+													"Verbetes canônicos conceituais (500 a 800 caracteres). Espaço exclusivo dos ",
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Alunos Bronze" }),
 													" para catalogação pública de termos essenciais."
 												]
 											})
 										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] font-semibold text-amber-300 mt-3 pt-2 border-t border-amber-500/20",
+											className: "text-[11px] font-bold text-amber-800 mt-3 pt-2 border-t border-amber-200",
 											children: "Você está aqui ✦"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-slate-900/60 border border-slate-700/80 flex flex-col justify-between",
+										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between mb-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300",
+													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-800",
 													children: "Editorial"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-400" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-600" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-white text-sm mb-1.5",
+												className: "font-bold text-slate-900 text-sm mb-1.5",
 												children: "Blog ESDHUBEM"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-300 leading-relaxed",
+												className: "text-xs text-slate-600 leading-relaxed",
 												children: "Artigos informativos, tutoriais práticos e orientações metodológicas assinados pela coordenação e corpo docente da escola."
 											})
 										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 											onClick: () => onNavigate("blog"),
-											className: "text-[11px] font-semibold text-cyan-400 hover:underline mt-3 pt-2 border-t border-slate-700 text-left cursor-pointer",
+											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
 											children: "Acessar Blog →"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-slate-900/60 border border-slate-700/80 flex flex-col justify-between",
+										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between mb-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300",
+													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800",
 													children: "Bronze / Prata / Ouro"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-emerald-400" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-emerald-600" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-white text-sm mb-1.5",
+												className: "font-bold text-slate-900 text-sm mb-1.5",
 												children: "Repositório de Artigos"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-300 leading-relaxed",
+												className: "text-xs text-slate-600 leading-relaxed",
 												children: "Artigos científicos completos, monografias e ensaios com avaliação por pares e certificação de mérito progressivo."
 											})
 										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 											onClick: () => onNavigate("artigos"),
-											className: "text-[11px] font-semibold text-cyan-400 hover:underline mt-3 pt-2 border-t border-slate-700 text-left cursor-pointer",
+											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
 											children: "Ver Artigos →"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-slate-900/60 border border-slate-700/80 flex flex-col justify-between",
+										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between mb-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300",
+													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-100 text-purple-800",
 													children: "Selo Diamante (Livre)"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookMarked, { className: "w-4 h-4 text-purple-400" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookMarked, { className: "w-4 h-4 text-purple-600" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-white text-sm mb-1.5",
+												className: "font-bold text-slate-900 text-sm mb-1.5",
 												children: "Livros Abertos"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-300 leading-relaxed",
+												className: "text-xs text-slate-600 leading-relaxed",
 												children: "Livros integrais de alunos com Certificado Diamante que optaram pela democratização e acesso livre e gratuito do conhecimento."
 											})
 										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] font-semibold text-purple-300 mt-3 pt-2 border-t border-slate-700",
+											className: "text-[11px] font-semibold text-purple-700 mt-3 pt-2 border-t border-slate-200",
 											children: "Acesso Gratuito"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-slate-900/60 border border-slate-700/80 flex flex-col justify-between",
+										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "flex items-center justify-between mb-2",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300",
+													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800",
 													children: "Loja / Comercial"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShoppingBag, { className: "w-4 h-4 text-cyan-400" })]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShoppingBag, { className: "w-4 h-4 text-cyan-600" })]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-white text-sm mb-1.5",
+												className: "font-bold text-slate-900 text-sm mb-1.5",
 												children: "Livraria ESDHUBEM"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-300 leading-relaxed",
+												className: "text-xs text-slate-600 leading-relaxed",
 												children: "Vitrine e loja virtual de livros impressos e digitais comercializados, garantindo remuneração e royalties autorais aos criadores."
 											})
 										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 											onClick: () => onNavigate("livraria"),
-											className: "text-[11px] font-semibold text-cyan-400 hover:underline mt-3 pt-2 border-t border-slate-700 text-left cursor-pointer",
+											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
 											children: "Visitar Livraria →"
 										})]
 									})
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-8 pt-8 border-t border-slate-700",
+								className: "mt-8 pt-8 border-t border-slate-200",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-2 mb-4",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-5 h-5 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-											className: "text-base sm:text-lg font-bold text-white",
+										className: "flex items-center gap-2 mb-3",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-5 h-5 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+											className: "text-base sm:text-lg font-bold text-slate-900 font-serif",
 											children: "Diretriz de Escrita do Verbete: Fundamentação Filosófica de Kant & os Três Verbos"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "text-xs sm:text-sm text-slate-300 leading-relaxed mb-6",
+										className: "text-xs sm:text-sm text-slate-600 leading-relaxed mb-6",
 										children: [
-											"Todo verbete da Enciclowiki ESDHUBEM deve ser redigido entre ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "500 e 800 palavras" }),
-											", em formato contínuo e sem divisórias rebuscadas (seguindo a clareza da Wikipedia), devendo atender expressamente às questões consolidadas por ",
+											"Para o modelo aprofundado, os verbetes da ESDHUBEM atendem às quatro indagações fundamentais consolidadas por ",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Immanuel Kant" }),
 											" e à postura crítica clássica:"
 										]
@@ -42854,85 +42852,85 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 										className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6",
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-slate-900/90 border border-slate-700/80",
+												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-cyan-400 block mb-1",
+														className: "text-[10px] font-black uppercase tracking-wider text-blue-700 block mb-1",
 														children: "Pilar Disciplinar 1"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-white text-sm mb-1",
+														className: "font-bold text-slate-900 text-sm mb-1",
 														children: "Metafísica"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-400 italic mb-2",
+														className: "text-xs text-slate-500 italic mb-2",
 														children: "\"O que existe?\""
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-300 leading-relaxed",
+														className: "text-xs text-slate-600 leading-relaxed",
 														children: "Investiga a natureza primordial da realidade, existência e a estrutura do ser do conceito analisado."
 													})
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-slate-900/90 border border-slate-700/80",
+												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-blue-400 block mb-1",
+														className: "text-[10px] font-black uppercase tracking-wider text-indigo-700 block mb-1",
 														children: "Pilar Disciplinar 2"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-white text-sm mb-1",
+														className: "font-bold text-slate-900 text-sm mb-1",
 														children: "Epistemologia"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-400 italic mb-2",
+														className: "text-xs text-slate-500 italic mb-2",
 														children: "\"O que posso saber? / Como sabemos?\""
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-300 leading-relaxed",
+														className: "text-xs text-slate-600 leading-relaxed",
 														children: "Analisa a origem, os limites metodológicos e a validade científica do conhecimento formulado."
 													})
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-slate-900/90 border border-slate-700/80",
+												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-emerald-400 block mb-1",
+														className: "text-[10px] font-black uppercase tracking-wider text-emerald-700 block mb-1",
 														children: "Pilar Disciplinar 3"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-white text-sm mb-1",
+														className: "font-bold text-slate-900 text-sm mb-1",
 														children: "Ética & Moral"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-400 italic mb-2",
+														className: "text-xs text-slate-500 italic mb-2",
 														children: "\"O que devo fazer?\""
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-300 leading-relaxed",
+														className: "text-xs text-slate-600 leading-relaxed",
 														children: "Examina os princípios do comportamento correto, responsabilidade clínica, justiça social e conduta."
 													})
 												]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-slate-900/90 border border-slate-700/80",
+												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
 												children: [
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-purple-400 block mb-1",
+														className: "text-[10px] font-black uppercase tracking-wider text-purple-700 block mb-1",
 														children: "Pilar Disciplinar 4"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-white text-sm mb-1",
+														className: "font-bold text-slate-900 text-sm mb-1",
 														children: "Estética & Antropologia"
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-400 italic mb-2",
+														className: "text-xs text-slate-500 italic mb-2",
 														children: "\"O que posso esperar? / O que é o homem?\""
 													}),
 													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-300 leading-relaxed",
+														className: "text-xs text-slate-600 leading-relaxed",
 														children: "Explora o sentido da esperança, da arte, do gosto e o papel emancipatório do ser humano no mundo."
 													})
 												]
@@ -42940,12 +42938,12 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-xl bg-blue-950/40 border border-blue-500/30 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm",
+										className: "p-4 rounded-xl bg-blue-50/70 border border-blue-200 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "font-bold text-blue-200",
-											children: "A Tríade dos Três Verbos da Escrita Enciclopédica:"
+											className: "font-bold text-blue-950",
+											children: "A Tríade dos Três Verbos da Postura Filosófica:"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex flex-wrap gap-4 text-slate-300",
+											className: "flex flex-wrap gap-4 text-slate-700",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1. O que é?" }), " (Essência)"] }),
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "•" }),
@@ -42960,15 +42958,15 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-slate-800/60 border border-slate-700/80 rounded-2xl p-4 mb-8 shadow-lg",
+						className: "bg-white border border-slate-200 rounded-2xl p-4 mb-8 shadow-xs",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex items-center justify-between mb-3",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-								className: "text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Funnel, { className: "w-3.5 h-3.5 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Índice Alfabético do Repositório (A–Z)" })]
+								className: "text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Funnel, { className: "w-3.5 h-3.5 text-amber-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Índice Alfabético do Repositório (A–Z)" })]
 							}), letraAtiva !== "todas" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								onClick: () => setLetraAtiva("todas"),
-								className: "text-xs text-cyan-400 hover:underline font-semibold",
+								className: "text-xs text-blue-700 hover:underline font-semibold",
 								children: [
 									"Limpar letra (",
 									letraAtiva,
@@ -42979,14 +42977,14 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							className: "flex flex-wrap items-center gap-1.5 sm:gap-2",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 								onClick: () => setLetraAtiva("todas"),
-								className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${letraAtiva === "todas" ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/30" : "bg-slate-700/60 text-slate-300 hover:bg-slate-700 hover:text-white"}`,
+								className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${letraAtiva === "todas" ? "bg-amber-500 text-slate-950 shadow-xs" : "bg-slate-100 text-slate-700 hover:bg-slate-200"}`,
 								children: "TODOS"
 							}), ALFABETO.map((letra) => {
 								const temVerbetes = letrasDisponiveis.has(letra);
 								return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 									disabled: !temVerbetes,
 									onClick: () => setLetraAtiva(letra),
-									className: `w-8 h-8 rounded-lg text-xs font-bold transition-all flex items-center justify-center ${letraAtiva === letra ? "bg-amber-500 text-slate-950 font-black shadow-md shadow-amber-500/30 scale-105" : temVerbetes ? "bg-slate-700/80 text-white hover:bg-amber-600/30 hover:border-amber-400/50 border border-transparent cursor-pointer" : "bg-slate-800/40 text-slate-600 cursor-not-allowed border border-slate-800"}`,
+									className: `w-8 h-8 rounded-lg text-xs font-bold transition-all flex items-center justify-center ${letraAtiva === letra ? "bg-amber-500 text-slate-950 font-black shadow-xs scale-105" : temVerbetes ? "bg-slate-100 text-slate-800 hover:bg-amber-100 hover:text-amber-900 border border-slate-200 cursor-pointer" : "bg-slate-50 text-slate-300 cursor-not-allowed border border-slate-100"}`,
 									title: temVerbetes ? `Ver verbetes com a letra ${letra}` : `Nenhum verbete com a letra ${letra}`,
 									children: letra
 								}, letra);
@@ -42998,10 +42996,10 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex items-center justify-between mb-4",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
-								className: "text-sm font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Layers, { className: "w-4 h-4 text-cyan-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Filtrar por Eixo Temático" })]
+								className: "text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center gap-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Layers, { className: "w-4 h-4 text-blue-600" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Filtrar por Eixo Temático" })]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-								className: "text-xs text-slate-400",
+								className: "text-xs text-slate-500",
 								children: [
 									verbetesFiltrados.length,
 									" ",
@@ -43012,7 +43010,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							className: "flex flex-wrap gap-2.5",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								onClick: () => setCategoriaAtiva("todas"),
-								className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${categoriaAtiva === "todas" ? "bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-600/30 ring-2 ring-blue-500/20" : "bg-slate-800/80 text-slate-300 border-slate-700 hover:bg-slate-750 hover:text-white"}`,
+								className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${categoriaAtiva === "todas" ? "bg-blue-600 text-white border-blue-600 shadow-xs" : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:text-slate-900"}`,
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
 									"Todos os Eixos (",
 									ENCICLOWIKI_VERBETES.length,
@@ -43023,12 +43021,12 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 								const isSelected = categoriaAtiva === cat.id;
 								return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 									onClick: () => setCategoriaAtiva(cat.id),
-									className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${isSelected ? "bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-600/30 ring-2 ring-blue-500/20" : "bg-slate-800/80 text-slate-300 border-slate-700 hover:bg-slate-750 hover:text-white"}`,
+									className: `px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${isSelected ? "bg-blue-600 text-white border-blue-600 shadow-xs" : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:text-slate-900"}`,
 									children: [
 										renderIconCategoria(cat.id),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: cat.nome }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[10px] px-1.5 py-0.5 rounded-full bg-slate-900/60 font-black text-slate-300",
+											className: `text-[10px] px-1.5 py-0.5 rounded-full font-black ${isSelected ? "bg-blue-800 text-white" : "bg-slate-100 text-slate-700"}`,
 											children: count
 										})
 									]
@@ -43037,15 +43035,15 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 						})]
 					}),
 					verbetesFiltrados.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "text-center py-16 bg-slate-800/40 rounded-3xl border border-dashed border-slate-700 p-8",
+						className: "text-center py-16 bg-slate-50 rounded-3xl border border-dashed border-slate-300 p-8",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-12 h-12 text-slate-500 mx-auto mb-4" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-12 h-12 text-slate-400 mx-auto mb-4" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								className: "text-lg font-bold text-white mb-2",
+								className: "text-lg font-bold text-slate-800 mb-2 font-serif",
 								children: "Nenhum verbete coincide com a pesquisa"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-sm text-slate-400 max-w-md mx-auto mb-6",
+								className: "text-sm text-slate-600 max-w-md mx-auto mb-6",
 								children: "Este termo ainda não foi catalogado no repositório. Isso significa que ele está livre para uma nova publicação autoral por um aluno Bronze!"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
@@ -43054,7 +43052,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 									setCategoriaAtiva("todas");
 									setLetraAtiva("todas");
 								},
-								className: "px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all cursor-pointer shadow-lg shadow-amber-500/20",
+								className: "px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all cursor-pointer shadow-xs",
 								children: "Redefinir Filtros"
 							})
 						]
@@ -43062,50 +43060,50 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 						className: "grid grid-cols-1 md:grid-cols-2 gap-6",
 						children: verbetesFiltrados.map((verbete) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 							onClick: () => onSelectVerbete(verbete.id),
-							className: "group relative bg-slate-800/70 hover:bg-slate-800 border border-slate-700/80 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-amber-950/30 flex flex-col justify-between cursor-pointer",
+							className: "group relative bg-white hover:bg-slate-50/70 border border-slate-200 hover:border-amber-400 rounded-2xl p-6 transition-all duration-200 hover:shadow-md flex flex-col justify-between cursor-pointer",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center justify-between gap-2 mb-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "flex items-center gap-2",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "w-8 h-8 rounded-lg bg-amber-500/20 border border-amber-400/40 text-amber-300 font-black text-sm flex items-center justify-center",
+											className: "w-8 h-8 rounded-lg bg-amber-100 border border-amber-300 text-amber-900 font-black text-sm flex items-center justify-center",
 											children: verbete.letraInicial
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											className: "text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-900/80 text-slate-300 border border-slate-700/60 flex items-center gap-1.5",
+											className: "text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1.5",
 											children: [renderIconCategoria(verbete.categoriaId), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 												className: "truncate max-w-[170px]",
 												children: verbete.categoriaNome
 											})]
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-										className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-3 h-3 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aluno Bronze" })]
+										className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 flex items-center gap-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-3 h-3 text-amber-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aluno Bronze" })]
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "text-xl font-bold text-white group-hover:text-amber-300 transition-colors mb-2 leading-snug",
+									className: "text-xl font-bold text-slate-900 group-hover:text-blue-800 transition-colors mb-2 leading-snug font-serif",
 									children: verbete.termo
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "text-xs text-slate-400 mb-3 flex flex-wrap items-center gap-x-2",
+									className: "text-xs text-slate-500 mb-3 flex flex-wrap items-center gap-x-2",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["Autor(a): ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-slate-200",
+											className: "text-slate-800",
 											children: verbete.autorNome
 										})] }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-600",
+											className: "text-slate-300",
 											children: "•"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-400 italic",
+											className: "text-slate-600 italic",
 											children: verbete.autorProfissao
 										})
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mb-4 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/60 text-[11px] text-cyan-300/90 font-mono",
+									className: "mb-4 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-700 font-mono",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-slate-500 font-sans",
@@ -43116,26 +43114,26 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-sm text-slate-300 leading-relaxed mb-5 line-clamp-3",
-									children: verbete.resumoDireto
+									className: "text-sm text-slate-600 leading-relaxed mb-5 line-clamp-3",
+									children: verbete.textoAlunoParagrafo || verbete.resumoDireto
 								})
 							] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-wrap gap-1.5 mb-5",
 								children: [verbete.tags.slice(0, 3).map((tag, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-									className: "text-[11px] font-medium px-2 py-0.5 rounded bg-slate-900/60 text-slate-400 border border-slate-800",
+									className: "text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600 border border-slate-200",
 									children: ["#", tag]
 								}, idx)), verbete.tags.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 									className: "text-[11px] text-slate-500 self-center",
 									children: ["+", verbete.tags.length - 3]
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400",
+								className: "pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 									className: "flex items-center gap-1.5",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-3.5 h-3.5 text-slate-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: verbete.tempoLeitura })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-									className: "inline-flex items-center gap-1 text-amber-400 font-bold group-hover:translate-x-1 transition-transform",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ler Verbete Estilo Wiki" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "w-3.5 h-3.5" })]
+									className: "inline-flex items-center gap-1 text-blue-700 font-bold group-hover:translate-x-1 transition-transform",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ler Verbete" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "w-3.5 h-3.5" })]
 								})]
 							})] })]
 						}, verbete.id))
@@ -43145,32 +43143,32 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 				className: "max-w-6xl mx-auto px-4 sm:px-6 pb-20",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "rounded-3xl bg-gradient-to-r from-amber-950/40 via-slate-800 to-blue-950/60 border border-amber-500/30 p-8 sm:p-12 shadow-2xl relative overflow-hidden",
+					className: "rounded-3xl bg-gradient-to-r from-amber-50 via-slate-50 to-blue-50 border border-slate-200 p-8 sm:p-12 shadow-xs relative overflow-hidden",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "max-w-3xl relative z-10",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold mb-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-3.5 h-3.5 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aula de Orientação & Submissão" })]
+								className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold mb-4",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-3.5 h-3.5 text-amber-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aula de Orientação & Submissão" })]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-								className: "text-2xl sm:text-3xl font-black text-white mb-4 tracking-tight",
+								className: "text-2xl sm:text-3xl font-black text-slate-900 mb-3 tracking-tight font-serif",
 								children: "Deseja publicar seu verbete e conquistar o Selo Bronze?"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-sm sm:text-base text-slate-300 leading-relaxed mb-6",
-								children: "Acesse as diretrizes pedagógicas da ESDHUBEM para aprender como estruturar sua pesquisa de 500 a 800 palavras, respondendo às 4 questões de Kant e aos três verbos clássicos, com citações ABNT e integridade investigativa."
+								className: "text-sm sm:text-base text-slate-700 leading-relaxed mb-6",
+								children: "Acesse as diretrizes pedagógicas da ESDHUBEM para aprender como estruturar sua pesquisa concisa de 500 a 800 caracteres, respondendo à essência do conceito, com citação ABNT e integridade investigativa."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-wrap gap-4",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 									onClick: () => onNavigate("diretrizes-pedagogicas"),
-									className: "px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg shadow-amber-500/25 cursor-pointer flex items-center gap-2",
+									className: "px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-xs cursor-pointer flex items-center gap-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ver Diretrizes de Autoria & Avaliação" })]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 									onClick: () => onNavigate("catalogo-cursos"),
-									className: "px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all cursor-pointer flex items-center gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-cyan-300" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cursos com Formação Bronze" })]
+									className: "px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 transition-all cursor-pointer flex items-center gap-2 shadow-2xs",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cursos com Formação Bronze" })]
 								})]
 							})
 						]
