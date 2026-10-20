@@ -42781,10 +42781,6 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 											children: verbete.autorProfissao
 										})
 									]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-sm text-slate-700 leading-relaxed mb-5 line-clamp-3",
-									children: verbete.textoAlunoParagrafo || verbete.resumoDireto
 								})
 							] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex flex-wrap gap-1.5 mb-5",
