@@ -1433,10 +1433,6 @@
     max-width: 150px;
   }
 
-  .max-w-\[160px\] {
-    max-width: 160px;
-  }
-
   .max-w-\[170px\] {
     max-width: 170px;
   }
@@ -1819,10 +1815,6 @@
     column-gap: calc(var(--spacing) * 8);
   }
 
-  .gap-y-1 {
-    row-gap: var(--spacing);
-  }
-
   .gap-y-1\.5 {
     row-gap: calc(var(--spacing) * 1.5);
   }
@@ -1927,9 +1919,9 @@
     border-bottom-right-radius: var(--radius-2xl);
   }
 
-  .rounded-r-md {
-    border-top-right-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md);
+  .rounded-r-xl {
+    border-top-right-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
   }
 
   .rounded-bl-xl {
@@ -3197,10 +3189,6 @@
     background-color: #00227b;
   }
 
-  .bg-\[\#0645ad\] {
-    background-color: #0645ad;
-  }
-
   .bg-\[\#011049\] {
     background-color: #011049;
   }
@@ -3481,16 +3469,6 @@
 
   .bg-amber-600 {
     background-color: var(--color-amber-600);
-  }
-
-  .bg-amber-600\/15 {
-    background-color: #dd740026;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-amber-600\/15 {
-      background-color: color-mix(in oklab, var(--color-amber-600) 15%, transparent);
-    }
   }
 
   .bg-amber-700 {
@@ -8286,10 +8264,6 @@
       border-color: var(--color-violet-300);
     }
 
-    .hover\:bg-\[\#0b0080\]:hover {
-      background-color: #0b0080;
-    }
-
     .hover\:bg-\[\#001b63\]:hover {
       background-color: #001b63;
     }
@@ -8425,6 +8399,16 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-amber-400\/25:hover {
         background-color: color-mix(in oklab, var(--color-amber-400) 25%, transparent);
+      }
+    }
+
+    .hover\:bg-amber-500\/25:hover {
+      background-color: #f99c0040;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-amber-500\/25:hover {
+        background-color: color-mix(in oklab, var(--color-amber-500) 25%, transparent);
       }
     }
 
@@ -8758,10 +8742,6 @@
 
     .hover\:text-\[\#0b0080\]:hover {
       color: #0b0080;
-    }
-
-    .hover\:text-\[\#0645ad\]:hover {
-      color: #0645ad;
     }
 
     .hover\:text-\[\#011049\]:hover {
@@ -9249,10 +9229,6 @@
 
     .sm\:w-auto {
       width: auto;
-    }
-
-    .sm\:max-w-\[260px\] {
-      max-width: 260px;
     }
 
     .sm\:max-w-lg {
