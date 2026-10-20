@@ -8464,6 +8464,16 @@
       background-color: var(--color-slate-200);
     }
 
+    .hover\:bg-slate-200\/70:hover {
+      background-color: #e2e8f0b3;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-slate-200\/70:hover {
+        background-color: color-mix(in oklab, var(--color-slate-200) 70%, transparent);
+      }
+    }
+
     .hover\:bg-slate-300:hover {
       background-color: var(--color-slate-300);
     }
