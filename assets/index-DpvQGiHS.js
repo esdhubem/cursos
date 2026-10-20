@@ -13965,26 +13965,6 @@ var ShieldCheck = createLucideIcon("shield-check", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var ShoppingBag = createLucideIcon("shopping-bag", [
-	["path", {
-		d: "M16 10a4 4 0 0 1-8 0",
-		key: "1ltviw"
-	}],
-	["path", {
-		d: "M3.103 6.034h17.794",
-		key: "awc11p"
-	}],
-	["path", {
-		d: "M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z",
-		key: "o988cm"
-	}]
-]);
-/**
-* @license lucide-react v0.546.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var ShoppingCart = createLucideIcon("shopping-cart", [
 	["circle", {
 		cx: "8",
@@ -42547,7 +42527,6 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 	const [busca, setBusca] = (0, import_react.useState)("");
 	const [categoriaAtiva, setCategoriaAtiva] = (0, import_react.useState)("todas");
 	const [letraAtiva, setLetraAtiva] = (0, import_react.useState)("todas");
-	const [abaExplicacaoAberta, setAbaExplicacaoAberta] = (0, import_react.useState)(false);
 	const letrasDisponiveis = (0, import_react.useMemo)(() => {
 		return new Set(ENCICLOWIKI_VERBETES.map((v) => v.letraInicial.toUpperCase()));
 	}, []);
@@ -42563,8 +42542,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 				const naCategoria = verbete.categoriaNome.toLowerCase().includes(query);
 				const noAutor = verbete.autorNome.toLowerCase().includes(query);
 				const naProfissao = verbete.autorProfissao.toLowerCase().includes(query);
-				const naFilosofia = verbete.filosofia.questaoKant.toLowerCase().includes(query) || verbete.filosofia.pilarDisciplinar.toLowerCase().includes(query);
-				if (!noTermo && !noResumo && !nasTags && !naCategoria && !noAutor && !naProfissao && !naFilosofia) return false;
+				if (!noTermo && !noResumo && !nasTags && !naCategoria && !noAutor && !naProfissao) return false;
 			}
 			return true;
 		});
@@ -42585,380 +42563,82 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "min-h-screen bg-white text-slate-900 font-sans antialiased",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-				className: "relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/80 pt-12 pb-14 border-b border-slate-200",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold tracking-wide mb-5 shadow-xs",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-4 h-4 text-amber-700" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Espaço Autoral dos Alunos Nível Bronze" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "bg-amber-200/80 text-[10px] px-2 py-0.5 rounded font-black text-amber-950",
-									children: "MÉRITO CONCEITUAL"
-								})
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-							className: "text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight mb-3 leading-tight font-serif",
-							children: ["Enciclowiki ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-cyan-700 to-emerald-700",
-								children: "ESDHUBEM"
-							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "text-base sm:text-xl text-slate-800 max-w-3xl mx-auto font-medium leading-relaxed mb-4",
-							children: "Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social."
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-							className: "text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8",
-							children: [
-								"A enciclopédia livre e participativa da ESDHUBEM onde estudantes certificados com o ",
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Selo Bronze" }),
-								" publicam verbetes canônicos concisos sob rigor ético, método investigativo e fundamentação filosófica clássica."
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "max-w-3xl mx-auto mb-8 p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-amber-300 text-left shadow-xs",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-start gap-3",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "w-8 h-8 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 mt-0.5",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, { className: "w-4 h-4 text-amber-800" })
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "text-xs sm:text-sm text-slate-800 leading-relaxed",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", {
-											className: "text-amber-950 font-bold block mb-1",
-											children: "Orientação aos Alunos: Pesquise no repositório antes de escrever seu verbete!"
-										}),
-										"Para preservar o rigor de uma enciclopédia canônica (estilo Wikipedia) e evitar duplicidades, ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "cada conceito possui apenas um verbete oficial" }),
-										". Antes de redigir, digite o termo na busca abaixo. Se o termo já estiver cadastrado, explore um desdobramento correlato, um novo ângulo ou proponha outro conceito ainda inédito para garantir sua autoria pioneira."
-									]
-								})]
-							})
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "max-w-2xl mx-auto relative shadow-sm rounded-2xl",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "relative flex items-center",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-										type: "text",
-										value: busca,
-										onChange: (e) => setBusca(e.target.value),
-										placeholder: "Verificar se o verbete já existe (ex: mapa mental, PICS, ciência cidadã)...",
-										className: "w-full bg-white hover:bg-slate-50/80 focus:bg-white border-2 border-slate-300 focus:border-blue-600 text-slate-900 placeholder-slate-400 pl-12 pr-10 py-3.5 sm:py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden transition-all shadow-xs"
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "w-5 h-5 text-slate-400 absolute left-4 pointer-events-none" }),
-									busca && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-										onClick: () => setBusca(""),
-										className: "absolute right-4 text-xs font-bold bg-slate-200 hover:bg-slate-300 text-slate-700 px-2 py-1 rounded-md transition-colors",
-										children: "Limpar"
-									})
-								]
-							}), busca.trim() !== "" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-2 text-xs text-left text-slate-600 flex items-center justify-between px-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-									"Status no repositório: ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: verbetesFiltrados.length }),
-									" ",
-									verbetesFiltrados.length === 1 ? "verbete coincide com sua busca" : "verbetes coincidem com sua busca"
-								] }), verbetesFiltrados.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-emerald-700 font-bold",
-									children: "✓ Termo livre para nova publicação autoral!"
-								})]
-							})]
-						})
-					]
-				})
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-				className: "max-w-6xl mx-auto px-4 sm:px-6 py-10",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			className: "relative overflow-hidden bg-gradient-to-b from-[#011049] via-[#0A1435] to-[#011049] pt-14 pb-16 border-b border-blue-900/50",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-transparent pointer-events-none" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-slate-50/80 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xs mb-12",
+						className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold tracking-wide mb-5 shadow-lg shadow-amber-950/40 backdrop-blur-md",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex flex-wrap items-center justify-between gap-4 mb-6",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex items-center gap-2.5",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-black",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-5 h-5 text-amber-700" })
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-lg sm:text-xl font-bold text-slate-900 tracking-tight font-serif",
-										children: "A Enciclowiki e o Sistema de Publicações da ESDHUBEM"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs sm:text-sm text-slate-600",
-										children: "Compreenda a diferença entre a Enciclowiki, o Blog, o Repositório de Artigos, a Biblioteca e a Livraria"
-									})] })]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									onClick: () => setAbaExplicacaoAberta(!abaExplicacaoAberta),
-									className: "text-xs font-bold text-blue-700 hover:underline cursor-pointer",
-									children: abaExplicacaoAberta ? "Ocultar Detalhes [-]" : "Ver Estrutura Completa [+]"
-								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-amber-50/70 border-2 border-amber-300 flex flex-col justify-between shadow-xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between mb-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-200 text-amber-900",
-													children: "Selo Bronze"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-amber-700" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-slate-900 text-sm mb-1.5",
-												children: "Enciclowiki"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-												className: "text-xs text-slate-700 leading-relaxed",
-												children: [
-													"Verbetes canônicos conceituais (500 a 800 caracteres). Espaço exclusivo dos ",
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Alunos Bronze" }),
-													" para catalogação pública de termos essenciais."
-												]
-											})
-										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] font-bold text-amber-800 mt-3 pt-2 border-t border-amber-200",
-											children: "Você está aqui ✦"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between mb-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-800",
-													children: "Editorial"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-4 h-4 text-blue-600" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-slate-900 text-sm mb-1.5",
-												children: "Blog ESDHUBEM"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-600 leading-relaxed",
-												children: "Artigos informativos, tutoriais práticos e orientações metodológicas assinados pela coordenação e corpo docente da escola."
-											})
-										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											onClick: () => onNavigate("blog"),
-											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
-											children: "Acessar Blog →"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between mb-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800",
-													children: "Bronze / Prata / Ouro"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-emerald-600" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-slate-900 text-sm mb-1.5",
-												children: "Repositório de Artigos"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-600 leading-relaxed",
-												children: "Artigos científicos completos, monografias e ensaios com avaliação por pares e certificação de mérito progressivo."
-											})
-										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											onClick: () => onNavigate("artigos"),
-											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
-											children: "Ver Artigos →"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between mb-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-100 text-purple-800",
-													children: "Selo Diamante (Livre)"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookMarked, { className: "w-4 h-4 text-purple-600" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-slate-900 text-sm mb-1.5",
-												children: "Livros Abertos"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-600 leading-relaxed",
-												children: "Livros integrais de alunos com Certificado Diamante que optaram pela democratização e acesso livre e gratuito do conhecimento."
-											})
-										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] font-semibold text-purple-700 mt-3 pt-2 border-t border-slate-200",
-											children: "Acesso Gratuito"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "flex items-center justify-between mb-2",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800",
-													children: "Loja / Comercial"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShoppingBag, { className: "w-4 h-4 text-cyan-600" })]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "font-bold text-slate-900 text-sm mb-1.5",
-												children: "Livraria ESDHUBEM"
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-												className: "text-xs text-slate-600 leading-relaxed",
-												children: "Vitrine e loja virtual de livros impressos e digitais comercializados, garantindo remuneração e royalties autorais aos criadores."
-											})
-										] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											onClick: () => onNavigate("livraria"),
-											className: "text-[11px] font-semibold text-blue-700 hover:underline mt-3 pt-2 border-t border-slate-200 text-left cursor-pointer",
-											children: "Visitar Livraria →"
-										})]
-									})
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-8 pt-8 border-t border-slate-200",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex items-center gap-2 mb-3",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Compass, { className: "w-5 h-5 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-											className: "text-base sm:text-lg font-bold text-slate-900 font-serif",
-											children: "Diretriz de Escrita do Verbete: Fundamentação Filosófica de Kant & os Três Verbos"
-										})]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "text-xs sm:text-sm text-slate-600 leading-relaxed mb-6",
-										children: [
-											"Para o modelo aprofundado, os verbetes da ESDHUBEM atendem às quatro indagações fundamentais consolidadas por ",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Immanuel Kant" }),
-											" e à postura crítica clássica:"
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-blue-700 block mb-1",
-														children: "Pilar Disciplinar 1"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-sm mb-1",
-														children: "Metafísica"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-500 italic mb-2",
-														children: "\"O que existe?\""
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: "Investiga a natureza primordial da realidade, existência e a estrutura do ser do conceito analisado."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-indigo-700 block mb-1",
-														children: "Pilar Disciplinar 2"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-sm mb-1",
-														children: "Epistemologia"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-500 italic mb-2",
-														children: "\"O que posso saber? / Como sabemos?\""
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: "Analisa a origem, os limites metodológicos e a validade científica do conhecimento formulado."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-emerald-700 block mb-1",
-														children: "Pilar Disciplinar 3"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-sm mb-1",
-														children: "Ética & Moral"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-500 italic mb-2",
-														children: "\"O que devo fazer?\""
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: "Examina os princípios do comportamento correto, responsabilidade clínica, justiça social e conduta."
-													})
-												]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "p-4 rounded-xl bg-white border border-slate-200 shadow-2xs",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-[10px] font-black uppercase tracking-wider text-purple-700 block mb-1",
-														children: "Pilar Disciplinar 4"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-														className: "font-bold text-slate-900 text-sm mb-1",
-														children: "Estética & Antropologia"
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs text-slate-500 italic mb-2",
-														children: "\"O que posso esperar? / O que é o homem?\""
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-														className: "text-xs text-slate-600 leading-relaxed",
-														children: "Explora o sentido da esperança, da arte, do gosto e o papel emancipatório do ser humano no mundo."
-													})
-												]
-											})
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "p-4 rounded-xl bg-blue-50/70 border border-blue-200 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "font-bold text-blue-950",
-											children: "A Tríade dos Três Verbos da Postura Filosófica:"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex flex-wrap gap-4 text-slate-700",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "1. O que é?" }), " (Essência)"] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "•" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "2. Por que é?" }), " (Causa e justificativa)"] }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "•" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "3. Como é?" }), " (Estrutura e funcionamento prático)"] })
-											]
-										})]
-									})
-								]
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-4 h-4 text-amber-400" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Espaço Autoral dos Alunos Nível Bronze" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "bg-amber-500/30 text-[10px] px-2 py-0.5 rounded font-black text-amber-200",
+								children: "MÉRITO CONCEITUAL"
 							})
 						]
 					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
+						className: "text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-3 leading-tight font-serif",
+						children: ["Enciclowiki ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-cyan-300 to-emerald-400",
+							children: "ESDHUBEM"
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "text-base sm:text-xl text-blue-100/95 max-w-3xl mx-auto font-medium leading-relaxed mb-4",
+						children: "Conhecimento Vivo, Ciência Cidadã e Práticas de Bem-Estar Social."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "text-xs sm:text-sm text-slate-300/85 max-w-2xl mx-auto leading-relaxed mb-8",
+						children: [
+							"A enciclopédia livre e participativa da ESDHUBEM onde estudantes certificados com o ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Selo Bronze" }),
+							" publicam verbetes canônicos concisos sob rigor ético, método investigativo e fundamentação filosófica clássica."
+						]
+					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "bg-white border border-slate-200 rounded-2xl p-4 mb-8 shadow-xs",
+						className: "max-w-2xl mx-auto relative shadow-2xl rounded-2xl",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "relative flex items-center",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+									type: "text",
+									value: busca,
+									onChange: (e) => setBusca(e.target.value),
+									placeholder: "Pesquisar verbetes (ex: mapa mental, PICS, ciência cidadã)...",
+									className: "w-full bg-slate-800/95 hover:bg-slate-800 focus:bg-slate-800 border-2 border-amber-500/40 focus:border-cyan-400 text-white placeholder-slate-400 pl-12 pr-10 py-3.5 sm:py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden transition-all shadow-inner"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "w-5 h-5 text-amber-400 absolute left-4 pointer-events-none" }),
+								busca && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									onClick: () => setBusca(""),
+									className: "absolute right-4 text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-300 px-2 py-1 rounded-md transition-colors",
+									children: "Limpar"
+								})
+							]
+						}), busca.trim() !== "" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "mt-2 text-xs text-left text-slate-300 flex items-center justify-between px-2",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+								"Status no repositório: ",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: verbetesFiltrados.length }),
+								" ",
+								verbetesFiltrados.length === 1 ? "verbete coincide com sua busca" : "verbetes coincidem com sua busca"
+							] }), verbetesFiltrados.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-emerald-400 font-bold",
+								children: "✓ Termo livre para nova publicação autoral!"
+							})]
+						})]
+					})
+				]
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+			className: "bg-white py-10",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "max-w-6xl mx-auto px-4 sm:px-6",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-8 shadow-xs",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex items-center justify-between mb-3",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -42977,14 +42657,14 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							className: "flex flex-wrap items-center gap-1.5 sm:gap-2",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 								onClick: () => setLetraAtiva("todas"),
-								className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${letraAtiva === "todas" ? "bg-amber-500 text-slate-950 shadow-xs" : "bg-slate-100 text-slate-700 hover:bg-slate-200"}`,
+								className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${letraAtiva === "todas" ? "bg-amber-500 text-slate-950 shadow-xs" : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"}`,
 								children: "TODOS"
 							}), ALFABETO.map((letra) => {
 								const temVerbetes = letrasDisponiveis.has(letra);
 								return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 									disabled: !temVerbetes,
 									onClick: () => setLetraAtiva(letra),
-									className: `w-8 h-8 rounded-lg text-xs font-bold transition-all flex items-center justify-center ${letraAtiva === letra ? "bg-amber-500 text-slate-950 font-black shadow-xs scale-105" : temVerbetes ? "bg-slate-100 text-slate-800 hover:bg-amber-100 hover:text-amber-900 border border-slate-200 cursor-pointer" : "bg-slate-50 text-slate-300 cursor-not-allowed border border-slate-100"}`,
+									className: `w-8 h-8 rounded-lg text-xs font-bold transition-all flex items-center justify-center ${letraAtiva === letra ? "bg-amber-500 text-slate-950 font-black shadow-xs scale-105" : temVerbetes ? "bg-white text-slate-800 hover:bg-amber-100 hover:text-amber-900 border border-slate-200 cursor-pointer" : "bg-slate-100 text-slate-300 cursor-not-allowed border border-slate-100"}`,
 									title: temVerbetes ? `Ver verbetes com a letra ${letra}` : `Nenhum verbete com a letra ${letra}`,
 									children: letra
 								}, letra);
@@ -43044,7 +42724,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "text-sm text-slate-600 max-w-md mx-auto mb-6",
-								children: "Este termo ainda não foi catalogado no repositório. Isso significa que ele está livre para uma nova publicação autoral por um aluno Bronze!"
+								children: "Este termo ainda não foi catalogado no repositório."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 								onClick: () => {
@@ -43057,7 +42737,7 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 							})
 						]
 					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+						className: "grid grid-cols-1 md:grid-cols-2 gap-6 pb-12",
 						children: verbetesFiltrados.map((verbete) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 							onClick: () => onSelectVerbete(verbete.id),
 							className: "group relative bg-white hover:bg-slate-50/70 border border-slate-200 hover:border-amber-400 rounded-2xl p-6 transition-all duration-200 hover:shadow-md flex flex-col justify-between cursor-pointer",
@@ -43102,17 +42782,6 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 										})
 									]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mb-4 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-700 font-mono",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-slate-500 font-sans",
-											children: "Kant:"
-										}),
-										" ",
-										verbete.filosofia.questaoKant
-									]
-								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-sm text-slate-600 leading-relaxed mb-5 line-clamp-3",
 									children: verbete.textoAlunoParagrafo || verbete.resumoDireto
@@ -43139,43 +42808,8 @@ var EnciclowikiPage = ({ onSelectVerbete, onNavigate }) => {
 						}, verbete.id))
 					})
 				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-				className: "max-w-6xl mx-auto px-4 sm:px-6 pb-20",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "rounded-3xl bg-gradient-to-r from-amber-50 via-slate-50 to-blue-50 border border-slate-200 p-8 sm:p-12 shadow-xs relative overflow-hidden",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "max-w-3xl relative z-10",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold mb-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, { className: "w-3.5 h-3.5 text-amber-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aula de Orientação & Submissão" })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-								className: "text-2xl sm:text-3xl font-black text-slate-900 mb-3 tracking-tight font-serif",
-								children: "Deseja publicar seu verbete e conquistar o Selo Bronze?"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-sm sm:text-base text-slate-700 leading-relaxed mb-6",
-								children: "Acesse as diretrizes pedagógicas da ESDHUBEM para aprender como estruturar sua pesquisa concisa de 500 a 800 caracteres, respondendo à essência do conceito, com citação ABNT e integridade investigativa."
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex flex-wrap gap-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-									onClick: () => onNavigate("diretrizes-pedagogicas"),
-									className: "px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-xs cursor-pointer flex items-center gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(GraduationCap, { className: "w-4 h-4 text-slate-950" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ver Diretrizes de Autoria & Avaliação" })]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-									onClick: () => onNavigate("catalogo-cursos"),
-									className: "px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 transition-all cursor-pointer flex items-center gap-2 shadow-2xs",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { className: "w-4 h-4 text-blue-700" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Cursos com Formação Bronze" })]
-								})]
-							})
-						]
-					})
-				})
 			})
-		]
+		})]
 	});
 };
 //#endregion
